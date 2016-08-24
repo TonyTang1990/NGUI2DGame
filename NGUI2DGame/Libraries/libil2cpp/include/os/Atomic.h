@@ -42,13 +42,13 @@ public:
 	template<typename T>
 	static inline T* CompareExchangePointer (T* volatile* dest, T* newValue, T* oldValue)
 	{
-		return static_cast<T*> (CompareExchangePointer ((void**) dest, newValue, oldValue));
+		return static_cast<T*> (CompareExchangePointer ((void* volatile*) dest, newValue, oldValue));
 	}
 
 	template<typename T>
 	static inline T* ExchangePointer (T* volatile* dest, T* newValue)
 	{
-		return static_cast<T*> (ExchangePointer ((void**) dest, newValue));
+		return static_cast<T*> (ExchangePointer ((void* volatile*) dest, newValue));
 	}
 	
 	static inline uint64_t Read64 (volatile uint64_t* addr)
@@ -203,10 +203,14 @@ inline void Atomic::MemoryBarrier ()
 
 #elif IL2CPP_TARGET_WINDOWS
 #include "os/Win32/AtomicImpl.h"
+#elif IL2CPP_TARGET_PS4	
+#include "os/AtomicImpl.h"	// has to come earlier than posix 
+#elif IL2CPP_TARGET_PSP2
+#include "os/PSP2/AtomicImpl.h"
 #elif IL2CPP_TARGET_POSIX
 #include "os/Posix/AtomicImpl.h"
 #elif IL2CPP_TARGET_XBOXONE
-#include "os/XboxOne/AtomicImpl.h"
+#include "os/Win32/AtomicImpl.h"
 #else
 #include "os/AtomicImpl.h"
 #endif

@@ -1,30 +1,47 @@
 ﻿#pragma once
-struct Object_t;
-typedef Object_t Il2CppCodeGenObject;
-// System.Array
-#include "mscorlib_System_Array.h"
-typedef Array_t Il2CppCodeGenArray;
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+// System.Object
+struct Il2CppObject;
+// System.String
 struct String_t;
-typedef String_t Il2CppCodeGenString;
+// System.Type
 struct Type_t;
+// System.Exception
+struct Exception_t1927440687;
+// System.Text.StringBuilder
+struct StringBuilder_t1221177846;
+// System.MulticastDelegate
+struct MulticastDelegate_t3201952435;
+// System.Reflection.MethodBase
+struct MethodBase_t904190842;
+
+#include "mscorlib_System_Array3829468939.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_RuntimeTypeHandle2330101084.h"
+#include "mscorlib_System_RuntimeFieldHandle2331729674.h"
+#include "mscorlib_System_RuntimeArgumentHandle3259266975.h"
+#include "mscorlib_System_RuntimeMethodHandle894824333.h"
+
+#pragma once
+typedef Il2CppObject Il2CppCodeGenObject;
+typedef Il2CppArray Il2CppCodeGenArray;
+typedef String_t Il2CppCodeGenString;
 typedef Type_t Il2CppCodeGenType;
-struct Exception_t306;
-typedef Exception_t306 Il2CppCodeGenException;
-struct Exception_t306;
-typedef Exception_t306 Il2CppCodeGenException;
-// System.RuntimeTypeHandle
-#include "mscorlib_System_RuntimeTypeHandle.h"
-typedef RuntimeTypeHandle_t2303 Il2CppCodeGenRuntimeTypeHandle;
-// System.RuntimeFieldHandle
-#include "mscorlib_System_RuntimeFieldHandle.h"
-typedef RuntimeFieldHandle_t2304 Il2CppCodeGenRuntimeFieldHandle;
-// System.RuntimeArgumentHandle
-#include "mscorlib_System_RuntimeArgumentHandle.h"
-typedef RuntimeArgumentHandle_t2315 Il2CppCodeGenRuntimeArgumentHandle;
-// System.RuntimeMethodHandle
-#include "mscorlib_System_RuntimeMethodHandle.h"
-typedef RuntimeMethodHandle_t2480 Il2CppCodeGenRuntimeMethodHandle;
-struct StringBuilder_t294;
-typedef StringBuilder_t294 Il2CppCodeGenStringBuilder;
-struct MulticastDelegate_t73;
-typedef MulticastDelegate_t73 Il2CppCodeGenMulticastDelegate;
+typedef IntPtr_t Il2CppCodeGenIntPtr;
+typedef Exception_t1927440687 Il2CppCodeGenException;
+typedef RuntimeTypeHandle_t2330101084 Il2CppCodeGenRuntimeTypeHandle;
+typedef RuntimeFieldHandle_t2331729674 Il2CppCodeGenRuntimeFieldHandle;
+typedef RuntimeArgumentHandle_t3259266975 Il2CppCodeGenRuntimeArgumentHandle;
+typedef RuntimeMethodHandle_t894824333 Il2CppCodeGenRuntimeMethodHandle;
+typedef StringBuilder_t1221177846 Il2CppCodeGenStringBuilder;
+typedef MulticastDelegate_t3201952435 Il2CppCodeGenMulticastDelegate;
+typedef MethodBase_t904190842 Il2CppCodeGenMethodBase;

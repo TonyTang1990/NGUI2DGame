@@ -1,6 +1,7 @@
 #pragma once
 
 #include <stdint.h>
+#include "il2cpp-config.h"
 #include "object-internals.h"
 
 struct Il2CppObject;
@@ -26,10 +27,10 @@ namespace System
 namespace Reflection
 {
 
-class MemberInfo
+class LIBIL2CPP_CODEGEN_API MemberInfo
 {
 public:
-	static int32_t get_MetadataToken (void* /* System.Reflection.MemberInfo */ self);
+	static int32_t get_MetadataToken (Il2CppObject* /* System.Reflection.MemberInfo */ self);
 };
 
 } /* namespace Reflection */

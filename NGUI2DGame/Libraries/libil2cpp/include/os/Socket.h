@@ -21,60 +21,60 @@ class SocketImpl;
 
 enum AddressFamily
 {
-	kAddressFamilyError 			= -1,
-	kAddressFamilyUnspecified 		= 0, // AF_UNSPEC
-	kAddressFamilyUnix 				= 1, // AF_UNIX
-	kAddressFamilyInterNetwork 		= 2, // AF_INET
-	kAddressFamilyIpx 				= 3, // AF_IPX
-	kAddressFamilySna 				= 4, // AF_SNA
-	kAddressFamilyDecNet 			= 5, // AF_DECnet
-	kAddressFamilyAppleTalk 		= 6, // AF_APPLETALK
+	kAddressFamilyError				= -1,
+	kAddressFamilyUnspecified		= 0, // AF_UNSPEC
+	kAddressFamilyUnix				= 1, // AF_UNIX
+	kAddressFamilyInterNetwork		= 2, // AF_INET
+	kAddressFamilyIpx				= 3, // AF_IPX
+	kAddressFamilySna				= 4, // AF_SNA
+	kAddressFamilyDecNet			= 5, // AF_DECnet
+	kAddressFamilyAppleTalk			= 6, // AF_APPLETALK
 	kAddressFamilyInterNetworkV6	= 7, // AF_INET6
-	kAddressFamilyIrda 				= 8, // AF_IRDA
+	kAddressFamilyIrda				= 8, // AF_IRDA
 };
 
 enum SocketType
 {
-	kSocketTypeError 		= -1,
-	kSocketTypeStream 		= 0, // SOCK_STREAM
-	kSocketTypeDgram 		= 1, // SOCK_DGRAM
-	kSocketTypeRaw 			= 2, // SOCK_RAW
-	kSocketTypeRdm 			= 3, // SOCK_RDM
+	kSocketTypeError		= -1,
+	kSocketTypeStream		= 0, // SOCK_STREAM
+	kSocketTypeDgram		= 1, // SOCK_DGRAM
+	kSocketTypeRaw			= 2, // SOCK_RAW
+	kSocketTypeRdm			= 3, // SOCK_RDM
 	kSocketTypeSeqpacket	= 4, // SOCK_SEQPACKET
 };
 
 enum ProtocolType
 {
-	kProtocolTypeUnknown 							= -1,
-	kProtocolTypeIP 								= 0,
-	kProtocolTypeIcmp 								= 1,
-	kProtocolTypeIgmp 								= 2,
-	kProtocolTypeGgp 								= 3,
-	kProtocolTypeTcp 								= 6,
-	kProtocolTypePup 								= 12,
-	kProtocolTypeUdp 								= 17,
-	kProtocolTypeIdp 								= 22,
-	kProtocolTypeND 								= 77,
-	kProtocolTypeRaw 								= 255,
-	kProtocolTypeUnspecified 						= 0,
-	kProtocolTypeIpx 								= 1000,
-	kProtocolTypeSpx 								= 1256,
-	kProtocolTypeSpxII 								= 1257,
+	kProtocolTypeUnknown							= -1,
+	kProtocolTypeIP									= 0,
+	kProtocolTypeIcmp								= 1,
+	kProtocolTypeIgmp								= 2,
+	kProtocolTypeGgp								= 3,
+	kProtocolTypeTcp								= 6,
+	kProtocolTypePup								= 12,
+	kProtocolTypeUdp								= 17,
+	kProtocolTypeIdp								= 22,
+	kProtocolTypeND									= 77,
+	kProtocolTypeRaw								= 255,
+	kProtocolTypeUnspecified						= 0,
+	kProtocolTypeIpx								= 1000,
+	kProtocolTypeSpx								= 1256,
+	kProtocolTypeSpxII								= 1257,
 	
 // #if NET_1_1
-	kProtocolTypeIPv6 								= 41,
+	kProtocolTypeIPv6								= 41,
 // #endif
 
 // #if NET_2_0
-	kProtocolTypeIPv4 								= 4,
-	kProtocolTypeIPv6RoutingHeader 					= 43,
-	kProtocolTypeIPv6FragmentHeader 				= 44,
+	kProtocolTypeIPv4								= 4,
+	kProtocolTypeIPv6RoutingHeader					= 43,
+	kProtocolTypeIPv6FragmentHeader					= 44,
 	kProtocolTypeIPSecEncapsulatingSecurityPayload	= 50,
-	kProtocolTypeIPSecAuthenticationHeader 			= 51,
-	kProtocolTypeIcmpV6 							= 58,
-	kProtocolTypeIPv6NoNextHeader 					= 59,
-	kProtocolTypeIPv6DestinationOptions 			= 60,
-	kProtocolTypeIPv6HopByHopOptions 				= 0,
+	kProtocolTypeIPSecAuthenticationHeader			= 51,
+	kProtocolTypeIcmpV6								= 58,
+	kProtocolTypeIPv6NoNextHeader					= 59,
+	kProtocolTypeIPv6DestinationOptions				= 60,
+	kProtocolTypeIPv6HopByHopOptions				= 0,
 // #endif
 };
 
@@ -96,61 +96,61 @@ enum SocketFlags
 
 enum SocketOptionLevel
 {
-	kSocketOptionLevelSocket 	= 65535,
-	kSocketOptionLevelIP 		= 0,
-	kSocketOptionLevelTcp 		= 6,
-	kSocketOptionLevelUdp 		= 17,
+	kSocketOptionLevelSocket	= 65535,
+	kSocketOptionLevelIP		= 0,
+	kSocketOptionLevelTcp		= 6,
+	kSocketOptionLevelUdp		= 17,
 
 //#if NET_1_1
-	kSocketOptionLevelIPv6 		= 41,
+	kSocketOptionLevelIPv6		= 41,
 //#endif
 };
 
 enum SocketOptionName
 {
-	kSocketOptionNameDebug 					= 1,
-	kSocketOptionNameAcceptConnection 		= 2,
-	kSocketOptionNameReuseAddress 			= 4,
-	kSocketOptionNameKeepAlive 				= 8,
-	kSocketOptionNameDontRoute 				= 16,
-	kSocketOptionNameBroadcast 				= 32,
-	kSocketOptionNameUseLoopback 			= 64,
-	kSocketOptionNameLinger 				= 128,
-	kSocketOptionNameOutOfBandInline 		= 256,
-	kSocketOptionNameDontLinger 			= -129,
-	kSocketOptionNameExclusiveAddressUse 	= -5,
-	kSocketOptionNameSendBuffer 			= 4097,
-	kSocketOptionNameReceiveBuffer 			= 4098,
-	kSocketOptionNameSendLowWater 			= 4099,
-	kSocketOptionNameReceiveLowWater 		= 4100,
-	kSocketOptionNameSendTimeout 			= 4101,
-	kSocketOptionNameReceiveTimeout 		= 4102,
-	kSocketOptionNameError 					= 4103,
-	kSocketOptionNameType 					= 4104,
-	kSocketOptionNameMaxConnections 		= 2147483647,
-	kSocketOptionNameIPOptions 				= 1,
-	kSocketOptionNameHeaderIncluded 		= 2,
-	kSocketOptionNameTypeOfService 			= 3,
-	kSocketOptionNameIpTimeToLive 			= 4,
-	kSocketOptionNameMulticastInterface 	= 9,
-	kSocketOptionNameMulticastTimeToLive 	= 10,
-	kSocketOptionNameMulticastLoopback 		= 11,
-	kSocketOptionNameAddMembership 			= 12,
-	kSocketOptionNameDropMembership 		= 13,
-	kSocketOptionNameDontFragment 			= 14,
-	kSocketOptionNameAddSourceMembership 	= 15,
-	kSocketOptionNameDropSourceMembership 	= 16,
-	kSocketOptionNameBlockSource 			= 17,
-	kSocketOptionNameUnblockSource 			= 18,
-	kSocketOptionNamePacketInformation 		= 19,
-	kSocketOptionNameNoDelay 				= 1,
-	kSocketOptionNameBsdUrgent 				= 2,
-	kSocketOptionNameExpedited 				= 2,
+	kSocketOptionNameDebug					= 1,
+	kSocketOptionNameAcceptConnection		= 2,
+	kSocketOptionNameReuseAddress			= 4,
+	kSocketOptionNameKeepAlive				= 8,
+	kSocketOptionNameDontRoute				= 16,
+	kSocketOptionNameBroadcast				= 32,
+	kSocketOptionNameUseLoopback			= 64,
+	kSocketOptionNameLinger					= 128,
+	kSocketOptionNameOutOfBandInline		= 256,
+	kSocketOptionNameDontLinger				= -129,
+	kSocketOptionNameExclusiveAddressUse	= -5,
+	kSocketOptionNameSendBuffer				= 4097,
+	kSocketOptionNameReceiveBuffer			= 4098,
+	kSocketOptionNameSendLowWater			= 4099,
+	kSocketOptionNameReceiveLowWater		= 4100,
+	kSocketOptionNameSendTimeout			= 4101,
+	kSocketOptionNameReceiveTimeout			= 4102,
+	kSocketOptionNameError					= 4103,
+	kSocketOptionNameType					= 4104,
+	kSocketOptionNameMaxConnections			= 2147483647,
+	kSocketOptionNameIPOptions				= 1,
+	kSocketOptionNameHeaderIncluded			= 2,
+	kSocketOptionNameTypeOfService			= 3,
+	kSocketOptionNameIpTimeToLive			= 4,
+	kSocketOptionNameMulticastInterface		= 9,
+	kSocketOptionNameMulticastTimeToLive	= 10,
+	kSocketOptionNameMulticastLoopback		= 11,
+	kSocketOptionNameAddMembership			= 12,
+	kSocketOptionNameDropMembership			= 13,
+	kSocketOptionNameDontFragment			= 14,
+	kSocketOptionNameAddSourceMembership	= 15,
+	kSocketOptionNameDropSourceMembership	= 16,
+	kSocketOptionNameBlockSource			= 17,
+	kSocketOptionNameUnblockSource			= 18,
+	kSocketOptionNamePacketInformation		= 19,
+	kSocketOptionNameNoDelay				= 1,
+	kSocketOptionNameBsdUrgent				= 2,
+	kSocketOptionNameExpedited				= 2,
 	kSocketOptionNameNoChecksum				= 1,
-	kSocketOptionNameChecksumCoverage 		= 20,
+	kSocketOptionNameChecksumCoverage		= 20,
 
 // #if NET_2_0
-	kSocketOptionNameHopLimit 				= 21,
+	kSocketOptionNameHopLimit				= 21,
 	kSocketOptionNameUpdateAcceptContext	= 28683,
 	kSocketOptionNameUpdateConnectContext	= 28688,
 // #endif
@@ -159,8 +159,8 @@ enum SocketOptionName
 
 enum PollFlags
 {
-	kPollFlagsNone 	= 0,
-	kPollFlagsIn 	= 1,
+	kPollFlagsNone	= 0,
+	kPollFlagsIn	= 1,
 	kPollFlagsPri	= 2,
 	kPollFlagsOut	= 4,
 	kPollFlagsErr	= 8,
@@ -168,6 +168,11 @@ enum PollFlags
 	kPollFlagsNVal	= 0x20,
 	kPollFlagsAny	= 0xffffffff
 };
+
+inline void operator|=(PollFlags& left, PollFlags right)
+{
+	left = static_cast<PollFlags>(static_cast<int>(left) | static_cast<int>(right));
+}
 
 enum TransmitFileOptions
 {
@@ -183,13 +188,18 @@ class Socket;
 
 struct PollRequest
 {
-	Socket *socket;
+	int64_t fd;
 	PollFlags events;
 	PollFlags revents;
 };
 
 // TODO: this should really be UNIX_PATH_MAX or SUN_LEN(n)
 #define END_POINT_MAX_PATH_LEN	255
+
+#if IL2CPP_COMPILER_MSVC
+#pragma warning( push )
+#pragma warning( disable : 4200 )
+#endif
 
 struct EndPointInfo
 {
@@ -204,6 +214,10 @@ struct EndPointInfo
 		uint8_t raw[IL2CPP_ZERO_LEN_ARRAY];
 	} data;
 };
+
+#if IL2CPP_COMPILER_MSVC
+#pragma warning( pop ) 
+#endif
 
 // NOTE(gab): this must be binary compatible with Windows's WSABUF
 struct WSABuf
@@ -257,9 +271,11 @@ public:
 	WaitStatus Bind (const char *path);
 	WaitStatus Bind (uint32_t address, uint16_t port);
 	WaitStatus Bind (const char *address, uint16_t port);
+	WaitStatus Bind (uint8_t address[ipv6AddressSize], uint32_t scope, uint16_t port);
 	
 	WaitStatus Connect (const char *path);
 	WaitStatus Connect (uint32_t address, uint16_t port);
+	WaitStatus Connect (uint8_t address[ipv6AddressSize], uint32_t scope, uint16_t port);
 	
 	WaitStatus Disconnect (bool reuse);
 	WaitStatus Shutdown (int32_t how);
@@ -275,9 +291,11 @@ public:
 	
 	WaitStatus SendTo (uint32_t address, uint16_t port, const uint8_t *data, int32_t count, os::SocketFlags flags, int32_t *len);
 	WaitStatus SendTo (const char *path, const uint8_t *data, int32_t count, os::SocketFlags flags, int32_t *len);
+	WaitStatus SendTo (uint8_t address[ipv6AddressSize], uint32_t scope, uint16_t port, const uint8_t *data, int32_t count, os::SocketFlags flags, int32_t *len);
 	
 	WaitStatus RecvFrom (uint32_t address, uint16_t port, const uint8_t *data, int32_t count, os::SocketFlags flags, int32_t *len, os::EndPointInfo &ep);
 	WaitStatus RecvFrom (const char *path, const uint8_t *data, int32_t count, os::SocketFlags flags, int32_t *len, os::EndPointInfo &ep);
+	WaitStatus RecvFrom (uint8_t address[ipv6AddressSize], uint32_t scope, uint16_t port, const uint8_t *data, int32_t count, os::SocketFlags flags, int32_t *len, os::EndPointInfo &ep);
 	
 	WaitStatus Available (int32_t *amount);
 	

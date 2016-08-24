@@ -1,6 +1,7 @@
 #pragma once
 
 #include <stdint.h>
+#include "il2cpp-config.h"
 #include "object-internals.h"
 
 struct Il2CppArray;
@@ -30,7 +31,7 @@ struct FileStat
 	int64_t last_write_time;
 };
 
-class MonoIO
+class LIBIL2CPP_CODEGEN_API MonoIO
 {
 public:
 	static bool Close (Il2CppIntPtr handle,int *error);
@@ -60,13 +61,13 @@ public:
 	static bool SetLength (Il2CppIntPtr handle, int64_t length, int *error);
 	static void Unlock (Il2CppIntPtr handle, int64_t position, int64_t length, MonoIOError* error);
 	static int Write (Il2CppIntPtr handle, Il2CppArray * src, int src_offset, int count, int * error);
-	static uint16_t get_AltDirectorySeparatorChar (void);
+	static Il2CppChar get_AltDirectorySeparatorChar (void);
 	static Il2CppIntPtr get_ConsoleError (void);
 	static Il2CppIntPtr get_ConsoleInput (void);
 	static Il2CppIntPtr get_ConsoleOutput (void);
-	static uint16_t get_DirectorySeparatorChar (void);
-	static uint16_t get_PathSeparator (void);
-	static uint16_t get_VolumeSeparatorChar (void);
+	static Il2CppChar get_DirectorySeparatorChar (void);
+	static Il2CppChar get_PathSeparator (void);
+	static Il2CppChar get_VolumeSeparatorChar (void);
 };
 
 } /* namespace IO */

@@ -1,10 +1,10 @@
 #pragma once
 
-#include "il2cpp-config.h"
 #include <stdint.h>
 
-struct TypeInfo;
+struct Il2CppClass;
 struct Il2CppType;
+struct EventInfo;
 struct MethodInfo;
 struct FieldInfo;
 struct PropertyInfo;
@@ -67,6 +67,25 @@ enum Il2CppGCEvent {
 	IL2CPP_GC_EVENT_POST_START_WORLD
 };
 
+enum Il2CppStat {
+	IL2CPP_STAT_NEW_OBJECT_COUNT,
+	IL2CPP_STAT_INITIALIZED_CLASS_COUNT,
+	//IL2CPP_STAT_GENERIC_VTABLE_COUNT,
+	//IL2CPP_STAT_USED_CLASS_COUNT,
+	IL2CPP_STAT_METHOD_COUNT,
+	//IL2CPP_STAT_CLASS_VTABLE_SIZE,
+	IL2CPP_STAT_CLASS_STATIC_DATA_SIZE,
+	IL2CPP_STAT_GENERIC_INSTANCE_COUNT,
+	IL2CPP_STAT_GENERIC_CLASS_COUNT,
+	IL2CPP_STAT_INFLATED_METHOD_COUNT,
+	IL2CPP_STAT_INFLATED_TYPE_COUNT,
+	//IL2CPP_STAT_DELEGATE_CREATIONS,
+	//IL2CPP_STAT_MINOR_GC_COUNT,
+	//IL2CPP_STAT_MAJOR_GC_COUNT,
+	//IL2CPP_STAT_MINOR_GC_TIME_USECS,
+	//IL2CPP_STAT_MAJOR_GC_TIME_USECS
+};
+
 enum StackFrameType
 {
 	FRAME_TYPE_MANAGED = 0,
@@ -98,16 +117,49 @@ struct Il2CppStackFrameInfo
 
 typedef struct {
 	void* (*malloc_func)(size_t size);
+	void* (*aligned_malloc_func)(size_t size, size_t alignment);
 	void (*free_func)(void *ptr);
+	void (*aligned_free_func)(void *ptr);
 	void* (*calloc_func)(size_t nmemb, size_t size);
 	void* (*realloc_func)(void *ptr, size_t size);
+	void* (*aligned_realloc_func)(void *ptr, size_t size, size_t alignment);
 } Il2CppMemoryCallbacks;
 
-typedef void (*register_object_callback)(void** arr, int size, void* userdata);
+#if !__SNC__ // SNC doesn't like the following define: "warning 1576: predefined meaning of __has_feature discarded"
+#ifndef __has_feature // clang specific __has_feature check
+#define __has_feature(x) 0 // Compatibility with non-clang compilers.
+#endif
+#endif
+
+#if _MSC_VER
+typedef wchar_t Il2CppChar;
+#elif __has_feature(cxx_unicode_literals)
+typedef char16_t Il2CppChar;
+#else
+typedef uint16_t Il2CppChar;
+#endif
+
+#if _MSC_VER
+typedef wchar_t Il2CppNativeChar;
+#define IL2CPP_NATIVE_STRING(str) L##str
+#else
+typedef char Il2CppNativeChar;
+#define IL2CPP_NATIVE_STRING(str) str
+#endif
+
+typedef void (*il2cpp_register_object_callback)(Il2CppObject** arr, int size, void* userdata);
+typedef void (*il2cpp_WorldChangedCallback)();
 
 typedef void (*Il2CppFrameWalkFunc) (const Il2CppStackFrameInfo *info, void *user_data);
 typedef void (*Il2CppProfileFunc) (Il2CppProfiler* prof);
 typedef void (*Il2CppProfileMethodFunc) (Il2CppProfiler* prof, const MethodInfo *method);
-typedef void (*Il2CppProfileAllocFunc) (Il2CppProfiler* prof, Il2CppObject *obj, TypeInfo *klass);
+typedef void (*Il2CppProfileAllocFunc) (Il2CppProfiler* prof, Il2CppObject *obj, Il2CppClass *klass);
 typedef void (*Il2CppProfileGCFunc) (Il2CppProfiler* prof, Il2CppGCEvent event, int generation);
 typedef void (*Il2CppProfileGCResizeFunc) (Il2CppProfiler* prof, int64_t new_size);
+
+typedef const Il2CppNativeChar* (*Il2CppSetFindPlugInCallback)(const Il2CppNativeChar*);
+
+struct Il2CppManagedMemorySnapshot;
+
+typedef void (*Il2CppMethodPointer)();
+typedef int32_t il2cpp_array_size_t;

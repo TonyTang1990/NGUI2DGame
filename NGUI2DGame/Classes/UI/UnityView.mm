@@ -35,8 +35,10 @@ extern bool _skipPresent;
 
 - (void)initImpl:(CGRect)frame scaleFactor:(CGFloat)scale
 {
+#if !UNITY_TVOS
 	self.multipleTouchEnabled	= YES;
 	self.exclusiveTouch			= YES;
+#endif
 	self.contentScaleFactor		= scale;
 	self.isAccessibilityElement = TRUE;
 	self.accessibilityTraits	= UIAccessibilityTraitAllowsDirectInteraction;
@@ -87,6 +89,7 @@ extern bool _skipPresent;
 	[super layoutSubviews];
 }
 
+#if !UNITY_TVOS
 - (void)willRotateToOrientation:(UIInterfaceOrientation)toOrientation fromOrientation:(UIInterfaceOrientation)fromOrientation;
 {
 	// to support the case of interface and unity content orientation being different
@@ -97,15 +100,12 @@ extern bool _skipPresent;
 	ScreenOrientation to	= ConvertToUnityScreenOrientation(toOrientation);
 	ScreenOrientation from	= ConvertToUnityScreenOrientation(fromOrientation);
 
-#if !UNITY_IOS8_ORNEWER_SDK
-	static const NSInteger UIInterfaceOrientationUnknown = 0;
-#endif
-
 	if(fromOrientation == UIInterfaceOrientationUnknown)
 		_curOrientation = to;
 	else
 		_curOrientation	= OrientationAfterTransform(_curOrientation, TransformBetweenOrientations(from, to));
 }
+
 - (void)didRotate
 {
 	if(_recreateView)
@@ -116,6 +116,7 @@ extern bool _skipPresent;
 			UnityRepaint();
 	}
 }
+#endif
 
 - (void)recreateGLESSurfaceIfNeeded
 {
@@ -156,7 +157,6 @@ extern bool _skipPresent;
 
 		// actually poke unity about updated back buffer and notify that extents were changed
 		UnityReportBackbufferChange(GetMainDisplaySurface()->unityColorBuffer, GetMainDisplaySurface()->unityDepthBuffer);
-
 		APP_CONTROLLER_RENDER_PLUGIN_METHOD(onAfterMainDisplaySurfaceRecreate);
 
 		if(_unityAppReady)
@@ -177,20 +177,58 @@ extern bool _skipPresent;
 
 - (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
-	UnitySendTouchesBegin(touches, event);
+#if UNITY_TVOS_SIMULATOR_FAKE_REMOTE
+	ReportSimulatedRemoteTouchesBegan(self, touches);
+#endif
+#if UNITY_TVOS
+	if (UnityGetAppleTVRemoteTouchesEnabled())
+#endif
+		UnitySendTouchesBegin(touches, event);
 }
 - (void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event
 {
-	UnitySendTouchesEnded(touches, event);
+#if UNITY_TVOS_SIMULATOR_FAKE_REMOTE
+	ReportSimulatedRemoteTouchesEnded(self, touches);
+#endif
+#if UNITY_TVOS
+	if (UnityGetAppleTVRemoteTouchesEnabled())
+#endif
+		UnitySendTouchesEnded(touches, event);
 }
 - (void)touchesCancelled:(NSSet*)touches withEvent:(UIEvent*)event
 {
-	UnitySendTouchesCancelled(touches, event);
+#if UNITY_TVOS_SIMULATOR_FAKE_REMOTE
+	ReportSimulatedRemoteTouchesEnded(self, touches);
+#endif
+#if UNITY_TVOS
+	if (UnityGetAppleTVRemoteTouchesEnabled())
+#endif
+		UnitySendTouchesCancelled(touches, event);
 }
 - (void)touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event
 {
-	UnitySendTouchesMoved(touches, event);
+#if UNITY_TVOS_SIMULATOR_FAKE_REMOTE
+	ReportSimulatedRemoteTouchesMoved(self, touches);
+#endif
+#if UNITY_TVOS
+	if (UnityGetAppleTVRemoteTouchesEnabled())
+#endif
+		UnitySendTouchesMoved(touches, event);
 }
+
+#if UNITY_TVOS_SIMULATOR_FAKE_REMOTE
+- (void)pressesBegan:(NSSet<UIPress*>*)presses withEvent:(UIEvent*)event
+{
+	for (UIPress *press in presses)
+		ReportSimulatedRemoteButtonPress(press.type);
+}
+
+- (void)pressesEnded:(NSSet<UIPress*>*)presses withEvent:(UIEvent*)event
+{
+	for (UIPress *press in presses)
+		ReportSimulatedRemoteButtonRelease(press.type);
+}
+#endif
 
 @end
 

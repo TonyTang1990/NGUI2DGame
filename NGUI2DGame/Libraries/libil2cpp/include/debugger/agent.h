@@ -154,8 +154,8 @@ public:
 	void NotifyBreakPointHit(const MethodInfo *method, uint64_t offset, BreakpointData &bp_data);
 	void NotifyStepHit(const MethodInfo *method, uint64_t offset, SingleStepData &ss_data);
 	void NotifyAppDomainCreate(Il2CppDomain *domain);
-	void NotifyAssemblyLoad(Il2CppAssembly *assembly);
-	void NotifyTypeLoad(TypeInfo *type);
+	void NotifyAssemblyLoad(const Il2CppAssembly *assembly);
+	void NotifyTypeLoad(Il2CppClass *type);
 	void NotifyThreadStart(Il2CppThread *thread);
 	void NotifyThreadDeath(Il2CppThread *thread);
 
@@ -295,7 +295,7 @@ private:
 	bool _is_initialized;
 	bool _currently_invoking_method;
 
-	std::set<TypeInfo*> _pending_types;
+	std::set<Il2CppClass*> _pending_types;
 	std::set<Il2CppThread*> _pending_threads;
 	std::set<Il2CppDomain*> _pending_domains;
 	std::set<Il2CppAssembly*> _pending_assemblies;

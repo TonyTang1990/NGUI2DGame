@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include "object-internals.h"
 #include "vm/Thread.h"
+#include "il2cpp-config.h"
 
 struct Il2CppString;
 struct Il2CppThread;
@@ -21,7 +22,7 @@ namespace System
 namespace Threading
 {
 
-class Thread
+class LIBIL2CPP_CODEGEN_API Thread
 {
 public:
 	static int32_t GetDomainID ();
@@ -29,7 +30,7 @@ public:
 	static void ResetAbort_internal ();
 	static void MemoryBarrier_ ();
 	static void SpinWait_nop ();
-	static void Abort_internal (void* /* System.Threading.Thread */ self, Il2CppObject* stateInfo);
+	static void Abort_internal (Il2CppThread* __this, Il2CppObject* stateInfo);
 	static void ClrState (Il2CppThread* __this, il2cpp::vm::ThreadState clr);
 	static void FreeLocalSlotValues (int32_t slot, bool use_thread_local);
 	static Il2CppObject* GetAbortExceptionState (void* /* System.Threading.Thread */ self);

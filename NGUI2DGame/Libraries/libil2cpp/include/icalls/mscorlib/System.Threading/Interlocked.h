@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdint.h>
-
+#include "il2cpp-config.h"
 #include "object-internals.h"
 
 namespace il2cpp
@@ -15,7 +15,7 @@ namespace System
 namespace Threading
 {
 
-class Interlocked
+class LIBIL2CPP_CODEGEN_API Interlocked
 {
 public:
 	static int32_t Add(int32_t* location1, int32_t value);
@@ -24,7 +24,6 @@ public:
 	static int64_t CompareExchange64 (int64_t* location1, int64_t value, int64_t comparand);
 	static double CompareExchangeDouble (double* location1, double value, double comparand);
 	static Il2CppIntPtr CompareExchangeIntPtr (Il2CppIntPtr* location, Il2CppIntPtr value, Il2CppIntPtr comparand);
-	static float CompareExchangeObject (float* location1, float value, float comparand);
 	static float CompareExchangeSingle (float* location1, float value, float comparand);
 	static void* CompareExchange_T (void** location, void* value, void* comparand);
 	static int32_t Decrement (int32_t* location);

@@ -1,6 +1,8 @@
 #pragma once
 
 #include <stdint.h>
+#include "il2cpp-config.h"
+
 struct mscorlib_System_Reflection_MethodInfo;
 
 struct Il2CppArray;
@@ -23,14 +25,14 @@ namespace mscorlib
 namespace System
 {
 
-class MonoType
+class LIBIL2CPP_CODEGEN_API MonoType
 {
 public:
 	static Il2CppString* getFullName (Il2CppReflectionType* type,bool full_name, bool assembly_qualified);
 	static Il2CppArray* GetFields_internal(Il2CppReflectionType* _this, int, Il2CppReflectionType* reflectedType);
 	static int GetArrayRank(Il2CppReflectionType* type);
 	static Il2CppArray* GetConstructors_internal (Il2CppReflectionType* type, int32_t bflags, Il2CppReflectionType* reftype);
-	static void* /* System.Reflection.ConstructorInfo */ GetCorrespondingInflatedConstructor (void* /* System.MonoType */ self, void* /* System.Reflection.ConstructorInfo */ generic);
+	static void* /* System.Reflection.ConstructorInfo */ GetCorrespondingInflatedConstructor (void* /* System.MonoType */ self, void* /* System.Reflection.ConstructorInfo */ genericInfo);
 	static mscorlib_System_Reflection_MethodInfo* GetCorrespondingInflatedMethod (Il2CppReflectionMonoType* , Il2CppReflectionMonoType* );
 	static Il2CppReflectionType* GetElementType (Il2CppReflectionType* type);
 	static Il2CppArray* GetEvents_internal(Il2CppReflectionType* __this, int32_t bindingFlags, Il2CppReflectionType* type);

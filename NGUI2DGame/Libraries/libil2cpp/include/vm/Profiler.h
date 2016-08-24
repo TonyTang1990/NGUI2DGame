@@ -1,14 +1,16 @@
 #pragma once
 
 #include <stdint.h>
-#include "il2cpp-api-types.h"
+#include "il2cpp-config.h"
 
 namespace il2cpp
 {
 namespace vm
 {
 
-class Profiler
+#if IL2CPP_ENABLE_PROFILER
+
+class LIBIL2CPP_CODEGEN_API Profiler
 {
 // exported
 public:
@@ -21,14 +23,11 @@ public:
 
 // internal
 public:
-
-#if IL2CPP_ENABLE_PROFILER
-	static void Allocation (Il2CppObject *obj, TypeInfo *klass);
+	static void Allocation (Il2CppObject *obj, Il2CppClass *klass);
 	static void MethodEnter (const MethodInfo *method);
 	static void MethodExit (const MethodInfo *method);
 	static void GCEvent (Il2CppGCEvent eventType);
 	static void GCHeapResize (int64_t newSize);
-#endif
 
 	static Il2CppProfileFlags s_profilerEvents;
 
@@ -39,6 +38,8 @@ public:
 
 private:
 };
+
+#endif
 
 } /* namespace vm */
 } /* namespace il2cpp */

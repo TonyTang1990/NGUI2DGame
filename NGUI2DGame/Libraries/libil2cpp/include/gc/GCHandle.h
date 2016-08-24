@@ -17,7 +17,7 @@ enum GCHandleType
 	HANDLE_PINNED
 };
 
-class GCHandle
+class LIBIL2CPP_CODEGEN_API GCHandle
 {
 public:
 	// external
@@ -29,6 +29,9 @@ public:
 public:
 	//internal
 	static int32_t GetTargetHandle (Il2CppObject * obj, int32_t handle, int32_t type);
+
+	typedef void(*WalkGCHandleTargetsCallback)(Il2CppObject* obj, void* context);
+	static void WalkStrongGCHandleTargets(WalkGCHandleTargetsCallback callback, void* context);
 };
 
 } /* gc */

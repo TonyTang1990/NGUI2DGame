@@ -12,20 +12,12 @@ void UnityInitTrampoline();
 // WARNING: this MUST be c decl (NSString ctor will be called after +load, so we cant really change its value)
 const char* AppControllerClassName = "UnityAppController";
 
-#if INIT_SCRIPTING_BACKEND
-extern "C" void InitializeScriptingBackend();
-#endif
-
 int main(int argc, char* argv[])
 {
 	@autoreleasepool
 	{
 		UnityInitTrampoline();
 		UnityParseCommandLine(argc, argv);
-
-	#if INIT_SCRIPTING_BACKEND
-		InitializeScriptingBackend();
-	#endif
 
 		RegisterMonoModules();
 		NSLog(@"-> registered mono modules %p\n", &constsection);
@@ -43,7 +35,7 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-#if TARGET_IPHONE_SIMULATOR
+#if TARGET_IPHONE_SIMULATOR && TARGET_TVOS_SIMULATOR
 
 #include <pthread.h>
 
@@ -57,4 +49,4 @@ extern "C" int pthread_cond_timedwait$UNIX2003(pthread_cond_t *cond, pthread_mut
 											   const struct timespec *abstime)
 { return pthread_cond_timedwait(cond, mutex, abstime); }
 
-#endif // TARGET_IPHONE_SIMULATOR
+#endif // TARGET_IPHONE_SIMULATOR && TARGET_TVOS_SIMULATOR
