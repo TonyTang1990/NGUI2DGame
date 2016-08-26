@@ -974,7 +974,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Company.${PRODUCT_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TonyTangNGUI2DGame.com;
 				PRODUCT_NAME = ProductName;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -1022,7 +1022,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Company.${PRODUCT_NAME}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TonyTangNGUI2DGame.com;
 				PRODUCT_NAME = ProductName;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
