@@ -26,6 +26,8 @@
 #define Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m1427431327(__this, method) ((  Il2CppObject* (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m680979874_gshared)(__this, method)
 // System.Collections.IEnumerator System.Collections.Generic.Stack`1<System.Type>::System.Collections.IEnumerable.GetEnumerator()
 #define Stack_1_System_Collections_IEnumerable_GetEnumerator_m2728837580(__this, method) ((  Il2CppObject * (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_System_Collections_IEnumerable_GetEnumerator_m3875192475_gshared)(__this, method)
+// System.Void System.Collections.Generic.Stack`1<System.Type>::Clear()
+#define Stack_1_Clear_m1733067070(__this, method) ((  void (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_Clear_m3792598883_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Stack`1<System.Type>::Contains(T)
 #define Stack_1_Contains_m950610296(__this, ___t0, method) ((  bool (*) (Stack_1_t2391531380 *, Type_t *, const MethodInfo*))Stack_1_Contains_m973625077_gshared)(__this, ___t0, method)
 // T System.Collections.Generic.Stack`1<System.Type>::Pop()

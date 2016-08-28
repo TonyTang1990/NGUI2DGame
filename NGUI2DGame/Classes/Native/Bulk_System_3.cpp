@@ -103,6 +103,8 @@ struct Int32U5BU5D_t3030399641;
 struct Adapter_t991912430;
 // System.Text.StringBuilder
 struct StringBuilder_t1221177846;
+// System.Text.RegularExpressions.ReplacementEvaluator
+struct ReplacementEvaluator_t1001703513;
 // System.Text.RegularExpressions.RxCompiler
 struct RxCompiler_t4215271879;
 // System.Byte[]
@@ -314,14 +316,17 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_CILCompiler1740644799.h"
 #include "System_System_Text_RegularExpressions_RxCompiler4215271879.h"
 #include "System_System_Text_RegularExpressions_Syntax_Regul3083097024MethodDeclarations.h"
+#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Regex_Adapter991912430MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_BaseMachine_1618777330MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Regex_Adapter991912430.h"
 #include "mscorlib_System_Text_StringBuilder1221177846.h"
 #include "System_System_Text_RegularExpressions_BaseMachine_1618777330.h"
-#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "mscorlib_System_Text_StringBuilder1221177846MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_RegexOptions2418259727MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_ReplacementE1001703513.h"
+#include "System_System_Text_RegularExpressions_ReplacementE1001703513MethodDeclarations.h"
+#include "mscorlib_System_IndexOutOfRangeException3527622107.h"
 #include "mscorlib_System_Buffer3497320070MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_RxOp4049298493.h"
 #include "System_System_Text_RegularExpressions_RxLinkRef275774985MethodDeclarations.h"
@@ -378,7 +383,6 @@ struct CultureInfo_t3500843524;
 #include "mscorlib_System_IO_TextWriter4027217640MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Syntax_NonBac607185170.h"
 #include "System_System_Text_RegularExpressions_Syntax_NonBac607185170MethodDeclarations.h"
-#include "mscorlib_System_IndexOutOfRangeException3527622107.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
 #include "System_System_Text_RegularExpressions_Syntax_Posit2152361535MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Syntax_Repet3426306051MethodDeclarations.h"
@@ -10441,6 +10445,96 @@ extern "C"  void Regex_System_Runtime_Serialization_ISerializable_GetObjectData_
 		return;
 	}
 }
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String)
+extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Match_m92265676_MetadataUsageId;
+extern "C"  Match_t3164245899 * Regex_Match_m92265676 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Match_m92265676_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___pattern1;
+		IL2CPP_RUNTIME_CLASS_INIT(Regex_t1803876613_il2cpp_TypeInfo_var);
+		Match_t3164245899 * L_2 = Regex_Match_m1680452684(NULL /*static, unused*/, L_0, L_1, 0, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Match_m1680452684_MetadataUsageId;
+extern "C"  Match_t3164245899 * Regex_Match_m1680452684 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, int32_t ___options2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Match_m1680452684_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Regex_t1803876613 * V_0 = NULL;
+	{
+		String_t* L_0 = ___pattern1;
+		int32_t L_1 = ___options2;
+		Regex_t1803876613 * L_2 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
+		Regex__ctor_m2521903438(L_2, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Regex_t1803876613 * L_3 = V_0;
+		String_t* L_4 = ___input0;
+		NullCheck(L_3);
+		Match_t3164245899 * L_5 = Regex_Match_m3287354872(L_3, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.String System.Text.RegularExpressions.Regex::Replace(System.String,System.String,System.String)
+extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Replace_m4096557757_MetadataUsageId;
+extern "C"  String_t* Regex_Replace_m4096557757 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, String_t* ___replacement2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Replace_m4096557757_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___pattern1;
+		String_t* L_2 = ___replacement2;
+		IL2CPP_RUNTIME_CLASS_INIT(Regex_t1803876613_il2cpp_TypeInfo_var);
+		String_t* L_3 = Regex_Replace_m566725221(NULL /*static, unused*/, L_0, L_1, L_2, 0, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.String System.Text.RegularExpressions.Regex::Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Replace_m566725221_MetadataUsageId;
+extern "C"  String_t* Regex_Replace_m566725221 (Il2CppObject * __this /* static, unused */, String_t* ___input0, String_t* ___pattern1, String_t* ___replacement2, int32_t ___options3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Replace_m566725221_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Regex_t1803876613 * V_0 = NULL;
+	{
+		String_t* L_0 = ___pattern1;
+		int32_t L_1 = ___options3;
+		Regex_t1803876613 * L_2 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
+		Regex__ctor_m2521903438(L_2, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Regex_t1803876613 * L_3 = V_0;
+		String_t* L_4 = ___input0;
+		String_t* L_5 = ___replacement2;
+		NullCheck(L_3);
+		String_t* L_6 = Regex_Replace_m2510734387(L_3, L_4, L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
 // System.Void System.Text.RegularExpressions.Regex::validate_options(System.Text.RegularExpressions.RegexOptions)
 extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1510501756;
@@ -10720,6 +10814,59 @@ extern "C"  bool Regex_get_RightToLeft_m529734879 (Regex_t1803876613 * __this, c
 	{
 		int32_t L_0 = __this->get_roptions_9();
 		return (bool)((((int32_t)((((int32_t)((int32_t)((int32_t)L_0&(int32_t)((int32_t)64)))) == ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Int32 System.Text.RegularExpressions.Regex::GroupNumberFromName(System.String)
+extern Il2CppClass* IDictionary_t596158605_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_GroupNumberFromName_m3228736983_MetadataUsageId;
+extern "C"  int32_t Regex_GroupNumberFromName_m3228736983 (Regex_t1803876613 * __this, String_t* ___name0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_GroupNumberFromName_m3228736983_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		Il2CppObject * L_0 = __this->get_mapping_3();
+		String_t* L_1 = ___name0;
+		NullCheck(L_0);
+		bool L_2 = InterfaceFuncInvoker1< bool, Il2CppObject * >::Invoke(6 /* System.Boolean System.Collections.IDictionary::Contains(System.Object) */, IDictionary_t596158605_il2cpp_TypeInfo_var, L_0, L_1);
+		if (L_2)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		return (-1);
+	}
+
+IL_0013:
+	{
+		Il2CppObject * L_3 = __this->get_mapping_3();
+		String_t* L_4 = ___name0;
+		NullCheck(L_3);
+		Il2CppObject * L_5 = InterfaceFuncInvoker1< Il2CppObject *, Il2CppObject * >::Invoke(0 /* System.Object System.Collections.IDictionary::get_Item(System.Object) */, IDictionary_t596158605_il2cpp_TypeInfo_var, L_3, L_4);
+		V_0 = ((*(int32_t*)((int32_t*)UnBox (L_5, Int32_t2071877448_il2cpp_TypeInfo_var))));
+		int32_t L_6 = V_0;
+		int32_t L_7 = __this->get_gap_5();
+		if ((((int32_t)L_6) < ((int32_t)L_7)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		String_t* L_8 = ___name0;
+		int32_t L_9 = Int32_Parse_m3683414232(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+	}
+
+IL_0038:
+	{
+		int32_t L_10 = V_0;
+		return L_10;
 	}
 }
 // System.Int32 System.Text.RegularExpressions.Regex::GetGroupIndex(System.Int32)
@@ -11083,11 +11230,127 @@ IL_0078:
 		return L_28;
 	}
 }
+// System.String System.Text.RegularExpressions.Regex::Replace(System.String,System.String)
+extern "C"  String_t* Regex_Replace_m2510734387 (Regex_t1803876613 * __this, String_t* ___input0, String_t* ___replacement1, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___input0;
+		String_t* L_1 = ___replacement1;
+		String_t* L_2 = ___input0;
+		int32_t L_3 = Regex_default_startat_m2116037983(__this, L_2, /*hidden argument*/NULL);
+		String_t* L_4 = Regex_Replace_m2887768543(__this, L_0, L_1, ((int32_t)2147483647LL), L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+// System.String System.Text.RegularExpressions.Regex::Replace(System.String,System.String,System.Int32,System.Int32)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* IMachine_t3406191350_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral748179678;
+extern Il2CppCodeGenString* _stringLiteral3278007726;
+extern Il2CppCodeGenString* _stringLiteral1554746267;
+extern Il2CppCodeGenString* _stringLiteral2557331649;
+extern const uint32_t Regex_Replace_m2887768543_MetadataUsageId;
+extern "C"  String_t* Regex_Replace_m2887768543 (Regex_t1803876613 * __this, String_t* ___input0, String_t* ___replacement1, int32_t ___count2, int32_t ___startat3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Replace_m2887768543_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___input0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral748179678, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		String_t* L_2 = ___replacement1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_3 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_3, _stringLiteral3278007726, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		int32_t L_4 = ___count2;
+		if ((((int32_t)L_4) >= ((int32_t)(-1))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_5 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_5, _stringLiteral1554746267, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+	}
+
+IL_0034:
+	{
+		int32_t L_6 = ___startat3;
+		if ((((int32_t)L_6) < ((int32_t)0)))
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		int32_t L_7 = ___startat3;
+		String_t* L_8 = ___input0;
+		NullCheck(L_8);
+		int32_t L_9 = String_get_Length_m1606060069(L_8, /*hidden argument*/NULL);
+		if ((((int32_t)L_7) <= ((int32_t)L_9)))
+		{
+			goto IL_0054;
+		}
+	}
+
+IL_0049:
+	{
+		ArgumentOutOfRangeException_t279959794 * L_10 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_10, _stringLiteral2557331649, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10);
+	}
+
+IL_0054:
+	{
+		Il2CppObject * L_11 = Regex_CreateMachine_m1003508921(__this, /*hidden argument*/NULL);
+		String_t* L_12 = ___input0;
+		String_t* L_13 = ___replacement1;
+		int32_t L_14 = ___count2;
+		int32_t L_15 = ___startat3;
+		NullCheck(L_11);
+		String_t* L_16 = InterfaceFuncInvoker5< String_t*, Regex_t1803876613 *, String_t*, String_t*, int32_t, int32_t >::Invoke(1 /* System.String System.Text.RegularExpressions.IMachine::Replace(System.Text.RegularExpressions.Regex,System.String,System.String,System.Int32,System.Int32) */, IMachine_t3406191350_il2cpp_TypeInfo_var, L_11, __this, L_12, L_13, L_14, L_15);
+		return L_16;
+	}
+}
 // System.String System.Text.RegularExpressions.Regex::ToString()
 extern "C"  String_t* Regex_ToString_m3687329849 (Regex_t1803876613 * __this, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = __this->get_pattern_8();
+		return L_0;
+	}
+}
+// System.Int32 System.Text.RegularExpressions.Regex::get_GroupCount()
+extern "C"  int32_t Regex_get_GroupCount_m1188068377 (Regex_t1803876613 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_group_count_4();
 		return L_0;
 	}
 }
@@ -11289,6 +11552,857 @@ extern "C"  void Adapter_Evaluate_m3020640275 (Adapter_t991912430 * __this, Matc
 		NullCheck(L_0);
 		StringBuilder_Append_m3636508479(L_0, L_3, /*hidden argument*/NULL);
 		return;
+	}
+}
+// System.Void System.Text.RegularExpressions.ReplacementEvaluator::.ctor(System.Text.RegularExpressions.Regex,System.String)
+extern "C"  void ReplacementEvaluator__ctor_m3746900384 (ReplacementEvaluator_t1001703513 * __this, Regex_t1803876613 * ___regex0, String_t* ___replacement1, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		Regex_t1803876613 * L_0 = ___regex0;
+		__this->set_regex_0(L_0);
+		String_t* L_1 = ___replacement1;
+		__this->set_replacement_3(L_1);
+		__this->set_pieces_2((Int32U5BU5D_t3030399641*)NULL);
+		__this->set_n_pieces_1(0);
+		ReplacementEvaluator_Compile_m1875719451(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.String System.Text.RegularExpressions.ReplacementEvaluator::Evaluate(System.Text.RegularExpressions.Match)
+extern Il2CppClass* StringBuilder_t1221177846_il2cpp_TypeInfo_var;
+extern const uint32_t ReplacementEvaluator_Evaluate_m197194936_MetadataUsageId;
+extern "C"  String_t* ReplacementEvaluator_Evaluate_m197194936 (ReplacementEvaluator_t1001703513 * __this, Match_t3164245899 * ___match0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ReplacementEvaluator_Evaluate_m197194936_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	StringBuilder_t1221177846 * V_0 = NULL;
+	{
+		int32_t L_0 = __this->get_n_pieces_1();
+		if (L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		String_t* L_1 = __this->get_replacement_3();
+		return L_1;
+	}
+
+IL_0012:
+	{
+		StringBuilder_t1221177846 * L_2 = (StringBuilder_t1221177846 *)il2cpp_codegen_object_new(StringBuilder_t1221177846_il2cpp_TypeInfo_var);
+		StringBuilder__ctor_m3946851802(L_2, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Match_t3164245899 * L_3 = ___match0;
+		StringBuilder_t1221177846 * L_4 = V_0;
+		ReplacementEvaluator_EvaluateAppend_m4165611689(__this, L_3, L_4, /*hidden argument*/NULL);
+		StringBuilder_t1221177846 * L_5 = V_0;
+		NullCheck(L_5);
+		String_t* L_6 = StringBuilder_ToString_m1507807375(L_5, /*hidden argument*/NULL);
+		return L_6;
+	}
+}
+// System.Void System.Text.RegularExpressions.ReplacementEvaluator::EvaluateAppend(System.Text.RegularExpressions.Match,System.Text.StringBuilder)
+extern "C"  void ReplacementEvaluator_EvaluateAppend_m4165611689 (ReplacementEvaluator_t1001703513 * __this, Match_t3164245899 * ___match0, StringBuilder_t1221177846 * ___sb1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	Group_t3761430853 * V_3 = NULL;
+	int32_t V_4 = 0;
+	{
+		int32_t L_0 = __this->get_n_pieces_1();
+		if (L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		StringBuilder_t1221177846 * L_1 = ___sb1;
+		String_t* L_2 = __this->get_replacement_3();
+		NullCheck(L_1);
+		StringBuilder_Append_m3636508479(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0019:
+	{
+		V_0 = 0;
+		goto IL_00f1;
+	}
+
+IL_0020:
+	{
+		Int32U5BU5D_t3030399641* L_3 = __this->get_pieces_2();
+		int32_t L_4 = V_0;
+		int32_t L_5 = L_4;
+		V_0 = ((int32_t)((int32_t)L_5+(int32_t)1));
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		int32_t L_6 = L_5;
+		int32_t L_7 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		V_1 = L_7;
+		int32_t L_8 = V_1;
+		if ((((int32_t)L_8) < ((int32_t)0)))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		Int32U5BU5D_t3030399641* L_9 = __this->get_pieces_2();
+		int32_t L_10 = V_0;
+		int32_t L_11 = L_10;
+		V_0 = ((int32_t)((int32_t)L_11+(int32_t)1));
+		NullCheck(L_9);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, L_11);
+		int32_t L_12 = L_11;
+		int32_t L_13 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
+		V_2 = L_13;
+		StringBuilder_t1221177846 * L_14 = ___sb1;
+		String_t* L_15 = __this->get_replacement_3();
+		int32_t L_16 = V_1;
+		int32_t L_17 = V_2;
+		NullCheck(L_14);
+		StringBuilder_Append_m1462406979(L_14, L_15, L_16, L_17, /*hidden argument*/NULL);
+		goto IL_00f1;
+	}
+
+IL_0055:
+	{
+		int32_t L_18 = V_1;
+		if ((((int32_t)L_18) >= ((int32_t)((int32_t)-3))))
+		{
+			goto IL_008b;
+		}
+	}
+	{
+		Match_t3164245899 * L_19 = ___match0;
+		NullCheck(L_19);
+		GroupCollection_t939014605 * L_20 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_19);
+		int32_t L_21 = V_1;
+		NullCheck(L_20);
+		Group_t3761430853 * L_22 = GroupCollection_get_Item_m3627349778(L_20, ((-((int32_t)((int32_t)L_21+(int32_t)4)))), /*hidden argument*/NULL);
+		V_3 = L_22;
+		StringBuilder_t1221177846 * L_23 = ___sb1;
+		Group_t3761430853 * L_24 = V_3;
+		NullCheck(L_24);
+		String_t* L_25 = Capture_get_Text_m3472127896(L_24, /*hidden argument*/NULL);
+		Group_t3761430853 * L_26 = V_3;
+		NullCheck(L_26);
+		int32_t L_27 = Capture_get_Index_m819425556(L_26, /*hidden argument*/NULL);
+		Group_t3761430853 * L_28 = V_3;
+		NullCheck(L_28);
+		int32_t L_29 = Capture_get_Length_m1952322390(L_28, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		StringBuilder_Append_m1462406979(L_23, L_25, L_27, L_29, /*hidden argument*/NULL);
+		goto IL_00f1;
+	}
+
+IL_008b:
+	{
+		int32_t L_30 = V_1;
+		if ((!(((uint32_t)L_30) == ((uint32_t)(-1)))))
+		{
+			goto IL_00a4;
+		}
+	}
+	{
+		StringBuilder_t1221177846 * L_31 = ___sb1;
+		Match_t3164245899 * L_32 = ___match0;
+		NullCheck(L_32);
+		String_t* L_33 = Capture_get_Text_m3472127896(L_32, /*hidden argument*/NULL);
+		NullCheck(L_31);
+		StringBuilder_Append_m3636508479(L_31, L_33, /*hidden argument*/NULL);
+		goto IL_00f1;
+	}
+
+IL_00a4:
+	{
+		int32_t L_34 = V_1;
+		if ((!(((uint32_t)L_34) == ((uint32_t)((int32_t)-2)))))
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		StringBuilder_t1221177846 * L_35 = ___sb1;
+		Match_t3164245899 * L_36 = ___match0;
+		NullCheck(L_36);
+		String_t* L_37 = Capture_get_Text_m3472127896(L_36, /*hidden argument*/NULL);
+		Match_t3164245899 * L_38 = ___match0;
+		NullCheck(L_38);
+		int32_t L_39 = Capture_get_Index_m819425556(L_38, /*hidden argument*/NULL);
+		NullCheck(L_35);
+		StringBuilder_Append_m1462406979(L_35, L_37, 0, L_39, /*hidden argument*/NULL);
+		goto IL_00f1;
+	}
+
+IL_00c5:
+	{
+		Match_t3164245899 * L_40 = ___match0;
+		NullCheck(L_40);
+		int32_t L_41 = Capture_get_Index_m819425556(L_40, /*hidden argument*/NULL);
+		Match_t3164245899 * L_42 = ___match0;
+		NullCheck(L_42);
+		int32_t L_43 = Capture_get_Length_m1952322390(L_42, /*hidden argument*/NULL);
+		V_4 = ((int32_t)((int32_t)L_41+(int32_t)L_43));
+		StringBuilder_t1221177846 * L_44 = ___sb1;
+		Match_t3164245899 * L_45 = ___match0;
+		NullCheck(L_45);
+		String_t* L_46 = Capture_get_Text_m3472127896(L_45, /*hidden argument*/NULL);
+		int32_t L_47 = V_4;
+		Match_t3164245899 * L_48 = ___match0;
+		NullCheck(L_48);
+		String_t* L_49 = Capture_get_Text_m3472127896(L_48, /*hidden argument*/NULL);
+		NullCheck(L_49);
+		int32_t L_50 = String_get_Length_m1606060069(L_49, /*hidden argument*/NULL);
+		int32_t L_51 = V_4;
+		NullCheck(L_44);
+		StringBuilder_Append_m1462406979(L_44, L_46, L_47, ((int32_t)((int32_t)L_50-(int32_t)L_51)), /*hidden argument*/NULL);
+	}
+
+IL_00f1:
+	{
+		int32_t L_52 = V_0;
+		int32_t L_53 = __this->get_n_pieces_1();
+		if ((((int32_t)L_52) < ((int32_t)L_53)))
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Boolean System.Text.RegularExpressions.ReplacementEvaluator::get_NeedsGroupsOrCaptures()
+extern "C"  bool ReplacementEvaluator_get_NeedsGroupsOrCaptures_m3532058782 (ReplacementEvaluator_t1001703513 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_n_pieces_1();
+		if (L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_000d:
+	{
+		return (bool)1;
+	}
+}
+// System.Void System.Text.RegularExpressions.ReplacementEvaluator::Ensure(System.Int32)
+extern Il2CppClass* Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var;
+extern const uint32_t ReplacementEvaluator_Ensure_m2025598273_MetadataUsageId;
+extern "C"  void ReplacementEvaluator_Ensure_m2025598273 (ReplacementEvaluator_t1001703513 * __this, int32_t ___size0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ReplacementEvaluator_Ensure_m2025598273_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	Int32U5BU5D_t3030399641* V_1 = NULL;
+	{
+		Int32U5BU5D_t3030399641* L_0 = __this->get_pieces_2();
+		if (L_0)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		V_0 = 4;
+		int32_t L_1 = V_0;
+		int32_t L_2 = ___size0;
+		if ((((int32_t)L_1) >= ((int32_t)L_2)))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		int32_t L_3 = ___size0;
+		V_0 = L_3;
+	}
+
+IL_0016:
+	{
+		int32_t L_4 = V_0;
+		__this->set_pieces_2(((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)L_4)));
+		goto IL_0072;
+	}
+
+IL_0027:
+	{
+		int32_t L_5 = ___size0;
+		Int32U5BU5D_t3030399641* L_6 = __this->get_pieces_2();
+		NullCheck(L_6);
+		if ((((int32_t)L_5) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_6)->max_length)))))))
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		Int32U5BU5D_t3030399641* L_7 = __this->get_pieces_2();
+		NullCheck(L_7);
+		Int32U5BU5D_t3030399641* L_8 = __this->get_pieces_2();
+		NullCheck(L_8);
+		V_0 = ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_7)->max_length))))+(int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length))))>>(int32_t)1))));
+		int32_t L_9 = V_0;
+		int32_t L_10 = ___size0;
+		if ((((int32_t)L_9) >= ((int32_t)L_10)))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		int32_t L_11 = ___size0;
+		V_0 = L_11;
+	}
+
+IL_0052:
+	{
+		int32_t L_12 = V_0;
+		V_1 = ((Int32U5BU5D_t3030399641*)SZArrayNew(Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var, (uint32_t)L_12));
+		Int32U5BU5D_t3030399641* L_13 = __this->get_pieces_2();
+		Int32U5BU5D_t3030399641* L_14 = V_1;
+		int32_t L_15 = __this->get_n_pieces_1();
+		Array_Copy_m2363740072(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_13, (Il2CppArray *)(Il2CppArray *)L_14, L_15, /*hidden argument*/NULL);
+		Int32U5BU5D_t3030399641* L_16 = V_1;
+		__this->set_pieces_2(L_16);
+	}
+
+IL_0072:
+	{
+		return;
+	}
+}
+// System.Void System.Text.RegularExpressions.ReplacementEvaluator::AddFromReplacement(System.Int32,System.Int32)
+extern "C"  void ReplacementEvaluator_AddFromReplacement_m3891576415 (ReplacementEvaluator_t1001703513 * __this, int32_t ___start0, int32_t ___end1, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = ___start0;
+		int32_t L_1 = ___end1;
+		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0008:
+	{
+		int32_t L_2 = __this->get_n_pieces_1();
+		ReplacementEvaluator_Ensure_m2025598273(__this, ((int32_t)((int32_t)L_2+(int32_t)2)), /*hidden argument*/NULL);
+		Int32U5BU5D_t3030399641* L_3 = __this->get_pieces_2();
+		int32_t L_4 = __this->get_n_pieces_1();
+		int32_t L_5 = L_4;
+		V_0 = L_5;
+		__this->set_n_pieces_1(((int32_t)((int32_t)L_5+(int32_t)1)));
+		int32_t L_6 = V_0;
+		int32_t L_7 = ___start0;
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_6);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (int32_t)L_7);
+		Int32U5BU5D_t3030399641* L_8 = __this->get_pieces_2();
+		int32_t L_9 = __this->get_n_pieces_1();
+		int32_t L_10 = L_9;
+		V_0 = L_10;
+		__this->set_n_pieces_1(((int32_t)((int32_t)L_10+(int32_t)1)));
+		int32_t L_11 = V_0;
+		int32_t L_12 = ___end1;
+		int32_t L_13 = ___start0;
+		NullCheck(L_8);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, L_11);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (int32_t)((int32_t)((int32_t)L_12-(int32_t)L_13)));
+		return;
+	}
+}
+// System.Void System.Text.RegularExpressions.ReplacementEvaluator::AddInt(System.Int32)
+extern "C"  void ReplacementEvaluator_AddInt_m2149831105 (ReplacementEvaluator_t1001703513 * __this, int32_t ___i0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_n_pieces_1();
+		ReplacementEvaluator_Ensure_m2025598273(__this, ((int32_t)((int32_t)L_0+(int32_t)1)), /*hidden argument*/NULL);
+		Int32U5BU5D_t3030399641* L_1 = __this->get_pieces_2();
+		int32_t L_2 = __this->get_n_pieces_1();
+		int32_t L_3 = L_2;
+		V_0 = L_3;
+		__this->set_n_pieces_1(((int32_t)((int32_t)L_3+(int32_t)1)));
+		int32_t L_4 = V_0;
+		int32_t L_5 = ___i0;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_4);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (int32_t)L_5);
+		return;
+	}
+}
+// System.Void System.Text.RegularExpressions.ReplacementEvaluator::Compile()
+extern "C"  void ReplacementEvaluator_Compile_m1875719451 (ReplacementEvaluator_t1001703513 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	Il2CppChar V_3 = 0x0;
+	int32_t V_4 = 0;
+	{
+		V_0 = 0;
+		V_1 = 0;
+		goto IL_0090;
+	}
+
+IL_0009:
+	{
+		String_t* L_0 = __this->get_replacement_3();
+		int32_t L_1 = V_1;
+		int32_t L_2 = L_1;
+		V_1 = ((int32_t)((int32_t)L_2+(int32_t)1));
+		NullCheck(L_0);
+		Il2CppChar L_3 = String_get_Chars_m4230566705(L_0, L_2, /*hidden argument*/NULL);
+		V_3 = L_3;
+		Il2CppChar L_4 = V_3;
+		if ((((int32_t)L_4) == ((int32_t)((int32_t)36))))
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		goto IL_0090;
+	}
+
+IL_0027:
+	{
+		int32_t L_5 = V_1;
+		String_t* L_6 = __this->get_replacement_3();
+		NullCheck(L_6);
+		int32_t L_7 = String_get_Length_m1606060069(L_6, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_5) == ((uint32_t)L_7))))
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		goto IL_00a1;
+	}
+
+IL_003d:
+	{
+		String_t* L_8 = __this->get_replacement_3();
+		int32_t L_9 = V_1;
+		NullCheck(L_8);
+		Il2CppChar L_10 = String_get_Chars_m4230566705(L_8, L_9, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_10) == ((uint32_t)((int32_t)36)))))
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		int32_t L_11 = V_0;
+		int32_t L_12 = V_1;
+		ReplacementEvaluator_AddFromReplacement_m3891576415(__this, L_11, L_12, /*hidden argument*/NULL);
+		int32_t L_13 = V_1;
+		int32_t L_14 = ((int32_t)((int32_t)L_13+(int32_t)1));
+		V_1 = L_14;
+		V_0 = L_14;
+		goto IL_0090;
+	}
+
+IL_0063:
+	{
+		int32_t L_15 = V_1;
+		V_2 = ((int32_t)((int32_t)L_15-(int32_t)1));
+		int32_t L_16 = ReplacementEvaluator_CompileTerm_m1895109616(__this, (&V_1), /*hidden argument*/NULL);
+		V_4 = L_16;
+		int32_t L_17 = V_4;
+		if ((((int32_t)L_17) < ((int32_t)0)))
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		goto IL_0090;
+	}
+
+IL_007e:
+	{
+		int32_t L_18 = V_0;
+		int32_t L_19 = V_2;
+		ReplacementEvaluator_AddFromReplacement_m3891576415(__this, L_18, L_19, /*hidden argument*/NULL);
+		int32_t L_20 = V_4;
+		ReplacementEvaluator_AddInt_m2149831105(__this, L_20, /*hidden argument*/NULL);
+		int32_t L_21 = V_1;
+		V_0 = L_21;
+	}
+
+IL_0090:
+	{
+		int32_t L_22 = V_1;
+		String_t* L_23 = __this->get_replacement_3();
+		NullCheck(L_23);
+		int32_t L_24 = String_get_Length_m1606060069(L_23, /*hidden argument*/NULL);
+		if ((((int32_t)L_22) < ((int32_t)L_24)))
+		{
+			goto IL_0009;
+		}
+	}
+
+IL_00a1:
+	{
+		int32_t L_25 = V_0;
+		if (!L_25)
+		{
+			goto IL_00af;
+		}
+	}
+	{
+		int32_t L_26 = V_0;
+		int32_t L_27 = V_1;
+		ReplacementEvaluator_AddFromReplacement_m3891576415(__this, L_26, L_27, /*hidden argument*/NULL);
+	}
+
+IL_00af:
+	{
+		return;
+	}
+}
+// System.Int32 System.Text.RegularExpressions.ReplacementEvaluator::CompileTerm(System.Int32&)
+extern Il2CppClass* Char_t3454481338_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* IndexOutOfRangeException_t3527622107_il2cpp_TypeInfo_var;
+extern const uint32_t ReplacementEvaluator_CompileTerm_m1895109616_MetadataUsageId;
+extern "C"  int32_t ReplacementEvaluator_CompileTerm_m1895109616 (ReplacementEvaluator_t1001703513 * __this, int32_t* ___ptr0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ReplacementEvaluator_CompileTerm_m1895109616_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Il2CppChar V_0 = 0x0;
+	int32_t V_1 = 0;
+	String_t* V_2 = NULL;
+	int32_t V_3 = 0;
+	Il2CppChar V_4 = 0x0;
+	int32_t V_5 = 0;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		String_t* L_0 = __this->get_replacement_3();
+		int32_t* L_1 = ___ptr0;
+		NullCheck(L_0);
+		Il2CppChar L_2 = String_get_Chars_m4230566705(L_0, (*((int32_t*)L_1)), /*hidden argument*/NULL);
+		V_0 = L_2;
+		Il2CppChar L_3 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Char_t3454481338_il2cpp_TypeInfo_var);
+		bool L_4 = Char_IsDigit_m751559221(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		String_t* L_5 = __this->get_replacement_3();
+		int32_t* L_6 = ___ptr0;
+		int32_t L_7 = Parser_ParseDecimal_m4127410766(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		V_1 = L_7;
+		int32_t L_8 = V_1;
+		if ((((int32_t)L_8) < ((int32_t)0)))
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		int32_t L_9 = V_1;
+		Regex_t1803876613 * L_10 = __this->get_regex_0();
+		NullCheck(L_10);
+		int32_t L_11 = Regex_get_GroupCount_m1188068377(L_10, /*hidden argument*/NULL);
+		if ((((int32_t)L_9) <= ((int32_t)L_11)))
+		{
+			goto IL_0040;
+		}
+	}
+
+IL_003e:
+	{
+		return 0;
+	}
+
+IL_0040:
+	{
+		int32_t L_12 = V_1;
+		return ((int32_t)((int32_t)((-L_12))-(int32_t)4));
+	}
+
+IL_0045:
+	{
+		int32_t* L_13 = ___ptr0;
+		int32_t* L_14 = ___ptr0;
+		*((int32_t*)(L_13)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_14))+(int32_t)1));
+		Il2CppChar L_15 = V_0;
+		V_4 = L_15;
+		Il2CppChar L_16 = V_4;
+		if (((int32_t)((int32_t)L_16-(int32_t)((int32_t)38))) == 0)
+		{
+			goto IL_015e;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)((int32_t)38))) == 1)
+		{
+			goto IL_0164;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)((int32_t)38))) == 2)
+		{
+			goto IL_0070;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)((int32_t)38))) == 3)
+		{
+			goto IL_0070;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)((int32_t)38))) == 4)
+		{
+			goto IL_0070;
+		}
+		if (((int32_t)((int32_t)L_16-(int32_t)((int32_t)38))) == 5)
+		{
+			goto IL_0167;
+		}
+	}
+
+IL_0070:
+	{
+		Il2CppChar L_17 = V_4;
+		if ((((int32_t)L_17) == ((int32_t)((int32_t)95))))
+		{
+			goto IL_0176;
+		}
+	}
+	{
+		Il2CppChar L_18 = V_4;
+		if ((((int32_t)L_18) == ((int32_t)((int32_t)96))))
+		{
+			goto IL_0161;
+		}
+	}
+	{
+		Il2CppChar L_19 = V_4;
+		if ((((int32_t)L_19) == ((int32_t)((int32_t)123))))
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		goto IL_0178;
+	}
+
+IL_0090:
+	{
+		V_3 = (-1);
+	}
+
+IL_0092:
+	try
+	{ // begin try (depth: 1)
+		{
+			String_t* L_20 = __this->get_replacement_3();
+			int32_t* L_21 = ___ptr0;
+			NullCheck(L_20);
+			Il2CppChar L_22 = String_get_Chars_m4230566705(L_20, (*((int32_t*)L_21)), /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(Char_t3454481338_il2cpp_TypeInfo_var);
+			bool L_23 = Char_IsDigit_m751559221(NULL /*static, unused*/, L_22, /*hidden argument*/NULL);
+			if (!L_23)
+			{
+				goto IL_00c1;
+			}
+		}
+
+IL_00a9:
+		{
+			String_t* L_24 = __this->get_replacement_3();
+			int32_t* L_25 = ___ptr0;
+			int32_t L_26 = Parser_ParseDecimal_m4127410766(NULL /*static, unused*/, L_24, L_25, /*hidden argument*/NULL);
+			V_3 = L_26;
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_27 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+			V_2 = L_27;
+			goto IL_00ce;
+		}
+
+IL_00c1:
+		{
+			String_t* L_28 = __this->get_replacement_3();
+			int32_t* L_29 = ___ptr0;
+			String_t* L_30 = Parser_ParseName_m4004917341(NULL /*static, unused*/, L_28, L_29, /*hidden argument*/NULL);
+			V_2 = L_30;
+		}
+
+IL_00ce:
+		{
+			goto IL_00ee;
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (IndexOutOfRangeException_t3527622107_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_00d3;
+		throw e;
+	}
+
+CATCH_00d3:
+	{ // begin catch(System.IndexOutOfRangeException)
+		{
+			int32_t* L_31 = ___ptr0;
+			String_t* L_32 = __this->get_replacement_3();
+			NullCheck(L_32);
+			int32_t L_33 = String_get_Length_m1606060069(L_32, /*hidden argument*/NULL);
+			*((int32_t*)(L_31)) = (int32_t)L_33;
+			V_5 = 0;
+			goto IL_017a;
+		}
+
+IL_00e9:
+		{
+			; // IL_00e9: leave IL_00ee
+		}
+	} // end catch (depth: 1)
+
+IL_00ee:
+	{
+		int32_t* L_34 = ___ptr0;
+		String_t* L_35 = __this->get_replacement_3();
+		NullCheck(L_35);
+		int32_t L_36 = String_get_Length_m1606060069(L_35, /*hidden argument*/NULL);
+		if ((((int32_t)(*((int32_t*)L_34))) == ((int32_t)L_36)))
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		String_t* L_37 = __this->get_replacement_3();
+		int32_t* L_38 = ___ptr0;
+		NullCheck(L_37);
+		Il2CppChar L_39 = String_get_Chars_m4230566705(L_37, (*((int32_t*)L_38)), /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_39) == ((uint32_t)((int32_t)125)))))
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		String_t* L_40 = V_2;
+		if (L_40)
+		{
+			goto IL_011c;
+		}
+	}
+
+IL_011a:
+	{
+		return 0;
+	}
+
+IL_011c:
+	{
+		int32_t* L_41 = ___ptr0;
+		int32_t* L_42 = ___ptr0;
+		*((int32_t*)(L_41)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_42))+(int32_t)1));
+		String_t* L_43 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_44 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_45 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_43, L_44, /*hidden argument*/NULL);
+		if (!L_45)
+		{
+			goto IL_013f;
+		}
+	}
+	{
+		Regex_t1803876613 * L_46 = __this->get_regex_0();
+		String_t* L_47 = V_2;
+		NullCheck(L_46);
+		int32_t L_48 = Regex_GroupNumberFromName_m3228736983(L_46, L_47, /*hidden argument*/NULL);
+		V_3 = L_48;
+	}
+
+IL_013f:
+	{
+		int32_t L_49 = V_3;
+		if ((((int32_t)L_49) < ((int32_t)0)))
+		{
+			goto IL_0157;
+		}
+	}
+	{
+		int32_t L_50 = V_3;
+		Regex_t1803876613 * L_51 = __this->get_regex_0();
+		NullCheck(L_51);
+		int32_t L_52 = Regex_get_GroupCount_m1188068377(L_51, /*hidden argument*/NULL);
+		if ((((int32_t)L_50) <= ((int32_t)L_52)))
+		{
+			goto IL_0159;
+		}
+	}
+
+IL_0157:
+	{
+		return 0;
+	}
+
+IL_0159:
+	{
+		int32_t L_53 = V_3;
+		return ((int32_t)((int32_t)((-L_53))-(int32_t)4));
+	}
+
+IL_015e:
+	{
+		return ((int32_t)-4);
+	}
+
+IL_0161:
+	{
+		return ((int32_t)-2);
+	}
+
+IL_0164:
+	{
+		return ((int32_t)-3);
+	}
+
+IL_0167:
+	{
+		Regex_t1803876613 * L_54 = __this->get_regex_0();
+		NullCheck(L_54);
+		int32_t L_55 = Regex_get_GroupCount_m1188068377(L_54, /*hidden argument*/NULL);
+		return ((int32_t)((int32_t)((-L_55))-(int32_t)4));
+	}
+
+IL_0176:
+	{
+		return (-1);
+	}
+
+IL_0178:
+	{
+		return 0;
+	}
+
+IL_017a:
+	{
+		int32_t L_56 = V_5;
+		return L_56;
 	}
 }
 // System.Void System.Text.RegularExpressions.RxCompiler::.ctor()

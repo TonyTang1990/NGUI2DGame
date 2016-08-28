@@ -2991,8 +2991,11 @@ extern "C" void Math_Round_m565516458 ();
 extern "C" void Math_Round_m633691703 ();
 extern "C" void Math_RoundAwayFromZero_m1062982686 ();
 extern "C" void Math_Round_m2632426160 ();
+extern "C" void Math_Truncate_m2511675028 ();
 extern "C" void Math_Sin_m2320256962 ();
 extern "C" void Math_Cos_m43596019 ();
+extern "C" void Math_Acos_m2218287828 ();
+extern "C" void Math_Asin_m347297897 ();
 extern "C" void Math_Log_m3371716878 ();
 extern "C" void Math_Pow_m3099781906 ();
 extern "C" void Math_Sqrt_m932242488 ();
@@ -12017,6 +12020,7 @@ extern "C" void X509SubjectKeyIdentifierExtension_Decode_m4102819207 ();
 extern "C" void X509SubjectKeyIdentifierExtension_Encode_m4237278042 ();
 extern "C" void X509SubjectKeyIdentifierExtension_ToString_m4073475390 ();
 extern "C" void BaseMachine__ctor_m2327544039 ();
+extern "C" void BaseMachine_Replace_m2446015132 ();
 extern "C" void BaseMachine_Scan_m122450399 ();
 extern "C" void BaseMachine_LTRReplace_m2163978622 ();
 extern "C" void BaseMachine_LTRReplace_m1094774497 ();
@@ -12254,12 +12258,17 @@ extern "C" void Regex__ctor_m2521903438 ();
 extern "C" void Regex__ctor_m392221833 ();
 extern "C" void Regex__cctor_m3397544801 ();
 extern "C" void Regex_System_Runtime_Serialization_ISerializable_GetObjectData_m4035555909 ();
+extern "C" void Regex_Match_m92265676 ();
+extern "C" void Regex_Match_m1680452684 ();
+extern "C" void Regex_Replace_m4096557757 ();
+extern "C" void Regex_Replace_m566725221 ();
 extern "C" void Regex_validate_options_m3563464259 ();
 extern "C" void Regex_Init_m1873144192 ();
 extern "C" void Regex_InitNewRegex_m692548389 ();
 extern "C" void Regex_CreateMachineFactory_m3035817687 ();
 extern "C" void Regex_get_Options_m2450064630 ();
 extern "C" void Regex_get_RightToLeft_m529734879 ();
+extern "C" void Regex_GroupNumberFromName_m3228736983 ();
 extern "C" void Regex_GetGroupIndex_m1686599756 ();
 extern "C" void Regex_default_startat_m2116037983 ();
 extern "C" void Regex_IsMatch_m563118126 ();
@@ -12270,13 +12279,25 @@ extern "C" void Regex_Matches_m253372688 ();
 extern "C" void Regex_Matches_m1377235443 ();
 extern "C" void Regex_Replace_m349947612 ();
 extern "C" void Regex_Replace_m3184963602 ();
+extern "C" void Regex_Replace_m2510734387 ();
+extern "C" void Regex_Replace_m2887768543 ();
 extern "C" void Regex_ToString_m3687329849 ();
+extern "C" void Regex_get_GroupCount_m1188068377 ();
 extern "C" void Regex_get_Gap_m2028850051 ();
 extern "C" void Regex_CreateMachine_m1003508921 ();
 extern "C" void Regex_GetGroupNamesArray_m2600772921 ();
 extern "C" void Regex_get_GroupNumbers_m2242327956 ();
 extern "C" void Adapter__ctor_m1980753631 ();
 extern "C" void Adapter_Evaluate_m3020640275 ();
+extern "C" void ReplacementEvaluator__ctor_m3746900384 ();
+extern "C" void ReplacementEvaluator_Evaluate_m197194936 ();
+extern "C" void ReplacementEvaluator_EvaluateAppend_m4165611689 ();
+extern "C" void ReplacementEvaluator_get_NeedsGroupsOrCaptures_m3532058782 ();
+extern "C" void ReplacementEvaluator_Ensure_m2025598273 ();
+extern "C" void ReplacementEvaluator_AddFromReplacement_m3891576415 ();
+extern "C" void ReplacementEvaluator_AddInt_m2149831105 ();
+extern "C" void ReplacementEvaluator_Compile_m1875719451 ();
+extern "C" void ReplacementEvaluator_CompileTerm_m1895109616 ();
 extern "C" void RxCompiler__ctor_m2592327580 ();
 extern "C" void RxCompiler_MakeRoom_m462463302 ();
 extern "C" void RxCompiler_Emit_m1429737796 ();
@@ -12600,406 +12621,6 @@ extern "C" void UriTypeConverter_CanConvertTo_m1561226854 ();
 extern "C" void UriTypeConverter_ConvertFrom_m2743854187 ();
 extern "C" void UriTypeConverter_ConvertTo_m507771013 ();
 extern "C" void UriTypeConverter_IsValid_m2806107649 ();
-extern "C" void ConfigXmlTextReader__ctor_m965728314 ();
-extern "C" void ConfigXmlTextReader__ctor_m2778808542 ();
-extern "C" void ConfigXmlTextReader_get_Filename_m3902945538 ();
-extern "C" void ClientConfigurationSystem__ctor_m2508818941 ();
-extern "C" void ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608 ();
-extern "C" void ClientConfigurationSystem_get_Configuration_m1415521026 ();
-extern "C" void ConfigInfo__ctor_m2533184409 ();
-extern "C" void ConfigInfo_CreateInstance_m615435773 ();
-extern "C" void ConfigInfo_set_StreamName_m1734466909 ();
-extern "C" void ConfigInfo_ThrowException_m3313572946 ();
-extern "C" void ConfigInfoCollection__ctor_m2267743875 ();
-extern "C" void ConfigInfoCollection_get_AllKeys_m3546771423 ();
-extern "C" void ConfigInfoCollection_get_Item_m4196945655 ();
-extern "C" void ConfigInfoCollection_set_Item_m406516082 ();
-extern "C" void ConfigInfoCollection_Add_m1288541941 ();
-extern "C" void ConfigInfoCollection_Clear_m1297066444 ();
-extern "C" void ConfigInfoCollection_Remove_m1334699295 ();
-extern "C" void ConfigNameValueCollection__ctor_m1183291289 ();
-extern "C" void ConfigNameValueCollection__ctor_m2285608570 ();
-extern "C" void ConfigNameValueCollection_ResetModified_m2605677405 ();
-extern "C" void ConfigNameValueCollection_get_IsModified_m3218832143 ();
-extern "C" void ConfigNameValueCollection_Set_m2008693955 ();
-extern "C" void Configuration__ctor_m3545852494 ();
-extern "C" void Configuration__ctor_m88421328 ();
-extern "C" void Configuration_FindLocationConfiguration_m4081437406 ();
-extern "C" void Configuration_Init_m2991025886 ();
-extern "C" void Configuration_get_Parent_m335637978 ();
-extern "C" void Configuration_set_Parent_m3106974805 ();
-extern "C" void Configuration_GetParentWithFile_m1651703053 ();
-extern "C" void Configuration_get_ConfigHost_m854336265 ();
-extern "C" void Configuration_get_LocationConfigPath_m609030371 ();
-extern "C" void Configuration_get_ConfigPath_m937107392 ();
-extern "C" void Configuration_get_FilePath_m3184045596 ();
-extern "C" void Configuration_get_HasFile_m1167170352 ();
-extern "C" void Configuration_get_Locations_m2394414303 ();
-extern "C" void Configuration_get_RootSectionGroup_m1643677634 ();
-extern "C" void Configuration_get_SectionGroups_m2782934403 ();
-extern "C" void Configuration_get_Sections_m3724328875 ();
-extern "C" void Configuration_GetSection_m3056810807 ();
-extern "C" void Configuration_GetSectionInstance_m3769455073 ();
-extern "C" void Configuration_GetSectionGroupInstance_m2028928705 ();
-extern "C" void Configuration_SetSectionXml_m2783526347 ();
-extern "C" void Configuration_GetSectionXml_m1792995434 ();
-extern "C" void Configuration_Load_m851220319 ();
-extern "C" void Configuration_ReadConfigFile_m1878607525 ();
-extern "C" void Configuration_ReadData_m342895002 ();
-extern "C" void Configuration_ThrowException_m3079645534 ();
-extern "C" void ConfigurationCollectionAttribute__ctor_m1251693102 ();
-extern "C" void ConfigurationCollectionAttribute_get_AddItemName_m1343590308 ();
-extern "C" void ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535 ();
-extern "C" void ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851 ();
-extern "C" void ConfigurationCollectionAttribute_set_CollectionType_m1820962205 ();
-extern "C" void ConfigurationElement__ctor_m1276017081 ();
-extern "C" void ConfigurationElement_get_Configuration_m2347242418 ();
-extern "C" void ConfigurationElement_set_Configuration_m1639150663 ();
-extern "C" void ConfigurationElement_InitFromProperty_m3625723156 ();
-extern "C" void ConfigurationElement_get_ElementInformation_m3882602470 ();
-extern "C" void ConfigurationElement_get_RawXml_m2664527628 ();
-extern "C" void ConfigurationElement_set_RawXml_m3850583953 ();
-extern "C" void ConfigurationElement_Init_m1329365593 ();
-extern "C" void ConfigurationElement_get_LockAllAttributesExcept_m3610263831 ();
-extern "C" void ConfigurationElement_get_LockAllElementsExcept_m1554073633 ();
-extern "C" void ConfigurationElement_get_LockAttributes_m3450186057 ();
-extern "C" void ConfigurationElement_get_LockElements_m2225570247 ();
-extern "C" void ConfigurationElement_set_LockItem_m3758070483 ();
-extern "C" void ConfigurationElement_SetPropertyValue_m1782021972 ();
-extern "C" void ConfigurationElement_GetKeyProperties_m4219970304 ();
-extern "C" void ConfigurationElement_GetDefaultCollection_m1796439560 ();
-extern "C" void ConfigurationElement_get_Item_m1850092018 ();
-extern "C" void ConfigurationElement_set_Item_m2558768429 ();
-extern "C" void ConfigurationElement_get_Item_m3478882412 ();
-extern "C" void ConfigurationElement_set_Item_m3141894725 ();
-extern "C" void ConfigurationElement_get_Properties_m2163360678 ();
-extern "C" void ConfigurationElement_Equals_m3484522968 ();
-extern "C" void ConfigurationElement_GetHashCode_m2198573252 ();
-extern "C" void ConfigurationElement_HasValues_m1341383433 ();
-extern "C" void ConfigurationElement_HasLocalModifications_m169968917 ();
-extern "C" void ConfigurationElement_DeserializeElement_m2430565615 ();
-extern "C" void ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910 ();
-extern "C" void ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706 ();
-extern "C" void ConfigurationElement_OnRequiredPropertyNotFound_m3323765040 ();
-extern "C" void ConfigurationElement_PreSerialize_m1824129726 ();
-extern "C" void ConfigurationElement_PostDeserialize_m3225465312 ();
-extern "C" void ConfigurationElement_InitializeDefault_m2939047706 ();
-extern "C" void ConfigurationElement_IsModified_m748618350 ();
-extern "C" void ConfigurationElement_SetReadOnly_m1594739059 ();
-extern "C" void ConfigurationElement_IsReadOnly_m2244525315 ();
-extern "C" void ConfigurationElement_Reset_m484744193 ();
-extern "C" void ConfigurationElement_ResetModified_m933170487 ();
-extern "C" void ConfigurationElement_SerializeElement_m4131562944 ();
-extern "C" void ConfigurationElement_SerializeToXmlElement_m3789742405 ();
-extern "C" void ConfigurationElement_Unmerge_m2515561191 ();
-extern "C" void ConfigurationElement_HasValue_m1390685398 ();
-extern "C" void ConfigurationElement_ValidateValue_m1396480566 ();
-extern "C" void ConfigurationElementCollection__ctor_m1722138055 ();
-extern "C" void ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345 ();
-extern "C" void ConfigurationElementCollection_InitFromProperty_m3084253332 ();
-extern "C" void ConfigurationElementCollection_get_CollectionType_m2878912072 ();
-extern "C" void ConfigurationElementCollection_get_IsBasic_m1624364384 ();
-extern "C" void ConfigurationElementCollection_get_IsAlternate_m1087333324 ();
-extern "C" void ConfigurationElementCollection_get_Count_m1016392721 ();
-extern "C" void ConfigurationElementCollection_get_ElementName_m1163032572 ();
-extern "C" void ConfigurationElementCollection_set_EmitClear_m649573135 ();
-extern "C" void ConfigurationElementCollection_get_SyncRoot_m1263605066 ();
-extern "C" void ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882 ();
-extern "C" void ConfigurationElementCollection_get_AddElementName_m2131549453 ();
-extern "C" void ConfigurationElementCollection_get_ClearElementName_m344564617 ();
-extern "C" void ConfigurationElementCollection_get_RemoveElementName_m670755192 ();
-extern "C" void ConfigurationElementCollection_BaseAdd_m692033632 ();
-extern "C" void ConfigurationElementCollection_BaseAdd_m1594255685 ();
-extern "C" void ConfigurationElementCollection_BaseClear_m1999336003 ();
-extern "C" void ConfigurationElementCollection_BaseGet_m498332263 ();
-extern "C" void ConfigurationElementCollection_BaseGet_m673060682 ();
-extern "C" void ConfigurationElementCollection_BaseIndexOf_m1544895010 ();
-extern "C" void ConfigurationElementCollection_IndexOfKey_m1888078841 ();
-extern "C" void ConfigurationElementCollection_BaseRemove_m1128013164 ();
-extern "C" void ConfigurationElementCollection_BaseRemoveAt_m1239272108 ();
-extern "C" void ConfigurationElementCollection_CompareKeys_m682234560 ();
-extern "C" void ConfigurationElementCollection_CreateNewElement_m3219927641 ();
-extern "C" void ConfigurationElementCollection_CreateNewElementInternal_m226698700 ();
-extern "C" void ConfigurationElementCollection_Equals_m2221773756 ();
-extern "C" void ConfigurationElementCollection_GetHashCode_m770974360 ();
-extern "C" void ConfigurationElementCollection_GetEnumerator_m2214669871 ();
-extern "C" void ConfigurationElementCollection_IsElementName_m2704993900 ();
-extern "C" void ConfigurationElementCollection_IsElementRemovable_m1916442331 ();
-extern "C" void ConfigurationElementCollection_IsModified_m4233298518 ();
-extern "C" void ConfigurationElementCollection_IsReadOnly_m2147280149 ();
-extern "C" void ConfigurationElementCollection_HasValues_m4112686071 ();
-extern "C" void ConfigurationElementCollection_Reset_m3142114271 ();
-extern "C" void ConfigurationElementCollection_ResetModified_m3318214445 ();
-extern "C" void ConfigurationElementCollection_SetReadOnly_m2819095069 ();
-extern "C" void ConfigurationElementCollection_SerializeElement_m3696766444 ();
-extern "C" void ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278 ();
-extern "C" void ConfigurationElementCollection_Unmerge_m2009439485 ();
-extern "C" void ConfigurationRemoveElement__ctor_m2892373574 ();
-extern "C" void ConfigurationRemoveElement_get_KeyValue_m2322918292 ();
-extern "C" void ConfigurationRemoveElement_get_Properties_m4160822773 ();
-extern "C" void ConfigurationErrorsException__ctor_m3609325505 ();
-extern "C" void ConfigurationErrorsException__ctor_m2348714781 ();
-extern "C" void ConfigurationErrorsException__ctor_m1926925674 ();
-extern "C" void ConfigurationErrorsException__ctor_m3963297863 ();
-extern "C" void ConfigurationErrorsException__ctor_m3089652486 ();
-extern "C" void ConfigurationErrorsException__ctor_m4265896371 ();
-extern "C" void ConfigurationErrorsException__ctor_m3506512730 ();
-extern "C" void ConfigurationErrorsException_get_BareMessage_m403421148 ();
-extern "C" void ConfigurationErrorsException_get_Message_m3733233144 ();
-extern "C" void ConfigurationErrorsException_GetFilename_m2673389627 ();
-extern "C" void ConfigurationErrorsException_GetLineNumber_m1372608032 ();
-extern "C" void ConfigurationErrorsException_GetFilename_m2049567258 ();
-extern "C" void ConfigurationErrorsException_GetLineNumber_m3976484637 ();
-extern "C" void ConfigurationErrorsException_GetObjectData_m770656613 ();
-extern "C" void ConfigurationFileMap__ctor_m3731838539 ();
-extern "C" void ConfigurationFileMap__ctor_m3124444437 ();
-extern "C" void ConfigurationFileMap_get_MachineConfigFilename_m1702653625 ();
-extern "C" void ConfigurationFileMap_set_MachineConfigFilename_m3052034378 ();
-extern "C" void ConfigurationFileMap_Clone_m1273941989 ();
-extern "C" void ConfigurationLocation__ctor_m3125296074 ();
-extern "C" void ConfigurationLocation__cctor_m1384898491 ();
-extern "C" void ConfigurationLocation_get_Path_m2365456525 ();
-extern "C" void ConfigurationLocation_OpenConfiguration_m2905080700 ();
-extern "C" void ConfigurationLocation_SetParentConfiguration_m4197005207 ();
-extern "C" void ConfigurationLocationCollection__ctor_m303069056 ();
-extern "C" void ConfigurationLocationCollection_Add_m3681642539 ();
-extern "C" void ConfigurationLocationCollection_Find_m3684263568 ();
-extern "C" void ConfigurationLockCollection__ctor_m870306509 ();
-extern "C" void ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008 ();
-extern "C" void ConfigurationLockCollection_CheckName_m2810988355 ();
-extern "C" void ConfigurationLockCollection_Add_m3416925987 ();
-extern "C" void ConfigurationLockCollection_Clear_m2378334261 ();
-extern "C" void ConfigurationLockCollection_GetEnumerator_m3742833280 ();
-extern "C" void ConfigurationLockCollection_SetFromList_m2739237306 ();
-extern "C" void ConfigurationLockCollection_get_Count_m3926033248 ();
-extern "C" void ConfigurationLockCollection_get_SyncRoot_m1477706993 ();
-extern "C" void ConfigurationManager__cctor_m145104057 ();
-extern "C" void ConfigurationManager_GetAssemblyInfo_m1959334153 ();
-extern "C" void ConfigurationManager_OpenExeConfigurationInternal_m2337857263 ();
-extern "C" void ConfigurationManager_get_ConfigurationFactory_m113132422 ();
-extern "C" void ConfigurationManager_get_ConfigurationSystem_m1820628092 ();
-extern "C" void ConfigurationManager_GetSection_m1187558274 ();
-extern "C" void ConfigurationProperty__ctor_m2339141717 ();
-extern "C" void ConfigurationProperty__ctor_m2205928547 ();
-extern "C" void ConfigurationProperty__ctor_m1024361505 ();
-extern "C" void ConfigurationProperty__ctor_m2779674618 ();
-extern "C" void ConfigurationProperty__ctor_m664996226 ();
-extern "C" void ConfigurationProperty__cctor_m3667988185 ();
-extern "C" void ConfigurationProperty_get_DefaultValue_m426297024 ();
-extern "C" void ConfigurationProperty_get_IsKey_m2843757270 ();
-extern "C" void ConfigurationProperty_get_IsRequired_m2849112540 ();
-extern "C" void ConfigurationProperty_get_IsDefaultCollection_m4193636108 ();
-extern "C" void ConfigurationProperty_get_Name_m2150541641 ();
-extern "C" void ConfigurationProperty_get_Type_m573764699 ();
-extern "C" void ConfigurationProperty_get_Validator_m1030428852 ();
-extern "C" void ConfigurationProperty_ConvertFromString_m661781545 ();
-extern "C" void ConfigurationProperty_ConvertToString_m137757750 ();
-extern "C" void ConfigurationProperty_get_IsElement_m12977767 ();
-extern "C" void ConfigurationProperty_get_CollectionAttribute_m256228153 ();
-extern "C" void ConfigurationProperty_set_CollectionAttribute_m21883792 ();
-extern "C" void ConfigurationProperty_Validate_m556423690 ();
-extern "C" void ConfigurationPropertyAttribute__ctor_m2756034538 ();
-extern "C" void ConfigurationPropertyAttribute_get_DefaultValue_m315790916 ();
-extern "C" void ConfigurationPropertyAttribute_set_DefaultValue_m645825465 ();
-extern "C" void ConfigurationPropertyAttribute_get_Options_m78342746 ();
-extern "C" void ConfigurationPropertyAttribute_set_Options_m540649869 ();
-extern "C" void ConfigurationPropertyAttribute_get_Name_m3548275941 ();
-extern "C" void ConfigurationPropertyCollection__ctor_m2795982958 ();
-extern "C" void ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930 ();
-extern "C" void ConfigurationPropertyCollection_get_Count_m1518273402 ();
-extern "C" void ConfigurationPropertyCollection_get_SyncRoot_m2789197201 ();
-extern "C" void ConfigurationPropertyCollection_Add_m3481099429 ();
-extern "C" void ConfigurationPropertyCollection_GetEnumerator_m3414286410 ();
-extern "C" void ConfigurationSection__ctor_m714843276 ();
-extern "C" void ConfigurationSection_get_SectionHandler_m1982719862 ();
-extern "C" void ConfigurationSection_set_SectionHandler_m1410633441 ();
-extern "C" void ConfigurationSection_get_SectionInformation_m4037021195 ();
-extern "C" void ConfigurationSection_get_ConfigContext_m4131621597 ();
-extern "C" void ConfigurationSection_set_ConfigContext_m1616871218 ();
-extern "C" void ConfigurationSection_GetRuntimeObject_m3965484768 ();
-extern "C" void ConfigurationSection_IsModified_m1833174423 ();
-extern "C" void ConfigurationSection_ResetModified_m2300774056 ();
-extern "C" void ConfigurationSection_CreateElement_m1756012205 ();
-extern "C" void ConfigurationSection_DoDeserializeSection_m2782358321 ();
-extern "C" void ConfigurationSection_DeserializeSection_m1139223106 ();
-extern "C" void ConfigurationSection_DeserializeConfigSource_m495463306 ();
-extern "C" void ConfigurationSection_SerializeSection_m2886244226 ();
-extern "C" void ConfigurationSectionCollection__ctor_m452173858 ();
-extern "C" void ConfigurationSectionCollection_get_Keys_m1706717625 ();
-extern "C" void ConfigurationSectionCollection_get_Count_m3164332684 ();
-extern "C" void ConfigurationSectionCollection_get_Item_m3421303889 ();
-extern "C" void ConfigurationSectionCollection_GetEnumerator_m1242675576 ();
-extern "C" void ConfigurationSectionCollection_GetObjectData_m253846356 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235 ();
-extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337 ();
-extern "C" void ConfigurationSectionGroup__ctor_m2215148105 ();
-extern "C" void ConfigurationSectionGroup_get_Config_m3001742842 ();
-extern "C" void ConfigurationSectionGroup_Initialize_m2622037419 ();
-extern "C" void ConfigurationSectionGroup_get_SectionGroups_m2522870927 ();
-extern "C" void ConfigurationSectionGroup_get_Sections_m3081736119 ();
-extern "C" void ConfigurationSectionGroupCollection__ctor_m2237904677 ();
-extern "C" void ConfigurationSectionGroupCollection_get_Keys_m3664428060 ();
-extern "C" void ConfigurationSectionGroupCollection_get_Count_m447488593 ();
-extern "C" void ConfigurationSectionGroupCollection_get_Item_m4125903849 ();
-extern "C" void ConfigurationSectionGroupCollection_GetEnumerator_m2684317377 ();
-extern "C" void ConfigurationSectionGroupCollection_GetObjectData_m378227929 ();
-extern "C" void ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466 ();
-extern "C" void ConfigurationValidatorBase__ctor_m3250462424 ();
-extern "C" void ConfigurationValidatorBase_CanValidate_m2900122087 ();
-extern "C" void DefaultSection__ctor_m1597606775 ();
-extern "C" void DefaultSection__cctor_m1370258022 ();
-extern "C" void DefaultSection_DeserializeSection_m2332286625 ();
-extern "C" void DefaultSection_IsModified_m1050808524 ();
-extern "C" void DefaultSection_Reset_m516688665 ();
-extern "C" void DefaultSection_ResetModified_m2081880583 ();
-extern "C" void DefaultSection_SerializeSection_m580503059 ();
-extern "C" void DefaultSection_get_Properties_m1402553764 ();
-extern "C" void DefaultValidator__ctor_m233258192 ();
-extern "C" void DefaultValidator_CanValidate_m2475130869 ();
-extern "C" void DefaultValidator_Validate_m4293733324 ();
-extern "C" void ElementInformation__ctor_m815008552 ();
-extern "C" void ElementInformation_get_Properties_m1533763968 ();
-extern "C" void ElementInformation_Reset_m3203551617 ();
-extern "C" void ElementMap__ctor_m2348370310 ();
-extern "C" void ElementMap__cctor_m3070084744 ();
-extern "C" void ElementMap_GetMap_m1137301092 ();
-extern "C" void ElementMap_get_Properties_m169107978 ();
-extern "C" void ExeConfigurationFileMap__ctor_m2848771159 ();
-extern "C" void ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138 ();
-extern "C" void ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183 ();
-extern "C" void ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578 ();
-extern "C" void ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243 ();
-extern "C" void ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010 ();
-extern "C" void ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815 ();
-extern "C" void ExeConfigurationFileMap_Clone_m3686499741 ();
-extern "C" void ExeConfigurationHost__ctor_m2672717525 ();
-extern "C" void ExeConfigurationHost_Init_m1279008829 ();
-extern "C" void ExeConfigurationHost_GetStreamName_m4070417723 ();
-extern "C" void ExeConfigurationHost_InitForConfiguration_m442278400 ();
-extern "C" void IgnoreSection__ctor_m4055714512 ();
-extern "C" void IgnoreSection__cctor_m1005553135 ();
-extern "C" void IgnoreSection_IsModified_m3722026291 ();
-extern "C" void IgnoreSection_DeserializeSection_m2922463074 ();
-extern "C" void IgnoreSection_Reset_m2294022138 ();
-extern "C" void IgnoreSection_ResetModified_m2018290788 ();
-extern "C" void IgnoreSection_SerializeSection_m1724288736 ();
-extern "C" void IgnoreSection_get_Properties_m3548508015 ();
-extern "C" void InternalConfigurationFactory__ctor_m2455511552 ();
-extern "C" void InternalConfigurationFactory_Create_m3329707975 ();
-extern "C" void InternalConfigurationHost__ctor_m1120670670 ();
-extern "C" void InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953 ();
-extern "C" void InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364 ();
-extern "C" void InternalConfigurationHost_GetConfigType_m2265190311 ();
-extern "C" void InternalConfigurationHost_IsDefinitionAllowed_m2472316359 ();
-extern "C" void InternalConfigurationHost_get_bundled_machine_config_m171293269 ();
-extern "C" void InternalConfigurationHost_OpenStreamForRead_m1823276945 ();
-extern "C" void InternalConfigurationRoot__ctor_m903766256 ();
-extern "C" void InternalConfigurationRoot_Init_m2920331433 ();
-extern "C" void InternalConfigurationSystem__ctor_m1377055107 ();
-extern "C" void InternalConfigurationSystem_Init_m117598888 ();
-extern "C" void InternalConfigurationSystem_InitForConfiguration_m909576572 ();
-extern "C" void InternalConfigurationSystem_get_Host_m3360228097 ();
-extern "C" void PropertyInformation__ctor_m3964645511 ();
-extern "C" void PropertyInformation_get_DefaultValue_m2865970966 ();
-extern "C" void PropertyInformation_get_IsKey_m53514336 ();
-extern "C" void PropertyInformation_get_IsModified_m2197427276 ();
-extern "C" void PropertyInformation_set_IsModified_m2277508543 ();
-extern "C" void PropertyInformation_get_IsRequired_m2394064138 ();
-extern "C" void PropertyInformation_get_Name_m339533533 ();
-extern "C" void PropertyInformation_get_Type_m2447867467 ();
-extern "C" void PropertyInformation_get_Value_m1250658193 ();
-extern "C" void PropertyInformation_set_Value_m1161719494 ();
-extern "C" void PropertyInformation_Reset_m4131859557 ();
-extern "C" void PropertyInformation_get_IsElement_m1135806159 ();
-extern "C" void PropertyInformation_get_ValueOrigin_m1155932344 ();
-extern "C" void PropertyInformation_GetStringValue_m233999863 ();
-extern "C" void PropertyInformation_SetStringValue_m1643234174 ();
-extern "C" void PropertyInformation_get_Property_m530348717 ();
-extern "C" void PropertyInformationCollection__ctor_m3360125324 ();
-extern "C" void PropertyInformationCollection_get_Item_m1640937095 ();
-extern "C" void PropertyInformationCollection_GetEnumerator_m2342156100 ();
-extern "C" void PropertyInformationCollection_Add_m3086044235 ();
-extern "C" void PropertyInformationCollection_GetObjectData_m1752565104 ();
-extern "C" void PropertyInformationEnumerator__ctor_m3513537070 ();
-extern "C" void PropertyInformationEnumerator_get_Current_m3392533325 ();
-extern "C" void PropertyInformationEnumerator_MoveNext_m1887690358 ();
-extern "C" void PropertyInformationEnumerator_Reset_m2871712389 ();
-extern "C" void ProtectedConfiguration_get_Providers_m2677655615 ();
-extern "C" void ProtectedConfiguration_get_Section_m2417461286 ();
-extern "C" void ProtectedConfiguration_GetProvider_m659380218 ();
-extern "C" void ProtectedConfigurationProviderCollection__ctor_m2871984156 ();
-extern "C" void ProtectedConfigurationProviderCollection_get_Item_m2881465527 ();
-extern "C" void ProtectedConfigurationProviderCollection_Add_m1943221191 ();
-extern "C" void ProtectedConfigurationSection__cctor_m710069301 ();
-extern "C" void ProtectedConfigurationSection_get_Providers_m3108810289 ();
-extern "C" void ProtectedConfigurationSection_get_Properties_m3218406561 ();
-extern "C" void ProtectedConfigurationSection_GetAllProviders_m1380267610 ();
-extern "C" void ProtectedConfigurationSection_InstantiateProvider_m1916220169 ();
-extern "C" void ProviderBase_Initialize_m309026731 ();
-extern "C" void ProviderBase_get_Name_m1908650449 ();
-extern "C" void ProviderCollection__ctor_m2739070153 ();
-extern "C" void ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097 ();
-extern "C" void ProviderCollection_Add_m2062313466 ();
-extern "C" void ProviderCollection_GetEnumerator_m2535943389 ();
-extern "C" void ProviderCollection_get_Count_m1651598797 ();
-extern "C" void ProviderCollection_get_SyncRoot_m2583585530 ();
-extern "C" void ProviderCollection_get_Item_m4205164 ();
-extern "C" void ProviderSettings__ctor_m2418229397 ();
-extern "C" void ProviderSettings__cctor_m1551014246 ();
-extern "C" void ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192 ();
-extern "C" void ProviderSettings_IsModified_m4208587056 ();
-extern "C" void ProviderSettings_Reset_m748547671 ();
-extern "C" void ProviderSettings_Unmerge_m3899437761 ();
-extern "C" void ProviderSettings_get_Name_m2720563190 ();
-extern "C" void ProviderSettings_get_Type_m525859805 ();
-extern "C" void ProviderSettings_get_Properties_m1448998824 ();
-extern "C" void ProviderSettings_get_Parameters_m1237896802 ();
-extern "C" void ProviderSettingsCollection__cctor_m2098499738 ();
-extern "C" void ProviderSettingsCollection_CreateNewElement_m278470757 ();
-extern "C" void ProviderSettingsCollection_GetElementKey_m2598146650 ();
-extern "C" void ProviderSettingsCollection_get_Properties_m2175226160 ();
-extern "C" void SectionGroupInfo__ctor_m2214539325 ();
-extern "C" void SectionGroupInfo__cctor_m673398592 ();
-extern "C" void SectionGroupInfo_AddChild_m3251971407 ();
-extern "C" void SectionGroupInfo_Clear_m3188268036 ();
-extern "C" void SectionGroupInfo_HasChild_m1202859971 ();
-extern "C" void SectionGroupInfo_RemoveChild_m2246840815 ();
-extern "C" void SectionGroupInfo_get_Sections_m2472444668 ();
-extern "C" void SectionGroupInfo_get_Groups_m2080419472 ();
-extern "C" void SectionGroupInfo_ReadConfig_m964124140 ();
-extern "C" void SectionGroupInfo_ReadRemoveSection_m3200085140 ();
-extern "C" void SectionGroupInfo_ReadRootData_m1364370771 ();
-extern "C" void SectionGroupInfo_ReadData_m4130533217 ();
-extern "C" void SectionGroupInfo_ReadContent_m2298842435 ();
-extern "C" void SectionGroupInfo_GetConfigInfo_m1968621232 ();
-extern "C" void SectionGroupInfo_Merge_m1107900400 ();
-extern "C" void SectionInfo__ctor_m3237924430 ();
-extern "C" void SectionInfo_CreateInstance_m3857848628 ();
-extern "C" void SectionInfo_ReadConfig_m1508625577 ();
-extern "C" void SectionInfo_ReadData_m2814313648 ();
-extern "C" void SectionInfo_Merge_m2513541987 ();
-extern "C" void SectionInformation__ctor_m118501942 ();
-extern "C" void SectionInformation_get_ConfigFilePath_m966874317 ();
-extern "C" void SectionInformation_set_ConfigFilePath_m2908232936 ();
-extern "C" void SectionInformation_set_AllowDefinition_m391233744 ();
-extern "C" void SectionInformation_set_AllowExeDefinition_m2089738550 ();
-extern "C" void SectionInformation_set_AllowLocation_m1178294342 ();
-extern "C" void SectionInformation_get_ConfigSource_m1613439595 ();
-extern "C" void SectionInformation_set_ConfigSource_m2152533200 ();
-extern "C" void SectionInformation_set_RequirePermission_m1040565520 ();
-extern "C" void SectionInformation_set_RestartOnExternalChanges_m2815572962 ();
-extern "C" void SectionInformation_GetParentSection_m3638988220 ();
-extern "C" void SectionInformation_SetParentSection_m321631079 ();
-extern "C" void SectionInformation_ProtectSection_m230982508 ();
-extern "C" void SectionInformation_SetRawXml_m1162572473 ();
-extern "C" void SectionInformation_SetName_m2381998591 ();
-extern "C" void MonoInternalNoteAttribute__ctor_m2854554221 ();
-extern "C" void MonoTODOAttribute__ctor_m817868876 ();
-extern "C" void MonoTODOAttribute__ctor_m1940477654 ();
 extern "C" void Locale_GetText_m1644072174 ();
 extern "C" void BigInteger__ctor_m4013661868 ();
 extern "C" void BigInteger__ctor_m2991182310 ();
@@ -13905,6 +13526,455 @@ extern "C" void X509StoreManager_get_TrustedRootCertificates_m122138510 ();
 extern "C" void X509Stores__ctor_m2453291421 ();
 extern "C" void X509Stores_get_TrustedRoot_m3412716694 ();
 extern "C" void X509Stores_Open_m2057354563 ();
+extern "C" void ConfigXmlTextReader__ctor_m965728314 ();
+extern "C" void ConfigXmlTextReader__ctor_m2778808542 ();
+extern "C" void ConfigXmlTextReader_get_Filename_m3902945538 ();
+extern "C" void ClientConfigurationSystem__ctor_m2508818941 ();
+extern "C" void ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608 ();
+extern "C" void ClientConfigurationSystem_get_Configuration_m1415521026 ();
+extern "C" void ConfigInfo__ctor_m2533184409 ();
+extern "C" void ConfigInfo_CreateInstance_m615435773 ();
+extern "C" void ConfigInfo_set_StreamName_m1734466909 ();
+extern "C" void ConfigInfo_ThrowException_m3313572946 ();
+extern "C" void ConfigInfoCollection__ctor_m2267743875 ();
+extern "C" void ConfigInfoCollection_get_AllKeys_m3546771423 ();
+extern "C" void ConfigInfoCollection_get_Item_m4196945655 ();
+extern "C" void ConfigInfoCollection_set_Item_m406516082 ();
+extern "C" void ConfigInfoCollection_Add_m1288541941 ();
+extern "C" void ConfigInfoCollection_Clear_m1297066444 ();
+extern "C" void ConfigInfoCollection_Remove_m1334699295 ();
+extern "C" void ConfigNameValueCollection__ctor_m1183291289 ();
+extern "C" void ConfigNameValueCollection__ctor_m2285608570 ();
+extern "C" void ConfigNameValueCollection_ResetModified_m2605677405 ();
+extern "C" void ConfigNameValueCollection_get_IsModified_m3218832143 ();
+extern "C" void ConfigNameValueCollection_Set_m2008693955 ();
+extern "C" void Configuration__ctor_m3545852494 ();
+extern "C" void Configuration__ctor_m88421328 ();
+extern "C" void Configuration_FindLocationConfiguration_m4081437406 ();
+extern "C" void Configuration_Init_m2991025886 ();
+extern "C" void Configuration_get_Parent_m335637978 ();
+extern "C" void Configuration_set_Parent_m3106974805 ();
+extern "C" void Configuration_GetParentWithFile_m1651703053 ();
+extern "C" void Configuration_get_ConfigHost_m854336265 ();
+extern "C" void Configuration_get_LocationConfigPath_m609030371 ();
+extern "C" void Configuration_get_ConfigPath_m937107392 ();
+extern "C" void Configuration_get_FilePath_m3184045596 ();
+extern "C" void Configuration_get_HasFile_m1167170352 ();
+extern "C" void Configuration_get_Locations_m2394414303 ();
+extern "C" void Configuration_get_RootSectionGroup_m1643677634 ();
+extern "C" void Configuration_get_SectionGroups_m2782934403 ();
+extern "C" void Configuration_get_Sections_m3724328875 ();
+extern "C" void Configuration_GetSection_m3056810807 ();
+extern "C" void Configuration_GetSectionInstance_m3769455073 ();
+extern "C" void Configuration_GetSectionGroupInstance_m2028928705 ();
+extern "C" void Configuration_SetSectionXml_m2783526347 ();
+extern "C" void Configuration_GetSectionXml_m1792995434 ();
+extern "C" void Configuration_Load_m851220319 ();
+extern "C" void Configuration_ReadConfigFile_m1878607525 ();
+extern "C" void Configuration_ReadData_m342895002 ();
+extern "C" void Configuration_ThrowException_m3079645534 ();
+extern "C" void ConfigurationCollectionAttribute__ctor_m1251693102 ();
+extern "C" void ConfigurationCollectionAttribute_get_AddItemName_m1343590308 ();
+extern "C" void ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535 ();
+extern "C" void ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851 ();
+extern "C" void ConfigurationCollectionAttribute_set_CollectionType_m1820962205 ();
+extern "C" void ConfigurationElement__ctor_m1276017081 ();
+extern "C" void ConfigurationElement_get_Configuration_m2347242418 ();
+extern "C" void ConfigurationElement_set_Configuration_m1639150663 ();
+extern "C" void ConfigurationElement_InitFromProperty_m3625723156 ();
+extern "C" void ConfigurationElement_get_ElementInformation_m3882602470 ();
+extern "C" void ConfigurationElement_get_RawXml_m2664527628 ();
+extern "C" void ConfigurationElement_set_RawXml_m3850583953 ();
+extern "C" void ConfigurationElement_Init_m1329365593 ();
+extern "C" void ConfigurationElement_get_LockAllAttributesExcept_m3610263831 ();
+extern "C" void ConfigurationElement_get_LockAllElementsExcept_m1554073633 ();
+extern "C" void ConfigurationElement_get_LockAttributes_m3450186057 ();
+extern "C" void ConfigurationElement_get_LockElements_m2225570247 ();
+extern "C" void ConfigurationElement_set_LockItem_m3758070483 ();
+extern "C" void ConfigurationElement_SetPropertyValue_m1782021972 ();
+extern "C" void ConfigurationElement_GetKeyProperties_m4219970304 ();
+extern "C" void ConfigurationElement_GetDefaultCollection_m1796439560 ();
+extern "C" void ConfigurationElement_get_Item_m1850092018 ();
+extern "C" void ConfigurationElement_set_Item_m2558768429 ();
+extern "C" void ConfigurationElement_get_Item_m3478882412 ();
+extern "C" void ConfigurationElement_set_Item_m3141894725 ();
+extern "C" void ConfigurationElement_get_Properties_m2163360678 ();
+extern "C" void ConfigurationElement_Equals_m3484522968 ();
+extern "C" void ConfigurationElement_GetHashCode_m2198573252 ();
+extern "C" void ConfigurationElement_HasValues_m1341383433 ();
+extern "C" void ConfigurationElement_HasLocalModifications_m169968917 ();
+extern "C" void ConfigurationElement_DeserializeElement_m2430565615 ();
+extern "C" void ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910 ();
+extern "C" void ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706 ();
+extern "C" void ConfigurationElement_OnRequiredPropertyNotFound_m3323765040 ();
+extern "C" void ConfigurationElement_PreSerialize_m1824129726 ();
+extern "C" void ConfigurationElement_PostDeserialize_m3225465312 ();
+extern "C" void ConfigurationElement_InitializeDefault_m2939047706 ();
+extern "C" void ConfigurationElement_IsModified_m748618350 ();
+extern "C" void ConfigurationElement_SetReadOnly_m1594739059 ();
+extern "C" void ConfigurationElement_IsReadOnly_m2244525315 ();
+extern "C" void ConfigurationElement_Reset_m484744193 ();
+extern "C" void ConfigurationElement_ResetModified_m933170487 ();
+extern "C" void ConfigurationElement_SerializeElement_m4131562944 ();
+extern "C" void ConfigurationElement_SerializeToXmlElement_m3789742405 ();
+extern "C" void ConfigurationElement_Unmerge_m2515561191 ();
+extern "C" void ConfigurationElement_HasValue_m1390685398 ();
+extern "C" void ConfigurationElement_ValidateValue_m1396480566 ();
+extern "C" void ConfigurationElementCollection__ctor_m1722138055 ();
+extern "C" void ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345 ();
+extern "C" void ConfigurationElementCollection_InitFromProperty_m3084253332 ();
+extern "C" void ConfigurationElementCollection_get_CollectionType_m2878912072 ();
+extern "C" void ConfigurationElementCollection_get_IsBasic_m1624364384 ();
+extern "C" void ConfigurationElementCollection_get_IsAlternate_m1087333324 ();
+extern "C" void ConfigurationElementCollection_get_Count_m1016392721 ();
+extern "C" void ConfigurationElementCollection_get_ElementName_m1163032572 ();
+extern "C" void ConfigurationElementCollection_set_EmitClear_m649573135 ();
+extern "C" void ConfigurationElementCollection_get_SyncRoot_m1263605066 ();
+extern "C" void ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882 ();
+extern "C" void ConfigurationElementCollection_get_AddElementName_m2131549453 ();
+extern "C" void ConfigurationElementCollection_get_ClearElementName_m344564617 ();
+extern "C" void ConfigurationElementCollection_get_RemoveElementName_m670755192 ();
+extern "C" void ConfigurationElementCollection_BaseAdd_m692033632 ();
+extern "C" void ConfigurationElementCollection_BaseAdd_m1594255685 ();
+extern "C" void ConfigurationElementCollection_BaseClear_m1999336003 ();
+extern "C" void ConfigurationElementCollection_BaseGet_m498332263 ();
+extern "C" void ConfigurationElementCollection_BaseGet_m673060682 ();
+extern "C" void ConfigurationElementCollection_BaseIndexOf_m1544895010 ();
+extern "C" void ConfigurationElementCollection_IndexOfKey_m1888078841 ();
+extern "C" void ConfigurationElementCollection_BaseRemove_m1128013164 ();
+extern "C" void ConfigurationElementCollection_BaseRemoveAt_m1239272108 ();
+extern "C" void ConfigurationElementCollection_CompareKeys_m682234560 ();
+extern "C" void ConfigurationElementCollection_CreateNewElement_m3219927641 ();
+extern "C" void ConfigurationElementCollection_CreateNewElementInternal_m226698700 ();
+extern "C" void ConfigurationElementCollection_Equals_m2221773756 ();
+extern "C" void ConfigurationElementCollection_GetHashCode_m770974360 ();
+extern "C" void ConfigurationElementCollection_GetEnumerator_m2214669871 ();
+extern "C" void ConfigurationElementCollection_IsElementName_m2704993900 ();
+extern "C" void ConfigurationElementCollection_IsElementRemovable_m1916442331 ();
+extern "C" void ConfigurationElementCollection_IsModified_m4233298518 ();
+extern "C" void ConfigurationElementCollection_IsReadOnly_m2147280149 ();
+extern "C" void ConfigurationElementCollection_HasValues_m4112686071 ();
+extern "C" void ConfigurationElementCollection_Reset_m3142114271 ();
+extern "C" void ConfigurationElementCollection_ResetModified_m3318214445 ();
+extern "C" void ConfigurationElementCollection_SetReadOnly_m2819095069 ();
+extern "C" void ConfigurationElementCollection_SerializeElement_m3696766444 ();
+extern "C" void ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278 ();
+extern "C" void ConfigurationElementCollection_Unmerge_m2009439485 ();
+extern "C" void ConfigurationRemoveElement__ctor_m2892373574 ();
+extern "C" void ConfigurationRemoveElement_get_KeyValue_m2322918292 ();
+extern "C" void ConfigurationRemoveElement_get_Properties_m4160822773 ();
+extern "C" void ConfigurationErrorsException__ctor_m3609325505 ();
+extern "C" void ConfigurationErrorsException__ctor_m2348714781 ();
+extern "C" void ConfigurationErrorsException__ctor_m1926925674 ();
+extern "C" void ConfigurationErrorsException__ctor_m3963297863 ();
+extern "C" void ConfigurationErrorsException__ctor_m3089652486 ();
+extern "C" void ConfigurationErrorsException__ctor_m4265896371 ();
+extern "C" void ConfigurationErrorsException__ctor_m3506512730 ();
+extern "C" void ConfigurationErrorsException_get_BareMessage_m403421148 ();
+extern "C" void ConfigurationErrorsException_get_Message_m3733233144 ();
+extern "C" void ConfigurationErrorsException_GetFilename_m2673389627 ();
+extern "C" void ConfigurationErrorsException_GetLineNumber_m1372608032 ();
+extern "C" void ConfigurationErrorsException_GetFilename_m2049567258 ();
+extern "C" void ConfigurationErrorsException_GetLineNumber_m3976484637 ();
+extern "C" void ConfigurationErrorsException_GetObjectData_m770656613 ();
+extern "C" void ConfigurationFileMap__ctor_m3731838539 ();
+extern "C" void ConfigurationFileMap__ctor_m3124444437 ();
+extern "C" void ConfigurationFileMap_get_MachineConfigFilename_m1702653625 ();
+extern "C" void ConfigurationFileMap_set_MachineConfigFilename_m3052034378 ();
+extern "C" void ConfigurationFileMap_Clone_m1273941989 ();
+extern "C" void ConfigurationLocation__ctor_m3125296074 ();
+extern "C" void ConfigurationLocation__cctor_m1384898491 ();
+extern "C" void ConfigurationLocation_get_Path_m2365456525 ();
+extern "C" void ConfigurationLocation_OpenConfiguration_m2905080700 ();
+extern "C" void ConfigurationLocation_SetParentConfiguration_m4197005207 ();
+extern "C" void ConfigurationLocationCollection__ctor_m303069056 ();
+extern "C" void ConfigurationLocationCollection_Add_m3681642539 ();
+extern "C" void ConfigurationLocationCollection_Find_m3684263568 ();
+extern "C" void ConfigurationLockCollection__ctor_m870306509 ();
+extern "C" void ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008 ();
+extern "C" void ConfigurationLockCollection_CheckName_m2810988355 ();
+extern "C" void ConfigurationLockCollection_Add_m3416925987 ();
+extern "C" void ConfigurationLockCollection_Clear_m2378334261 ();
+extern "C" void ConfigurationLockCollection_GetEnumerator_m3742833280 ();
+extern "C" void ConfigurationLockCollection_SetFromList_m2739237306 ();
+extern "C" void ConfigurationLockCollection_get_Count_m3926033248 ();
+extern "C" void ConfigurationLockCollection_get_SyncRoot_m1477706993 ();
+extern "C" void ConfigurationManager__cctor_m145104057 ();
+extern "C" void ConfigurationManager_GetAssemblyInfo_m1959334153 ();
+extern "C" void ConfigurationManager_OpenExeConfigurationInternal_m2337857263 ();
+extern "C" void ConfigurationManager_get_ConfigurationFactory_m113132422 ();
+extern "C" void ConfigurationManager_get_ConfigurationSystem_m1820628092 ();
+extern "C" void ConfigurationManager_GetSection_m1187558274 ();
+extern "C" void ConfigurationProperty__ctor_m2339141717 ();
+extern "C" void ConfigurationProperty__ctor_m2205928547 ();
+extern "C" void ConfigurationProperty__ctor_m1024361505 ();
+extern "C" void ConfigurationProperty__ctor_m2779674618 ();
+extern "C" void ConfigurationProperty__ctor_m664996226 ();
+extern "C" void ConfigurationProperty__cctor_m3667988185 ();
+extern "C" void ConfigurationProperty_get_DefaultValue_m426297024 ();
+extern "C" void ConfigurationProperty_get_IsKey_m2843757270 ();
+extern "C" void ConfigurationProperty_get_IsRequired_m2849112540 ();
+extern "C" void ConfigurationProperty_get_IsDefaultCollection_m4193636108 ();
+extern "C" void ConfigurationProperty_get_Name_m2150541641 ();
+extern "C" void ConfigurationProperty_get_Type_m573764699 ();
+extern "C" void ConfigurationProperty_get_Validator_m1030428852 ();
+extern "C" void ConfigurationProperty_ConvertFromString_m661781545 ();
+extern "C" void ConfigurationProperty_ConvertToString_m137757750 ();
+extern "C" void ConfigurationProperty_get_IsElement_m12977767 ();
+extern "C" void ConfigurationProperty_get_CollectionAttribute_m256228153 ();
+extern "C" void ConfigurationProperty_set_CollectionAttribute_m21883792 ();
+extern "C" void ConfigurationProperty_Validate_m556423690 ();
+extern "C" void ConfigurationPropertyAttribute__ctor_m2756034538 ();
+extern "C" void ConfigurationPropertyAttribute_get_DefaultValue_m315790916 ();
+extern "C" void ConfigurationPropertyAttribute_set_DefaultValue_m645825465 ();
+extern "C" void ConfigurationPropertyAttribute_get_Options_m78342746 ();
+extern "C" void ConfigurationPropertyAttribute_set_Options_m540649869 ();
+extern "C" void ConfigurationPropertyAttribute_get_Name_m3548275941 ();
+extern "C" void ConfigurationPropertyCollection__ctor_m2795982958 ();
+extern "C" void ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930 ();
+extern "C" void ConfigurationPropertyCollection_get_Count_m1518273402 ();
+extern "C" void ConfigurationPropertyCollection_get_SyncRoot_m2789197201 ();
+extern "C" void ConfigurationPropertyCollection_Add_m3481099429 ();
+extern "C" void ConfigurationPropertyCollection_GetEnumerator_m3414286410 ();
+extern "C" void ConfigurationSection__ctor_m714843276 ();
+extern "C" void ConfigurationSection_get_SectionHandler_m1982719862 ();
+extern "C" void ConfigurationSection_set_SectionHandler_m1410633441 ();
+extern "C" void ConfigurationSection_get_SectionInformation_m4037021195 ();
+extern "C" void ConfigurationSection_get_ConfigContext_m4131621597 ();
+extern "C" void ConfigurationSection_set_ConfigContext_m1616871218 ();
+extern "C" void ConfigurationSection_GetRuntimeObject_m3965484768 ();
+extern "C" void ConfigurationSection_IsModified_m1833174423 ();
+extern "C" void ConfigurationSection_ResetModified_m2300774056 ();
+extern "C" void ConfigurationSection_CreateElement_m1756012205 ();
+extern "C" void ConfigurationSection_DoDeserializeSection_m2782358321 ();
+extern "C" void ConfigurationSection_DeserializeSection_m1139223106 ();
+extern "C" void ConfigurationSection_DeserializeConfigSource_m495463306 ();
+extern "C" void ConfigurationSection_SerializeSection_m2886244226 ();
+extern "C" void ConfigurationSectionCollection__ctor_m452173858 ();
+extern "C" void ConfigurationSectionCollection_get_Keys_m1706717625 ();
+extern "C" void ConfigurationSectionCollection_get_Count_m3164332684 ();
+extern "C" void ConfigurationSectionCollection_get_Item_m3421303889 ();
+extern "C" void ConfigurationSectionCollection_GetEnumerator_m1242675576 ();
+extern "C" void ConfigurationSectionCollection_GetObjectData_m253846356 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235 ();
+extern "C" void U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337 ();
+extern "C" void ConfigurationSectionGroup__ctor_m2215148105 ();
+extern "C" void ConfigurationSectionGroup_get_Config_m3001742842 ();
+extern "C" void ConfigurationSectionGroup_Initialize_m2622037419 ();
+extern "C" void ConfigurationSectionGroup_get_SectionGroups_m2522870927 ();
+extern "C" void ConfigurationSectionGroup_get_Sections_m3081736119 ();
+extern "C" void ConfigurationSectionGroupCollection__ctor_m2237904677 ();
+extern "C" void ConfigurationSectionGroupCollection_get_Keys_m3664428060 ();
+extern "C" void ConfigurationSectionGroupCollection_get_Count_m447488593 ();
+extern "C" void ConfigurationSectionGroupCollection_get_Item_m4125903849 ();
+extern "C" void ConfigurationSectionGroupCollection_GetEnumerator_m2684317377 ();
+extern "C" void ConfigurationSectionGroupCollection_GetObjectData_m378227929 ();
+extern "C" void ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466 ();
+extern "C" void ConfigurationValidatorBase__ctor_m3250462424 ();
+extern "C" void ConfigurationValidatorBase_CanValidate_m2900122087 ();
+extern "C" void DefaultSection__ctor_m1597606775 ();
+extern "C" void DefaultSection__cctor_m1370258022 ();
+extern "C" void DefaultSection_DeserializeSection_m2332286625 ();
+extern "C" void DefaultSection_IsModified_m1050808524 ();
+extern "C" void DefaultSection_Reset_m516688665 ();
+extern "C" void DefaultSection_ResetModified_m2081880583 ();
+extern "C" void DefaultSection_SerializeSection_m580503059 ();
+extern "C" void DefaultSection_get_Properties_m1402553764 ();
+extern "C" void DefaultValidator__ctor_m233258192 ();
+extern "C" void DefaultValidator_CanValidate_m2475130869 ();
+extern "C" void DefaultValidator_Validate_m4293733324 ();
+extern "C" void ElementInformation__ctor_m815008552 ();
+extern "C" void ElementInformation_get_Properties_m1533763968 ();
+extern "C" void ElementInformation_Reset_m3203551617 ();
+extern "C" void ElementMap__ctor_m2348370310 ();
+extern "C" void ElementMap__cctor_m3070084744 ();
+extern "C" void ElementMap_GetMap_m1137301092 ();
+extern "C" void ElementMap_get_Properties_m169107978 ();
+extern "C" void ExeConfigurationFileMap__ctor_m2848771159 ();
+extern "C" void ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138 ();
+extern "C" void ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183 ();
+extern "C" void ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578 ();
+extern "C" void ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243 ();
+extern "C" void ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010 ();
+extern "C" void ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815 ();
+extern "C" void ExeConfigurationFileMap_Clone_m3686499741 ();
+extern "C" void ExeConfigurationHost__ctor_m2672717525 ();
+extern "C" void ExeConfigurationHost_Init_m1279008829 ();
+extern "C" void ExeConfigurationHost_GetStreamName_m4070417723 ();
+extern "C" void ExeConfigurationHost_InitForConfiguration_m442278400 ();
+extern "C" void IgnoreSection__ctor_m4055714512 ();
+extern "C" void IgnoreSection__cctor_m1005553135 ();
+extern "C" void IgnoreSection_IsModified_m3722026291 ();
+extern "C" void IgnoreSection_DeserializeSection_m2922463074 ();
+extern "C" void IgnoreSection_Reset_m2294022138 ();
+extern "C" void IgnoreSection_ResetModified_m2018290788 ();
+extern "C" void IgnoreSection_SerializeSection_m1724288736 ();
+extern "C" void IgnoreSection_get_Properties_m3548508015 ();
+extern "C" void InternalConfigurationFactory__ctor_m2455511552 ();
+extern "C" void InternalConfigurationFactory_Create_m3329707975 ();
+extern "C" void InternalConfigurationHost__ctor_m1120670670 ();
+extern "C" void InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953 ();
+extern "C" void InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364 ();
+extern "C" void InternalConfigurationHost_GetConfigType_m2265190311 ();
+extern "C" void InternalConfigurationHost_IsDefinitionAllowed_m2472316359 ();
+extern "C" void InternalConfigurationHost_get_bundled_machine_config_m171293269 ();
+extern "C" void InternalConfigurationHost_OpenStreamForRead_m1823276945 ();
+extern "C" void InternalConfigurationRoot__ctor_m903766256 ();
+extern "C" void InternalConfigurationRoot_Init_m2920331433 ();
+extern "C" void InternalConfigurationSystem__ctor_m1377055107 ();
+extern "C" void InternalConfigurationSystem_Init_m117598888 ();
+extern "C" void InternalConfigurationSystem_InitForConfiguration_m909576572 ();
+extern "C" void InternalConfigurationSystem_get_Host_m3360228097 ();
+extern "C" void PropertyInformation__ctor_m3964645511 ();
+extern "C" void PropertyInformation_get_DefaultValue_m2865970966 ();
+extern "C" void PropertyInformation_get_IsKey_m53514336 ();
+extern "C" void PropertyInformation_get_IsModified_m2197427276 ();
+extern "C" void PropertyInformation_set_IsModified_m2277508543 ();
+extern "C" void PropertyInformation_get_IsRequired_m2394064138 ();
+extern "C" void PropertyInformation_get_Name_m339533533 ();
+extern "C" void PropertyInformation_get_Type_m2447867467 ();
+extern "C" void PropertyInformation_get_Value_m1250658193 ();
+extern "C" void PropertyInformation_set_Value_m1161719494 ();
+extern "C" void PropertyInformation_Reset_m4131859557 ();
+extern "C" void PropertyInformation_get_IsElement_m1135806159 ();
+extern "C" void PropertyInformation_get_ValueOrigin_m1155932344 ();
+extern "C" void PropertyInformation_GetStringValue_m233999863 ();
+extern "C" void PropertyInformation_SetStringValue_m1643234174 ();
+extern "C" void PropertyInformation_get_Property_m530348717 ();
+extern "C" void PropertyInformationCollection__ctor_m3360125324 ();
+extern "C" void PropertyInformationCollection_get_Item_m1640937095 ();
+extern "C" void PropertyInformationCollection_GetEnumerator_m2342156100 ();
+extern "C" void PropertyInformationCollection_Add_m3086044235 ();
+extern "C" void PropertyInformationCollection_GetObjectData_m1752565104 ();
+extern "C" void PropertyInformationEnumerator__ctor_m3513537070 ();
+extern "C" void PropertyInformationEnumerator_get_Current_m3392533325 ();
+extern "C" void PropertyInformationEnumerator_MoveNext_m1887690358 ();
+extern "C" void PropertyInformationEnumerator_Reset_m2871712389 ();
+extern "C" void ProtectedConfiguration_get_Providers_m2677655615 ();
+extern "C" void ProtectedConfiguration_get_Section_m2417461286 ();
+extern "C" void ProtectedConfiguration_GetProvider_m659380218 ();
+extern "C" void ProtectedConfigurationProviderCollection__ctor_m2871984156 ();
+extern "C" void ProtectedConfigurationProviderCollection_get_Item_m2881465527 ();
+extern "C" void ProtectedConfigurationProviderCollection_Add_m1943221191 ();
+extern "C" void ProtectedConfigurationSection__cctor_m710069301 ();
+extern "C" void ProtectedConfigurationSection_get_Providers_m3108810289 ();
+extern "C" void ProtectedConfigurationSection_get_Properties_m3218406561 ();
+extern "C" void ProtectedConfigurationSection_GetAllProviders_m1380267610 ();
+extern "C" void ProtectedConfigurationSection_InstantiateProvider_m1916220169 ();
+extern "C" void ProviderBase_Initialize_m309026731 ();
+extern "C" void ProviderBase_get_Name_m1908650449 ();
+extern "C" void ProviderCollection__ctor_m2739070153 ();
+extern "C" void ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097 ();
+extern "C" void ProviderCollection_Add_m2062313466 ();
+extern "C" void ProviderCollection_GetEnumerator_m2535943389 ();
+extern "C" void ProviderCollection_get_Count_m1651598797 ();
+extern "C" void ProviderCollection_get_SyncRoot_m2583585530 ();
+extern "C" void ProviderCollection_get_Item_m4205164 ();
+extern "C" void ProviderSettings__ctor_m2418229397 ();
+extern "C" void ProviderSettings__cctor_m1551014246 ();
+extern "C" void ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192 ();
+extern "C" void ProviderSettings_IsModified_m4208587056 ();
+extern "C" void ProviderSettings_Reset_m748547671 ();
+extern "C" void ProviderSettings_Unmerge_m3899437761 ();
+extern "C" void ProviderSettings_get_Name_m2720563190 ();
+extern "C" void ProviderSettings_get_Type_m525859805 ();
+extern "C" void ProviderSettings_get_Properties_m1448998824 ();
+extern "C" void ProviderSettings_get_Parameters_m1237896802 ();
+extern "C" void ProviderSettingsCollection__cctor_m2098499738 ();
+extern "C" void ProviderSettingsCollection_CreateNewElement_m278470757 ();
+extern "C" void ProviderSettingsCollection_GetElementKey_m2598146650 ();
+extern "C" void ProviderSettingsCollection_get_Properties_m2175226160 ();
+extern "C" void SectionGroupInfo__ctor_m2214539325 ();
+extern "C" void SectionGroupInfo__cctor_m673398592 ();
+extern "C" void SectionGroupInfo_AddChild_m3251971407 ();
+extern "C" void SectionGroupInfo_Clear_m3188268036 ();
+extern "C" void SectionGroupInfo_HasChild_m1202859971 ();
+extern "C" void SectionGroupInfo_RemoveChild_m2246840815 ();
+extern "C" void SectionGroupInfo_get_Sections_m2472444668 ();
+extern "C" void SectionGroupInfo_get_Groups_m2080419472 ();
+extern "C" void SectionGroupInfo_ReadConfig_m964124140 ();
+extern "C" void SectionGroupInfo_ReadRemoveSection_m3200085140 ();
+extern "C" void SectionGroupInfo_ReadRootData_m1364370771 ();
+extern "C" void SectionGroupInfo_ReadData_m4130533217 ();
+extern "C" void SectionGroupInfo_ReadContent_m2298842435 ();
+extern "C" void SectionGroupInfo_GetConfigInfo_m1968621232 ();
+extern "C" void SectionGroupInfo_Merge_m1107900400 ();
+extern "C" void SectionInfo__ctor_m3237924430 ();
+extern "C" void SectionInfo_CreateInstance_m3857848628 ();
+extern "C" void SectionInfo_ReadConfig_m1508625577 ();
+extern "C" void SectionInfo_ReadData_m2814313648 ();
+extern "C" void SectionInfo_Merge_m2513541987 ();
+extern "C" void SectionInformation__ctor_m118501942 ();
+extern "C" void SectionInformation_get_ConfigFilePath_m966874317 ();
+extern "C" void SectionInformation_set_ConfigFilePath_m2908232936 ();
+extern "C" void SectionInformation_set_AllowDefinition_m391233744 ();
+extern "C" void SectionInformation_set_AllowExeDefinition_m2089738550 ();
+extern "C" void SectionInformation_set_AllowLocation_m1178294342 ();
+extern "C" void SectionInformation_get_ConfigSource_m1613439595 ();
+extern "C" void SectionInformation_set_ConfigSource_m2152533200 ();
+extern "C" void SectionInformation_set_RequirePermission_m1040565520 ();
+extern "C" void SectionInformation_set_RestartOnExternalChanges_m2815572962 ();
+extern "C" void SectionInformation_GetParentSection_m3638988220 ();
+extern "C" void SectionInformation_SetParentSection_m321631079 ();
+extern "C" void SectionInformation_ProtectSection_m230982508 ();
+extern "C" void SectionInformation_SetRawXml_m1162572473 ();
+extern "C" void SectionInformation_SetName_m2381998591 ();
+extern "C" void MonoInternalNoteAttribute__ctor_m2854554221 ();
+extern "C" void MonoTODOAttribute__ctor_m817868876 ();
+extern "C" void MonoTODOAttribute__ctor_m1940477654 ();
+extern "C" void Locale_GetText_m3480617287 ();
+extern "C" void Locale_GetText_m512920887 ();
+extern "C" void KeyBuilder_get_Rng_m587346233 ();
+extern "C" void KeyBuilder_Key_m4049966884 ();
+extern "C" void KeyBuilder_IV_m3179063262 ();
+extern "C" void SymmetricTransform__ctor_m4253316482 ();
+extern "C" void SymmetricTransform_System_IDisposable_Dispose_m2454577762 ();
+extern "C" void SymmetricTransform_Finalize_m2220170723 ();
+extern "C" void SymmetricTransform_Dispose_m3101686157 ();
+extern "C" void SymmetricTransform_get_CanTransformMultipleBlocks_m1752313288 ();
+extern "C" void SymmetricTransform_get_CanReuseTransform_m1428518336 ();
+extern "C" void SymmetricTransform_get_InputBlockSize_m3264284364 ();
+extern "C" void SymmetricTransform_get_OutputBlockSize_m2278045573 ();
+extern "C" void SymmetricTransform_Transform_m2796657329 ();
+extern "C" void SymmetricTransform_CBC_m1132405431 ();
+extern "C" void SymmetricTransform_CFB_m2852848536 ();
+extern "C" void SymmetricTransform_OFB_m397918932 ();
+extern "C" void SymmetricTransform_CTS_m4257703857 ();
+extern "C" void SymmetricTransform_CheckInput_m1287204652 ();
+extern "C" void SymmetricTransform_TransformBlock_m2733481667 ();
+extern "C" void SymmetricTransform_get_KeepLastBlock_m2750346332 ();
+extern "C" void SymmetricTransform_InternalTransformBlock_m2049959094 ();
+extern "C" void SymmetricTransform_Random_m3912330177 ();
+extern "C" void SymmetricTransform_ThrowBadPaddingException_m2553969731 ();
+extern "C" void SymmetricTransform_FinalEncrypt_m952048093 ();
+extern "C" void SymmetricTransform_FinalDecrypt_m1391053911 ();
+extern "C" void SymmetricTransform_TransformFinalBlock_m631349995 ();
+extern "C" void ExtensionAttribute__ctor_m1028297080 ();
+extern "C" void Aes__ctor_m4020215067 ();
+extern "C" void AesManaged__ctor_m2322442838 ();
+extern "C" void AesManaged_GenerateIV_m199727220 ();
+extern "C" void AesManaged_GenerateKey_m2925191332 ();
+extern "C" void AesManaged_CreateDecryptor_m1136566004 ();
+extern "C" void AesManaged_CreateEncryptor_m1729287824 ();
+extern "C" void AesManaged_get_IV_m560133634 ();
+extern "C" void AesManaged_set_IV_m2479404195 ();
+extern "C" void AesManaged_get_Key_m1100519798 ();
+extern "C" void AesManaged_set_Key_m2884557591 ();
+extern "C" void AesManaged_get_KeySize_m2773901127 ();
+extern "C" void AesManaged_set_KeySize_m3458102022 ();
+extern "C" void AesManaged_CreateDecryptor_m76892358 ();
+extern "C" void AesManaged_CreateEncryptor_m2261049526 ();
+extern "C" void AesManaged_Dispose_m2144430298 ();
+extern "C" void AesTransform__ctor_m3304222252 ();
+extern "C" void AesTransform__cctor_m619532760 ();
+extern "C" void AesTransform_ECB_m1505875511 ();
+extern "C" void AesTransform_SubByte_m3508318874 ();
+extern "C" void AesTransform_Encrypt128_m617981965 ();
+extern "C" void AesTransform_Decrypt128_m3067379519 ();
 extern "C" void ApplicationIDAttribute__ctor_m2524567988 ();
 extern "C" void ApplicationNameAttribute__ctor_m3402247142 ();
 extern "C" void Adler32_get_Value_m24599817 ();
@@ -14135,55 +14205,6 @@ extern "C" void ZipHelperStream_ReadLEInt_m2263293059 ();
 extern "C" void ZipNameTransform__ctor_m1825291376 ();
 extern "C" void ZipNameTransform__cctor_m2749763903 ();
 extern "C" void ZipNameTransform_IsValidName_m4036463524 ();
-extern "C" void Locale_GetText_m3480617287 ();
-extern "C" void Locale_GetText_m512920887 ();
-extern "C" void KeyBuilder_get_Rng_m587346233 ();
-extern "C" void KeyBuilder_Key_m4049966884 ();
-extern "C" void KeyBuilder_IV_m3179063262 ();
-extern "C" void SymmetricTransform__ctor_m4253316482 ();
-extern "C" void SymmetricTransform_System_IDisposable_Dispose_m2454577762 ();
-extern "C" void SymmetricTransform_Finalize_m2220170723 ();
-extern "C" void SymmetricTransform_Dispose_m3101686157 ();
-extern "C" void SymmetricTransform_get_CanTransformMultipleBlocks_m1752313288 ();
-extern "C" void SymmetricTransform_get_CanReuseTransform_m1428518336 ();
-extern "C" void SymmetricTransform_get_InputBlockSize_m3264284364 ();
-extern "C" void SymmetricTransform_get_OutputBlockSize_m2278045573 ();
-extern "C" void SymmetricTransform_Transform_m2796657329 ();
-extern "C" void SymmetricTransform_CBC_m1132405431 ();
-extern "C" void SymmetricTransform_CFB_m2852848536 ();
-extern "C" void SymmetricTransform_OFB_m397918932 ();
-extern "C" void SymmetricTransform_CTS_m4257703857 ();
-extern "C" void SymmetricTransform_CheckInput_m1287204652 ();
-extern "C" void SymmetricTransform_TransformBlock_m2733481667 ();
-extern "C" void SymmetricTransform_get_KeepLastBlock_m2750346332 ();
-extern "C" void SymmetricTransform_InternalTransformBlock_m2049959094 ();
-extern "C" void SymmetricTransform_Random_m3912330177 ();
-extern "C" void SymmetricTransform_ThrowBadPaddingException_m2553969731 ();
-extern "C" void SymmetricTransform_FinalEncrypt_m952048093 ();
-extern "C" void SymmetricTransform_FinalDecrypt_m1391053911 ();
-extern "C" void SymmetricTransform_TransformFinalBlock_m631349995 ();
-extern "C" void ExtensionAttribute__ctor_m1028297080 ();
-extern "C" void Aes__ctor_m4020215067 ();
-extern "C" void AesManaged__ctor_m2322442838 ();
-extern "C" void AesManaged_GenerateIV_m199727220 ();
-extern "C" void AesManaged_GenerateKey_m2925191332 ();
-extern "C" void AesManaged_CreateDecryptor_m1136566004 ();
-extern "C" void AesManaged_CreateEncryptor_m1729287824 ();
-extern "C" void AesManaged_get_IV_m560133634 ();
-extern "C" void AesManaged_set_IV_m2479404195 ();
-extern "C" void AesManaged_get_Key_m1100519798 ();
-extern "C" void AesManaged_set_Key_m2884557591 ();
-extern "C" void AesManaged_get_KeySize_m2773901127 ();
-extern "C" void AesManaged_set_KeySize_m3458102022 ();
-extern "C" void AesManaged_CreateDecryptor_m76892358 ();
-extern "C" void AesManaged_CreateEncryptor_m2261049526 ();
-extern "C" void AesManaged_Dispose_m2144430298 ();
-extern "C" void AesTransform__ctor_m3304222252 ();
-extern "C" void AesTransform__cctor_m619532760 ();
-extern "C" void AesTransform_ECB_m1505875511 ();
-extern "C" void AesTransform_SubByte_m3508318874 ();
-extern "C" void AesTransform_Encrypt128_m617981965 ();
-extern "C" void AesTransform_Decrypt128_m3067379519 ();
 extern "C" void Locale_GetText_m3820229042 ();
 extern "C" void Aggregation__ctor_m2535285851 ();
 extern "C" void Aggregation_Equals_m3066718575 ();
@@ -15547,98 +15568,6 @@ extern "C" void XmlHelper_Decode_m2774409164 ();
 extern "C" void XmlHelper_Encode_m3223022556 ();
 extern "C" void XmlTableWriter_WriteTables_m3701515798 ();
 extern "C" void XmlTableWriter_WriteTableList_m2522002349 ();
-extern "C" void FormatReader_get_FormatString_m3486194298 ();
-extern "C" void FormatReader_set_FormatString_m894199159 ();
-extern "C" void FormatReader__ctor_m1666847312 ();
-extern "C" void FormatReader_IsDateFormatString_m3255475084 ();
-extern "C" void FormatReader_IsSurroundedByQuotes_m2508166547 ();
-extern "C" void FormatReader_IsPrecededByBackSlash_m4280506347 ();
-extern "C" void FormatReader_IsSurroundedByBracket_m2253026190 ();
-extern "C" void FormatReader_NumberOfUnescapedOccurances_m2715376771 ();
-extern "C" void Helpers_ConvertEscapeChars_m2354180383 ();
-extern "C" void Helpers_ConvertFromOATime_m3489838396 ();
-extern "C" void Helpers_FixDataTypes_m3481117268 ();
-extern "C" void Helpers_AddColumnHandleDuplicate_m2739049988 ();
-extern "C" void Helpers_U3CConvertEscapeCharsU3Eb__0_m1680631643 ();
-extern "C" void Helpers__cctor_m3113545832 ();
-extern "C" void XlsxDimension__ctor_m3600381333 ();
-extern "C" void XlsxDimension__ctor_m2160908895 ();
-extern "C" void XlsxDimension_get_FirstRow_m2062924334 ();
-extern "C" void XlsxDimension_set_FirstRow_m1574325995 ();
-extern "C" void XlsxDimension_set_LastRow_m985415191 ();
-extern "C" void XlsxDimension_get_FirstCol_m2062942536 ();
-extern "C" void XlsxDimension_set_FirstCol_m2228137341 ();
-extern "C" void XlsxDimension_get_LastCol_m3832305192 ();
-extern "C" void XlsxDimension_set_LastCol_m3765907389 ();
-extern "C" void XlsxDimension_ParseDimensions_m2074318159 ();
-extern "C" void XlsxDimension_XlsxDim_m731433956 ();
-extern "C" void XlsxNumFmt_get_Id_m2158901850 ();
-extern "C" void XlsxNumFmt_get_FormatCode_m3092717742 ();
-extern "C" void XlsxNumFmt__ctor_m369337161 ();
-extern "C" void XlsxSST__ctor_m3040107683 ();
-extern "C" void XlsxStyles__ctor_m1825862751 ();
-extern "C" void XlsxStyles_get_CellXfs_m233426665 ();
-extern "C" void XlsxStyles_get_NumFmts_m1131716335 ();
-extern "C" void XlsxWorkbook__ctor_m912209719 ();
-extern "C" void XlsxWorkbook_get_Sheets_m3489303710 ();
-extern "C" void XlsxWorkbook_get_SST_m3367944442 ();
-extern "C" void XlsxWorkbook_get_Styles_m2879484330 ();
-extern "C" void XlsxWorkbook_ReadStyles_m4081036932 ();
-extern "C" void XlsxWorkbook_ReadSharedStrings_m783934533 ();
-extern "C" void XlsxWorkbook_ReadWorkbook_m1276773658 ();
-extern "C" void XlsxWorkbook_ReadWorkbookRels_m2614923554 ();
-extern "C" void XlsxWorksheet_get_IsEmpty_m2360951215 ();
-extern "C" void XlsxWorksheet_set_IsEmpty_m3098075726 ();
-extern "C" void XlsxWorksheet_get_Dimension_m3111336406 ();
-extern "C" void XlsxWorksheet_set_Dimension_m827420835 ();
-extern "C" void XlsxWorksheet_get_ColumnsCount_m2624441818 ();
-extern "C" void XlsxWorksheet_get_Name_m872113654 ();
-extern "C" void XlsxWorksheet_get_RID_m2274730670 ();
-extern "C" void XlsxWorksheet_get_Path_m3419688902 ();
-extern "C" void XlsxWorksheet_set_Path_m3886834411 ();
-extern "C" void XlsxWorksheet__ctor_m2044061580 ();
-extern "C" void XlsxXf_get_NumFmtId_m3300837920 ();
-extern "C" void XlsxXf_get_ApplyNumberFormat_m3096434926 ();
-extern "C" void XlsxXf__ctor_m3211114059 ();
-extern "C" void ReferenceHelper_ReferenceToColumnAndRow_m89366838 ();
-extern "C" void ZipWorker_get_IsValid_m3976233184 ();
-extern "C" void ZipWorker_get_ExceptionMessage_m775648301 ();
-extern "C" void ZipWorker__ctor_m3365551045 ();
-extern "C" void ZipWorker_Extract_m3209149031 ();
-extern "C" void ZipWorker_GetSharedStringsStream_m1773174858 ();
-extern "C" void ZipWorker_GetStylesStream_m3866322631 ();
-extern "C" void ZipWorker_GetWorkbookStream_m1279462543 ();
-extern "C" void ZipWorker_GetWorksheetStream_m3599487247 ();
-extern "C" void ZipWorker_GetWorkbookRelsStream_m2990482831 ();
-extern "C" void ZipWorker_CleanFromTemp_m3051253553 ();
-extern "C" void ZipWorker_ExtractZipEntry_m3512310153 ();
-extern "C" void ZipWorker_NewTempPath_m3191004630 ();
-extern "C" void ZipWorker_CheckFolderTree_m3988233943 ();
-extern "C" void ZipWorker_GetStream_m1165928629 ();
-extern "C" void ZipWorker_Dispose_m2777260408 ();
-extern "C" void ZipWorker_Dispose_m547991009 ();
-extern "C" void ZipWorker_Finalize_m3289108063 ();
-extern "C" void ExcelOpenXmlReader__ctor_m2920103612 ();
-extern "C" void ExcelOpenXmlReader_ReadGlobals_m356406304 ();
-extern "C" void ExcelOpenXmlReader_CheckDateTimeNumFmts_m1223386651 ();
-extern "C" void ExcelOpenXmlReader_ReadSheetGlobals_m3581744618 ();
-extern "C" void ExcelOpenXmlReader_ReadSheetRow_m3966407690 ();
-extern "C" void ExcelOpenXmlReader_IsDateTimeStyle_m2153382639 ();
-extern "C" void ExcelOpenXmlReader_Initialize_m3797863185 ();
-extern "C" void ExcelOpenXmlReader_AsDataSet_m2452927416 ();
-extern "C" void ExcelOpenXmlReader_AsDataSet_m2575323469 ();
-extern "C" void ExcelOpenXmlReader_Close_m2461826172 ();
-extern "C" void ExcelOpenXmlReader_Dispose_m2298408177 ();
-extern "C" void ExcelOpenXmlReader_Dispose_m3451071528 ();
-extern "C" void ExcelOpenXmlReader_Finalize_m3175468180 ();
-extern "C" void ExcelReaderFactory_CreateOpenXmlReader_m2542223693 ();
-extern "C" void Log_GetLoggerFor_m735624633 ();
-extern "C" void Log__cctor_m2503365230 ();
-extern "C" void NullLog_InitializeFor_m2740124739 ();
-extern "C" void NullLog_Debug_m4179243397 ();
-extern "C" void NullLog__ctor_m267990052 ();
-extern "C" void LogManager_Log_m3711135055 ();
-extern "C" void LogManager__cctor_m3639208699 ();
 extern "C" void AddComponentMenu__ctor_m2231330368 ();
 extern "C" void Animation_Sample_m3524518265 ();
 extern "C" void Animation_INTERNAL_CALL_Sample_m3455476881 ();
@@ -15664,6 +15593,10 @@ extern "C" void AnimationCurve__ctor_m3707994114 ();
 extern "C" void AnimationCurve_Cleanup_m2190142678 ();
 extern "C" void AnimationCurve_Finalize_m3393741894 ();
 extern "C" void AnimationCurve_Evaluate_m3698879322 ();
+extern "C" void AnimationCurve_get_Item_m3780274863 ();
+extern "C" void AnimationCurve_get_length_m1757155287 ();
+extern "C" void AnimationCurve_GetKey_Internal_m4198730374 ();
+extern "C" void AnimationCurve_INTERNAL_CALL_GetKey_Internal_m4032409550 ();
 extern "C" void AnimationCurve_Init_m1486386337 ();
 extern "C" void AnimationEvent__ctor_m3458990599 ();
 extern "C" void AnimationEvent_get_data_m1944226119 ();
@@ -15696,7 +15629,9 @@ extern "C" void AnimationState_get_length_m2895238571 ();
 extern "C" void AnimationState_set_layer_m139053567 ();
 extern "C" void AnimationState_get_clip_m1758509211 ();
 extern "C" void AnimationState_get_name_m1043580151 ();
+extern "C" void Animator_SetTrigger_m3418492570 ();
 extern "C" void Animator_StringToHash_m3313850714 ();
+extern "C" void Animator_SetTriggerString_m2002790359 ();
 extern "C" void AnimatorStateInfo_IsName_m4069203550_AdjustorThunk ();
 extern "C" void AnimatorStateInfo_get_fullPathHash_m3941998936_AdjustorThunk ();
 extern "C" void AnimatorStateInfo_get_nameHash_m1703033713_AdjustorThunk ();
@@ -15767,6 +15702,7 @@ extern "C" void AudioConfigurationChangeHandler_BeginInvoke_m2418670597 ();
 extern "C" void AudioConfigurationChangeHandler_EndInvoke_m2237100787 ();
 extern "C" void AudioSource_get_volume_m66289169 ();
 extern "C" void AudioSource_set_volume_m2777308722 ();
+extern "C" void AudioSource_get_pitch_m4220572439 ();
 extern "C" void AudioSource_set_pitch_m3064416458 ();
 extern "C" void AudioSource_PlayOneShot_m4118899740 ();
 extern "C" void Behaviour__ctor_m2699265412 ();
@@ -15826,21 +15762,31 @@ extern "C" void BoxCollider_INTERNAL_set_size_m251806021 ();
 extern "C" void Camera_get_fieldOfView_m3384007405 ();
 extern "C" void Camera_set_fieldOfView_m3974156396 ();
 extern "C" void Camera_get_nearClipPlane_m3536967407 ();
+extern "C" void Camera_set_nearClipPlane_m3510849382 ();
 extern "C" void Camera_get_farClipPlane_m3137713566 ();
+extern "C" void Camera_set_farClipPlane_m1845065941 ();
 extern "C" void Camera_get_orthographicSize_m1801974358 ();
 extern "C" void Camera_set_orthographicSize_m2708824189 ();
 extern "C" void Camera_get_orthographic_m4205491841 ();
 extern "C" void Camera_set_orthographic_m2132888580 ();
 extern "C" void Camera_get_depth_m1329692468 ();
+extern "C" void Camera_get_aspect_m935361871 ();
+extern "C" void Camera_set_aspect_m792328692 ();
 extern "C" void Camera_get_cullingMask_m73686965 ();
 extern "C" void Camera_get_eventMask_m4241372419 ();
 extern "C" void Camera_set_eventMask_m1530414286 ();
+extern "C" void Camera_get_backgroundColor_m2767968515 ();
+extern "C" void Camera_set_backgroundColor_m2927893592 ();
+extern "C" void Camera_INTERNAL_get_backgroundColor_m2704073336 ();
+extern "C" void Camera_INTERNAL_set_backgroundColor_m3660646068 ();
 extern "C" void Camera_get_rect_m2873096661 ();
 extern "C" void Camera_set_rect_m1838810502 ();
 extern "C" void Camera_INTERNAL_get_rect_m3971999434 ();
 extern "C" void Camera_INTERNAL_set_rect_m610424166 ();
 extern "C" void Camera_get_pixelRect_m2084185953 ();
+extern "C" void Camera_set_pixelRect_m1366013782 ();
 extern "C" void Camera_INTERNAL_get_pixelRect_m1785951490 ();
+extern "C" void Camera_INTERNAL_set_pixelRect_m3301406310 ();
 extern "C" void Camera_get_targetTexture_m705925974 ();
 extern "C" void Camera_get_pixelWidth_m2325481193 ();
 extern "C" void Camera_get_pixelHeight_m2527046964 ();
@@ -15889,6 +15835,14 @@ extern "C" void Collision_get_impulse_m1836134987 ();
 extern "C" void Collision_get_impactForceSum_m521972354 ();
 extern "C" void Collision_get_frictionForceSum_m3438602686 ();
 extern "C" void Collision_get_other_m4238363497 ();
+extern "C" void Collision2D__ctor_m2559810705 ();
+extern "C" void Collision2D_get_enabled_m1627968529 ();
+extern "C" void Collision2D_get_rigidbody_m4058558226 ();
+extern "C" void Collision2D_get_collider_m3330356936 ();
+extern "C" void Collision2D_get_transform_m314016758 ();
+extern "C" void Collision2D_get_gameObject_m4234358314 ();
+extern "C" void Collision2D_get_contacts_m2230578195 ();
+extern "C" void Collision2D_get_relativeVelocity_m2410092780 ();
 extern "C" void Color__ctor_m1909920690_AdjustorThunk ();
 extern "C" void Color__ctor_m3811852957_AdjustorThunk ();
 extern "C" void Color_ToString_m4028093047_AdjustorThunk ();
@@ -15904,6 +15858,12 @@ extern "C" void Color_get_yellow_m3741935494 ();
 extern "C" void Color_get_cyan_m2850282709 ();
 extern "C" void Color_get_magenta_m3193089961 ();
 extern "C" void Color_get_grey_m1961362537 ();
+extern "C" void Color_get_grayscale_m2989668074_AdjustorThunk ();
+extern "C" void Color_get_linear_m3851532985_AdjustorThunk ();
+extern "C" void Color_get_gamma_m1982353575_AdjustorThunk ();
+extern "C" void Color_get_maxColorComponent_m1239472485_AdjustorThunk ();
+extern "C" void Color_op_Addition_m1759335993 ();
+extern "C" void Color_op_Subtraction_m3931992385 ();
 extern "C" void Color_op_Multiply_m325555950 ();
 extern "C" void Color_op_Implicit_m1067945802 ();
 extern "C" void Color32__ctor_m1932627809_AdjustorThunk ();
@@ -16178,6 +16138,14 @@ extern "C" void GameObject_SendMessage_m3997572739 ();
 extern "C" void GameObject_Internal_AddComponentWithType_m214735204 ();
 extern "C" void GameObject_AddComponent_m3757565614 ();
 extern "C" void GameObject_Internal_CreateGameObject_m3428198595 ();
+extern "C" void Gizmos_DrawLine_m1315654064 ();
+extern "C" void Gizmos_INTERNAL_CALL_DrawLine_m1667943171 ();
+extern "C" void Gizmos_DrawWireSphere_m3395547818 ();
+extern "C" void Gizmos_INTERNAL_CALL_DrawWireSphere_m2482278875 ();
+extern "C" void Gizmos_DrawSphere_m695677545 ();
+extern "C" void Gizmos_INTERNAL_CALL_DrawSphere_m3000536410 ();
+extern "C" void Gizmos_set_color_m494992840 ();
+extern "C" void Gizmos_INTERNAL_set_color_m3356916140 ();
 extern "C" void Gradient__ctor_m954570311 ();
 extern "C" void Gradient_Init_m4156899649 ();
 extern "C" void Gradient_Cleanup_m3573871739 ();
@@ -16619,6 +16587,12 @@ extern "C" void Light_get_color_m2617173338 ();
 extern "C" void Light_set_color_m3975955621 ();
 extern "C" void Light_INTERNAL_get_color_m2896497767 ();
 extern "C" void Light_INTERNAL_set_color_m2851094611 ();
+extern "C" void Light_get_intensity_m392824783 ();
+extern "C" void Light_set_intensity_m1790590300 ();
+extern "C" void Light_get_shadowStrength_m1628863523 ();
+extern "C" void Light_set_shadowStrength_m677056102 ();
+extern "C" void LineRenderer_SetColors_m3539990388 ();
+extern "C" void LineRenderer_INTERNAL_CALL_SetColors_m2046386539 ();
 extern "C" void Logger__ctor_m3834134587 ();
 extern "C" void Logger_get_logHandler_m4190583509 ();
 extern "C" void Logger_set_logHandler_m2851576632 ();
@@ -16639,7 +16613,9 @@ extern "C" void Material_get_color_m668215843 ();
 extern "C" void Material_set_color_m577844242 ();
 extern "C" void Material_get_mainTexture_m432794412 ();
 extern "C" void Material_set_mainTexture_m3584203343 ();
+extern "C" void Material_get_mainTextureOffset_m786294629 ();
 extern "C" void Material_set_mainTextureOffset_m3533368774 ();
+extern "C" void Material_get_mainTextureScale_m2123078452 ();
 extern "C" void Material_set_mainTextureScale_m723074403 ();
 extern "C" void Material_SetColor_m650857509 ();
 extern "C" void Material_SetColor_m1191533068 ();
@@ -16648,14 +16624,24 @@ extern "C" void Material_GetColor_m2326771174 ();
 extern "C" void Material_GetColor_m2968960621 ();
 extern "C" void Material_INTERNAL_CALL_GetColor_m558759949 ();
 extern "C" void Material_SetVector_m3298399397 ();
+extern "C" void Material_GetVector_m4150288440 ();
 extern "C" void Material_SetTexture_m141095205 ();
 extern "C" void Material_SetTexture_m58378708 ();
 extern "C" void Material_GetTexture_m1257877102 ();
 extern "C" void Material_GetTexture_m648312929 ();
+extern "C" void Material_Internal_GetTextureScaleAndOffset_m1384230327 ();
 extern "C" void Material_SetTextureOffset_m3084369360 ();
 extern "C" void Material_INTERNAL_CALL_SetTextureOffset_m4252917387 ();
+extern "C" void Material_GetTextureOffset_m4148619067 ();
 extern "C" void Material_SetTextureScale_m1622979841 ();
 extern "C" void Material_INTERNAL_CALL_SetTextureScale_m2049074868 ();
+extern "C" void Material_GetTextureScale_m1359469258 ();
+extern "C" void Material_SetFloat_m1926275467 ();
+extern "C" void Material_SetFloat_m953675160 ();
+extern "C" void Material_GetFloat_m562289878 ();
+extern "C" void Material_GetFloat_m4250722315 ();
+extern "C" void Material_HasProperty_m3511389613 ();
+extern "C" void Material_HasProperty_m3175512802 ();
 extern "C" void Material_get_renderQueue_m2184625106 ();
 extern "C" void Material_set_renderQueue_m3118406393 ();
 extern "C" void Material_Internal_CreateWithShader_m4029381963 ();
@@ -16664,6 +16650,7 @@ extern "C" void Material_CopyPropertiesFromMaterial_m2867960571 ();
 extern "C" void Mathf__cctor_m326403828 ();
 extern "C" void Mathf_Sin_m831310046 ();
 extern "C" void Mathf_Cos_m238853451 ();
+extern "C" void Mathf_Acos_m3800958570 ();
 extern "C" void Mathf_Sqrt_m2213915910 ();
 extern "C" void Mathf_Abs_m1942863256 ();
 extern "C" void Mathf_Min_m1648492575 ();
@@ -16686,6 +16673,9 @@ extern "C" void Mathf_Clamp_m3542052159 ();
 extern "C" void Mathf_Clamp01_m3888954684 ();
 extern "C" void Mathf_Lerp_m1686556575 ();
 extern "C" void Mathf_Approximately_m1064446634 ();
+extern "C" void Mathf_Repeat_m943844734 ();
+extern "C" void Mathf_GammaToLinearSpace_m3697142437 ();
+extern "C" void Mathf_LinearToGammaSpace_m1586839609 ();
 extern "C" void Matrix4x4_get_Item_m312280350_AdjustorThunk ();
 extern "C" void Matrix4x4_get_Item_m3317262185_AdjustorThunk ();
 extern "C" void Matrix4x4_GetHashCode_m3649708037_AdjustorThunk ();
@@ -16962,10 +16952,15 @@ extern "C" void PlayerPrefsException__ctor_m1748847897 ();
 extern "C" void QualitySettings_GetQualityLevel_m2349477836 ();
 extern "C" void Quaternion__ctor_m3196903881_AdjustorThunk ();
 extern "C" void Quaternion_get_identity_m1561886418 ();
+extern "C" void Quaternion_AngleAxis_m2806222563 ();
+extern "C" void Quaternion_INTERNAL_CALL_AngleAxis_m3310327005 ();
+extern "C" void Quaternion_LookRotation_m700700634 ();
 extern "C" void Quaternion_LookRotation_m633695927 ();
 extern "C" void Quaternion_INTERNAL_CALL_LookRotation_m3606560944 ();
 extern "C" void Quaternion_Slerp_m1992855400 ();
 extern "C" void Quaternion_INTERNAL_CALL_Slerp_m1926970492 ();
+extern "C" void Quaternion_Inverse_m3931399088 ();
+extern "C" void Quaternion_INTERNAL_CALL_Inverse_m1043108654 ();
 extern "C" void Quaternion_ToString_m2638853272_AdjustorThunk ();
 extern "C" void Quaternion_get_eulerAngles_m3302573991_AdjustorThunk ();
 extern "C" void Quaternion_Euler_m2887458175 ();
@@ -17016,6 +17011,7 @@ extern "C" void Rect_op_Inequality_m3595915756 ();
 extern "C" void Rect_op_Equality_m2793663577 ();
 extern "C" void RectOffset__ctor_m2227510254 ();
 extern "C" void RectOffset__ctor_m3541945769 ();
+extern "C" void RectOffset__ctor_m4133355596 ();
 extern "C" void RectOffset_Init_m4361650 ();
 extern "C" void RectOffset_Cleanup_m3198970074 ();
 extern "C" void RectOffset_get_left_m439065308 ();
@@ -17047,15 +17043,21 @@ extern "C" void RequireComponent__ctor_m3475141952 ();
 extern "C" void ResourceRequest__ctor_m3340010930 ();
 extern "C" void ResourceRequest_get_asset_m3527928488 ();
 extern "C" void Resources_FindObjectsOfTypeAll_m3365744935 ();
+extern "C" void Resources_Load_m2041782325 ();
 extern "C" void Resources_Load_m243305716 ();
+extern "C" void Rigidbody_get_position_m3465583110 ();
+extern "C" void Rigidbody_INTERNAL_get_position_m2227872991 ();
 extern "C" void Rigidbody_get_rotation_m4203325509 ();
 extern "C" void Rigidbody_INTERNAL_get_rotation_m109669412 ();
+extern "C" void Rigidbody_MovePosition_m1810529681 ();
+extern "C" void Rigidbody_INTERNAL_CALL_MovePosition_m2709492198 ();
 extern "C" void Rigidbody_MoveRotation_m3412525692 ();
 extern "C" void Rigidbody_INTERNAL_CALL_MoveRotation_m2205051919 ();
 extern "C" void RPC__ctor_m1432086380 ();
 extern "C" void Scene_get_handle_m1555912301_AdjustorThunk ();
 extern "C" void Scene_GetHashCode_m3223653899_AdjustorThunk ();
 extern "C" void Scene_Equals_m3588907349_AdjustorThunk ();
+extern "C" void SceneManager_LoadScene_m1619949821 ();
 extern "C" void SceneManager_LoadScene_m1386820036 ();
 extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_m3279056043 ();
 extern "C" void SceneManager_Internal_SceneLoaded_m4005732915 ();
@@ -17261,6 +17263,7 @@ extern "C" void Texture2D_Internal_Create_m3012183307 ();
 extern "C" void ThreadAndSerializationSafe__ctor_m84326599 ();
 extern "C" void Time_get_time_m2216684562 ();
 extern "C" void Time_get_deltaTime_m2233168104 ();
+extern "C" void Time_get_smoothDeltaTime_m1294084638 ();
 extern "C" void Time_get_timeScale_m3151482970 ();
 extern "C" void Time_get_realtimeSinceStartup_m357614587 ();
 extern "C" void Touch_get_fingerId_m4109475843_AdjustorThunk ();
@@ -17281,6 +17284,12 @@ extern "C" void TouchScreenKeyboard_get_done_m406461410 ();
 extern "C" void TrackedReference_Equals_m3153703389 ();
 extern "C" void TrackedReference_GetHashCode_m811248179 ();
 extern "C" void TrackedReference_op_Equality_m3491334086 ();
+extern "C" void TrailRenderer_get_time_m3449437864 ();
+extern "C" void TrailRenderer_set_time_m2582670875 ();
+extern "C" void TrailRenderer_get_startWidth_m1625094787 ();
+extern "C" void TrailRenderer_set_startWidth_m2858856800 ();
+extern "C" void TrailRenderer_get_endWidth_m3952779290 ();
+extern "C" void TrailRenderer_set_endWidth_m3133306587 ();
 extern "C" void Transform_get_position_m1104419803 ();
 extern "C" void Transform_set_position_m2469242620 ();
 extern "C" void Transform_INTERNAL_get_position_m1881704498 ();
@@ -17289,6 +17298,10 @@ extern "C" void Transform_get_localPosition_m2533925116 ();
 extern "C" void Transform_set_localPosition_m1026930133 ();
 extern "C" void Transform_INTERNAL_get_localPosition_m94028171 ();
 extern "C" void Transform_INTERNAL_set_localPosition_m432504087 ();
+extern "C" void Transform_get_eulerAngles_m4066505159 ();
+extern "C" void Transform_get_localEulerAngles_m4231787854 ();
+extern "C" void Transform_get_up_m1603627763 ();
+extern "C" void Transform_get_forward_m1833488937 ();
 extern "C" void Transform_get_rotation_m1033555130 ();
 extern "C" void Transform_set_rotation_m3411284563 ();
 extern "C" void Transform_INTERNAL_get_rotation_m2427701365 ();
@@ -17341,20 +17354,25 @@ extern "C" void UnityString_Format_m2949645127 ();
 extern "C" void Vector2__ctor_m3067419446_AdjustorThunk ();
 extern "C" void Vector2_Lerp_m1511850087 ();
 extern "C" void Vector2_Scale_m3228063809 ();
+extern "C" void Vector2_Normalize_m2465777963_AdjustorThunk ();
+extern "C" void Vector2_get_normalized_m2985402409_AdjustorThunk ();
 extern "C" void Vector2_ToString_m775491729_AdjustorThunk ();
 extern "C" void Vector2_GetHashCode_m2353429373_AdjustorThunk ();
 extern "C" void Vector2_Equals_m1405920279_AdjustorThunk ();
 extern "C" void Vector2_Dot_m778921987 ();
 extern "C" void Vector2_get_magnitude_m33802565_AdjustorThunk ();
 extern "C" void Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk ();
+extern "C" void Vector2_Angle_m1064580737 ();
 extern "C" void Vector2_SqrMagnitude_m1793890068 ();
 extern "C" void Vector2_get_zero_m3966848876 ();
 extern "C" void Vector2_get_one_m3174311904 ();
+extern "C" void Vector2_get_right_m28012078 ();
 extern "C" void Vector2_op_Addition_m1389598521 ();
 extern "C" void Vector2_op_Subtraction_m1984215297 ();
 extern "C" void Vector2_op_UnaryNegation_m2194368113 ();
 extern "C" void Vector2_op_Multiply_m4236139442 ();
 extern "C" void Vector2_op_Multiply_m3393065202 ();
+extern "C" void Vector2_op_Division_m96580069 ();
 extern "C" void Vector2_op_Equality_m4168854394 ();
 extern "C" void Vector2_op_Inequality_m4283136193 ();
 extern "C" void Vector2_op_Implicit_m1064335535 ();
@@ -17364,34 +17382,45 @@ extern "C" void Vector3__ctor_m2720820983_AdjustorThunk ();
 extern "C" void Vector3_Lerp_m2935648359 ();
 extern "C" void Vector3_Scale_m1087116865 ();
 extern "C" void Vector3_Scale_m4183036888_AdjustorThunk ();
+extern "C" void Vector3_Cross_m4149044051 ();
 extern "C" void Vector3_GetHashCode_m1754570744_AdjustorThunk ();
 extern "C" void Vector3_Equals_m2692262876_AdjustorThunk ();
 extern "C" void Vector3_Normalize_m2140428981 ();
+extern "C" void Vector3_Normalize_m3679112426_AdjustorThunk ();
 extern "C" void Vector3_get_normalized_m936072361_AdjustorThunk ();
 extern "C" void Vector3_ToString_m3857189970_AdjustorThunk ();
 extern "C" void Vector3_Dot_m3161182818 ();
+extern "C" void Vector3_Distance_m1859670022 ();
+extern "C" void Vector3_ClampMagnitude_m2652735362 ();
 extern "C" void Vector3_Magnitude_m1349200714 ();
 extern "C" void Vector3_get_magnitude_m860342598_AdjustorThunk ();
 extern "C" void Vector3_SqrMagnitude_m3759098164 ();
+extern "C" void Vector3_get_sqrMagnitude_m1814096310_AdjustorThunk ();
 extern "C" void Vector3_Min_m4249067335 ();
 extern "C" void Vector3_Max_m2105825185 ();
 extern "C" void Vector3_get_zero_m1527993324 ();
 extern "C" void Vector3_get_one_m627547232 ();
+extern "C" void Vector3_get_forward_m1201659139 ();
 extern "C" void Vector3_get_back_m4246539215 ();
 extern "C" void Vector3_get_up_m2725403797 ();
 extern "C" void Vector3_get_right_m1884123822 ();
 extern "C" void Vector3_op_Addition_m3146764857 ();
 extern "C" void Vector3_op_Subtraction_m2407545601 ();
+extern "C" void Vector3_op_UnaryNegation_m3383802608 ();
 extern "C" void Vector3_op_Multiply_m1351554733 ();
+extern "C" void Vector3_op_Multiply_m3872631309 ();
 extern "C" void Vector3_op_Division_m3315615850 ();
+extern "C" void Vector3_op_Equality_m305888255 ();
 extern "C" void Vector3_op_Inequality_m799191452 ();
 extern "C" void Vector4__ctor_m1222289168_AdjustorThunk ();
 extern "C" void Vector4_GetHashCode_m1576457715_AdjustorThunk ();
 extern "C" void Vector4_Equals_m3783731577_AdjustorThunk ();
 extern "C" void Vector4_ToString_m2340321043_AdjustorThunk ();
 extern "C" void Vector4_Dot_m2285943745 ();
+extern "C" void Vector4_get_magnitude_m4049434951_AdjustorThunk ();
 extern "C" void Vector4_SqrMagnitude_m3109980116 ();
 extern "C" void Vector4_get_zero_m3810945132 ();
+extern "C" void Vector4_op_Addition_m3367537977 ();
 extern "C" void Vector4_op_Subtraction_m2837269249 ();
 extern "C" void Vector4_op_Multiply_m3204903356 ();
 extern "C" void Vector4_op_Inequality_m1143290655 ();
@@ -17428,6 +17457,999 @@ extern "C" void MathfInternal__cctor_m1836685460 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m599630929 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m470566337 ();
 extern "C" void TypeInferenceRuleAttribute_ToString_m3941510216 ();
+extern "C" void Color2__ctor_m2417174790_AdjustorThunk ();
+extern "C" void Color2_op_Addition_m1918240656 ();
+extern "C" void Color2_op_Subtraction_m3002763776 ();
+extern "C" void Color2_op_Multiply_m3636588472 ();
+extern "C" void ABSSequentiable__ctor_m1457763740 ();
+extern "C" void Debugger_Log_m2834227361 ();
+extern "C" void Debugger_LogWarning_m1294243619 ();
+extern "C" void Debugger_LogError_m949546549 ();
+extern "C" void Debugger_LogReport_m963317535 ();
+extern "C" void Debugger_LogInvalidTween_m3454295394 ();
+extern "C" void Debugger_LogNestedTween_m3109520726 ();
+extern "C" void Debugger_LogNullTween_m832479276 ();
+extern "C" void Debugger_LogNonPathTween_m951639391 ();
+extern "C" void Debugger_LogMissingMaterialProperty_m3310745525 ();
+extern "C" void Debugger_LogRemoveActiveTweenError_m2297126192 ();
+extern "C" void Debugger_SetLogPriority_m1610107306 ();
+extern "C" void DOTweenComponent_Awake_m307634654 ();
+extern "C" void DOTweenComponent_Start_m2273654179 ();
+extern "C" void DOTweenComponent_Update_m2952167292 ();
+extern "C" void DOTweenComponent_LateUpdate_m3720781760 ();
+extern "C" void DOTweenComponent_FixedUpdate_m1532856798 ();
+extern "C" void DOTweenComponent_OnDrawGizmos_m711619515 ();
+extern "C" void DOTweenComponent_OnDestroy_m768162796 ();
+extern "C" void DOTweenComponent_OnApplicationQuit_m3566070717 ();
+extern "C" void DOTweenComponent_SetCapacity_m4268164513 ();
+extern "C" void DOTweenComponent_WaitForCompletion_m1897980136 ();
+extern "C" void DOTweenComponent_WaitForRewind_m2522663097 ();
+extern "C" void DOTweenComponent_WaitForKill_m1046269594 ();
+extern "C" void DOTweenComponent_WaitForElapsedLoops_m2314686214 ();
+extern "C" void DOTweenComponent_WaitForPosition_m3964012032 ();
+extern "C" void DOTweenComponent_WaitForStart_m3782525310 ();
+extern "C" void DOTweenComponent_Create_m1411710227 ();
+extern "C" void DOTweenComponent_DestroyInstance_m1740700608 ();
+extern "C" void DOTweenComponent__ctor_m1855129471 ();
+extern "C" void U3CWaitForCompletionU3Ed__13__ctor_m1500940881 ();
+extern "C" void U3CWaitForCompletionU3Ed__13_System_IDisposable_Dispose_m4042820963 ();
+extern "C" void U3CWaitForCompletionU3Ed__13_MoveNext_m2642612068 ();
+extern "C" void U3CWaitForCompletionU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3575789325 ();
+extern "C" void U3CWaitForCompletionU3Ed__13_System_Collections_IEnumerator_Reset_m1970706518 ();
+extern "C" void U3CWaitForCompletionU3Ed__13_System_Collections_IEnumerator_get_Current_m1875371376 ();
+extern "C" void U3CWaitForElapsedLoopsU3Ed__16__ctor_m721687953 ();
+extern "C" void U3CWaitForElapsedLoopsU3Ed__16_System_IDisposable_Dispose_m3624934307 ();
+extern "C" void U3CWaitForElapsedLoopsU3Ed__16_MoveNext_m3447844618 ();
+extern "C" void U3CWaitForElapsedLoopsU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2123559821 ();
+extern "C" void U3CWaitForElapsedLoopsU3Ed__16_System_Collections_IEnumerator_Reset_m2109009536 ();
+extern "C" void U3CWaitForElapsedLoopsU3Ed__16_System_Collections_IEnumerator_get_Current_m2697209294 ();
+extern "C" void U3CWaitForKillU3Ed__15__ctor_m383464461 ();
+extern "C" void U3CWaitForKillU3Ed__15_System_IDisposable_Dispose_m1633665715 ();
+extern "C" void U3CWaitForKillU3Ed__15_MoveNext_m1537769148 ();
+extern "C" void U3CWaitForKillU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m918810409 ();
+extern "C" void U3CWaitForKillU3Ed__15_System_Collections_IEnumerator_Reset_m1981393790 ();
+extern "C" void U3CWaitForKillU3Ed__15_System_Collections_IEnumerator_get_Current_m1860616400 ();
+extern "C" void U3CWaitForPositionU3Ed__17__ctor_m2032821274 ();
+extern "C" void U3CWaitForPositionU3Ed__17_System_IDisposable_Dispose_m731458714 ();
+extern "C" void U3CWaitForPositionU3Ed__17_MoveNext_m3794080375 ();
+extern "C" void U3CWaitForPositionU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4242636580 ();
+extern "C" void U3CWaitForPositionU3Ed__17_System_Collections_IEnumerator_Reset_m1580275791 ();
+extern "C" void U3CWaitForPositionU3Ed__17_System_Collections_IEnumerator_get_Current_m2895331511 ();
+extern "C" void U3CWaitForRewindU3Ed__14__ctor_m2599254525 ();
+extern "C" void U3CWaitForRewindU3Ed__14_System_IDisposable_Dispose_m2673538587 ();
+extern "C" void U3CWaitForRewindU3Ed__14_MoveNext_m1776446236 ();
+extern "C" void U3CWaitForRewindU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m821810625 ();
+extern "C" void U3CWaitForRewindU3Ed__14_System_Collections_IEnumerator_Reset_m3291569966 ();
+extern "C" void U3CWaitForRewindU3Ed__14_System_Collections_IEnumerator_get_Current_m1161433784 ();
+extern "C" void U3CWaitForStartU3Ed__18__ctor_m3014617818 ();
+extern "C" void U3CWaitForStartU3Ed__18_System_IDisposable_Dispose_m1119218126 ();
+extern "C" void U3CWaitForStartU3Ed__18_MoveNext_m1398096001 ();
+extern "C" void U3CWaitForStartU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3691048774 ();
+extern "C" void U3CWaitForStartU3Ed__18_System_Collections_IEnumerator_Reset_m3457456717 ();
+extern "C" void U3CWaitForStartU3Ed__18_System_Collections_IEnumerator_get_Current_m1804430085 ();
+extern "C" void DOTweenSettings__ctor_m887379349 ();
+extern "C" void Bounce_EaseIn_m3887019168 ();
+extern "C" void Bounce_EaseOut_m4239383085 ();
+extern "C" void Bounce_EaseInOut_m2246762374 ();
+extern "C" void EaseCurve__ctor_m442291200 ();
+extern "C" void EaseCurve_Evaluate_m4151423631 ();
+extern "C" void EaseManager_Evaluate_m1048646038 ();
+extern "C" void EaseManager_Evaluate_m74870165 ();
+extern "C" void EaseManager_ToEaseFunction_m1173633506 ();
+extern "C" void EaseManager_IsFlashEase_m2818956000 ();
+extern "C" void U3CU3Ec__cctor_m933983471 ();
+extern "C" void U3CU3Ec__ctor_m1068847482 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_0_m2721836512 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_1_m1426024031 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_2_m3849412322 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_3_m4002960225 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_4_m963089380 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_5_m3962244195 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_6_m2090665190 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_7_m2244213093 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_8_m3074343400 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_9_m1778530919 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_10_m2753388371 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_11_m2533843000 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_12_m1924838281 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_13_m4292818030 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_14_m3345003455 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_15_m3125458084 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_16_m2516453365 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_17_m589465818 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_18_m102719531 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_19_m4178141456 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_20_m3541146612 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_21_m3321601241 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_22_m2712596522 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_23_m785608975 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_24_m4132761696 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_25_m3913216325 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_26_m3304211606 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_27_m1377224059 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_28_m890477772 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_29_m670932401 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_30_m3757667477 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_31_m3538122106 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_32_m2929117387 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_33_m1002129840 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_34_m54315265 ();
+extern "C" void U3CU3Ec_U3CToEaseFunctionU3Eb__4_35_m4129737190 ();
+extern "C" void Flash_Ease_m4276233543 ();
+extern "C" void Flash_EaseIn_m1600134034 ();
+extern "C" void Flash_EaseOut_m3479091121 ();
+extern "C" void Flash_EaseInOut_m3738681292 ();
+extern "C" void Flash_WeightedEase_m4109024196 ();
+extern "C" void SequenceCallback__ctor_m106728995 ();
+extern "C" void TweenManager_GetSequence_m1013349775 ();
+extern "C" void TweenManager_SetUpdateType_m3684972442 ();
+extern "C" void TweenManager_AddActiveTweenToSequence_m3601486235 ();
+extern "C" void TweenManager_DespawnAll_m879780213 ();
+extern "C" void TweenManager_Despawn_m1933822120 ();
+extern "C" void TweenManager_PurgeAll_m2608239790 ();
+extern "C" void TweenManager_PurgePools_m1427576330 ();
+extern "C" void TweenManager_ResetCapacities_m882991915 ();
+extern "C" void TweenManager_SetCapacities_m2919421098 ();
+extern "C" void TweenManager_Validate_m3353907304 ();
+extern "C" void TweenManager_Update_m378595860 ();
+extern "C" void TweenManager_FilteredOperation_m1159879057 ();
+extern "C" void TweenManager_Complete_m1525644904 ();
+extern "C" void TweenManager_Flip_m3276392302 ();
+extern "C" void TweenManager_ForceInit_m163553463 ();
+extern "C" void TweenManager_Goto_m3404683021 ();
+extern "C" void TweenManager_Pause_m1492466245 ();
+extern "C" void TweenManager_Play_m1289143583 ();
+extern "C" void TweenManager_PlayBackwards_m156468731 ();
+extern "C" void TweenManager_PlayForward_m1226939652 ();
+extern "C" void TweenManager_Restart_m3397053451 ();
+extern "C" void TweenManager_Rewind_m2873713783 ();
+extern "C" void TweenManager_SmoothRewind_m1990583008 ();
+extern "C" void TweenManager_TogglePause_m3731650299 ();
+extern "C" void TweenManager_TotalPooledTweens_m1221755943 ();
+extern "C" void TweenManager_TotalPlayingTweens_m3937211462 ();
+extern "C" void TweenManager_GetActiveTweens_m586218945 ();
+extern "C" void TweenManager_GetTweensById_m2700268389 ();
+extern "C" void TweenManager_GetTweensByTarget_m1060452997 ();
+extern "C" void TweenManager_MarkForKilling_m1319382931 ();
+extern "C" void TweenManager_AddActiveTween_m1611214199 ();
+extern "C" void TweenManager_ReorganizeActiveTweens_m3706676790 ();
+extern "C" void TweenManager_DespawnTweens_m3773872032 ();
+extern "C" void TweenManager_RemoveActiveTween_m3416564700 ();
+extern "C" void TweenManager_ClearTweenArray_m1588603360 ();
+extern "C" void TweenManager_IncreaseCapacities_m2843870263 ();
+extern "C" void TweenManager__cctor_m3795227095 ();
+extern "C" void Utils_Vector3FromAngle_m3600790458 ();
+extern "C" void Utils_Angle2D_m2378361568 ();
+extern "C" void PureQuaternionPlugin_Plug_m3044542140 ();
+extern "C" void PureQuaternionPlugin_Reset_m1622149370 ();
+extern "C" void PureQuaternionPlugin_SetFrom_m4265139358 ();
+extern "C" void PureQuaternionPlugin_ConvertToStartValue_m707750533 ();
+extern "C" void PureQuaternionPlugin_SetRelativeEndValue_m487649591 ();
+extern "C" void PureQuaternionPlugin_SetChangeValue_m1416200996 ();
+extern "C" void PureQuaternionPlugin_GetSpeedBasedDuration_m2190623658 ();
+extern "C" void PureQuaternionPlugin_EvaluateAndApply_m1454595347 ();
+extern "C" void PureQuaternionPlugin__ctor_m2869270851 ();
+extern "C" void DOTween_get_logBehaviour_m2168492577 ();
+extern "C" void DOTween_set_logBehaviour_m2124595076 ();
+extern "C" void DOTween__cctor_m3994335352 ();
+extern "C" void DOTween_Init_m4079336309 ();
+extern "C" void DOTween_AutoInit_m4125144064 ();
+extern "C" void DOTween_Init_m3935563765 ();
+extern "C" void DOTween_SetTweensCapacity_m299576005 ();
+extern "C" void DOTween_Clear_m1972800791 ();
+extern "C" void DOTween_ClearCachedTweens_m3592210690 ();
+extern "C" void DOTween_Validate_m2145836181 ();
+extern "C" void DOTween_To_m914278462 ();
+extern "C" void DOTween_To_m3247828180 ();
+extern "C" void DOTween_To_m3136369265 ();
+extern "C" void DOTween_To_m983137922 ();
+extern "C" void DOTween_To_m1576341974 ();
+extern "C" void DOTween_To_m1946796431 ();
+extern "C" void DOTween_To_m2764928386 ();
+extern "C" void DOTween_To_m432804578 ();
+extern "C" void DOTween_To_m1457612583 ();
+extern "C" void DOTween_To_m983435884 ();
+extern "C" void DOTween_To_m2117641908 ();
+extern "C" void DOTween_To_m3916872722 ();
+extern "C" void DOTween_To_m732165036 ();
+extern "C" void DOTween_To_m1374276420 ();
+extern "C" void DOTween_ToAxis_m2128986000 ();
+extern "C" void DOTween_ToAlpha_m4132971413 ();
+extern "C" void DOTween_To_m1374977403 ();
+extern "C" void DOTween_Punch_m2093241430 ();
+extern "C" void DOTween_Shake_m2491128678 ();
+extern "C" void DOTween_Shake_m683174647 ();
+extern "C" void DOTween_Shake_m1527020091 ();
+extern "C" void DOTween_ToArray_m2997520276 ();
+extern "C" void DOTween_To_m1462453879 ();
+extern "C" void DOTween_Sequence_m3562267366 ();
+extern "C" void DOTween_CompleteAll_m4221744420 ();
+extern "C" void DOTween_Complete_m2005563247 ();
+extern "C" void DOTween_CompleteAndReturnKilledTot_m1303820179 ();
+extern "C" void DOTween_CompleteAndReturnKilledTot_m3308320837 ();
+extern "C" void DOTween_CompleteAndReturnKilledTotExceptFor_m2244397851 ();
+extern "C" void DOTween_FlipAll_m3075944589 ();
+extern "C" void DOTween_Flip_m3578827124 ();
+extern "C" void DOTween_GotoAll_m2362950379 ();
+extern "C" void DOTween_Goto_m3890627630 ();
+extern "C" void DOTween_KillAll_m1102144471 ();
+extern "C" void DOTween_KillAll_m3780178527 ();
+extern "C" void DOTween_Kill_m211473084 ();
+extern "C" void DOTween_PauseAll_m4101906706 ();
+extern "C" void DOTween_Pause_m4110474415 ();
+extern "C" void DOTween_PlayAll_m1299085894 ();
+extern "C" void DOTween_Play_m164738169 ();
+extern "C" void DOTween_Play_m32308619 ();
+extern "C" void DOTween_PlayBackwardsAll_m700876428 ();
+extern "C" void DOTween_PlayBackwards_m2839273377 ();
+extern "C" void DOTween_PlayBackwards_m544554603 ();
+extern "C" void DOTween_PlayForwardAll_m1846124281 ();
+extern "C" void DOTween_PlayForward_m3077912960 ();
+extern "C" void DOTween_PlayForward_m1591690666 ();
+extern "C" void DOTween_RestartAll_m1603653256 ();
+extern "C" void DOTween_Restart_m2951285109 ();
+extern "C" void DOTween_Restart_m1658661915 ();
+extern "C" void DOTween_RewindAll_m1008678220 ();
+extern "C" void DOTween_Rewind_m660085617 ();
+extern "C" void DOTween_SmoothRewindAll_m4292133471 ();
+extern "C" void DOTween_SmoothRewind_m1245411966 ();
+extern "C" void DOTween_TogglePauseAll_m336422306 ();
+extern "C" void DOTween_TogglePause_m1571016433 ();
+extern "C" void DOTween_IsTweening_m657002958 ();
+extern "C" void DOTween_TotalPlayingTweens_m3668081427 ();
+extern "C" void DOTween_PlayingTweens_m3712978333 ();
+extern "C" void DOTween_PausedTweens_m1007284995 ();
+extern "C" void DOTween_TweensById_m2371039200 ();
+extern "C" void DOTween_TweensByTarget_m2730695796 ();
+extern "C" void DOTween_InitCheck_m691380157 ();
+extern "C" void DOTween__ctor_m3410313657 ();
+extern "C" void U3CU3Ec__DisplayClass52_0__ctor_m913463807 ();
+extern "C" void U3CU3Ec__DisplayClass52_0_U3CToU3Eb__0_m4105035594 ();
+extern "C" void U3CU3Ec__DisplayClass52_0_U3CToU3Eb__1_m1705179352 ();
+extern "C" void DOVirtual_Float_m1627525319 ();
+extern "C" void DOVirtual_EasedValue_m1602872611 ();
+extern "C" void DOVirtual_EasedValue_m3612873406 ();
+extern "C" void DOVirtual_EasedValue_m3005505411 ();
+extern "C" void DOVirtual_EasedValue_m2153709637 ();
+extern "C" void DOVirtual_DelayedCall_m1093540967 ();
+extern "C" void U3CU3Ec__DisplayClass0_0__ctor_m573884160 ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CFloatU3Eb__0_m4185883154 ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CFloatU3Eb__1_m3483606204 ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CFloatU3Eb__2_m64240142 ();
+extern "C" void EaseFactory_StopMotion_m2300428264 ();
+extern "C" void EaseFactory_StopMotion_m3743262361 ();
+extern "C" void EaseFactory_StopMotion_m810640373 ();
+extern "C" void EaseFactory__ctor_m2540174781 ();
+extern "C" void U3CU3Ec__DisplayClass2_0__ctor_m98975214 ();
+extern "C" void U3CU3Ec__DisplayClass2_0_U3CStopMotionU3Eb__0_m1536854436 ();
+extern "C" void EaseFunction__ctor_m70174455 ();
+extern "C" void EaseFunction_Invoke_m4001665929 ();
+extern "C" void EaseFunction_BeginInvoke_m1915830106 ();
+extern "C" void EaseFunction_EndInvoke_m1686794003 ();
+extern "C" void Color2Plugin_Reset_m1040404076 ();
+extern "C" void Color2Plugin_SetFrom_m1687712394 ();
+extern "C" void Color2Plugin_ConvertToStartValue_m1627227983 ();
+extern "C" void Color2Plugin_SetRelativeEndValue_m2002112229 ();
+extern "C" void Color2Plugin_SetChangeValue_m1983329186 ();
+extern "C" void Color2Plugin_GetSpeedBasedDuration_m1878874090 ();
+extern "C" void Color2Plugin_EvaluateAndApply_m1350282949 ();
+extern "C" void Color2Plugin__ctor_m2361216917 ();
+extern "C" void ColorPlugin_Reset_m1252644186 ();
+extern "C" void ColorPlugin_SetFrom_m1592454564 ();
+extern "C" void ColorPlugin_ConvertToStartValue_m339617241 ();
+extern "C" void ColorPlugin_SetRelativeEndValue_m1561834483 ();
+extern "C" void ColorPlugin_SetChangeValue_m2303083132 ();
+extern "C" void ColorPlugin_GetSpeedBasedDuration_m1013203397 ();
+extern "C" void ColorPlugin_EvaluateAndApply_m2466855459 ();
+extern "C" void ColorPlugin__ctor_m1241819855 ();
+extern "C" void ABSPathDecoder__ctor_m986200161 ();
+extern "C" void CatmullRomDecoder_FinalizePath_m2016177675 ();
+extern "C" void CatmullRomDecoder_GetPoint_m889044054 ();
+extern "C" void CatmullRomDecoder_SetTimeToLengthTables_m786122248 ();
+extern "C" void CatmullRomDecoder_SetWaypointsLengths_m132628524 ();
+extern "C" void CatmullRomDecoder__ctor_m31802828 ();
+extern "C" void ControlPoint__ctor_m2181047301_AdjustorThunk ();
+extern "C" void ControlPoint_op_Addition_m2476705731 ();
+extern "C" void LinearDecoder_FinalizePath_m493312366 ();
+extern "C" void LinearDecoder_GetPoint_m2014065135 ();
+extern "C" void LinearDecoder_SetTimeToLengthTables_m2287316015 ();
+extern "C" void LinearDecoder_SetWaypointsLengths_m3654082159 ();
+extern "C" void LinearDecoder__ctor_m1815788553 ();
+extern "C" void Path__ctor_m4253660657 ();
+extern "C" void Path__ctor_m109627495 ();
+extern "C" void Path_FinalizePath_m2340227616 ();
+extern "C" void Path_GetPoint_m685987541 ();
+extern "C" void Path_ConvertToConstantPathPerc_m4225215567 ();
+extern "C" void Path_GetWaypointIndexFromPerc_m1857218744 ();
+extern "C" void Path_GetDrawPoints_m2671420849 ();
+extern "C" void Path_RefreshNonLinearDrawWps_m692037076 ();
+extern "C" void Path_Destroy_m2187283033 ();
+extern "C" void Path_CloneIncremental_m3267316450 ();
+extern "C" void Path_AssignWaypoints_m1568093980 ();
+extern "C" void Path_AssignDecoder_m3072882543 ();
+extern "C" void Path_Draw_m755263667 ();
+extern "C" void Path_Draw_m3671593897 ();
+extern "C" void PluginsManager_PurgeAll_m2309351391 ();
+extern "C" void SpecialPluginsUtils_SetLookAt_m1962580571 ();
+extern "C" void SpecialPluginsUtils_SetPunch_m2968676958 ();
+extern "C" void SpecialPluginsUtils_SetShake_m1141163400 ();
+extern "C" void SpecialPluginsUtils_SetCameraShakePosition_m757028890 ();
+extern "C" void DoublePlugin_Reset_m4097767476 ();
+extern "C" void DoublePlugin_SetFrom_m287034312 ();
+extern "C" void DoublePlugin_ConvertToStartValue_m2828371137 ();
+extern "C" void DoublePlugin_SetRelativeEndValue_m743829071 ();
+extern "C" void DoublePlugin_SetChangeValue_m2620647386 ();
+extern "C" void DoublePlugin_GetSpeedBasedDuration_m3485989573 ();
+extern "C" void DoublePlugin_EvaluateAndApply_m986922907 ();
+extern "C" void DoublePlugin__ctor_m472028567 ();
+extern "C" void FloatPlugin_Reset_m1409276442 ();
+extern "C" void FloatPlugin_SetFrom_m3628140100 ();
+extern "C" void FloatPlugin_ConvertToStartValue_m1262983801 ();
+extern "C" void FloatPlugin_SetRelativeEndValue_m3966531475 ();
+extern "C" void FloatPlugin_SetChangeValue_m134531078 ();
+extern "C" void FloatPlugin_GetSpeedBasedDuration_m1649918496 ();
+extern "C" void FloatPlugin_EvaluateAndApply_m3138927159 ();
+extern "C" void FloatPlugin__ctor_m585502968 ();
+extern "C" void IntPlugin_Reset_m473564686 ();
+extern "C" void IntPlugin_SetFrom_m2590773846 ();
+extern "C" void IntPlugin_ConvertToStartValue_m2826582483 ();
+extern "C" void IntPlugin_SetRelativeEndValue_m3715330301 ();
+extern "C" void IntPlugin_SetChangeValue_m2318505996 ();
+extern "C" void IntPlugin_GetSpeedBasedDuration_m2752808202 ();
+extern "C" void IntPlugin_EvaluateAndApply_m576724549 ();
+extern "C" void IntPlugin__ctor_m291784073 ();
+extern "C" void LongPlugin_Reset_m4261321919 ();
+extern "C" void LongPlugin_SetFrom_m2682161757 ();
+extern "C" void LongPlugin_ConvertToStartValue_m603421758 ();
+extern "C" void LongPlugin_SetRelativeEndValue_m4267326736 ();
+extern "C" void LongPlugin_SetChangeValue_m3050133269 ();
+extern "C" void LongPlugin_GetSpeedBasedDuration_m2541162194 ();
+extern "C" void LongPlugin_EvaluateAndApply_m2985682968 ();
+extern "C" void LongPlugin__ctor_m2586876812 ();
+extern "C" void PathPlugin_Reset_m3087254235 ();
+extern "C" void PathPlugin_SetFrom_m4091676017 ();
+extern "C" void PathPlugin_Get_m3476918268 ();
+extern "C" void PathPlugin_ConvertToStartValue_m460648741 ();
+extern "C" void PathPlugin_SetRelativeEndValue_m970240972 ();
+extern "C" void PathPlugin_SetChangeValue_m2144720161 ();
+extern "C" void PathPlugin_GetSpeedBasedDuration_m3202608197 ();
+extern "C" void PathPlugin_EvaluateAndApply_m2953483135 ();
+extern "C" void PathPlugin_SetOrientation_m3023070977 ();
+extern "C" void PathPlugin__ctor_m4017481171 ();
+extern "C" void QuaternionPlugin_Reset_m540886732 ();
+extern "C" void QuaternionPlugin_SetFrom_m902677982 ();
+extern "C" void QuaternionPlugin_ConvertToStartValue_m730900917 ();
+extern "C" void QuaternionPlugin_SetRelativeEndValue_m1706574209 ();
+extern "C" void QuaternionPlugin_SetChangeValue_m3086676884 ();
+extern "C" void QuaternionPlugin_GetSpeedBasedDuration_m1629956606 ();
+extern "C" void QuaternionPlugin_EvaluateAndApply_m53279647 ();
+extern "C" void QuaternionPlugin__ctor_m3223195802 ();
+extern "C" void RectOffsetPlugin_Reset_m4095272056 ();
+extern "C" void RectOffsetPlugin_SetFrom_m140944448 ();
+extern "C" void RectOffsetPlugin_ConvertToStartValue_m3269101313 ();
+extern "C" void RectOffsetPlugin_SetRelativeEndValue_m3222695535 ();
+extern "C" void RectOffsetPlugin_SetChangeValue_m4017675218 ();
+extern "C" void RectOffsetPlugin_GetSpeedBasedDuration_m3064219017 ();
+extern "C" void RectOffsetPlugin_EvaluateAndApply_m2322178099 ();
+extern "C" void RectOffsetPlugin__ctor_m3970399647 ();
+extern "C" void RectOffsetPlugin__cctor_m4059289360 ();
+extern "C" void RectPlugin_Reset_m36067126 ();
+extern "C" void RectPlugin_SetFrom_m3503117286 ();
+extern "C" void RectPlugin_ConvertToStartValue_m4260783945 ();
+extern "C" void RectPlugin_SetRelativeEndValue_m1255493911 ();
+extern "C" void RectPlugin_SetChangeValue_m2964213558 ();
+extern "C" void RectPlugin_GetSpeedBasedDuration_m4207891958 ();
+extern "C" void RectPlugin_EvaluateAndApply_m120801595 ();
+extern "C" void RectPlugin__ctor_m403056936 ();
+extern "C" void StringPlugin_SetFrom_m1109720958 ();
+extern "C" void StringPlugin_Reset_m77394362 ();
+extern "C" void StringPlugin_ConvertToStartValue_m202643461 ();
+extern "C" void StringPlugin_SetRelativeEndValue_m3015982295 ();
+extern "C" void StringPlugin_SetChangeValue_m2758686388 ();
+extern "C" void StringPlugin_GetSpeedBasedDuration_m3607809797 ();
+extern "C" void StringPlugin_EvaluateAndApply_m3214475539 ();
+extern "C" void StringPlugin_Append_m915403987 ();
+extern "C" void StringPlugin_ScrambledCharsToUse_m3337172010 ();
+extern "C" void StringPlugin__ctor_m4132855087 ();
+extern "C" void StringPlugin__cctor_m4075694604 ();
+extern "C" void StringPluginExtensions__cctor_m216118382 ();
+extern "C" void StringPluginExtensions_ScrambleChars_m2357882848 ();
+extern "C" void StringPluginExtensions_AppendScrambledChars_m2999297406 ();
+extern "C" void UintPlugin_Reset_m3049541632 ();
+extern "C" void UintPlugin_SetFrom_m3149814748 ();
+extern "C" void UintPlugin_ConvertToStartValue_m765651541 ();
+extern "C" void UintPlugin_SetRelativeEndValue_m2418783195 ();
+extern "C" void UintPlugin_SetChangeValue_m3466217300 ();
+extern "C" void UintPlugin_GetSpeedBasedDuration_m1986785747 ();
+extern "C" void UintPlugin_EvaluateAndApply_m3628556239 ();
+extern "C" void UintPlugin__ctor_m1851929470 ();
+extern "C" void UlongPlugin_Reset_m465097296 ();
+extern "C" void UlongPlugin_SetFrom_m175352084 ();
+extern "C" void UlongPlugin_ConvertToStartValue_m77481419 ();
+extern "C" void UlongPlugin_SetRelativeEndValue_m3409537757 ();
+extern "C" void UlongPlugin_SetChangeValue_m4268888190 ();
+extern "C" void UlongPlugin_GetSpeedBasedDuration_m721011258 ();
+extern "C" void UlongPlugin_EvaluateAndApply_m248710881 ();
+extern "C" void UlongPlugin__ctor_m2560758085 ();
+extern "C" void Vector2Plugin_Reset_m4169839166 ();
+extern "C" void Vector2Plugin_SetFrom_m1379257478 ();
+extern "C" void Vector2Plugin_ConvertToStartValue_m2155639343 ();
+extern "C" void Vector2Plugin_SetRelativeEndValue_m1117473221 ();
+extern "C" void Vector2Plugin_SetChangeValue_m1996895644 ();
+extern "C" void Vector2Plugin_GetSpeedBasedDuration_m1810585513 ();
+extern "C" void Vector2Plugin_EvaluateAndApply_m4227295577 ();
+extern "C" void Vector2Plugin__ctor_m1113015805 ();
+extern "C" void Vector3ArrayPlugin_Reset_m2592336274 ();
+extern "C" void Vector3ArrayPlugin_SetFrom_m2442655110 ();
+extern "C" void Vector3ArrayPlugin_ConvertToStartValue_m1953175333 ();
+extern "C" void Vector3ArrayPlugin_SetRelativeEndValue_m1899894737 ();
+extern "C" void Vector3ArrayPlugin_SetChangeValue_m1701422420 ();
+extern "C" void Vector3ArrayPlugin_GetSpeedBasedDuration_m2617333706 ();
+extern "C" void Vector3ArrayPlugin_EvaluateAndApply_m2521440271 ();
+extern "C" void Vector3ArrayPlugin__ctor_m1114023449 ();
+extern "C" void Vector3Plugin_Reset_m3289576255 ();
+extern "C" void Vector3Plugin_SetFrom_m3783759237 ();
+extern "C" void Vector3Plugin_ConvertToStartValue_m1226386644 ();
+extern "C" void Vector3Plugin_SetRelativeEndValue_m636480614 ();
+extern "C" void Vector3Plugin_SetChangeValue_m1626273757 ();
+extern "C" void Vector3Plugin_GetSpeedBasedDuration_m688220781 ();
+extern "C" void Vector3Plugin_EvaluateAndApply_m3218858388 ();
+extern "C" void Vector3Plugin__ctor_m2496113054 ();
+extern "C" void Vector4Plugin_Reset_m15820604 ();
+extern "C" void Vector4Plugin_SetFrom_m4037800968 ();
+extern "C" void Vector4Plugin_ConvertToStartValue_m4251200849 ();
+extern "C" void Vector4Plugin_SetRelativeEndValue_m2071181835 ();
+extern "C" void Vector4Plugin_SetChangeValue_m3914266778 ();
+extern "C" void Vector4Plugin_GetSpeedBasedDuration_m1093714061 ();
+extern "C" void Vector4Plugin_EvaluateAndApply_m3579796599 ();
+extern "C" void Vector4Plugin__ctor_m2743340731 ();
+extern "C" void Sequence__ctor_m3160015202 ();
+extern "C" void Sequence_DoPrepend_m3692126219 ();
+extern "C" void Sequence_DoInsert_m2233051341 ();
+extern "C" void Sequence_DoAppendInterval_m4156058788 ();
+extern "C" void Sequence_DoPrependInterval_m33614792 ();
+extern "C" void Sequence_DoInsertCallback_m2417658513 ();
+extern "C" void Sequence_Reset_m1194713657 ();
+extern "C" void Sequence_Validate_m2655851536 ();
+extern "C" void Sequence_Startup_m2282350177 ();
+extern "C" void Sequence_ApplyTween_m4207260438 ();
+extern "C" void Sequence_Setup_m1914808042 ();
+extern "C" void Sequence_DoStartup_m1514469211 ();
+extern "C" void Sequence_DoApplyTween_m2567737122 ();
+extern "C" void Sequence_ApplyInternalCycle_m4170225852 ();
+extern "C" void Sequence_SortSequencedObjs_m3886496447 ();
+extern "C" void ShortcutExtensions_DOFade_m3908825903 ();
+extern "C" void ShortcutExtensions_DOPitch_m1466203827 ();
+extern "C" void ShortcutExtensions_DOAspect_m4263503343 ();
+extern "C" void ShortcutExtensions_DOColor_m4070360217 ();
+extern "C" void ShortcutExtensions_DOFarClipPlane_m1788230568 ();
+extern "C" void ShortcutExtensions_DOFieldOfView_m2729074193 ();
+extern "C" void ShortcutExtensions_DONearClipPlane_m3946677591 ();
+extern "C" void ShortcutExtensions_DOOrthoSize_m3058874688 ();
+extern "C" void ShortcutExtensions_DOPixelRect_m1451235077 ();
+extern "C" void ShortcutExtensions_DORect_m1672543897 ();
+extern "C" void ShortcutExtensions_DOShakePosition_m3912240257 ();
+extern "C" void ShortcutExtensions_DOShakePosition_m1939458561 ();
+extern "C" void ShortcutExtensions_DOShakeRotation_m1826964640 ();
+extern "C" void ShortcutExtensions_DOShakeRotation_m3224386616 ();
+extern "C" void ShortcutExtensions_DOColor_m2540950828 ();
+extern "C" void ShortcutExtensions_DOIntensity_m2263101207 ();
+extern "C" void ShortcutExtensions_DOShadowStrength_m1596018935 ();
+extern "C" void ShortcutExtensions_DOColor_m3644171909 ();
+extern "C" void ShortcutExtensions_DOColor_m1029787631 ();
+extern "C" void ShortcutExtensions_DOColor_m331992445 ();
+extern "C" void ShortcutExtensions_DOFade_m2221070795 ();
+extern "C" void ShortcutExtensions_DOFade_m4201395497 ();
+extern "C" void ShortcutExtensions_DOFloat_m2495122819 ();
+extern "C" void ShortcutExtensions_DOOffset_m2137547141 ();
+extern "C" void ShortcutExtensions_DOOffset_m1515150151 ();
+extern "C" void ShortcutExtensions_DOTiling_m2024748893 ();
+extern "C" void ShortcutExtensions_DOTiling_m2236894419 ();
+extern "C" void ShortcutExtensions_DOVector_m2339305057 ();
+extern "C" void ShortcutExtensions_DOMove_m1933953753 ();
+extern "C" void ShortcutExtensions_DOMoveX_m3420231689 ();
+extern "C" void ShortcutExtensions_DOMoveY_m2397857768 ();
+extern "C" void ShortcutExtensions_DOMoveZ_m1621316935 ();
+extern "C" void ShortcutExtensions_DORotate_m458975576 ();
+extern "C" void ShortcutExtensions_DOLookAt_m3791687253 ();
+extern "C" void ShortcutExtensions_DOJump_m841256827 ();
+extern "C" void ShortcutExtensions_DOResize_m1464567070 ();
+extern "C" void ShortcutExtensions_DOTime_m4195941374 ();
+extern "C" void ShortcutExtensions_DOMove_m813241662 ();
+extern "C" void ShortcutExtensions_DOMoveX_m369816864 ();
+extern "C" void ShortcutExtensions_DOMoveY_m3000263681 ();
+extern "C" void ShortcutExtensions_DOMoveZ_m977316578 ();
+extern "C" void ShortcutExtensions_DOLocalMove_m1432977613 ();
+extern "C" void ShortcutExtensions_DOLocalMoveX_m1551758153 ();
+extern "C" void ShortcutExtensions_DOLocalMoveY_m2789795598 ();
+extern "C" void ShortcutExtensions_DOLocalMoveZ_m2334840511 ();
+extern "C" void ShortcutExtensions_DORotate_m3434569207 ();
+extern "C" void ShortcutExtensions_DORotateQuaternion_m4202237645 ();
+extern "C" void ShortcutExtensions_DOLocalRotate_m2660994480 ();
+extern "C" void ShortcutExtensions_DOLocalRotateQuaternion_m176125184 ();
+extern "C" void ShortcutExtensions_DOScale_m2754995414 ();
+extern "C" void ShortcutExtensions_DOScale_m562799890 ();
+extern "C" void ShortcutExtensions_DOScaleX_m4195392706 ();
+extern "C" void ShortcutExtensions_DOScaleY_m3589951495 ();
+extern "C" void ShortcutExtensions_DOScaleZ_m1484201804 ();
+extern "C" void ShortcutExtensions_DOLookAt_m1204733618 ();
+extern "C" void ShortcutExtensions_DOPunchPosition_m4022188990 ();
+extern "C" void ShortcutExtensions_DOPunchScale_m3609052310 ();
+extern "C" void ShortcutExtensions_DOPunchRotation_m1103244634 ();
+extern "C" void ShortcutExtensions_DOShakePosition_m2336714075 ();
+extern "C" void ShortcutExtensions_DOShakePosition_m2989795727 ();
+extern "C" void ShortcutExtensions_DOShakeRotation_m4273867949 ();
+extern "C" void ShortcutExtensions_DOShakeRotation_m3190170693 ();
+extern "C" void ShortcutExtensions_DOShakeScale_m455017001 ();
+extern "C" void ShortcutExtensions_DOShakeScale_m2106531945 ();
+extern "C" void ShortcutExtensions_DOJump_m2116021968 ();
+extern "C" void ShortcutExtensions_DOLocalJump_m760861907 ();
+extern "C" void ShortcutExtensions_DOPath_m1769930933 ();
+extern "C" void ShortcutExtensions_DOLocalPath_m2887627546 ();
+extern "C" void ShortcutExtensions_DOPath_m251740173 ();
+extern "C" void ShortcutExtensions_DOLocalPath_m712666778 ();
+extern "C" void ShortcutExtensions_DOBlendableColor_m3039781373 ();
+extern "C" void ShortcutExtensions_DOBlendableColor_m1724098674 ();
+extern "C" void ShortcutExtensions_DOBlendableColor_m3858347954 ();
+extern "C" void ShortcutExtensions_DOBlendableMoveBy_m1618137896 ();
+extern "C" void ShortcutExtensions_DOBlendableLocalMoveBy_m114767453 ();
+extern "C" void ShortcutExtensions_DOBlendableRotateBy_m275321471 ();
+extern "C" void ShortcutExtensions_DOBlendableLocalRotateBy_m3944746952 ();
+extern "C" void ShortcutExtensions_DOBlendableScaleBy_m2885123094 ();
+extern "C" void ShortcutExtensions_DOComplete_m3066576958 ();
+extern "C" void ShortcutExtensions_DOComplete_m3775394666 ();
+extern "C" void ShortcutExtensions_DOKill_m3004510585 ();
+extern "C" void ShortcutExtensions_DOKill_m3644515429 ();
+extern "C" void ShortcutExtensions_DOFlip_m2530449119 ();
+extern "C" void ShortcutExtensions_DOFlip_m1386606503 ();
+extern "C" void ShortcutExtensions_DOGoto_m3802481569 ();
+extern "C" void ShortcutExtensions_DOGoto_m3839282017 ();
+extern "C" void ShortcutExtensions_DOPause_m65675062 ();
+extern "C" void ShortcutExtensions_DOPause_m656699488 ();
+extern "C" void ShortcutExtensions_DOPlay_m4099564608 ();
+extern "C" void ShortcutExtensions_DOPlay_m2113281574 ();
+extern "C" void ShortcutExtensions_DOPlayBackwards_m3986309180 ();
+extern "C" void ShortcutExtensions_DOPlayBackwards_m2758635154 ();
+extern "C" void ShortcutExtensions_DOPlayForward_m3311652443 ();
+extern "C" void ShortcutExtensions_DOPlayForward_m281647083 ();
+extern "C" void ShortcutExtensions_DORestart_m3156056520 ();
+extern "C" void ShortcutExtensions_DORestart_m2596861284 ();
+extern "C" void ShortcutExtensions_DORewind_m1526207962 ();
+extern "C" void ShortcutExtensions_DORewind_m4071549454 ();
+extern "C" void ShortcutExtensions_DOSmoothRewind_m1762400369 ();
+extern "C" void ShortcutExtensions_DOSmoothRewind_m2099111741 ();
+extern "C" void ShortcutExtensions_DOTogglePause_m968655382 ();
+extern "C" void ShortcutExtensions_DOTogglePause_m2815070248 ();
+extern "C" void U3CU3Ec__DisplayClass0_0__ctor_m2486159704 ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CDOFadeU3Eb__0_m4106317219 ();
+extern "C" void U3CU3Ec__DisplayClass0_0_U3CDOFadeU3Eb__1_m2008279057 ();
+extern "C" void U3CU3Ec__DisplayClass1_0__ctor_m2601117945 ();
+extern "C" void U3CU3Ec__DisplayClass1_0_U3CDOPitchU3Eb__0_m1582656838 ();
+extern "C" void U3CU3Ec__DisplayClass1_0_U3CDOPitchU3Eb__1_m3148065408 ();
+extern "C" void U3CU3Ec__DisplayClass10_0__ctor_m3455628885 ();
+extern "C" void U3CU3Ec__DisplayClass10_0_U3CDOShakePositionU3Eb__0_m578926749 ();
+extern "C" void U3CU3Ec__DisplayClass10_0_U3CDOShakePositionU3Eb__1_m575366107 ();
+extern "C" void U3CU3Ec__DisplayClass11_0__ctor_m351689690 ();
+extern "C" void U3CU3Ec__DisplayClass11_0_U3CDOShakePositionU3Eb__0_m1058466392 ();
+extern "C" void U3CU3Ec__DisplayClass11_0_U3CDOShakePositionU3Eb__1_m3172318102 ();
+extern "C" void U3CU3Ec__DisplayClass12_0__ctor_m1029248587 ();
+extern "C" void U3CU3Ec__DisplayClass12_0_U3CDOShakeRotationU3Eb__0_m4012688060 ();
+extern "C" void U3CU3Ec__DisplayClass12_0_U3CDOShakeRotationU3Eb__1_m3630155782 ();
+extern "C" void U3CU3Ec__DisplayClass13_0__ctor_m2220276688 ();
+extern "C" void U3CU3Ec__DisplayClass13_0_U3CDOShakeRotationU3Eb__0_m1636800887 ();
+extern "C" void U3CU3Ec__DisplayClass13_0_U3CDOShakeRotationU3Eb__1_m1178986945 ();
+extern "C" void U3CU3Ec__DisplayClass14_0__ctor_m2638654569 ();
+extern "C" void U3CU3Ec__DisplayClass14_0_U3CDOColorU3Eb__0_m2518048952 ();
+extern "C" void U3CU3Ec__DisplayClass14_0_U3CDOColorU3Eb__1_m2079468430 ();
+extern "C" void U3CU3Ec__DisplayClass15_0__ctor_m3829682670 ();
+extern "C" void U3CU3Ec__DisplayClass15_0_U3CDOIntensityU3Eb__0_m324426264 ();
+extern "C" void U3CU3Ec__DisplayClass15_0_U3CDOIntensityU3Eb__1_m4037850610 ();
+extern "C" void U3CU3Ec__DisplayClass16_0__ctor_m212274271 ();
+extern "C" void U3CU3Ec__DisplayClass16_0_U3CDOShadowStrengthU3Eb__0_m95294285 ();
+extern "C" void U3CU3Ec__DisplayClass16_0_U3CDOShadowStrengthU3Eb__1_m1758195355 ();
+extern "C" void U3CU3Ec__DisplayClass17_0__ctor_m1403302372 ();
+extern "C" void U3CU3Ec__DisplayClass17_0_U3CDOColorU3Eb__0_m877794578 ();
+extern "C" void U3CU3Ec__DisplayClass17_0_U3CDOColorU3Eb__1_m2778864942 ();
+extern "C" void U3CU3Ec__DisplayClass18_0__ctor_m3130146861 ();
+extern "C" void U3CU3Ec__DisplayClass18_0_U3CDOColorU3Eb__0_m367089396 ();
+extern "C" void U3CU3Ec__DisplayClass18_0_U3CDOColorU3Eb__1_m3820856354 ();
+extern "C" void U3CU3Ec__DisplayClass19_0__ctor_m26207666 ();
+extern "C" void U3CU3Ec__DisplayClass19_0_U3CDOColorU3Eb__0_m2320841199 ();
+extern "C" void U3CU3Ec__DisplayClass19_0_U3CDOColorU3Eb__1_m1866300157 ();
+extern "C" void U3CU3Ec__DisplayClass2_0__ctor_m2407889050 ();
+extern "C" void U3CU3Ec__DisplayClass2_0_U3CDOAspectU3Eb__0_m4201173127 ();
+extern "C" void U3CU3Ec__DisplayClass2_0_U3CDOAspectU3Eb__1_m2576574665 ();
+extern "C" void U3CU3Ec__DisplayClass20_0__ctor_m4108706642 ();
+extern "C" void U3CU3Ec__DisplayClass20_0_U3CDOFadeU3Eb__0_m1123010412 ();
+extern "C" void U3CU3Ec__DisplayClass20_0_U3CDOFadeU3Eb__1_m1113742940 ();
+extern "C" void U3CU3Ec__DisplayClass21_0__ctor_m1004767447 ();
+extern "C" void U3CU3Ec__DisplayClass21_0_U3CDOFadeU3Eb__0_m3556943527 ();
+extern "C" void U3CU3Ec__DisplayClass21_0_U3CDOFadeU3Eb__1_m1057051489 ();
+extern "C" void U3CU3Ec__DisplayClass22_0__ctor_m1682326344 ();
+extern "C" void U3CU3Ec__DisplayClass22_0_U3CDOFloatU3Eb__0_m2002597517 ();
+extern "C" void U3CU3Ec__DisplayClass22_0_U3CDOFloatU3Eb__1_m788489511 ();
+extern "C" void U3CU3Ec__DisplayClass23_0__ctor_m2873354445 ();
+extern "C" void U3CU3Ec__DisplayClass23_0_U3CDOOffsetU3Eb__0_m671283270 ();
+extern "C" void U3CU3Ec__DisplayClass23_0_U3CDOOffsetU3Eb__1_m1609382646 ();
+extern "C" void U3CU3Ec__DisplayClass24_0__ctor_m3291732326 ();
+extern "C" void U3CU3Ec__DisplayClass24_0_U3CDOOffsetU3Eb__0_m828413439 ();
+extern "C" void U3CU3Ec__DisplayClass24_0_U3CDOOffsetU3Eb__1_m3647947909 ();
+extern "C" void U3CU3Ec__DisplayClass25_0__ctor_m187793131 ();
+extern "C" void U3CU3Ec__DisplayClass25_0_U3CDOTilingU3Eb__0_m2106562792 ();
+extern "C" void U3CU3Ec__DisplayClass25_0_U3CDOTilingU3Eb__1_m1488913552 ();
+extern "C" void U3CU3Ec__DisplayClass26_0__ctor_m865352028 ();
+extern "C" void U3CU3Ec__DisplayClass26_0_U3CDOTilingU3Eb__0_m4174816397 ();
+extern "C" void U3CU3Ec__DisplayClass26_0_U3CDOTilingU3Eb__1_m612512395 ();
+extern "C" void U3CU3Ec__DisplayClass27_0__ctor_m2056380129 ();
+extern "C" void U3CU3Ec__DisplayClass27_0_U3CDOVectorU3Eb__0_m813012292 ();
+extern "C" void U3CU3Ec__DisplayClass27_0_U3CDOVectorU3Eb__1_m3401839740 ();
+extern "C" void U3CU3Ec__DisplayClass28_0__ctor_m3783224618 ();
+extern "C" void U3CU3Ec__DisplayClass28_0_U3CDOMoveU3Eb__0_m3607696572 ();
+extern "C" void U3CU3Ec__DisplayClass29_0__ctor_m679285423 ();
+extern "C" void U3CU3Ec__DisplayClass29_0_U3CDOMoveXU3Eb__0_m373608035 ();
+extern "C" void U3CU3Ec__DisplayClass3_0__ctor_m2523126075 ();
+extern "C" void U3CU3Ec__DisplayClass3_0_U3CDOColorU3Eb__0_m957141770 ();
+extern "C" void U3CU3Ec__DisplayClass3_0_U3CDOColorU3Eb__1_m2321079802 ();
+extern "C" void U3CU3Ec__DisplayClass30_0__ctor_m310275667 ();
+extern "C" void U3CU3Ec__DisplayClass30_0_U3CDOMoveYU3Eb__0_m3400927500 ();
+extern "C" void U3CU3Ec__DisplayClass31_0__ctor_m1501303768 ();
+extern "C" void U3CU3Ec__DisplayClass31_0_U3CDOMoveZU3Eb__0_m426500438 ();
+extern "C" void U3CU3Ec__DisplayClass32_0__ctor_m2178862665 ();
+extern "C" void U3CU3Ec__DisplayClass32_0_U3CDORotateU3Eb__0_m1465396727 ();
+extern "C" void U3CU3Ec__DisplayClass33_0__ctor_m3369890766 ();
+extern "C" void U3CU3Ec__DisplayClass33_0_U3CDOLookAtU3Eb__0_m2175848057 ();
+extern "C" void U3CU3Ec__DisplayClass34_0__ctor_m3788268647 ();
+extern "C" void U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__0_m129842166 ();
+extern "C" void U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__1_m1113993907 ();
+extern "C" void U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__2_m412167168 ();
+extern "C" void U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__3_m271004667 ();
+extern "C" void U3CU3Ec__DisplayClass35_0__ctor_m684329452 ();
+extern "C" void U3CU3Ec__DisplayClass35_0_U3CDOResizeU3Eb__0_m1062477544 ();
+extern "C" void U3CU3Ec__DisplayClass35_0_U3CDOResizeU3Eb__1_m1015108308 ();
+extern "C" void U3CU3Ec__DisplayClass36_0__ctor_m1361888349 ();
+extern "C" void U3CU3Ec__DisplayClass36_0_U3CDOTimeU3Eb__0_m1475966617 ();
+extern "C" void U3CU3Ec__DisplayClass36_0_U3CDOTimeU3Eb__1_m121559691 ();
+extern "C" void U3CU3Ec__DisplayClass37_0__ctor_m2552916450 ();
+extern "C" void U3CU3Ec__DisplayClass37_0_U3CDOMoveU3Eb__0_m359009140 ();
+extern "C" void U3CU3Ec__DisplayClass37_0_U3CDOMoveU3Eb__1_m3556709574 ();
+extern "C" void U3CU3Ec__DisplayClass38_0__ctor_m4279760939 ();
+extern "C" void U3CU3Ec__DisplayClass38_0_U3CDOMoveXU3Eb__0_m1425354143 ();
+extern "C" void U3CU3Ec__DisplayClass38_0_U3CDOMoveXU3Eb__1_m2957932805 ();
+extern "C" void U3CU3Ec__DisplayClass39_0__ctor_m1175821744 ();
+extern "C" void U3CU3Ec__DisplayClass39_0_U3CDOMoveYU3Eb__0_m1855626079 ();
+extern "C" void U3CU3Ec__DisplayClass39_0_U3CDOMoveYU3Eb__1_m408221125 ();
+extern "C" void U3CU3Ec__DisplayClass4_0__ctor_m2329618396 ();
+extern "C" void U3CU3Ec__DisplayClass4_0_U3CDOFarClipPlaneU3Eb__0_m837436732 ();
+extern "C" void U3CU3Ec__DisplayClass4_0_U3CDOFarClipPlaneU3Eb__1_m639886534 ();
+extern "C" void U3CU3Ec__DisplayClass40_0__ctor_m972274776 ();
+extern "C" void U3CU3Ec__DisplayClass40_0_U3CDOMoveZU3Eb__0_m1987529994 ();
+extern "C" void U3CU3Ec__DisplayClass40_0_U3CDOMoveZU3Eb__1_m491428092 ();
+extern "C" void U3CU3Ec__DisplayClass41_0__ctor_m2163302877 ();
+extern "C" void U3CU3Ec__DisplayClass41_0_U3CDOLocalMoveU3Eb__0_m2033224342 ();
+extern "C" void U3CU3Ec__DisplayClass41_0_U3CDOLocalMoveU3Eb__1_m2953087352 ();
+extern "C" void U3CU3Ec__DisplayClass42_0__ctor_m2840861774 ();
+extern "C" void U3CU3Ec__DisplayClass42_0_U3CDOLocalMoveXU3Eb__0_m3107076211 ();
+extern "C" void U3CU3Ec__DisplayClass42_0_U3CDOLocalMoveXU3Eb__1_m3197697593 ();
+extern "C" void U3CU3Ec__DisplayClass43_0__ctor_m4031889875 ();
+extern "C" void U3CU3Ec__DisplayClass43_0_U3CDOLocalMoveYU3Eb__0_m610756655 ();
+extern "C" void U3CU3Ec__DisplayClass43_0_U3CDOLocalMoveYU3Eb__1_m3779923797 ();
+extern "C" void U3CU3Ec__DisplayClass44_0__ctor_m155300460 ();
+extern "C" void U3CU3Ec__DisplayClass44_0_U3CDOLocalMoveZU3Eb__0_m3429525479 ();
+extern "C" void U3CU3Ec__DisplayClass44_0_U3CDOLocalMoveZU3Eb__1_m169853145 ();
+extern "C" void U3CU3Ec__DisplayClass45_0__ctor_m1346328561 ();
+extern "C" void U3CU3Ec__DisplayClass45_0_U3CDORotateU3Eb__0_m4242212451 ();
+extern "C" void U3CU3Ec__DisplayClass45_0_U3CDORotateU3Eb__1_m812505753 ();
+extern "C" void U3CU3Ec__DisplayClass46_0__ctor_m2023887458 ();
+extern "C" void U3CU3Ec__DisplayClass46_0_U3CDORotateQuaternionU3Eb__0_m1403611186 ();
+extern "C" void U3CU3Ec__DisplayClass46_0_U3CDORotateQuaternionU3Eb__1_m2843422770 ();
+extern "C" void U3CU3Ec__DisplayClass47_0__ctor_m3214915559 ();
+extern "C" void U3CU3Ec__DisplayClass47_0_U3CDOLocalRotateU3Eb__0_m3401548570 ();
+extern "C" void U3CU3Ec__DisplayClass47_0_U3CDOLocalRotateU3Eb__1_m4075130094 ();
+extern "C" void U3CU3Ec__DisplayClass48_0__ctor_m646792752 ();
+extern "C" void U3CU3Ec__DisplayClass48_0_U3CDOLocalRotateQuaternionU3Eb__0_m2417245947 ();
+extern "C" void U3CU3Ec__DisplayClass48_0_U3CDOLocalRotateQuaternionU3Eb__1_m4244397049 ();
+extern "C" void U3CU3Ec__DisplayClass49_0__ctor_m1837820853 ();
+extern "C" void U3CU3Ec__DisplayClass49_0_U3CDOScaleU3Eb__0_m3665269606 ();
+extern "C" void U3CU3Ec__DisplayClass49_0_U3CDOScaleU3Eb__1_m4196430276 ();
+extern "C" void U3CU3Ec__DisplayClass5_0__ctor_m2444576637 ();
+extern "C" void U3CU3Ec__DisplayClass5_0_U3CDOFieldOfViewU3Eb__0_m1848561416 ();
+extern "C" void U3CU3Ec__DisplayClass5_0_U3CDOFieldOfViewU3Eb__1_m2096582742 ();
+extern "C" void U3CU3Ec__DisplayClass50_0__ctor_m2897528665 ();
+extern "C" void U3CU3Ec__DisplayClass50_0_U3CDOScaleU3Eb__0_m1588853000 ();
+extern "C" void U3CU3Ec__DisplayClass50_0_U3CDOScaleU3Eb__1_m3631471686 ();
+extern "C" void U3CU3Ec__DisplayClass51_0__ctor_m4088556766 ();
+extern "C" void U3CU3Ec__DisplayClass51_0_U3CDOScaleXU3Eb__0_m1948075833 ();
+extern "C" void U3CU3Ec__DisplayClass51_0_U3CDOScaleXU3Eb__1_m3311329199 ();
+extern "C" void U3CU3Ec__DisplayClass52_0__ctor_m471148367 ();
+extern "C" void U3CU3Ec__DisplayClass52_0_U3CDOScaleYU3Eb__0_m3251411591 ();
+extern "C" void U3CU3Ec__DisplayClass52_0_U3CDOScaleYU3Eb__1_m3569120073 ();
+extern "C" void U3CU3Ec__DisplayClass53_0__ctor_m1662176468 ();
+extern "C" void U3CU3Ec__DisplayClass53_0_U3CDOScaleZU3Eb__0_m1454695365 ();
+extern "C" void U3CU3Ec__DisplayClass53_0_U3CDOScaleZU3Eb__1_m571930087 ();
+extern "C" void U3CU3Ec__DisplayClass54_0__ctor_m2080554349 ();
+extern "C" void U3CU3Ec__DisplayClass54_0_U3CDOLookAtU3Eb__0_m307837654 ();
+extern "C" void U3CU3Ec__DisplayClass54_0_U3CDOLookAtU3Eb__1_m3916986746 ();
+extern "C" void U3CU3Ec__DisplayClass55_0__ctor_m3271582450 ();
+extern "C" void U3CU3Ec__DisplayClass55_0_U3CDOPunchPositionU3Eb__0_m2585814330 ();
+extern "C" void U3CU3Ec__DisplayClass55_0_U3CDOPunchPositionU3Eb__1_m1474448192 ();
+extern "C" void U3CU3Ec__DisplayClass56_0__ctor_m3949141347 ();
+extern "C" void U3CU3Ec__DisplayClass56_0_U3CDOPunchScaleU3Eb__0_m2915119996 ();
+extern "C" void U3CU3Ec__DisplayClass56_0_U3CDOPunchScaleU3Eb__1_m3104965930 ();
+extern "C" void U3CU3Ec__DisplayClass57_0__ctor_m845202152 ();
+extern "C" void U3CU3Ec__DisplayClass57_0_U3CDOPunchRotationU3Eb__0_m2254806487 ();
+extern "C" void U3CU3Ec__DisplayClass57_0_U3CDOPunchRotationU3Eb__1_m2952180521 ();
+extern "C" void U3CU3Ec__DisplayClass58_0__ctor_m2572046641 ();
+extern "C" void U3CU3Ec__DisplayClass58_0_U3CDOShakePositionU3Eb__0_m1163336561 ();
+extern "C" void U3CU3Ec__DisplayClass58_0_U3CDOShakePositionU3Eb__1_m1933773359 ();
+extern "C" void U3CU3Ec__DisplayClass59_0__ctor_m3763074742 ();
+extern "C" void U3CU3Ec__DisplayClass59_0_U3CDOShakePositionU3Eb__0_m1642876204 ();
+extern "C" void U3CU3Ec__DisplayClass59_0_U3CDOShakePositionU3Eb__1_m235758058 ();
+extern "C" void U3CU3Ec__DisplayClass6_0__ctor_m2251347742 ();
+extern "C" void U3CU3Ec__DisplayClass6_0_U3CDONearClipPlaneU3Eb__0_m835463291 ();
+extern "C" void U3CU3Ec__DisplayClass6_0_U3CDONearClipPlaneU3Eb__1_m2171634649 ();
+extern "C" void U3CU3Ec__DisplayClass60_0__ctor_m3550606422 ();
+extern "C" void U3CU3Ec__DisplayClass60_0_U3CDOShakeRotationU3Eb__0_m2331037687 ();
+extern "C" void U3CU3Ec__DisplayClass60_0_U3CDOShakeRotationU3Eb__1_m1591180149 ();
+extern "C" void U3CU3Ec__DisplayClass61_0__ctor_m446667227 ();
+extern "C" void U3CU3Ec__DisplayClass61_0_U3CDOShakeRotationU3Eb__0_m2810577330 ();
+extern "C" void U3CU3Ec__DisplayClass61_0_U3CDOShakeRotationU3Eb__1_m4188132144 ();
+extern "C" void U3CU3Ec__DisplayClass62_0__ctor_m1124226124 ();
+extern "C" void U3CU3Ec__DisplayClass62_0_U3CDOShakeScaleU3Eb__0_m746992757 ();
+extern "C" void U3CU3Ec__DisplayClass62_0_U3CDOShakeScaleU3Eb__1_m4211798123 ();
+extern "C" void U3CU3Ec__DisplayClass63_0__ctor_m2315254225 ();
+extern "C" void U3CU3Ec__DisplayClass63_0_U3CDOShakeScaleU3Eb__0_m2908893466 ();
+extern "C" void U3CU3Ec__DisplayClass63_0_U3CDOShakeScaleU3Eb__1_m18760496 ();
+extern "C" void U3CU3Ec__DisplayClass64_0__ctor_m2733632106 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__0_m724454993 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__1_m3056148615 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__2_m1331394981 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__3_m865617494 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__4_m1914872590 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__5_m18642488 ();
+extern "C" void U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__6_m933491780 ();
+extern "C" void U3CU3Ec__DisplayClass65_0__ctor_m3924660207 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__0_m2121271873 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__1_m3343933991 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__2_m1699525809 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__3_m2121271906 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__4_m4219811498 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__5_m2121271972 ();
+extern "C" void U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__6_m537595308 ();
+extern "C" void U3CU3Ec__DisplayClass66_0__ctor_m307251808 ();
+extern "C" void U3CU3Ec__DisplayClass66_0_U3CDOPathU3Eb__0_m1142391272 ();
+extern "C" void U3CU3Ec__DisplayClass66_0_U3CDOPathU3Eb__1_m1012172038 ();
+extern "C" void U3CU3Ec__DisplayClass67_0__ctor_m1498279909 ();
+extern "C" void U3CU3Ec__DisplayClass67_0_U3CDOLocalPathU3Eb__0_m4165442936 ();
+extern "C" void U3CU3Ec__DisplayClass67_0_U3CDOLocalPathU3Eb__1_m1809497282 ();
+extern "C" void U3CU3Ec__DisplayClass68_0__ctor_m3225124398 ();
+extern "C" void U3CU3Ec__DisplayClass68_0_U3CDOPathU3Eb__0_m1119458054 ();
+extern "C" void U3CU3Ec__DisplayClass68_0_U3CDOPathU3Eb__1_m1716607440 ();
+extern "C" void U3CU3Ec__DisplayClass69_0__ctor_m121185203 ();
+extern "C" void U3CU3Ec__DisplayClass69_0_U3CDOLocalPathU3Eb__0_m1304369154 ();
+extern "C" void U3CU3Ec__DisplayClass69_0_U3CDOLocalPathU3Eb__1_m1932352648 ();
+extern "C" void U3CU3Ec__DisplayClass7_0__ctor_m2366584767 ();
+extern "C" void U3CU3Ec__DisplayClass7_0_U3CDOOrthoSizeU3Eb__0_m556568037 ();
+extern "C" void U3CU3Ec__DisplayClass7_0_U3CDOOrthoSizeU3Eb__1_m1225798911 ();
+extern "C" void U3CU3Ec__DisplayClass70_0__ctor_m4047142743 ();
+extern "C" void U3CU3Ec__DisplayClass70_0_U3CDOBlendableColorU3Eb__0_m1828865631 ();
+extern "C" void U3CU3Ec__DisplayClass70_0_U3CDOBlendableColorU3Eb__1_m900931125 ();
+extern "C" void U3CU3Ec__DisplayClass71_0__ctor_m943203548 ();
+extern "C" void U3CU3Ec__DisplayClass71_0_U3CDOBlendableColorU3Eb__0_m3237505722 ();
+extern "C" void U3CU3Ec__DisplayClass71_0_U3CDOBlendableColorU3Eb__1_m226463258 ();
+extern "C" void U3CU3Ec__DisplayClass72_0__ctor_m1620762445 ();
+extern "C" void U3CU3Ec__DisplayClass72_0_U3CDOBlendableColorU3Eb__0_m679551017 ();
+extern "C" void U3CU3Ec__DisplayClass72_0_U3CDOBlendableColorU3Eb__1_m2150834303 ();
+extern "C" void U3CU3Ec__DisplayClass73_0__ctor_m2811790546 ();
+extern "C" void U3CU3Ec__DisplayClass73_0_U3CDOBlendableMoveByU3Eb__0_m1397009186 ();
+extern "C" void U3CU3Ec__DisplayClass73_0_U3CDOBlendableMoveByU3Eb__1_m3893369404 ();
+extern "C" void U3CU3Ec__DisplayClass74_0__ctor_m3230168427 ();
+extern "C" void U3CU3Ec__DisplayClass74_0_U3CDOBlendableLocalMoveByU3Eb__0_m1054671384 ();
+extern "C" void U3CU3Ec__DisplayClass74_0_U3CDOBlendableLocalMoveByU3Eb__1_m80553278 ();
+extern "C" void U3CU3Ec__DisplayClass75_0__ctor_m126229232 ();
+extern "C" void U3CU3Ec__DisplayClass75_0_U3CDOBlendableRotateByU3Eb__0_m1796633118 ();
+extern "C" void U3CU3Ec__DisplayClass75_0_U3CDOBlendableRotateByU3Eb__1_m2506099618 ();
+extern "C" void U3CU3Ec__DisplayClass76_0__ctor_m803788129 ();
+extern "C" void U3CU3Ec__DisplayClass76_0_U3CDOBlendableLocalRotateByU3Eb__0_m3081446080 ();
+extern "C" void U3CU3Ec__DisplayClass76_0_U3CDOBlendableLocalRotateByU3Eb__1_m2379502204 ();
+extern "C" void U3CU3Ec__DisplayClass77_0__ctor_m1994816230 ();
+extern "C" void U3CU3Ec__DisplayClass77_0_U3CDOBlendableScaleByU3Eb__0_m3592754085 ();
+extern "C" void U3CU3Ec__DisplayClass77_0_U3CDOBlendableScaleByU3Eb__1_m3223295987 ();
+extern "C" void U3CU3Ec__DisplayClass8_0__ctor_m2798668368 ();
+extern "C" void U3CU3Ec__DisplayClass8_0_U3CDOPixelRectU3Eb__0_m214223775 ();
+extern "C" void U3CU3Ec__DisplayClass8_0_U3CDOPixelRectU3Eb__1_m3022382809 ();
+extern "C" void U3CU3Ec__DisplayClass9_0__ctor_m2913626609 ();
+extern "C" void U3CU3Ec__DisplayClass9_0_U3CDORectU3Eb__0_m2562574134 ();
+extern "C" void U3CU3Ec__DisplayClass9_0_U3CDORectU3Eb__1_m3203347018 ();
+extern "C" void Tween_get_fullPosition_m1858972655 ();
+extern "C" void Tween_set_fullPosition_m3571808594 ();
+extern "C" void Tween_Reset_m2158413979 ();
+extern "C" void Tween_UpdateDelay_m1702331541 ();
+extern "C" void Tween_DoGoto_m3340670294 ();
+extern "C" void Tween_OnTweenCallback_m1044536921 ();
+extern "C" void Tween__ctor_m3822097368 ();
+extern "C" void TweenCallback__ctor_m3479200459 ();
+extern "C" void TweenCallback_Invoke_m102388039 ();
+extern "C" void TweenCallback_BeginInvoke_m2458978000 ();
+extern "C" void TweenCallback_EndInvoke_m3014345193 ();
+extern "C" void Tweener__ctor_m102043033 ();
+extern "C" void TweenExtensions_Complete_m274286092 ();
+extern "C" void TweenExtensions_Complete_m1419431965 ();
+extern "C" void TweenExtensions_Flip_m2922754576 ();
+extern "C" void TweenExtensions_ForceInit_m447977536 ();
+extern "C" void TweenExtensions_Goto_m4027866082 ();
+extern "C" void TweenExtensions_Kill_m3845739180 ();
+extern "C" void TweenExtensions_PlayBackwards_m613887607 ();
+extern "C" void TweenExtensions_PlayForward_m3704378858 ();
+extern "C" void TweenExtensions_Restart_m1866410855 ();
+extern "C" void TweenExtensions_Rewind_m3286148139 ();
+extern "C" void TweenExtensions_SmoothRewind_m2971573214 ();
+extern "C" void TweenExtensions_TogglePause_m1054448567 ();
+extern "C" void TweenExtensions_GotoWaypoint_m120126169 ();
+extern "C" void TweenExtensions_WaitForCompletion_m3746720476 ();
+extern "C" void TweenExtensions_WaitForRewind_m1446242633 ();
+extern "C" void TweenExtensions_WaitForKill_m2434480674 ();
+extern "C" void TweenExtensions_WaitForElapsedLoops_m1788575402 ();
+extern "C" void TweenExtensions_WaitForPosition_m4173788156 ();
+extern "C" void TweenExtensions_WaitForStart_m1828940021 ();
+extern "C" void TweenExtensions_CompletedLoops_m811455055 ();
+extern "C" void TweenExtensions_Delay_m1719013068 ();
+extern "C" void TweenExtensions_Duration_m4269627274 ();
+extern "C" void TweenExtensions_Elapsed_m4148870276 ();
+extern "C" void TweenExtensions_ElapsedPercentage_m1036631332 ();
+extern "C" void TweenExtensions_ElapsedDirectionalPercentage_m968488947 ();
+extern "C" void TweenExtensions_IsActive_m918693289 ();
+extern "C" void TweenExtensions_IsBackwards_m130236841 ();
+extern "C" void TweenExtensions_IsComplete_m3095330022 ();
+extern "C" void TweenExtensions_IsInitialized_m1900413101 ();
+extern "C" void TweenExtensions_IsPlaying_m3897946637 ();
+extern "C" void TweenExtensions_Loops_m700996556 ();
+extern "C" void TweenExtensions_PathGetPoint_m191575487 ();
+extern "C" void TweenExtensions_PathGetDrawPoints_m1280144712 ();
+extern "C" void TweenExtensions_PathLength_m410910326 ();
+extern "C" void TweenParams__ctor_m1421329190 ();
+extern "C" void TweenParams_Clear_m2352941651 ();
+extern "C" void TweenParams_SetAutoKill_m3324818264 ();
+extern "C" void TweenParams_SetId_m3936217499 ();
+extern "C" void TweenParams_SetTarget_m587577735 ();
+extern "C" void TweenParams_SetLoops_m833753209 ();
+extern "C" void TweenParams_SetEase_m249761156 ();
+extern "C" void TweenParams_SetEase_m2156832318 ();
+extern "C" void TweenParams_SetEase_m50101784 ();
+extern "C" void TweenParams_SetRecyclable_m4113181667 ();
+extern "C" void TweenParams_SetUpdate_m4207667294 ();
+extern "C" void TweenParams_SetUpdate_m161821801 ();
+extern "C" void TweenParams_OnStart_m3718574137 ();
+extern "C" void TweenParams_OnPlay_m1710613197 ();
+extern "C" void TweenParams_OnRewind_m2137198170 ();
+extern "C" void TweenParams_OnUpdate_m57491400 ();
+extern "C" void TweenParams_OnStepComplete_m418530464 ();
+extern "C" void TweenParams_OnComplete_m4145462530 ();
+extern "C" void TweenParams_OnKill_m1111014851 ();
+extern "C" void TweenParams_OnWaypointChange_m224661718 ();
+extern "C" void TweenParams_SetDelay_m443284532 ();
+extern "C" void TweenParams_SetRelative_m2325101835 ();
+extern "C" void TweenParams_SetSpeedBased_m2851973033 ();
+extern "C" void TweenParams__cctor_m1144029957 ();
+extern "C" void TweenSettingsExtensions_Append_m388120539 ();
+extern "C" void TweenSettingsExtensions_Prepend_m2832870725 ();
+extern "C" void TweenSettingsExtensions_Join_m3909252375 ();
+extern "C" void TweenSettingsExtensions_Insert_m3944817171 ();
+extern "C" void TweenSettingsExtensions_AppendInterval_m2840030048 ();
+extern "C" void TweenSettingsExtensions_PrependInterval_m3957684016 ();
+extern "C" void TweenSettingsExtensions_AppendCallback_m230459415 ();
+extern "C" void TweenSettingsExtensions_PrependCallback_m13875009 ();
+extern "C" void TweenSettingsExtensions_InsertCallback_m832410615 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m937094726 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m3823322733 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m1571209893 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m4276703213 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m1908370469 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m64883053 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m1404749221 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m1163764278 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m2869276193 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m2755395124 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m1112657767 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m3161000053 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m4207975669 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m4038334168 ();
+extern "C" void TweenSettingsExtensions_SetOptions_m3069323763 ();
+extern "C" void TweenSettingsExtensions_SetLookAt_m1482035211 ();
+extern "C" void TweenSettingsExtensions_SetLookAt_m2149060425 ();
+extern "C" void TweenSettingsExtensions_SetLookAt_m4115581975 ();
+extern "C" void TweenSettingsExtensions_SetPathForwardDirection_m364378825 ();
+extern "C" void FormatReader_get_FormatString_m3486194298 ();
+extern "C" void FormatReader_set_FormatString_m894199159 ();
+extern "C" void FormatReader__ctor_m1666847312 ();
+extern "C" void FormatReader_IsDateFormatString_m3255475084 ();
+extern "C" void FormatReader_IsSurroundedByQuotes_m2508166547 ();
+extern "C" void FormatReader_IsPrecededByBackSlash_m4280506347 ();
+extern "C" void FormatReader_IsSurroundedByBracket_m2253026190 ();
+extern "C" void FormatReader_NumberOfUnescapedOccurances_m2715376771 ();
+extern "C" void Helpers_ConvertEscapeChars_m2354180383 ();
+extern "C" void Helpers_ConvertFromOATime_m3489838396 ();
+extern "C" void Helpers_FixDataTypes_m3481117268 ();
+extern "C" void Helpers_AddColumnHandleDuplicate_m2739049988 ();
+extern "C" void Helpers_U3CConvertEscapeCharsU3Eb__0_m1680631643 ();
+extern "C" void Helpers__cctor_m3113545832 ();
+extern "C" void XlsxDimension__ctor_m3600381333 ();
+extern "C" void XlsxDimension__ctor_m2160908895 ();
+extern "C" void XlsxDimension_get_FirstRow_m2062924334 ();
+extern "C" void XlsxDimension_set_FirstRow_m1574325995 ();
+extern "C" void XlsxDimension_set_LastRow_m985415191 ();
+extern "C" void XlsxDimension_get_FirstCol_m2062942536 ();
+extern "C" void XlsxDimension_set_FirstCol_m2228137341 ();
+extern "C" void XlsxDimension_get_LastCol_m3832305192 ();
+extern "C" void XlsxDimension_set_LastCol_m3765907389 ();
+extern "C" void XlsxDimension_ParseDimensions_m2074318159 ();
+extern "C" void XlsxDimension_XlsxDim_m731433956 ();
+extern "C" void XlsxNumFmt_get_Id_m2158901850 ();
+extern "C" void XlsxNumFmt_get_FormatCode_m3092717742 ();
+extern "C" void XlsxNumFmt__ctor_m369337161 ();
+extern "C" void XlsxSST__ctor_m3040107683 ();
+extern "C" void XlsxStyles__ctor_m1825862751 ();
+extern "C" void XlsxStyles_get_CellXfs_m233426665 ();
+extern "C" void XlsxStyles_get_NumFmts_m1131716335 ();
+extern "C" void XlsxWorkbook__ctor_m912209719 ();
+extern "C" void XlsxWorkbook_get_Sheets_m3489303710 ();
+extern "C" void XlsxWorkbook_get_SST_m3367944442 ();
+extern "C" void XlsxWorkbook_get_Styles_m2879484330 ();
+extern "C" void XlsxWorkbook_ReadStyles_m4081036932 ();
+extern "C" void XlsxWorkbook_ReadSharedStrings_m783934533 ();
+extern "C" void XlsxWorkbook_ReadWorkbook_m1276773658 ();
+extern "C" void XlsxWorkbook_ReadWorkbookRels_m2614923554 ();
+extern "C" void XlsxWorksheet_get_IsEmpty_m2360951215 ();
+extern "C" void XlsxWorksheet_set_IsEmpty_m3098075726 ();
+extern "C" void XlsxWorksheet_get_Dimension_m3111336406 ();
+extern "C" void XlsxWorksheet_set_Dimension_m827420835 ();
+extern "C" void XlsxWorksheet_get_ColumnsCount_m2624441818 ();
+extern "C" void XlsxWorksheet_get_Name_m872113654 ();
+extern "C" void XlsxWorksheet_get_RID_m2274730670 ();
+extern "C" void XlsxWorksheet_get_Path_m3419688902 ();
+extern "C" void XlsxWorksheet_set_Path_m3886834411 ();
+extern "C" void XlsxWorksheet__ctor_m2044061580 ();
+extern "C" void XlsxXf_get_NumFmtId_m3300837920 ();
+extern "C" void XlsxXf_get_ApplyNumberFormat_m3096434926 ();
+extern "C" void XlsxXf__ctor_m3211114059 ();
+extern "C" void ReferenceHelper_ReferenceToColumnAndRow_m89366838 ();
+extern "C" void ZipWorker_get_IsValid_m3976233184 ();
+extern "C" void ZipWorker_get_ExceptionMessage_m775648301 ();
+extern "C" void ZipWorker__ctor_m3365551045 ();
+extern "C" void ZipWorker_Extract_m3209149031 ();
+extern "C" void ZipWorker_GetSharedStringsStream_m1773174858 ();
+extern "C" void ZipWorker_GetStylesStream_m3866322631 ();
+extern "C" void ZipWorker_GetWorkbookStream_m1279462543 ();
+extern "C" void ZipWorker_GetWorksheetStream_m3599487247 ();
+extern "C" void ZipWorker_GetWorkbookRelsStream_m2990482831 ();
+extern "C" void ZipWorker_CleanFromTemp_m3051253553 ();
+extern "C" void ZipWorker_ExtractZipEntry_m3512310153 ();
+extern "C" void ZipWorker_NewTempPath_m3191004630 ();
+extern "C" void ZipWorker_CheckFolderTree_m3988233943 ();
+extern "C" void ZipWorker_GetStream_m1165928629 ();
+extern "C" void ZipWorker_Dispose_m2777260408 ();
+extern "C" void ZipWorker_Dispose_m547991009 ();
+extern "C" void ZipWorker_Finalize_m3289108063 ();
+extern "C" void ExcelOpenXmlReader__ctor_m2920103612 ();
+extern "C" void ExcelOpenXmlReader_ReadGlobals_m356406304 ();
+extern "C" void ExcelOpenXmlReader_CheckDateTimeNumFmts_m1223386651 ();
+extern "C" void ExcelOpenXmlReader_ReadSheetGlobals_m3581744618 ();
+extern "C" void ExcelOpenXmlReader_ReadSheetRow_m3966407690 ();
+extern "C" void ExcelOpenXmlReader_IsDateTimeStyle_m2153382639 ();
+extern "C" void ExcelOpenXmlReader_Initialize_m3797863185 ();
+extern "C" void ExcelOpenXmlReader_AsDataSet_m2452927416 ();
+extern "C" void ExcelOpenXmlReader_AsDataSet_m2575323469 ();
+extern "C" void ExcelOpenXmlReader_Close_m2461826172 ();
+extern "C" void ExcelOpenXmlReader_Dispose_m2298408177 ();
+extern "C" void ExcelOpenXmlReader_Dispose_m3451071528 ();
+extern "C" void ExcelOpenXmlReader_Finalize_m3175468180 ();
+extern "C" void ExcelReaderFactory_CreateOpenXmlReader_m2542223693 ();
+extern "C" void Log_GetLoggerFor_m735624633 ();
+extern "C" void Log__cctor_m2503365230 ();
+extern "C" void NullLog_InitializeFor_m2740124739 ();
+extern "C" void NullLog_Debug_m4179243397 ();
+extern "C" void NullLog__ctor_m267990052 ();
+extern "C" void LogManager_Log_m3711135055 ();
+extern "C" void LogManager__cctor_m3639208699 ();
 extern "C" void U3CPrivateImplementationDetailsU3E__ctor_m2899642404 ();
 extern "C" void AccountInputField__ctor_m1931561658 ();
 extern "C" void AccountInputField_Awake_m3085227243 ();
@@ -17519,6 +18541,8 @@ extern "C" void EquipItems__ctor_m2508878821 ();
 extern "C" void EquipItems_Start_m3665532189 ();
 extern "C" void EquipRandomItem__ctor_m3904740745 ();
 extern "C" void EquipRandomItem_OnClick_m892460896 ();
+extern "C" void FPSDisplay__ctor_m1019612258 ();
+extern "C" void FPSDisplay_Update_m3681504265 ();
 extern "C" void GameChoosePanel__ctor_m2555901690 ();
 extern "C" void GameChoosePanel_Start_m3878994614 ();
 extern "C" void GameChoosePanel_Update_m2041466511 ();
@@ -17557,8 +18581,11 @@ extern "C" void SoundSetting_set_BackgroundMusic_m935257122 ();
 extern "C" void SoundSetting_get_Volume_m526964487 ();
 extern "C" void SoundSetting_set_Volume_m2286957978 ();
 extern "C" void GameManager__ctor_m293624896 ();
+extern "C" void GameManager_Awake_m99497495 ();
 extern "C" void GameManager_Start_m2655388892 ();
 extern "C" void GameManager_Update_m969954595 ();
+extern "C" void GameManager_GameInit_m3322512818 ();
+extern "C" void GameManager_InitDOTween_m4053187674 ();
 extern "C" void GamePanel__ctor_m941006463 ();
 extern "C" void GamePanel_Awake_m1922740256 ();
 extern "C" void GamePanel_Start_m1361439195 ();
@@ -17583,6 +18610,20 @@ extern "C" void IgnoreTimeScale_get_realTime_m2636193438 ();
 extern "C" void IgnoreTimeScale_get_realTimeDelta_m2071297190 ();
 extern "C" void IgnoreTimeScale_OnEnable_m903918566 ();
 extern "C" void IgnoreTimeScale_UpdateRealTimeDelta_m2842133462 ();
+extern "C" void InputControllerManager__ctor_m3848532150 ();
+extern "C" void InputControllerManager__cctor_m3649550873 ();
+extern "C" void InputControllerManager_Awake_m3221585475 ();
+extern "C" void InputControllerManager_Start_m284809842 ();
+extern "C" void InputControllerManager_ControlButtonClickDelegate_m998976378 ();
+extern "C" void InputControllerManager_ControlButtonOnPressDelegat_m573203707 ();
+extern "C" void InputControllerManager_LeftButtonClickDelegate_m1454747336 ();
+extern "C" void InputControllerManager_LeftButtonOnPressDelegat_m1397870911 ();
+extern "C" void InputControllerManager_RightButtonClickDelegate_m1640841119 ();
+extern "C" void InputControllerManager_RightButtonOnPressDelegat_m2689149352 ();
+extern "C" void InputControllerManager_UpButtonClickDelegate_m3487804296 ();
+extern "C" void InputControllerManager_UpButtonOnPressDelegat_m514896897 ();
+extern "C" void InputControllerManager_DownButtonClickDelegate_m2137675857 ();
+extern "C" void InputControllerManager_DownButtonOnPressDelegat_m1104519320 ();
 extern "C" void InvAttachmentPoint__ctor_m2204608127 ();
 extern "C" void InvAttachmentPoint_Attach_m3836457771 ();
 extern "C" void InvBaseItem__ctor_m3845987572 ();
@@ -17634,12 +18675,12 @@ extern "C" void LoadingProcess_Awake_m705420315 ();
 extern "C" void LoadingProcess_Start_m4254790716 ();
 extern "C" void LoadingProcess_Update_m3191783039 ();
 extern "C" void LoadingProcess_UpdateProcessBar_m1373146775 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator3__ctor_m3052140902 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2214538908 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2594174964 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator3_MoveNext_m964262434 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator3_Dispose_m3198156237 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator3_Reset_m2065747883 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator5__ctor_m3054656228 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1089153238 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m3263057710 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_Dispose_m3281031183 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801 ();
 extern "C" void LoadLevelOnClick__ctor_m2820126616 ();
 extern "C" void LoadLevelOnClick_OnClick_m931326351 ();
 extern "C" void Localization__ctor_m3434466340 ();
@@ -17657,6 +18698,7 @@ extern "C" void LoginButton__ctor_m3848371384 ();
 extern "C" void LoginButton_Start_m282510188 ();
 extern "C" void LoginButton_Update_m838620451 ();
 extern "C" void LoginButton_OnClick_m4002346237 ();
+extern "C" void LoginButton_LoadLoadingScene_m3610603430 ();
 extern "C" void LoginManager__ctor_m930990491 ();
 extern "C" void LoginManager__cctor_m3427618314 ();
 extern "C" void LoginManager_get_IsLogin_m2776291283 ();
@@ -17757,9 +18799,43 @@ extern "C" void NGUITools_MarkParentAsChanged_m2361970558 ();
 extern "C" void NGUITools_GetSystemCopyBufferProperty_m2191884630 ();
 extern "C" void NGUITools_get_clipboard_m1224171497 ();
 extern "C" void NGUITools_set_clipboard_m1817767080 ();
+extern "C" void OffsetScroller__ctor_m1190285988 ();
+extern "C" void OffsetScroller_Awake_m556717801 ();
+extern "C" void OffsetScroller_Start_m190933060 ();
+extern "C" void OffsetScroller_Update_m57003493 ();
+extern "C" void OffsetScroller_OnDisable_m2018971697 ();
 extern "C" void PanWithMouse__ctor_m2600594243 ();
 extern "C" void PanWithMouse_Start_m434472959 ();
 extern "C" void PanWithMouse_Update_m607103388 ();
+extern "C" void PlayerCarController__ctor_m3941186136 ();
+extern "C" void PlayerCarController_Awake_m2021496921 ();
+extern "C" void PlayerCarController_Start_m3079385016 ();
+extern "C" void PlayerCarController_Update_m484703677 ();
+extern "C" void PlayerCarController_MoveRight_m2971198157 ();
+extern "C" void PlayerCarController_MoveLeft_m3565104488 ();
+extern "C" void PlayerCarController_MoveUp_m2824957612 ();
+extern "C" void PlayerCarController_KeepMoveUp_m1331347744 ();
+extern "C" void PlayerCarController_MoveUpCoroutine_m2693190894 ();
+extern "C" void PlayerCarController_MoveDown_m254707483 ();
+extern "C" void PlayerCarController_KeepMoveDown_m1247487731 ();
+extern "C" void PlayerCarController_MoveDownCoroutine_m3523165399 ();
+extern "C" void PlayerCarController_Jump_m3808470432 ();
+extern "C" void PlayerCarController_CrashCallBack_m3159760084 ();
+extern "C" void PlayerCarController_OnTriggerEnter2D_m3876316192 ();
+extern "C" void PlayerCarController_OnTriggerExit2D_m2931615634 ();
+extern "C" void PlayerCarController_OnTweenComplete_m3857909345 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4__ctor_m696433809 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3013308307 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1565711547 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_Dispose_m2032154194 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3__ctor_m1542069677 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m747310411 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2583548723 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_Dispose_m905637506 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776 ();
 extern "C" void PlayIdleAnimations__ctor_m1300294730 ();
 extern "C" void PlayIdleAnimations_Start_m1656706198 ();
 extern "C" void PlayIdleAnimations_Update_m1066760115 ();
@@ -18676,7 +19752,7 @@ extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_Start_m3663283896 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_CoroutineUpdate_m4284548736 ();
-extern const Il2CppMethodPointer g_MethodPointers[18665] = 
+extern const Il2CppMethodPointer g_MethodPointers[19741] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -21658,8 +22734,11 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Math_Round_m633691703,
 	Math_RoundAwayFromZero_m1062982686,
 	Math_Round_m2632426160,
+	Math_Truncate_m2511675028,
 	Math_Sin_m2320256962,
 	Math_Cos_m43596019,
+	Math_Acos_m2218287828,
+	Math_Asin_m347297897,
 	Math_Log_m3371716878,
 	Math_Pow_m3099781906,
 	Math_Sqrt_m932242488,
@@ -30684,6 +31763,7 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	X509SubjectKeyIdentifierExtension_Encode_m4237278042,
 	X509SubjectKeyIdentifierExtension_ToString_m4073475390,
 	BaseMachine__ctor_m2327544039,
+	BaseMachine_Replace_m2446015132,
 	BaseMachine_Scan_m122450399,
 	BaseMachine_LTRReplace_m2163978622,
 	BaseMachine_LTRReplace_m1094774497,
@@ -30921,12 +32001,17 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Regex__ctor_m392221833,
 	Regex__cctor_m3397544801,
 	Regex_System_Runtime_Serialization_ISerializable_GetObjectData_m4035555909,
+	Regex_Match_m92265676,
+	Regex_Match_m1680452684,
+	Regex_Replace_m4096557757,
+	Regex_Replace_m566725221,
 	Regex_validate_options_m3563464259,
 	Regex_Init_m1873144192,
 	Regex_InitNewRegex_m692548389,
 	Regex_CreateMachineFactory_m3035817687,
 	Regex_get_Options_m2450064630,
 	Regex_get_RightToLeft_m529734879,
+	Regex_GroupNumberFromName_m3228736983,
 	Regex_GetGroupIndex_m1686599756,
 	Regex_default_startat_m2116037983,
 	Regex_IsMatch_m563118126,
@@ -30937,13 +32022,25 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Regex_Matches_m1377235443,
 	Regex_Replace_m349947612,
 	Regex_Replace_m3184963602,
+	Regex_Replace_m2510734387,
+	Regex_Replace_m2887768543,
 	Regex_ToString_m3687329849,
+	Regex_get_GroupCount_m1188068377,
 	Regex_get_Gap_m2028850051,
 	Regex_CreateMachine_m1003508921,
 	Regex_GetGroupNamesArray_m2600772921,
 	Regex_get_GroupNumbers_m2242327956,
 	Adapter__ctor_m1980753631,
 	Adapter_Evaluate_m3020640275,
+	ReplacementEvaluator__ctor_m3746900384,
+	ReplacementEvaluator_Evaluate_m197194936,
+	ReplacementEvaluator_EvaluateAppend_m4165611689,
+	ReplacementEvaluator_get_NeedsGroupsOrCaptures_m3532058782,
+	ReplacementEvaluator_Ensure_m2025598273,
+	ReplacementEvaluator_AddFromReplacement_m3891576415,
+	ReplacementEvaluator_AddInt_m2149831105,
+	ReplacementEvaluator_Compile_m1875719451,
+	ReplacementEvaluator_CompileTerm_m1895109616,
 	RxCompiler__ctor_m2592327580,
 	RxCompiler_MakeRoom_m462463302,
 	RxCompiler_Emit_m1429737796,
@@ -31267,406 +32364,6 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	UriTypeConverter_ConvertFrom_m2743854187,
 	UriTypeConverter_ConvertTo_m507771013,
 	UriTypeConverter_IsValid_m2806107649,
-	ConfigXmlTextReader__ctor_m965728314,
-	ConfigXmlTextReader__ctor_m2778808542,
-	ConfigXmlTextReader_get_Filename_m3902945538,
-	ClientConfigurationSystem__ctor_m2508818941,
-	ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608,
-	ClientConfigurationSystem_get_Configuration_m1415521026,
-	ConfigInfo__ctor_m2533184409,
-	ConfigInfo_CreateInstance_m615435773,
-	ConfigInfo_set_StreamName_m1734466909,
-	ConfigInfo_ThrowException_m3313572946,
-	ConfigInfoCollection__ctor_m2267743875,
-	ConfigInfoCollection_get_AllKeys_m3546771423,
-	ConfigInfoCollection_get_Item_m4196945655,
-	ConfigInfoCollection_set_Item_m406516082,
-	ConfigInfoCollection_Add_m1288541941,
-	ConfigInfoCollection_Clear_m1297066444,
-	ConfigInfoCollection_Remove_m1334699295,
-	ConfigNameValueCollection__ctor_m1183291289,
-	ConfigNameValueCollection__ctor_m2285608570,
-	ConfigNameValueCollection_ResetModified_m2605677405,
-	ConfigNameValueCollection_get_IsModified_m3218832143,
-	ConfigNameValueCollection_Set_m2008693955,
-	Configuration__ctor_m3545852494,
-	Configuration__ctor_m88421328,
-	Configuration_FindLocationConfiguration_m4081437406,
-	Configuration_Init_m2991025886,
-	Configuration_get_Parent_m335637978,
-	Configuration_set_Parent_m3106974805,
-	Configuration_GetParentWithFile_m1651703053,
-	Configuration_get_ConfigHost_m854336265,
-	Configuration_get_LocationConfigPath_m609030371,
-	Configuration_get_ConfigPath_m937107392,
-	Configuration_get_FilePath_m3184045596,
-	Configuration_get_HasFile_m1167170352,
-	Configuration_get_Locations_m2394414303,
-	Configuration_get_RootSectionGroup_m1643677634,
-	Configuration_get_SectionGroups_m2782934403,
-	Configuration_get_Sections_m3724328875,
-	Configuration_GetSection_m3056810807,
-	Configuration_GetSectionInstance_m3769455073,
-	Configuration_GetSectionGroupInstance_m2028928705,
-	Configuration_SetSectionXml_m2783526347,
-	Configuration_GetSectionXml_m1792995434,
-	Configuration_Load_m851220319,
-	Configuration_ReadConfigFile_m1878607525,
-	Configuration_ReadData_m342895002,
-	Configuration_ThrowException_m3079645534,
-	ConfigurationCollectionAttribute__ctor_m1251693102,
-	ConfigurationCollectionAttribute_get_AddItemName_m1343590308,
-	ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535,
-	ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851,
-	ConfigurationCollectionAttribute_set_CollectionType_m1820962205,
-	ConfigurationElement__ctor_m1276017081,
-	ConfigurationElement_get_Configuration_m2347242418,
-	ConfigurationElement_set_Configuration_m1639150663,
-	ConfigurationElement_InitFromProperty_m3625723156,
-	ConfigurationElement_get_ElementInformation_m3882602470,
-	ConfigurationElement_get_RawXml_m2664527628,
-	ConfigurationElement_set_RawXml_m3850583953,
-	ConfigurationElement_Init_m1329365593,
-	ConfigurationElement_get_LockAllAttributesExcept_m3610263831,
-	ConfigurationElement_get_LockAllElementsExcept_m1554073633,
-	ConfigurationElement_get_LockAttributes_m3450186057,
-	ConfigurationElement_get_LockElements_m2225570247,
-	ConfigurationElement_set_LockItem_m3758070483,
-	ConfigurationElement_SetPropertyValue_m1782021972,
-	ConfigurationElement_GetKeyProperties_m4219970304,
-	ConfigurationElement_GetDefaultCollection_m1796439560,
-	ConfigurationElement_get_Item_m1850092018,
-	ConfigurationElement_set_Item_m2558768429,
-	ConfigurationElement_get_Item_m3478882412,
-	ConfigurationElement_set_Item_m3141894725,
-	ConfigurationElement_get_Properties_m2163360678,
-	ConfigurationElement_Equals_m3484522968,
-	ConfigurationElement_GetHashCode_m2198573252,
-	ConfigurationElement_HasValues_m1341383433,
-	ConfigurationElement_HasLocalModifications_m169968917,
-	ConfigurationElement_DeserializeElement_m2430565615,
-	ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910,
-	ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706,
-	ConfigurationElement_OnRequiredPropertyNotFound_m3323765040,
-	ConfigurationElement_PreSerialize_m1824129726,
-	ConfigurationElement_PostDeserialize_m3225465312,
-	ConfigurationElement_InitializeDefault_m2939047706,
-	ConfigurationElement_IsModified_m748618350,
-	ConfigurationElement_SetReadOnly_m1594739059,
-	ConfigurationElement_IsReadOnly_m2244525315,
-	ConfigurationElement_Reset_m484744193,
-	ConfigurationElement_ResetModified_m933170487,
-	ConfigurationElement_SerializeElement_m4131562944,
-	ConfigurationElement_SerializeToXmlElement_m3789742405,
-	ConfigurationElement_Unmerge_m2515561191,
-	ConfigurationElement_HasValue_m1390685398,
-	ConfigurationElement_ValidateValue_m1396480566,
-	ConfigurationElementCollection__ctor_m1722138055,
-	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345,
-	ConfigurationElementCollection_InitFromProperty_m3084253332,
-	ConfigurationElementCollection_get_CollectionType_m2878912072,
-	ConfigurationElementCollection_get_IsBasic_m1624364384,
-	ConfigurationElementCollection_get_IsAlternate_m1087333324,
-	ConfigurationElementCollection_get_Count_m1016392721,
-	ConfigurationElementCollection_get_ElementName_m1163032572,
-	ConfigurationElementCollection_set_EmitClear_m649573135,
-	ConfigurationElementCollection_get_SyncRoot_m1263605066,
-	ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882,
-	ConfigurationElementCollection_get_AddElementName_m2131549453,
-	ConfigurationElementCollection_get_ClearElementName_m344564617,
-	ConfigurationElementCollection_get_RemoveElementName_m670755192,
-	ConfigurationElementCollection_BaseAdd_m692033632,
-	ConfigurationElementCollection_BaseAdd_m1594255685,
-	ConfigurationElementCollection_BaseClear_m1999336003,
-	ConfigurationElementCollection_BaseGet_m498332263,
-	ConfigurationElementCollection_BaseGet_m673060682,
-	ConfigurationElementCollection_BaseIndexOf_m1544895010,
-	ConfigurationElementCollection_IndexOfKey_m1888078841,
-	ConfigurationElementCollection_BaseRemove_m1128013164,
-	ConfigurationElementCollection_BaseRemoveAt_m1239272108,
-	ConfigurationElementCollection_CompareKeys_m682234560,
-	ConfigurationElementCollection_CreateNewElement_m3219927641,
-	ConfigurationElementCollection_CreateNewElementInternal_m226698700,
-	ConfigurationElementCollection_Equals_m2221773756,
-	ConfigurationElementCollection_GetHashCode_m770974360,
-	ConfigurationElementCollection_GetEnumerator_m2214669871,
-	ConfigurationElementCollection_IsElementName_m2704993900,
-	ConfigurationElementCollection_IsElementRemovable_m1916442331,
-	ConfigurationElementCollection_IsModified_m4233298518,
-	ConfigurationElementCollection_IsReadOnly_m2147280149,
-	ConfigurationElementCollection_HasValues_m4112686071,
-	ConfigurationElementCollection_Reset_m3142114271,
-	ConfigurationElementCollection_ResetModified_m3318214445,
-	ConfigurationElementCollection_SetReadOnly_m2819095069,
-	ConfigurationElementCollection_SerializeElement_m3696766444,
-	ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278,
-	ConfigurationElementCollection_Unmerge_m2009439485,
-	ConfigurationRemoveElement__ctor_m2892373574,
-	ConfigurationRemoveElement_get_KeyValue_m2322918292,
-	ConfigurationRemoveElement_get_Properties_m4160822773,
-	ConfigurationErrorsException__ctor_m3609325505,
-	ConfigurationErrorsException__ctor_m2348714781,
-	ConfigurationErrorsException__ctor_m1926925674,
-	ConfigurationErrorsException__ctor_m3963297863,
-	ConfigurationErrorsException__ctor_m3089652486,
-	ConfigurationErrorsException__ctor_m4265896371,
-	ConfigurationErrorsException__ctor_m3506512730,
-	ConfigurationErrorsException_get_BareMessage_m403421148,
-	ConfigurationErrorsException_get_Message_m3733233144,
-	ConfigurationErrorsException_GetFilename_m2673389627,
-	ConfigurationErrorsException_GetLineNumber_m1372608032,
-	ConfigurationErrorsException_GetFilename_m2049567258,
-	ConfigurationErrorsException_GetLineNumber_m3976484637,
-	ConfigurationErrorsException_GetObjectData_m770656613,
-	ConfigurationFileMap__ctor_m3731838539,
-	ConfigurationFileMap__ctor_m3124444437,
-	ConfigurationFileMap_get_MachineConfigFilename_m1702653625,
-	ConfigurationFileMap_set_MachineConfigFilename_m3052034378,
-	ConfigurationFileMap_Clone_m1273941989,
-	ConfigurationLocation__ctor_m3125296074,
-	ConfigurationLocation__cctor_m1384898491,
-	ConfigurationLocation_get_Path_m2365456525,
-	ConfigurationLocation_OpenConfiguration_m2905080700,
-	ConfigurationLocation_SetParentConfiguration_m4197005207,
-	ConfigurationLocationCollection__ctor_m303069056,
-	ConfigurationLocationCollection_Add_m3681642539,
-	ConfigurationLocationCollection_Find_m3684263568,
-	ConfigurationLockCollection__ctor_m870306509,
-	ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008,
-	ConfigurationLockCollection_CheckName_m2810988355,
-	ConfigurationLockCollection_Add_m3416925987,
-	ConfigurationLockCollection_Clear_m2378334261,
-	ConfigurationLockCollection_GetEnumerator_m3742833280,
-	ConfigurationLockCollection_SetFromList_m2739237306,
-	ConfigurationLockCollection_get_Count_m3926033248,
-	ConfigurationLockCollection_get_SyncRoot_m1477706993,
-	ConfigurationManager__cctor_m145104057,
-	ConfigurationManager_GetAssemblyInfo_m1959334153,
-	ConfigurationManager_OpenExeConfigurationInternal_m2337857263,
-	ConfigurationManager_get_ConfigurationFactory_m113132422,
-	ConfigurationManager_get_ConfigurationSystem_m1820628092,
-	ConfigurationManager_GetSection_m1187558274,
-	ConfigurationProperty__ctor_m2339141717,
-	ConfigurationProperty__ctor_m2205928547,
-	ConfigurationProperty__ctor_m1024361505,
-	ConfigurationProperty__ctor_m2779674618,
-	ConfigurationProperty__ctor_m664996226,
-	ConfigurationProperty__cctor_m3667988185,
-	ConfigurationProperty_get_DefaultValue_m426297024,
-	ConfigurationProperty_get_IsKey_m2843757270,
-	ConfigurationProperty_get_IsRequired_m2849112540,
-	ConfigurationProperty_get_IsDefaultCollection_m4193636108,
-	ConfigurationProperty_get_Name_m2150541641,
-	ConfigurationProperty_get_Type_m573764699,
-	ConfigurationProperty_get_Validator_m1030428852,
-	ConfigurationProperty_ConvertFromString_m661781545,
-	ConfigurationProperty_ConvertToString_m137757750,
-	ConfigurationProperty_get_IsElement_m12977767,
-	ConfigurationProperty_get_CollectionAttribute_m256228153,
-	ConfigurationProperty_set_CollectionAttribute_m21883792,
-	ConfigurationProperty_Validate_m556423690,
-	ConfigurationPropertyAttribute__ctor_m2756034538,
-	ConfigurationPropertyAttribute_get_DefaultValue_m315790916,
-	ConfigurationPropertyAttribute_set_DefaultValue_m645825465,
-	ConfigurationPropertyAttribute_get_Options_m78342746,
-	ConfigurationPropertyAttribute_set_Options_m540649869,
-	ConfigurationPropertyAttribute_get_Name_m3548275941,
-	ConfigurationPropertyCollection__ctor_m2795982958,
-	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930,
-	ConfigurationPropertyCollection_get_Count_m1518273402,
-	ConfigurationPropertyCollection_get_SyncRoot_m2789197201,
-	ConfigurationPropertyCollection_Add_m3481099429,
-	ConfigurationPropertyCollection_GetEnumerator_m3414286410,
-	ConfigurationSection__ctor_m714843276,
-	ConfigurationSection_get_SectionHandler_m1982719862,
-	ConfigurationSection_set_SectionHandler_m1410633441,
-	ConfigurationSection_get_SectionInformation_m4037021195,
-	ConfigurationSection_get_ConfigContext_m4131621597,
-	ConfigurationSection_set_ConfigContext_m1616871218,
-	ConfigurationSection_GetRuntimeObject_m3965484768,
-	ConfigurationSection_IsModified_m1833174423,
-	ConfigurationSection_ResetModified_m2300774056,
-	ConfigurationSection_CreateElement_m1756012205,
-	ConfigurationSection_DoDeserializeSection_m2782358321,
-	ConfigurationSection_DeserializeSection_m1139223106,
-	ConfigurationSection_DeserializeConfigSource_m495463306,
-	ConfigurationSection_SerializeSection_m2886244226,
-	ConfigurationSectionCollection__ctor_m452173858,
-	ConfigurationSectionCollection_get_Keys_m1706717625,
-	ConfigurationSectionCollection_get_Count_m3164332684,
-	ConfigurationSectionCollection_get_Item_m3421303889,
-	ConfigurationSectionCollection_GetEnumerator_m1242675576,
-	ConfigurationSectionCollection_GetObjectData_m253846356,
-	U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616,
-	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502,
-	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814,
-	U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498,
-	U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235,
-	U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337,
-	ConfigurationSectionGroup__ctor_m2215148105,
-	ConfigurationSectionGroup_get_Config_m3001742842,
-	ConfigurationSectionGroup_Initialize_m2622037419,
-	ConfigurationSectionGroup_get_SectionGroups_m2522870927,
-	ConfigurationSectionGroup_get_Sections_m3081736119,
-	ConfigurationSectionGroupCollection__ctor_m2237904677,
-	ConfigurationSectionGroupCollection_get_Keys_m3664428060,
-	ConfigurationSectionGroupCollection_get_Count_m447488593,
-	ConfigurationSectionGroupCollection_get_Item_m4125903849,
-	ConfigurationSectionGroupCollection_GetEnumerator_m2684317377,
-	ConfigurationSectionGroupCollection_GetObjectData_m378227929,
-	ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466,
-	ConfigurationValidatorBase__ctor_m3250462424,
-	ConfigurationValidatorBase_CanValidate_m2900122087,
-	DefaultSection__ctor_m1597606775,
-	DefaultSection__cctor_m1370258022,
-	DefaultSection_DeserializeSection_m2332286625,
-	DefaultSection_IsModified_m1050808524,
-	DefaultSection_Reset_m516688665,
-	DefaultSection_ResetModified_m2081880583,
-	DefaultSection_SerializeSection_m580503059,
-	DefaultSection_get_Properties_m1402553764,
-	DefaultValidator__ctor_m233258192,
-	DefaultValidator_CanValidate_m2475130869,
-	DefaultValidator_Validate_m4293733324,
-	ElementInformation__ctor_m815008552,
-	ElementInformation_get_Properties_m1533763968,
-	ElementInformation_Reset_m3203551617,
-	ElementMap__ctor_m2348370310,
-	ElementMap__cctor_m3070084744,
-	ElementMap_GetMap_m1137301092,
-	ElementMap_get_Properties_m169107978,
-	ExeConfigurationFileMap__ctor_m2848771159,
-	ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138,
-	ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183,
-	ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578,
-	ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243,
-	ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010,
-	ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815,
-	ExeConfigurationFileMap_Clone_m3686499741,
-	ExeConfigurationHost__ctor_m2672717525,
-	ExeConfigurationHost_Init_m1279008829,
-	ExeConfigurationHost_GetStreamName_m4070417723,
-	ExeConfigurationHost_InitForConfiguration_m442278400,
-	IgnoreSection__ctor_m4055714512,
-	IgnoreSection__cctor_m1005553135,
-	IgnoreSection_IsModified_m3722026291,
-	IgnoreSection_DeserializeSection_m2922463074,
-	IgnoreSection_Reset_m2294022138,
-	IgnoreSection_ResetModified_m2018290788,
-	IgnoreSection_SerializeSection_m1724288736,
-	IgnoreSection_get_Properties_m3548508015,
-	InternalConfigurationFactory__ctor_m2455511552,
-	InternalConfigurationFactory_Create_m3329707975,
-	InternalConfigurationHost__ctor_m1120670670,
-	InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953,
-	InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364,
-	InternalConfigurationHost_GetConfigType_m2265190311,
-	InternalConfigurationHost_IsDefinitionAllowed_m2472316359,
-	InternalConfigurationHost_get_bundled_machine_config_m171293269,
-	InternalConfigurationHost_OpenStreamForRead_m1823276945,
-	InternalConfigurationRoot__ctor_m903766256,
-	InternalConfigurationRoot_Init_m2920331433,
-	InternalConfigurationSystem__ctor_m1377055107,
-	InternalConfigurationSystem_Init_m117598888,
-	InternalConfigurationSystem_InitForConfiguration_m909576572,
-	InternalConfigurationSystem_get_Host_m3360228097,
-	PropertyInformation__ctor_m3964645511,
-	PropertyInformation_get_DefaultValue_m2865970966,
-	PropertyInformation_get_IsKey_m53514336,
-	PropertyInformation_get_IsModified_m2197427276,
-	PropertyInformation_set_IsModified_m2277508543,
-	PropertyInformation_get_IsRequired_m2394064138,
-	PropertyInformation_get_Name_m339533533,
-	PropertyInformation_get_Type_m2447867467,
-	PropertyInformation_get_Value_m1250658193,
-	PropertyInformation_set_Value_m1161719494,
-	PropertyInformation_Reset_m4131859557,
-	PropertyInformation_get_IsElement_m1135806159,
-	PropertyInformation_get_ValueOrigin_m1155932344,
-	PropertyInformation_GetStringValue_m233999863,
-	PropertyInformation_SetStringValue_m1643234174,
-	PropertyInformation_get_Property_m530348717,
-	PropertyInformationCollection__ctor_m3360125324,
-	PropertyInformationCollection_get_Item_m1640937095,
-	PropertyInformationCollection_GetEnumerator_m2342156100,
-	PropertyInformationCollection_Add_m3086044235,
-	PropertyInformationCollection_GetObjectData_m1752565104,
-	PropertyInformationEnumerator__ctor_m3513537070,
-	PropertyInformationEnumerator_get_Current_m3392533325,
-	PropertyInformationEnumerator_MoveNext_m1887690358,
-	PropertyInformationEnumerator_Reset_m2871712389,
-	ProtectedConfiguration_get_Providers_m2677655615,
-	ProtectedConfiguration_get_Section_m2417461286,
-	ProtectedConfiguration_GetProvider_m659380218,
-	ProtectedConfigurationProviderCollection__ctor_m2871984156,
-	ProtectedConfigurationProviderCollection_get_Item_m2881465527,
-	ProtectedConfigurationProviderCollection_Add_m1943221191,
-	ProtectedConfigurationSection__cctor_m710069301,
-	ProtectedConfigurationSection_get_Providers_m3108810289,
-	ProtectedConfigurationSection_get_Properties_m3218406561,
-	ProtectedConfigurationSection_GetAllProviders_m1380267610,
-	ProtectedConfigurationSection_InstantiateProvider_m1916220169,
-	ProviderBase_Initialize_m309026731,
-	ProviderBase_get_Name_m1908650449,
-	ProviderCollection__ctor_m2739070153,
-	ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097,
-	ProviderCollection_Add_m2062313466,
-	ProviderCollection_GetEnumerator_m2535943389,
-	ProviderCollection_get_Count_m1651598797,
-	ProviderCollection_get_SyncRoot_m2583585530,
-	ProviderCollection_get_Item_m4205164,
-	ProviderSettings__ctor_m2418229397,
-	ProviderSettings__cctor_m1551014246,
-	ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192,
-	ProviderSettings_IsModified_m4208587056,
-	ProviderSettings_Reset_m748547671,
-	ProviderSettings_Unmerge_m3899437761,
-	ProviderSettings_get_Name_m2720563190,
-	ProviderSettings_get_Type_m525859805,
-	ProviderSettings_get_Properties_m1448998824,
-	ProviderSettings_get_Parameters_m1237896802,
-	ProviderSettingsCollection__cctor_m2098499738,
-	ProviderSettingsCollection_CreateNewElement_m278470757,
-	ProviderSettingsCollection_GetElementKey_m2598146650,
-	ProviderSettingsCollection_get_Properties_m2175226160,
-	SectionGroupInfo__ctor_m2214539325,
-	SectionGroupInfo__cctor_m673398592,
-	SectionGroupInfo_AddChild_m3251971407,
-	SectionGroupInfo_Clear_m3188268036,
-	SectionGroupInfo_HasChild_m1202859971,
-	SectionGroupInfo_RemoveChild_m2246840815,
-	SectionGroupInfo_get_Sections_m2472444668,
-	SectionGroupInfo_get_Groups_m2080419472,
-	SectionGroupInfo_ReadConfig_m964124140,
-	SectionGroupInfo_ReadRemoveSection_m3200085140,
-	SectionGroupInfo_ReadRootData_m1364370771,
-	SectionGroupInfo_ReadData_m4130533217,
-	SectionGroupInfo_ReadContent_m2298842435,
-	SectionGroupInfo_GetConfigInfo_m1968621232,
-	SectionGroupInfo_Merge_m1107900400,
-	SectionInfo__ctor_m3237924430,
-	SectionInfo_CreateInstance_m3857848628,
-	SectionInfo_ReadConfig_m1508625577,
-	SectionInfo_ReadData_m2814313648,
-	SectionInfo_Merge_m2513541987,
-	SectionInformation__ctor_m118501942,
-	SectionInformation_get_ConfigFilePath_m966874317,
-	SectionInformation_set_ConfigFilePath_m2908232936,
-	SectionInformation_set_AllowDefinition_m391233744,
-	SectionInformation_set_AllowExeDefinition_m2089738550,
-	SectionInformation_set_AllowLocation_m1178294342,
-	SectionInformation_get_ConfigSource_m1613439595,
-	SectionInformation_set_ConfigSource_m2152533200,
-	SectionInformation_set_RequirePermission_m1040565520,
-	SectionInformation_set_RestartOnExternalChanges_m2815572962,
-	SectionInformation_GetParentSection_m3638988220,
-	SectionInformation_SetParentSection_m321631079,
-	SectionInformation_ProtectSection_m230982508,
-	SectionInformation_SetRawXml_m1162572473,
-	SectionInformation_SetName_m2381998591,
-	MonoInternalNoteAttribute__ctor_m2854554221,
-	MonoTODOAttribute__ctor_m817868876,
-	MonoTODOAttribute__ctor_m1940477654,
 	Locale_GetText_m1644072174,
 	BigInteger__ctor_m4013661868,
 	BigInteger__ctor_m2991182310,
@@ -32572,6 +33269,455 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	X509Stores__ctor_m2453291421,
 	X509Stores_get_TrustedRoot_m3412716694,
 	X509Stores_Open_m2057354563,
+	ConfigXmlTextReader__ctor_m965728314,
+	ConfigXmlTextReader__ctor_m2778808542,
+	ConfigXmlTextReader_get_Filename_m3902945538,
+	ClientConfigurationSystem__ctor_m2508818941,
+	ClientConfigurationSystem_System_Configuration_Internal_IInternalConfigSystem_GetSection_m2690705608,
+	ClientConfigurationSystem_get_Configuration_m1415521026,
+	ConfigInfo__ctor_m2533184409,
+	ConfigInfo_CreateInstance_m615435773,
+	ConfigInfo_set_StreamName_m1734466909,
+	ConfigInfo_ThrowException_m3313572946,
+	ConfigInfoCollection__ctor_m2267743875,
+	ConfigInfoCollection_get_AllKeys_m3546771423,
+	ConfigInfoCollection_get_Item_m4196945655,
+	ConfigInfoCollection_set_Item_m406516082,
+	ConfigInfoCollection_Add_m1288541941,
+	ConfigInfoCollection_Clear_m1297066444,
+	ConfigInfoCollection_Remove_m1334699295,
+	ConfigNameValueCollection__ctor_m1183291289,
+	ConfigNameValueCollection__ctor_m2285608570,
+	ConfigNameValueCollection_ResetModified_m2605677405,
+	ConfigNameValueCollection_get_IsModified_m3218832143,
+	ConfigNameValueCollection_Set_m2008693955,
+	Configuration__ctor_m3545852494,
+	Configuration__ctor_m88421328,
+	Configuration_FindLocationConfiguration_m4081437406,
+	Configuration_Init_m2991025886,
+	Configuration_get_Parent_m335637978,
+	Configuration_set_Parent_m3106974805,
+	Configuration_GetParentWithFile_m1651703053,
+	Configuration_get_ConfigHost_m854336265,
+	Configuration_get_LocationConfigPath_m609030371,
+	Configuration_get_ConfigPath_m937107392,
+	Configuration_get_FilePath_m3184045596,
+	Configuration_get_HasFile_m1167170352,
+	Configuration_get_Locations_m2394414303,
+	Configuration_get_RootSectionGroup_m1643677634,
+	Configuration_get_SectionGroups_m2782934403,
+	Configuration_get_Sections_m3724328875,
+	Configuration_GetSection_m3056810807,
+	Configuration_GetSectionInstance_m3769455073,
+	Configuration_GetSectionGroupInstance_m2028928705,
+	Configuration_SetSectionXml_m2783526347,
+	Configuration_GetSectionXml_m1792995434,
+	Configuration_Load_m851220319,
+	Configuration_ReadConfigFile_m1878607525,
+	Configuration_ReadData_m342895002,
+	Configuration_ThrowException_m3079645534,
+	ConfigurationCollectionAttribute__ctor_m1251693102,
+	ConfigurationCollectionAttribute_get_AddItemName_m1343590308,
+	ConfigurationCollectionAttribute_get_ClearItemsName_m2101089535,
+	ConfigurationCollectionAttribute_get_RemoveItemName_m1223332851,
+	ConfigurationCollectionAttribute_set_CollectionType_m1820962205,
+	ConfigurationElement__ctor_m1276017081,
+	ConfigurationElement_get_Configuration_m2347242418,
+	ConfigurationElement_set_Configuration_m1639150663,
+	ConfigurationElement_InitFromProperty_m3625723156,
+	ConfigurationElement_get_ElementInformation_m3882602470,
+	ConfigurationElement_get_RawXml_m2664527628,
+	ConfigurationElement_set_RawXml_m3850583953,
+	ConfigurationElement_Init_m1329365593,
+	ConfigurationElement_get_LockAllAttributesExcept_m3610263831,
+	ConfigurationElement_get_LockAllElementsExcept_m1554073633,
+	ConfigurationElement_get_LockAttributes_m3450186057,
+	ConfigurationElement_get_LockElements_m2225570247,
+	ConfigurationElement_set_LockItem_m3758070483,
+	ConfigurationElement_SetPropertyValue_m1782021972,
+	ConfigurationElement_GetKeyProperties_m4219970304,
+	ConfigurationElement_GetDefaultCollection_m1796439560,
+	ConfigurationElement_get_Item_m1850092018,
+	ConfigurationElement_set_Item_m2558768429,
+	ConfigurationElement_get_Item_m3478882412,
+	ConfigurationElement_set_Item_m3141894725,
+	ConfigurationElement_get_Properties_m2163360678,
+	ConfigurationElement_Equals_m3484522968,
+	ConfigurationElement_GetHashCode_m2198573252,
+	ConfigurationElement_HasValues_m1341383433,
+	ConfigurationElement_HasLocalModifications_m169968917,
+	ConfigurationElement_DeserializeElement_m2430565615,
+	ConfigurationElement_OnDeserializeUnrecognizedAttribute_m157901910,
+	ConfigurationElement_OnDeserializeUnrecognizedElement_m1053820706,
+	ConfigurationElement_OnRequiredPropertyNotFound_m3323765040,
+	ConfigurationElement_PreSerialize_m1824129726,
+	ConfigurationElement_PostDeserialize_m3225465312,
+	ConfigurationElement_InitializeDefault_m2939047706,
+	ConfigurationElement_IsModified_m748618350,
+	ConfigurationElement_SetReadOnly_m1594739059,
+	ConfigurationElement_IsReadOnly_m2244525315,
+	ConfigurationElement_Reset_m484744193,
+	ConfigurationElement_ResetModified_m933170487,
+	ConfigurationElement_SerializeElement_m4131562944,
+	ConfigurationElement_SerializeToXmlElement_m3789742405,
+	ConfigurationElement_Unmerge_m2515561191,
+	ConfigurationElement_HasValue_m1390685398,
+	ConfigurationElement_ValidateValue_m1396480566,
+	ConfigurationElementCollection__ctor_m1722138055,
+	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m3947886345,
+	ConfigurationElementCollection_InitFromProperty_m3084253332,
+	ConfigurationElementCollection_get_CollectionType_m2878912072,
+	ConfigurationElementCollection_get_IsBasic_m1624364384,
+	ConfigurationElementCollection_get_IsAlternate_m1087333324,
+	ConfigurationElementCollection_get_Count_m1016392721,
+	ConfigurationElementCollection_get_ElementName_m1163032572,
+	ConfigurationElementCollection_set_EmitClear_m649573135,
+	ConfigurationElementCollection_get_SyncRoot_m1263605066,
+	ConfigurationElementCollection_get_ThrowOnDuplicate_m2516679882,
+	ConfigurationElementCollection_get_AddElementName_m2131549453,
+	ConfigurationElementCollection_get_ClearElementName_m344564617,
+	ConfigurationElementCollection_get_RemoveElementName_m670755192,
+	ConfigurationElementCollection_BaseAdd_m692033632,
+	ConfigurationElementCollection_BaseAdd_m1594255685,
+	ConfigurationElementCollection_BaseClear_m1999336003,
+	ConfigurationElementCollection_BaseGet_m498332263,
+	ConfigurationElementCollection_BaseGet_m673060682,
+	ConfigurationElementCollection_BaseIndexOf_m1544895010,
+	ConfigurationElementCollection_IndexOfKey_m1888078841,
+	ConfigurationElementCollection_BaseRemove_m1128013164,
+	ConfigurationElementCollection_BaseRemoveAt_m1239272108,
+	ConfigurationElementCollection_CompareKeys_m682234560,
+	ConfigurationElementCollection_CreateNewElement_m3219927641,
+	ConfigurationElementCollection_CreateNewElementInternal_m226698700,
+	ConfigurationElementCollection_Equals_m2221773756,
+	ConfigurationElementCollection_GetHashCode_m770974360,
+	ConfigurationElementCollection_GetEnumerator_m2214669871,
+	ConfigurationElementCollection_IsElementName_m2704993900,
+	ConfigurationElementCollection_IsElementRemovable_m1916442331,
+	ConfigurationElementCollection_IsModified_m4233298518,
+	ConfigurationElementCollection_IsReadOnly_m2147280149,
+	ConfigurationElementCollection_HasValues_m4112686071,
+	ConfigurationElementCollection_Reset_m3142114271,
+	ConfigurationElementCollection_ResetModified_m3318214445,
+	ConfigurationElementCollection_SetReadOnly_m2819095069,
+	ConfigurationElementCollection_SerializeElement_m3696766444,
+	ConfigurationElementCollection_OnDeserializeUnrecognizedElement_m1168261278,
+	ConfigurationElementCollection_Unmerge_m2009439485,
+	ConfigurationRemoveElement__ctor_m2892373574,
+	ConfigurationRemoveElement_get_KeyValue_m2322918292,
+	ConfigurationRemoveElement_get_Properties_m4160822773,
+	ConfigurationErrorsException__ctor_m3609325505,
+	ConfigurationErrorsException__ctor_m2348714781,
+	ConfigurationErrorsException__ctor_m1926925674,
+	ConfigurationErrorsException__ctor_m3963297863,
+	ConfigurationErrorsException__ctor_m3089652486,
+	ConfigurationErrorsException__ctor_m4265896371,
+	ConfigurationErrorsException__ctor_m3506512730,
+	ConfigurationErrorsException_get_BareMessage_m403421148,
+	ConfigurationErrorsException_get_Message_m3733233144,
+	ConfigurationErrorsException_GetFilename_m2673389627,
+	ConfigurationErrorsException_GetLineNumber_m1372608032,
+	ConfigurationErrorsException_GetFilename_m2049567258,
+	ConfigurationErrorsException_GetLineNumber_m3976484637,
+	ConfigurationErrorsException_GetObjectData_m770656613,
+	ConfigurationFileMap__ctor_m3731838539,
+	ConfigurationFileMap__ctor_m3124444437,
+	ConfigurationFileMap_get_MachineConfigFilename_m1702653625,
+	ConfigurationFileMap_set_MachineConfigFilename_m3052034378,
+	ConfigurationFileMap_Clone_m1273941989,
+	ConfigurationLocation__ctor_m3125296074,
+	ConfigurationLocation__cctor_m1384898491,
+	ConfigurationLocation_get_Path_m2365456525,
+	ConfigurationLocation_OpenConfiguration_m2905080700,
+	ConfigurationLocation_SetParentConfiguration_m4197005207,
+	ConfigurationLocationCollection__ctor_m303069056,
+	ConfigurationLocationCollection_Add_m3681642539,
+	ConfigurationLocationCollection_Find_m3684263568,
+	ConfigurationLockCollection__ctor_m870306509,
+	ConfigurationLockCollection_System_Collections_ICollection_CopyTo_m3497490008,
+	ConfigurationLockCollection_CheckName_m2810988355,
+	ConfigurationLockCollection_Add_m3416925987,
+	ConfigurationLockCollection_Clear_m2378334261,
+	ConfigurationLockCollection_GetEnumerator_m3742833280,
+	ConfigurationLockCollection_SetFromList_m2739237306,
+	ConfigurationLockCollection_get_Count_m3926033248,
+	ConfigurationLockCollection_get_SyncRoot_m1477706993,
+	ConfigurationManager__cctor_m145104057,
+	ConfigurationManager_GetAssemblyInfo_m1959334153,
+	ConfigurationManager_OpenExeConfigurationInternal_m2337857263,
+	ConfigurationManager_get_ConfigurationFactory_m113132422,
+	ConfigurationManager_get_ConfigurationSystem_m1820628092,
+	ConfigurationManager_GetSection_m1187558274,
+	ConfigurationProperty__ctor_m2339141717,
+	ConfigurationProperty__ctor_m2205928547,
+	ConfigurationProperty__ctor_m1024361505,
+	ConfigurationProperty__ctor_m2779674618,
+	ConfigurationProperty__ctor_m664996226,
+	ConfigurationProperty__cctor_m3667988185,
+	ConfigurationProperty_get_DefaultValue_m426297024,
+	ConfigurationProperty_get_IsKey_m2843757270,
+	ConfigurationProperty_get_IsRequired_m2849112540,
+	ConfigurationProperty_get_IsDefaultCollection_m4193636108,
+	ConfigurationProperty_get_Name_m2150541641,
+	ConfigurationProperty_get_Type_m573764699,
+	ConfigurationProperty_get_Validator_m1030428852,
+	ConfigurationProperty_ConvertFromString_m661781545,
+	ConfigurationProperty_ConvertToString_m137757750,
+	ConfigurationProperty_get_IsElement_m12977767,
+	ConfigurationProperty_get_CollectionAttribute_m256228153,
+	ConfigurationProperty_set_CollectionAttribute_m21883792,
+	ConfigurationProperty_Validate_m556423690,
+	ConfigurationPropertyAttribute__ctor_m2756034538,
+	ConfigurationPropertyAttribute_get_DefaultValue_m315790916,
+	ConfigurationPropertyAttribute_set_DefaultValue_m645825465,
+	ConfigurationPropertyAttribute_get_Options_m78342746,
+	ConfigurationPropertyAttribute_set_Options_m540649869,
+	ConfigurationPropertyAttribute_get_Name_m3548275941,
+	ConfigurationPropertyCollection__ctor_m2795982958,
+	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_m3374724930,
+	ConfigurationPropertyCollection_get_Count_m1518273402,
+	ConfigurationPropertyCollection_get_SyncRoot_m2789197201,
+	ConfigurationPropertyCollection_Add_m3481099429,
+	ConfigurationPropertyCollection_GetEnumerator_m3414286410,
+	ConfigurationSection__ctor_m714843276,
+	ConfigurationSection_get_SectionHandler_m1982719862,
+	ConfigurationSection_set_SectionHandler_m1410633441,
+	ConfigurationSection_get_SectionInformation_m4037021195,
+	ConfigurationSection_get_ConfigContext_m4131621597,
+	ConfigurationSection_set_ConfigContext_m1616871218,
+	ConfigurationSection_GetRuntimeObject_m3965484768,
+	ConfigurationSection_IsModified_m1833174423,
+	ConfigurationSection_ResetModified_m2300774056,
+	ConfigurationSection_CreateElement_m1756012205,
+	ConfigurationSection_DoDeserializeSection_m2782358321,
+	ConfigurationSection_DeserializeSection_m1139223106,
+	ConfigurationSection_DeserializeConfigSource_m495463306,
+	ConfigurationSection_SerializeSection_m2886244226,
+	ConfigurationSectionCollection__ctor_m452173858,
+	ConfigurationSectionCollection_get_Keys_m1706717625,
+	ConfigurationSectionCollection_get_Count_m3164332684,
+	ConfigurationSectionCollection_get_Item_m3421303889,
+	ConfigurationSectionCollection_GetEnumerator_m1242675576,
+	ConfigurationSectionCollection_GetObjectData_m253846356,
+	U3CGetEnumeratorU3Ec__Iterator0__ctor_m2507040616,
+	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3533736502,
+	U3CGetEnumeratorU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m20938814,
+	U3CGetEnumeratorU3Ec__Iterator0_MoveNext_m3065246498,
+	U3CGetEnumeratorU3Ec__Iterator0_Dispose_m2640554235,
+	U3CGetEnumeratorU3Ec__Iterator0_Reset_m3299736337,
+	ConfigurationSectionGroup__ctor_m2215148105,
+	ConfigurationSectionGroup_get_Config_m3001742842,
+	ConfigurationSectionGroup_Initialize_m2622037419,
+	ConfigurationSectionGroup_get_SectionGroups_m2522870927,
+	ConfigurationSectionGroup_get_Sections_m3081736119,
+	ConfigurationSectionGroupCollection__ctor_m2237904677,
+	ConfigurationSectionGroupCollection_get_Keys_m3664428060,
+	ConfigurationSectionGroupCollection_get_Count_m447488593,
+	ConfigurationSectionGroupCollection_get_Item_m4125903849,
+	ConfigurationSectionGroupCollection_GetEnumerator_m2684317377,
+	ConfigurationSectionGroupCollection_GetObjectData_m378227929,
+	ConfigurationValidatorAttribute_get_ValidatorInstance_m35782466,
+	ConfigurationValidatorBase__ctor_m3250462424,
+	ConfigurationValidatorBase_CanValidate_m2900122087,
+	DefaultSection__ctor_m1597606775,
+	DefaultSection__cctor_m1370258022,
+	DefaultSection_DeserializeSection_m2332286625,
+	DefaultSection_IsModified_m1050808524,
+	DefaultSection_Reset_m516688665,
+	DefaultSection_ResetModified_m2081880583,
+	DefaultSection_SerializeSection_m580503059,
+	DefaultSection_get_Properties_m1402553764,
+	DefaultValidator__ctor_m233258192,
+	DefaultValidator_CanValidate_m2475130869,
+	DefaultValidator_Validate_m4293733324,
+	ElementInformation__ctor_m815008552,
+	ElementInformation_get_Properties_m1533763968,
+	ElementInformation_Reset_m3203551617,
+	ElementMap__ctor_m2348370310,
+	ElementMap__cctor_m3070084744,
+	ElementMap_GetMap_m1137301092,
+	ElementMap_get_Properties_m169107978,
+	ExeConfigurationFileMap__ctor_m2848771159,
+	ExeConfigurationFileMap_get_ExeConfigFilename_m4217231138,
+	ExeConfigurationFileMap_set_ExeConfigFilename_m2695258183,
+	ExeConfigurationFileMap_get_LocalUserConfigFilename_m3988942578,
+	ExeConfigurationFileMap_set_LocalUserConfigFilename_m245771243,
+	ExeConfigurationFileMap_get_RoamingUserConfigFilename_m3176990010,
+	ExeConfigurationFileMap_set_RoamingUserConfigFilename_m4034760815,
+	ExeConfigurationFileMap_Clone_m3686499741,
+	ExeConfigurationHost__ctor_m2672717525,
+	ExeConfigurationHost_Init_m1279008829,
+	ExeConfigurationHost_GetStreamName_m4070417723,
+	ExeConfigurationHost_InitForConfiguration_m442278400,
+	IgnoreSection__ctor_m4055714512,
+	IgnoreSection__cctor_m1005553135,
+	IgnoreSection_IsModified_m3722026291,
+	IgnoreSection_DeserializeSection_m2922463074,
+	IgnoreSection_Reset_m2294022138,
+	IgnoreSection_ResetModified_m2018290788,
+	IgnoreSection_SerializeSection_m1724288736,
+	IgnoreSection_get_Properties_m3548508015,
+	InternalConfigurationFactory__ctor_m2455511552,
+	InternalConfigurationFactory_Create_m3329707975,
+	InternalConfigurationHost__ctor_m1120670670,
+	InternalConfigurationHost_CreateDeprecatedConfigContext_m3055903953,
+	InternalConfigurationHost_GetConfigPathFromLocationSubPath_m3102336364,
+	InternalConfigurationHost_GetConfigType_m2265190311,
+	InternalConfigurationHost_IsDefinitionAllowed_m2472316359,
+	InternalConfigurationHost_get_bundled_machine_config_m171293269,
+	InternalConfigurationHost_OpenStreamForRead_m1823276945,
+	InternalConfigurationRoot__ctor_m903766256,
+	InternalConfigurationRoot_Init_m2920331433,
+	InternalConfigurationSystem__ctor_m1377055107,
+	InternalConfigurationSystem_Init_m117598888,
+	InternalConfigurationSystem_InitForConfiguration_m909576572,
+	InternalConfigurationSystem_get_Host_m3360228097,
+	PropertyInformation__ctor_m3964645511,
+	PropertyInformation_get_DefaultValue_m2865970966,
+	PropertyInformation_get_IsKey_m53514336,
+	PropertyInformation_get_IsModified_m2197427276,
+	PropertyInformation_set_IsModified_m2277508543,
+	PropertyInformation_get_IsRequired_m2394064138,
+	PropertyInformation_get_Name_m339533533,
+	PropertyInformation_get_Type_m2447867467,
+	PropertyInformation_get_Value_m1250658193,
+	PropertyInformation_set_Value_m1161719494,
+	PropertyInformation_Reset_m4131859557,
+	PropertyInformation_get_IsElement_m1135806159,
+	PropertyInformation_get_ValueOrigin_m1155932344,
+	PropertyInformation_GetStringValue_m233999863,
+	PropertyInformation_SetStringValue_m1643234174,
+	PropertyInformation_get_Property_m530348717,
+	PropertyInformationCollection__ctor_m3360125324,
+	PropertyInformationCollection_get_Item_m1640937095,
+	PropertyInformationCollection_GetEnumerator_m2342156100,
+	PropertyInformationCollection_Add_m3086044235,
+	PropertyInformationCollection_GetObjectData_m1752565104,
+	PropertyInformationEnumerator__ctor_m3513537070,
+	PropertyInformationEnumerator_get_Current_m3392533325,
+	PropertyInformationEnumerator_MoveNext_m1887690358,
+	PropertyInformationEnumerator_Reset_m2871712389,
+	ProtectedConfiguration_get_Providers_m2677655615,
+	ProtectedConfiguration_get_Section_m2417461286,
+	ProtectedConfiguration_GetProvider_m659380218,
+	ProtectedConfigurationProviderCollection__ctor_m2871984156,
+	ProtectedConfigurationProviderCollection_get_Item_m2881465527,
+	ProtectedConfigurationProviderCollection_Add_m1943221191,
+	ProtectedConfigurationSection__cctor_m710069301,
+	ProtectedConfigurationSection_get_Providers_m3108810289,
+	ProtectedConfigurationSection_get_Properties_m3218406561,
+	ProtectedConfigurationSection_GetAllProviders_m1380267610,
+	ProtectedConfigurationSection_InstantiateProvider_m1916220169,
+	ProviderBase_Initialize_m309026731,
+	ProviderBase_get_Name_m1908650449,
+	ProviderCollection__ctor_m2739070153,
+	ProviderCollection_System_Collections_ICollection_CopyTo_m1409815097,
+	ProviderCollection_Add_m2062313466,
+	ProviderCollection_GetEnumerator_m2535943389,
+	ProviderCollection_get_Count_m1651598797,
+	ProviderCollection_get_SyncRoot_m2583585530,
+	ProviderCollection_get_Item_m4205164,
+	ProviderSettings__ctor_m2418229397,
+	ProviderSettings__cctor_m1551014246,
+	ProviderSettings_OnDeserializeUnrecognizedAttribute_m2101799192,
+	ProviderSettings_IsModified_m4208587056,
+	ProviderSettings_Reset_m748547671,
+	ProviderSettings_Unmerge_m3899437761,
+	ProviderSettings_get_Name_m2720563190,
+	ProviderSettings_get_Type_m525859805,
+	ProviderSettings_get_Properties_m1448998824,
+	ProviderSettings_get_Parameters_m1237896802,
+	ProviderSettingsCollection__cctor_m2098499738,
+	ProviderSettingsCollection_CreateNewElement_m278470757,
+	ProviderSettingsCollection_GetElementKey_m2598146650,
+	ProviderSettingsCollection_get_Properties_m2175226160,
+	SectionGroupInfo__ctor_m2214539325,
+	SectionGroupInfo__cctor_m673398592,
+	SectionGroupInfo_AddChild_m3251971407,
+	SectionGroupInfo_Clear_m3188268036,
+	SectionGroupInfo_HasChild_m1202859971,
+	SectionGroupInfo_RemoveChild_m2246840815,
+	SectionGroupInfo_get_Sections_m2472444668,
+	SectionGroupInfo_get_Groups_m2080419472,
+	SectionGroupInfo_ReadConfig_m964124140,
+	SectionGroupInfo_ReadRemoveSection_m3200085140,
+	SectionGroupInfo_ReadRootData_m1364370771,
+	SectionGroupInfo_ReadData_m4130533217,
+	SectionGroupInfo_ReadContent_m2298842435,
+	SectionGroupInfo_GetConfigInfo_m1968621232,
+	SectionGroupInfo_Merge_m1107900400,
+	SectionInfo__ctor_m3237924430,
+	SectionInfo_CreateInstance_m3857848628,
+	SectionInfo_ReadConfig_m1508625577,
+	SectionInfo_ReadData_m2814313648,
+	SectionInfo_Merge_m2513541987,
+	SectionInformation__ctor_m118501942,
+	SectionInformation_get_ConfigFilePath_m966874317,
+	SectionInformation_set_ConfigFilePath_m2908232936,
+	SectionInformation_set_AllowDefinition_m391233744,
+	SectionInformation_set_AllowExeDefinition_m2089738550,
+	SectionInformation_set_AllowLocation_m1178294342,
+	SectionInformation_get_ConfigSource_m1613439595,
+	SectionInformation_set_ConfigSource_m2152533200,
+	SectionInformation_set_RequirePermission_m1040565520,
+	SectionInformation_set_RestartOnExternalChanges_m2815572962,
+	SectionInformation_GetParentSection_m3638988220,
+	SectionInformation_SetParentSection_m321631079,
+	SectionInformation_ProtectSection_m230982508,
+	SectionInformation_SetRawXml_m1162572473,
+	SectionInformation_SetName_m2381998591,
+	MonoInternalNoteAttribute__ctor_m2854554221,
+	MonoTODOAttribute__ctor_m817868876,
+	MonoTODOAttribute__ctor_m1940477654,
+	Locale_GetText_m3480617287,
+	Locale_GetText_m512920887,
+	KeyBuilder_get_Rng_m587346233,
+	KeyBuilder_Key_m4049966884,
+	KeyBuilder_IV_m3179063262,
+	SymmetricTransform__ctor_m4253316482,
+	SymmetricTransform_System_IDisposable_Dispose_m2454577762,
+	SymmetricTransform_Finalize_m2220170723,
+	SymmetricTransform_Dispose_m3101686157,
+	SymmetricTransform_get_CanTransformMultipleBlocks_m1752313288,
+	SymmetricTransform_get_CanReuseTransform_m1428518336,
+	SymmetricTransform_get_InputBlockSize_m3264284364,
+	SymmetricTransform_get_OutputBlockSize_m2278045573,
+	SymmetricTransform_Transform_m2796657329,
+	SymmetricTransform_CBC_m1132405431,
+	SymmetricTransform_CFB_m2852848536,
+	SymmetricTransform_OFB_m397918932,
+	SymmetricTransform_CTS_m4257703857,
+	SymmetricTransform_CheckInput_m1287204652,
+	SymmetricTransform_TransformBlock_m2733481667,
+	SymmetricTransform_get_KeepLastBlock_m2750346332,
+	SymmetricTransform_InternalTransformBlock_m2049959094,
+	SymmetricTransform_Random_m3912330177,
+	SymmetricTransform_ThrowBadPaddingException_m2553969731,
+	SymmetricTransform_FinalEncrypt_m952048093,
+	SymmetricTransform_FinalDecrypt_m1391053911,
+	SymmetricTransform_TransformFinalBlock_m631349995,
+	ExtensionAttribute__ctor_m1028297080,
+	Aes__ctor_m4020215067,
+	AesManaged__ctor_m2322442838,
+	AesManaged_GenerateIV_m199727220,
+	AesManaged_GenerateKey_m2925191332,
+	AesManaged_CreateDecryptor_m1136566004,
+	AesManaged_CreateEncryptor_m1729287824,
+	AesManaged_get_IV_m560133634,
+	AesManaged_set_IV_m2479404195,
+	AesManaged_get_Key_m1100519798,
+	AesManaged_set_Key_m2884557591,
+	AesManaged_get_KeySize_m2773901127,
+	AesManaged_set_KeySize_m3458102022,
+	AesManaged_CreateDecryptor_m76892358,
+	AesManaged_CreateEncryptor_m2261049526,
+	AesManaged_Dispose_m2144430298,
+	AesTransform__ctor_m3304222252,
+	AesTransform__cctor_m619532760,
+	AesTransform_ECB_m1505875511,
+	AesTransform_SubByte_m3508318874,
+	AesTransform_Encrypt128_m617981965,
+	AesTransform_Decrypt128_m3067379519,
 	ApplicationIDAttribute__ctor_m2524567988,
 	ApplicationNameAttribute__ctor_m3402247142,
 	Adler32_get_Value_m24599817,
@@ -32802,55 +33948,6 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	ZipNameTransform__ctor_m1825291376,
 	ZipNameTransform__cctor_m2749763903,
 	ZipNameTransform_IsValidName_m4036463524,
-	Locale_GetText_m3480617287,
-	Locale_GetText_m512920887,
-	KeyBuilder_get_Rng_m587346233,
-	KeyBuilder_Key_m4049966884,
-	KeyBuilder_IV_m3179063262,
-	SymmetricTransform__ctor_m4253316482,
-	SymmetricTransform_System_IDisposable_Dispose_m2454577762,
-	SymmetricTransform_Finalize_m2220170723,
-	SymmetricTransform_Dispose_m3101686157,
-	SymmetricTransform_get_CanTransformMultipleBlocks_m1752313288,
-	SymmetricTransform_get_CanReuseTransform_m1428518336,
-	SymmetricTransform_get_InputBlockSize_m3264284364,
-	SymmetricTransform_get_OutputBlockSize_m2278045573,
-	SymmetricTransform_Transform_m2796657329,
-	SymmetricTransform_CBC_m1132405431,
-	SymmetricTransform_CFB_m2852848536,
-	SymmetricTransform_OFB_m397918932,
-	SymmetricTransform_CTS_m4257703857,
-	SymmetricTransform_CheckInput_m1287204652,
-	SymmetricTransform_TransformBlock_m2733481667,
-	SymmetricTransform_get_KeepLastBlock_m2750346332,
-	SymmetricTransform_InternalTransformBlock_m2049959094,
-	SymmetricTransform_Random_m3912330177,
-	SymmetricTransform_ThrowBadPaddingException_m2553969731,
-	SymmetricTransform_FinalEncrypt_m952048093,
-	SymmetricTransform_FinalDecrypt_m1391053911,
-	SymmetricTransform_TransformFinalBlock_m631349995,
-	ExtensionAttribute__ctor_m1028297080,
-	Aes__ctor_m4020215067,
-	AesManaged__ctor_m2322442838,
-	AesManaged_GenerateIV_m199727220,
-	AesManaged_GenerateKey_m2925191332,
-	AesManaged_CreateDecryptor_m1136566004,
-	AesManaged_CreateEncryptor_m1729287824,
-	AesManaged_get_IV_m560133634,
-	AesManaged_set_IV_m2479404195,
-	AesManaged_get_Key_m1100519798,
-	AesManaged_set_Key_m2884557591,
-	AesManaged_get_KeySize_m2773901127,
-	AesManaged_set_KeySize_m3458102022,
-	AesManaged_CreateDecryptor_m76892358,
-	AesManaged_CreateEncryptor_m2261049526,
-	AesManaged_Dispose_m2144430298,
-	AesTransform__ctor_m3304222252,
-	AesTransform__cctor_m619532760,
-	AesTransform_ECB_m1505875511,
-	AesTransform_SubByte_m3508318874,
-	AesTransform_Encrypt128_m617981965,
-	AesTransform_Decrypt128_m3067379519,
 	Locale_GetText_m3820229042,
 	Aggregation__ctor_m2535285851,
 	Aggregation_Equals_m3066718575,
@@ -34214,98 +35311,6 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	XmlHelper_Encode_m3223022556,
 	XmlTableWriter_WriteTables_m3701515798,
 	XmlTableWriter_WriteTableList_m2522002349,
-	FormatReader_get_FormatString_m3486194298,
-	FormatReader_set_FormatString_m894199159,
-	FormatReader__ctor_m1666847312,
-	FormatReader_IsDateFormatString_m3255475084,
-	FormatReader_IsSurroundedByQuotes_m2508166547,
-	FormatReader_IsPrecededByBackSlash_m4280506347,
-	FormatReader_IsSurroundedByBracket_m2253026190,
-	FormatReader_NumberOfUnescapedOccurances_m2715376771,
-	Helpers_ConvertEscapeChars_m2354180383,
-	Helpers_ConvertFromOATime_m3489838396,
-	Helpers_FixDataTypes_m3481117268,
-	Helpers_AddColumnHandleDuplicate_m2739049988,
-	Helpers_U3CConvertEscapeCharsU3Eb__0_m1680631643,
-	Helpers__cctor_m3113545832,
-	XlsxDimension__ctor_m3600381333,
-	XlsxDimension__ctor_m2160908895,
-	XlsxDimension_get_FirstRow_m2062924334,
-	XlsxDimension_set_FirstRow_m1574325995,
-	XlsxDimension_set_LastRow_m985415191,
-	XlsxDimension_get_FirstCol_m2062942536,
-	XlsxDimension_set_FirstCol_m2228137341,
-	XlsxDimension_get_LastCol_m3832305192,
-	XlsxDimension_set_LastCol_m3765907389,
-	XlsxDimension_ParseDimensions_m2074318159,
-	XlsxDimension_XlsxDim_m731433956,
-	XlsxNumFmt_get_Id_m2158901850,
-	XlsxNumFmt_get_FormatCode_m3092717742,
-	XlsxNumFmt__ctor_m369337161,
-	XlsxSST__ctor_m3040107683,
-	XlsxStyles__ctor_m1825862751,
-	XlsxStyles_get_CellXfs_m233426665,
-	XlsxStyles_get_NumFmts_m1131716335,
-	XlsxWorkbook__ctor_m912209719,
-	XlsxWorkbook_get_Sheets_m3489303710,
-	XlsxWorkbook_get_SST_m3367944442,
-	XlsxWorkbook_get_Styles_m2879484330,
-	XlsxWorkbook_ReadStyles_m4081036932,
-	XlsxWorkbook_ReadSharedStrings_m783934533,
-	XlsxWorkbook_ReadWorkbook_m1276773658,
-	XlsxWorkbook_ReadWorkbookRels_m2614923554,
-	XlsxWorksheet_get_IsEmpty_m2360951215,
-	XlsxWorksheet_set_IsEmpty_m3098075726,
-	XlsxWorksheet_get_Dimension_m3111336406,
-	XlsxWorksheet_set_Dimension_m827420835,
-	XlsxWorksheet_get_ColumnsCount_m2624441818,
-	XlsxWorksheet_get_Name_m872113654,
-	XlsxWorksheet_get_RID_m2274730670,
-	XlsxWorksheet_get_Path_m3419688902,
-	XlsxWorksheet_set_Path_m3886834411,
-	XlsxWorksheet__ctor_m2044061580,
-	XlsxXf_get_NumFmtId_m3300837920,
-	XlsxXf_get_ApplyNumberFormat_m3096434926,
-	XlsxXf__ctor_m3211114059,
-	ReferenceHelper_ReferenceToColumnAndRow_m89366838,
-	ZipWorker_get_IsValid_m3976233184,
-	ZipWorker_get_ExceptionMessage_m775648301,
-	ZipWorker__ctor_m3365551045,
-	ZipWorker_Extract_m3209149031,
-	ZipWorker_GetSharedStringsStream_m1773174858,
-	ZipWorker_GetStylesStream_m3866322631,
-	ZipWorker_GetWorkbookStream_m1279462543,
-	ZipWorker_GetWorksheetStream_m3599487247,
-	ZipWorker_GetWorkbookRelsStream_m2990482831,
-	ZipWorker_CleanFromTemp_m3051253553,
-	ZipWorker_ExtractZipEntry_m3512310153,
-	ZipWorker_NewTempPath_m3191004630,
-	ZipWorker_CheckFolderTree_m3988233943,
-	ZipWorker_GetStream_m1165928629,
-	ZipWorker_Dispose_m2777260408,
-	ZipWorker_Dispose_m547991009,
-	ZipWorker_Finalize_m3289108063,
-	ExcelOpenXmlReader__ctor_m2920103612,
-	ExcelOpenXmlReader_ReadGlobals_m356406304,
-	ExcelOpenXmlReader_CheckDateTimeNumFmts_m1223386651,
-	ExcelOpenXmlReader_ReadSheetGlobals_m3581744618,
-	ExcelOpenXmlReader_ReadSheetRow_m3966407690,
-	ExcelOpenXmlReader_IsDateTimeStyle_m2153382639,
-	ExcelOpenXmlReader_Initialize_m3797863185,
-	ExcelOpenXmlReader_AsDataSet_m2452927416,
-	ExcelOpenXmlReader_AsDataSet_m2575323469,
-	ExcelOpenXmlReader_Close_m2461826172,
-	ExcelOpenXmlReader_Dispose_m2298408177,
-	ExcelOpenXmlReader_Dispose_m3451071528,
-	ExcelOpenXmlReader_Finalize_m3175468180,
-	ExcelReaderFactory_CreateOpenXmlReader_m2542223693,
-	Log_GetLoggerFor_m735624633,
-	Log__cctor_m2503365230,
-	NullLog_InitializeFor_m2740124739,
-	NullLog_Debug_m4179243397,
-	NullLog__ctor_m267990052,
-	LogManager_Log_m3711135055,
-	LogManager__cctor_m3639208699,
 	AddComponentMenu__ctor_m2231330368,
 	Animation_Sample_m3524518265,
 	Animation_INTERNAL_CALL_Sample_m3455476881,
@@ -34331,6 +35336,10 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	AnimationCurve_Cleanup_m2190142678,
 	AnimationCurve_Finalize_m3393741894,
 	AnimationCurve_Evaluate_m3698879322,
+	AnimationCurve_get_Item_m3780274863,
+	AnimationCurve_get_length_m1757155287,
+	AnimationCurve_GetKey_Internal_m4198730374,
+	AnimationCurve_INTERNAL_CALL_GetKey_Internal_m4032409550,
 	AnimationCurve_Init_m1486386337,
 	AnimationEvent__ctor_m3458990599,
 	AnimationEvent_get_data_m1944226119,
@@ -34363,7 +35372,9 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	AnimationState_set_layer_m139053567,
 	AnimationState_get_clip_m1758509211,
 	AnimationState_get_name_m1043580151,
+	Animator_SetTrigger_m3418492570,
 	Animator_StringToHash_m3313850714,
+	Animator_SetTriggerString_m2002790359,
 	AnimatorStateInfo_IsName_m4069203550_AdjustorThunk,
 	AnimatorStateInfo_get_fullPathHash_m3941998936_AdjustorThunk,
 	AnimatorStateInfo_get_nameHash_m1703033713_AdjustorThunk,
@@ -34434,6 +35445,7 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	AudioConfigurationChangeHandler_EndInvoke_m2237100787,
 	AudioSource_get_volume_m66289169,
 	AudioSource_set_volume_m2777308722,
+	AudioSource_get_pitch_m4220572439,
 	AudioSource_set_pitch_m3064416458,
 	AudioSource_PlayOneShot_m4118899740,
 	Behaviour__ctor_m2699265412,
@@ -34493,21 +35505,31 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Camera_get_fieldOfView_m3384007405,
 	Camera_set_fieldOfView_m3974156396,
 	Camera_get_nearClipPlane_m3536967407,
+	Camera_set_nearClipPlane_m3510849382,
 	Camera_get_farClipPlane_m3137713566,
+	Camera_set_farClipPlane_m1845065941,
 	Camera_get_orthographicSize_m1801974358,
 	Camera_set_orthographicSize_m2708824189,
 	Camera_get_orthographic_m4205491841,
 	Camera_set_orthographic_m2132888580,
 	Camera_get_depth_m1329692468,
+	Camera_get_aspect_m935361871,
+	Camera_set_aspect_m792328692,
 	Camera_get_cullingMask_m73686965,
 	Camera_get_eventMask_m4241372419,
 	Camera_set_eventMask_m1530414286,
+	Camera_get_backgroundColor_m2767968515,
+	Camera_set_backgroundColor_m2927893592,
+	Camera_INTERNAL_get_backgroundColor_m2704073336,
+	Camera_INTERNAL_set_backgroundColor_m3660646068,
 	Camera_get_rect_m2873096661,
 	Camera_set_rect_m1838810502,
 	Camera_INTERNAL_get_rect_m3971999434,
 	Camera_INTERNAL_set_rect_m610424166,
 	Camera_get_pixelRect_m2084185953,
+	Camera_set_pixelRect_m1366013782,
 	Camera_INTERNAL_get_pixelRect_m1785951490,
+	Camera_INTERNAL_set_pixelRect_m3301406310,
 	Camera_get_targetTexture_m705925974,
 	Camera_get_pixelWidth_m2325481193,
 	Camera_get_pixelHeight_m2527046964,
@@ -34556,6 +35578,14 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Collision_get_impactForceSum_m521972354,
 	Collision_get_frictionForceSum_m3438602686,
 	Collision_get_other_m4238363497,
+	Collision2D__ctor_m2559810705,
+	Collision2D_get_enabled_m1627968529,
+	Collision2D_get_rigidbody_m4058558226,
+	Collision2D_get_collider_m3330356936,
+	Collision2D_get_transform_m314016758,
+	Collision2D_get_gameObject_m4234358314,
+	Collision2D_get_contacts_m2230578195,
+	Collision2D_get_relativeVelocity_m2410092780,
 	Color__ctor_m1909920690_AdjustorThunk,
 	Color__ctor_m3811852957_AdjustorThunk,
 	Color_ToString_m4028093047_AdjustorThunk,
@@ -34571,6 +35601,12 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Color_get_cyan_m2850282709,
 	Color_get_magenta_m3193089961,
 	Color_get_grey_m1961362537,
+	Color_get_grayscale_m2989668074_AdjustorThunk,
+	Color_get_linear_m3851532985_AdjustorThunk,
+	Color_get_gamma_m1982353575_AdjustorThunk,
+	Color_get_maxColorComponent_m1239472485_AdjustorThunk,
+	Color_op_Addition_m1759335993,
+	Color_op_Subtraction_m3931992385,
 	Color_op_Multiply_m325555950,
 	Color_op_Implicit_m1067945802,
 	Color32__ctor_m1932627809_AdjustorThunk,
@@ -34845,6 +35881,14 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	GameObject_Internal_AddComponentWithType_m214735204,
 	GameObject_AddComponent_m3757565614,
 	GameObject_Internal_CreateGameObject_m3428198595,
+	Gizmos_DrawLine_m1315654064,
+	Gizmos_INTERNAL_CALL_DrawLine_m1667943171,
+	Gizmos_DrawWireSphere_m3395547818,
+	Gizmos_INTERNAL_CALL_DrawWireSphere_m2482278875,
+	Gizmos_DrawSphere_m695677545,
+	Gizmos_INTERNAL_CALL_DrawSphere_m3000536410,
+	Gizmos_set_color_m494992840,
+	Gizmos_INTERNAL_set_color_m3356916140,
 	Gradient__ctor_m954570311,
 	Gradient_Init_m4156899649,
 	Gradient_Cleanup_m3573871739,
@@ -35286,6 +36330,12 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Light_set_color_m3975955621,
 	Light_INTERNAL_get_color_m2896497767,
 	Light_INTERNAL_set_color_m2851094611,
+	Light_get_intensity_m392824783,
+	Light_set_intensity_m1790590300,
+	Light_get_shadowStrength_m1628863523,
+	Light_set_shadowStrength_m677056102,
+	LineRenderer_SetColors_m3539990388,
+	LineRenderer_INTERNAL_CALL_SetColors_m2046386539,
 	Logger__ctor_m3834134587,
 	Logger_get_logHandler_m4190583509,
 	Logger_set_logHandler_m2851576632,
@@ -35306,7 +36356,9 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Material_set_color_m577844242,
 	Material_get_mainTexture_m432794412,
 	Material_set_mainTexture_m3584203343,
+	Material_get_mainTextureOffset_m786294629,
 	Material_set_mainTextureOffset_m3533368774,
+	Material_get_mainTextureScale_m2123078452,
 	Material_set_mainTextureScale_m723074403,
 	Material_SetColor_m650857509,
 	Material_SetColor_m1191533068,
@@ -35315,14 +36367,24 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Material_GetColor_m2968960621,
 	Material_INTERNAL_CALL_GetColor_m558759949,
 	Material_SetVector_m3298399397,
+	Material_GetVector_m4150288440,
 	Material_SetTexture_m141095205,
 	Material_SetTexture_m58378708,
 	Material_GetTexture_m1257877102,
 	Material_GetTexture_m648312929,
+	Material_Internal_GetTextureScaleAndOffset_m1384230327,
 	Material_SetTextureOffset_m3084369360,
 	Material_INTERNAL_CALL_SetTextureOffset_m4252917387,
+	Material_GetTextureOffset_m4148619067,
 	Material_SetTextureScale_m1622979841,
 	Material_INTERNAL_CALL_SetTextureScale_m2049074868,
+	Material_GetTextureScale_m1359469258,
+	Material_SetFloat_m1926275467,
+	Material_SetFloat_m953675160,
+	Material_GetFloat_m562289878,
+	Material_GetFloat_m4250722315,
+	Material_HasProperty_m3511389613,
+	Material_HasProperty_m3175512802,
 	Material_get_renderQueue_m2184625106,
 	Material_set_renderQueue_m3118406393,
 	Material_Internal_CreateWithShader_m4029381963,
@@ -35331,6 +36393,7 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Mathf__cctor_m326403828,
 	Mathf_Sin_m831310046,
 	Mathf_Cos_m238853451,
+	Mathf_Acos_m3800958570,
 	Mathf_Sqrt_m2213915910,
 	Mathf_Abs_m1942863256,
 	Mathf_Min_m1648492575,
@@ -35353,6 +36416,9 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Mathf_Clamp01_m3888954684,
 	Mathf_Lerp_m1686556575,
 	Mathf_Approximately_m1064446634,
+	Mathf_Repeat_m943844734,
+	Mathf_GammaToLinearSpace_m3697142437,
+	Mathf_LinearToGammaSpace_m1586839609,
 	Matrix4x4_get_Item_m312280350_AdjustorThunk,
 	Matrix4x4_get_Item_m3317262185_AdjustorThunk,
 	Matrix4x4_GetHashCode_m3649708037_AdjustorThunk,
@@ -35629,10 +36695,15 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	QualitySettings_GetQualityLevel_m2349477836,
 	Quaternion__ctor_m3196903881_AdjustorThunk,
 	Quaternion_get_identity_m1561886418,
+	Quaternion_AngleAxis_m2806222563,
+	Quaternion_INTERNAL_CALL_AngleAxis_m3310327005,
+	Quaternion_LookRotation_m700700634,
 	Quaternion_LookRotation_m633695927,
 	Quaternion_INTERNAL_CALL_LookRotation_m3606560944,
 	Quaternion_Slerp_m1992855400,
 	Quaternion_INTERNAL_CALL_Slerp_m1926970492,
+	Quaternion_Inverse_m3931399088,
+	Quaternion_INTERNAL_CALL_Inverse_m1043108654,
 	Quaternion_ToString_m2638853272_AdjustorThunk,
 	Quaternion_get_eulerAngles_m3302573991_AdjustorThunk,
 	Quaternion_Euler_m2887458175,
@@ -35683,6 +36754,7 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Rect_op_Equality_m2793663577,
 	RectOffset__ctor_m2227510254,
 	RectOffset__ctor_m3541945769,
+	RectOffset__ctor_m4133355596,
 	RectOffset_Init_m4361650,
 	RectOffset_Cleanup_m3198970074,
 	RectOffset_get_left_m439065308,
@@ -35714,15 +36786,21 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	ResourceRequest__ctor_m3340010930,
 	ResourceRequest_get_asset_m3527928488,
 	Resources_FindObjectsOfTypeAll_m3365744935,
+	Resources_Load_m2041782325,
 	Resources_Load_m243305716,
+	Rigidbody_get_position_m3465583110,
+	Rigidbody_INTERNAL_get_position_m2227872991,
 	Rigidbody_get_rotation_m4203325509,
 	Rigidbody_INTERNAL_get_rotation_m109669412,
+	Rigidbody_MovePosition_m1810529681,
+	Rigidbody_INTERNAL_CALL_MovePosition_m2709492198,
 	Rigidbody_MoveRotation_m3412525692,
 	Rigidbody_INTERNAL_CALL_MoveRotation_m2205051919,
 	RPC__ctor_m1432086380,
 	Scene_get_handle_m1555912301_AdjustorThunk,
 	Scene_GetHashCode_m3223653899_AdjustorThunk,
 	Scene_Equals_m3588907349_AdjustorThunk,
+	SceneManager_LoadScene_m1619949821,
 	SceneManager_LoadScene_m1386820036,
 	SceneManager_LoadSceneAsyncNameIndexInternal_m3279056043,
 	SceneManager_Internal_SceneLoaded_m4005732915,
@@ -35928,6 +37006,7 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	ThreadAndSerializationSafe__ctor_m84326599,
 	Time_get_time_m2216684562,
 	Time_get_deltaTime_m2233168104,
+	Time_get_smoothDeltaTime_m1294084638,
 	Time_get_timeScale_m3151482970,
 	Time_get_realtimeSinceStartup_m357614587,
 	Touch_get_fingerId_m4109475843_AdjustorThunk,
@@ -35948,6 +37027,12 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	TrackedReference_Equals_m3153703389,
 	TrackedReference_GetHashCode_m811248179,
 	TrackedReference_op_Equality_m3491334086,
+	TrailRenderer_get_time_m3449437864,
+	TrailRenderer_set_time_m2582670875,
+	TrailRenderer_get_startWidth_m1625094787,
+	TrailRenderer_set_startWidth_m2858856800,
+	TrailRenderer_get_endWidth_m3952779290,
+	TrailRenderer_set_endWidth_m3133306587,
 	Transform_get_position_m1104419803,
 	Transform_set_position_m2469242620,
 	Transform_INTERNAL_get_position_m1881704498,
@@ -35956,6 +37041,10 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Transform_set_localPosition_m1026930133,
 	Transform_INTERNAL_get_localPosition_m94028171,
 	Transform_INTERNAL_set_localPosition_m432504087,
+	Transform_get_eulerAngles_m4066505159,
+	Transform_get_localEulerAngles_m4231787854,
+	Transform_get_up_m1603627763,
+	Transform_get_forward_m1833488937,
 	Transform_get_rotation_m1033555130,
 	Transform_set_rotation_m3411284563,
 	Transform_INTERNAL_get_rotation_m2427701365,
@@ -36008,20 +37097,25 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Vector2__ctor_m3067419446_AdjustorThunk,
 	Vector2_Lerp_m1511850087,
 	Vector2_Scale_m3228063809,
+	Vector2_Normalize_m2465777963_AdjustorThunk,
+	Vector2_get_normalized_m2985402409_AdjustorThunk,
 	Vector2_ToString_m775491729_AdjustorThunk,
 	Vector2_GetHashCode_m2353429373_AdjustorThunk,
 	Vector2_Equals_m1405920279_AdjustorThunk,
 	Vector2_Dot_m778921987,
 	Vector2_get_magnitude_m33802565_AdjustorThunk,
 	Vector2_get_sqrMagnitude_m1226294581_AdjustorThunk,
+	Vector2_Angle_m1064580737,
 	Vector2_SqrMagnitude_m1793890068,
 	Vector2_get_zero_m3966848876,
 	Vector2_get_one_m3174311904,
+	Vector2_get_right_m28012078,
 	Vector2_op_Addition_m1389598521,
 	Vector2_op_Subtraction_m1984215297,
 	Vector2_op_UnaryNegation_m2194368113,
 	Vector2_op_Multiply_m4236139442,
 	Vector2_op_Multiply_m3393065202,
+	Vector2_op_Division_m96580069,
 	Vector2_op_Equality_m4168854394,
 	Vector2_op_Inequality_m4283136193,
 	Vector2_op_Implicit_m1064335535,
@@ -36031,34 +37125,45 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	Vector3_Lerp_m2935648359,
 	Vector3_Scale_m1087116865,
 	Vector3_Scale_m4183036888_AdjustorThunk,
+	Vector3_Cross_m4149044051,
 	Vector3_GetHashCode_m1754570744_AdjustorThunk,
 	Vector3_Equals_m2692262876_AdjustorThunk,
 	Vector3_Normalize_m2140428981,
+	Vector3_Normalize_m3679112426_AdjustorThunk,
 	Vector3_get_normalized_m936072361_AdjustorThunk,
 	Vector3_ToString_m3857189970_AdjustorThunk,
 	Vector3_Dot_m3161182818,
+	Vector3_Distance_m1859670022,
+	Vector3_ClampMagnitude_m2652735362,
 	Vector3_Magnitude_m1349200714,
 	Vector3_get_magnitude_m860342598_AdjustorThunk,
 	Vector3_SqrMagnitude_m3759098164,
+	Vector3_get_sqrMagnitude_m1814096310_AdjustorThunk,
 	Vector3_Min_m4249067335,
 	Vector3_Max_m2105825185,
 	Vector3_get_zero_m1527993324,
 	Vector3_get_one_m627547232,
+	Vector3_get_forward_m1201659139,
 	Vector3_get_back_m4246539215,
 	Vector3_get_up_m2725403797,
 	Vector3_get_right_m1884123822,
 	Vector3_op_Addition_m3146764857,
 	Vector3_op_Subtraction_m2407545601,
+	Vector3_op_UnaryNegation_m3383802608,
 	Vector3_op_Multiply_m1351554733,
+	Vector3_op_Multiply_m3872631309,
 	Vector3_op_Division_m3315615850,
+	Vector3_op_Equality_m305888255,
 	Vector3_op_Inequality_m799191452,
 	Vector4__ctor_m1222289168_AdjustorThunk,
 	Vector4_GetHashCode_m1576457715_AdjustorThunk,
 	Vector4_Equals_m3783731577_AdjustorThunk,
 	Vector4_ToString_m2340321043_AdjustorThunk,
 	Vector4_Dot_m2285943745,
+	Vector4_get_magnitude_m4049434951_AdjustorThunk,
 	Vector4_SqrMagnitude_m3109980116,
 	Vector4_get_zero_m3810945132,
+	Vector4_op_Addition_m3367537977,
 	Vector4_op_Subtraction_m2837269249,
 	Vector4_op_Multiply_m3204903356,
 	Vector4_op_Inequality_m1143290655,
@@ -36095,6 +37200,999 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	TypeInferenceRuleAttribute__ctor_m599630929,
 	TypeInferenceRuleAttribute__ctor_m470566337,
 	TypeInferenceRuleAttribute_ToString_m3941510216,
+	Color2__ctor_m2417174790_AdjustorThunk,
+	Color2_op_Addition_m1918240656,
+	Color2_op_Subtraction_m3002763776,
+	Color2_op_Multiply_m3636588472,
+	ABSSequentiable__ctor_m1457763740,
+	Debugger_Log_m2834227361,
+	Debugger_LogWarning_m1294243619,
+	Debugger_LogError_m949546549,
+	Debugger_LogReport_m963317535,
+	Debugger_LogInvalidTween_m3454295394,
+	Debugger_LogNestedTween_m3109520726,
+	Debugger_LogNullTween_m832479276,
+	Debugger_LogNonPathTween_m951639391,
+	Debugger_LogMissingMaterialProperty_m3310745525,
+	Debugger_LogRemoveActiveTweenError_m2297126192,
+	Debugger_SetLogPriority_m1610107306,
+	DOTweenComponent_Awake_m307634654,
+	DOTweenComponent_Start_m2273654179,
+	DOTweenComponent_Update_m2952167292,
+	DOTweenComponent_LateUpdate_m3720781760,
+	DOTweenComponent_FixedUpdate_m1532856798,
+	DOTweenComponent_OnDrawGizmos_m711619515,
+	DOTweenComponent_OnDestroy_m768162796,
+	DOTweenComponent_OnApplicationQuit_m3566070717,
+	DOTweenComponent_SetCapacity_m4268164513,
+	DOTweenComponent_WaitForCompletion_m1897980136,
+	DOTweenComponent_WaitForRewind_m2522663097,
+	DOTweenComponent_WaitForKill_m1046269594,
+	DOTweenComponent_WaitForElapsedLoops_m2314686214,
+	DOTweenComponent_WaitForPosition_m3964012032,
+	DOTweenComponent_WaitForStart_m3782525310,
+	DOTweenComponent_Create_m1411710227,
+	DOTweenComponent_DestroyInstance_m1740700608,
+	DOTweenComponent__ctor_m1855129471,
+	U3CWaitForCompletionU3Ed__13__ctor_m1500940881,
+	U3CWaitForCompletionU3Ed__13_System_IDisposable_Dispose_m4042820963,
+	U3CWaitForCompletionU3Ed__13_MoveNext_m2642612068,
+	U3CWaitForCompletionU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3575789325,
+	U3CWaitForCompletionU3Ed__13_System_Collections_IEnumerator_Reset_m1970706518,
+	U3CWaitForCompletionU3Ed__13_System_Collections_IEnumerator_get_Current_m1875371376,
+	U3CWaitForElapsedLoopsU3Ed__16__ctor_m721687953,
+	U3CWaitForElapsedLoopsU3Ed__16_System_IDisposable_Dispose_m3624934307,
+	U3CWaitForElapsedLoopsU3Ed__16_MoveNext_m3447844618,
+	U3CWaitForElapsedLoopsU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2123559821,
+	U3CWaitForElapsedLoopsU3Ed__16_System_Collections_IEnumerator_Reset_m2109009536,
+	U3CWaitForElapsedLoopsU3Ed__16_System_Collections_IEnumerator_get_Current_m2697209294,
+	U3CWaitForKillU3Ed__15__ctor_m383464461,
+	U3CWaitForKillU3Ed__15_System_IDisposable_Dispose_m1633665715,
+	U3CWaitForKillU3Ed__15_MoveNext_m1537769148,
+	U3CWaitForKillU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m918810409,
+	U3CWaitForKillU3Ed__15_System_Collections_IEnumerator_Reset_m1981393790,
+	U3CWaitForKillU3Ed__15_System_Collections_IEnumerator_get_Current_m1860616400,
+	U3CWaitForPositionU3Ed__17__ctor_m2032821274,
+	U3CWaitForPositionU3Ed__17_System_IDisposable_Dispose_m731458714,
+	U3CWaitForPositionU3Ed__17_MoveNext_m3794080375,
+	U3CWaitForPositionU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4242636580,
+	U3CWaitForPositionU3Ed__17_System_Collections_IEnumerator_Reset_m1580275791,
+	U3CWaitForPositionU3Ed__17_System_Collections_IEnumerator_get_Current_m2895331511,
+	U3CWaitForRewindU3Ed__14__ctor_m2599254525,
+	U3CWaitForRewindU3Ed__14_System_IDisposable_Dispose_m2673538587,
+	U3CWaitForRewindU3Ed__14_MoveNext_m1776446236,
+	U3CWaitForRewindU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m821810625,
+	U3CWaitForRewindU3Ed__14_System_Collections_IEnumerator_Reset_m3291569966,
+	U3CWaitForRewindU3Ed__14_System_Collections_IEnumerator_get_Current_m1161433784,
+	U3CWaitForStartU3Ed__18__ctor_m3014617818,
+	U3CWaitForStartU3Ed__18_System_IDisposable_Dispose_m1119218126,
+	U3CWaitForStartU3Ed__18_MoveNext_m1398096001,
+	U3CWaitForStartU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3691048774,
+	U3CWaitForStartU3Ed__18_System_Collections_IEnumerator_Reset_m3457456717,
+	U3CWaitForStartU3Ed__18_System_Collections_IEnumerator_get_Current_m1804430085,
+	DOTweenSettings__ctor_m887379349,
+	Bounce_EaseIn_m3887019168,
+	Bounce_EaseOut_m4239383085,
+	Bounce_EaseInOut_m2246762374,
+	EaseCurve__ctor_m442291200,
+	EaseCurve_Evaluate_m4151423631,
+	EaseManager_Evaluate_m1048646038,
+	EaseManager_Evaluate_m74870165,
+	EaseManager_ToEaseFunction_m1173633506,
+	EaseManager_IsFlashEase_m2818956000,
+	U3CU3Ec__cctor_m933983471,
+	U3CU3Ec__ctor_m1068847482,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_0_m2721836512,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_1_m1426024031,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_2_m3849412322,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_3_m4002960225,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_4_m963089380,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_5_m3962244195,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_6_m2090665190,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_7_m2244213093,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_8_m3074343400,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_9_m1778530919,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_10_m2753388371,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_11_m2533843000,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_12_m1924838281,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_13_m4292818030,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_14_m3345003455,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_15_m3125458084,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_16_m2516453365,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_17_m589465818,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_18_m102719531,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_19_m4178141456,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_20_m3541146612,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_21_m3321601241,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_22_m2712596522,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_23_m785608975,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_24_m4132761696,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_25_m3913216325,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_26_m3304211606,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_27_m1377224059,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_28_m890477772,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_29_m670932401,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_30_m3757667477,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_31_m3538122106,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_32_m2929117387,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_33_m1002129840,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_34_m54315265,
+	U3CU3Ec_U3CToEaseFunctionU3Eb__4_35_m4129737190,
+	Flash_Ease_m4276233543,
+	Flash_EaseIn_m1600134034,
+	Flash_EaseOut_m3479091121,
+	Flash_EaseInOut_m3738681292,
+	Flash_WeightedEase_m4109024196,
+	SequenceCallback__ctor_m106728995,
+	TweenManager_GetSequence_m1013349775,
+	TweenManager_SetUpdateType_m3684972442,
+	TweenManager_AddActiveTweenToSequence_m3601486235,
+	TweenManager_DespawnAll_m879780213,
+	TweenManager_Despawn_m1933822120,
+	TweenManager_PurgeAll_m2608239790,
+	TweenManager_PurgePools_m1427576330,
+	TweenManager_ResetCapacities_m882991915,
+	TweenManager_SetCapacities_m2919421098,
+	TweenManager_Validate_m3353907304,
+	TweenManager_Update_m378595860,
+	TweenManager_FilteredOperation_m1159879057,
+	TweenManager_Complete_m1525644904,
+	TweenManager_Flip_m3276392302,
+	TweenManager_ForceInit_m163553463,
+	TweenManager_Goto_m3404683021,
+	TweenManager_Pause_m1492466245,
+	TweenManager_Play_m1289143583,
+	TweenManager_PlayBackwards_m156468731,
+	TweenManager_PlayForward_m1226939652,
+	TweenManager_Restart_m3397053451,
+	TweenManager_Rewind_m2873713783,
+	TweenManager_SmoothRewind_m1990583008,
+	TweenManager_TogglePause_m3731650299,
+	TweenManager_TotalPooledTweens_m1221755943,
+	TweenManager_TotalPlayingTweens_m3937211462,
+	TweenManager_GetActiveTweens_m586218945,
+	TweenManager_GetTweensById_m2700268389,
+	TweenManager_GetTweensByTarget_m1060452997,
+	TweenManager_MarkForKilling_m1319382931,
+	TweenManager_AddActiveTween_m1611214199,
+	TweenManager_ReorganizeActiveTweens_m3706676790,
+	TweenManager_DespawnTweens_m3773872032,
+	TweenManager_RemoveActiveTween_m3416564700,
+	TweenManager_ClearTweenArray_m1588603360,
+	TweenManager_IncreaseCapacities_m2843870263,
+	TweenManager__cctor_m3795227095,
+	Utils_Vector3FromAngle_m3600790458,
+	Utils_Angle2D_m2378361568,
+	PureQuaternionPlugin_Plug_m3044542140,
+	PureQuaternionPlugin_Reset_m1622149370,
+	PureQuaternionPlugin_SetFrom_m4265139358,
+	PureQuaternionPlugin_ConvertToStartValue_m707750533,
+	PureQuaternionPlugin_SetRelativeEndValue_m487649591,
+	PureQuaternionPlugin_SetChangeValue_m1416200996,
+	PureQuaternionPlugin_GetSpeedBasedDuration_m2190623658,
+	PureQuaternionPlugin_EvaluateAndApply_m1454595347,
+	PureQuaternionPlugin__ctor_m2869270851,
+	DOTween_get_logBehaviour_m2168492577,
+	DOTween_set_logBehaviour_m2124595076,
+	DOTween__cctor_m3994335352,
+	DOTween_Init_m4079336309,
+	DOTween_AutoInit_m4125144064,
+	DOTween_Init_m3935563765,
+	DOTween_SetTweensCapacity_m299576005,
+	DOTween_Clear_m1972800791,
+	DOTween_ClearCachedTweens_m3592210690,
+	DOTween_Validate_m2145836181,
+	DOTween_To_m914278462,
+	DOTween_To_m3247828180,
+	DOTween_To_m3136369265,
+	DOTween_To_m983137922,
+	DOTween_To_m1576341974,
+	DOTween_To_m1946796431,
+	DOTween_To_m2764928386,
+	DOTween_To_m432804578,
+	DOTween_To_m1457612583,
+	DOTween_To_m983435884,
+	DOTween_To_m2117641908,
+	DOTween_To_m3916872722,
+	DOTween_To_m732165036,
+	DOTween_To_m1374276420,
+	DOTween_ToAxis_m2128986000,
+	DOTween_ToAlpha_m4132971413,
+	DOTween_To_m1374977403,
+	DOTween_Punch_m2093241430,
+	DOTween_Shake_m2491128678,
+	DOTween_Shake_m683174647,
+	DOTween_Shake_m1527020091,
+	DOTween_ToArray_m2997520276,
+	DOTween_To_m1462453879,
+	DOTween_Sequence_m3562267366,
+	DOTween_CompleteAll_m4221744420,
+	DOTween_Complete_m2005563247,
+	DOTween_CompleteAndReturnKilledTot_m1303820179,
+	DOTween_CompleteAndReturnKilledTot_m3308320837,
+	DOTween_CompleteAndReturnKilledTotExceptFor_m2244397851,
+	DOTween_FlipAll_m3075944589,
+	DOTween_Flip_m3578827124,
+	DOTween_GotoAll_m2362950379,
+	DOTween_Goto_m3890627630,
+	DOTween_KillAll_m1102144471,
+	DOTween_KillAll_m3780178527,
+	DOTween_Kill_m211473084,
+	DOTween_PauseAll_m4101906706,
+	DOTween_Pause_m4110474415,
+	DOTween_PlayAll_m1299085894,
+	DOTween_Play_m164738169,
+	DOTween_Play_m32308619,
+	DOTween_PlayBackwardsAll_m700876428,
+	DOTween_PlayBackwards_m2839273377,
+	DOTween_PlayBackwards_m544554603,
+	DOTween_PlayForwardAll_m1846124281,
+	DOTween_PlayForward_m3077912960,
+	DOTween_PlayForward_m1591690666,
+	DOTween_RestartAll_m1603653256,
+	DOTween_Restart_m2951285109,
+	DOTween_Restart_m1658661915,
+	DOTween_RewindAll_m1008678220,
+	DOTween_Rewind_m660085617,
+	DOTween_SmoothRewindAll_m4292133471,
+	DOTween_SmoothRewind_m1245411966,
+	DOTween_TogglePauseAll_m336422306,
+	DOTween_TogglePause_m1571016433,
+	DOTween_IsTweening_m657002958,
+	DOTween_TotalPlayingTweens_m3668081427,
+	DOTween_PlayingTweens_m3712978333,
+	DOTween_PausedTweens_m1007284995,
+	DOTween_TweensById_m2371039200,
+	DOTween_TweensByTarget_m2730695796,
+	DOTween_InitCheck_m691380157,
+	DOTween__ctor_m3410313657,
+	U3CU3Ec__DisplayClass52_0__ctor_m913463807,
+	U3CU3Ec__DisplayClass52_0_U3CToU3Eb__0_m4105035594,
+	U3CU3Ec__DisplayClass52_0_U3CToU3Eb__1_m1705179352,
+	DOVirtual_Float_m1627525319,
+	DOVirtual_EasedValue_m1602872611,
+	DOVirtual_EasedValue_m3612873406,
+	DOVirtual_EasedValue_m3005505411,
+	DOVirtual_EasedValue_m2153709637,
+	DOVirtual_DelayedCall_m1093540967,
+	U3CU3Ec__DisplayClass0_0__ctor_m573884160,
+	U3CU3Ec__DisplayClass0_0_U3CFloatU3Eb__0_m4185883154,
+	U3CU3Ec__DisplayClass0_0_U3CFloatU3Eb__1_m3483606204,
+	U3CU3Ec__DisplayClass0_0_U3CFloatU3Eb__2_m64240142,
+	EaseFactory_StopMotion_m2300428264,
+	EaseFactory_StopMotion_m3743262361,
+	EaseFactory_StopMotion_m810640373,
+	EaseFactory__ctor_m2540174781,
+	U3CU3Ec__DisplayClass2_0__ctor_m98975214,
+	U3CU3Ec__DisplayClass2_0_U3CStopMotionU3Eb__0_m1536854436,
+	EaseFunction__ctor_m70174455,
+	EaseFunction_Invoke_m4001665929,
+	EaseFunction_BeginInvoke_m1915830106,
+	EaseFunction_EndInvoke_m1686794003,
+	Color2Plugin_Reset_m1040404076,
+	Color2Plugin_SetFrom_m1687712394,
+	Color2Plugin_ConvertToStartValue_m1627227983,
+	Color2Plugin_SetRelativeEndValue_m2002112229,
+	Color2Plugin_SetChangeValue_m1983329186,
+	Color2Plugin_GetSpeedBasedDuration_m1878874090,
+	Color2Plugin_EvaluateAndApply_m1350282949,
+	Color2Plugin__ctor_m2361216917,
+	ColorPlugin_Reset_m1252644186,
+	ColorPlugin_SetFrom_m1592454564,
+	ColorPlugin_ConvertToStartValue_m339617241,
+	ColorPlugin_SetRelativeEndValue_m1561834483,
+	ColorPlugin_SetChangeValue_m2303083132,
+	ColorPlugin_GetSpeedBasedDuration_m1013203397,
+	ColorPlugin_EvaluateAndApply_m2466855459,
+	ColorPlugin__ctor_m1241819855,
+	ABSPathDecoder__ctor_m986200161,
+	CatmullRomDecoder_FinalizePath_m2016177675,
+	CatmullRomDecoder_GetPoint_m889044054,
+	CatmullRomDecoder_SetTimeToLengthTables_m786122248,
+	CatmullRomDecoder_SetWaypointsLengths_m132628524,
+	CatmullRomDecoder__ctor_m31802828,
+	ControlPoint__ctor_m2181047301_AdjustorThunk,
+	ControlPoint_op_Addition_m2476705731,
+	LinearDecoder_FinalizePath_m493312366,
+	LinearDecoder_GetPoint_m2014065135,
+	LinearDecoder_SetTimeToLengthTables_m2287316015,
+	LinearDecoder_SetWaypointsLengths_m3654082159,
+	LinearDecoder__ctor_m1815788553,
+	Path__ctor_m4253660657,
+	Path__ctor_m109627495,
+	Path_FinalizePath_m2340227616,
+	Path_GetPoint_m685987541,
+	Path_ConvertToConstantPathPerc_m4225215567,
+	Path_GetWaypointIndexFromPerc_m1857218744,
+	Path_GetDrawPoints_m2671420849,
+	Path_RefreshNonLinearDrawWps_m692037076,
+	Path_Destroy_m2187283033,
+	Path_CloneIncremental_m3267316450,
+	Path_AssignWaypoints_m1568093980,
+	Path_AssignDecoder_m3072882543,
+	Path_Draw_m755263667,
+	Path_Draw_m3671593897,
+	PluginsManager_PurgeAll_m2309351391,
+	SpecialPluginsUtils_SetLookAt_m1962580571,
+	SpecialPluginsUtils_SetPunch_m2968676958,
+	SpecialPluginsUtils_SetShake_m1141163400,
+	SpecialPluginsUtils_SetCameraShakePosition_m757028890,
+	DoublePlugin_Reset_m4097767476,
+	DoublePlugin_SetFrom_m287034312,
+	DoublePlugin_ConvertToStartValue_m2828371137,
+	DoublePlugin_SetRelativeEndValue_m743829071,
+	DoublePlugin_SetChangeValue_m2620647386,
+	DoublePlugin_GetSpeedBasedDuration_m3485989573,
+	DoublePlugin_EvaluateAndApply_m986922907,
+	DoublePlugin__ctor_m472028567,
+	FloatPlugin_Reset_m1409276442,
+	FloatPlugin_SetFrom_m3628140100,
+	FloatPlugin_ConvertToStartValue_m1262983801,
+	FloatPlugin_SetRelativeEndValue_m3966531475,
+	FloatPlugin_SetChangeValue_m134531078,
+	FloatPlugin_GetSpeedBasedDuration_m1649918496,
+	FloatPlugin_EvaluateAndApply_m3138927159,
+	FloatPlugin__ctor_m585502968,
+	IntPlugin_Reset_m473564686,
+	IntPlugin_SetFrom_m2590773846,
+	IntPlugin_ConvertToStartValue_m2826582483,
+	IntPlugin_SetRelativeEndValue_m3715330301,
+	IntPlugin_SetChangeValue_m2318505996,
+	IntPlugin_GetSpeedBasedDuration_m2752808202,
+	IntPlugin_EvaluateAndApply_m576724549,
+	IntPlugin__ctor_m291784073,
+	LongPlugin_Reset_m4261321919,
+	LongPlugin_SetFrom_m2682161757,
+	LongPlugin_ConvertToStartValue_m603421758,
+	LongPlugin_SetRelativeEndValue_m4267326736,
+	LongPlugin_SetChangeValue_m3050133269,
+	LongPlugin_GetSpeedBasedDuration_m2541162194,
+	LongPlugin_EvaluateAndApply_m2985682968,
+	LongPlugin__ctor_m2586876812,
+	PathPlugin_Reset_m3087254235,
+	PathPlugin_SetFrom_m4091676017,
+	PathPlugin_Get_m3476918268,
+	PathPlugin_ConvertToStartValue_m460648741,
+	PathPlugin_SetRelativeEndValue_m970240972,
+	PathPlugin_SetChangeValue_m2144720161,
+	PathPlugin_GetSpeedBasedDuration_m3202608197,
+	PathPlugin_EvaluateAndApply_m2953483135,
+	PathPlugin_SetOrientation_m3023070977,
+	PathPlugin__ctor_m4017481171,
+	QuaternionPlugin_Reset_m540886732,
+	QuaternionPlugin_SetFrom_m902677982,
+	QuaternionPlugin_ConvertToStartValue_m730900917,
+	QuaternionPlugin_SetRelativeEndValue_m1706574209,
+	QuaternionPlugin_SetChangeValue_m3086676884,
+	QuaternionPlugin_GetSpeedBasedDuration_m1629956606,
+	QuaternionPlugin_EvaluateAndApply_m53279647,
+	QuaternionPlugin__ctor_m3223195802,
+	RectOffsetPlugin_Reset_m4095272056,
+	RectOffsetPlugin_SetFrom_m140944448,
+	RectOffsetPlugin_ConvertToStartValue_m3269101313,
+	RectOffsetPlugin_SetRelativeEndValue_m3222695535,
+	RectOffsetPlugin_SetChangeValue_m4017675218,
+	RectOffsetPlugin_GetSpeedBasedDuration_m3064219017,
+	RectOffsetPlugin_EvaluateAndApply_m2322178099,
+	RectOffsetPlugin__ctor_m3970399647,
+	RectOffsetPlugin__cctor_m4059289360,
+	RectPlugin_Reset_m36067126,
+	RectPlugin_SetFrom_m3503117286,
+	RectPlugin_ConvertToStartValue_m4260783945,
+	RectPlugin_SetRelativeEndValue_m1255493911,
+	RectPlugin_SetChangeValue_m2964213558,
+	RectPlugin_GetSpeedBasedDuration_m4207891958,
+	RectPlugin_EvaluateAndApply_m120801595,
+	RectPlugin__ctor_m403056936,
+	StringPlugin_SetFrom_m1109720958,
+	StringPlugin_Reset_m77394362,
+	StringPlugin_ConvertToStartValue_m202643461,
+	StringPlugin_SetRelativeEndValue_m3015982295,
+	StringPlugin_SetChangeValue_m2758686388,
+	StringPlugin_GetSpeedBasedDuration_m3607809797,
+	StringPlugin_EvaluateAndApply_m3214475539,
+	StringPlugin_Append_m915403987,
+	StringPlugin_ScrambledCharsToUse_m3337172010,
+	StringPlugin__ctor_m4132855087,
+	StringPlugin__cctor_m4075694604,
+	StringPluginExtensions__cctor_m216118382,
+	StringPluginExtensions_ScrambleChars_m2357882848,
+	StringPluginExtensions_AppendScrambledChars_m2999297406,
+	UintPlugin_Reset_m3049541632,
+	UintPlugin_SetFrom_m3149814748,
+	UintPlugin_ConvertToStartValue_m765651541,
+	UintPlugin_SetRelativeEndValue_m2418783195,
+	UintPlugin_SetChangeValue_m3466217300,
+	UintPlugin_GetSpeedBasedDuration_m1986785747,
+	UintPlugin_EvaluateAndApply_m3628556239,
+	UintPlugin__ctor_m1851929470,
+	UlongPlugin_Reset_m465097296,
+	UlongPlugin_SetFrom_m175352084,
+	UlongPlugin_ConvertToStartValue_m77481419,
+	UlongPlugin_SetRelativeEndValue_m3409537757,
+	UlongPlugin_SetChangeValue_m4268888190,
+	UlongPlugin_GetSpeedBasedDuration_m721011258,
+	UlongPlugin_EvaluateAndApply_m248710881,
+	UlongPlugin__ctor_m2560758085,
+	Vector2Plugin_Reset_m4169839166,
+	Vector2Plugin_SetFrom_m1379257478,
+	Vector2Plugin_ConvertToStartValue_m2155639343,
+	Vector2Plugin_SetRelativeEndValue_m1117473221,
+	Vector2Plugin_SetChangeValue_m1996895644,
+	Vector2Plugin_GetSpeedBasedDuration_m1810585513,
+	Vector2Plugin_EvaluateAndApply_m4227295577,
+	Vector2Plugin__ctor_m1113015805,
+	Vector3ArrayPlugin_Reset_m2592336274,
+	Vector3ArrayPlugin_SetFrom_m2442655110,
+	Vector3ArrayPlugin_ConvertToStartValue_m1953175333,
+	Vector3ArrayPlugin_SetRelativeEndValue_m1899894737,
+	Vector3ArrayPlugin_SetChangeValue_m1701422420,
+	Vector3ArrayPlugin_GetSpeedBasedDuration_m2617333706,
+	Vector3ArrayPlugin_EvaluateAndApply_m2521440271,
+	Vector3ArrayPlugin__ctor_m1114023449,
+	Vector3Plugin_Reset_m3289576255,
+	Vector3Plugin_SetFrom_m3783759237,
+	Vector3Plugin_ConvertToStartValue_m1226386644,
+	Vector3Plugin_SetRelativeEndValue_m636480614,
+	Vector3Plugin_SetChangeValue_m1626273757,
+	Vector3Plugin_GetSpeedBasedDuration_m688220781,
+	Vector3Plugin_EvaluateAndApply_m3218858388,
+	Vector3Plugin__ctor_m2496113054,
+	Vector4Plugin_Reset_m15820604,
+	Vector4Plugin_SetFrom_m4037800968,
+	Vector4Plugin_ConvertToStartValue_m4251200849,
+	Vector4Plugin_SetRelativeEndValue_m2071181835,
+	Vector4Plugin_SetChangeValue_m3914266778,
+	Vector4Plugin_GetSpeedBasedDuration_m1093714061,
+	Vector4Plugin_EvaluateAndApply_m3579796599,
+	Vector4Plugin__ctor_m2743340731,
+	Sequence__ctor_m3160015202,
+	Sequence_DoPrepend_m3692126219,
+	Sequence_DoInsert_m2233051341,
+	Sequence_DoAppendInterval_m4156058788,
+	Sequence_DoPrependInterval_m33614792,
+	Sequence_DoInsertCallback_m2417658513,
+	Sequence_Reset_m1194713657,
+	Sequence_Validate_m2655851536,
+	Sequence_Startup_m2282350177,
+	Sequence_ApplyTween_m4207260438,
+	Sequence_Setup_m1914808042,
+	Sequence_DoStartup_m1514469211,
+	Sequence_DoApplyTween_m2567737122,
+	Sequence_ApplyInternalCycle_m4170225852,
+	Sequence_SortSequencedObjs_m3886496447,
+	ShortcutExtensions_DOFade_m3908825903,
+	ShortcutExtensions_DOPitch_m1466203827,
+	ShortcutExtensions_DOAspect_m4263503343,
+	ShortcutExtensions_DOColor_m4070360217,
+	ShortcutExtensions_DOFarClipPlane_m1788230568,
+	ShortcutExtensions_DOFieldOfView_m2729074193,
+	ShortcutExtensions_DONearClipPlane_m3946677591,
+	ShortcutExtensions_DOOrthoSize_m3058874688,
+	ShortcutExtensions_DOPixelRect_m1451235077,
+	ShortcutExtensions_DORect_m1672543897,
+	ShortcutExtensions_DOShakePosition_m3912240257,
+	ShortcutExtensions_DOShakePosition_m1939458561,
+	ShortcutExtensions_DOShakeRotation_m1826964640,
+	ShortcutExtensions_DOShakeRotation_m3224386616,
+	ShortcutExtensions_DOColor_m2540950828,
+	ShortcutExtensions_DOIntensity_m2263101207,
+	ShortcutExtensions_DOShadowStrength_m1596018935,
+	ShortcutExtensions_DOColor_m3644171909,
+	ShortcutExtensions_DOColor_m1029787631,
+	ShortcutExtensions_DOColor_m331992445,
+	ShortcutExtensions_DOFade_m2221070795,
+	ShortcutExtensions_DOFade_m4201395497,
+	ShortcutExtensions_DOFloat_m2495122819,
+	ShortcutExtensions_DOOffset_m2137547141,
+	ShortcutExtensions_DOOffset_m1515150151,
+	ShortcutExtensions_DOTiling_m2024748893,
+	ShortcutExtensions_DOTiling_m2236894419,
+	ShortcutExtensions_DOVector_m2339305057,
+	ShortcutExtensions_DOMove_m1933953753,
+	ShortcutExtensions_DOMoveX_m3420231689,
+	ShortcutExtensions_DOMoveY_m2397857768,
+	ShortcutExtensions_DOMoveZ_m1621316935,
+	ShortcutExtensions_DORotate_m458975576,
+	ShortcutExtensions_DOLookAt_m3791687253,
+	ShortcutExtensions_DOJump_m841256827,
+	ShortcutExtensions_DOResize_m1464567070,
+	ShortcutExtensions_DOTime_m4195941374,
+	ShortcutExtensions_DOMove_m813241662,
+	ShortcutExtensions_DOMoveX_m369816864,
+	ShortcutExtensions_DOMoveY_m3000263681,
+	ShortcutExtensions_DOMoveZ_m977316578,
+	ShortcutExtensions_DOLocalMove_m1432977613,
+	ShortcutExtensions_DOLocalMoveX_m1551758153,
+	ShortcutExtensions_DOLocalMoveY_m2789795598,
+	ShortcutExtensions_DOLocalMoveZ_m2334840511,
+	ShortcutExtensions_DORotate_m3434569207,
+	ShortcutExtensions_DORotateQuaternion_m4202237645,
+	ShortcutExtensions_DOLocalRotate_m2660994480,
+	ShortcutExtensions_DOLocalRotateQuaternion_m176125184,
+	ShortcutExtensions_DOScale_m2754995414,
+	ShortcutExtensions_DOScale_m562799890,
+	ShortcutExtensions_DOScaleX_m4195392706,
+	ShortcutExtensions_DOScaleY_m3589951495,
+	ShortcutExtensions_DOScaleZ_m1484201804,
+	ShortcutExtensions_DOLookAt_m1204733618,
+	ShortcutExtensions_DOPunchPosition_m4022188990,
+	ShortcutExtensions_DOPunchScale_m3609052310,
+	ShortcutExtensions_DOPunchRotation_m1103244634,
+	ShortcutExtensions_DOShakePosition_m2336714075,
+	ShortcutExtensions_DOShakePosition_m2989795727,
+	ShortcutExtensions_DOShakeRotation_m4273867949,
+	ShortcutExtensions_DOShakeRotation_m3190170693,
+	ShortcutExtensions_DOShakeScale_m455017001,
+	ShortcutExtensions_DOShakeScale_m2106531945,
+	ShortcutExtensions_DOJump_m2116021968,
+	ShortcutExtensions_DOLocalJump_m760861907,
+	ShortcutExtensions_DOPath_m1769930933,
+	ShortcutExtensions_DOLocalPath_m2887627546,
+	ShortcutExtensions_DOPath_m251740173,
+	ShortcutExtensions_DOLocalPath_m712666778,
+	ShortcutExtensions_DOBlendableColor_m3039781373,
+	ShortcutExtensions_DOBlendableColor_m1724098674,
+	ShortcutExtensions_DOBlendableColor_m3858347954,
+	ShortcutExtensions_DOBlendableMoveBy_m1618137896,
+	ShortcutExtensions_DOBlendableLocalMoveBy_m114767453,
+	ShortcutExtensions_DOBlendableRotateBy_m275321471,
+	ShortcutExtensions_DOBlendableLocalRotateBy_m3944746952,
+	ShortcutExtensions_DOBlendableScaleBy_m2885123094,
+	ShortcutExtensions_DOComplete_m3066576958,
+	ShortcutExtensions_DOComplete_m3775394666,
+	ShortcutExtensions_DOKill_m3004510585,
+	ShortcutExtensions_DOKill_m3644515429,
+	ShortcutExtensions_DOFlip_m2530449119,
+	ShortcutExtensions_DOFlip_m1386606503,
+	ShortcutExtensions_DOGoto_m3802481569,
+	ShortcutExtensions_DOGoto_m3839282017,
+	ShortcutExtensions_DOPause_m65675062,
+	ShortcutExtensions_DOPause_m656699488,
+	ShortcutExtensions_DOPlay_m4099564608,
+	ShortcutExtensions_DOPlay_m2113281574,
+	ShortcutExtensions_DOPlayBackwards_m3986309180,
+	ShortcutExtensions_DOPlayBackwards_m2758635154,
+	ShortcutExtensions_DOPlayForward_m3311652443,
+	ShortcutExtensions_DOPlayForward_m281647083,
+	ShortcutExtensions_DORestart_m3156056520,
+	ShortcutExtensions_DORestart_m2596861284,
+	ShortcutExtensions_DORewind_m1526207962,
+	ShortcutExtensions_DORewind_m4071549454,
+	ShortcutExtensions_DOSmoothRewind_m1762400369,
+	ShortcutExtensions_DOSmoothRewind_m2099111741,
+	ShortcutExtensions_DOTogglePause_m968655382,
+	ShortcutExtensions_DOTogglePause_m2815070248,
+	U3CU3Ec__DisplayClass0_0__ctor_m2486159704,
+	U3CU3Ec__DisplayClass0_0_U3CDOFadeU3Eb__0_m4106317219,
+	U3CU3Ec__DisplayClass0_0_U3CDOFadeU3Eb__1_m2008279057,
+	U3CU3Ec__DisplayClass1_0__ctor_m2601117945,
+	U3CU3Ec__DisplayClass1_0_U3CDOPitchU3Eb__0_m1582656838,
+	U3CU3Ec__DisplayClass1_0_U3CDOPitchU3Eb__1_m3148065408,
+	U3CU3Ec__DisplayClass10_0__ctor_m3455628885,
+	U3CU3Ec__DisplayClass10_0_U3CDOShakePositionU3Eb__0_m578926749,
+	U3CU3Ec__DisplayClass10_0_U3CDOShakePositionU3Eb__1_m575366107,
+	U3CU3Ec__DisplayClass11_0__ctor_m351689690,
+	U3CU3Ec__DisplayClass11_0_U3CDOShakePositionU3Eb__0_m1058466392,
+	U3CU3Ec__DisplayClass11_0_U3CDOShakePositionU3Eb__1_m3172318102,
+	U3CU3Ec__DisplayClass12_0__ctor_m1029248587,
+	U3CU3Ec__DisplayClass12_0_U3CDOShakeRotationU3Eb__0_m4012688060,
+	U3CU3Ec__DisplayClass12_0_U3CDOShakeRotationU3Eb__1_m3630155782,
+	U3CU3Ec__DisplayClass13_0__ctor_m2220276688,
+	U3CU3Ec__DisplayClass13_0_U3CDOShakeRotationU3Eb__0_m1636800887,
+	U3CU3Ec__DisplayClass13_0_U3CDOShakeRotationU3Eb__1_m1178986945,
+	U3CU3Ec__DisplayClass14_0__ctor_m2638654569,
+	U3CU3Ec__DisplayClass14_0_U3CDOColorU3Eb__0_m2518048952,
+	U3CU3Ec__DisplayClass14_0_U3CDOColorU3Eb__1_m2079468430,
+	U3CU3Ec__DisplayClass15_0__ctor_m3829682670,
+	U3CU3Ec__DisplayClass15_0_U3CDOIntensityU3Eb__0_m324426264,
+	U3CU3Ec__DisplayClass15_0_U3CDOIntensityU3Eb__1_m4037850610,
+	U3CU3Ec__DisplayClass16_0__ctor_m212274271,
+	U3CU3Ec__DisplayClass16_0_U3CDOShadowStrengthU3Eb__0_m95294285,
+	U3CU3Ec__DisplayClass16_0_U3CDOShadowStrengthU3Eb__1_m1758195355,
+	U3CU3Ec__DisplayClass17_0__ctor_m1403302372,
+	U3CU3Ec__DisplayClass17_0_U3CDOColorU3Eb__0_m877794578,
+	U3CU3Ec__DisplayClass17_0_U3CDOColorU3Eb__1_m2778864942,
+	U3CU3Ec__DisplayClass18_0__ctor_m3130146861,
+	U3CU3Ec__DisplayClass18_0_U3CDOColorU3Eb__0_m367089396,
+	U3CU3Ec__DisplayClass18_0_U3CDOColorU3Eb__1_m3820856354,
+	U3CU3Ec__DisplayClass19_0__ctor_m26207666,
+	U3CU3Ec__DisplayClass19_0_U3CDOColorU3Eb__0_m2320841199,
+	U3CU3Ec__DisplayClass19_0_U3CDOColorU3Eb__1_m1866300157,
+	U3CU3Ec__DisplayClass2_0__ctor_m2407889050,
+	U3CU3Ec__DisplayClass2_0_U3CDOAspectU3Eb__0_m4201173127,
+	U3CU3Ec__DisplayClass2_0_U3CDOAspectU3Eb__1_m2576574665,
+	U3CU3Ec__DisplayClass20_0__ctor_m4108706642,
+	U3CU3Ec__DisplayClass20_0_U3CDOFadeU3Eb__0_m1123010412,
+	U3CU3Ec__DisplayClass20_0_U3CDOFadeU3Eb__1_m1113742940,
+	U3CU3Ec__DisplayClass21_0__ctor_m1004767447,
+	U3CU3Ec__DisplayClass21_0_U3CDOFadeU3Eb__0_m3556943527,
+	U3CU3Ec__DisplayClass21_0_U3CDOFadeU3Eb__1_m1057051489,
+	U3CU3Ec__DisplayClass22_0__ctor_m1682326344,
+	U3CU3Ec__DisplayClass22_0_U3CDOFloatU3Eb__0_m2002597517,
+	U3CU3Ec__DisplayClass22_0_U3CDOFloatU3Eb__1_m788489511,
+	U3CU3Ec__DisplayClass23_0__ctor_m2873354445,
+	U3CU3Ec__DisplayClass23_0_U3CDOOffsetU3Eb__0_m671283270,
+	U3CU3Ec__DisplayClass23_0_U3CDOOffsetU3Eb__1_m1609382646,
+	U3CU3Ec__DisplayClass24_0__ctor_m3291732326,
+	U3CU3Ec__DisplayClass24_0_U3CDOOffsetU3Eb__0_m828413439,
+	U3CU3Ec__DisplayClass24_0_U3CDOOffsetU3Eb__1_m3647947909,
+	U3CU3Ec__DisplayClass25_0__ctor_m187793131,
+	U3CU3Ec__DisplayClass25_0_U3CDOTilingU3Eb__0_m2106562792,
+	U3CU3Ec__DisplayClass25_0_U3CDOTilingU3Eb__1_m1488913552,
+	U3CU3Ec__DisplayClass26_0__ctor_m865352028,
+	U3CU3Ec__DisplayClass26_0_U3CDOTilingU3Eb__0_m4174816397,
+	U3CU3Ec__DisplayClass26_0_U3CDOTilingU3Eb__1_m612512395,
+	U3CU3Ec__DisplayClass27_0__ctor_m2056380129,
+	U3CU3Ec__DisplayClass27_0_U3CDOVectorU3Eb__0_m813012292,
+	U3CU3Ec__DisplayClass27_0_U3CDOVectorU3Eb__1_m3401839740,
+	U3CU3Ec__DisplayClass28_0__ctor_m3783224618,
+	U3CU3Ec__DisplayClass28_0_U3CDOMoveU3Eb__0_m3607696572,
+	U3CU3Ec__DisplayClass29_0__ctor_m679285423,
+	U3CU3Ec__DisplayClass29_0_U3CDOMoveXU3Eb__0_m373608035,
+	U3CU3Ec__DisplayClass3_0__ctor_m2523126075,
+	U3CU3Ec__DisplayClass3_0_U3CDOColorU3Eb__0_m957141770,
+	U3CU3Ec__DisplayClass3_0_U3CDOColorU3Eb__1_m2321079802,
+	U3CU3Ec__DisplayClass30_0__ctor_m310275667,
+	U3CU3Ec__DisplayClass30_0_U3CDOMoveYU3Eb__0_m3400927500,
+	U3CU3Ec__DisplayClass31_0__ctor_m1501303768,
+	U3CU3Ec__DisplayClass31_0_U3CDOMoveZU3Eb__0_m426500438,
+	U3CU3Ec__DisplayClass32_0__ctor_m2178862665,
+	U3CU3Ec__DisplayClass32_0_U3CDORotateU3Eb__0_m1465396727,
+	U3CU3Ec__DisplayClass33_0__ctor_m3369890766,
+	U3CU3Ec__DisplayClass33_0_U3CDOLookAtU3Eb__0_m2175848057,
+	U3CU3Ec__DisplayClass34_0__ctor_m3788268647,
+	U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__0_m129842166,
+	U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__1_m1113993907,
+	U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__2_m412167168,
+	U3CU3Ec__DisplayClass34_0_U3CDOJumpU3Eb__3_m271004667,
+	U3CU3Ec__DisplayClass35_0__ctor_m684329452,
+	U3CU3Ec__DisplayClass35_0_U3CDOResizeU3Eb__0_m1062477544,
+	U3CU3Ec__DisplayClass35_0_U3CDOResizeU3Eb__1_m1015108308,
+	U3CU3Ec__DisplayClass36_0__ctor_m1361888349,
+	U3CU3Ec__DisplayClass36_0_U3CDOTimeU3Eb__0_m1475966617,
+	U3CU3Ec__DisplayClass36_0_U3CDOTimeU3Eb__1_m121559691,
+	U3CU3Ec__DisplayClass37_0__ctor_m2552916450,
+	U3CU3Ec__DisplayClass37_0_U3CDOMoveU3Eb__0_m359009140,
+	U3CU3Ec__DisplayClass37_0_U3CDOMoveU3Eb__1_m3556709574,
+	U3CU3Ec__DisplayClass38_0__ctor_m4279760939,
+	U3CU3Ec__DisplayClass38_0_U3CDOMoveXU3Eb__0_m1425354143,
+	U3CU3Ec__DisplayClass38_0_U3CDOMoveXU3Eb__1_m2957932805,
+	U3CU3Ec__DisplayClass39_0__ctor_m1175821744,
+	U3CU3Ec__DisplayClass39_0_U3CDOMoveYU3Eb__0_m1855626079,
+	U3CU3Ec__DisplayClass39_0_U3CDOMoveYU3Eb__1_m408221125,
+	U3CU3Ec__DisplayClass4_0__ctor_m2329618396,
+	U3CU3Ec__DisplayClass4_0_U3CDOFarClipPlaneU3Eb__0_m837436732,
+	U3CU3Ec__DisplayClass4_0_U3CDOFarClipPlaneU3Eb__1_m639886534,
+	U3CU3Ec__DisplayClass40_0__ctor_m972274776,
+	U3CU3Ec__DisplayClass40_0_U3CDOMoveZU3Eb__0_m1987529994,
+	U3CU3Ec__DisplayClass40_0_U3CDOMoveZU3Eb__1_m491428092,
+	U3CU3Ec__DisplayClass41_0__ctor_m2163302877,
+	U3CU3Ec__DisplayClass41_0_U3CDOLocalMoveU3Eb__0_m2033224342,
+	U3CU3Ec__DisplayClass41_0_U3CDOLocalMoveU3Eb__1_m2953087352,
+	U3CU3Ec__DisplayClass42_0__ctor_m2840861774,
+	U3CU3Ec__DisplayClass42_0_U3CDOLocalMoveXU3Eb__0_m3107076211,
+	U3CU3Ec__DisplayClass42_0_U3CDOLocalMoveXU3Eb__1_m3197697593,
+	U3CU3Ec__DisplayClass43_0__ctor_m4031889875,
+	U3CU3Ec__DisplayClass43_0_U3CDOLocalMoveYU3Eb__0_m610756655,
+	U3CU3Ec__DisplayClass43_0_U3CDOLocalMoveYU3Eb__1_m3779923797,
+	U3CU3Ec__DisplayClass44_0__ctor_m155300460,
+	U3CU3Ec__DisplayClass44_0_U3CDOLocalMoveZU3Eb__0_m3429525479,
+	U3CU3Ec__DisplayClass44_0_U3CDOLocalMoveZU3Eb__1_m169853145,
+	U3CU3Ec__DisplayClass45_0__ctor_m1346328561,
+	U3CU3Ec__DisplayClass45_0_U3CDORotateU3Eb__0_m4242212451,
+	U3CU3Ec__DisplayClass45_0_U3CDORotateU3Eb__1_m812505753,
+	U3CU3Ec__DisplayClass46_0__ctor_m2023887458,
+	U3CU3Ec__DisplayClass46_0_U3CDORotateQuaternionU3Eb__0_m1403611186,
+	U3CU3Ec__DisplayClass46_0_U3CDORotateQuaternionU3Eb__1_m2843422770,
+	U3CU3Ec__DisplayClass47_0__ctor_m3214915559,
+	U3CU3Ec__DisplayClass47_0_U3CDOLocalRotateU3Eb__0_m3401548570,
+	U3CU3Ec__DisplayClass47_0_U3CDOLocalRotateU3Eb__1_m4075130094,
+	U3CU3Ec__DisplayClass48_0__ctor_m646792752,
+	U3CU3Ec__DisplayClass48_0_U3CDOLocalRotateQuaternionU3Eb__0_m2417245947,
+	U3CU3Ec__DisplayClass48_0_U3CDOLocalRotateQuaternionU3Eb__1_m4244397049,
+	U3CU3Ec__DisplayClass49_0__ctor_m1837820853,
+	U3CU3Ec__DisplayClass49_0_U3CDOScaleU3Eb__0_m3665269606,
+	U3CU3Ec__DisplayClass49_0_U3CDOScaleU3Eb__1_m4196430276,
+	U3CU3Ec__DisplayClass5_0__ctor_m2444576637,
+	U3CU3Ec__DisplayClass5_0_U3CDOFieldOfViewU3Eb__0_m1848561416,
+	U3CU3Ec__DisplayClass5_0_U3CDOFieldOfViewU3Eb__1_m2096582742,
+	U3CU3Ec__DisplayClass50_0__ctor_m2897528665,
+	U3CU3Ec__DisplayClass50_0_U3CDOScaleU3Eb__0_m1588853000,
+	U3CU3Ec__DisplayClass50_0_U3CDOScaleU3Eb__1_m3631471686,
+	U3CU3Ec__DisplayClass51_0__ctor_m4088556766,
+	U3CU3Ec__DisplayClass51_0_U3CDOScaleXU3Eb__0_m1948075833,
+	U3CU3Ec__DisplayClass51_0_U3CDOScaleXU3Eb__1_m3311329199,
+	U3CU3Ec__DisplayClass52_0__ctor_m471148367,
+	U3CU3Ec__DisplayClass52_0_U3CDOScaleYU3Eb__0_m3251411591,
+	U3CU3Ec__DisplayClass52_0_U3CDOScaleYU3Eb__1_m3569120073,
+	U3CU3Ec__DisplayClass53_0__ctor_m1662176468,
+	U3CU3Ec__DisplayClass53_0_U3CDOScaleZU3Eb__0_m1454695365,
+	U3CU3Ec__DisplayClass53_0_U3CDOScaleZU3Eb__1_m571930087,
+	U3CU3Ec__DisplayClass54_0__ctor_m2080554349,
+	U3CU3Ec__DisplayClass54_0_U3CDOLookAtU3Eb__0_m307837654,
+	U3CU3Ec__DisplayClass54_0_U3CDOLookAtU3Eb__1_m3916986746,
+	U3CU3Ec__DisplayClass55_0__ctor_m3271582450,
+	U3CU3Ec__DisplayClass55_0_U3CDOPunchPositionU3Eb__0_m2585814330,
+	U3CU3Ec__DisplayClass55_0_U3CDOPunchPositionU3Eb__1_m1474448192,
+	U3CU3Ec__DisplayClass56_0__ctor_m3949141347,
+	U3CU3Ec__DisplayClass56_0_U3CDOPunchScaleU3Eb__0_m2915119996,
+	U3CU3Ec__DisplayClass56_0_U3CDOPunchScaleU3Eb__1_m3104965930,
+	U3CU3Ec__DisplayClass57_0__ctor_m845202152,
+	U3CU3Ec__DisplayClass57_0_U3CDOPunchRotationU3Eb__0_m2254806487,
+	U3CU3Ec__DisplayClass57_0_U3CDOPunchRotationU3Eb__1_m2952180521,
+	U3CU3Ec__DisplayClass58_0__ctor_m2572046641,
+	U3CU3Ec__DisplayClass58_0_U3CDOShakePositionU3Eb__0_m1163336561,
+	U3CU3Ec__DisplayClass58_0_U3CDOShakePositionU3Eb__1_m1933773359,
+	U3CU3Ec__DisplayClass59_0__ctor_m3763074742,
+	U3CU3Ec__DisplayClass59_0_U3CDOShakePositionU3Eb__0_m1642876204,
+	U3CU3Ec__DisplayClass59_0_U3CDOShakePositionU3Eb__1_m235758058,
+	U3CU3Ec__DisplayClass6_0__ctor_m2251347742,
+	U3CU3Ec__DisplayClass6_0_U3CDONearClipPlaneU3Eb__0_m835463291,
+	U3CU3Ec__DisplayClass6_0_U3CDONearClipPlaneU3Eb__1_m2171634649,
+	U3CU3Ec__DisplayClass60_0__ctor_m3550606422,
+	U3CU3Ec__DisplayClass60_0_U3CDOShakeRotationU3Eb__0_m2331037687,
+	U3CU3Ec__DisplayClass60_0_U3CDOShakeRotationU3Eb__1_m1591180149,
+	U3CU3Ec__DisplayClass61_0__ctor_m446667227,
+	U3CU3Ec__DisplayClass61_0_U3CDOShakeRotationU3Eb__0_m2810577330,
+	U3CU3Ec__DisplayClass61_0_U3CDOShakeRotationU3Eb__1_m4188132144,
+	U3CU3Ec__DisplayClass62_0__ctor_m1124226124,
+	U3CU3Ec__DisplayClass62_0_U3CDOShakeScaleU3Eb__0_m746992757,
+	U3CU3Ec__DisplayClass62_0_U3CDOShakeScaleU3Eb__1_m4211798123,
+	U3CU3Ec__DisplayClass63_0__ctor_m2315254225,
+	U3CU3Ec__DisplayClass63_0_U3CDOShakeScaleU3Eb__0_m2908893466,
+	U3CU3Ec__DisplayClass63_0_U3CDOShakeScaleU3Eb__1_m18760496,
+	U3CU3Ec__DisplayClass64_0__ctor_m2733632106,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__0_m724454993,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__1_m3056148615,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__2_m1331394981,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__3_m865617494,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__4_m1914872590,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__5_m18642488,
+	U3CU3Ec__DisplayClass64_0_U3CDOJumpU3Eb__6_m933491780,
+	U3CU3Ec__DisplayClass65_0__ctor_m3924660207,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__0_m2121271873,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__1_m3343933991,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__2_m1699525809,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__3_m2121271906,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__4_m4219811498,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__5_m2121271972,
+	U3CU3Ec__DisplayClass65_0_U3CDOLocalJumpU3Eb__6_m537595308,
+	U3CU3Ec__DisplayClass66_0__ctor_m307251808,
+	U3CU3Ec__DisplayClass66_0_U3CDOPathU3Eb__0_m1142391272,
+	U3CU3Ec__DisplayClass66_0_U3CDOPathU3Eb__1_m1012172038,
+	U3CU3Ec__DisplayClass67_0__ctor_m1498279909,
+	U3CU3Ec__DisplayClass67_0_U3CDOLocalPathU3Eb__0_m4165442936,
+	U3CU3Ec__DisplayClass67_0_U3CDOLocalPathU3Eb__1_m1809497282,
+	U3CU3Ec__DisplayClass68_0__ctor_m3225124398,
+	U3CU3Ec__DisplayClass68_0_U3CDOPathU3Eb__0_m1119458054,
+	U3CU3Ec__DisplayClass68_0_U3CDOPathU3Eb__1_m1716607440,
+	U3CU3Ec__DisplayClass69_0__ctor_m121185203,
+	U3CU3Ec__DisplayClass69_0_U3CDOLocalPathU3Eb__0_m1304369154,
+	U3CU3Ec__DisplayClass69_0_U3CDOLocalPathU3Eb__1_m1932352648,
+	U3CU3Ec__DisplayClass7_0__ctor_m2366584767,
+	U3CU3Ec__DisplayClass7_0_U3CDOOrthoSizeU3Eb__0_m556568037,
+	U3CU3Ec__DisplayClass7_0_U3CDOOrthoSizeU3Eb__1_m1225798911,
+	U3CU3Ec__DisplayClass70_0__ctor_m4047142743,
+	U3CU3Ec__DisplayClass70_0_U3CDOBlendableColorU3Eb__0_m1828865631,
+	U3CU3Ec__DisplayClass70_0_U3CDOBlendableColorU3Eb__1_m900931125,
+	U3CU3Ec__DisplayClass71_0__ctor_m943203548,
+	U3CU3Ec__DisplayClass71_0_U3CDOBlendableColorU3Eb__0_m3237505722,
+	U3CU3Ec__DisplayClass71_0_U3CDOBlendableColorU3Eb__1_m226463258,
+	U3CU3Ec__DisplayClass72_0__ctor_m1620762445,
+	U3CU3Ec__DisplayClass72_0_U3CDOBlendableColorU3Eb__0_m679551017,
+	U3CU3Ec__DisplayClass72_0_U3CDOBlendableColorU3Eb__1_m2150834303,
+	U3CU3Ec__DisplayClass73_0__ctor_m2811790546,
+	U3CU3Ec__DisplayClass73_0_U3CDOBlendableMoveByU3Eb__0_m1397009186,
+	U3CU3Ec__DisplayClass73_0_U3CDOBlendableMoveByU3Eb__1_m3893369404,
+	U3CU3Ec__DisplayClass74_0__ctor_m3230168427,
+	U3CU3Ec__DisplayClass74_0_U3CDOBlendableLocalMoveByU3Eb__0_m1054671384,
+	U3CU3Ec__DisplayClass74_0_U3CDOBlendableLocalMoveByU3Eb__1_m80553278,
+	U3CU3Ec__DisplayClass75_0__ctor_m126229232,
+	U3CU3Ec__DisplayClass75_0_U3CDOBlendableRotateByU3Eb__0_m1796633118,
+	U3CU3Ec__DisplayClass75_0_U3CDOBlendableRotateByU3Eb__1_m2506099618,
+	U3CU3Ec__DisplayClass76_0__ctor_m803788129,
+	U3CU3Ec__DisplayClass76_0_U3CDOBlendableLocalRotateByU3Eb__0_m3081446080,
+	U3CU3Ec__DisplayClass76_0_U3CDOBlendableLocalRotateByU3Eb__1_m2379502204,
+	U3CU3Ec__DisplayClass77_0__ctor_m1994816230,
+	U3CU3Ec__DisplayClass77_0_U3CDOBlendableScaleByU3Eb__0_m3592754085,
+	U3CU3Ec__DisplayClass77_0_U3CDOBlendableScaleByU3Eb__1_m3223295987,
+	U3CU3Ec__DisplayClass8_0__ctor_m2798668368,
+	U3CU3Ec__DisplayClass8_0_U3CDOPixelRectU3Eb__0_m214223775,
+	U3CU3Ec__DisplayClass8_0_U3CDOPixelRectU3Eb__1_m3022382809,
+	U3CU3Ec__DisplayClass9_0__ctor_m2913626609,
+	U3CU3Ec__DisplayClass9_0_U3CDORectU3Eb__0_m2562574134,
+	U3CU3Ec__DisplayClass9_0_U3CDORectU3Eb__1_m3203347018,
+	Tween_get_fullPosition_m1858972655,
+	Tween_set_fullPosition_m3571808594,
+	Tween_Reset_m2158413979,
+	Tween_UpdateDelay_m1702331541,
+	Tween_DoGoto_m3340670294,
+	Tween_OnTweenCallback_m1044536921,
+	Tween__ctor_m3822097368,
+	TweenCallback__ctor_m3479200459,
+	TweenCallback_Invoke_m102388039,
+	TweenCallback_BeginInvoke_m2458978000,
+	TweenCallback_EndInvoke_m3014345193,
+	Tweener__ctor_m102043033,
+	TweenExtensions_Complete_m274286092,
+	TweenExtensions_Complete_m1419431965,
+	TweenExtensions_Flip_m2922754576,
+	TweenExtensions_ForceInit_m447977536,
+	TweenExtensions_Goto_m4027866082,
+	TweenExtensions_Kill_m3845739180,
+	TweenExtensions_PlayBackwards_m613887607,
+	TweenExtensions_PlayForward_m3704378858,
+	TweenExtensions_Restart_m1866410855,
+	TweenExtensions_Rewind_m3286148139,
+	TweenExtensions_SmoothRewind_m2971573214,
+	TweenExtensions_TogglePause_m1054448567,
+	TweenExtensions_GotoWaypoint_m120126169,
+	TweenExtensions_WaitForCompletion_m3746720476,
+	TweenExtensions_WaitForRewind_m1446242633,
+	TweenExtensions_WaitForKill_m2434480674,
+	TweenExtensions_WaitForElapsedLoops_m1788575402,
+	TweenExtensions_WaitForPosition_m4173788156,
+	TweenExtensions_WaitForStart_m1828940021,
+	TweenExtensions_CompletedLoops_m811455055,
+	TweenExtensions_Delay_m1719013068,
+	TweenExtensions_Duration_m4269627274,
+	TweenExtensions_Elapsed_m4148870276,
+	TweenExtensions_ElapsedPercentage_m1036631332,
+	TweenExtensions_ElapsedDirectionalPercentage_m968488947,
+	TweenExtensions_IsActive_m918693289,
+	TweenExtensions_IsBackwards_m130236841,
+	TweenExtensions_IsComplete_m3095330022,
+	TweenExtensions_IsInitialized_m1900413101,
+	TweenExtensions_IsPlaying_m3897946637,
+	TweenExtensions_Loops_m700996556,
+	TweenExtensions_PathGetPoint_m191575487,
+	TweenExtensions_PathGetDrawPoints_m1280144712,
+	TweenExtensions_PathLength_m410910326,
+	TweenParams__ctor_m1421329190,
+	TweenParams_Clear_m2352941651,
+	TweenParams_SetAutoKill_m3324818264,
+	TweenParams_SetId_m3936217499,
+	TweenParams_SetTarget_m587577735,
+	TweenParams_SetLoops_m833753209,
+	TweenParams_SetEase_m249761156,
+	TweenParams_SetEase_m2156832318,
+	TweenParams_SetEase_m50101784,
+	TweenParams_SetRecyclable_m4113181667,
+	TweenParams_SetUpdate_m4207667294,
+	TweenParams_SetUpdate_m161821801,
+	TweenParams_OnStart_m3718574137,
+	TweenParams_OnPlay_m1710613197,
+	TweenParams_OnRewind_m2137198170,
+	TweenParams_OnUpdate_m57491400,
+	TweenParams_OnStepComplete_m418530464,
+	TweenParams_OnComplete_m4145462530,
+	TweenParams_OnKill_m1111014851,
+	TweenParams_OnWaypointChange_m224661718,
+	TweenParams_SetDelay_m443284532,
+	TweenParams_SetRelative_m2325101835,
+	TweenParams_SetSpeedBased_m2851973033,
+	TweenParams__cctor_m1144029957,
+	TweenSettingsExtensions_Append_m388120539,
+	TweenSettingsExtensions_Prepend_m2832870725,
+	TweenSettingsExtensions_Join_m3909252375,
+	TweenSettingsExtensions_Insert_m3944817171,
+	TweenSettingsExtensions_AppendInterval_m2840030048,
+	TweenSettingsExtensions_PrependInterval_m3957684016,
+	TweenSettingsExtensions_AppendCallback_m230459415,
+	TweenSettingsExtensions_PrependCallback_m13875009,
+	TweenSettingsExtensions_InsertCallback_m832410615,
+	TweenSettingsExtensions_SetOptions_m937094726,
+	TweenSettingsExtensions_SetOptions_m3823322733,
+	TweenSettingsExtensions_SetOptions_m1571209893,
+	TweenSettingsExtensions_SetOptions_m4276703213,
+	TweenSettingsExtensions_SetOptions_m1908370469,
+	TweenSettingsExtensions_SetOptions_m64883053,
+	TweenSettingsExtensions_SetOptions_m1404749221,
+	TweenSettingsExtensions_SetOptions_m1163764278,
+	TweenSettingsExtensions_SetOptions_m2869276193,
+	TweenSettingsExtensions_SetOptions_m2755395124,
+	TweenSettingsExtensions_SetOptions_m1112657767,
+	TweenSettingsExtensions_SetOptions_m3161000053,
+	TweenSettingsExtensions_SetOptions_m4207975669,
+	TweenSettingsExtensions_SetOptions_m4038334168,
+	TweenSettingsExtensions_SetOptions_m3069323763,
+	TweenSettingsExtensions_SetLookAt_m1482035211,
+	TweenSettingsExtensions_SetLookAt_m2149060425,
+	TweenSettingsExtensions_SetLookAt_m4115581975,
+	TweenSettingsExtensions_SetPathForwardDirection_m364378825,
+	FormatReader_get_FormatString_m3486194298,
+	FormatReader_set_FormatString_m894199159,
+	FormatReader__ctor_m1666847312,
+	FormatReader_IsDateFormatString_m3255475084,
+	FormatReader_IsSurroundedByQuotes_m2508166547,
+	FormatReader_IsPrecededByBackSlash_m4280506347,
+	FormatReader_IsSurroundedByBracket_m2253026190,
+	FormatReader_NumberOfUnescapedOccurances_m2715376771,
+	Helpers_ConvertEscapeChars_m2354180383,
+	Helpers_ConvertFromOATime_m3489838396,
+	Helpers_FixDataTypes_m3481117268,
+	Helpers_AddColumnHandleDuplicate_m2739049988,
+	Helpers_U3CConvertEscapeCharsU3Eb__0_m1680631643,
+	Helpers__cctor_m3113545832,
+	XlsxDimension__ctor_m3600381333,
+	XlsxDimension__ctor_m2160908895,
+	XlsxDimension_get_FirstRow_m2062924334,
+	XlsxDimension_set_FirstRow_m1574325995,
+	XlsxDimension_set_LastRow_m985415191,
+	XlsxDimension_get_FirstCol_m2062942536,
+	XlsxDimension_set_FirstCol_m2228137341,
+	XlsxDimension_get_LastCol_m3832305192,
+	XlsxDimension_set_LastCol_m3765907389,
+	XlsxDimension_ParseDimensions_m2074318159,
+	XlsxDimension_XlsxDim_m731433956,
+	XlsxNumFmt_get_Id_m2158901850,
+	XlsxNumFmt_get_FormatCode_m3092717742,
+	XlsxNumFmt__ctor_m369337161,
+	XlsxSST__ctor_m3040107683,
+	XlsxStyles__ctor_m1825862751,
+	XlsxStyles_get_CellXfs_m233426665,
+	XlsxStyles_get_NumFmts_m1131716335,
+	XlsxWorkbook__ctor_m912209719,
+	XlsxWorkbook_get_Sheets_m3489303710,
+	XlsxWorkbook_get_SST_m3367944442,
+	XlsxWorkbook_get_Styles_m2879484330,
+	XlsxWorkbook_ReadStyles_m4081036932,
+	XlsxWorkbook_ReadSharedStrings_m783934533,
+	XlsxWorkbook_ReadWorkbook_m1276773658,
+	XlsxWorkbook_ReadWorkbookRels_m2614923554,
+	XlsxWorksheet_get_IsEmpty_m2360951215,
+	XlsxWorksheet_set_IsEmpty_m3098075726,
+	XlsxWorksheet_get_Dimension_m3111336406,
+	XlsxWorksheet_set_Dimension_m827420835,
+	XlsxWorksheet_get_ColumnsCount_m2624441818,
+	XlsxWorksheet_get_Name_m872113654,
+	XlsxWorksheet_get_RID_m2274730670,
+	XlsxWorksheet_get_Path_m3419688902,
+	XlsxWorksheet_set_Path_m3886834411,
+	XlsxWorksheet__ctor_m2044061580,
+	XlsxXf_get_NumFmtId_m3300837920,
+	XlsxXf_get_ApplyNumberFormat_m3096434926,
+	XlsxXf__ctor_m3211114059,
+	ReferenceHelper_ReferenceToColumnAndRow_m89366838,
+	ZipWorker_get_IsValid_m3976233184,
+	ZipWorker_get_ExceptionMessage_m775648301,
+	ZipWorker__ctor_m3365551045,
+	ZipWorker_Extract_m3209149031,
+	ZipWorker_GetSharedStringsStream_m1773174858,
+	ZipWorker_GetStylesStream_m3866322631,
+	ZipWorker_GetWorkbookStream_m1279462543,
+	ZipWorker_GetWorksheetStream_m3599487247,
+	ZipWorker_GetWorkbookRelsStream_m2990482831,
+	ZipWorker_CleanFromTemp_m3051253553,
+	ZipWorker_ExtractZipEntry_m3512310153,
+	ZipWorker_NewTempPath_m3191004630,
+	ZipWorker_CheckFolderTree_m3988233943,
+	ZipWorker_GetStream_m1165928629,
+	ZipWorker_Dispose_m2777260408,
+	ZipWorker_Dispose_m547991009,
+	ZipWorker_Finalize_m3289108063,
+	ExcelOpenXmlReader__ctor_m2920103612,
+	ExcelOpenXmlReader_ReadGlobals_m356406304,
+	ExcelOpenXmlReader_CheckDateTimeNumFmts_m1223386651,
+	ExcelOpenXmlReader_ReadSheetGlobals_m3581744618,
+	ExcelOpenXmlReader_ReadSheetRow_m3966407690,
+	ExcelOpenXmlReader_IsDateTimeStyle_m2153382639,
+	ExcelOpenXmlReader_Initialize_m3797863185,
+	ExcelOpenXmlReader_AsDataSet_m2452927416,
+	ExcelOpenXmlReader_AsDataSet_m2575323469,
+	ExcelOpenXmlReader_Close_m2461826172,
+	ExcelOpenXmlReader_Dispose_m2298408177,
+	ExcelOpenXmlReader_Dispose_m3451071528,
+	ExcelOpenXmlReader_Finalize_m3175468180,
+	ExcelReaderFactory_CreateOpenXmlReader_m2542223693,
+	Log_GetLoggerFor_m735624633,
+	Log__cctor_m2503365230,
+	NullLog_InitializeFor_m2740124739,
+	NullLog_Debug_m4179243397,
+	NullLog__ctor_m267990052,
+	LogManager_Log_m3711135055,
+	LogManager__cctor_m3639208699,
 	U3CPrivateImplementationDetailsU3E__ctor_m2899642404,
 	AccountInputField__ctor_m1931561658,
 	AccountInputField_Awake_m3085227243,
@@ -36186,6 +38284,8 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	EquipItems_Start_m3665532189,
 	EquipRandomItem__ctor_m3904740745,
 	EquipRandomItem_OnClick_m892460896,
+	FPSDisplay__ctor_m1019612258,
+	FPSDisplay_Update_m3681504265,
 	GameChoosePanel__ctor_m2555901690,
 	GameChoosePanel_Start_m3878994614,
 	GameChoosePanel_Update_m2041466511,
@@ -36224,8 +38324,11 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	SoundSetting_get_Volume_m526964487,
 	SoundSetting_set_Volume_m2286957978,
 	GameManager__ctor_m293624896,
+	GameManager_Awake_m99497495,
 	GameManager_Start_m2655388892,
 	GameManager_Update_m969954595,
+	GameManager_GameInit_m3322512818,
+	GameManager_InitDOTween_m4053187674,
 	GamePanel__ctor_m941006463,
 	GamePanel_Awake_m1922740256,
 	GamePanel_Start_m1361439195,
@@ -36250,6 +38353,20 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	IgnoreTimeScale_get_realTimeDelta_m2071297190,
 	IgnoreTimeScale_OnEnable_m903918566,
 	IgnoreTimeScale_UpdateRealTimeDelta_m2842133462,
+	InputControllerManager__ctor_m3848532150,
+	InputControllerManager__cctor_m3649550873,
+	InputControllerManager_Awake_m3221585475,
+	InputControllerManager_Start_m284809842,
+	InputControllerManager_ControlButtonClickDelegate_m998976378,
+	InputControllerManager_ControlButtonOnPressDelegat_m573203707,
+	InputControllerManager_LeftButtonClickDelegate_m1454747336,
+	InputControllerManager_LeftButtonOnPressDelegat_m1397870911,
+	InputControllerManager_RightButtonClickDelegate_m1640841119,
+	InputControllerManager_RightButtonOnPressDelegat_m2689149352,
+	InputControllerManager_UpButtonClickDelegate_m3487804296,
+	InputControllerManager_UpButtonOnPressDelegat_m514896897,
+	InputControllerManager_DownButtonClickDelegate_m2137675857,
+	InputControllerManager_DownButtonOnPressDelegat_m1104519320,
 	InvAttachmentPoint__ctor_m2204608127,
 	InvAttachmentPoint_Attach_m3836457771,
 	InvBaseItem__ctor_m3845987572,
@@ -36301,12 +38418,12 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	LoadingProcess_Start_m4254790716,
 	LoadingProcess_Update_m3191783039,
 	LoadingProcess_UpdateProcessBar_m1373146775,
-	U3CUpdateProcessBarU3Ec__Iterator3__ctor_m3052140902,
-	U3CUpdateProcessBarU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2214538908,
-	U3CUpdateProcessBarU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2594174964,
-	U3CUpdateProcessBarU3Ec__Iterator3_MoveNext_m964262434,
-	U3CUpdateProcessBarU3Ec__Iterator3_Dispose_m3198156237,
-	U3CUpdateProcessBarU3Ec__Iterator3_Reset_m2065747883,
+	U3CUpdateProcessBarU3Ec__Iterator5__ctor_m3054656228,
+	U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1089153238,
+	U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m3263057710,
+	U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184,
+	U3CUpdateProcessBarU3Ec__Iterator5_Dispose_m3281031183,
+	U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801,
 	LoadLevelOnClick__ctor_m2820126616,
 	LoadLevelOnClick_OnClick_m931326351,
 	Localization__ctor_m3434466340,
@@ -36324,6 +38441,7 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	LoginButton_Start_m282510188,
 	LoginButton_Update_m838620451,
 	LoginButton_OnClick_m4002346237,
+	LoginButton_LoadLoadingScene_m3610603430,
 	LoginManager__ctor_m930990491,
 	LoginManager__cctor_m3427618314,
 	LoginManager_get_IsLogin_m2776291283,
@@ -36424,9 +38542,43 @@ extern const Il2CppMethodPointer g_MethodPointers[18665] =
 	NGUITools_GetSystemCopyBufferProperty_m2191884630,
 	NGUITools_get_clipboard_m1224171497,
 	NGUITools_set_clipboard_m1817767080,
+	OffsetScroller__ctor_m1190285988,
+	OffsetScroller_Awake_m556717801,
+	OffsetScroller_Start_m190933060,
+	OffsetScroller_Update_m57003493,
+	OffsetScroller_OnDisable_m2018971697,
 	PanWithMouse__ctor_m2600594243,
 	PanWithMouse_Start_m434472959,
 	PanWithMouse_Update_m607103388,
+	PlayerCarController__ctor_m3941186136,
+	PlayerCarController_Awake_m2021496921,
+	PlayerCarController_Start_m3079385016,
+	PlayerCarController_Update_m484703677,
+	PlayerCarController_MoveRight_m2971198157,
+	PlayerCarController_MoveLeft_m3565104488,
+	PlayerCarController_MoveUp_m2824957612,
+	PlayerCarController_KeepMoveUp_m1331347744,
+	PlayerCarController_MoveUpCoroutine_m2693190894,
+	PlayerCarController_MoveDown_m254707483,
+	PlayerCarController_KeepMoveDown_m1247487731,
+	PlayerCarController_MoveDownCoroutine_m3523165399,
+	PlayerCarController_Jump_m3808470432,
+	PlayerCarController_CrashCallBack_m3159760084,
+	PlayerCarController_OnTriggerEnter2D_m3876316192,
+	PlayerCarController_OnTriggerExit2D_m2931615634,
+	PlayerCarController_OnTweenComplete_m3857909345,
+	U3CMoveDownCoroutineU3Ec__Iterator4__ctor_m696433809,
+	U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3013308307,
+	U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1565711547,
+	U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671,
+	U3CMoveDownCoroutineU3Ec__Iterator4_Dispose_m2032154194,
+	U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988,
+	U3CMoveUpCoroutineU3Ec__Iterator3__ctor_m1542069677,
+	U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m747310411,
+	U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2583548723,
+	U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391,
+	U3CMoveUpCoroutineU3Ec__Iterator3_Dispose_m905637506,
+	U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776,
 	PlayIdleAnimations__ctor_m1300294730,
 	PlayIdleAnimations_Start_m1656706198,
 	PlayIdleAnimations_Update_m1066760115,

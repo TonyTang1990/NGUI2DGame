@@ -27,6 +27,8 @@ extern "C"  void Mathf__cctor_m326403828 (Il2CppObject * __this /* static, unuse
 extern "C"  float Mathf_Sin_m831310046 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Cos(System.Single)
 extern "C"  float Mathf_Cos_m238853451 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Acos(System.Single)
+extern "C"  float Mathf_Acos_m3800958570 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Sqrt(System.Single)
 extern "C"  float Mathf_Sqrt_m2213915910 (Il2CppObject * __this /* static, unused */, float ___f0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Abs(System.Single)
@@ -71,6 +73,12 @@ extern "C"  float Mathf_Clamp01_m3888954684 (Il2CppObject * __this /* static, un
 extern "C"  float Mathf_Lerp_m1686556575 (Il2CppObject * __this /* static, unused */, float ___a0, float ___b1, float ___t2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Mathf::Approximately(System.Single,System.Single)
 extern "C"  bool Mathf_Approximately_m1064446634 (Il2CppObject * __this /* static, unused */, float ___a0, float ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Repeat(System.Single,System.Single)
+extern "C"  float Mathf_Repeat_m943844734 (Il2CppObject * __this /* static, unused */, float ___t0, float ___length1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::GammaToLinearSpace(System.Single)
+extern "C"  float Mathf_GammaToLinearSpace_m3697142437 (Il2CppObject * __this /* static, unused */, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::LinearToGammaSpace(System.Single)
+extern "C"  float Mathf_LinearToGammaSpace_m1586839609 (Il2CppObject * __this /* static, unused */, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 
 // Methods for marshaling
 struct Mathf_t2336485820;

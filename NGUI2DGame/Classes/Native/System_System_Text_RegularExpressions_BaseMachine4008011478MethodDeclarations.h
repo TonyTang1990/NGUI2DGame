@@ -14,12 +14,12 @@
 
 // System.Text.RegularExpressions.BaseMachine
 struct BaseMachine_t4008011478;
-// System.Text.RegularExpressions.Match
-struct Match_t3164245899;
-// System.Text.RegularExpressions.Regex
-struct Regex_t1803876613;
 // System.String
 struct String_t;
+// System.Text.RegularExpressions.Regex
+struct Regex_t1803876613;
+// System.Text.RegularExpressions.Match
+struct Match_t3164245899;
 // System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator
 struct MatchAppendEvaluator_t1618777330;
 // System.Text.RegularExpressions.MatchEvaluator
@@ -33,6 +33,8 @@ struct MatchEvaluator_t710107290;
 
 // System.Void System.Text.RegularExpressions.BaseMachine::.ctor()
 extern "C"  void BaseMachine__ctor_m2327544039 (BaseMachine_t4008011478 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Text.RegularExpressions.BaseMachine::Replace(System.Text.RegularExpressions.Regex,System.String,System.String,System.Int32,System.Int32)
+extern "C"  String_t* BaseMachine_Replace_m2446015132 (BaseMachine_t4008011478 * __this, Regex_t1803876613 * ___regex0, String_t* ___input1, String_t* ___replacement2, int32_t ___count3, int32_t ___startat4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32)
 extern "C"  Match_t3164245899 * BaseMachine_Scan_m122450399 (BaseMachine_t4008011478 * __this, Regex_t1803876613 * ___regex0, String_t* ___text1, int32_t ___start2, int32_t ___end3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Text.RegularExpressions.BaseMachine::LTRReplace(System.Text.RegularExpressions.Regex,System.String,System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator,System.Int32,System.Int32)

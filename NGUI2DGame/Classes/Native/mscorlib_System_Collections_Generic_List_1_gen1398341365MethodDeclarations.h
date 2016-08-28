@@ -99,6 +99,6 @@
 // System.Int32 System.Collections.Generic.List`1<System.String>::get_Count()
 #define List_1_get_Count_m780127360(__this, method) ((  int32_t (*) (List_1_t1398341365 *, const MethodInfo*))List_1_get_Count_m2375293942_gshared)(__this, method)
 // T System.Collections.Generic.List`1<System.String>::get_Item(System.Int32)
-#define List_1_get_Item_m4193432435(__this, ___index0, method) ((  String_t* (*) (List_1_t1398341365 *, int32_t, const MethodInfo*))List_1_get_Item_m1354830498_gshared)(__this, ___index0, method)
+#define List_1_get_Item_m566484697(__this, ___index0, method) ((  String_t* (*) (List_1_t1398341365 *, int32_t, const MethodInfo*))List_1_get_Item_m1354830498_gshared)(__this, ___index0, method)
 // System.Void System.Collections.Generic.List`1<System.String>::set_Item(System.Int32,T)
 #define List_1_set_Item_m1114831625(__this, ___index0, ___value1, method) ((  void (*) (List_1_t1398341365 *, int32_t, String_t*, const MethodInfo*))List_1_set_Item_m4128108021_gshared)(__this, ___index0, ___value1, method)

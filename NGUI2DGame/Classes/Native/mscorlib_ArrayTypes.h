@@ -337,11 +337,12 @@ struct IServiceProvider_t2397848447;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23132015601.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21008373517.h"
 #include "mscorlib_System_Reflection_Emit_Label4243202660.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_21882432749.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21701344717.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23749587448.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_24180919198.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21472033238.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_22686133794.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21882432749.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_668667688.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23530214430.h"
 
@@ -2803,20 +2804,6 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.Collections.Generic.KeyValuePair`2<System.String,Excel.Log.ILog>[]
-struct KeyValuePair_2U5BU5D_t2784891072  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) KeyValuePair_2_t1882432749  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t1882432749  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t1882432749 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1882432749  value)
-	{
-		m_Items[index] = value;
-	}
-};
 // System.Collections.Generic.KeyValuePair`2<System.String,System.String>[]
 struct KeyValuePair_2U5BU5D_t1360691296  : public Il2CppArray
 {
@@ -2869,6 +2856,34 @@ public:
 	inline KeyValuePair_2_t1472033238  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline KeyValuePair_2_t1472033238 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1472033238  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Type,DG.Tweening.Plugins.Core.ITweenPlugin>[]
+struct KeyValuePair_2U5BU5D_t445588247  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t2686133794  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t2686133794  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t2686133794 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t2686133794  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.String,Excel.Log.ILog>[]
+struct KeyValuePair_2U5BU5D_t2784891072  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t1882432749  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1882432749  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1882432749 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1882432749  value)
 	{
 		m_Items[index] = value;
 	}

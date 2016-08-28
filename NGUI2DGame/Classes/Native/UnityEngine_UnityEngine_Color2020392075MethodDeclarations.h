@@ -56,6 +56,18 @@ extern "C"  Color_t2020392075  Color_get_cyan_m2850282709 (Il2CppObject * __this
 extern "C"  Color_t2020392075  Color_get_magenta_m3193089961 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::get_grey()
 extern "C"  Color_t2020392075  Color_get_grey_m1961362537 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Color::get_grayscale()
+extern "C"  float Color_get_grayscale_m2989668074 (Color_t2020392075 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_linear()
+extern "C"  Color_t2020392075  Color_get_linear_m3851532985 (Color_t2020392075 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_gamma()
+extern "C"  Color_t2020392075  Color_get_gamma_m1982353575 (Color_t2020392075 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Color::get_maxColorComponent()
+extern "C"  float Color_get_maxColorComponent_m1239472485 (Color_t2020392075 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::op_Addition(UnityEngine.Color,UnityEngine.Color)
+extern "C"  Color_t2020392075  Color_op_Addition_m1759335993 (Il2CppObject * __this /* static, unused */, Color_t2020392075  ___a0, Color_t2020392075  ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::op_Subtraction(UnityEngine.Color,UnityEngine.Color)
+extern "C"  Color_t2020392075  Color_op_Subtraction_m3931992385 (Il2CppObject * __this /* static, unused */, Color_t2020392075  ___a0, Color_t2020392075  ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::op_Multiply(UnityEngine.Color,System.Single)
 extern "C"  Color_t2020392075  Color_op_Multiply_m325555950 (Il2CppObject * __this /* static, unused */, Color_t2020392075  ___a0, float ___b1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector4 UnityEngine.Color::op_Implicit(UnityEngine.Color)

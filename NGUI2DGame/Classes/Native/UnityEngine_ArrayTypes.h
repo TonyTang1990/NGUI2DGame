@@ -94,6 +94,7 @@ struct GameObject_t1756533147;
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3667545548.h"
 #include "UnityEngine_UnityEngine_ContactPoint1376425630.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
+#include "UnityEngine_UnityEngine_ContactPoint2D3659330976.h"
 #include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
 #include "UnityEngine_UnityEngine_GUILayoutUtility_LayoutCac3120781045.h"
 #include "UnityEngine_UnityEngine_GUILayoutEntry3828586629.h"
@@ -475,6 +476,20 @@ public:
 	inline RaycastHit_t87180320  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline RaycastHit_t87180320 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, RaycastHit_t87180320  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.ContactPoint2D[]
+struct ContactPoint2DU5BU5D_t1215651809  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) ContactPoint2D_t3659330976  m_Items[1];
+
+public:
+	inline ContactPoint2D_t3659330976  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline ContactPoint2D_t3659330976 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, ContactPoint2D_t3659330976  value)
 	{
 		m_Items[index] = value;
 	}

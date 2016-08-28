@@ -3806,6 +3806,42 @@ extern "C"  double Math_Round_m2632426160 (Il2CppObject * __this /* static, unus
 	typedef double (*Math_Round_m2632426160_ftn) (double);
 	return  ((Math_Round_m2632426160_ftn)mscorlib::System::Math::Round) (___a0);
 }
+// System.Double System.Math::Truncate(System.Double)
+extern "C"  double Math_Truncate_m2511675028 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
+{
+	{
+		double L_0 = ___d0;
+		if ((!(((double)L_0) > ((double)(0.0)))))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		double L_1 = ___d0;
+		double L_2 = floor(L_1);
+		return L_2;
+	}
+
+IL_0016:
+	{
+		double L_3 = ___d0;
+		if ((!(((double)L_3) < ((double)(0.0)))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		double L_4 = ___d0;
+		double L_5 = ceil(L_4);
+		return L_5;
+	}
+
+IL_002c:
+	{
+		double L_6 = ___d0;
+		return L_6;
+	}
+}
 // System.Double System.Math::Sin(System.Double)
 extern "C"  double Math_Sin_m2320256962 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method)
 {
@@ -3819,6 +3855,20 @@ extern "C"  double Math_Cos_m43596019 (Il2CppObject * __this /* static, unused *
 	using namespace il2cpp::icalls;
 	typedef double (*Math_Cos_m43596019_ftn) (double);
 	return  ((Math_Cos_m43596019_ftn)mscorlib::System::Math::Cos) (___d0);
+}
+// System.Double System.Math::Acos(System.Double)
+extern "C"  double Math_Acos_m2218287828 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef double (*Math_Acos_m2218287828_ftn) (double);
+	return  ((Math_Acos_m2218287828_ftn)mscorlib::System::Math::Acos) (___d0);
+}
+// System.Double System.Math::Asin(System.Double)
+extern "C"  double Math_Asin_m347297897 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef double (*Math_Asin_m347297897_ftn) (double);
+	return  ((Math_Asin_m347297897_ftn)mscorlib::System::Math::Asin) (___d0);
 }
 // System.Double System.Math::Log(System.Double)
 extern "C"  double Math_Log_m3371716878 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method)

@@ -25,3 +25,5 @@ extern "C"  void LoginButton_Start_m282510188 (LoginButton_t970805563 * __this, 
 extern "C"  void LoginButton_Update_m838620451 (LoginButton_t970805563 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void LoginButton::OnClick()
 extern "C"  void LoginButton_OnClick_m4002346237 (LoginButton_t970805563 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void LoginButton::LoadLoadingScene()
+extern "C"  void LoginButton_LoadLoadingScene_m3610603430 (LoginButton_t970805563 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

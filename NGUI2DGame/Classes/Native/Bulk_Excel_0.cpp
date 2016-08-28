@@ -4537,7 +4537,7 @@ extern Il2CppClass* CultureInfo_t3500843524_il2cpp_TypeInfo_var;
 extern Il2CppClass* Double_t4078015681_il2cpp_TypeInfo_var;
 extern Il2CppClass* Helpers_t551273995_il2cpp_TypeInfo_var;
 extern Il2CppClass* Boolean_t3825574718_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1_get_Item_m4193432435_MethodInfo_var;
+extern const MethodInfo* List_1_get_Item_m566484697_MethodInfo_var;
 extern const MethodInfo* List_1_get_Item_m2303198010_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1502599026;
 extern Il2CppCodeGenString* _stringLiteral372029392;
@@ -4846,7 +4846,7 @@ IL_0214:
 		String_t* L_71 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_70);
 		int32_t L_72 = Int32_Parse_m3683414232(NULL /*static, unused*/, L_71, /*hidden argument*/NULL);
 		NullCheck(L_69);
-		String_t* L_73 = List_1_get_Item_m4193432435(L_69, L_72, /*hidden argument*/List_1_get_Item_m4193432435_MethodInfo_var);
+		String_t* L_73 = List_1_get_Item_m566484697(L_69, L_72, /*hidden argument*/List_1_get_Item_m566484697_MethodInfo_var);
 		IL2CPP_RUNTIME_CLASS_INIT(Helpers_t551273995_il2cpp_TypeInfo_var);
 		String_t* L_74 = Helpers_ConvertEscapeChars_m2354180383(NULL /*static, unused*/, L_73, /*hidden argument*/NULL);
 		V_8 = L_74;

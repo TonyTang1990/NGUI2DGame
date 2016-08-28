@@ -231,10 +231,10 @@ struct X509Store_t4028973564;
 struct X509SubjectKeyIdentifierExtension_t2508879999;
 // System.Text.RegularExpressions.BaseMachine
 struct BaseMachine_t4008011478;
-// System.Text.RegularExpressions.Match
-struct Match_t3164245899;
 // System.Text.RegularExpressions.Regex
 struct Regex_t1803876613;
+// System.Text.RegularExpressions.Match
+struct Match_t3164245899;
 // System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator
 struct MatchAppendEvaluator_t1618777330;
 // System.Text.RegularExpressions.MatchEvaluator
@@ -748,13 +748,15 @@ struct Frame_t997927490;
 #include "System_System_Security_Cryptography_X509Certificat2169036324MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_BaseMachine4008011478.h"
 #include "System_System_Text_RegularExpressions_BaseMachine4008011478MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_ReplacementE1001703513MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_MatchEvaluato710107290MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_BaseMachine_1618777330MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_ReplacementE1001703513.h"
+#include "System_System_Text_RegularExpressions_MatchEvaluato710107290.h"
 #include "System_System_Text_RegularExpressions_BaseMachine_1618777330.h"
 #include "mscorlib_System_SystemException3877406272MethodDeclarations.h"
-#include "System_System_Text_RegularExpressions_BaseMachine_1618777330MethodDeclarations.h"
 #include "mscorlib_System_SystemException3877406272.h"
-#include "System_System_Text_RegularExpressions_MatchEvaluato710107290.h"
 #include "System_System_Collections_Specialized_StringCollect352985975MethodDeclarations.h"
-#include "System_System_Text_RegularExpressions_MatchEvaluato710107290MethodDeclarations.h"
 #include "System_System_Collections_Specialized_StringCollect352985975.h"
 #include "System_System_Text_RegularExpressions_Capture4157900610.h"
 #include "System_System_Text_RegularExpressions_CaptureColle1671345504.h"
@@ -52800,6 +52802,68 @@ extern "C"  void BaseMachine__ctor_m2327544039 (BaseMachine_t4008011478 * __this
 		return;
 	}
 }
+// System.String System.Text.RegularExpressions.BaseMachine::Replace(System.Text.RegularExpressions.Regex,System.String,System.String,System.Int32,System.Int32)
+extern Il2CppClass* ReplacementEvaluator_t1001703513_il2cpp_TypeInfo_var;
+extern Il2CppClass* MatchEvaluator_t710107290_il2cpp_TypeInfo_var;
+extern Il2CppClass* MatchAppendEvaluator_t1618777330_il2cpp_TypeInfo_var;
+extern const MethodInfo* ReplacementEvaluator_Evaluate_m197194936_MethodInfo_var;
+extern const MethodInfo* ReplacementEvaluator_EvaluateAppend_m4165611689_MethodInfo_var;
+extern const uint32_t BaseMachine_Replace_m2446015132_MetadataUsageId;
+extern "C"  String_t* BaseMachine_Replace_m2446015132 (BaseMachine_t4008011478 * __this, Regex_t1803876613 * ___regex0, String_t* ___input1, String_t* ___replacement2, int32_t ___count3, int32_t ___startat4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (BaseMachine_Replace_m2446015132_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ReplacementEvaluator_t1001703513 * V_0 = NULL;
+	{
+		Regex_t1803876613 * L_0 = ___regex0;
+		String_t* L_1 = ___replacement2;
+		ReplacementEvaluator_t1001703513 * L_2 = (ReplacementEvaluator_t1001703513 *)il2cpp_codegen_object_new(ReplacementEvaluator_t1001703513_il2cpp_TypeInfo_var);
+		ReplacementEvaluator__ctor_m3746900384(L_2, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Regex_t1803876613 * L_3 = ___regex0;
+		NullCheck(L_3);
+		bool L_4 = Regex_get_RightToLeft_m529734879(L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		Regex_t1803876613 * L_5 = ___regex0;
+		String_t* L_6 = ___input1;
+		ReplacementEvaluator_t1001703513 * L_7 = V_0;
+		IntPtr_t L_8;
+		L_8.set_m_value_0((void*)(void*)ReplacementEvaluator_Evaluate_m197194936_MethodInfo_var);
+		MatchEvaluator_t710107290 * L_9 = (MatchEvaluator_t710107290 *)il2cpp_codegen_object_new(MatchEvaluator_t710107290_il2cpp_TypeInfo_var);
+		MatchEvaluator__ctor_m3633185959(L_9, L_7, L_8, /*hidden argument*/NULL);
+		int32_t L_10 = ___count3;
+		int32_t L_11 = ___startat4;
+		String_t* L_12 = BaseMachine_RTLReplace_m25431723(__this, L_5, L_6, L_9, L_10, L_11, /*hidden argument*/NULL);
+		return L_12;
+	}
+
+IL_002c:
+	{
+		Regex_t1803876613 * L_13 = ___regex0;
+		String_t* L_14 = ___input1;
+		ReplacementEvaluator_t1001703513 * L_15 = V_0;
+		IntPtr_t L_16;
+		L_16.set_m_value_0((void*)(void*)ReplacementEvaluator_EvaluateAppend_m4165611689_MethodInfo_var);
+		MatchAppendEvaluator_t1618777330 * L_17 = (MatchAppendEvaluator_t1618777330 *)il2cpp_codegen_object_new(MatchAppendEvaluator_t1618777330_il2cpp_TypeInfo_var);
+		MatchAppendEvaluator__ctor_m3486625178(L_17, L_15, L_16, /*hidden argument*/NULL);
+		int32_t L_18 = ___count3;
+		int32_t L_19 = ___startat4;
+		ReplacementEvaluator_t1001703513 * L_20 = V_0;
+		NullCheck(L_20);
+		bool L_21 = ReplacementEvaluator_get_NeedsGroupsOrCaptures_m3532058782(L_20, /*hidden argument*/NULL);
+		String_t* L_22 = BaseMachine_LTRReplace_m1094774497(__this, L_13, L_14, L_17, L_18, L_19, L_21, /*hidden argument*/NULL);
+		return L_22;
+	}
+}
 // System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32)
 extern Il2CppClass* NotImplementedException_t2785117854_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2999892720;
@@ -52857,7 +52921,7 @@ extern "C"  String_t* BaseMachine_LTRReplace_m1094774497 (BaseMachine_t400801147
 		String_t* L_4 = ___input1;
 		NullCheck(L_4);
 		int32_t L_5 = String_get_Length_m1606060069(L_4, /*hidden argument*/NULL);
-		Match_t3164245899 * L_6 = VirtFuncInvoker4< Match_t3164245899 *, Regex_t1803876613 *, String_t*, int32_t, int32_t >::Invoke(5 /* System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32) */, __this, L_1, L_2, L_3, L_5);
+		Match_t3164245899 * L_6 = VirtFuncInvoker4< Match_t3164245899 *, Regex_t1803876613 *, String_t*, int32_t, int32_t >::Invoke(7 /* System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32) */, __this, L_1, L_2, L_3, L_5);
 		V_0 = L_6;
 		Match_t3164245899 * L_7 = V_0;
 		NullCheck(L_7);
@@ -53009,7 +53073,7 @@ extern "C"  String_t* BaseMachine_RTLReplace_m25431723 (BaseMachine_t4008011478 
 		String_t* L_3 = ___input1;
 		NullCheck(L_3);
 		int32_t L_4 = String_get_Length_m1606060069(L_3, /*hidden argument*/NULL);
-		Match_t3164245899 * L_5 = VirtFuncInvoker4< Match_t3164245899 *, Regex_t1803876613 *, String_t*, int32_t, int32_t >::Invoke(5 /* System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32) */, __this, L_0, L_1, L_2, L_4);
+		Match_t3164245899 * L_5 = VirtFuncInvoker4< Match_t3164245899 *, Regex_t1803876613 *, String_t*, int32_t, int32_t >::Invoke(7 /* System.Text.RegularExpressions.Match System.Text.RegularExpressions.BaseMachine::Scan(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32) */, __this, L_0, L_1, L_2, L_4);
 		V_0 = L_5;
 		Match_t3164245899 * L_6 = V_0;
 		NullCheck(L_6);

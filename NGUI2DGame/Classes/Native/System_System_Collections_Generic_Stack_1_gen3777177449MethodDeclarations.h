@@ -43,6 +43,9 @@ extern "C"  Il2CppObject* Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_
 // System.Collections.IEnumerator System.Collections.Generic.Stack`1<System.Object>::System.Collections.IEnumerable.GetEnumerator()
 extern "C"  Il2CppObject * Stack_1_System_Collections_IEnumerable_GetEnumerator_m3875192475_gshared (Stack_1_t3777177449 * __this, const MethodInfo* method);
 #define Stack_1_System_Collections_IEnumerable_GetEnumerator_m3875192475(__this, method) ((  Il2CppObject * (*) (Stack_1_t3777177449 *, const MethodInfo*))Stack_1_System_Collections_IEnumerable_GetEnumerator_m3875192475_gshared)(__this, method)
+// System.Void System.Collections.Generic.Stack`1<System.Object>::Clear()
+extern "C"  void Stack_1_Clear_m3792598883_gshared (Stack_1_t3777177449 * __this, const MethodInfo* method);
+#define Stack_1_Clear_m3792598883(__this, method) ((  void (*) (Stack_1_t3777177449 *, const MethodInfo*))Stack_1_Clear_m3792598883_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Stack`1<System.Object>::Contains(T)
 extern "C"  bool Stack_1_Contains_m973625077_gshared (Stack_1_t3777177449 * __this, Il2CppObject * ___t0, const MethodInfo* method);
 #define Stack_1_Contains_m973625077(__this, ___t0, method) ((  bool (*) (Stack_1_t3777177449 *, Il2CppObject *, const MethodInfo*))Stack_1_Contains_m973625077_gshared)(__this, ___t0, method)

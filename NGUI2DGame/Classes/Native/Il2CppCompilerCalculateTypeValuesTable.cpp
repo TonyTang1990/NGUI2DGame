@@ -1149,6 +1149,7 @@
 #include "System_System_Text_RegularExpressions_RxCompiler4215271879.h"
 #include "System_System_Text_RegularExpressions_RxInterprete1812879716.h"
 #include "System_System_Text_RegularExpressions_RxOp4049298493.h"
+#include "System_System_Text_RegularExpressions_ReplacementE1001703513.h"
 #include "System_System_Text_RegularExpressions_Syntax_Compo1921307915.h"
 #include "System_System_Text_RegularExpressions_Syntax_Regul3083097024.h"
 #include "System_System_Text_RegularExpressions_Syntax_Captu3690174926.h"
@@ -1170,56 +1171,6 @@
 #include "System_System_UriParser1012511323.h"
 #include "System_System_UriPartial112107391.h"
 #include "System_U3CPrivateImplementationDetailsU3E1486305137.h"
-#include "System_Configuration_System_Configuration_Provider2882126354.h"
-#include "System_Configuration_System_Configuration_Provider2548499159.h"
-#include "System_Configuration_System_Configuration_ClientCo4294641134.h"
-#include "System_Configuration_System_Configuration_ConfigNa2395569530.h"
-#include "System_Configuration_System_Configuration_ConfigInf546730838.h"
-#include "System_Configuration_System_Configuration_Configur3335372970.h"
-#include "System_Configuration_System_Configuration_Configur3250313246.h"
-#include "System_Configuration_System_Configuration_Configur3860111898.h"
-#include "System_Configuration_System_Configuration_Configur2811353736.h"
-#include "System_Configuration_System_Configuration_Configur1776195828.h"
-#include "System_Configuration_System_Configuration_ElementMa997038224.h"
-#include "System_Configuration_System_Configuration_Configur1911180302.h"
-#include "System_Configuration_System_Configuration_Configur3305291330.h"
-#include "System_Configuration_System_Configuration_Configur1806001494.h"
-#include "System_Configuration_System_Configuration_Configur1362721126.h"
-#include "System_Configuration_System_Configuration_Configur2625210096.h"
-#include "System_Configuration_System_Configuration_Configur1895107553.h"
-#include "System_Configuration_System_Configuration_Configura131834733.h"
-#include "System_Configuration_System_Configuration_Configur1011762925.h"
-#include "System_Configuration_System_Configuration_Configur2608608455.h"
-#include "System_Configuration_System_Configuration_Configur2048066811.h"
-#include "System_Configuration_System_Configuration_Configur3655647199.h"
-#include "System_Configuration_System_Configuration_Configur3473514151.h"
-#include "System_Configuration_System_Configuration_Configur3219689025.h"
-#include "System_Configuration_System_Configuration_Configura700320212.h"
-#include "System_Configuration_System_Configuration_Configur2600766927.h"
-#include "System_Configuration_System_Configuration_Configur4261113299.h"
-#include "System_Configuration_System_Configuration_Configur1795270620.h"
-#include "System_Configuration_System_Configuration_Configur2230982736.h"
-#include "System_Configuration_System_Configuration_Configura575145286.h"
-#include "System_Configuration_System_Configuration_Configur1204907851.h"
-#include "System_Configuration_System_Configuration_Configur1007519140.h"
-#include "System_Configuration_ConfigXmlTextReader3212066157.h"
-#include "System_Configuration_System_Configuration_DefaultS3840532724.h"
-#include "System_Configuration_System_Configuration_ElementI3165583784.h"
-#include "System_Configuration_System_Configuration_ExeConfi1419586304.h"
-#include "System_Configuration_System_Configuration_IgnoreSec681509237.h"
-#include "System_Configuration_System_Configuration_Internal2108740756.h"
-#include "System_Configuration_System_Configuration_ExeConfi2778769322.h"
-#include "System_Configuration_System_Configuration_InternalC547578517.h"
-#include "System_Configuration_System_Configuration_Property2089433965.h"
-#include "System_Configuration_System_Configuration_Property1453501302.h"
-#include "System_Configuration_System_Configuration_Property1217826846.h"
-#include "System_Configuration_System_Configuration_Protecte3541826375.h"
-#include "System_Configuration_System_Configuration_ProviderS873049714.h"
-#include "System_Configuration_System_Configuration_ProviderS585304908.h"
-#include "System_Configuration_System_Configuration_SectionI1739019515.h"
-#include "System_Configuration_System_Configuration_SectionG2346323570.h"
-#include "System_Configuration_System_Configuration_SectionI2754609709.h"
-#include "System_Configuration_System_MonoTODOAttribute3487514019.h"
 #include "Mono_Security_Mono_Math_BigInteger925946152.h"
 #include "Mono_Security_Mono_Math_BigInteger_Sign874893935.h"
 #include "Mono_Security_Mono_Math_BigInteger_ModulusRing80355991.h"
@@ -1308,6 +1259,60 @@
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1289300668.h"
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2172608670.h"
 #include "Mono_Security_U3CPrivateImplementationDetailsU3E1486305137.h"
+#include "System_Configuration_System_Configuration_Provider2882126354.h"
+#include "System_Configuration_System_Configuration_Provider2548499159.h"
+#include "System_Configuration_System_Configuration_ClientCo4294641134.h"
+#include "System_Configuration_System_Configuration_ConfigNa2395569530.h"
+#include "System_Configuration_System_Configuration_ConfigInf546730838.h"
+#include "System_Configuration_System_Configuration_Configur3335372970.h"
+#include "System_Configuration_System_Configuration_Configur3250313246.h"
+#include "System_Configuration_System_Configuration_Configur3860111898.h"
+#include "System_Configuration_System_Configuration_Configur2811353736.h"
+#include "System_Configuration_System_Configuration_Configur1776195828.h"
+#include "System_Configuration_System_Configuration_ElementMa997038224.h"
+#include "System_Configuration_System_Configuration_Configur1911180302.h"
+#include "System_Configuration_System_Configuration_Configur3305291330.h"
+#include "System_Configuration_System_Configuration_Configur1806001494.h"
+#include "System_Configuration_System_Configuration_Configur1362721126.h"
+#include "System_Configuration_System_Configuration_Configur2625210096.h"
+#include "System_Configuration_System_Configuration_Configur1895107553.h"
+#include "System_Configuration_System_Configuration_Configura131834733.h"
+#include "System_Configuration_System_Configuration_Configur1011762925.h"
+#include "System_Configuration_System_Configuration_Configur2608608455.h"
+#include "System_Configuration_System_Configuration_Configur2048066811.h"
+#include "System_Configuration_System_Configuration_Configur3655647199.h"
+#include "System_Configuration_System_Configuration_Configur3473514151.h"
+#include "System_Configuration_System_Configuration_Configur3219689025.h"
+#include "System_Configuration_System_Configuration_Configura700320212.h"
+#include "System_Configuration_System_Configuration_Configur2600766927.h"
+#include "System_Configuration_System_Configuration_Configur4261113299.h"
+#include "System_Configuration_System_Configuration_Configur1795270620.h"
+#include "System_Configuration_System_Configuration_Configur2230982736.h"
+#include "System_Configuration_System_Configuration_Configura575145286.h"
+#include "System_Configuration_System_Configuration_Configur1204907851.h"
+#include "System_Configuration_System_Configuration_Configur1007519140.h"
+#include "System_Configuration_ConfigXmlTextReader3212066157.h"
+#include "System_Configuration_System_Configuration_DefaultS3840532724.h"
+#include "System_Configuration_System_Configuration_ElementI3165583784.h"
+#include "System_Configuration_System_Configuration_ExeConfi1419586304.h"
+#include "System_Configuration_System_Configuration_IgnoreSec681509237.h"
+#include "System_Configuration_System_Configuration_Internal2108740756.h"
+#include "System_Configuration_System_Configuration_ExeConfi2778769322.h"
+#include "System_Configuration_System_Configuration_InternalC547578517.h"
+#include "System_Configuration_System_Configuration_Property2089433965.h"
+#include "System_Configuration_System_Configuration_Property1453501302.h"
+#include "System_Configuration_System_Configuration_Property1217826846.h"
+#include "System_Configuration_System_Configuration_Protecte3541826375.h"
+#include "System_Configuration_System_Configuration_ProviderS873049714.h"
+#include "System_Configuration_System_Configuration_ProviderS585304908.h"
+#include "System_Configuration_System_Configuration_SectionI1739019515.h"
+#include "System_Configuration_System_Configuration_SectionG2346323570.h"
+#include "System_Configuration_System_Configuration_SectionI2754609709.h"
+#include "System_Configuration_System_MonoTODOAttribute3487514019.h"
+#include "System_Core_Mono_Security_Cryptography_KeyBuilder3965881084.h"
+#include "System_Core_Mono_Security_Cryptography_SymmetricTr1394030013.h"
+#include "System_Core_System_Security_Cryptography_AesTransf3733702461.h"
+#include "System_Core_U3CPrivateImplementationDetailsU3E1486305137.h"
 #include "System_EnterpriseServices_System_EnterpriseService3606647885.h"
 #include "System_EnterpriseServices_System_EnterpriseService3499772351.h"
 #include "ICSharpCode_SharpZipLib_ICSharpCode_SharpZipLib_Ch1759601101.h"
@@ -1337,10 +1342,6 @@
 #include "ICSharpCode_SharpZipLib_ICSharpCode_SharpZipLib_Zi3454744209.h"
 #include "ICSharpCode_SharpZipLib_ICSharpCode_SharpZipLib_Zi3311483194.h"
 #include "ICSharpCode_SharpZipLib_U3CPrivateImplementationDe2804977885.h"
-#include "System_Core_Mono_Security_Cryptography_KeyBuilder3965881084.h"
-#include "System_Core_Mono_Security_Cryptography_SymmetricTr1394030013.h"
-#include "System_Core_System_Security_Cryptography_AesTransf3733702461.h"
-#include "System_Core_U3CPrivateImplementationDetailsU3E1486305137.h"
 #include "System_Data_Mono_Data_SqlExpressions_Parser1744254983.h"
 #include "System_Data_Mono_Data_SqlExpressions_Parser_YYRule3228736289.h"
 #include "System_Data_System_Data_AcceptRejectRule449381895.h"
@@ -1459,19 +1460,6 @@
 #include "System_Data_Mono_Data_SqlExpressions_AggregationFu2691828360.h"
 #include "System_Data_Mono_Data_SqlExpressions_Aggregation2849412868.h"
 #include "System_Data_U3CPrivateImplementationDetailsU3E1486305137.h"
-#include "Excel_Excel_Core_FormatReader3367903422.h"
-#include "Excel_Excel_Core_Helpers551273995.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxDimension1977862101.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxNumFmt1220338590.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxStyles1776783765.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxWorkbook188684221.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxWorksheet2598215163.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxXf160302635.h"
-#include "Excel_Excel_Core_ZipWorker1305438663.h"
-#include "Excel_Excel_ExcelOpenXmlReader1964336123.h"
-#include "Excel_Excel_Log_Log2157885282.h"
-#include "Excel_Excel_Log_LogManager1846890795.h"
-#include "Excel_U3CPrivateImplementationDetailsU3EU7B10037FE2916131298.h"
 #include "UnityEngine_UnityEngine_AssetBundleCreateRequest_C2509986555.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform1869584967.h"
@@ -1543,6 +1531,8 @@
 #include "UnityEngine_UnityEngine_QueryTriggerInteraction478029726.h"
 #include "UnityEngine_UnityEngine_ContactPoint1376425630.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
+#include "UnityEngine_UnityEngine_ContactPoint2D3659330976.h"
+#include "UnityEngine_UnityEngine_Collision2D1539500754.h"
 #include "UnityEngine_UnityEngine_AudioSettings3144015719.h"
 #include "UnityEngine_UnityEngine_AudioType4076847944.h"
 #include "UnityEngine_UnityEngine_AudioClip1932558630.h"
@@ -1633,6 +1623,157 @@
 #include "UnityEngine_UnityEngine_Serialization_FormerlySeri3673080018.h"
 #include "UnityEngine_UnityEngineInternal_TypeInferenceRules1810425448.h"
 #include "UnityEngine_UnityEngineInternal_TypeInferenceRuleA1390152093.h"
+#include "DOTween_DG_Tweening_AutoPlay2503223703.h"
+#include "DOTween_DG_Tweening_AxisConstraint1244566668.h"
+#include "DOTween_DG_Tweening_Color2232726623.h"
+#include "DOTween_DG_Tweening_DOTween2276353038.h"
+#include "DOTween_DG_Tweening_DOTween_U3CU3Ec__DisplayClass53467700650.h"
+#include "DOTween_DG_Tweening_DOVirtual_U3CU3Ec__DisplayClas3724530167.h"
+#include "DOTween_DG_Tweening_Ease2502520296.h"
+#include "DOTween_DG_Tweening_EaseFactory_U3CU3Ec__DisplayCl2066423765.h"
+#include "DOTween_DG_Tweening_PathMode1545785466.h"
+#include "DOTween_DG_Tweening_PathType2815988833.h"
+#include "DOTween_DG_Tweening_RotateMode1177727514.h"
+#include "DOTween_DG_Tweening_ScrambleMode385206138.h"
+#include "DOTween_DG_Tweening_LoopType2249218064.h"
+#include "DOTween_DG_Tweening_Sequence110643099.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842963.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842866.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964843029.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842932.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842831.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842734.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842897.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964842800.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964843227.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis964843130.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978348.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691431.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653346.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366429.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628352.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341435.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303350.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016433.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1881678340.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis295391423.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978441.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691524.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653439.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366522.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628445.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341528.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303443.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016526.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1881678433.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis295391516.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978538.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691621.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653536.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366619.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628542.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341625.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303540.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016623.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1881678530.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis295391613.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978383.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691466.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653381.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366464.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628387.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341470.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303385.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016468.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1881678375.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis295391458.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978224.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691307.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653222.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366305.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628228.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341311.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303226.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016309.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1881678216.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis295391299.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978317.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691400.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653315.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366398.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628321.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341404.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303319.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016402.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1881678309.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Dis295391392.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3010978414.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1424691497.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di2728653412.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1142366495.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3575628418.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1989341501.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di3293303416.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions_U3CU3Ec__Di1707016499.h"
+#include "DOTween_DG_Tweening_TweenParams2944325381.h"
+#include "DOTween_DG_Tweening_LogBehaviour3505725029.h"
+#include "DOTween_DG_Tweening_Tween278478013.h"
+#include "DOTween_DG_Tweening_Tweener760404022.h"
+#include "DOTween_DG_Tweening_TweenType169444141.h"
+#include "DOTween_DG_Tweening_UpdateType3357224513.h"
+#include "DOTween_DG_Tweening_Plugins_PathPlugin4171842066.h"
+#include "DOTween_DG_Tweening_Plugins_RectOffsetPlugin664509336.h"
+#include "DOTween_DG_Tweening_Plugins_StringPlugin3620786088.h"
+#include "DOTween_DG_Tweening_Plugins_StringPluginExtensions3910942986.h"
+#include "DOTween_DG_Tweening_Plugins_Options_OrientType1755667719.h"
+#include "DOTween_DG_Tweening_Plugins_Options_PathOptions2659884781.h"
+#include "DOTween_DG_Tweening_Plugins_Options_QuaternionOptio466049668.h"
+#include "DOTween_DG_Tweening_Plugins_Options_UintOptions2267095136.h"
+#include "DOTween_DG_Tweening_Plugins_Options_Vector3ArrayOp2672570171.h"
+#include "DOTween_DG_Tweening_Plugins_Options_ColorOptions2213017305.h"
+#include "DOTween_DG_Tweening_Plugins_Options_FloatOptions1421548266.h"
+#include "DOTween_DG_Tweening_Plugins_Options_RectOptions3393635162.h"
+#include "DOTween_DG_Tweening_Plugins_Options_StringOptions2885323933.h"
+#include "DOTween_DG_Tweening_Plugins_Options_VectorOptions293385261.h"
+#include "DOTween_DG_Tweening_Plugins_Core_PluginsManager3052451537.h"
+#include "DOTween_DG_Tweening_Plugins_Core_PathCore_ControlPo168081159.h"
+#include "DOTween_DG_Tweening_Plugins_Core_PathCore_Path2828565993.h"
+#include "DOTween_DG_Tweening_CustomPlugins_PureQuaternionPl3400666973.h"
+#include "DOTween_DG_Tweening_Core_ABSSequentiable2284140720.h"
+#include "DOTween_DG_Tweening_Core_Debugger1404542751.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent696744215.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent_U3CWaitFo639731943.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent_U3CWaitF2782210651.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent_U3CWaitF1007991819.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent_U3CWaitF3988581919.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent_U3CWaitF2034437344.h"
+#include "DOTween_DG_Tweening_Core_DOTweenComponent_U3CWaitF2341562412.h"
+#include "DOTween_DG_Tweening_Core_DOTweenSettings873123119.h"
+#include "DOTween_DG_Tweening_Core_DOTweenSettings_SettingsLo514961325.h"
+#include "DOTween_DG_Tweening_Core_TweenManager1979661952.h"
+#include "DOTween_DG_Tweening_Core_TweenManager_CapacityIncr1969140739.h"
+#include "DOTween_DG_Tweening_Core_Enums_FilterType1425068526.h"
+#include "DOTween_DG_Tweening_Core_Enums_OperationType2600045009.h"
+#include "DOTween_DG_Tweening_Core_Enums_SpecialStartupMode1501334721.h"
+#include "DOTween_DG_Tweening_Core_Enums_UpdateNotice2468589887.h"
+#include "DOTween_DG_Tweening_Core_Enums_UpdateMode2539919096.h"
+#include "DOTween_DG_Tweening_Core_Easing_EaseManager1514337917.h"
+#include "DOTween_DG_Tweening_Core_Easing_EaseManager_U3CU3E1609106043.h"
+#include "DOTween_DG_Tweening_Core_Easing_EaseCurve1295352409.h"
+#include "DOTween_U3CPrivateImplementationDetailsU3E1486305137.h"
+#include "Excel_Excel_Core_FormatReader3367903422.h"
+#include "Excel_Excel_Core_Helpers551273995.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxDimension1977862101.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxNumFmt1220338590.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxStyles1776783765.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxWorkbook188684221.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxWorksheet2598215163.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxXf160302635.h"
+#include "Excel_Excel_Core_ZipWorker1305438663.h"
+#include "Excel_Excel_ExcelOpenXmlReader1964336123.h"
+#include "Excel_Excel_Log_Log2157885282.h"
+#include "Excel_Excel_Log_LogManager1846890795.h"
+#include "Excel_U3CPrivateImplementationDetailsU3EU7B10037FE2916131298.h"
 #include "AssemblyU2DCSharp_EquipItems3211185488.h"
 #include "AssemblyU2DCSharp_EquipRandomItem1031555304.h"
 #include "AssemblyU2DCSharp_UICursor1925473040.h"
@@ -1787,22 +1928,29 @@
 #include "AssemblyU2DCSharp_UITexture2537039969.h"
 #include "AssemblyU2DCSharp_UITooltip1873874935.h"
 #include "AssemblyU2DCSharp_UIViewport1541362616.h"
+#include "AssemblyU2DCSharp_PlayerCarController116747357.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247952.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197208.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager1548987031.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_Account3062613273.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_GameSett213610147.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_GameSet3332754345.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_GameSet2958378805.h"
 #include "AssemblyU2DCSharp_GameManager2252321495.h"
+#include "AssemblyU2DCSharp_InputControllerManager1050051015.h"
 #include "AssemblyU2DCSharp_GameChoosePanel1813263919.h"
 #include "AssemblyU2DCSharp_GamePanel539122112.h"
 #include "AssemblyU2DCSharp_GameSettingPanel4173768872.h"
 #include "AssemblyU2DCSharp_GameUI4016257260.h"
 #include "AssemblyU2DCSharp_LoadingProcess282725851.h"
-#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375851.h"
+#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375845.h"
 #include "AssemblyU2DCSharp_AccountInputField2916814735.h"
+#include "AssemblyU2DCSharp_LoginButton970805563.h"
 #include "AssemblyU2DCSharp_LoginManager973619992.h"
 #include "AssemblyU2DCSharp_LoginUI1439696001.h"
 #include "AssemblyU2DCSharp_Validator172396982.h"
+#include "AssemblyU2DCSharp_FPSDisplay3952194245.h"
+#include "AssemblyU2DCSharp_OffsetScroller1610136665.h"
 #include "AssemblyU2DCSharp_UIRootExtend1122248034.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU1486305137.h"
 #include "mscorlib_U3CModuleU3E3783534214.h"
@@ -2244,18 +2392,6 @@
 #include "System_U3CPrivateImplementationDetailsU3E_U24Array1703410334.h"
 #include "System_U3CPrivateImplementationDetailsU3E_U24ArrayT116038554.h"
 #include "System_U3CPrivateImplementationDetailsU3E_U24Array3672778802.h"
-#include "System_Configuration_U3CModuleU3E3783534214.h"
-#include "System_Configuration_System_Configuration_Configur1903842989.h"
-#include "System_Configuration_System_Configuration_Configura210547623.h"
-#include "System_Configuration_System_Configuration_DefaultVa300527515.h"
-#include "System_Configuration_System_Configuration_Internal3846641927.h"
-#include "System_Configuration_System_Configuration_InternalC547577555.h"
-#include "System_Configuration_System_Configuration_PropertyI954922393.h"
-#include "System_Configuration_System_Configuration_Protecte1807950812.h"
-#include "System_Configuration_System_Configuration_Protecte3971982415.h"
-#include "System_Configuration_System_Configuration_Protected388338823.h"
-#include "System_Configuration_System_Configuration_ConfigIn3264723080.h"
-#include "System_Configuration_System_MonoInternalNoteAttrib4192790486.h"
 #include "Mono_Security_U3CModuleU3E3783534214.h"
 #include "Mono_Security_Locale4255929014.h"
 #include "Mono_Security_Mono_Math_BigInteger_Kernel1353186455.h"
@@ -2291,9 +2427,29 @@
 #include "Mono_Security_U3CPrivateImplementationDetailsU3E_U3672778802.h"
 #include "Mono_Security_U3CPrivateImplementationDetailsU3E_U1703410334.h"
 #include "Mono_Security_U3CPrivateImplementationDetailsU3E_U1957337331.h"
+#include "System_Configuration_U3CModuleU3E3783534214.h"
+#include "System_Configuration_System_Configuration_Configur1903842989.h"
+#include "System_Configuration_System_Configuration_Configura210547623.h"
+#include "System_Configuration_System_Configuration_DefaultVa300527515.h"
+#include "System_Configuration_System_Configuration_Internal3846641927.h"
+#include "System_Configuration_System_Configuration_InternalC547577555.h"
+#include "System_Configuration_System_Configuration_PropertyI954922393.h"
+#include "System_Configuration_System_Configuration_Protecte1807950812.h"
+#include "System_Configuration_System_Configuration_Protecte3971982415.h"
+#include "System_Configuration_System_Configuration_Protected388338823.h"
+#include "System_Configuration_System_Configuration_ConfigIn3264723080.h"
+#include "System_Configuration_System_MonoInternalNoteAttrib4192790486.h"
+#include "Mono_Posix_U3CModuleU3E3783534214.h"
 #include "System_Transactions_U3CModuleU3E3783534214.h"
 #include "Mono_Data_Tds_U3CModuleU3E3783534214.h"
-#include "Mono_Posix_U3CModuleU3E3783534214.h"
+#include "System_Core_U3CModuleU3E3783534214.h"
+#include "System_Core_System_Runtime_CompilerServices_Extens1840441203.h"
+#include "System_Core_Locale4255929014.h"
+#include "System_Core_System_Security_Cryptography_Aes2354947465.h"
+#include "System_Core_System_Security_Cryptography_AesManage3721278648.h"
+#include "System_Core_U3CPrivateImplementationDetailsU3E_U24A116038562.h"
+#include "System_Core_U3CPrivateImplementationDetailsU3E_U242038352954.h"
+#include "System_Core_U3CPrivateImplementationDetailsU3E_U242672183894.h"
 #include "System_EnterpriseServices_U3CModuleU3E3783534214.h"
 #include "ICSharpCode_SharpZipLib_U3CModuleU3E3783534214.h"
 #include "ICSharpCode_SharpZipLib_ICSharpCode_SharpZipLib_Sh4116900137.h"
@@ -2309,14 +2465,6 @@
 #include "ICSharpCode_SharpZipLib_U3CPrivateImplementationDet286643802.h"
 #include "ICSharpCode_SharpZipLib_U3CPrivateImplementationDe1646040079.h"
 #include "ICSharpCode_SharpZipLib_U3CPrivateImplementationDe2808839494.h"
-#include "System_Core_U3CModuleU3E3783534214.h"
-#include "System_Core_System_Runtime_CompilerServices_Extens1840441203.h"
-#include "System_Core_Locale4255929014.h"
-#include "System_Core_System_Security_Cryptography_Aes2354947465.h"
-#include "System_Core_System_Security_Cryptography_AesManage3721278648.h"
-#include "System_Core_U3CPrivateImplementationDetailsU3E_U24A116038562.h"
-#include "System_Core_U3CPrivateImplementationDetailsU3E_U242038352954.h"
-#include "System_Core_U3CPrivateImplementationDetailsU3E_U242672183894.h"
 #include "System_Data_U3CModuleU3E3783534214.h"
 #include "System_Data_Mono_Data_SqlExpressions_yydebug_yyDeb3793616829.h"
 #include "System_Data_Mono_Data_SqlExpressions_yyParser_yyEx1350108591.h"
@@ -2378,13 +2526,6 @@
 #include "System_Data_U3CPrivateImplementationDetailsU3E_U242866209745.h"
 #include "System_Data_U3CPrivateImplementationDetailsU3E_U242672183884.h"
 #include "System_Data_U3CPrivateImplementationDetailsU3E_U24A540610915.h"
-#include "Excel_U3CModuleU3E3783534214.h"
-#include "Excel_Excel_Core_OpenXmlFormat_XlsxSST3732229269.h"
-#include "Excel_Excel_Core_ReferenceHelper1500920275.h"
-#include "Excel_Excel_ExcelReaderFactory1592333972.h"
-#include "Excel_Excel_Log_Logger_NullLog2892847919.h"
-#include "Excel_U3CPrivateImplementationDetailsU3EU7B10037FE4120193108.h"
-#include "Excel_U3CPrivateImplementationDetailsU3EU7B10037FEE631794874.h"
 #include "UnityEngine_U3CModuleU3E3783534214.h"
 #include "UnityEngine_UnityEngine_AssetBundleCreateRequest1038783543.h"
 #include "UnityEngine_UnityEngine_AssetBundleRequest2674559435.h"
@@ -2397,6 +2538,8 @@
 #include "UnityEngine_UnityEngine_QualitySettings3238033062.h"
 #include "UnityEngine_UnityEngine_MeshFilter3026937449.h"
 #include "UnityEngine_UnityEngine_Renderer257310565.h"
+#include "UnityEngine_UnityEngine_TrailRenderer2490637367.h"
+#include "UnityEngine_UnityEngine_LineRenderer849157671.h"
 #include "UnityEngine_UnityEngine_Screen786852042.h"
 #include "UnityEngine_UnityEngine_MeshRenderer1268241104.h"
 #include "UnityEngine_UnityEngine_GUIElement3381083099.h"
@@ -2405,6 +2548,7 @@
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
 #include "UnityEngine_UnityEngine_RenderTexture2666733923.h"
 #include "UnityEngine_UnityEngine_CullingGroup_StateChanged2480912210.h"
+#include "UnityEngine_UnityEngine_Gizmos2256232573.h"
 #include "UnityEngine_UnityEngine_Mesh1356156583.h"
 #include "UnityEngine_UnityEngine_NetworkView172525251.h"
 #include "UnityEngine_UnityEngine_RPC3323229423.h"
@@ -2447,6 +2591,8 @@
 #include "UnityEngine_UnityEngine_Collider3497673348.h"
 #include "UnityEngine_UnityEngine_BoxCollider22920061.h"
 #include "UnityEngine_UnityEngine_CharacterController4094781467.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
+#include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "UnityEngine_UnityEngine_AudioSettings_AudioConfigu3743753033.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMReaderCallbac3007145346.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCal421863554.h"
@@ -2483,6 +2629,48 @@
 #include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode3212052468.h"
 #include "UnityEngine_UnityEngine_Scripting_RequiredByNative1913052472.h"
 #include "UnityEngine_UnityEngineInternal_GenericStack3718539591.h"
+#include "DOTween_U3CModuleU3E3783534214.h"
+#include "DOTween_DG_Tweening_TweenCallback3697142134.h"
+#include "DOTween_DG_Tweening_EaseFunction3306356708.h"
+#include "DOTween_DG_Tweening_DOVirtual1722510550.h"
+#include "DOTween_DG_Tweening_EaseFactory4203735666.h"
+#include "DOTween_DG_Tweening_TweenExtensions405253783.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions3524050470.h"
+#include "DOTween_DG_Tweening_TweenSettingsExtensions2285462830.h"
+#include "DOTween_DG_Tweening_Plugins_Color2Plugin3433430606.h"
+#include "DOTween_DG_Tweening_Plugins_DoublePlugin266400784.h"
+#include "DOTween_DG_Tweening_Plugins_LongPlugin1941283029.h"
+#include "DOTween_DG_Tweening_Plugins_UlongPlugin3231465400.h"
+#include "DOTween_DG_Tweening_Plugins_Vector3ArrayPlugin2378569512.h"
+#include "DOTween_DG_Tweening_Plugins_ColorPlugin4063724482.h"
+#include "DOTween_DG_Tweening_Plugins_IntPlugin180838436.h"
+#include "DOTween_DG_Tweening_Plugins_QuaternionPlugin1696644323.h"
+#include "DOTween_DG_Tweening_Plugins_RectPlugin391797831.h"
+#include "DOTween_DG_Tweening_Plugins_UintPlugin1040977389.h"
+#include "DOTween_DG_Tweening_Plugins_Vector2Plugin2164285386.h"
+#include "DOTween_DG_Tweening_Plugins_Vector4Plugin2164361360.h"
+#include "DOTween_DG_Tweening_Plugins_FloatPlugin3639480371.h"
+#include "DOTween_DG_Tweening_Plugins_Vector3Plugin2164530409.h"
+#include "DOTween_DG_Tweening_Plugins_Options_NoOptions2508431845.h"
+#include "DOTween_DG_Tweening_Plugins_Core_SpecialPluginsUti2241999250.h"
+#include "DOTween_DG_Tweening_Plugins_Core_PathCore_ABSPathD3294469411.h"
+#include "DOTween_DG_Tweening_Plugins_Core_PathCore_CatmullR3014762178.h"
+#include "DOTween_DG_Tweening_Plugins_Core_PathCore_LinearDe2073524639.h"
+#include "DOTween_DG_Tweening_Core_Extensions507052800.h"
+#include "DOTween_DG_Tweening_Core_SequenceCallback2782183128.h"
+#include "DOTween_DG_Tweening_Core_Utils2524017187.h"
+#include "DOTween_DG_Tweening_Core_Easing_Bounce3273339050.h"
+#include "DOTween_DG_Tweening_Core_Easing_Flash1282698556.h"
+#include "DOTween_U3CPrivateImplementationDetailsU3E___Static978476011.h"
+#include "DOTween_U3CPrivateImplementationDetailsU3E___Stati3707359366.h"
+#include "DOTween_U3CPrivateImplementationDetailsU3E___Stati1468992140.h"
+#include "Excel_U3CModuleU3E3783534214.h"
+#include "Excel_Excel_Core_OpenXmlFormat_XlsxSST3732229269.h"
+#include "Excel_Excel_Core_ReferenceHelper1500920275.h"
+#include "Excel_Excel_ExcelReaderFactory1592333972.h"
+#include "Excel_Excel_Log_Logger_NullLog2892847919.h"
+#include "Excel_U3CPrivateImplementationDetailsU3EU7B10037FE4120193108.h"
+#include "Excel_U3CPrivateImplementationDetailsU3EU7B10037FEE631794874.h"
 #include "AssemblyU2DCSharp_U3CModuleU3E3783534214.h"
 #include "AssemblyU2DCSharp_DragDropContainer3035769598.h"
 #include "AssemblyU2DCSharp_UpdateManager_OnUpdate2310536555.h"
@@ -2512,7 +2700,6 @@
 #include "AssemblyU2DCSharp_UIPanel_OnChangeDelegate1697451811.h"
 #include "AssemblyU2DCSharp_UISlicedSprite4102963883.h"
 #include "AssemblyU2DCSharp_UITiledSprite240360451.h"
-#include "AssemblyU2DCSharp_LoginButton970805563.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU2866209745.h"
 
 
@@ -2522,7 +2709,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[11710] = 
+extern const int32_t g_FieldOffsetTable[12317] = 
 {
 	0,
 	0,
@@ -10242,6 +10429,10 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	0,
 	0,
 	0,
+	ReplacementEvaluator_t1001703513::get_offset_of_regex_0(),
+	ReplacementEvaluator_t1001703513::get_offset_of_n_pieces_1(),
+	ReplacementEvaluator_t1001703513::get_offset_of_pieces_2(),
+	ReplacementEvaluator_t1001703513::get_offset_of_replacement_3(),
 	CompositeExpression_t1921307915::get_offset_of_expressions_0(),
 	RegularExpression_t3083097024::get_offset_of_group_count_1(),
 	CapturingGroup_t3690174926::get_offset_of_gid_1(),
@@ -10348,211 +10539,6 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields::get_offset_of_U24U24fieldU2D3_1(),
 	U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields::get_offset_of_U24U24fieldU2D4_2(),
 	U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields::get_offset_of_U24U24fieldU2D5_3(),
-	ProviderBase_t2882126354::get_offset_of_alreadyInitialized_0(),
-	ProviderBase_t2882126354::get_offset_of__description_1(),
-	ProviderBase_t2882126354::get_offset_of__name_2(),
-	ProviderCollection_t2548499159::get_offset_of_lookup_0(),
-	ProviderCollection_t2548499159::get_offset_of_readOnly_1(),
-	ProviderCollection_t2548499159::get_offset_of_values_2(),
-	ClientConfigurationSystem_t4294641134::get_offset_of_cfg_0(),
-	ConfigNameValueCollection_t2395569530::get_offset_of_modified_12(),
-	ConfigInfo_t546730838::get_offset_of_Name_0(),
-	ConfigInfo_t546730838::get_offset_of_TypeName_1(),
-	ConfigInfo_t546730838::get_offset_of_Type_2(),
-	ConfigInfo_t546730838::get_offset_of_streamName_3(),
-	ConfigInfo_t546730838::get_offset_of_Parent_4(),
-	ConfigInfo_t546730838::get_offset_of_ConfigHost_5(),
-	Configuration_t3335372970::get_offset_of_parent_0(),
-	Configuration_t3335372970::get_offset_of_elementData_1(),
-	Configuration_t3335372970::get_offset_of_streamName_2(),
-	Configuration_t3335372970::get_offset_of_rootSectionGroup_3(),
-	Configuration_t3335372970::get_offset_of_locations_4(),
-	Configuration_t3335372970::get_offset_of_rootGroup_5(),
-	Configuration_t3335372970::get_offset_of_system_6(),
-	Configuration_t3335372970::get_offset_of_hasFile_7(),
-	Configuration_t3335372970::get_offset_of_rootNamespace_8(),
-	Configuration_t3335372970::get_offset_of_configPath_9(),
-	Configuration_t3335372970::get_offset_of_locationConfigPath_10(),
-	Configuration_t3335372970::get_offset_of_locationSubPath_11(),
-	ConfigurationAllowDefinition_t3250313246::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	ConfigurationAllowExeDefinition_t3860111898::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	ConfigurationCollectionAttribute_t2811353736::get_offset_of_addItemName_0(),
-	ConfigurationCollectionAttribute_t2811353736::get_offset_of_clearItemsName_1(),
-	ConfigurationCollectionAttribute_t2811353736::get_offset_of_removeItemName_2(),
-	ConfigurationCollectionAttribute_t2811353736::get_offset_of_collectionType_3(),
-	ConfigurationCollectionAttribute_t2811353736::get_offset_of_itemType_4(),
-	ConfigurationElement_t1776195828::get_offset_of_rawXml_0(),
-	ConfigurationElement_t1776195828::get_offset_of_modified_1(),
-	ConfigurationElement_t1776195828::get_offset_of_map_2(),
-	ConfigurationElement_t1776195828::get_offset_of_keyProps_3(),
-	ConfigurationElement_t1776195828::get_offset_of_defaultCollection_4(),
-	ConfigurationElement_t1776195828::get_offset_of_readOnly_5(),
-	ConfigurationElement_t1776195828::get_offset_of_elementInfo_6(),
-	ConfigurationElement_t1776195828::get_offset_of__configuration_7(),
-	ConfigurationElement_t1776195828::get_offset_of_lockAllAttributesExcept_8(),
-	ConfigurationElement_t1776195828::get_offset_of_lockAllElementsExcept_9(),
-	ConfigurationElement_t1776195828::get_offset_of_lockAttributes_10(),
-	ConfigurationElement_t1776195828::get_offset_of_lockElements_11(),
-	ConfigurationElement_t1776195828::get_offset_of_lockItem_12(),
-	ElementMap_t997038224_StaticFields::get_offset_of_elementMaps_0(),
-	ElementMap_t997038224::get_offset_of_properties_1(),
-	ElementMap_t997038224::get_offset_of_collectionAttribute_2(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_list_13(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_removed_14(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_inherited_15(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_emitClear_16(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_modified_17(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_comparer_18(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_inheritedLimitIndex_19(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_addElementName_20(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_clearElementName_21(),
-	ConfigurationElementCollection_t1911180302::get_offset_of_removeElementName_22(),
-	ConfigurationRemoveElement_t3305291330::get_offset_of_properties_13(),
-	ConfigurationRemoveElement_t3305291330::get_offset_of__origElement_14(),
-	ConfigurationRemoveElement_t3305291330::get_offset_of__origCollection_15(),
-	ConfigurationElementCollectionType_t1806001494::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	ConfigurationErrorsException_t1362721126::get_offset_of_filename_13(),
-	ConfigurationErrorsException_t1362721126::get_offset_of_line_14(),
-	ConfigurationFileMap_t2625210096::get_offset_of_machineConfigFilename_0(),
-	ConfigurationLocation_t1895107553_StaticFields::get_offset_of_pathTrimChars_0(),
-	ConfigurationLocation_t1895107553::get_offset_of_path_1(),
-	ConfigurationLocation_t1895107553::get_offset_of_configuration_2(),
-	ConfigurationLocation_t1895107553::get_offset_of_parent_3(),
-	ConfigurationLocation_t1895107553::get_offset_of_xmlContent_4(),
-	ConfigurationLocation_t1895107553::get_offset_of_parentResolved_5(),
-	ConfigurationLocation_t1895107553::get_offset_of_allowOverride_6(),
-	ConfigurationLockType_t131834733::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	ConfigurationLockCollection_t1011762925::get_offset_of_names_0(),
-	ConfigurationLockCollection_t1011762925::get_offset_of_element_1(),
-	ConfigurationLockCollection_t1011762925::get_offset_of_lockType_2(),
-	ConfigurationLockCollection_t1011762925::get_offset_of_is_modified_3(),
-	ConfigurationLockCollection_t1011762925::get_offset_of_valid_name_hash_4(),
-	ConfigurationLockCollection_t1011762925::get_offset_of_valid_names_5(),
-	ConfigurationManager_t2608608455_StaticFields::get_offset_of_configFactory_0(),
-	ConfigurationManager_t2608608455_StaticFields::get_offset_of_configSystem_1(),
-	ConfigurationManager_t2608608455_StaticFields::get_offset_of_lockobj_2(),
-	ConfigurationProperty_t2048066811_StaticFields::get_offset_of_NoDefaultValue_0(),
-	ConfigurationProperty_t2048066811::get_offset_of_name_1(),
-	ConfigurationProperty_t2048066811::get_offset_of_type_2(),
-	ConfigurationProperty_t2048066811::get_offset_of_default_value_3(),
-	ConfigurationProperty_t2048066811::get_offset_of_converter_4(),
-	ConfigurationProperty_t2048066811::get_offset_of_validation_5(),
-	ConfigurationProperty_t2048066811::get_offset_of_flags_6(),
-	ConfigurationProperty_t2048066811::get_offset_of_description_7(),
-	ConfigurationProperty_t2048066811::get_offset_of_collectionAttribute_8(),
-	ConfigurationPropertyAttribute_t3655647199::get_offset_of_name_0(),
-	ConfigurationPropertyAttribute_t3655647199::get_offset_of_default_value_1(),
-	ConfigurationPropertyAttribute_t3655647199::get_offset_of_flags_2(),
-	ConfigurationPropertyCollection_t3473514151::get_offset_of_collection_0(),
-	ConfigurationPropertyOptions_t3219689025::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	ConfigurationSaveMode_t700320212::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	ConfigurationSection_t2600766927::get_offset_of_sectionInformation_13(),
-	ConfigurationSection_t2600766927::get_offset_of_section_handler_14(),
-	ConfigurationSection_t2600766927::get_offset_of_externalDataXml_15(),
-	ConfigurationSection_t2600766927::get_offset_of__configContext_16(),
-	ConfigurationSectionCollection_t4261113299::get_offset_of_group_10(),
-	ConfigurationSectionCollection_t4261113299::get_offset_of_config_11(),
-	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U3CU24s_32U3E__0_0(),
-	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U3CkeyU3E__1_1(),
-	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U24PC_2(),
-	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U24current_3(),
-	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U3CU3Ef__this_4(),
-	ConfigurationSectionGroup_t2230982736::get_offset_of_sections_0(),
-	ConfigurationSectionGroup_t2230982736::get_offset_of_groups_1(),
-	ConfigurationSectionGroup_t2230982736::get_offset_of_config_2(),
-	ConfigurationSectionGroup_t2230982736::get_offset_of_group_3(),
-	ConfigurationSectionGroup_t2230982736::get_offset_of_initialized_4(),
-	ConfigurationSectionGroupCollection_t575145286::get_offset_of_group_10(),
-	ConfigurationSectionGroupCollection_t575145286::get_offset_of_config_11(),
-	ConfigurationUserLevel_t1204907851::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	ConfigurationValidatorAttribute_t1007519140::get_offset_of_validatorType_0(),
-	ConfigurationValidatorAttribute_t1007519140::get_offset_of_instance_1(),
-	ConfigXmlTextReader_t3212066157::get_offset_of_fileName_8(),
-	DefaultSection_t3840532724_StaticFields::get_offset_of_properties_17(),
-	ElementInformation_t3165583784::get_offset_of_propertyInfo_0(),
-	ElementInformation_t3165583784::get_offset_of_owner_1(),
-	ElementInformation_t3165583784::get_offset_of_properties_2(),
-	ExeConfigurationFileMap_t1419586304::get_offset_of_exeConfigFilename_1(),
-	ExeConfigurationFileMap_t1419586304::get_offset_of_localUserConfigFilename_2(),
-	ExeConfigurationFileMap_t1419586304::get_offset_of_roamingUserConfigFilename_3(),
-	IgnoreSection_t681509237::get_offset_of_xml_17(),
-	IgnoreSection_t681509237_StaticFields::get_offset_of_properties_18(),
-	InternalConfigurationSystem_t2108740756::get_offset_of_host_0(),
-	InternalConfigurationSystem_t2108740756::get_offset_of_root_1(),
-	InternalConfigurationSystem_t2108740756::get_offset_of_hostInitParams_2(),
-	ExeConfigurationHost_t2778769322::get_offset_of_map_0(),
-	ExeConfigurationHost_t2778769322::get_offset_of_level_1(),
-	ExeConfigurationHost_t2778769322_StaticFields::get_offset_of_U3CU3Ef__switchU24map0_2(),
-	InternalConfigurationRoot_t547578517::get_offset_of_host_0(),
-	InternalConfigurationRoot_t547578517::get_offset_of_isDesignTime_1(),
-	PropertyInformation_t2089433965::get_offset_of_isModified_0(),
-	PropertyInformation_t2089433965::get_offset_of_val_1(),
-	PropertyInformation_t2089433965::get_offset_of_origin_2(),
-	PropertyInformation_t2089433965::get_offset_of_owner_3(),
-	PropertyInformation_t2089433965::get_offset_of_property_4(),
-	PropertyInformationEnumerator_t1453501302::get_offset_of_collection_0(),
-	PropertyInformationEnumerator_t1453501302::get_offset_of_position_1(),
-	PropertyValueOrigin_t1217826846::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	ProtectedConfigurationSection_t3541826375_StaticFields::get_offset_of_defaultProviderProp_17(),
-	ProtectedConfigurationSection_t3541826375_StaticFields::get_offset_of_providersProp_18(),
-	ProtectedConfigurationSection_t3541826375_StaticFields::get_offset_of_properties_19(),
-	ProtectedConfigurationSection_t3541826375::get_offset_of_providers_20(),
-	ProviderSettings_t873049714::get_offset_of_parameters_13(),
-	ProviderSettings_t873049714_StaticFields::get_offset_of_nameProp_14(),
-	ProviderSettings_t873049714_StaticFields::get_offset_of_typeProp_15(),
-	ProviderSettings_t873049714_StaticFields::get_offset_of_properties_16(),
-	ProviderSettingsCollection_t585304908_StaticFields::get_offset_of_props_23(),
-	SectionInfo_t1739019515::get_offset_of_allowLocation_6(),
-	SectionInfo_t1739019515::get_offset_of_requirePermission_7(),
-	SectionInfo_t1739019515::get_offset_of_restartOnExternalChanges_8(),
-	SectionInfo_t1739019515::get_offset_of_allowDefinition_9(),
-	SectionInfo_t1739019515::get_offset_of_allowExeDefinition_10(),
-	SectionInfo_t1739019515_StaticFields::get_offset_of_U3CU3Ef__switchU24map1_11(),
-	SectionGroupInfo_t2346323570::get_offset_of_sections_6(),
-	SectionGroupInfo_t2346323570::get_offset_of_groups_7(),
-	SectionGroupInfo_t2346323570_StaticFields::get_offset_of_emptyList_8(),
-	SectionInformation_t2754609709::get_offset_of_parent_0(),
-	SectionInformation_t2754609709::get_offset_of_allow_definition_1(),
-	SectionInformation_t2754609709::get_offset_of_allow_exe_definition_2(),
-	SectionInformation_t2754609709::get_offset_of_allow_location_3(),
-	SectionInformation_t2754609709::get_offset_of_allow_override_4(),
-	SectionInformation_t2754609709::get_offset_of_inherit_on_child_apps_5(),
-	SectionInformation_t2754609709::get_offset_of_restart_on_external_changes_6(),
-	SectionInformation_t2754609709::get_offset_of_require_permission_7(),
-	SectionInformation_t2754609709::get_offset_of_config_source_8(),
-	SectionInformation_t2754609709::get_offset_of_name_9(),
-	SectionInformation_t2754609709::get_offset_of_raw_xml_10(),
-	SectionInformation_t2754609709::get_offset_of_protection_provider_11(),
-	SectionInformation_t2754609709::get_offset_of_U3CConfigFilePathU3Ek__BackingField_12(),
-	MonoTODOAttribute_t3487514022::get_offset_of_comment_0(),
 	BigInteger_t925946153::get_offset_of_length_0(),
 	BigInteger_t925946153::get_offset_of_data_1(),
 	BigInteger_t925946153_StaticFields::get_offset_of_smallPrimes_2(),
@@ -11044,6 +11030,249 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	U3CPrivateImplementationDetailsU3E_t1486305140_StaticFields::get_offset_of_U24U24fieldU2D17_12(),
 	U3CPrivateImplementationDetailsU3E_t1486305140_StaticFields::get_offset_of_U24U24fieldU2D21_13(),
 	U3CPrivateImplementationDetailsU3E_t1486305140_StaticFields::get_offset_of_U24U24fieldU2D22_14(),
+	ProviderBase_t2882126354::get_offset_of_alreadyInitialized_0(),
+	ProviderBase_t2882126354::get_offset_of__description_1(),
+	ProviderBase_t2882126354::get_offset_of__name_2(),
+	ProviderCollection_t2548499159::get_offset_of_lookup_0(),
+	ProviderCollection_t2548499159::get_offset_of_readOnly_1(),
+	ProviderCollection_t2548499159::get_offset_of_values_2(),
+	ClientConfigurationSystem_t4294641134::get_offset_of_cfg_0(),
+	ConfigNameValueCollection_t2395569530::get_offset_of_modified_12(),
+	ConfigInfo_t546730838::get_offset_of_Name_0(),
+	ConfigInfo_t546730838::get_offset_of_TypeName_1(),
+	ConfigInfo_t546730838::get_offset_of_Type_2(),
+	ConfigInfo_t546730838::get_offset_of_streamName_3(),
+	ConfigInfo_t546730838::get_offset_of_Parent_4(),
+	ConfigInfo_t546730838::get_offset_of_ConfigHost_5(),
+	Configuration_t3335372970::get_offset_of_parent_0(),
+	Configuration_t3335372970::get_offset_of_elementData_1(),
+	Configuration_t3335372970::get_offset_of_streamName_2(),
+	Configuration_t3335372970::get_offset_of_rootSectionGroup_3(),
+	Configuration_t3335372970::get_offset_of_locations_4(),
+	Configuration_t3335372970::get_offset_of_rootGroup_5(),
+	Configuration_t3335372970::get_offset_of_system_6(),
+	Configuration_t3335372970::get_offset_of_hasFile_7(),
+	Configuration_t3335372970::get_offset_of_rootNamespace_8(),
+	Configuration_t3335372970::get_offset_of_configPath_9(),
+	Configuration_t3335372970::get_offset_of_locationConfigPath_10(),
+	Configuration_t3335372970::get_offset_of_locationSubPath_11(),
+	ConfigurationAllowDefinition_t3250313246::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	ConfigurationAllowExeDefinition_t3860111898::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	ConfigurationCollectionAttribute_t2811353736::get_offset_of_addItemName_0(),
+	ConfigurationCollectionAttribute_t2811353736::get_offset_of_clearItemsName_1(),
+	ConfigurationCollectionAttribute_t2811353736::get_offset_of_removeItemName_2(),
+	ConfigurationCollectionAttribute_t2811353736::get_offset_of_collectionType_3(),
+	ConfigurationCollectionAttribute_t2811353736::get_offset_of_itemType_4(),
+	ConfigurationElement_t1776195828::get_offset_of_rawXml_0(),
+	ConfigurationElement_t1776195828::get_offset_of_modified_1(),
+	ConfigurationElement_t1776195828::get_offset_of_map_2(),
+	ConfigurationElement_t1776195828::get_offset_of_keyProps_3(),
+	ConfigurationElement_t1776195828::get_offset_of_defaultCollection_4(),
+	ConfigurationElement_t1776195828::get_offset_of_readOnly_5(),
+	ConfigurationElement_t1776195828::get_offset_of_elementInfo_6(),
+	ConfigurationElement_t1776195828::get_offset_of__configuration_7(),
+	ConfigurationElement_t1776195828::get_offset_of_lockAllAttributesExcept_8(),
+	ConfigurationElement_t1776195828::get_offset_of_lockAllElementsExcept_9(),
+	ConfigurationElement_t1776195828::get_offset_of_lockAttributes_10(),
+	ConfigurationElement_t1776195828::get_offset_of_lockElements_11(),
+	ConfigurationElement_t1776195828::get_offset_of_lockItem_12(),
+	ElementMap_t997038224_StaticFields::get_offset_of_elementMaps_0(),
+	ElementMap_t997038224::get_offset_of_properties_1(),
+	ElementMap_t997038224::get_offset_of_collectionAttribute_2(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_list_13(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_removed_14(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_inherited_15(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_emitClear_16(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_modified_17(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_comparer_18(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_inheritedLimitIndex_19(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_addElementName_20(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_clearElementName_21(),
+	ConfigurationElementCollection_t1911180302::get_offset_of_removeElementName_22(),
+	ConfigurationRemoveElement_t3305291330::get_offset_of_properties_13(),
+	ConfigurationRemoveElement_t3305291330::get_offset_of__origElement_14(),
+	ConfigurationRemoveElement_t3305291330::get_offset_of__origCollection_15(),
+	ConfigurationElementCollectionType_t1806001494::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	ConfigurationErrorsException_t1362721126::get_offset_of_filename_13(),
+	ConfigurationErrorsException_t1362721126::get_offset_of_line_14(),
+	ConfigurationFileMap_t2625210096::get_offset_of_machineConfigFilename_0(),
+	ConfigurationLocation_t1895107553_StaticFields::get_offset_of_pathTrimChars_0(),
+	ConfigurationLocation_t1895107553::get_offset_of_path_1(),
+	ConfigurationLocation_t1895107553::get_offset_of_configuration_2(),
+	ConfigurationLocation_t1895107553::get_offset_of_parent_3(),
+	ConfigurationLocation_t1895107553::get_offset_of_xmlContent_4(),
+	ConfigurationLocation_t1895107553::get_offset_of_parentResolved_5(),
+	ConfigurationLocation_t1895107553::get_offset_of_allowOverride_6(),
+	ConfigurationLockType_t131834733::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	ConfigurationLockCollection_t1011762925::get_offset_of_names_0(),
+	ConfigurationLockCollection_t1011762925::get_offset_of_element_1(),
+	ConfigurationLockCollection_t1011762925::get_offset_of_lockType_2(),
+	ConfigurationLockCollection_t1011762925::get_offset_of_is_modified_3(),
+	ConfigurationLockCollection_t1011762925::get_offset_of_valid_name_hash_4(),
+	ConfigurationLockCollection_t1011762925::get_offset_of_valid_names_5(),
+	ConfigurationManager_t2608608455_StaticFields::get_offset_of_configFactory_0(),
+	ConfigurationManager_t2608608455_StaticFields::get_offset_of_configSystem_1(),
+	ConfigurationManager_t2608608455_StaticFields::get_offset_of_lockobj_2(),
+	ConfigurationProperty_t2048066811_StaticFields::get_offset_of_NoDefaultValue_0(),
+	ConfigurationProperty_t2048066811::get_offset_of_name_1(),
+	ConfigurationProperty_t2048066811::get_offset_of_type_2(),
+	ConfigurationProperty_t2048066811::get_offset_of_default_value_3(),
+	ConfigurationProperty_t2048066811::get_offset_of_converter_4(),
+	ConfigurationProperty_t2048066811::get_offset_of_validation_5(),
+	ConfigurationProperty_t2048066811::get_offset_of_flags_6(),
+	ConfigurationProperty_t2048066811::get_offset_of_description_7(),
+	ConfigurationProperty_t2048066811::get_offset_of_collectionAttribute_8(),
+	ConfigurationPropertyAttribute_t3655647199::get_offset_of_name_0(),
+	ConfigurationPropertyAttribute_t3655647199::get_offset_of_default_value_1(),
+	ConfigurationPropertyAttribute_t3655647199::get_offset_of_flags_2(),
+	ConfigurationPropertyCollection_t3473514151::get_offset_of_collection_0(),
+	ConfigurationPropertyOptions_t3219689025::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	ConfigurationSaveMode_t700320212::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	ConfigurationSection_t2600766927::get_offset_of_sectionInformation_13(),
+	ConfigurationSection_t2600766927::get_offset_of_section_handler_14(),
+	ConfigurationSection_t2600766927::get_offset_of_externalDataXml_15(),
+	ConfigurationSection_t2600766927::get_offset_of__configContext_16(),
+	ConfigurationSectionCollection_t4261113299::get_offset_of_group_10(),
+	ConfigurationSectionCollection_t4261113299::get_offset_of_config_11(),
+	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U3CU24s_32U3E__0_0(),
+	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U3CkeyU3E__1_1(),
+	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U24PC_2(),
+	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U24current_3(),
+	U3CGetEnumeratorU3Ec__Iterator0_t1795270620::get_offset_of_U3CU3Ef__this_4(),
+	ConfigurationSectionGroup_t2230982736::get_offset_of_sections_0(),
+	ConfigurationSectionGroup_t2230982736::get_offset_of_groups_1(),
+	ConfigurationSectionGroup_t2230982736::get_offset_of_config_2(),
+	ConfigurationSectionGroup_t2230982736::get_offset_of_group_3(),
+	ConfigurationSectionGroup_t2230982736::get_offset_of_initialized_4(),
+	ConfigurationSectionGroupCollection_t575145286::get_offset_of_group_10(),
+	ConfigurationSectionGroupCollection_t575145286::get_offset_of_config_11(),
+	ConfigurationUserLevel_t1204907851::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	ConfigurationValidatorAttribute_t1007519140::get_offset_of_validatorType_0(),
+	ConfigurationValidatorAttribute_t1007519140::get_offset_of_instance_1(),
+	ConfigXmlTextReader_t3212066157::get_offset_of_fileName_8(),
+	DefaultSection_t3840532724_StaticFields::get_offset_of_properties_17(),
+	ElementInformation_t3165583784::get_offset_of_propertyInfo_0(),
+	ElementInformation_t3165583784::get_offset_of_owner_1(),
+	ElementInformation_t3165583784::get_offset_of_properties_2(),
+	ExeConfigurationFileMap_t1419586304::get_offset_of_exeConfigFilename_1(),
+	ExeConfigurationFileMap_t1419586304::get_offset_of_localUserConfigFilename_2(),
+	ExeConfigurationFileMap_t1419586304::get_offset_of_roamingUserConfigFilename_3(),
+	IgnoreSection_t681509237::get_offset_of_xml_17(),
+	IgnoreSection_t681509237_StaticFields::get_offset_of_properties_18(),
+	InternalConfigurationSystem_t2108740756::get_offset_of_host_0(),
+	InternalConfigurationSystem_t2108740756::get_offset_of_root_1(),
+	InternalConfigurationSystem_t2108740756::get_offset_of_hostInitParams_2(),
+	ExeConfigurationHost_t2778769322::get_offset_of_map_0(),
+	ExeConfigurationHost_t2778769322::get_offset_of_level_1(),
+	ExeConfigurationHost_t2778769322_StaticFields::get_offset_of_U3CU3Ef__switchU24map0_2(),
+	InternalConfigurationRoot_t547578517::get_offset_of_host_0(),
+	InternalConfigurationRoot_t547578517::get_offset_of_isDesignTime_1(),
+	PropertyInformation_t2089433965::get_offset_of_isModified_0(),
+	PropertyInformation_t2089433965::get_offset_of_val_1(),
+	PropertyInformation_t2089433965::get_offset_of_origin_2(),
+	PropertyInformation_t2089433965::get_offset_of_owner_3(),
+	PropertyInformation_t2089433965::get_offset_of_property_4(),
+	PropertyInformationEnumerator_t1453501302::get_offset_of_collection_0(),
+	PropertyInformationEnumerator_t1453501302::get_offset_of_position_1(),
+	PropertyValueOrigin_t1217826846::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	ProtectedConfigurationSection_t3541826375_StaticFields::get_offset_of_defaultProviderProp_17(),
+	ProtectedConfigurationSection_t3541826375_StaticFields::get_offset_of_providersProp_18(),
+	ProtectedConfigurationSection_t3541826375_StaticFields::get_offset_of_properties_19(),
+	ProtectedConfigurationSection_t3541826375::get_offset_of_providers_20(),
+	ProviderSettings_t873049714::get_offset_of_parameters_13(),
+	ProviderSettings_t873049714_StaticFields::get_offset_of_nameProp_14(),
+	ProviderSettings_t873049714_StaticFields::get_offset_of_typeProp_15(),
+	ProviderSettings_t873049714_StaticFields::get_offset_of_properties_16(),
+	ProviderSettingsCollection_t585304908_StaticFields::get_offset_of_props_23(),
+	SectionInfo_t1739019515::get_offset_of_allowLocation_6(),
+	SectionInfo_t1739019515::get_offset_of_requirePermission_7(),
+	SectionInfo_t1739019515::get_offset_of_restartOnExternalChanges_8(),
+	SectionInfo_t1739019515::get_offset_of_allowDefinition_9(),
+	SectionInfo_t1739019515::get_offset_of_allowExeDefinition_10(),
+	SectionInfo_t1739019515_StaticFields::get_offset_of_U3CU3Ef__switchU24map1_11(),
+	SectionGroupInfo_t2346323570::get_offset_of_sections_6(),
+	SectionGroupInfo_t2346323570::get_offset_of_groups_7(),
+	SectionGroupInfo_t2346323570_StaticFields::get_offset_of_emptyList_8(),
+	SectionInformation_t2754609709::get_offset_of_parent_0(),
+	SectionInformation_t2754609709::get_offset_of_allow_definition_1(),
+	SectionInformation_t2754609709::get_offset_of_allow_exe_definition_2(),
+	SectionInformation_t2754609709::get_offset_of_allow_location_3(),
+	SectionInformation_t2754609709::get_offset_of_allow_override_4(),
+	SectionInformation_t2754609709::get_offset_of_inherit_on_child_apps_5(),
+	SectionInformation_t2754609709::get_offset_of_restart_on_external_changes_6(),
+	SectionInformation_t2754609709::get_offset_of_require_permission_7(),
+	SectionInformation_t2754609709::get_offset_of_config_source_8(),
+	SectionInformation_t2754609709::get_offset_of_name_9(),
+	SectionInformation_t2754609709::get_offset_of_raw_xml_10(),
+	SectionInformation_t2754609709::get_offset_of_protection_provider_11(),
+	SectionInformation_t2754609709::get_offset_of_U3CConfigFilePathU3Ek__BackingField_12(),
+	MonoTODOAttribute_t3487514022::get_offset_of_comment_0(),
+	KeyBuilder_t3965881086_StaticFields::get_offset_of_rng_0(),
+	SymmetricTransform_t1394030014::get_offset_of_algo_0(),
+	SymmetricTransform_t1394030014::get_offset_of_encrypt_1(),
+	SymmetricTransform_t1394030014::get_offset_of_BlockSizeByte_2(),
+	SymmetricTransform_t1394030014::get_offset_of_temp_3(),
+	SymmetricTransform_t1394030014::get_offset_of_temp2_4(),
+	SymmetricTransform_t1394030014::get_offset_of_workBuff_5(),
+	SymmetricTransform_t1394030014::get_offset_of_workout_6(),
+	SymmetricTransform_t1394030014::get_offset_of_FeedBackByte_7(),
+	SymmetricTransform_t1394030014::get_offset_of_FeedBackIter_8(),
+	SymmetricTransform_t1394030014::get_offset_of_m_disposed_9(),
+	SymmetricTransform_t1394030014::get_offset_of_lastBlock_10(),
+	SymmetricTransform_t1394030014::get_offset_of__rng_11(),
+	AesTransform_t3733702461::get_offset_of_expandedKey_12(),
+	AesTransform_t3733702461::get_offset_of_Nk_13(),
+	AesTransform_t3733702461::get_offset_of_Nr_14(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_Rcon_15(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_SBox_16(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_iSBox_17(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_T0_18(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_T1_19(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_T2_20(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_T3_21(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_iT0_22(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_iT1_23(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_iT2_24(),
+	AesTransform_t3733702461_StaticFields::get_offset_of_iT3_25(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D1_0(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D2_1(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D3_2(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D4_3(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D5_4(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D6_5(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D7_6(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D8_7(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D9_8(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D10_9(),
+	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D11_10(),
 	ApplicationIDAttribute_t3606647885::get_offset_of_guid_0(),
 	ApplicationNameAttribute_t3499772351::get_offset_of_name_0(),
 	Adler32_t1759601101::get_offset_of_checksum_0(),
@@ -11199,44 +11428,6 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	U3CPrivateImplementationDetailsU3EU7B6C7CFC05U2D3661U2D46A0U2D98ABU2DFC6F81793937U7D_t2804977885_StaticFields::get_offset_of_U24U24method0x60004c1U2D1_7(),
 	U3CPrivateImplementationDetailsU3EU7B6C7CFC05U2D3661U2D46A0U2D98ABU2DFC6F81793937U7D_t2804977885_StaticFields::get_offset_of_U24U24method0x60004c1U2D2_8(),
 	U3CPrivateImplementationDetailsU3EU7B6C7CFC05U2D3661U2D46A0U2D98ABU2DFC6F81793937U7D_t2804977885_StaticFields::get_offset_of_U24U24method0x60004c1U2D3_9(),
-	KeyBuilder_t3965881086_StaticFields::get_offset_of_rng_0(),
-	SymmetricTransform_t1394030014::get_offset_of_algo_0(),
-	SymmetricTransform_t1394030014::get_offset_of_encrypt_1(),
-	SymmetricTransform_t1394030014::get_offset_of_BlockSizeByte_2(),
-	SymmetricTransform_t1394030014::get_offset_of_temp_3(),
-	SymmetricTransform_t1394030014::get_offset_of_temp2_4(),
-	SymmetricTransform_t1394030014::get_offset_of_workBuff_5(),
-	SymmetricTransform_t1394030014::get_offset_of_workout_6(),
-	SymmetricTransform_t1394030014::get_offset_of_FeedBackByte_7(),
-	SymmetricTransform_t1394030014::get_offset_of_FeedBackIter_8(),
-	SymmetricTransform_t1394030014::get_offset_of_m_disposed_9(),
-	SymmetricTransform_t1394030014::get_offset_of_lastBlock_10(),
-	SymmetricTransform_t1394030014::get_offset_of__rng_11(),
-	AesTransform_t3733702461::get_offset_of_expandedKey_12(),
-	AesTransform_t3733702461::get_offset_of_Nk_13(),
-	AesTransform_t3733702461::get_offset_of_Nr_14(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_Rcon_15(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_SBox_16(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_iSBox_17(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_T0_18(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_T1_19(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_T2_20(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_T3_21(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_iT0_22(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_iT1_23(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_iT2_24(),
-	AesTransform_t3733702461_StaticFields::get_offset_of_iT3_25(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D1_0(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D2_1(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D3_2(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D4_3(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D5_4(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D6_5(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D7_6(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D8_7(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D9_8(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D10_9(),
-	U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields::get_offset_of_U24U24fieldU2D11_10(),
 	Parser_t1744254983::get_offset_of_cacheAggregationResults_0(),
 	Parser_t1744254983::get_offset_of_aggregationRows_1(),
 	Parser_t1744254983_StaticFields::get_offset_of_yacc_verbose_flag_2(),
@@ -11858,61 +12049,6 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	U3CPrivateImplementationDetailsU3E_t1486305142_StaticFields::get_offset_of_U24U24fieldU2D6_6(),
 	U3CPrivateImplementationDetailsU3E_t1486305142_StaticFields::get_offset_of_U24U24fieldU2D7_7(),
 	U3CPrivateImplementationDetailsU3E_t1486305142_StaticFields::get_offset_of_U24U24fieldU2D8_8(),
-	FormatReader_t3367903422::get_offset_of_U3CFormatStringU3Ek__BackingField_0(),
-	Helpers_t551273995_StaticFields::get_offset_of_re_0(),
-	Helpers_t551273995_StaticFields::get_offset_of_CSU24U3CU3E9__CachedAnonymousMethodDelegate1_1(),
-	XlsxDimension_t1977862101::get_offset_of__FirstRow_0(),
-	XlsxDimension_t1977862101::get_offset_of__LastRow_1(),
-	XlsxDimension_t1977862101::get_offset_of__FirstCol_2(),
-	XlsxDimension_t1977862101::get_offset_of__LastCol_3(),
-	XlsxNumFmt_t1220338590::get_offset_of__Id_0(),
-	XlsxNumFmt_t1220338590::get_offset_of__FormatCode_1(),
-	XlsxStyles_t1776783765::get_offset_of__cellXfs_0(),
-	XlsxStyles_t1776783765::get_offset_of__NumFmts_1(),
-	XlsxWorkbook_t188684221::get_offset_of_sheets_0(),
-	XlsxWorkbook_t188684221::get_offset_of__SST_1(),
-	XlsxWorkbook_t188684221::get_offset_of__Styles_2(),
-	XlsxWorksheet_t2598215163::get_offset_of__dimension_0(),
-	XlsxWorksheet_t2598215163::get_offset_of__Name_1(),
-	XlsxWorksheet_t2598215163::get_offset_of__id_2(),
-	XlsxWorksheet_t2598215163::get_offset_of__rid_3(),
-	XlsxWorksheet_t2598215163::get_offset_of__path_4(),
-	XlsxWorksheet_t2598215163::get_offset_of_U3CIsEmptyU3Ek__BackingField_5(),
-	XlsxXf_t160302635::get_offset_of__Id_0(),
-	XlsxXf_t160302635::get_offset_of__numFmtId_1(),
-	XlsxXf_t160302635::get_offset_of__applyNumberFormat_2(),
-	ZipWorker_t1305438663::get_offset_of_buffer_0(),
-	ZipWorker_t1305438663::get_offset_of_disposed_1(),
-	ZipWorker_t1305438663::get_offset_of__isCleaned_2(),
-	ZipWorker_t1305438663::get_offset_of__tempPath_3(),
-	ZipWorker_t1305438663::get_offset_of__tempEnv_4(),
-	ZipWorker_t1305438663::get_offset_of__exceptionMessage_5(),
-	ZipWorker_t1305438663::get_offset_of__xlPath_6(),
-	ZipWorker_t1305438663::get_offset_of__format_7(),
-	ZipWorker_t1305438663::get_offset_of__isValid_8(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__workbook_0(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__isValid_1(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__isClosed_2(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__isFirstRead_3(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__exceptionMessage_4(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__depth_5(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__emptyRowCount_6(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__zipWorker_7(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__xmlReader_8(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__sheetStream_9(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__cellsValues_10(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__savedCellsValues_11(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of_disposed_12(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__isFirstRowAsColumnNames_13(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of_instanceId_14(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__defaultDateTimeStyles_15(),
-	ExcelOpenXmlReader_t1964336123::get_offset_of__namespaceUri_16(),
-	Log_t2157885282_StaticFields::get_offset_of__logType_0(),
-	Log_t2157885282_StaticFields::get_offset_of__logger_1(),
-	LogManager_t1846890795_StaticFields::get_offset_of__dictionary_0(),
-	LogManager_t1846890795_StaticFields::get_offset_of__sync_1(),
-	U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298_StaticFields::get_offset_of_U24U24method0x60000dfU2D1_0(),
-	U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298_StaticFields::get_offset_of_U24U24method0x60001a2U2D1_1(),
 	CompatibilityCheck_t2509986555::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -12238,6 +12374,15 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	RaycastHit_t87180320::get_offset_of_m_Distance_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	RaycastHit_t87180320::get_offset_of_m_UV_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	RaycastHit_t87180320::get_offset_of_m_Collider_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ContactPoint2D_t3659330976::get_offset_of_m_Point_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ContactPoint2D_t3659330976::get_offset_of_m_Normal_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ContactPoint2D_t3659330976::get_offset_of_m_Collider_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ContactPoint2D_t3659330976::get_offset_of_m_OtherCollider_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Collision2D_t1539500754::get_offset_of_m_Rigidbody_0(),
+	Collision2D_t1539500754::get_offset_of_m_Collider_1(),
+	Collision2D_t1539500754::get_offset_of_m_Contacts_2(),
+	Collision2D_t1539500754::get_offset_of_m_RelativeVelocity_3(),
+	Collision2D_t1539500754::get_offset_of_m_Enabled_4(),
 	AudioSettings_t3144015719_StaticFields::get_offset_of_OnAudioConfigurationChanged_0(),
 	AudioType_t4076847944::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
@@ -13111,6 +13256,621 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	0,
 	0,
 	TypeInferenceRuleAttribute_t1390152093::get_offset_of__rule_0(),
+	AutoPlay_t2503223703::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	AxisConstraint_t1244566668::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	Color2_t232726623::get_offset_of_ca_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Color2_t232726623::get_offset_of_cb_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	DOTween_t2276353038_StaticFields::get_offset_of_Version_0(),
+	DOTween_t2276353038_StaticFields::get_offset_of_useSafeMode_1(),
+	DOTween_t2276353038_StaticFields::get_offset_of_showUnityEditorReport_2(),
+	DOTween_t2276353038_StaticFields::get_offset_of_timeScale_3(),
+	DOTween_t2276353038_StaticFields::get_offset_of_useSmoothDeltaTime_4(),
+	DOTween_t2276353038_StaticFields::get_offset_of__logBehaviour_5(),
+	DOTween_t2276353038_StaticFields::get_offset_of_drawGizmos_6(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultUpdateType_7(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultTimeScaleIndependent_8(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultAutoPlay_9(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultAutoKill_10(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultLoopType_11(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultRecyclable_12(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultEaseType_13(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultEaseOvershootOrAmplitude_14(),
+	DOTween_t2276353038_StaticFields::get_offset_of_defaultEasePeriod_15(),
+	DOTween_t2276353038_StaticFields::get_offset_of_instance_16(),
+	DOTween_t2276353038_StaticFields::get_offset_of_isUnityEditor_17(),
+	DOTween_t2276353038_StaticFields::get_offset_of_isDebugBuild_18(),
+	DOTween_t2276353038_StaticFields::get_offset_of_maxActiveTweenersReached_19(),
+	DOTween_t2276353038_StaticFields::get_offset_of_maxActiveSequencesReached_20(),
+	DOTween_t2276353038_StaticFields::get_offset_of_GizmosDelegates_21(),
+	DOTween_t2276353038_StaticFields::get_offset_of_initialized_22(),
+	DOTween_t2276353038_StaticFields::get_offset_of_isQuitting_23(),
+	U3CU3Ec__DisplayClass52_0_t3467700650::get_offset_of_v_0(),
+	U3CU3Ec__DisplayClass52_0_t3467700650::get_offset_of_setter_1(),
+	U3CU3Ec__DisplayClass0_0_t3724530167::get_offset_of_val_0(),
+	U3CU3Ec__DisplayClass0_0_t3724530167::get_offset_of_onVirtualUpdate_1(),
+	Ease_t2502520296::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	U3CU3Ec__DisplayClass2_0_t2066423765::get_offset_of_motionDelay_0(),
+	U3CU3Ec__DisplayClass2_0_t2066423765::get_offset_of_customEase_1(),
+	PathMode_t1545785466::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	PathType_t2815988833::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	RotateMode_t1177727514::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	ScrambleMode_t385206138::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	LoopType_t2249218064::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	Sequence_t110643099::get_offset_of_sequencedTweens_51(),
+	Sequence_t110643099::get_offset_of__sequencedObjs_52(),
+	Sequence_t110643099::get_offset_of_lastTweenInsertTime_53(),
+	U3CU3Ec__DisplayClass0_0_t964842963::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass1_0_t964842866::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass2_0_t964843029::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass3_0_t964842932::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass4_0_t964842831::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass5_0_t964842734::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass6_0_t964842897::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass7_0_t964842800::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass8_0_t964843227::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass9_0_t964843130::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass10_0_t3010978348::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass11_0_t1424691431::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass12_0_t2728653346::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass13_0_t1142366429::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass14_0_t3575628352::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass15_0_t1989341435::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass16_0_t3293303350::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass17_0_t1707016433::get_offset_of_startValue_0(),
+	U3CU3Ec__DisplayClass17_0_t1707016433::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass18_0_t1881678340::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass19_0_t295391423::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass19_0_t295391423::get_offset_of_property_1(),
+	U3CU3Ec__DisplayClass20_0_t3010978441::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass21_0_t1424691524::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass21_0_t1424691524::get_offset_of_property_1(),
+	U3CU3Ec__DisplayClass22_0_t2728653439::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass22_0_t2728653439::get_offset_of_property_1(),
+	U3CU3Ec__DisplayClass23_0_t1142366522::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass24_0_t3575628445::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass24_0_t3575628445::get_offset_of_property_1(),
+	U3CU3Ec__DisplayClass25_0_t1989341528::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass26_0_t3293303443::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass26_0_t3293303443::get_offset_of_property_1(),
+	U3CU3Ec__DisplayClass27_0_t1707016526::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass27_0_t1707016526::get_offset_of_property_1(),
+	U3CU3Ec__DisplayClass28_0_t1881678433::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass29_0_t295391516::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass30_0_t3010978538::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass31_0_t1424691621::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass32_0_t2728653536::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass33_0_t1142366619::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass34_0_t3575628542::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass34_0_t3575628542::get_offset_of_offsetYSet_1(),
+	U3CU3Ec__DisplayClass34_0_t3575628542::get_offset_of_offsetY_2(),
+	U3CU3Ec__DisplayClass34_0_t3575628542::get_offset_of_s_3(),
+	U3CU3Ec__DisplayClass34_0_t3575628542::get_offset_of_endValue_4(),
+	U3CU3Ec__DisplayClass34_0_t3575628542::get_offset_of_startPosY_5(),
+	U3CU3Ec__DisplayClass35_0_t1989341625::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass36_0_t3293303540::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass37_0_t1707016623::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass38_0_t1881678530::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass39_0_t295391613::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass40_0_t3010978383::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass41_0_t1424691466::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass42_0_t2728653381::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass43_0_t1142366464::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass44_0_t3575628387::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass45_0_t1989341470::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass46_0_t3293303385::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass47_0_t1707016468::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass48_0_t1881678375::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass49_0_t295391458::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass50_0_t3010978224::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass51_0_t1424691307::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass52_0_t2728653222::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass53_0_t1142366305::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass54_0_t3575628228::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass55_0_t1989341311::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass56_0_t3293303226::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass57_0_t1707016309::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass58_0_t1881678216::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass59_0_t295391299::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass60_0_t3010978317::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass61_0_t1424691400::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass62_0_t2728653315::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass63_0_t1142366398::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass64_0_t3575628321::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass64_0_t3575628321::get_offset_of_offsetYSet_1(),
+	U3CU3Ec__DisplayClass64_0_t3575628321::get_offset_of_offsetY_2(),
+	U3CU3Ec__DisplayClass64_0_t3575628321::get_offset_of_s_3(),
+	U3CU3Ec__DisplayClass64_0_t3575628321::get_offset_of_endValue_4(),
+	U3CU3Ec__DisplayClass64_0_t3575628321::get_offset_of_startPosY_5(),
+	U3CU3Ec__DisplayClass65_0_t1989341404::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass65_0_t1989341404::get_offset_of_offsetYSet_1(),
+	U3CU3Ec__DisplayClass65_0_t1989341404::get_offset_of_offsetY_2(),
+	U3CU3Ec__DisplayClass65_0_t1989341404::get_offset_of_s_3(),
+	U3CU3Ec__DisplayClass65_0_t1989341404::get_offset_of_endValue_4(),
+	U3CU3Ec__DisplayClass65_0_t1989341404::get_offset_of_startPosY_5(),
+	U3CU3Ec__DisplayClass66_0_t3293303319::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass67_0_t1707016402::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass68_0_t1881678309::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass69_0_t295391392::get_offset_of_target_0(),
+	U3CU3Ec__DisplayClass70_0_t3010978414::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass70_0_t3010978414::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass71_0_t1424691497::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass71_0_t1424691497::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass72_0_t2728653412::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass72_0_t2728653412::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass72_0_t2728653412::get_offset_of_property_2(),
+	U3CU3Ec__DisplayClass73_0_t1142366495::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass73_0_t1142366495::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass74_0_t3575628418::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass74_0_t3575628418::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass75_0_t1989341501::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass75_0_t1989341501::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass76_0_t3293303416::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass76_0_t3293303416::get_offset_of_target_1(),
+	U3CU3Ec__DisplayClass77_0_t1707016499::get_offset_of_to_0(),
+	U3CU3Ec__DisplayClass77_0_t1707016499::get_offset_of_target_1(),
+	TweenParams_t2944325381_StaticFields::get_offset_of_Params_0(),
+	TweenParams_t2944325381::get_offset_of_id_1(),
+	TweenParams_t2944325381::get_offset_of_target_2(),
+	TweenParams_t2944325381::get_offset_of_updateType_3(),
+	TweenParams_t2944325381::get_offset_of_isIndependentUpdate_4(),
+	TweenParams_t2944325381::get_offset_of_onStart_5(),
+	TweenParams_t2944325381::get_offset_of_onPlay_6(),
+	TweenParams_t2944325381::get_offset_of_onRewind_7(),
+	TweenParams_t2944325381::get_offset_of_onUpdate_8(),
+	TweenParams_t2944325381::get_offset_of_onStepComplete_9(),
+	TweenParams_t2944325381::get_offset_of_onComplete_10(),
+	TweenParams_t2944325381::get_offset_of_onKill_11(),
+	TweenParams_t2944325381::get_offset_of_onWaypointChange_12(),
+	TweenParams_t2944325381::get_offset_of_isRecyclable_13(),
+	TweenParams_t2944325381::get_offset_of_isSpeedBased_14(),
+	TweenParams_t2944325381::get_offset_of_autoKill_15(),
+	TweenParams_t2944325381::get_offset_of_loops_16(),
+	TweenParams_t2944325381::get_offset_of_loopType_17(),
+	TweenParams_t2944325381::get_offset_of_delay_18(),
+	TweenParams_t2944325381::get_offset_of_isRelative_19(),
+	TweenParams_t2944325381::get_offset_of_easeType_20(),
+	TweenParams_t2944325381::get_offset_of_customEase_21(),
+	TweenParams_t2944325381::get_offset_of_easeOvershootOrAmplitude_22(),
+	TweenParams_t2944325381::get_offset_of_easePeriod_23(),
+	LogBehaviour_t3505725029::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	Tween_t278478013::get_offset_of_timeScale_4(),
+	Tween_t278478013::get_offset_of_isBackwards_5(),
+	Tween_t278478013::get_offset_of_id_6(),
+	Tween_t278478013::get_offset_of_target_7(),
+	Tween_t278478013::get_offset_of_updateType_8(),
+	Tween_t278478013::get_offset_of_isIndependentUpdate_9(),
+	Tween_t278478013::get_offset_of_onPlay_10(),
+	Tween_t278478013::get_offset_of_onPause_11(),
+	Tween_t278478013::get_offset_of_onRewind_12(),
+	Tween_t278478013::get_offset_of_onUpdate_13(),
+	Tween_t278478013::get_offset_of_onStepComplete_14(),
+	Tween_t278478013::get_offset_of_onComplete_15(),
+	Tween_t278478013::get_offset_of_onKill_16(),
+	Tween_t278478013::get_offset_of_onWaypointChange_17(),
+	Tween_t278478013::get_offset_of_isFrom_18(),
+	Tween_t278478013::get_offset_of_isBlendable_19(),
+	Tween_t278478013::get_offset_of_isRecyclable_20(),
+	Tween_t278478013::get_offset_of_isSpeedBased_21(),
+	Tween_t278478013::get_offset_of_autoKill_22(),
+	Tween_t278478013::get_offset_of_duration_23(),
+	Tween_t278478013::get_offset_of_loops_24(),
+	Tween_t278478013::get_offset_of_loopType_25(),
+	Tween_t278478013::get_offset_of_delay_26(),
+	Tween_t278478013::get_offset_of_isRelative_27(),
+	Tween_t278478013::get_offset_of_easeType_28(),
+	Tween_t278478013::get_offset_of_customEase_29(),
+	Tween_t278478013::get_offset_of_easeOvershootOrAmplitude_30(),
+	Tween_t278478013::get_offset_of_easePeriod_31(),
+	Tween_t278478013::get_offset_of_typeofT1_32(),
+	Tween_t278478013::get_offset_of_typeofT2_33(),
+	Tween_t278478013::get_offset_of_typeofTPlugOptions_34(),
+	Tween_t278478013::get_offset_of_active_35(),
+	Tween_t278478013::get_offset_of_isSequenced_36(),
+	Tween_t278478013::get_offset_of_sequenceParent_37(),
+	Tween_t278478013::get_offset_of_activeId_38(),
+	Tween_t278478013::get_offset_of_specialStartupMode_39(),
+	Tween_t278478013::get_offset_of_creationLocked_40(),
+	Tween_t278478013::get_offset_of_startupDone_41(),
+	Tween_t278478013::get_offset_of_playedOnce_42(),
+	Tween_t278478013::get_offset_of_position_43(),
+	Tween_t278478013::get_offset_of_fullDuration_44(),
+	Tween_t278478013::get_offset_of_completedLoops_45(),
+	Tween_t278478013::get_offset_of_isPlaying_46(),
+	Tween_t278478013::get_offset_of_isComplete_47(),
+	Tween_t278478013::get_offset_of_elapsedDelay_48(),
+	Tween_t278478013::get_offset_of_delayComplete_49(),
+	Tween_t278478013::get_offset_of_miscInt_50(),
+	Tweener_t760404022::get_offset_of_hasManuallySetStartValue_51(),
+	Tweener_t760404022::get_offset_of_isFromAllowed_52(),
+	TweenType_t169444141::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	UpdateType_t3357224513::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	RectOffsetPlugin_t664509336_StaticFields::get_offset_of__r_0(),
+	StringPlugin_t3620786088_StaticFields::get_offset_of__Buffer_0(),
+	StringPlugin_t3620786088_StaticFields::get_offset_of__OpenedTags_1(),
+	StringPluginExtensions_t3910942986_StaticFields::get_offset_of_ScrambledCharsAll_0(),
+	StringPluginExtensions_t3910942986_StaticFields::get_offset_of_ScrambledCharsUppercase_1(),
+	StringPluginExtensions_t3910942986_StaticFields::get_offset_of_ScrambledCharsLowercase_2(),
+	StringPluginExtensions_t3910942986_StaticFields::get_offset_of_ScrambledCharsNumerals_3(),
+	StringPluginExtensions_t3910942986_StaticFields::get_offset_of__lastRndSeed_4(),
+	OrientType_t1755667719::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	PathOptions_t2659884781::get_offset_of_mode_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_orientType_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_lockPositionAxis_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_lockRotationAxis_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_isClosedPath_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_lookAtPosition_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_lookAtTransform_6() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_lookAhead_7() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_hasCustomForwardDirection_8() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_forward_9() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_useLocalPosition_10() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_parent_11() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_startupRot_12() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PathOptions_t2659884781::get_offset_of_startupZRot_13() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	QuaternionOptions_t466049668::get_offset_of_rotateMode_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	QuaternionOptions_t466049668::get_offset_of_axisConstraint_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	QuaternionOptions_t466049668::get_offset_of_up_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	UintOptions_t2267095136::get_offset_of_isNegativeChangeValue_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Vector3ArrayOptions_t2672570171::get_offset_of_axisConstraint_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Vector3ArrayOptions_t2672570171::get_offset_of_snapping_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Vector3ArrayOptions_t2672570171::get_offset_of_durations_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ColorOptions_t2213017305::get_offset_of_alphaOnly_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	FloatOptions_t1421548266::get_offset_of_snapping_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	RectOptions_t3393635162::get_offset_of_snapping_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	StringOptions_t2885323933::get_offset_of_richTextEnabled_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	StringOptions_t2885323933::get_offset_of_scrambleMode_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	StringOptions_t2885323933::get_offset_of_scrambledChars_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	StringOptions_t2885323933::get_offset_of_startValueStrippedLength_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	StringOptions_t2885323933::get_offset_of_changeValueStrippedLength_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	VectorOptions_t293385261::get_offset_of_axisConstraint_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	VectorOptions_t293385261::get_offset_of_snapping_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__floatPlugin_0(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__doublePlugin_1(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__intPlugin_2(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__uintPlugin_3(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__longPlugin_4(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__ulongPlugin_5(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__vector2Plugin_6(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__vector3Plugin_7(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__vector4Plugin_8(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__quaternionPlugin_9(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__colorPlugin_10(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__rectPlugin_11(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__rectOffsetPlugin_12(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__stringPlugin_13(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__vector3ArrayPlugin_14(),
+	PluginsManager_t3052451537_StaticFields::get_offset_of__color2Plugin_15(),
+	0,
+	PluginsManager_t3052451537_StaticFields::get_offset_of__customPlugins_17(),
+	ControlPoint_t168081159::get_offset_of_a_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ControlPoint_t168081159::get_offset_of_b_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Path_t2828565993_StaticFields::get_offset_of__catmullRomDecoder_0(),
+	Path_t2828565993_StaticFields::get_offset_of__linearDecoder_1(),
+	Path_t2828565993::get_offset_of_type_2(),
+	Path_t2828565993::get_offset_of_subdivisionsXSegment_3(),
+	Path_t2828565993::get_offset_of_subdivisions_4(),
+	Path_t2828565993::get_offset_of_wps_5(),
+	Path_t2828565993::get_offset_of_controlPoints_6(),
+	Path_t2828565993::get_offset_of_length_7(),
+	Path_t2828565993::get_offset_of_wpLengths_8(),
+	Path_t2828565993::get_offset_of_isFinalized_9(),
+	Path_t2828565993::get_offset_of_timesTable_10(),
+	Path_t2828565993::get_offset_of_lengthsTable_11(),
+	Path_t2828565993::get_offset_of_linearWPIndex_12(),
+	Path_t2828565993::get_offset_of__incrementalClone_13(),
+	Path_t2828565993::get_offset_of__incrementalIndex_14(),
+	Path_t2828565993::get_offset_of__decoder_15(),
+	Path_t2828565993::get_offset_of__changed_16(),
+	Path_t2828565993::get_offset_of_nonLinearDrawWps_17(),
+	Path_t2828565993::get_offset_of_targetPosition_18(),
+	Path_t2828565993::get_offset_of_lookAtPosition_19(),
+	Path_t2828565993::get_offset_of_gizmoColor_20(),
+	PureQuaternionPlugin_t3400666973_StaticFields::get_offset_of__plug_0(),
+	ABSSequentiable_t2284140720::get_offset_of_tweenType_0(),
+	ABSSequentiable_t2284140720::get_offset_of_sequencedPosition_1(),
+	ABSSequentiable_t2284140720::get_offset_of_sequencedEndPosition_2(),
+	ABSSequentiable_t2284140720::get_offset_of_onStart_3(),
+	Debugger_t1404542751_StaticFields::get_offset_of_logPriority_0(),
+	DOTweenComponent_t696744215::get_offset_of_inspectorUpdater_2(),
+	DOTweenComponent_t696744215::get_offset_of__unscaledTime_3(),
+	DOTweenComponent_t696744215::get_offset_of__unscaledDeltaTime_4(),
+	DOTweenComponent_t696744215::get_offset_of__duplicateToDestroy_5(),
+	U3CWaitForCompletionU3Ed__13_t639731943::get_offset_of_U3CU3E1__state_0(),
+	U3CWaitForCompletionU3Ed__13_t639731943::get_offset_of_U3CU3E2__current_1(),
+	U3CWaitForCompletionU3Ed__13_t639731943::get_offset_of_t_2(),
+	U3CWaitForRewindU3Ed__14_t2782210651::get_offset_of_U3CU3E1__state_0(),
+	U3CWaitForRewindU3Ed__14_t2782210651::get_offset_of_U3CU3E2__current_1(),
+	U3CWaitForRewindU3Ed__14_t2782210651::get_offset_of_t_2(),
+	U3CWaitForKillU3Ed__15_t1007991819::get_offset_of_U3CU3E1__state_0(),
+	U3CWaitForKillU3Ed__15_t1007991819::get_offset_of_U3CU3E2__current_1(),
+	U3CWaitForKillU3Ed__15_t1007991819::get_offset_of_t_2(),
+	U3CWaitForElapsedLoopsU3Ed__16_t3988581919::get_offset_of_U3CU3E1__state_0(),
+	U3CWaitForElapsedLoopsU3Ed__16_t3988581919::get_offset_of_U3CU3E2__current_1(),
+	U3CWaitForElapsedLoopsU3Ed__16_t3988581919::get_offset_of_t_2(),
+	U3CWaitForElapsedLoopsU3Ed__16_t3988581919::get_offset_of_elapsedLoops_3(),
+	U3CWaitForPositionU3Ed__17_t2034437344::get_offset_of_U3CU3E1__state_0(),
+	U3CWaitForPositionU3Ed__17_t2034437344::get_offset_of_U3CU3E2__current_1(),
+	U3CWaitForPositionU3Ed__17_t2034437344::get_offset_of_t_2(),
+	U3CWaitForPositionU3Ed__17_t2034437344::get_offset_of_position_3(),
+	U3CWaitForStartU3Ed__18_t2341562412::get_offset_of_U3CU3E1__state_0(),
+	U3CWaitForStartU3Ed__18_t2341562412::get_offset_of_U3CU3E2__current_1(),
+	U3CWaitForStartU3Ed__18_t2341562412::get_offset_of_t_2(),
+	0,
+	DOTweenSettings_t873123119::get_offset_of_useSafeMode_3(),
+	DOTweenSettings_t873123119::get_offset_of_timeScale_4(),
+	DOTweenSettings_t873123119::get_offset_of_useSmoothDeltaTime_5(),
+	DOTweenSettings_t873123119::get_offset_of_showUnityEditorReport_6(),
+	DOTweenSettings_t873123119::get_offset_of_logBehaviour_7(),
+	DOTweenSettings_t873123119::get_offset_of_drawGizmos_8(),
+	DOTweenSettings_t873123119::get_offset_of_defaultRecyclable_9(),
+	DOTweenSettings_t873123119::get_offset_of_defaultAutoPlay_10(),
+	DOTweenSettings_t873123119::get_offset_of_defaultUpdateType_11(),
+	DOTweenSettings_t873123119::get_offset_of_defaultTimeScaleIndependent_12(),
+	DOTweenSettings_t873123119::get_offset_of_defaultEaseType_13(),
+	DOTweenSettings_t873123119::get_offset_of_defaultEaseOvershootOrAmplitude_14(),
+	DOTweenSettings_t873123119::get_offset_of_defaultEasePeriod_15(),
+	DOTweenSettings_t873123119::get_offset_of_defaultAutoKill_16(),
+	DOTweenSettings_t873123119::get_offset_of_defaultLoopType_17(),
+	DOTweenSettings_t873123119::get_offset_of_storeSettingsLocation_18(),
+	SettingsLocation_t514961325::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	TweenManager_t1979661952_StaticFields::get_offset_of_maxActive_3(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_maxTweeners_4(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_maxSequences_5(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_hasActiveTweens_6(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_hasActiveDefaultTweens_7(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_hasActiveLateTweens_8(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_hasActiveFixedTweens_9(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totActiveTweens_10(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totActiveDefaultTweens_11(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totActiveLateTweens_12(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totActiveFixedTweens_13(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totActiveTweeners_14(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totActiveSequences_15(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totPooledTweeners_16(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totPooledSequences_17(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totTweeners_18(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_totSequences_19(),
+	TweenManager_t1979661952_StaticFields::get_offset_of_isUpdateLoop_20(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__activeTweens_21(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__pooledTweeners_22(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__PooledSequences_23(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__KillList_24(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__maxActiveLookupId_25(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__requiresActiveReorganization_26(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__reorganizeFromId_27(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__minPooledTweenerId_28(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__maxPooledTweenerId_29(),
+	TweenManager_t1979661952_StaticFields::get_offset_of__despawnAllCalledFromUpdateLoopCallback_30(),
+	CapacityIncreaseMode_t1969140739::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	FilterType_t1425068526::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	OperationType_t2600045009::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	SpecialStartupMode_t1501334721::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	UpdateNotice_t2468589887::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	UpdateMode_t2539919096::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9_0(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_0_1(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_1_2(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_2_3(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_3_4(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_4_5(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_5_6(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_6_7(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_7_8(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_8_9(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_9_10(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_10_11(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_11_12(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_12_13(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_13_14(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_14_15(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_15_16(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_16_17(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_17_18(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_18_19(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_19_20(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_20_21(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_21_22(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_22_23(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_23_24(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_24_25(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_25_26(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_26_27(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_27_28(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_28_29(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_29_30(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_30_31(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_31_32(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_32_33(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_33_34(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_34_35(),
+	U3CU3Ec_t1609106043_StaticFields::get_offset_of_U3CU3E9__4_35_36(),
+	EaseCurve_t1295352409::get_offset_of__animCurve_0(),
+	U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields::get_offset_of_U36F98278EFCD257898AD01BE39D1D0AEFB78FC551_0(),
+	U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields::get_offset_of_U38C4C6C4E493EC2BEEF5F6F6A9C4472C13BED42E8_1(),
+	U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields::get_offset_of_U39DC5F4D0A1418B4EC71B22D21E93D134922FA735_2(),
+	U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields::get_offset_of_FD0BD55CDDDFD0B323012A45F83437763AF58952_3(),
+	FormatReader_t3367903422::get_offset_of_U3CFormatStringU3Ek__BackingField_0(),
+	Helpers_t551273995_StaticFields::get_offset_of_re_0(),
+	Helpers_t551273995_StaticFields::get_offset_of_CSU24U3CU3E9__CachedAnonymousMethodDelegate1_1(),
+	XlsxDimension_t1977862101::get_offset_of__FirstRow_0(),
+	XlsxDimension_t1977862101::get_offset_of__LastRow_1(),
+	XlsxDimension_t1977862101::get_offset_of__FirstCol_2(),
+	XlsxDimension_t1977862101::get_offset_of__LastCol_3(),
+	XlsxNumFmt_t1220338590::get_offset_of__Id_0(),
+	XlsxNumFmt_t1220338590::get_offset_of__FormatCode_1(),
+	XlsxStyles_t1776783765::get_offset_of__cellXfs_0(),
+	XlsxStyles_t1776783765::get_offset_of__NumFmts_1(),
+	XlsxWorkbook_t188684221::get_offset_of_sheets_0(),
+	XlsxWorkbook_t188684221::get_offset_of__SST_1(),
+	XlsxWorkbook_t188684221::get_offset_of__Styles_2(),
+	XlsxWorksheet_t2598215163::get_offset_of__dimension_0(),
+	XlsxWorksheet_t2598215163::get_offset_of__Name_1(),
+	XlsxWorksheet_t2598215163::get_offset_of__id_2(),
+	XlsxWorksheet_t2598215163::get_offset_of__rid_3(),
+	XlsxWorksheet_t2598215163::get_offset_of__path_4(),
+	XlsxWorksheet_t2598215163::get_offset_of_U3CIsEmptyU3Ek__BackingField_5(),
+	XlsxXf_t160302635::get_offset_of__Id_0(),
+	XlsxXf_t160302635::get_offset_of__numFmtId_1(),
+	XlsxXf_t160302635::get_offset_of__applyNumberFormat_2(),
+	ZipWorker_t1305438663::get_offset_of_buffer_0(),
+	ZipWorker_t1305438663::get_offset_of_disposed_1(),
+	ZipWorker_t1305438663::get_offset_of__isCleaned_2(),
+	ZipWorker_t1305438663::get_offset_of__tempPath_3(),
+	ZipWorker_t1305438663::get_offset_of__tempEnv_4(),
+	ZipWorker_t1305438663::get_offset_of__exceptionMessage_5(),
+	ZipWorker_t1305438663::get_offset_of__xlPath_6(),
+	ZipWorker_t1305438663::get_offset_of__format_7(),
+	ZipWorker_t1305438663::get_offset_of__isValid_8(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__workbook_0(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__isValid_1(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__isClosed_2(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__isFirstRead_3(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__exceptionMessage_4(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__depth_5(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__emptyRowCount_6(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__zipWorker_7(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__xmlReader_8(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__sheetStream_9(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__cellsValues_10(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__savedCellsValues_11(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of_disposed_12(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__isFirstRowAsColumnNames_13(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of_instanceId_14(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__defaultDateTimeStyles_15(),
+	ExcelOpenXmlReader_t1964336123::get_offset_of__namespaceUri_16(),
+	Log_t2157885282_StaticFields::get_offset_of__logType_0(),
+	Log_t2157885282_StaticFields::get_offset_of__logger_1(),
+	LogManager_t1846890795_StaticFields::get_offset_of__dictionary_0(),
+	LogManager_t1846890795_StaticFields::get_offset_of__sync_1(),
+	U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298_StaticFields::get_offset_of_U24U24method0x60000dfU2D1_0(),
+	U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298_StaticFields::get_offset_of_U24U24method0x60001a2U2D1_1(),
 	EquipItems_t3211185488::get_offset_of_itemIDs_2(),
 	EquipRandomItem_t1031555304::get_offset_of_equipment_2(),
 	UICursor_t1925473040_StaticFields::get_offset_of_mInstance_2(),
@@ -14176,6 +14936,21 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	UIViewport_t1541362616::get_offset_of_bottomRight_4(),
 	UIViewport_t1541362616::get_offset_of_fullSize_5(),
 	UIViewport_t1541362616::get_offset_of_mCam_6(),
+	PlayerCarController_t116747357::get_offset_of_mMoveTweenTime_2(),
+	PlayerCarController_t116747357::get_offset_of_mIntervalTimeToKeepMovingUPOrDown_3(),
+	PlayerCarController_t116747357::get_offset_of_mHorizontalOffset_4(),
+	PlayerCarController_t116747357::get_offset_of_mVerticalOffset_5(),
+	PlayerCarController_t116747357::get_offset_of_mTargetPosition_6(),
+	PlayerCarController_t116747357::get_offset_of_mIsTweenComplete_7(),
+	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingUp_8(),
+	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingDown_9(),
+	PlayerCarController_t116747357::get_offset_of_mPlayerCarAnimator_10(),
+	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952::get_offset_of_U24PC_0(),
+	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952::get_offset_of_U24current_1(),
+	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952::get_offset_of_U3CU3Ef__this_2(),
+	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208::get_offset_of_U24PC_0(),
+	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208::get_offset_of_U24current_1(),
+	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208::get_offset_of_U3CU3Ef__this_2(),
 	GameConfigurationManager_t1548987031_StaticFields::get_offset_of_mLMInstance_0(),
 	GameConfigurationManager_t1548987031::get_offset_of_mConfigurationPath_1(),
 	GameConfigurationManager_t1548987031::get_offset_of_mIsConfigurationComplete_2(),
@@ -14194,6 +14969,17 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	SoundSetting_t2958378805::get_offset_of_mBackgroundMusic_2(),
 	SoundSetting_t2958378805::get_offset_of_mVolume_3(),
 	GameManager_t2252321495::get_offset_of_mGameConfigurationManager_2(),
+	InputControllerManager_t1050051015_StaticFields::get_offset_of_mInputControllerManager_2(),
+	InputControllerManager_t1050051015::get_offset_of_mControlButton_3(),
+	InputControllerManager_t1050051015::get_offset_of_mLeftButton_4(),
+	InputControllerManager_t1050051015::get_offset_of_mRightButton_5(),
+	InputControllerManager_t1050051015::get_offset_of_mUpButton_6(),
+	InputControllerManager_t1050051015::get_offset_of_mDownButton_7(),
+	InputControllerManager_t1050051015::get_offset_of_mControlButtonUIEL_8(),
+	InputControllerManager_t1050051015::get_offset_of_mLeftButtonUIEL_9(),
+	InputControllerManager_t1050051015::get_offset_of_mRightButtonUIEL_10(),
+	InputControllerManager_t1050051015::get_offset_of_mUpButtonUIEL_11(),
+	InputControllerManager_t1050051015::get_offset_of_mDownButtonUIEL_12(),
 	GameChoosePanel_t1813263919::get_offset_of_mGOGameChoice1Button_2(),
 	GameChoosePanel_t1813263919::get_offset_of_mGOGameChoice2Button_3(),
 	GameChoosePanel_t1813263919::get_offset_of_mGOGameChoice3Button_4(),
@@ -14211,15 +14997,17 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	LoadingProcess_t282725851::get_offset_of_mProcessScrollBar_2(),
 	LoadingProcess_t282725851::get_offset_of_mCurrentProcessPer_3(),
 	LoadingProcess_t282725851::get_offset_of_mIsLoadingComplete_4(),
-	U3CUpdateProcessBarU3Ec__Iterator3_t1282375851::get_offset_of_U3CexecutecountU3E__0_0(),
-	U3CUpdateProcessBarU3Ec__Iterator3_t1282375851::get_offset_of_U3CinternaltimeU3E__1_1(),
-	U3CUpdateProcessBarU3Ec__Iterator3_t1282375851::get_offset_of_U3CiU3E__2_2(),
-	U3CUpdateProcessBarU3Ec__Iterator3_t1282375851::get_offset_of_U24PC_3(),
-	U3CUpdateProcessBarU3Ec__Iterator3_t1282375851::get_offset_of_U24current_4(),
-	U3CUpdateProcessBarU3Ec__Iterator3_t1282375851::get_offset_of_U3CU3Ef__this_5(),
+	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CexecutecountU3E__0_0(),
+	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CinternaltimeU3E__1_1(),
+	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CiU3E__2_2(),
+	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U24PC_3(),
+	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U24current_4(),
+	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CU3Ef__this_5(),
 	AccountInputField_t2916814735::get_offset_of_mInvalidePatterns_2(),
 	AccountInputField_t2916814735::get_offset_of_mAccountTip_3(),
 	AccountInputField_t2916814735::get_offset_of_mInput_4(),
+	0,
+	0,
 	LoginManager_t973619992_StaticFields::get_offset_of_mLMInstance_0(),
 	LoginManager_t973619992::get_offset_of_mIsLogin_1(),
 	LoginUI_t1439696001_StaticFields::get_offset_of_mLgUIInstance_2(),
@@ -14230,15 +15018,21 @@ extern const int32_t g_FieldOffsetTable[11710] =
 	LoginUI_t1439696001::get_offset_of_mPassWordInput_7(),
 	LoginUI_t1439696001::get_offset_of_mTipLabel_8(),
 	Validator_t172396982_StaticFields::get_offset_of_mValidationInstance_0(),
+	FPSDisplay_t3952194245::get_offset_of_mFPSText_2(),
+	FPSDisplay_t3952194245::get_offset_of_mDeltaTime_3(),
+	FPSDisplay_t3952194245::get_offset_of_mFPS_4(),
+	OffsetScroller_t1610136665::get_offset_of_mScrollSpeed_2(),
+	OffsetScroller_t1610136665::get_offset_of_mStartOffset_3(),
+	OffsetScroller_t1610136665::get_offset_of_mBackgroundMeshRender_4(),
 	0,
 	0,
 	UIRootExtend_t1122248034::get_offset_of__UIRoot_4(),
-	U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
+	U3CPrivateImplementationDetailsU3E_t1486305144_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2936] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -15982,6 +16776,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (RxCompiler_t4215271879), -1, 0, 0,
 	sizeof (RxInterpreterFactory_t1812879716), -1, 0, 0,
 	sizeof (RxOp_t4049298493)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
+	sizeof (ReplacementEvaluator_t1001703513), -1, 0, 0,
 	sizeof (ExpressionCollection_t238836340), -1, 0, 0,
 	sizeof (Expression_t368137076), -1, 0, 0,
 	sizeof (CompositeExpression_t1921307915), -1, 0, 0,
@@ -16024,74 +16819,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (U24ArrayTypeU24128_t116038555)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24128_t116038555_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU2412_t3672778805)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778805_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t3783534218), -1, 0, 0,
-	0, -1, 0, 0,
-	0, -1, 0, 0,
-	0, -1, 0, 0,
-	0, -1, 0, 0,
-	0, -1, 0, 0,
-	0, -1, 0, 0,
-	sizeof (ProviderBase_t2882126354), -1, 0, 0,
-	sizeof (ProviderCollection_t2548499159), -1, 0, 0,
-	sizeof (ClientConfigurationSystem_t4294641134), -1, 0, 0,
-	sizeof (ConfigNameValueCollection_t2395569530), -1, 0, 0,
-	sizeof (ConfigInfo_t546730838), -1, 0, 0,
-	sizeof (Configuration_t3335372970), -1, 0, 0,
-	sizeof (ConfigurationAllowDefinition_t3250313246)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationAllowExeDefinition_t3860111898)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationCollectionAttribute_t2811353736), -1, 0, 0,
-	sizeof (ConfigurationElement_t1776195828), -1, 0, 0,
-	sizeof (ElementMap_t997038224), -1, sizeof(ElementMap_t997038224_StaticFields), 0,
-	sizeof (ConfigurationElementCollection_t1911180302), -1, 0, 0,
-	sizeof (ConfigurationRemoveElement_t3305291330), -1, 0, 0,
-	sizeof (ConfigurationElementCollectionType_t1806001494)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationErrorsException_t1362721126), -1, 0, 0,
-	sizeof (ConfigurationFileMap_t2625210096), -1, 0, 0,
-	sizeof (ConfigurationLocation_t1895107553), -1, sizeof(ConfigurationLocation_t1895107553_StaticFields), 0,
-	sizeof (ConfigurationLocationCollection_t1903842989), -1, 0, 0,
-	sizeof (ConfigurationLockType_t131834733)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationLockCollection_t1011762925), -1, 0, 0,
-	sizeof (ConfigurationManager_t2608608455), -1, sizeof(ConfigurationManager_t2608608455_StaticFields), 0,
-	sizeof (ConfigurationProperty_t2048066811), -1, sizeof(ConfigurationProperty_t2048066811_StaticFields), 0,
-	sizeof (ConfigurationPropertyAttribute_t3655647199), -1, 0, 0,
-	sizeof (ConfigurationPropertyCollection_t3473514151), -1, 0, 0,
-	sizeof (ConfigurationPropertyOptions_t3219689025)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationSaveMode_t700320212)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationSection_t2600766927), -1, 0, 0,
-	sizeof (ConfigurationSectionCollection_t4261113299), -1, 0, 0,
-	sizeof (U3CGetEnumeratorU3Ec__Iterator0_t1795270620), -1, 0, 0,
-	sizeof (ConfigurationSectionGroup_t2230982736), -1, 0, 0,
-	sizeof (ConfigurationSectionGroupCollection_t575145286), -1, 0, 0,
-	sizeof (ConfigurationUserLevel_t1204907851)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ConfigurationValidatorAttribute_t1007519140), -1, 0, 0,
-	sizeof (ConfigurationValidatorBase_t210547623), -1, 0, 0,
-	sizeof (ConfigXmlTextReader_t3212066157), -1, 0, 0,
-	sizeof (DefaultSection_t3840532724), -1, sizeof(DefaultSection_t3840532724_StaticFields), 0,
-	sizeof (DefaultValidator_t300527515), -1, 0, 0,
-	sizeof (ElementInformation_t3165583784), -1, 0, 0,
-	sizeof (ExeConfigurationFileMap_t1419586304), -1, 0, 0,
-	sizeof (IgnoreSection_t681509237), -1, sizeof(IgnoreSection_t681509237_StaticFields), 0,
-	sizeof (InternalConfigurationFactory_t3846641927), -1, 0, 0,
-	sizeof (InternalConfigurationSystem_t2108740756), -1, 0, 0,
-	sizeof (InternalConfigurationHost_t547577555), -1, 0, 0,
-	sizeof (ExeConfigurationHost_t2778769322), -1, sizeof(ExeConfigurationHost_t2778769322_StaticFields), 0,
-	sizeof (InternalConfigurationRoot_t547578517), -1, 0, 0,
-	sizeof (PropertyInformation_t2089433965), -1, 0, 0,
-	sizeof (PropertyInformationCollection_t954922393), -1, 0, 0,
-	sizeof (PropertyInformationEnumerator_t1453501302), -1, 0, 0,
-	sizeof (PropertyValueOrigin_t1217826846)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ProtectedConfiguration_t1807950812), -1, 0, 0,
-	sizeof (ProtectedConfigurationProvider_t3971982415), -1, 0, 0,
-	sizeof (ProtectedConfigurationProviderCollection_t388338823), -1, 0, 0,
-	sizeof (ProtectedConfigurationSection_t3541826375), -1, sizeof(ProtectedConfigurationSection_t3541826375_StaticFields), 0,
-	sizeof (ProviderSettings_t873049714), -1, sizeof(ProviderSettings_t873049714_StaticFields), 0,
-	sizeof (ProviderSettingsCollection_t585304908), -1, sizeof(ProviderSettingsCollection_t585304908_StaticFields), 0,
-	sizeof (SectionInfo_t1739019515), -1, sizeof(SectionInfo_t1739019515_StaticFields), 0,
-	sizeof (SectionGroupInfo_t2346323570), -1, sizeof(SectionGroupInfo_t2346323570_StaticFields), 0,
-	sizeof (ConfigInfoCollection_t3264723080), -1, 0, 0,
-	sizeof (SectionInformation_t2754609709), -1, 0, 0,
-	sizeof (MonoTODOAttribute_t3487514022), -1, 0, 0,
-	sizeof (MonoInternalNoteAttribute_t4192790486), -1, 0, 0,
-	sizeof (U3CModuleU3E_t3783534219), -1, 0, 0,
 	sizeof (Locale_t4255929016), -1, 0, 0,
 	sizeof (BigInteger_t925946153), -1, sizeof(BigInteger_t925946153_StaticFields), 0,
 	sizeof (Sign_t874893936)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -16214,14 +16941,94 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (U24ArrayTypeU2412_t3672778807)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t3672778807_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU2416_t1703410336)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t1703410336_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU244_t1957337331)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU244_t1957337331_marshaled_pinvoke), 0, 0,
+	sizeof (U3CModuleU3E_t3783534219), -1, 0, 0,
+	0, -1, 0, 0,
+	0, -1, 0, 0,
+	0, -1, 0, 0,
+	0, -1, 0, 0,
+	0, -1, 0, 0,
+	0, -1, 0, 0,
+	sizeof (ProviderBase_t2882126354), -1, 0, 0,
+	sizeof (ProviderCollection_t2548499159), -1, 0, 0,
+	sizeof (ClientConfigurationSystem_t4294641134), -1, 0, 0,
+	sizeof (ConfigNameValueCollection_t2395569530), -1, 0, 0,
+	sizeof (ConfigInfo_t546730838), -1, 0, 0,
+	sizeof (Configuration_t3335372970), -1, 0, 0,
+	sizeof (ConfigurationAllowDefinition_t3250313246)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationAllowExeDefinition_t3860111898)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationCollectionAttribute_t2811353736), -1, 0, 0,
+	sizeof (ConfigurationElement_t1776195828), -1, 0, 0,
+	sizeof (ElementMap_t997038224), -1, sizeof(ElementMap_t997038224_StaticFields), 0,
+	sizeof (ConfigurationElementCollection_t1911180302), -1, 0, 0,
+	sizeof (ConfigurationRemoveElement_t3305291330), -1, 0, 0,
+	sizeof (ConfigurationElementCollectionType_t1806001494)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationErrorsException_t1362721126), -1, 0, 0,
+	sizeof (ConfigurationFileMap_t2625210096), -1, 0, 0,
+	sizeof (ConfigurationLocation_t1895107553), -1, sizeof(ConfigurationLocation_t1895107553_StaticFields), 0,
+	sizeof (ConfigurationLocationCollection_t1903842989), -1, 0, 0,
+	sizeof (ConfigurationLockType_t131834733)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationLockCollection_t1011762925), -1, 0, 0,
+	sizeof (ConfigurationManager_t2608608455), -1, sizeof(ConfigurationManager_t2608608455_StaticFields), 0,
+	sizeof (ConfigurationProperty_t2048066811), -1, sizeof(ConfigurationProperty_t2048066811_StaticFields), 0,
+	sizeof (ConfigurationPropertyAttribute_t3655647199), -1, 0, 0,
+	sizeof (ConfigurationPropertyCollection_t3473514151), -1, 0, 0,
+	sizeof (ConfigurationPropertyOptions_t3219689025)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationSaveMode_t700320212)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationSection_t2600766927), -1, 0, 0,
+	sizeof (ConfigurationSectionCollection_t4261113299), -1, 0, 0,
+	sizeof (U3CGetEnumeratorU3Ec__Iterator0_t1795270620), -1, 0, 0,
+	sizeof (ConfigurationSectionGroup_t2230982736), -1, 0, 0,
+	sizeof (ConfigurationSectionGroupCollection_t575145286), -1, 0, 0,
+	sizeof (ConfigurationUserLevel_t1204907851)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ConfigurationValidatorAttribute_t1007519140), -1, 0, 0,
+	sizeof (ConfigurationValidatorBase_t210547623), -1, 0, 0,
+	sizeof (ConfigXmlTextReader_t3212066157), -1, 0, 0,
+	sizeof (DefaultSection_t3840532724), -1, sizeof(DefaultSection_t3840532724_StaticFields), 0,
+	sizeof (DefaultValidator_t300527515), -1, 0, 0,
+	sizeof (ElementInformation_t3165583784), -1, 0, 0,
+	sizeof (ExeConfigurationFileMap_t1419586304), -1, 0, 0,
+	sizeof (IgnoreSection_t681509237), -1, sizeof(IgnoreSection_t681509237_StaticFields), 0,
+	sizeof (InternalConfigurationFactory_t3846641927), -1, 0, 0,
+	sizeof (InternalConfigurationSystem_t2108740756), -1, 0, 0,
+	sizeof (InternalConfigurationHost_t547577555), -1, 0, 0,
+	sizeof (ExeConfigurationHost_t2778769322), -1, sizeof(ExeConfigurationHost_t2778769322_StaticFields), 0,
+	sizeof (InternalConfigurationRoot_t547578517), -1, 0, 0,
+	sizeof (PropertyInformation_t2089433965), -1, 0, 0,
+	sizeof (PropertyInformationCollection_t954922393), -1, 0, 0,
+	sizeof (PropertyInformationEnumerator_t1453501302), -1, 0, 0,
+	sizeof (PropertyValueOrigin_t1217826846)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ProtectedConfiguration_t1807950812), -1, 0, 0,
+	sizeof (ProtectedConfigurationProvider_t3971982415), -1, 0, 0,
+	sizeof (ProtectedConfigurationProviderCollection_t388338823), -1, 0, 0,
+	sizeof (ProtectedConfigurationSection_t3541826375), -1, sizeof(ProtectedConfigurationSection_t3541826375_StaticFields), 0,
+	sizeof (ProviderSettings_t873049714), -1, sizeof(ProviderSettings_t873049714_StaticFields), 0,
+	sizeof (ProviderSettingsCollection_t585304908), -1, sizeof(ProviderSettingsCollection_t585304908_StaticFields), 0,
+	sizeof (SectionInfo_t1739019515), -1, sizeof(SectionInfo_t1739019515_StaticFields), 0,
+	sizeof (SectionGroupInfo_t2346323570), -1, sizeof(SectionGroupInfo_t2346323570_StaticFields), 0,
+	sizeof (ConfigInfoCollection_t3264723080), -1, 0, 0,
+	sizeof (SectionInformation_t2754609709), -1, 0, 0,
+	sizeof (MonoTODOAttribute_t3487514022), -1, 0, 0,
+	sizeof (MonoInternalNoteAttribute_t4192790486), -1, 0, 0,
 	sizeof (U3CModuleU3E_t3783534220), -1, 0, 0,
 	sizeof (U3CModuleU3E_t3783534221), -1, 0, 0,
 	sizeof (U3CModuleU3E_t3783534222), -1, 0, 0,
 	sizeof (U3CModuleU3E_t3783534223), -1, 0, 0,
+	sizeof (ExtensionAttribute_t1840441203), -1, 0, 0,
+	sizeof (Locale_t4255929017), -1, 0, 0,
+	sizeof (KeyBuilder_t3965881086), -1, sizeof(KeyBuilder_t3965881086_StaticFields), 0,
+	sizeof (SymmetricTransform_t1394030014), -1, 0, 0,
+	sizeof (Aes_t2354947465), -1, 0, 0,
+	sizeof (AesManaged_t3721278648), -1, 0, 0,
+	sizeof (AesTransform_t3733702461), -1, sizeof(AesTransform_t3733702461_StaticFields), 0,
+	sizeof (U3CPrivateImplementationDetailsU3E_t1486305141), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields), 0,
+	sizeof (U24ArrayTypeU24120_t116038563)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24120_t116038563_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU24256_t2038352957)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352957_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU241024_t2672183895)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241024_t2672183895_marshaled_pinvoke), 0, 0,
+	sizeof (U3CModuleU3E_t3783534224), -1, 0, 0,
 	sizeof (ApplicationIDAttribute_t3606647885), -1, 0, 0,
 	sizeof (ApplicationNameAttribute_t3499772351), -1, 0, 0,
 	0, -1, 0, 0,
-	sizeof (U3CModuleU3E_t3783534224), -1, 0, 0,
+	sizeof (U3CModuleU3E_t3783534225), -1, 0, 0,
 	sizeof (SharpZipBaseException_t4116900137), -1, 0, 0,
 	0, -1, 0, 0,
 	sizeof (Adler32_t1759601101), -1, 0, 0,
@@ -16267,18 +17074,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (__StaticArrayInitTypeSizeU3D16_t286643802)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D16_t286643802_marshaled_pinvoke), 0, 0,
 	sizeof (__StaticArrayInitTypeSizeU3D116_t1646040079)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D116_t1646040079_marshaled_pinvoke), 0, 0,
 	sizeof (__StaticArrayInitTypeSizeU3D120_t2808839494)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D120_t2808839494_marshaled_pinvoke), 0, 0,
-	sizeof (U3CModuleU3E_t3783534225), -1, 0, 0,
-	sizeof (ExtensionAttribute_t1840441203), -1, 0, 0,
-	sizeof (Locale_t4255929017), -1, 0, 0,
-	sizeof (KeyBuilder_t3965881086), -1, sizeof(KeyBuilder_t3965881086_StaticFields), 0,
-	sizeof (SymmetricTransform_t1394030014), -1, 0, 0,
-	sizeof (Aes_t2354947465), -1, 0, 0,
-	sizeof (AesManaged_t3721278648), -1, 0, 0,
-	sizeof (AesTransform_t3733702461), -1, sizeof(AesTransform_t3733702461_StaticFields), 0,
-	sizeof (U3CPrivateImplementationDetailsU3E_t1486305141), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305141_StaticFields), 0,
-	sizeof (U24ArrayTypeU24120_t116038563)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24120_t116038563_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU24256_t2038352957)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2038352957_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU241024_t2672183895)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241024_t2672183895_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t3783534226), -1, 0, 0,
 	sizeof (Parser_t1744254983), -1, sizeof(Parser_t1744254983_StaticFields), 0,
 	sizeof (YYRules_t3228736289), -1, sizeof(YYRules_t3228736289_StaticFields), 0,
@@ -16476,29 +17271,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (U24ArrayTypeU241084_t2672183884)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241084_t2672183884_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU2440_t540610915)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2440_t540610915_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t3783534227), -1, 0, 0,
-	sizeof (FormatReader_t3367903422), -1, 0, 0,
-	sizeof (Helpers_t551273995), -1, sizeof(Helpers_t551273995_StaticFields), 0,
-	sizeof (XlsxDimension_t1977862101), -1, 0, 0,
-	sizeof (XlsxNumFmt_t1220338590), -1, 0, 0,
-	sizeof (XlsxSST_t3732229269), -1, 0, 0,
-	sizeof (XlsxStyles_t1776783765), -1, 0, 0,
-	sizeof (XlsxWorkbook_t188684221), -1, 0, 0,
-	sizeof (XlsxWorksheet_t2598215163), -1, 0, 0,
-	sizeof (XlsxXf_t160302635), -1, 0, 0,
-	sizeof (ReferenceHelper_t1500920275), -1, 0, 0,
-	sizeof (ZipWorker_t1305438663), -1, 0, 0,
-	0, -1, 0, 0,
-	sizeof (ExcelReaderFactory_t1592333972), -1, 0, 0,
-	sizeof (ExcelOpenXmlReader_t1964336123), -1, 0, 0,
-	0, -1, 0, 0,
-	0, 0, 0, 0,
-	sizeof (Log_t2157885282), -1, sizeof(Log_t2157885282_StaticFields), 0,
-	sizeof (LogManager_t1846890795), -1, sizeof(LogManager_t1846890795_StaticFields), 0,
-	sizeof (NullLog_t2892847919), -1, 0, 0,
-	sizeof (U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298), -1, sizeof(U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298_StaticFields), 0,
-	sizeof (__StaticArrayInitTypeSizeU3D20_t4120193108)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D20_t4120193108_marshaled_pinvoke), 0, 0,
-	sizeof (__StaticArrayInitTypeSizeU3D48_t631794874)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D48_t631794874_marshaled_pinvoke), 0, 0,
-	sizeof (U3CModuleU3E_t3783534228), -1, 0, 0,
 	sizeof (AssetBundleCreateRequest_t1038783543), -1, 0, 0,
 	sizeof (CompatibilityCheck_t2509986555)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AssetBundleRequest_t2674559435), sizeof(AssetBundleRequest_t2674559435_marshaled_pinvoke), 0, 0,
@@ -16518,6 +17290,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (QualitySettings_t3238033062), -1, 0, 0,
 	sizeof (MeshFilter_t3026937449), -1, 0, 0,
 	sizeof (Renderer_t257310565), -1, 0, 0,
+	sizeof (TrailRenderer_t2490637367), -1, 0, 0,
+	sizeof (LineRenderer_t849157671), -1, 0, 0,
 	sizeof (Screen_t786852042), -1, 0, 0,
 	sizeof (MeshRenderer_t1268241104), -1, 0, 0,
 	sizeof (RectOffset_t3387826427), -1, 0, 0,
@@ -16533,6 +17307,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188)+ sizeof (Il2CppObject), sizeof(TouchScreenKeyboard_InternalConstructorHelperArguments_t1040270188_marshaled_pinvoke), 0, 0,
 	sizeof (TouchScreenKeyboardType_t875112366)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (TouchScreenKeyboard_t601950206), -1, 0, 0,
+	sizeof (Gizmos_t2256232573), -1, 0, 0,
 	sizeof (LayerMask_t3188175821)+ sizeof (Il2CppObject), sizeof(LayerMask_t3188175821_marshaled_pinvoke), 0, 0,
 	sizeof (Vector2_t2243707579)+ sizeof (Il2CppObject), sizeof(Vector2_t2243707579_marshaled_pinvoke), 0, 0,
 	sizeof (Vector3_t2243707580)+ sizeof (Il2CppObject), sizeof(Vector3_t2243707580_marshaled_pinvoke), 0, 0,
@@ -16632,6 +17407,10 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (BoxCollider_t22920061), -1, 0, 0,
 	sizeof (RaycastHit_t87180320)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (CharacterController_t4094781467), -1, 0, 0,
+	sizeof (Rigidbody2D_t502193897), -1, 0, 0,
+	sizeof (Collider2D_t646061738), -1, 0, 0,
+	sizeof (ContactPoint2D_t3659330976)+ sizeof (Il2CppObject), -1, 0, 0,
+	sizeof (Collision2D_t1539500754), -1, 0, 0,
 	sizeof (AudioSettings_t3144015719), -1, sizeof(AudioSettings_t3144015719_StaticFields), 0,
 	sizeof (AudioConfigurationChangeHandler_t3743753033), sizeof(Il2CppMethodPointer), 0, 0,
 	sizeof (AudioType_t4076847944)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -16775,7 +17554,212 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (GenericStack_t3718539591), -1, 0, 0,
 	0, 0, 0, 0,
 	0, 0, 0, 0,
+	sizeof (U3CModuleU3E_t3783534228), -1, 0, 0,
+	sizeof (AutoPlay_t2503223703)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (AxisConstraint_t1244566668)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Color2_t232726623)+ sizeof (Il2CppObject), sizeof(Color2_t232726623_marshaled_pinvoke), 0, 0,
+	sizeof (TweenCallback_t3697142134), sizeof(Il2CppMethodPointer), 0, 0,
+	0, 0, 0, 0,
+	sizeof (EaseFunction_t3306356708), sizeof(Il2CppMethodPointer), 0, 0,
+	sizeof (DOTween_t2276353038), -1, sizeof(DOTween_t2276353038_StaticFields), 0,
+	sizeof (U3CU3Ec__DisplayClass52_0_t3467700650), -1, 0, 0,
+	sizeof (DOVirtual_t1722510550), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass0_0_t3724530167), -1, 0, 0,
+	sizeof (Ease_t2502520296)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (EaseFactory_t4203735666), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass2_0_t2066423765), -1, 0, 0,
+	0, -1, 0, 0,
+	sizeof (PathMode_t1545785466)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (PathType_t2815988833)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (RotateMode_t1177727514)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ScrambleMode_t385206138)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (TweenExtensions_t405253783), -1, 0, 0,
+	sizeof (LoopType_t2249218064)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Sequence_t110643099), -1, 0, 0,
+	sizeof (ShortcutExtensions_t3524050470), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass0_0_t964842963), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass1_0_t964842866), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass2_0_t964843029), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass3_0_t964842932), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass4_0_t964842831), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass5_0_t964842734), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass6_0_t964842897), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass7_0_t964842800), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass8_0_t964843227), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass9_0_t964843130), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass10_0_t3010978348), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass11_0_t1424691431), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass12_0_t2728653346), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass13_0_t1142366429), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass14_0_t3575628352), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass15_0_t1989341435), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass16_0_t3293303350), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass17_0_t1707016433), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass18_0_t1881678340), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass19_0_t295391423), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass20_0_t3010978441), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass21_0_t1424691524), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass22_0_t2728653439), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass23_0_t1142366522), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass24_0_t3575628445), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass25_0_t1989341528), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass26_0_t3293303443), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass27_0_t1707016526), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass28_0_t1881678433), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass29_0_t295391516), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass30_0_t3010978538), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass31_0_t1424691621), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass32_0_t2728653536), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass33_0_t1142366619), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass34_0_t3575628542), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass35_0_t1989341625), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass36_0_t3293303540), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass37_0_t1707016623), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass38_0_t1881678530), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass39_0_t295391613), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass40_0_t3010978383), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass41_0_t1424691466), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass42_0_t2728653381), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass43_0_t1142366464), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass44_0_t3575628387), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass45_0_t1989341470), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass46_0_t3293303385), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass47_0_t1707016468), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass48_0_t1881678375), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass49_0_t295391458), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass50_0_t3010978224), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass51_0_t1424691307), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass52_0_t2728653222), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass53_0_t1142366305), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass54_0_t3575628228), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass55_0_t1989341311), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass56_0_t3293303226), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass57_0_t1707016309), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass58_0_t1881678216), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass59_0_t295391299), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass60_0_t3010978317), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass61_0_t1424691400), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass62_0_t2728653315), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass63_0_t1142366398), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass64_0_t3575628321), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass65_0_t1989341404), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass66_0_t3293303319), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass67_0_t1707016402), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass68_0_t1881678309), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass69_0_t295391392), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass70_0_t3010978414), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass71_0_t1424691497), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass72_0_t2728653412), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass73_0_t1142366495), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass74_0_t3575628418), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass75_0_t1989341501), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass76_0_t3293303416), -1, 0, 0,
+	sizeof (U3CU3Ec__DisplayClass77_0_t1707016499), -1, 0, 0,
+	sizeof (TweenParams_t2944325381), -1, sizeof(TweenParams_t2944325381_StaticFields), 0,
+	sizeof (TweenSettingsExtensions_t2285462830), -1, 0, 0,
+	sizeof (LogBehaviour_t3505725029)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Tween_t278478013), -1, 0, 0,
+	sizeof (Tweener_t760404022), -1, 0, 0,
+	sizeof (TweenType_t169444141)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (UpdateType_t3357224513)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Color2Plugin_t3433430606), -1, 0, 0,
+	sizeof (DoublePlugin_t266400784), -1, 0, 0,
+	sizeof (LongPlugin_t1941283029), -1, 0, 0,
+	sizeof (UlongPlugin_t3231465400), -1, 0, 0,
+	sizeof (Vector3ArrayPlugin_t2378569512), -1, 0, 0,
+	sizeof (PathPlugin_t4171842066), -1, 0, 0,
+	sizeof (ColorPlugin_t4063724482), -1, 0, 0,
+	sizeof (IntPlugin_t180838436), -1, 0, 0,
+	sizeof (QuaternionPlugin_t1696644323), -1, 0, 0,
+	sizeof (RectOffsetPlugin_t664509336), -1, sizeof(RectOffsetPlugin_t664509336_StaticFields), 0,
+	sizeof (RectPlugin_t391797831), -1, 0, 0,
+	sizeof (UintPlugin_t1040977389), -1, 0, 0,
+	sizeof (Vector2Plugin_t2164285386), -1, 0, 0,
+	sizeof (Vector4Plugin_t2164361360), -1, 0, 0,
+	sizeof (StringPlugin_t3620786088), -1, sizeof(StringPlugin_t3620786088_StaticFields), 0,
+	sizeof (StringPluginExtensions_t3910942986), -1, sizeof(StringPluginExtensions_t3910942986_StaticFields), 0,
+	sizeof (FloatPlugin_t3639480371), -1, 0, 0,
+	sizeof (Vector3Plugin_t2164530409), -1, 0, 0,
+	sizeof (OrientType_t1755667719)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (PathOptions_t2659884781)+ sizeof (Il2CppObject), -1, 0, 0,
+	sizeof (QuaternionOptions_t466049668)+ sizeof (Il2CppObject), sizeof(QuaternionOptions_t466049668_marshaled_pinvoke), 0, 0,
+	sizeof (UintOptions_t2267095136)+ sizeof (Il2CppObject), sizeof(UintOptions_t2267095136_marshaled_pinvoke), 0, 0,
+	sizeof (Vector3ArrayOptions_t2672570171)+ sizeof (Il2CppObject), sizeof(Vector3ArrayOptions_t2672570171_marshaled_pinvoke), 0, 0,
+	sizeof (NoOptions_t2508431845)+ sizeof (Il2CppObject), sizeof(NoOptions_t2508431845_marshaled_pinvoke), 0, 0,
+	sizeof (ColorOptions_t2213017305)+ sizeof (Il2CppObject), sizeof(ColorOptions_t2213017305_marshaled_pinvoke), 0, 0,
+	sizeof (FloatOptions_t1421548266)+ sizeof (Il2CppObject), sizeof(FloatOptions_t1421548266_marshaled_pinvoke), 0, 0,
+	sizeof (RectOptions_t3393635162)+ sizeof (Il2CppObject), sizeof(RectOptions_t3393635162_marshaled_pinvoke), 0, 0,
+	sizeof (StringOptions_t2885323933)+ sizeof (Il2CppObject), sizeof(StringOptions_t2885323933_marshaled_pinvoke), 0, 0,
+	sizeof (VectorOptions_t293385261)+ sizeof (Il2CppObject), sizeof(VectorOptions_t293385261_marshaled_pinvoke), 0, 0,
+	0, 0, 0, 0,
+	sizeof (SpecialPluginsUtils_t2241999250), -1, 0, 0,
+	0, 0, 0, 0,
+	0, -1, 0, 0,
+	0, 0, 0, 0,
+	sizeof (PluginsManager_t3052451537), -1, sizeof(PluginsManager_t3052451537_StaticFields), 0,
+	sizeof (ControlPoint_t168081159)+ sizeof (Il2CppObject), sizeof(ControlPoint_t168081159_marshaled_pinvoke), 0, 0,
+	sizeof (ABSPathDecoder_t3294469411), -1, 0, 0,
+	sizeof (CatmullRomDecoder_t3014762178), -1, 0, 0,
+	sizeof (LinearDecoder_t2073524639), -1, 0, 0,
+	sizeof (Path_t2828565993), -1, sizeof(Path_t2828565993_StaticFields), 0,
+	sizeof (PureQuaternionPlugin_t3400666973), -1, sizeof(PureQuaternionPlugin_t3400666973_StaticFields), 0,
+	sizeof (ABSSequentiable_t2284140720), -1, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	sizeof (Debugger_t1404542751), -1, sizeof(Debugger_t1404542751_StaticFields), 0,
+	sizeof (DOTweenComponent_t696744215), -1, 0, 0,
+	sizeof (U3CWaitForCompletionU3Ed__13_t639731943), -1, 0, 0,
+	sizeof (U3CWaitForRewindU3Ed__14_t2782210651), -1, 0, 0,
+	sizeof (U3CWaitForKillU3Ed__15_t1007991819), -1, 0, 0,
+	sizeof (U3CWaitForElapsedLoopsU3Ed__16_t3988581919), -1, 0, 0,
+	sizeof (U3CWaitForPositionU3Ed__17_t2034437344), -1, 0, 0,
+	sizeof (U3CWaitForStartU3Ed__18_t2341562412), -1, 0, 0,
+	sizeof (DOTweenSettings_t873123119), -1, 0, 0,
+	sizeof (SettingsLocation_t514961325)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Extensions_t507052800), -1, 0, 0,
+	sizeof (SequenceCallback_t2782183128), -1, 0, 0,
+	sizeof (TweenManager_t1979661952), -1, sizeof(TweenManager_t1979661952_StaticFields), 0,
+	sizeof (CapacityIncreaseMode_t1969140739)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Utils_t2524017187), -1, 0, 0,
+	0, 0, 0, 0,
+	sizeof (FilterType_t1425068526)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (OperationType_t2600045009)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (SpecialStartupMode_t1501334721)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (UpdateNotice_t2468589887)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (UpdateMode_t2539919096)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Bounce_t3273339050), -1, 0, 0,
+	sizeof (EaseManager_t1514337917), -1, 0, 0,
+	sizeof (U3CU3Ec_t1609106043), -1, sizeof(U3CU3Ec_t1609106043_StaticFields), 0,
+	sizeof (EaseCurve_t1295352409), -1, 0, 0,
+	sizeof (Flash_t1282698556), -1, 0, 0,
+	sizeof (U3CPrivateImplementationDetailsU3E_t1486305143), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields), 0,
+	sizeof (__StaticArrayInitTypeSizeU3D20_t978476011)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D20_t978476011_marshaled_pinvoke), 0, 0,
+	sizeof (__StaticArrayInitTypeSizeU3D50_t3707359366)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D50_t3707359366_marshaled_pinvoke), 0, 0,
+	sizeof (__StaticArrayInitTypeSizeU3D120_t1468992140)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D120_t1468992140_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t3783534229), -1, 0, 0,
+	sizeof (FormatReader_t3367903422), -1, 0, 0,
+	sizeof (Helpers_t551273995), -1, sizeof(Helpers_t551273995_StaticFields), 0,
+	sizeof (XlsxDimension_t1977862101), -1, 0, 0,
+	sizeof (XlsxNumFmt_t1220338590), -1, 0, 0,
+	sizeof (XlsxSST_t3732229269), -1, 0, 0,
+	sizeof (XlsxStyles_t1776783765), -1, 0, 0,
+	sizeof (XlsxWorkbook_t188684221), -1, 0, 0,
+	sizeof (XlsxWorksheet_t2598215163), -1, 0, 0,
+	sizeof (XlsxXf_t160302635), -1, 0, 0,
+	sizeof (ReferenceHelper_t1500920275), -1, 0, 0,
+	sizeof (ZipWorker_t1305438663), -1, 0, 0,
+	0, -1, 0, 0,
+	sizeof (ExcelReaderFactory_t1592333972), -1, 0, 0,
+	sizeof (ExcelOpenXmlReader_t1964336123), -1, 0, 0,
+	0, -1, 0, 0,
+	0, 0, 0, 0,
+	sizeof (Log_t2157885282), -1, sizeof(Log_t2157885282_StaticFields), 0,
+	sizeof (LogManager_t1846890795), -1, sizeof(LogManager_t1846890795_StaticFields), 0,
+	sizeof (NullLog_t2892847919), -1, 0, 0,
+	sizeof (U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298), -1, sizeof(U3CPrivateImplementationDetailsU3EU7B10037FEEU2DF752U2D4B71U2DADAEU2DB726711CA9CAU7D_t2916131298_StaticFields), 0,
+	sizeof (__StaticArrayInitTypeSizeU3D20_t4120193108)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D20_t4120193108_marshaled_pinvoke), 0, 0,
+	sizeof (__StaticArrayInitTypeSizeU3D48_t631794874)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D48_t631794874_marshaled_pinvoke), 0, 0,
+	sizeof (U3CModuleU3E_t3783534230), -1, 0, 0,
 	sizeof (EquipItems_t3211185488), -1, 0, 0,
 	sizeof (EquipRandomItem_t1031555304), -1, 0, 0,
 	sizeof (UICursor_t1925473040), -1, sizeof(UICursor_t1925473040_StaticFields), 0,
@@ -16960,24 +17944,30 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2740] =
 	sizeof (UITiledSprite_t240360451), -1, 0, 0,
 	sizeof (UITooltip_t1873874935), -1, sizeof(UITooltip_t1873874935_StaticFields), 0,
 	sizeof (UIViewport_t1541362616), -1, 0, 0,
+	sizeof (PlayerCarController_t116747357), -1, 0, 0,
+	sizeof (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952), -1, 0, 0,
+	sizeof (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208), -1, 0, 0,
 	sizeof (GameConfigurationManager_t1548987031), -1, sizeof(GameConfigurationManager_t1548987031_StaticFields), 0,
 	sizeof (Account_t3062613273), -1, 0, 0,
 	sizeof (GameSettings_t213610147), -1, 0, 0,
 	sizeof (GameDifficulty_t3332754345)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (SoundSetting_t2958378805), -1, 0, 0,
 	sizeof (GameManager_t2252321495), -1, 0, 0,
+	sizeof (InputControllerManager_t1050051015), -1, sizeof(InputControllerManager_t1050051015_StaticFields), 0,
 	sizeof (GameChoosePanel_t1813263919), -1, 0, 0,
 	sizeof (GamePanel_t539122112), -1, 0, 0,
 	sizeof (GameSettingPanel_t4173768872), -1, 0, 0,
 	sizeof (GameUI_t4016257260), -1, sizeof(GameUI_t4016257260_StaticFields), 0,
 	sizeof (LoadingProcess_t282725851), -1, 0, 0,
-	sizeof (U3CUpdateProcessBarU3Ec__Iterator3_t1282375851), -1, 0, 0,
+	sizeof (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845), -1, 0, 0,
 	sizeof (AccountInputField_t2916814735), -1, 0, 0,
 	sizeof (LoginButton_t970805563), -1, 0, 0,
 	sizeof (LoginManager_t973619992), -1, sizeof(LoginManager_t973619992_StaticFields), 0,
 	sizeof (LoginUI_t1439696001), -1, sizeof(LoginUI_t1439696001_StaticFields), 0,
 	sizeof (Validator_t172396982), -1, sizeof(Validator_t172396982_StaticFields), 0,
+	sizeof (FPSDisplay_t3952194245), -1, 0, 0,
+	sizeof (OffsetScroller_t1610136665), -1, 0, 0,
 	sizeof (UIRootExtend_t1122248034), -1, 0, 0,
-	sizeof (U3CPrivateImplementationDetailsU3E_t1486305143), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305143_StaticFields), 0,
+	sizeof (U3CPrivateImplementationDetailsU3E_t1486305144), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305144_StaticFields), 0,
 	sizeof (U24ArrayTypeU2464_t2866209748)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2464_t2866209748_marshaled_pinvoke), 0, 0,
 };

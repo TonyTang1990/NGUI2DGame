@@ -40,6 +40,9 @@ extern "C"  bool Nullable_1_Equals_m1889119397_gshared (Nullable_1_t1693325264 *
 // System.Int32 System.Nullable`1<System.TimeSpan>::GetHashCode()
 extern "C"  int32_t Nullable_1_GetHashCode_m1791015856_gshared (Nullable_1_t1693325264 * __this, const MethodInfo* method);
 #define Nullable_1_GetHashCode_m1791015856(__this, method) ((  int32_t (*) (Nullable_1_t1693325264 *, const MethodInfo*))Nullable_1_GetHashCode_m1791015856_gshared)(__this, method)
+// T System.Nullable`1<System.TimeSpan>::GetValueOrDefault()
+extern "C"  TimeSpan_t3430258949  Nullable_1_GetValueOrDefault_m1253254751_gshared (Nullable_1_t1693325264 * __this, const MethodInfo* method);
+#define Nullable_1_GetValueOrDefault_m1253254751(__this, method) ((  TimeSpan_t3430258949  (*) (Nullable_1_t1693325264 *, const MethodInfo*))Nullable_1_GetValueOrDefault_m1253254751_gshared)(__this, method)
 // System.String System.Nullable`1<System.TimeSpan>::ToString()
 extern "C"  String_t* Nullable_1_ToString_m1238126148_gshared (Nullable_1_t1693325264 * __this, const MethodInfo* method);
 #define Nullable_1_ToString_m1238126148(__this, method) ((  String_t* (*) (Nullable_1_t1693325264 *, const MethodInfo*))Nullable_1_ToString_m1238126148_gshared)(__this, method)

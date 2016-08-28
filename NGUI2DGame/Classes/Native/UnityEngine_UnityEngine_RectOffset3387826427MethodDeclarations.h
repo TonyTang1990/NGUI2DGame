@@ -29,6 +29,8 @@ struct RectOffset_t3387826427_marshaled_com;
 extern "C"  void RectOffset__ctor_m2227510254 (RectOffset_t3387826427 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectOffset::.ctor(UnityEngine.GUIStyle,System.IntPtr)
 extern "C"  void RectOffset__ctor_m3541945769 (RectOffset_t3387826427 * __this, GUIStyle_t1799908754 * ___sourceStyle0, IntPtr_t ___source1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.RectOffset::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+extern "C"  void RectOffset__ctor_m4133355596 (RectOffset_t3387826427 * __this, int32_t ___left0, int32_t ___right1, int32_t ___top2, int32_t ___bottom3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectOffset::Init()
 extern "C"  void RectOffset_Init_m4361650 (RectOffset_t3387826427 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectOffset::Cleanup()
