@@ -1393,6 +1393,13 @@ extern Il2CppGenericClass InternalEnumerator_1_t945932582_GenericClass;
 extern Il2CppGenericClass ICollection_1_t1039255625_GenericClass;
 extern Il2CppGenericClass IEnumerable_1_t379307365_GenericClass;
 extern Il2CppGenericClass IList_1_t628120921_GenericClass;
+extern Il2CppGenericClass List_1_t4166282325_GenericClass;
+extern Il2CppGenericClass IEnumerable_1_t794320942_GenericClass;
+extern Il2CppGenericClass IEnumerator_1_t2272685020_GenericClass;
+extern Il2CppGenericClass ICollection_1_t1454269202_GenericClass;
+extern Il2CppGenericClass Enumerator_t3701011999_GenericClass;
+extern Il2CppGenericClass IComparer_1_t2751624315_GenericClass;
+extern Il2CppGenericClass Comparison_1_t1763932748_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t1134854803_GenericClass;
 extern Il2CppGenericClass InternalEnumerator_1_t223115942_GenericClass;
 extern Il2CppGenericClass ICollection_1_t316438985_GenericClass;
@@ -2132,7 +2139,7 @@ extern Il2CppGenericClass IEqualityComparer_1_t2063206230_GenericClass;
 extern Il2CppGenericClass IComparer_1_t1676750663_GenericClass;
 extern Il2CppGenericClass IComparer_1_t389494294_GenericClass;
 extern Il2CppGenericClass IList_1_t1971352055_GenericClass;
-extern Il2CppGenericClass* const s_Il2CppGenericTypes[2114] = 
+extern Il2CppGenericClass* const s_Il2CppGenericTypes[2121] = 
 {
 	&IEnumerator_1_t164973122_GenericClass,
 	&InternalEnumerator_1_t3548201557_GenericClass,
@@ -3509,6 +3516,13 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[2114] =
 	&ICollection_1_t1039255625_GenericClass,
 	&IEnumerable_1_t379307365_GenericClass,
 	&IList_1_t628120921_GenericClass,
+	&List_1_t4166282325_GenericClass,
+	&IEnumerable_1_t794320942_GenericClass,
+	&IEnumerator_1_t2272685020_GenericClass,
+	&ICollection_1_t1454269202_GenericClass,
+	&Enumerator_t3701011999_GenericClass,
+	&IComparer_1_t2751624315_GenericClass,
+	&Comparison_1_t1763932748_GenericClass,
 	&IEnumerator_1_t1134854803_GenericClass,
 	&InternalEnumerator_1_t223115942_GenericClass,
 	&ICollection_1_t316438985_GenericClass,

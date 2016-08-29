@@ -39,6 +39,8 @@ struct Behaviour_t955675639;
 struct Component_t3819376471;
 // UnityEngine.Display
 struct Display_t3666191348;
+// UnityEngine.Rigidbody2D
+struct Rigidbody2D_t502193897;
 // UnityEngine.GUILayoutOption
 struct GUILayoutOption_t4183744904;
 // UnityEngine.GUILayoutUtility/LayoutCache
@@ -94,6 +96,7 @@ struct GameObject_t1756533147;
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3667545548.h"
 #include "UnityEngine_UnityEngine_ContactPoint1376425630.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D3659330976.h"
 #include "UnityEngine_UnityEngine_GUILayoutOption4183744904.h"
 #include "UnityEngine_UnityEngine_GUILayoutUtility_LayoutCac3120781045.h"
@@ -478,6 +481,21 @@ public:
 	inline void SetAt(il2cpp_array_size_t index, RaycastHit_t87180320  value)
 	{
 		m_Items[index] = value;
+	}
+};
+// UnityEngine.Rigidbody2D[]
+struct Rigidbody2DU5BU5D_t4025623380  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Rigidbody2D_t502193897 * m_Items[1];
+
+public:
+	inline Rigidbody2D_t502193897 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Rigidbody2D_t502193897 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Rigidbody2D_t502193897 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // UnityEngine.ContactPoint2D[]

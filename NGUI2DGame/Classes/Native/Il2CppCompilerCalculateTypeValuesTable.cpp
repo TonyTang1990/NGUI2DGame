@@ -1531,6 +1531,8 @@
 #include "UnityEngine_UnityEngine_QueryTriggerInteraction478029726.h"
 #include "UnityEngine_UnityEngine_ContactPoint1376425630.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
+#include "UnityEngine_UnityEngine_Physics2D2540166467.h"
+#include "UnityEngine_UnityEngine_RaycastHit2D4063908774.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D3659330976.h"
 #include "UnityEngine_UnityEngine_Collision2D1539500754.h"
 #include "UnityEngine_UnityEngine_AudioSettings3144015719.h"
@@ -1928,9 +1930,12 @@
 #include "AssemblyU2DCSharp_UITexture2537039969.h"
 #include "AssemblyU2DCSharp_UITooltip1873874935.h"
 #include "AssemblyU2DCSharp_UIViewport1541362616.h"
+#include "AssemblyU2DCSharp_CarDodgeGame1650312537.h"
+#include "AssemblyU2DCSharp_CarDodgeGame_U3CSpawnCoroutineU3E148974859.h"
+#include "AssemblyU2DCSharp_EnemyCar2475715994.h"
 #include "AssemblyU2DCSharp_PlayerCarController116747357.h"
-#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247952.h"
-#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197208.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247947.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197209.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager1548987031.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_Account3062613273.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_GameSett213610147.h"
@@ -1943,7 +1948,7 @@
 #include "AssemblyU2DCSharp_GameSettingPanel4173768872.h"
 #include "AssemblyU2DCSharp_GameUI4016257260.h"
 #include "AssemblyU2DCSharp_LoadingProcess282725851.h"
-#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375845.h"
+#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375848.h"
 #include "AssemblyU2DCSharp_AccountInputField2916814735.h"
 #include "AssemblyU2DCSharp_LoginButton970805563.h"
 #include "AssemblyU2DCSharp_LoginManager973619992.h"
@@ -2700,6 +2705,7 @@
 #include "AssemblyU2DCSharp_UIPanel_OnChangeDelegate1697451811.h"
 #include "AssemblyU2DCSharp_UISlicedSprite4102963883.h"
 #include "AssemblyU2DCSharp_UITiledSprite240360451.h"
+#include "AssemblyU2DCSharp_ValidBounding40306510.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU2866209745.h"
 
 
@@ -2709,7 +2715,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[12317] = 
+extern const int32_t g_FieldOffsetTable[12348] = 
 {
 	0,
 	0,
@@ -12374,6 +12380,13 @@ extern const int32_t g_FieldOffsetTable[12317] =
 	RaycastHit_t87180320::get_offset_of_m_Distance_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	RaycastHit_t87180320::get_offset_of_m_UV_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	RaycastHit_t87180320::get_offset_of_m_Collider_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Physics2D_t2540166467_StaticFields::get_offset_of_m_LastDisabledRigidbody2D_0(),
+	RaycastHit2D_t4063908774::get_offset_of_m_Centroid_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	RaycastHit2D_t4063908774::get_offset_of_m_Point_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	RaycastHit2D_t4063908774::get_offset_of_m_Normal_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	RaycastHit2D_t4063908774::get_offset_of_m_Distance_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	RaycastHit2D_t4063908774::get_offset_of_m_Fraction_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	RaycastHit2D_t4063908774::get_offset_of_m_Collider_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	ContactPoint2D_t3659330976::get_offset_of_m_Point_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	ContactPoint2D_t3659330976::get_offset_of_m_Normal_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	ContactPoint2D_t3659330976::get_offset_of_m_Collider_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -14936,21 +14949,45 @@ extern const int32_t g_FieldOffsetTable[12317] =
 	UIViewport_t1541362616::get_offset_of_bottomRight_4(),
 	UIViewport_t1541362616::get_offset_of_fullSize_5(),
 	UIViewport_t1541362616::get_offset_of_mCam_6(),
-	PlayerCarController_t116747357::get_offset_of_mMoveTweenTime_2(),
-	PlayerCarController_t116747357::get_offset_of_mIntervalTimeToKeepMovingUPOrDown_3(),
-	PlayerCarController_t116747357::get_offset_of_mHorizontalOffset_4(),
-	PlayerCarController_t116747357::get_offset_of_mVerticalOffset_5(),
-	PlayerCarController_t116747357::get_offset_of_mTargetPosition_6(),
-	PlayerCarController_t116747357::get_offset_of_mIsTweenComplete_7(),
-	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingUp_8(),
-	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingDown_9(),
-	PlayerCarController_t116747357::get_offset_of_mPlayerCarAnimator_10(),
-	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952::get_offset_of_U24PC_0(),
-	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952::get_offset_of_U24current_1(),
-	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952::get_offset_of_U3CU3Ef__this_2(),
-	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208::get_offset_of_U24PC_0(),
-	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208::get_offset_of_U24current_1(),
-	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208::get_offset_of_U3CU3Ef__this_2(),
+	CarDodgeGame_t1650312537::get_offset_of_mEnemySpawnPoint_2(),
+	CarDodgeGame_t1650312537::get_offset_of_mPlayerSpawnPoint_3(),
+	CarDodgeGame_t1650312537::get_offset_of_mNormalEnemyCar_4(),
+	CarDodgeGame_t1650312537::get_offset_of_mTruckEnemyCar_5(),
+	CarDodgeGame_t1650312537::get_offset_of_mFastEnemyCar_6(),
+	CarDodgeGame_t1650312537::get_offset_of_mNormalCarSpawnChange_7(),
+	CarDodgeGame_t1650312537::get_offset_of_mTruckSpawnChance_8(),
+	CarDodgeGame_t1650312537::get_offset_of_mFastCarSpawnChance_9(),
+	CarDodgeGame_t1650312537::get_offset_of_mMaxSpawnSpeed_10(),
+	CarDodgeGame_t1650312537::get_offset_of_mMinSpawnSpeed_11(),
+	CarDodgeGame_t1650312537::get_offset_of_mCurrentSpawnSpeed_12(),
+	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U24PC_0(),
+	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U24current_1(),
+	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U3CU3Ef__this_2(),
+	EnemyCar_t2475715994::get_offset_of_mSpeed_2(),
+	0,
+	PlayerCarController_t116747357::get_offset_of_mMoveTweenTime_3(),
+	PlayerCarController_t116747357::get_offset_of_mIntervalTimeToKeepMovingUPOrDown_4(),
+	PlayerCarController_t116747357::get_offset_of_mHorizontalOffset_5(),
+	PlayerCarController_t116747357::get_offset_of_mVerticalOffset_6(),
+	PlayerCarController_t116747357::get_offset_of_mBolockingLayer_7(),
+	PlayerCarController_t116747357::get_offset_of_mTargetPosition_8(),
+	PlayerCarController_t116747357::get_offset_of_mIsTweenComplete_9(),
+	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingUp_10(),
+	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingDown_11(),
+	PlayerCarController_t116747357::get_offset_of_mPlayerCarAnimator_12(),
+	PlayerCarController_t116747357::get_offset_of_mIsCrash_13(),
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3CstartU3E__0_0(),
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3CendU3E__1_1(),
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3ChitU3E__2_2(),
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U24PC_3(),
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U24current_4(),
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3CU3Ef__this_5(),
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209::get_offset_of_U3CstartU3E__0_0(),
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209::get_offset_of_U3CendU3E__1_1(),
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209::get_offset_of_U3ChitU3E__2_2(),
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209::get_offset_of_U24PC_3(),
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209::get_offset_of_U24current_4(),
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209::get_offset_of_U3CU3Ef__this_5(),
 	GameConfigurationManager_t1548987031_StaticFields::get_offset_of_mLMInstance_0(),
 	GameConfigurationManager_t1548987031::get_offset_of_mConfigurationPath_1(),
 	GameConfigurationManager_t1548987031::get_offset_of_mIsConfigurationComplete_2(),
@@ -14997,12 +15034,12 @@ extern const int32_t g_FieldOffsetTable[12317] =
 	LoadingProcess_t282725851::get_offset_of_mProcessScrollBar_2(),
 	LoadingProcess_t282725851::get_offset_of_mCurrentProcessPer_3(),
 	LoadingProcess_t282725851::get_offset_of_mIsLoadingComplete_4(),
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CexecutecountU3E__0_0(),
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CinternaltimeU3E__1_1(),
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CiU3E__2_2(),
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U24PC_3(),
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U24current_4(),
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845::get_offset_of_U3CU3Ef__this_5(),
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CexecutecountU3E__0_0(),
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CinternaltimeU3E__1_1(),
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CiU3E__2_2(),
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U24PC_3(),
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U24current_4(),
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CU3Ef__this_5(),
 	AccountInputField_t2916814735::get_offset_of_mInvalidePatterns_2(),
 	AccountInputField_t2916814735::get_offset_of_mAccountTip_3(),
 	AccountInputField_t2916814735::get_offset_of_mInput_4(),
@@ -15032,7 +15069,7 @@ extern const int32_t g_FieldOffsetTable[12317] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2936] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2942] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -17407,6 +17444,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2936] =
 	sizeof (BoxCollider_t22920061), -1, 0, 0,
 	sizeof (RaycastHit_t87180320)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (CharacterController_t4094781467), -1, 0, 0,
+	sizeof (Physics2D_t2540166467), -1, sizeof(Physics2D_t2540166467_StaticFields), 0,
+	sizeof (RaycastHit2D_t4063908774)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (Rigidbody2D_t502193897), -1, 0, 0,
 	sizeof (Collider2D_t646061738), -1, 0, 0,
 	sizeof (ContactPoint2D_t3659330976)+ sizeof (Il2CppObject), -1, 0, 0,
@@ -17944,9 +17983,13 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2936] =
 	sizeof (UITiledSprite_t240360451), -1, 0, 0,
 	sizeof (UITooltip_t1873874935), -1, sizeof(UITooltip_t1873874935_StaticFields), 0,
 	sizeof (UIViewport_t1541362616), -1, 0, 0,
+	sizeof (CarDodgeGame_t1650312537), -1, 0, 0,
+	sizeof (U3CSpawnCoroutineU3Ec__Iterator3_t148974859), -1, 0, 0,
+	sizeof (EnemyCar_t2475715994), -1, 0, 0,
 	sizeof (PlayerCarController_t116747357), -1, 0, 0,
-	sizeof (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952), -1, 0, 0,
-	sizeof (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208), -1, 0, 0,
+	sizeof (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947), -1, 0, 0,
+	sizeof (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209), -1, 0, 0,
+	sizeof (ValidBounding_t40306510), -1, 0, 0,
 	sizeof (GameConfigurationManager_t1548987031), -1, sizeof(GameConfigurationManager_t1548987031_StaticFields), 0,
 	sizeof (Account_t3062613273), -1, 0, 0,
 	sizeof (GameSettings_t213610147), -1, 0, 0,
@@ -17959,7 +18002,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2936] =
 	sizeof (GameSettingPanel_t4173768872), -1, 0, 0,
 	sizeof (GameUI_t4016257260), -1, sizeof(GameUI_t4016257260_StaticFields), 0,
 	sizeof (LoadingProcess_t282725851), -1, 0, 0,
-	sizeof (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845), -1, 0, 0,
+	sizeof (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848), -1, 0, 0,
 	sizeof (AccountInputField_t2916814735), -1, 0, 0,
 	sizeof (LoginButton_t970805563), -1, 0, 0,
 	sizeof (LoginManager_t973619992), -1, sizeof(LoginManager_t973619992_StaticFields), 0,

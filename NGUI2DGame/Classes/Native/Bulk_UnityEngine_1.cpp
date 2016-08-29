@@ -165,6 +165,10 @@ struct RaycastHitU5BU5D_t1214023521;
 struct PlayerPrefsException_t3229544204;
 // UnityEngine.Collider
 struct Collider_t3497673348;
+// UnityEngine.Collider2D
+struct Collider2D_t646061738;
+// UnityEngine.Rigidbody2D
+struct Rigidbody2D_t502193897;
 // UnityEngine.RectTransform
 struct RectTransform_t3349966182;
 // UnityEngine.RectTransform/ReapplyDrivenProperties
@@ -189,8 +193,6 @@ struct ScriptableObject_t1975622470;
 struct RequiredByNativeCodeAttribute_t1913052472;
 // UnityEngine.Scripting.UsedByNativeCodeAttribute
 struct UsedByNativeCodeAttribute_t3212052468;
-// UnityEngine.GUILayer
-struct GUILayer_t3254902478;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -461,6 +463,11 @@ struct GUILayer_t3254902478;
 #include "UnityEngine_UnityEngine_QueryTriggerInteraction478029726.h"
 #include "UnityEngine_UnityEngine_Ray2469606224.h"
 #include "UnityEngine_UnityEngine_Ray2469606224MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Physics2D2540166467.h"
+#include "UnityEngine_UnityEngine_Physics2D2540166467MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4166282325MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4166282325.h"
+#include "UnityEngine_UnityEngine_RaycastHit2D4063908774.h"
 #include "UnityEngine_UnityEngine_Plane3727654732.h"
 #include "UnityEngine_UnityEngine_Plane3727654732MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_PlayerPrefs3325146001.h"
@@ -477,6 +484,11 @@ struct GUILayer_t3254902478;
 #include "UnityEngine_UnityEngine_Random1170710517.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Collider3497673348.h"
+#include "UnityEngine_UnityEngine_RaycastHit2D4063908774MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Collider2D646061738.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
+#include "UnityEngine_UnityEngine_Collider2D646061738MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectTransform_ReapplyDrive2020713228MethodDeclarations.h"
@@ -494,7 +506,6 @@ struct GUILayer_t3254902478;
 #include "UnityEngine_UnityEngine_Resources339470017.h"
 #include "UnityEngine_UnityEngine_Rigidbody4233889191.h"
 #include "UnityEngine_UnityEngine_Rigidbody4233889191MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RPC3323229423.h"
 #include "UnityEngine_UnityEngine_RPC3323229423MethodDeclarations.h"
@@ -519,21 +530,6 @@ struct GUILayer_t3254902478;
 #include "UnityEngine_UnityEngine_Scripting_RequiredByNative1913052472MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode3212052468.h"
 #include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode3212052468MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions1414041951MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SendMouseEvents3505065032.h"
-#include "UnityEngine_UnityEngine_SendMouseEvents3505065032MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SendMouseEvents_HitInfo1761367055.h"
-#include "UnityEngine_UnityEngine_Camera189460977MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GUILayer3254902478MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Camera189460977.h"
-#include "UnityEngine_UnityEngine_GUILayer3254902478.h"
-#include "UnityEngine_UnityEngine_GUIElement3381083099.h"
-#include "UnityEngine_UnityEngine_GameObject1756533147.h"
-#include "UnityEngine_UnityEngine_Component3819376471.h"
-#include "UnityEngine_UnityEngine_CameraClearFlags452084705.h"
-#include "UnityEngine_UnityEngine_SendMouseEvents_HitInfo1761367055MethodDeclarations.h"
 
 // System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Vector3>(UnityEngine.Mesh/InternalShaderChannel,!!0[])
 extern "C"  void Mesh_SetArrayForChannel_TisVector3_t2243707580_m2048180582_gshared (Mesh_t1356156583 * __this, int32_t p0, Vector3U5BU5D_t1172311765* p1, const MethodInfo* method);
@@ -547,11 +543,6 @@ extern "C"  void Mesh_SetArrayForChannel_TisVector2_t2243707579_m2396417451_gsha
 // System.Void UnityEngine.Mesh::SetArrayForChannel<UnityEngine.Color32>(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,!!0[])
 extern "C"  void Mesh_SetArrayForChannel_TisColor32_t874517518_m1992288190_gshared (Mesh_t1356156583 * __this, int32_t p0, int32_t p1, int32_t p2, Color32U5BU5D_t30278651* p3, const MethodInfo* method);
 #define Mesh_SetArrayForChannel_TisColor32_t874517518_m1992288190(__this, p0, p1, p2, p3, method) ((  void (*) (Mesh_t1356156583 *, int32_t, int32_t, int32_t, Color32U5BU5D_t30278651*, const MethodInfo*))Mesh_SetArrayForChannel_TisColor32_t874517518_m1992288190_gshared)(__this, p0, p1, p2, p3, method)
-// !!0 UnityEngine.Component::GetComponent<System.Object>()
-extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m2721246802_gshared (Component_t3819376471 * __this, const MethodInfo* method);
-#define Component_GetComponent_TisIl2CppObject_m2721246802(__this, method) ((  Il2CppObject * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<UnityEngine.GUILayer>()
-#define Component_GetComponent_TisGUILayer_t3254902478_m2431610297(__this, method) ((  GUILayer_t3254902478 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -16311,6 +16302,107 @@ extern "C"  bool Physics_INTERNAL_CALL_Internal_Raycast_m93849932 (Il2CppObject 
 	_il2cpp_icall_func = (Physics_INTERNAL_CALL_Internal_Raycast_m93849932_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics::INTERNAL_CALL_Internal_Raycast(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)");
 	return _il2cpp_icall_func(___origin0, ___direction1, ___hitInfo2, ___maxDistance3, ___layermask4, ___queryTriggerInteraction5);
 }
+// System.Void UnityEngine.Physics2D::.cctor()
+extern Il2CppClass* List_1_t4166282325_il2cpp_TypeInfo_var;
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const MethodInfo* List_1__ctor_m2338710192_MethodInfo_var;
+extern const uint32_t Physics2D__cctor_m3532647019_MetadataUsageId;
+extern "C"  void Physics2D__cctor_m3532647019 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D__cctor_m3532647019_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		List_1_t4166282325 * L_0 = (List_1_t4166282325 *)il2cpp_codegen_object_new(List_1_t4166282325_il2cpp_TypeInfo_var);
+		List_1__ctor_m2338710192(L_0, /*hidden argument*/List_1__ctor_m2338710192_MethodInfo_var);
+		((Physics2D_t2540166467_StaticFields*)Physics2D_t2540166467_il2cpp_TypeInfo_var->static_fields)->set_m_LastDisabledRigidbody2D_0(L_0);
+		return;
+	}
+}
+// System.Void UnityEngine.Physics2D::Internal_Linecast(UnityEngine.Vector2,UnityEngine.Vector2,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const uint32_t Physics2D_Internal_Linecast_m1593067799_MetadataUsageId;
+extern "C"  void Physics2D_Internal_Linecast_m1593067799 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___start0, Vector2_t2243707579  ___end1, int32_t ___layerMask2, float ___minDepth3, float ___maxDepth4, RaycastHit2D_t4063908774 * ___raycastHit5, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D_Internal_Linecast_m1593067799_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		int32_t L_0 = ___layerMask2;
+		float L_1 = ___minDepth3;
+		float L_2 = ___maxDepth4;
+		RaycastHit2D_t4063908774 * L_3 = ___raycastHit5;
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300(NULL /*static, unused*/, (&___start0), (&___end1), L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
+extern "C"  void Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579 * ___start0, Vector2_t2243707579 * ___end1, int32_t ___layerMask2, float ___minDepth3, float ___maxDepth4, RaycastHit2D_t4063908774 * ___raycastHit5, const MethodInfo* method)
+{
+	typedef void (*Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300_ftn) (Vector2_t2243707579 *, Vector2_t2243707579 *, int32_t, float, float, RaycastHit2D_t4063908774 *);
+	static Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)");
+	_il2cpp_icall_func(___start0, ___end1, ___layerMask2, ___minDepth3, ___maxDepth4, ___raycastHit5);
+}
+// UnityEngine.RaycastHit2D UnityEngine.Physics2D::Linecast(UnityEngine.Vector2,UnityEngine.Vector2,System.Int32)
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const uint32_t Physics2D_Linecast_m2374117908_MetadataUsageId;
+extern "C"  RaycastHit2D_t4063908774  Physics2D_Linecast_m2374117908 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___start0, Vector2_t2243707579  ___end1, int32_t ___layerMask2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D_Linecast_m2374117908_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		V_0 = (std::numeric_limits<float>::infinity());
+		V_1 = (-std::numeric_limits<float>::infinity());
+		Vector2_t2243707579  L_0 = ___start0;
+		Vector2_t2243707579  L_1 = ___end1;
+		int32_t L_2 = ___layerMask2;
+		float L_3 = V_1;
+		float L_4 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		RaycastHit2D_t4063908774  L_5 = Physics2D_Linecast_m3607674036(NULL /*static, unused*/, L_0, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// UnityEngine.RaycastHit2D UnityEngine.Physics2D::Linecast(UnityEngine.Vector2,UnityEngine.Vector2,System.Int32,System.Single,System.Single)
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern const uint32_t Physics2D_Linecast_m3607674036_MetadataUsageId;
+extern "C"  RaycastHit2D_t4063908774  Physics2D_Linecast_m3607674036 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___start0, Vector2_t2243707579  ___end1, int32_t ___layerMask2, float ___minDepth3, float ___maxDepth4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Physics2D_Linecast_m3607674036_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	RaycastHit2D_t4063908774  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector2_t2243707579  L_0 = ___start0;
+		Vector2_t2243707579  L_1 = ___end1;
+		int32_t L_2 = ___layerMask2;
+		float L_3 = ___minDepth3;
+		float L_4 = ___maxDepth4;
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		Physics2D_Internal_Linecast_m1593067799(NULL /*static, unused*/, L_0, L_1, L_2, L_3, L_4, (&V_0), /*hidden argument*/NULL);
+		RaycastHit2D_t4063908774  L_5 = V_0;
+		return L_5;
+	}
+}
 // System.Void UnityEngine.Plane::.ctor(UnityEngine.Vector3,UnityEngine.Vector3)
 extern "C"  void Plane__ctor_m3187718367 (Plane_t3727654732 * __this, Vector3_t2243707580  ___inNormal0, Vector3_t2243707580  ___inPoint1, const MethodInfo* method)
 {
@@ -17553,6 +17645,150 @@ extern "C" void RaycastHit_t87180320_marshal_com_back(const RaycastHit_t87180320
 }
 // Conversion method for clean up from marshalling of: UnityEngine.RaycastHit
 extern "C" void RaycastHit_t87180320_marshal_com_cleanup(RaycastHit_t87180320_marshaled_com& marshaled)
+{
+}
+// UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
+extern "C"  Collider2D_t646061738 * RaycastHit2D_get_collider_m2568504212 (RaycastHit2D_t4063908774 * __this, const MethodInfo* method)
+{
+	{
+		Collider2D_t646061738 * L_0 = __this->get_m_Collider_5();
+		return L_0;
+	}
+}
+extern "C"  Collider2D_t646061738 * RaycastHit2D_get_collider_m2568504212_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	RaycastHit2D_t4063908774 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t4063908774 *>(__this + 1);
+	return RaycastHit2D_get_collider_m2568504212(_thisAdjusted, method);
+}
+// UnityEngine.Rigidbody2D UnityEngine.RaycastHit2D::get_rigidbody()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t RaycastHit2D_get_rigidbody_m3268023420_MetadataUsageId;
+extern "C"  Rigidbody2D_t502193897 * RaycastHit2D_get_rigidbody_m3268023420 (RaycastHit2D_t4063908774 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (RaycastHit2D_get_rigidbody_m3268023420_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Rigidbody2D_t502193897 * G_B3_0 = NULL;
+	{
+		Collider2D_t646061738 * L_0 = RaycastHit2D_get_collider_m2568504212(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		Collider2D_t646061738 * L_2 = RaycastHit2D_get_collider_m2568504212(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Rigidbody2D_t502193897 * L_3 = Collider2D_get_attachedRigidbody_m1321121400(L_2, /*hidden argument*/NULL);
+		G_B3_0 = L_3;
+		goto IL_0022;
+	}
+
+IL_0021:
+	{
+		G_B3_0 = ((Rigidbody2D_t502193897 *)(NULL));
+	}
+
+IL_0022:
+	{
+		return G_B3_0;
+	}
+}
+extern "C"  Rigidbody2D_t502193897 * RaycastHit2D_get_rigidbody_m3268023420_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	RaycastHit2D_t4063908774 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t4063908774 *>(__this + 1);
+	return RaycastHit2D_get_rigidbody_m3268023420(_thisAdjusted, method);
+}
+// UnityEngine.Transform UnityEngine.RaycastHit2D::get_transform()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t RaycastHit2D_get_transform_m747355930_MetadataUsageId;
+extern "C"  Transform_t3275118058 * RaycastHit2D_get_transform_m747355930 (RaycastHit2D_t4063908774 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (RaycastHit2D_get_transform_m747355930_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Rigidbody2D_t502193897 * V_0 = NULL;
+	{
+		Rigidbody2D_t502193897 * L_0 = RaycastHit2D_get_rigidbody_m3268023420(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		Rigidbody2D_t502193897 * L_1 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		Rigidbody2D_t502193897 * L_3 = V_0;
+		NullCheck(L_3);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+
+IL_001a:
+	{
+		Collider2D_t646061738 * L_5 = RaycastHit2D_get_collider_m2568504212(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_6 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_5, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		Collider2D_t646061738 * L_7 = RaycastHit2D_get_collider_m2568504212(__this, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(L_7, /*hidden argument*/NULL);
+		return L_8;
+	}
+
+IL_0037:
+	{
+		return (Transform_t3275118058 *)NULL;
+	}
+}
+extern "C"  Transform_t3275118058 * RaycastHit2D_get_transform_m747355930_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	RaycastHit2D_t4063908774 * _thisAdjusted = reinterpret_cast<RaycastHit2D_t4063908774 *>(__this + 1);
+	return RaycastHit2D_get_transform_m747355930(_thisAdjusted, method);
+}
+// Conversion methods for marshalling of: UnityEngine.RaycastHit2D
+extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke(const RaycastHit2D_t4063908774& unmarshaled, RaycastHit2D_t4063908774_marshaled_pinvoke& marshaled)
+{
+	Il2CppCodeGenException* ___m_Collider_5Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Collider' of type 'RaycastHit2D': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Collider_5Exception);
+}
+extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke_back(const RaycastHit2D_t4063908774_marshaled_pinvoke& marshaled, RaycastHit2D_t4063908774& unmarshaled)
+{
+	Il2CppCodeGenException* ___m_Collider_5Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Collider' of type 'RaycastHit2D': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Collider_5Exception);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.RaycastHit2D
+extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke_cleanup(RaycastHit2D_t4063908774_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: UnityEngine.RaycastHit2D
+extern "C" void RaycastHit2D_t4063908774_marshal_com(const RaycastHit2D_t4063908774& unmarshaled, RaycastHit2D_t4063908774_marshaled_com& marshaled)
+{
+	Il2CppCodeGenException* ___m_Collider_5Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Collider' of type 'RaycastHit2D': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Collider_5Exception);
+}
+extern "C" void RaycastHit2D_t4063908774_marshal_com_back(const RaycastHit2D_t4063908774_marshaled_com& marshaled, RaycastHit2D_t4063908774& unmarshaled)
+{
+	Il2CppCodeGenException* ___m_Collider_5Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'm_Collider' of type 'RaycastHit2D': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___m_Collider_5Exception);
+}
+// Conversion method for clean up from marshalling of: UnityEngine.RaycastHit2D
+extern "C" void RaycastHit2D_t4063908774_marshal_com_cleanup(RaycastHit2D_t4063908774_marshaled_com& marshaled)
 {
 }
 // System.Void UnityEngine.Rect::.ctor(System.Single,System.Single,System.Single,System.Single)
@@ -19194,828 +19430,6 @@ extern "C"  void UsedByNativeCodeAttribute__ctor_m2459832290 (UsedByNativeCodeAt
 {
 	{
 		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.SendMouseEvents::.cctor()
-extern Il2CppClass* SendMouseEvents_t3505065032_il2cpp_TypeInfo_var;
-extern Il2CppClass* HitInfoU5BU5D_t934504150_il2cpp_TypeInfo_var;
-extern Il2CppClass* HitInfo_t1761367055_il2cpp_TypeInfo_var;
-extern const uint32_t SendMouseEvents__cctor_m1655934720_MetadataUsageId;
-extern "C"  void SendMouseEvents__cctor_m1655934720 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (SendMouseEvents__cctor_m1655934720_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	HitInfo_t1761367055  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	HitInfo_t1761367055  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	HitInfo_t1761367055  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	HitInfo_t1761367055  V_3;
-	memset(&V_3, 0, sizeof(V_3));
-	HitInfo_t1761367055  V_4;
-	memset(&V_4, 0, sizeof(V_4));
-	HitInfo_t1761367055  V_5;
-	memset(&V_5, 0, sizeof(V_5));
-	HitInfo_t1761367055  V_6;
-	memset(&V_6, 0, sizeof(V_6));
-	HitInfo_t1761367055  V_7;
-	memset(&V_7, 0, sizeof(V_7));
-	HitInfo_t1761367055  V_8;
-	memset(&V_8, 0, sizeof(V_8));
-	{
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_s_MouseUsed_0((bool)0);
-		HitInfoU5BU5D_t934504150* L_0 = ((HitInfoU5BU5D_t934504150*)SZArrayNew(HitInfoU5BU5D_t934504150_il2cpp_TypeInfo_var, (uint32_t)3));
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, 0);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_0));
-		HitInfo_t1761367055  L_1 = V_0;
-		(*(HitInfo_t1761367055 *)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))) = L_1;
-		HitInfoU5BU5D_t934504150* L_2 = L_0;
-		NullCheck(L_2);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 1);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_1));
-		HitInfo_t1761367055  L_3 = V_1;
-		(*(HitInfo_t1761367055 *)((L_2)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))) = L_3;
-		HitInfoU5BU5D_t934504150* L_4 = L_2;
-		NullCheck(L_4);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, 2);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_2));
-		HitInfo_t1761367055  L_5 = V_2;
-		(*(HitInfo_t1761367055 *)((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))) = L_5;
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_m_LastHit_1(L_4);
-		HitInfoU5BU5D_t934504150* L_6 = ((HitInfoU5BU5D_t934504150*)SZArrayNew(HitInfoU5BU5D_t934504150_il2cpp_TypeInfo_var, (uint32_t)3));
-		NullCheck(L_6);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, 0);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_3));
-		HitInfo_t1761367055  L_7 = V_3;
-		(*(HitInfo_t1761367055 *)((L_6)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))) = L_7;
-		HitInfoU5BU5D_t934504150* L_8 = L_6;
-		NullCheck(L_8);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, 1);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_4));
-		HitInfo_t1761367055  L_9 = V_4;
-		(*(HitInfo_t1761367055 *)((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))) = L_9;
-		HitInfoU5BU5D_t934504150* L_10 = L_8;
-		NullCheck(L_10);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, 2);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_5));
-		HitInfo_t1761367055  L_11 = V_5;
-		(*(HitInfo_t1761367055 *)((L_10)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))) = L_11;
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_m_MouseDownHit_2(L_10);
-		HitInfoU5BU5D_t934504150* L_12 = ((HitInfoU5BU5D_t934504150*)SZArrayNew(HitInfoU5BU5D_t934504150_il2cpp_TypeInfo_var, (uint32_t)3));
-		NullCheck(L_12);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 0);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_6));
-		HitInfo_t1761367055  L_13 = V_6;
-		(*(HitInfo_t1761367055 *)((L_12)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))) = L_13;
-		HitInfoU5BU5D_t934504150* L_14 = L_12;
-		NullCheck(L_14);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, 1);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_7));
-		HitInfo_t1761367055  L_15 = V_7;
-		(*(HitInfo_t1761367055 *)((L_14)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))) = L_15;
-		HitInfoU5BU5D_t934504150* L_16 = L_14;
-		NullCheck(L_16);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, 2);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_8));
-		HitInfo_t1761367055  L_17 = V_8;
-		(*(HitInfo_t1761367055 *)((L_16)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))) = L_17;
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_m_CurrentHit_3(L_16);
-		return;
-	}
-}
-// System.Void UnityEngine.SendMouseEvents::SetMouseMoved()
-extern Il2CppClass* SendMouseEvents_t3505065032_il2cpp_TypeInfo_var;
-extern const uint32_t SendMouseEvents_SetMouseMoved_m532965689_MetadataUsageId;
-extern "C"  void SendMouseEvents_SetMouseMoved_m532965689 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (SendMouseEvents_SetMouseMoved_m532965689_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_s_MouseUsed_0((bool)1);
-		return;
-	}
-}
-// System.Void UnityEngine.SendMouseEvents::DoSendMouseEvents(System.Int32)
-extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
-extern Il2CppClass* SendMouseEvents_t3505065032_il2cpp_TypeInfo_var;
-extern Il2CppClass* CameraU5BU5D_t3079764780_il2cpp_TypeInfo_var;
-extern Il2CppClass* HitInfo_t1761367055_il2cpp_TypeInfo_var;
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisGUILayer_t3254902478_m2431610297_MethodInfo_var;
-extern const uint32_t SendMouseEvents_DoSendMouseEvents_m701697135_MetadataUsageId;
-extern "C"  void SendMouseEvents_DoSendMouseEvents_m701697135 (Il2CppObject * __this /* static, unused */, int32_t ___skipRTCameras0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (SendMouseEvents_DoSendMouseEvents_m701697135_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Vector3_t2243707580  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	Camera_t189460977 * V_3 = NULL;
-	CameraU5BU5D_t3079764780* V_4 = NULL;
-	int32_t V_5 = 0;
-	Rect_t3681755626  V_6;
-	memset(&V_6, 0, sizeof(V_6));
-	GUILayer_t3254902478 * V_7 = NULL;
-	GUIElement_t3381083099 * V_8 = NULL;
-	Ray_t2469606224  V_9;
-	memset(&V_9, 0, sizeof(V_9));
-	float V_10 = 0.0f;
-	float V_11 = 0.0f;
-	GameObject_t1756533147 * V_12 = NULL;
-	GameObject_t1756533147 * V_13 = NULL;
-	int32_t V_14 = 0;
-	HitInfo_t1761367055  V_15;
-	memset(&V_15, 0, sizeof(V_15));
-	Vector3_t2243707580  V_16;
-	memset(&V_16, 0, sizeof(V_16));
-	float G_B23_0 = 0.0f;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		Vector3_t2243707580  L_0 = Input_get_mousePosition_m146923508(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_0;
-		int32_t L_1 = Camera_get_allCamerasCount_m989474043(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_1;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		CameraU5BU5D_t3079764780* L_2 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_Cameras_4();
-		if (!L_2)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		CameraU5BU5D_t3079764780* L_3 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_Cameras_4();
-		NullCheck(L_3);
-		int32_t L_4 = V_1;
-		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length))))) == ((int32_t)L_4)))
-		{
-			goto IL_002e;
-		}
-	}
-
-IL_0023:
-	{
-		int32_t L_5 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_m_Cameras_4(((CameraU5BU5D_t3079764780*)SZArrayNew(CameraU5BU5D_t3079764780_il2cpp_TypeInfo_var, (uint32_t)L_5)));
-	}
-
-IL_002e:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		CameraU5BU5D_t3079764780* L_6 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_Cameras_4();
-		Camera_GetAllCameras_m2922515227(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
-		V_2 = 0;
-		goto IL_005e;
-	}
-
-IL_0040:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_7 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		int32_t L_8 = V_2;
-		NullCheck(L_7);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_15));
-		HitInfo_t1761367055  L_9 = V_15;
-		(*(HitInfo_t1761367055 *)((L_7)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_8)))) = L_9;
-		int32_t L_10 = V_2;
-		V_2 = ((int32_t)((int32_t)L_10+(int32_t)1));
-	}
-
-IL_005e:
-	{
-		int32_t L_11 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_12 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_12);
-		if ((((int32_t)L_11) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_12)->max_length)))))))
-		{
-			goto IL_0040;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		bool L_13 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_s_MouseUsed_0();
-		if (L_13)
-		{
-			goto IL_02c3;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		CameraU5BU5D_t3079764780* L_14 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_Cameras_4();
-		V_4 = L_14;
-		V_5 = 0;
-		goto IL_02b8;
-	}
-
-IL_0084:
-	{
-		CameraU5BU5D_t3079764780* L_15 = V_4;
-		int32_t L_16 = V_5;
-		NullCheck(L_15);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
-		int32_t L_17 = L_16;
-		Camera_t189460977 * L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
-		V_3 = L_18;
-		Camera_t189460977 * L_19 = V_3;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_20 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_19, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (L_20)
-		{
-			goto IL_00ad;
-		}
-	}
-	{
-		int32_t L_21 = ___skipRTCameras0;
-		if (!L_21)
-		{
-			goto IL_00b2;
-		}
-	}
-	{
-		Camera_t189460977 * L_22 = V_3;
-		NullCheck(L_22);
-		RenderTexture_t2666733923 * L_23 = Camera_get_targetTexture_m705925974(L_22, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_24 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_23, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_24)
-		{
-			goto IL_00b2;
-		}
-	}
-
-IL_00ad:
-	{
-		goto IL_02b2;
-	}
-
-IL_00b2:
-	{
-		Camera_t189460977 * L_25 = V_3;
-		NullCheck(L_25);
-		Rect_t3681755626  L_26 = Camera_get_pixelRect_m2084185953(L_25, /*hidden argument*/NULL);
-		V_6 = L_26;
-		Vector3_t2243707580  L_27 = V_0;
-		bool L_28 = Rect_Contains_m1334685291((&V_6), L_27, /*hidden argument*/NULL);
-		if (L_28)
-		{
-			goto IL_00cc;
-		}
-	}
-	{
-		goto IL_02b2;
-	}
-
-IL_00cc:
-	{
-		Camera_t189460977 * L_29 = V_3;
-		NullCheck(L_29);
-		GUILayer_t3254902478 * L_30 = Component_GetComponent_TisGUILayer_t3254902478_m2431610297(L_29, /*hidden argument*/Component_GetComponent_TisGUILayer_t3254902478_m2431610297_MethodInfo_var);
-		V_7 = L_30;
-		GUILayer_t3254902478 * L_31 = V_7;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_32 = Object_op_Implicit_m2856731593(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
-		if (!L_32)
-		{
-			goto IL_0145;
-		}
-	}
-	{
-		GUILayer_t3254902478 * L_33 = V_7;
-		Vector3_t2243707580  L_34 = V_0;
-		NullCheck(L_33);
-		GUIElement_t3381083099 * L_35 = GUILayer_HitTest_m2960428006(L_33, L_34, /*hidden argument*/NULL);
-		V_8 = L_35;
-		GUIElement_t3381083099 * L_36 = V_8;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_37 = Object_op_Implicit_m2856731593(NULL /*static, unused*/, L_36, /*hidden argument*/NULL);
-		if (!L_37)
-		{
-			goto IL_0123;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_38 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_38);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_38, 0);
-		GUIElement_t3381083099 * L_39 = V_8;
-		NullCheck(L_39);
-		GameObject_t1756533147 * L_40 = Component_get_gameObject_m3105766835(L_39, /*hidden argument*/NULL);
-		((L_38)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->set_target_0(L_40);
-		HitInfoU5BU5D_t934504150* L_41 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_41);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_41, 0);
-		Camera_t189460977 * L_42 = V_3;
-		((L_41)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->set_camera_1(L_42);
-		goto IL_0145;
-	}
-
-IL_0123:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_43 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_43);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_43, 0);
-		((L_43)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->set_target_0((GameObject_t1756533147 *)NULL);
-		HitInfoU5BU5D_t934504150* L_44 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_44);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_44, 0);
-		((L_44)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->set_camera_1((Camera_t189460977 *)NULL);
-	}
-
-IL_0145:
-	{
-		Camera_t189460977 * L_45 = V_3;
-		NullCheck(L_45);
-		int32_t L_46 = Camera_get_eventMask_m4241372419(L_45, /*hidden argument*/NULL);
-		if (L_46)
-		{
-			goto IL_0155;
-		}
-	}
-	{
-		goto IL_02b2;
-	}
-
-IL_0155:
-	{
-		Camera_t189460977 * L_47 = V_3;
-		Vector3_t2243707580  L_48 = V_0;
-		NullCheck(L_47);
-		Ray_t2469606224  L_49 = Camera_ScreenPointToRay_m614889538(L_47, L_48, /*hidden argument*/NULL);
-		V_9 = L_49;
-		Vector3_t2243707580  L_50 = Ray_get_direction_m4059191533((&V_9), /*hidden argument*/NULL);
-		V_16 = L_50;
-		float L_51 = (&V_16)->get_z_3();
-		V_10 = L_51;
-		float L_52 = V_10;
-		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
-		bool L_53 = Mathf_Approximately_m1064446634(NULL /*static, unused*/, (0.0f), L_52, /*hidden argument*/NULL);
-		if (!L_53)
-		{
-			goto IL_018b;
-		}
-	}
-	{
-		G_B23_0 = (std::numeric_limits<float>::infinity());
-		goto IL_01a0;
-	}
-
-IL_018b:
-	{
-		Camera_t189460977 * L_54 = V_3;
-		NullCheck(L_54);
-		float L_55 = Camera_get_farClipPlane_m3137713566(L_54, /*hidden argument*/NULL);
-		Camera_t189460977 * L_56 = V_3;
-		NullCheck(L_56);
-		float L_57 = Camera_get_nearClipPlane_m3536967407(L_56, /*hidden argument*/NULL);
-		float L_58 = V_10;
-		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
-		float L_59 = fabsf(((float)((float)((float)((float)L_55-(float)L_57))/(float)L_58)));
-		G_B23_0 = L_59;
-	}
-
-IL_01a0:
-	{
-		V_11 = G_B23_0;
-		Camera_t189460977 * L_60 = V_3;
-		Ray_t2469606224  L_61 = V_9;
-		float L_62 = V_11;
-		Camera_t189460977 * L_63 = V_3;
-		NullCheck(L_63);
-		int32_t L_64 = Camera_get_cullingMask_m73686965(L_63, /*hidden argument*/NULL);
-		Camera_t189460977 * L_65 = V_3;
-		NullCheck(L_65);
-		int32_t L_66 = Camera_get_eventMask_m4241372419(L_65, /*hidden argument*/NULL);
-		NullCheck(L_60);
-		GameObject_t1756533147 * L_67 = Camera_RaycastTry_m3412198936(L_60, L_61, L_62, ((int32_t)((int32_t)L_64&(int32_t)L_66)), /*hidden argument*/NULL);
-		V_12 = L_67;
-		GameObject_t1756533147 * L_68 = V_12;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_69 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_68, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_69)
-		{
-			goto IL_01f0;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_70 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_70);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_70, 1);
-		GameObject_t1756533147 * L_71 = V_12;
-		((L_70)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_target_0(L_71);
-		HitInfoU5BU5D_t934504150* L_72 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_72);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_72, 1);
-		Camera_t189460977 * L_73 = V_3;
-		((L_72)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_camera_1(L_73);
-		goto IL_022a;
-	}
-
-IL_01f0:
-	{
-		Camera_t189460977 * L_74 = V_3;
-		NullCheck(L_74);
-		int32_t L_75 = Camera_get_clearFlags_m1743144302(L_74, /*hidden argument*/NULL);
-		if ((((int32_t)L_75) == ((int32_t)1)))
-		{
-			goto IL_0208;
-		}
-	}
-	{
-		Camera_t189460977 * L_76 = V_3;
-		NullCheck(L_76);
-		int32_t L_77 = Camera_get_clearFlags_m1743144302(L_76, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_77) == ((uint32_t)2))))
-		{
-			goto IL_022a;
-		}
-	}
-
-IL_0208:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_78 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_78);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_78, 1);
-		((L_78)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_target_0((GameObject_t1756533147 *)NULL);
-		HitInfoU5BU5D_t934504150* L_79 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_79);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_79, 1);
-		((L_79)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_camera_1((Camera_t189460977 *)NULL);
-	}
-
-IL_022a:
-	{
-		Camera_t189460977 * L_80 = V_3;
-		Ray_t2469606224  L_81 = V_9;
-		float L_82 = V_11;
-		Camera_t189460977 * L_83 = V_3;
-		NullCheck(L_83);
-		int32_t L_84 = Camera_get_cullingMask_m73686965(L_83, /*hidden argument*/NULL);
-		Camera_t189460977 * L_85 = V_3;
-		NullCheck(L_85);
-		int32_t L_86 = Camera_get_eventMask_m4241372419(L_85, /*hidden argument*/NULL);
-		NullCheck(L_80);
-		GameObject_t1756533147 * L_87 = Camera_RaycastTry2D_m755036866(L_80, L_81, L_82, ((int32_t)((int32_t)L_84&(int32_t)L_86)), /*hidden argument*/NULL);
-		V_13 = L_87;
-		GameObject_t1756533147 * L_88 = V_13;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_89 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_88, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_89)
-		{
-			goto IL_0278;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_90 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_90);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_90, 2);
-		GameObject_t1756533147 * L_91 = V_13;
-		((L_90)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_target_0(L_91);
-		HitInfoU5BU5D_t934504150* L_92 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_92);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_92, 2);
-		Camera_t189460977 * L_93 = V_3;
-		((L_92)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_camera_1(L_93);
-		goto IL_02b2;
-	}
-
-IL_0278:
-	{
-		Camera_t189460977 * L_94 = V_3;
-		NullCheck(L_94);
-		int32_t L_95 = Camera_get_clearFlags_m1743144302(L_94, /*hidden argument*/NULL);
-		if ((((int32_t)L_95) == ((int32_t)1)))
-		{
-			goto IL_0290;
-		}
-	}
-	{
-		Camera_t189460977 * L_96 = V_3;
-		NullCheck(L_96);
-		int32_t L_97 = Camera_get_clearFlags_m1743144302(L_96, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_97) == ((uint32_t)2))))
-		{
-			goto IL_02b2;
-		}
-	}
-
-IL_0290:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_98 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_98);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_98, 2);
-		((L_98)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_target_0((GameObject_t1756533147 *)NULL);
-		HitInfoU5BU5D_t934504150* L_99 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_99);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_99, 2);
-		((L_99)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_camera_1((Camera_t189460977 *)NULL);
-	}
-
-IL_02b2:
-	{
-		int32_t L_100 = V_5;
-		V_5 = ((int32_t)((int32_t)L_100+(int32_t)1));
-	}
-
-IL_02b8:
-	{
-		int32_t L_101 = V_5;
-		CameraU5BU5D_t3079764780* L_102 = V_4;
-		NullCheck(L_102);
-		if ((((int32_t)L_101) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_102)->max_length)))))))
-		{
-			goto IL_0084;
-		}
-	}
-
-IL_02c3:
-	{
-		V_14 = 0;
-		goto IL_02e9;
-	}
-
-IL_02cb:
-	{
-		int32_t L_103 = V_14;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_104 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		int32_t L_105 = V_14;
-		NullCheck(L_104);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_104, L_105);
-		SendMouseEvents_SendEvents_m2738043830(NULL /*static, unused*/, L_103, (*(HitInfo_t1761367055 *)((L_104)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_105)))), /*hidden argument*/NULL);
-		int32_t L_106 = V_14;
-		V_14 = ((int32_t)((int32_t)L_106+(int32_t)1));
-	}
-
-IL_02e9:
-	{
-		int32_t L_107 = V_14;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_108 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_CurrentHit_3();
-		NullCheck(L_108);
-		if ((((int32_t)L_107) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_108)->max_length)))))))
-		{
-			goto IL_02cb;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->set_s_MouseUsed_0((bool)0);
-		return;
-	}
-}
-// System.Void UnityEngine.SendMouseEvents::SendEvents(System.Int32,UnityEngine.SendMouseEvents/HitInfo)
-extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
-extern Il2CppClass* SendMouseEvents_t3505065032_il2cpp_TypeInfo_var;
-extern Il2CppClass* HitInfo_t1761367055_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral4145672138;
-extern Il2CppCodeGenString* _stringLiteral1449131165;
-extern Il2CppCodeGenString* _stringLiteral3280802065;
-extern Il2CppCodeGenString* _stringLiteral301042844;
-extern Il2CppCodeGenString* _stringLiteral368299876;
-extern Il2CppCodeGenString* _stringLiteral85975202;
-extern Il2CppCodeGenString* _stringLiteral463234816;
-extern const uint32_t SendMouseEvents_SendEvents_m2738043830_MetadataUsageId;
-extern "C"  void SendMouseEvents_SendEvents_m2738043830 (Il2CppObject * __this /* static, unused */, int32_t ___i0, HitInfo_t1761367055  ___hit1, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (SendMouseEvents_SendEvents_m2738043830_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	bool V_0 = false;
-	bool V_1 = false;
-	HitInfo_t1761367055  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
-		bool L_0 = Input_GetMouseButtonDown_m47917805(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		bool L_1 = Input_GetMouseButton_m464100923(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
-		V_1 = L_1;
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_004a;
-		}
-	}
-	{
-		HitInfo_t1761367055  L_3 = ___hit1;
-		bool L_4 = HitInfo_op_Implicit_m1583347317(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		if (!L_4)
-		{
-			goto IL_0045;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_5 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_6 = ___i0;
-		NullCheck(L_5);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
-		HitInfo_t1761367055  L_7 = ___hit1;
-		(*(HitInfo_t1761367055 *)((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))) = L_7;
-		HitInfoU5BU5D_t934504150* L_8 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_9 = ___i0;
-		NullCheck(L_8);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, L_9);
-		HitInfo_SendMessage_m3368777144(((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_9))), _stringLiteral4145672138, /*hidden argument*/NULL);
-	}
-
-IL_0045:
-	{
-		goto IL_00fc;
-	}
-
-IL_004a:
-	{
-		bool L_10 = V_1;
-		if (L_10)
-		{
-			goto IL_00cd;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_11 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_12 = ___i0;
-		NullCheck(L_11);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
-		bool L_13 = HitInfo_op_Implicit_m1583347317(NULL /*static, unused*/, (*(HitInfo_t1761367055 *)((L_11)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_12)))), /*hidden argument*/NULL);
-		if (!L_13)
-		{
-			goto IL_00c8;
-		}
-	}
-	{
-		HitInfo_t1761367055  L_14 = ___hit1;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_15 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_16 = ___i0;
-		NullCheck(L_15);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
-		bool L_17 = HitInfo_Compare_m4272872794(NULL /*static, unused*/, L_14, (*(HitInfo_t1761367055 *)((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16)))), /*hidden argument*/NULL);
-		if (!L_17)
-		{
-			goto IL_009a;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_18 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_19 = ___i0;
-		NullCheck(L_18);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_19);
-		HitInfo_SendMessage_m3368777144(((L_18)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_19))), _stringLiteral1449131165, /*hidden argument*/NULL);
-	}
-
-IL_009a:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_20 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_21 = ___i0;
-		NullCheck(L_20);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_21);
-		HitInfo_SendMessage_m3368777144(((L_20)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_21))), _stringLiteral3280802065, /*hidden argument*/NULL);
-		HitInfoU5BU5D_t934504150* L_22 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_23 = ___i0;
-		NullCheck(L_22);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, L_23);
-		Initobj (HitInfo_t1761367055_il2cpp_TypeInfo_var, (&V_2));
-		HitInfo_t1761367055  L_24 = V_2;
-		(*(HitInfo_t1761367055 *)((L_22)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_23)))) = L_24;
-	}
-
-IL_00c8:
-	{
-		goto IL_00fc;
-	}
-
-IL_00cd:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_25 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_26 = ___i0;
-		NullCheck(L_25);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, L_26);
-		bool L_27 = HitInfo_op_Implicit_m1583347317(NULL /*static, unused*/, (*(HitInfo_t1761367055 *)((L_25)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_26)))), /*hidden argument*/NULL);
-		if (!L_27)
-		{
-			goto IL_00fc;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_28 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_MouseDownHit_2();
-		int32_t L_29 = ___i0;
-		NullCheck(L_28);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_28, L_29);
-		HitInfo_SendMessage_m3368777144(((L_28)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_29))), _stringLiteral301042844, /*hidden argument*/NULL);
-	}
-
-IL_00fc:
-	{
-		HitInfo_t1761367055  L_30 = ___hit1;
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_31 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_LastHit_1();
-		int32_t L_32 = ___i0;
-		NullCheck(L_31);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_31, L_32);
-		bool L_33 = HitInfo_Compare_m4272872794(NULL /*static, unused*/, L_30, (*(HitInfo_t1761367055 *)((L_31)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_32)))), /*hidden argument*/NULL);
-		if (!L_33)
-		{
-			goto IL_0133;
-		}
-	}
-	{
-		HitInfo_t1761367055  L_34 = ___hit1;
-		bool L_35 = HitInfo_op_Implicit_m1583347317(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
-		if (!L_35)
-		{
-			goto IL_012e;
-		}
-	}
-	{
-		HitInfo_SendMessage_m3368777144((&___hit1), _stringLiteral368299876, /*hidden argument*/NULL);
-	}
-
-IL_012e:
-	{
-		goto IL_0185;
-	}
-
-IL_0133:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_36 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_LastHit_1();
-		int32_t L_37 = ___i0;
-		NullCheck(L_36);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_36, L_37);
-		bool L_38 = HitInfo_op_Implicit_m1583347317(NULL /*static, unused*/, (*(HitInfo_t1761367055 *)((L_36)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_37)))), /*hidden argument*/NULL);
-		if (!L_38)
-		{
-			goto IL_0162;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_39 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_LastHit_1();
-		int32_t L_40 = ___i0;
-		NullCheck(L_39);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_39, L_40);
-		HitInfo_SendMessage_m3368777144(((L_39)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_40))), _stringLiteral85975202, /*hidden argument*/NULL);
-	}
-
-IL_0162:
-	{
-		HitInfo_t1761367055  L_41 = ___hit1;
-		bool L_42 = HitInfo_op_Implicit_m1583347317(NULL /*static, unused*/, L_41, /*hidden argument*/NULL);
-		if (!L_42)
-		{
-			goto IL_0185;
-		}
-	}
-	{
-		HitInfo_SendMessage_m3368777144((&___hit1), _stringLiteral463234816, /*hidden argument*/NULL);
-		HitInfo_SendMessage_m3368777144((&___hit1), _stringLiteral368299876, /*hidden argument*/NULL);
-	}
-
-IL_0185:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(SendMouseEvents_t3505065032_il2cpp_TypeInfo_var);
-		HitInfoU5BU5D_t934504150* L_43 = ((SendMouseEvents_t3505065032_StaticFields*)SendMouseEvents_t3505065032_il2cpp_TypeInfo_var->static_fields)->get_m_LastHit_1();
-		int32_t L_44 = ___i0;
-		NullCheck(L_43);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_43, L_44);
-		HitInfo_t1761367055  L_45 = ___hit1;
-		(*(HitInfo_t1761367055 *)((L_43)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_44)))) = L_45;
 		return;
 	}
 }

@@ -835,6 +835,9 @@ extern const Il2CppGenericInst GenInst_ContactPoint_t1376425630_0_0_0 = { 1, Gen
 extern const Il2CppType RaycastHit_t87180320_0_0_0;
 static const Il2CppType* GenInst_RaycastHit_t87180320_0_0_0_Types[] = { &RaycastHit_t87180320_0_0_0 };
 extern const Il2CppGenericInst GenInst_RaycastHit_t87180320_0_0_0 = { 1, GenInst_RaycastHit_t87180320_0_0_0_Types };
+extern const Il2CppType Rigidbody2D_t502193897_0_0_0;
+static const Il2CppType* GenInst_Rigidbody2D_t502193897_0_0_0_Types[] = { &Rigidbody2D_t502193897_0_0_0 };
+extern const Il2CppGenericInst GenInst_Rigidbody2D_t502193897_0_0_0 = { 1, GenInst_Rigidbody2D_t502193897_0_0_0_Types };
 extern const Il2CppType ContactPoint2D_t3659330976_0_0_0;
 static const Il2CppType* GenInst_ContactPoint2D_t3659330976_0_0_0_Types[] = { &ContactPoint2D_t3659330976_0_0_0 };
 extern const Il2CppGenericInst GenInst_ContactPoint2D_t3659330976_0_0_0 = { 1, GenInst_ContactPoint2D_t3659330976_0_0_0_Types };
@@ -1840,7 +1843,7 @@ static const Il2CppType* GenInst_Vector3ArrayOptions_t2672570171_0_0_0_Types[] =
 extern const Il2CppGenericInst GenInst_Vector3ArrayOptions_t2672570171_0_0_0 = { 1, GenInst_Vector3ArrayOptions_t2672570171_0_0_0_Types };
 static const Il2CppType* GenInst_VectorOptions_t293385261_0_0_0_Types[] = { &VectorOptions_t293385261_0_0_0 };
 extern const Il2CppGenericInst GenInst_VectorOptions_t293385261_0_0_0 = { 1, GenInst_VectorOptions_t293385261_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[633] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[634] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -2128,6 +2131,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[633] =
 	&GenInst_Scene_t1684909666_0_0_0_Scene_t1684909666_0_0_0,
 	&GenInst_ContactPoint_t1376425630_0_0_0,
 	&GenInst_RaycastHit_t87180320_0_0_0,
+	&GenInst_Rigidbody2D_t502193897_0_0_0,
 	&GenInst_ContactPoint2D_t3659330976_0_0_0,
 	&GenInst_Font_t4239498691_0_0_0,
 	&GenInst_GUILayoutOption_t4183744904_0_0_0,

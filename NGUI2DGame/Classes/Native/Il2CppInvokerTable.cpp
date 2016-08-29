@@ -348,6 +348,7 @@ struct PlayableU5BU5D_t4034110853;
 #include "UnityEngine_UnityEngine_Experimental_Director_Gener788733994.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene1684909666.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
+#include "UnityEngine_UnityEngine_RaycastHit2D4063908774.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "UnityEngine_UnityEngine_AnimatorStateInfo2577870592.h"
 #include "UnityEngine_UnityEngine_AnimatorClipInfo3905751349.h"
@@ -9769,6 +9770,34 @@ void* RuntimeInvoker_Void_t1841601450_BoundsU26_t1084128289 (const MethodInfo* m
 	return NULL;
 }
 
+void* RuntimeInvoker_Void_t1841601450_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448_Single_t2076509932_Single_t2076509932_RaycastHit2DU26_t4207306570 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Vector2_t2243707579  p1, Vector2_t2243707579  p2, int32_t p3, float p4, float p5, RaycastHit2D_t4063908774 * p6, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, *((Vector2_t2243707579 *)args[0]), *((Vector2_t2243707579 *)args[1]), *((int32_t*)args[2]), *((float*)args[3]), *((float*)args[4]), (RaycastHit2D_t4063908774 *)args[5], method);
+	return NULL;
+}
+
+void* RuntimeInvoker_Void_t1841601450_Vector2U26_t3911752445_Vector2U26_t3911752445_Int32_t2071877448_Single_t2076509932_Single_t2076509932_RaycastHit2DU26_t4207306570 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, Vector2_t2243707579 * p1, Vector2_t2243707579 * p2, int32_t p3, float p4, float p5, RaycastHit2D_t4063908774 * p6, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, (Vector2_t2243707579 *)args[0], (Vector2_t2243707579 *)args[1], *((int32_t*)args[2]), *((float*)args[3]), *((float*)args[4]), (RaycastHit2D_t4063908774 *)args[5], method);
+	return NULL;
+}
+
+void* RuntimeInvoker_RaycastHit2D_t4063908774_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef RaycastHit2D_t4063908774  (*Func)(void* obj, Vector2_t2243707579  p1, Vector2_t2243707579  p2, int32_t p3, const MethodInfo* method);
+	RaycastHit2D_t4063908774  ret = ((Func)method->methodPointer)(obj, *((Vector2_t2243707579 *)args[0]), *((Vector2_t2243707579 *)args[1]), *((int32_t*)args[2]), method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
+void* RuntimeInvoker_RaycastHit2D_t4063908774_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448_Single_t2076509932_Single_t2076509932 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef RaycastHit2D_t4063908774  (*Func)(void* obj, Vector2_t2243707579  p1, Vector2_t2243707579  p2, int32_t p3, float p4, float p5, const MethodInfo* method);
+	RaycastHit2D_t4063908774  ret = ((Func)method->methodPointer)(obj, *((Vector2_t2243707579 *)args[0]), *((Vector2_t2243707579 *)args[1]), *((int32_t*)args[2]), *((float*)args[3]), *((float*)args[4]), method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_SendMessageOptions_t1414041951 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef int32_t (*Func)(void* obj, const MethodInfo* method);
@@ -15103,7 +15132,7 @@ void* RuntimeInvoker_Il2CppObject_Scene_t1684909666_Scene_t1684909666_Il2CppObje
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2091] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2095] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
@@ -16434,6 +16463,10 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2091] =
 	RuntimeInvoker_Void_t1841601450_Il2CppObject_QuaternionU26_t4187826802,
 	RuntimeInvoker_Bounds_t3033363703,
 	RuntimeInvoker_Void_t1841601450_BoundsU26_t1084128289,
+	RuntimeInvoker_Void_t1841601450_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448_Single_t2076509932_Single_t2076509932_RaycastHit2DU26_t4207306570,
+	RuntimeInvoker_Void_t1841601450_Vector2U26_t3911752445_Vector2U26_t3911752445_Int32_t2071877448_Single_t2076509932_Single_t2076509932_RaycastHit2DU26_t4207306570,
+	RuntimeInvoker_RaycastHit2D_t4063908774_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448,
+	RuntimeInvoker_RaycastHit2D_t4063908774_Vector2_t2243707579_Vector2_t2243707579_Int32_t2071877448_Single_t2076509932_Single_t2076509932,
 	RuntimeInvoker_SendMessageOptions_t1414041951,
 	RuntimeInvoker_AnimatorStateInfo_t2577870592,
 	RuntimeInvoker_AnimatorClipInfo_t3905751349,

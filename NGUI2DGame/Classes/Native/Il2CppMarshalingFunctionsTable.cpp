@@ -578,6 +578,9 @@ extern "C" void Ray_t2469606224_marshal_pinvoke_cleanup ();
 extern "C" void RaycastHit_t87180320_marshal_pinvoke ();
 extern "C" void RaycastHit_t87180320_marshal_pinvoke_back ();
 extern "C" void RaycastHit_t87180320_marshal_pinvoke_cleanup ();
+extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke ();
+extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke_back ();
+extern "C" void RaycastHit2D_t4063908774_marshal_pinvoke_cleanup ();
 extern "C" void Rect_t3681755626_marshal_pinvoke ();
 extern "C" void Rect_t3681755626_marshal_pinvoke_back ();
 extern "C" void Rect_t3681755626_marshal_pinvoke_cleanup ();
@@ -698,7 +701,7 @@ extern "C" void __StaticArrayInitTypeSizeU3D48_t631794874_marshal_pinvoke_cleanu
 extern "C" void U24ArrayTypeU2464_t2866209748_marshal_pinvoke ();
 extern "C" void U24ArrayTypeU2464_t2866209748_marshal_pinvoke_back ();
 extern "C" void U24ArrayTypeU2464_t2866209748_marshal_pinvoke_cleanup ();
-extern const Il2CppMarshalingFunctions g_MarshalingFunctions[230] = 
+extern const Il2CppMarshalingFunctions g_MarshalingFunctions[231] = 
 {
 	{ U24ArrayTypeU241024_t2672183894_marshal_pinvoke, U24ArrayTypeU241024_t2672183894_marshal_pinvoke_back, U24ArrayTypeU241024_t2672183894_marshal_pinvoke_cleanup },
 	{ U24ArrayTypeU2412_t3672778802_marshal_pinvoke, U24ArrayTypeU2412_t3672778802_marshal_pinvoke_back, U24ArrayTypeU2412_t3672778802_marshal_pinvoke_cleanup },
@@ -889,6 +892,7 @@ extern const Il2CppMarshalingFunctions g_MarshalingFunctions[230] =
 	{ Quaternion_t4030073918_marshal_pinvoke, Quaternion_t4030073918_marshal_pinvoke_back, Quaternion_t4030073918_marshal_pinvoke_cleanup },
 	{ Ray_t2469606224_marshal_pinvoke, Ray_t2469606224_marshal_pinvoke_back, Ray_t2469606224_marshal_pinvoke_cleanup },
 	{ RaycastHit_t87180320_marshal_pinvoke, RaycastHit_t87180320_marshal_pinvoke_back, RaycastHit_t87180320_marshal_pinvoke_cleanup },
+	{ RaycastHit2D_t4063908774_marshal_pinvoke, RaycastHit2D_t4063908774_marshal_pinvoke_back, RaycastHit2D_t4063908774_marshal_pinvoke_cleanup },
 	{ Rect_t3681755626_marshal_pinvoke, Rect_t3681755626_marshal_pinvoke_back, Rect_t3681755626_marshal_pinvoke_cleanup },
 	{ RectOffset_t3387826427_marshal_pinvoke, RectOffset_t3387826427_marshal_pinvoke_back, RectOffset_t3387826427_marshal_pinvoke_cleanup },
 	{ ResourceRequest_t2560315377_marshal_pinvoke, ResourceRequest_t2560315377_marshal_pinvoke_back, ResourceRequest_t2560315377_marshal_pinvoke_cleanup },

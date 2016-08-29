@@ -93,6 +93,10 @@ struct CameraCallback_t834278767;
 struct Collider_t3497673348;
 // UnityEngine.Rigidbody
 struct Rigidbody_t4233889191;
+// UnityEngine.Collider2D
+struct Collider2D_t646061738;
+// UnityEngine.Rigidbody2D
+struct Rigidbody2D_t502193897;
 // UnityEngine.Collision
 struct Collision_t2876846408;
 // UnityEngine.Transform
@@ -103,10 +107,6 @@ struct ContactPointU5BU5D_t1084937515;
 struct Component_t3819376471;
 // UnityEngine.Collision2D
 struct Collision2D_t1539500754;
-// UnityEngine.Rigidbody2D
-struct Rigidbody2D_t502193897;
-// UnityEngine.Collider2D
-struct Collider2D_t646061738;
 // UnityEngine.ContactPoint2D[]
 struct ContactPoint2DU5BU5D_t1215651809;
 // UnityEngine.Component[]
@@ -339,6 +339,7 @@ struct LayoutCache_t3120781045;
 #include "UnityEngine_UnityEngine_Rigidbody4233889191.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_Collision2876846408.h"
 #include "UnityEngine_UnityEngine_Collision2876846408MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform3275118058.h"
@@ -348,7 +349,6 @@ struct LayoutCache_t3120781045;
 #include "UnityEngine_UnityEngine_ContactPoint1376425630MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Collision2D1539500754.h"
 #include "UnityEngine_UnityEngine_Collision2D1539500754MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D3659330976.h"
 #include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D3659330976MethodDeclarations.h"
@@ -4550,6 +4550,15 @@ extern "C"  void Collider_INTERNAL_get_bounds_m4035290675 (Collider_t3497673348 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Collider_INTERNAL_get_bounds_m4035290675_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Collider::INTERNAL_get_bounds(UnityEngine.Bounds&)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// UnityEngine.Rigidbody2D UnityEngine.Collider2D::get_attachedRigidbody()
+extern "C"  Rigidbody2D_t502193897 * Collider2D_get_attachedRigidbody_m1321121400 (Collider2D_t646061738 * __this, const MethodInfo* method)
+{
+	typedef Rigidbody2D_t502193897 * (*Collider2D_get_attachedRigidbody_m1321121400_ftn) (Collider2D_t646061738 *);
+	static Collider2D_get_attachedRigidbody_m1321121400_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Collider2D_get_attachedRigidbody_m1321121400_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Collider2D::get_attachedRigidbody()");
+	return _il2cpp_icall_func(__this);
 }
 // System.Void UnityEngine.Collision::.ctor()
 extern "C"  void Collision__ctor_m635081107 (Collision_t2876846408 * __this, const MethodInfo* method)

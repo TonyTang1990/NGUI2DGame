@@ -1,4 +1,4 @@
-//Generated on : 8/28/2016 10:09:13 PM
+//Generated on : 8/29/2016 3:56:30 PM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -484,6 +484,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Collider_get_attachedRigidbody();
 
 	//End Registrations for type : UnityEngine.Collider
+
+	//Start Registrations for type : UnityEngine.Collider2D
+
+		//UnityEngine.Rigidbody2D UnityEngine.Collider2D::get_attachedRigidbody()
+		void Register_UnityEngine_Collider2D_get_attachedRigidbody();
+		Register_UnityEngine_Collider2D_get_attachedRigidbody();
+
+	//End Registrations for type : UnityEngine.Collider2D
 
 	//Start Registrations for type : UnityEngine.Component
 
@@ -1932,6 +1940,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Physics_INTERNAL_CALL_RaycastAll();
 
 	//End Registrations for type : UnityEngine.Physics
+
+	//Start Registrations for type : UnityEngine.Physics2D
+
+		//System.Void UnityEngine.Physics2D::INTERNAL_CALL_Internal_Linecast(UnityEngine.Vector2&,UnityEngine.Vector2&,System.Int32,System.Single,System.Single,UnityEngine.RaycastHit2D&)
+		void Register_UnityEngine_Physics2D_INTERNAL_CALL_Internal_Linecast();
+		Register_UnityEngine_Physics2D_INTERNAL_CALL_Internal_Linecast();
+
+	//End Registrations for type : UnityEngine.Physics2D
 
 	//Start Registrations for type : UnityEngine.PlayerPrefs
 

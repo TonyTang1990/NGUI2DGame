@@ -15823,6 +15823,7 @@ extern "C" void Collider_get_attachedRigidbody_m3279305420 ();
 extern "C" void Collider_set_isTrigger_m1298573031 ();
 extern "C" void Collider_get_bounds_m3534458178 ();
 extern "C" void Collider_INTERNAL_get_bounds_m4035290675 ();
+extern "C" void Collider2D_get_attachedRigidbody_m1321121400 ();
 extern "C" void Collision__ctor_m635081107 ();
 extern "C" void Collision_get_relativeVelocity_m2302609283 ();
 extern "C" void Collision_get_rigidbody_m3671561778 ();
@@ -16931,6 +16932,11 @@ extern "C" void Physics_RaycastAll_m3908263591 ();
 extern "C" void Physics_INTERNAL_CALL_RaycastAll_m2126789092 ();
 extern "C" void Physics_Internal_Raycast_m1160243045 ();
 extern "C" void Physics_INTERNAL_CALL_Internal_Raycast_m93849932 ();
+extern "C" void Physics2D__cctor_m3532647019 ();
+extern "C" void Physics2D_Internal_Linecast_m1593067799 ();
+extern "C" void Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300 ();
+extern "C" void Physics2D_Linecast_m2374117908 ();
+extern "C" void Physics2D_Linecast_m3607674036 ();
 extern "C" void Plane__ctor_m3187718367_AdjustorThunk ();
 extern "C" void Plane_get_normal_m1872443823_AdjustorThunk ();
 extern "C" void Plane_get_distance_m1834776091_AdjustorThunk ();
@@ -16985,6 +16991,9 @@ extern "C" void RaycastHit_get_point_m326143462_AdjustorThunk ();
 extern "C" void RaycastHit_get_normal_m817665579_AdjustorThunk ();
 extern "C" void RaycastHit_get_distance_m1178709367_AdjustorThunk ();
 extern "C" void RaycastHit_get_collider_m301198172_AdjustorThunk ();
+extern "C" void RaycastHit2D_get_collider_m2568504212_AdjustorThunk ();
+extern "C" void RaycastHit2D_get_rigidbody_m3268023420_AdjustorThunk ();
+extern "C" void RaycastHit2D_get_transform_m747355930_AdjustorThunk ();
 extern "C" void Rect__ctor_m1220545469_AdjustorThunk ();
 extern "C" void Rect_get_x_m1393582490_AdjustorThunk ();
 extern "C" void Rect_set_x_m3783700513_AdjustorThunk ();
@@ -18513,6 +18522,22 @@ extern "C" void ByteReader_get_canRead_m3900717963 ();
 extern "C" void ByteReader_ReadLine_m1871758886 ();
 extern "C" void ByteReader_ReadLine_m3267484541 ();
 extern "C" void ByteReader_ReadDictionary_m3110959320 ();
+extern "C" void CarDodgeGame__ctor_m3991645306 ();
+extern "C" void CarDodgeGame_Awake_m2106247909 ();
+extern "C" void CarDodgeGame_Start_m3638727482 ();
+extern "C" void CarDodgeGame_Update_m3189749945 ();
+extern "C" void CarDodgeGame_SpawnCoroutine_m358620679 ();
+extern "C" void CarDodgeGame_SpawnEnemyCar_m3242250389 ();
+extern "C" void CarDodgeGame_ChooseCarToSpawn_m3421396064 ();
+extern "C" void CarDodgeGame_SpawnNormalCar_m2529383949 ();
+extern "C" void CarDodgeGame_SpawnTruckCar_m3492177509 ();
+extern "C" void CarDodgeGame_SpawnFastCar_m1959465054 ();
+extern "C" void U3CSpawnCoroutineU3Ec__Iterator3__ctor_m1542020552 ();
+extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1476153254 ();
+extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m3555604734 ();
+extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_MoveNext_m4111728176 ();
+extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_Dispose_m2030391869 ();
+extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_Reset_m2118408939 ();
 extern "C" void ChatInput__ctor_m1480987787 ();
 extern "C" void ChatInput_Start_m688725295 ();
 extern "C" void ChatInput_Update_m44548296 ();
@@ -18537,6 +18562,9 @@ extern "C" void DragDropRoot__ctor_m1942181310 ();
 extern "C" void DragDropRoot_Awake_m2573889321 ();
 extern "C" void DragDropSurface__ctor_m2885641647 ();
 extern "C" void DragDropSurface_OnDrop_m3662549775 ();
+extern "C" void EnemyCar__ctor_m4224336717 ();
+extern "C" void EnemyCar_Start_m2778549701 ();
+extern "C" void EnemyCar_Update_m2723198140 ();
 extern "C" void EquipItems__ctor_m2508878821 ();
 extern "C" void EquipItems_Start_m3665532189 ();
 extern "C" void EquipRandomItem__ctor_m3904740745 ();
@@ -18675,12 +18703,12 @@ extern "C" void LoadingProcess_Awake_m705420315 ();
 extern "C" void LoadingProcess_Start_m4254790716 ();
 extern "C" void LoadingProcess_Update_m3191783039 ();
 extern "C" void LoadingProcess_UpdateProcessBar_m1373146775 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator5__ctor_m3054656228 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1089153238 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m3263057710 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_Dispose_m3281031183 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator6__ctor_m3055770275 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m126540921 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3320973777 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_Dispose_m3317932082 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072 ();
 extern "C" void LoadLevelOnClick__ctor_m2820126616 ();
 extern "C" void LoadLevelOnClick_OnClick_m931326351 ();
 extern "C" void Localization__ctor_m3434466340 ();
@@ -18822,20 +18850,19 @@ extern "C" void PlayerCarController_MoveDownCoroutine_m3523165399 ();
 extern "C" void PlayerCarController_Jump_m3808470432 ();
 extern "C" void PlayerCarController_CrashCallBack_m3159760084 ();
 extern "C" void PlayerCarController_OnTriggerEnter2D_m3876316192 ();
-extern "C" void PlayerCarController_OnTriggerExit2D_m2931615634 ();
 extern "C" void PlayerCarController_OnTweenComplete_m3857909345 ();
-extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4__ctor_m696433809 ();
-extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3013308307 ();
-extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1565711547 ();
-extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671 ();
-extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_Dispose_m2032154194 ();
-extern "C" void U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988 ();
-extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3__ctor_m1542069677 ();
-extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m747310411 ();
-extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2583548723 ();
-extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391 ();
-extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_Dispose_m905637506 ();
-extern "C" void U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5__ctor_m695319762 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m391711220 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m2719809308 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_MoveNext_m3683506194 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_Dispose_m1995388467 ();
+extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_Reset_m3326599941 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4__ctor_m1548062444 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1227113702 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1827639886 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4_MoveNext_m1449772320 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4_Dispose_m1103544741 ();
+extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4_Reset_m4157038583 ();
 extern "C" void PlayIdleAnimations__ctor_m1300294730 ();
 extern "C" void PlayIdleAnimations_Start_m1656706198 ();
 extern "C" void PlayIdleAnimations_Update_m1066760115 ();
@@ -19744,6 +19771,10 @@ extern "C" void UpdateEntry__ctor_m232832807 ();
 extern "C" void Validator__ctor_m2252054365 ();
 extern "C" void Validator__cctor_m3261463672 ();
 extern "C" void Validator_IsValide_m4174400556 ();
+extern "C" void ValidBounding__ctor_m2254870511 ();
+extern "C" void ValidBounding_Start_m955858451 ();
+extern "C" void ValidBounding_Update_m1271931708 ();
+extern "C" void ValidBounding_OnTriggerExit2D_m1846888919 ();
 extern "C" void WindowAutoYaw__ctor_m3664152079 ();
 extern "C" void WindowAutoYaw_OnDisable_m78959674 ();
 extern "C" void WindowAutoYaw_Start_m2880500651 ();
@@ -19752,7 +19783,7 @@ extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_Start_m3663283896 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_CoroutineUpdate_m4284548736 ();
-extern const Il2CppMethodPointer g_MethodPointers[19741] = 
+extern const Il2CppMethodPointer g_MethodPointers[19772] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -35566,6 +35597,7 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	Collider_set_isTrigger_m1298573031,
 	Collider_get_bounds_m3534458178,
 	Collider_INTERNAL_get_bounds_m4035290675,
+	Collider2D_get_attachedRigidbody_m1321121400,
 	Collision__ctor_m635081107,
 	Collision_get_relativeVelocity_m2302609283,
 	Collision_get_rigidbody_m3671561778,
@@ -36674,6 +36706,11 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	Physics_INTERNAL_CALL_RaycastAll_m2126789092,
 	Physics_Internal_Raycast_m1160243045,
 	Physics_INTERNAL_CALL_Internal_Raycast_m93849932,
+	Physics2D__cctor_m3532647019,
+	Physics2D_Internal_Linecast_m1593067799,
+	Physics2D_INTERNAL_CALL_Internal_Linecast_m578113300,
+	Physics2D_Linecast_m2374117908,
+	Physics2D_Linecast_m3607674036,
 	Plane__ctor_m3187718367_AdjustorThunk,
 	Plane_get_normal_m1872443823_AdjustorThunk,
 	Plane_get_distance_m1834776091_AdjustorThunk,
@@ -36728,6 +36765,9 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	RaycastHit_get_normal_m817665579_AdjustorThunk,
 	RaycastHit_get_distance_m1178709367_AdjustorThunk,
 	RaycastHit_get_collider_m301198172_AdjustorThunk,
+	RaycastHit2D_get_collider_m2568504212_AdjustorThunk,
+	RaycastHit2D_get_rigidbody_m3268023420_AdjustorThunk,
+	RaycastHit2D_get_transform_m747355930_AdjustorThunk,
 	Rect__ctor_m1220545469_AdjustorThunk,
 	Rect_get_x_m1393582490_AdjustorThunk,
 	Rect_set_x_m3783700513_AdjustorThunk,
@@ -38256,6 +38296,22 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	ByteReader_ReadLine_m1871758886,
 	ByteReader_ReadLine_m3267484541,
 	ByteReader_ReadDictionary_m3110959320,
+	CarDodgeGame__ctor_m3991645306,
+	CarDodgeGame_Awake_m2106247909,
+	CarDodgeGame_Start_m3638727482,
+	CarDodgeGame_Update_m3189749945,
+	CarDodgeGame_SpawnCoroutine_m358620679,
+	CarDodgeGame_SpawnEnemyCar_m3242250389,
+	CarDodgeGame_ChooseCarToSpawn_m3421396064,
+	CarDodgeGame_SpawnNormalCar_m2529383949,
+	CarDodgeGame_SpawnTruckCar_m3492177509,
+	CarDodgeGame_SpawnFastCar_m1959465054,
+	U3CSpawnCoroutineU3Ec__Iterator3__ctor_m1542020552,
+	U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1476153254,
+	U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m3555604734,
+	U3CSpawnCoroutineU3Ec__Iterator3_MoveNext_m4111728176,
+	U3CSpawnCoroutineU3Ec__Iterator3_Dispose_m2030391869,
+	U3CSpawnCoroutineU3Ec__Iterator3_Reset_m2118408939,
 	ChatInput__ctor_m1480987787,
 	ChatInput_Start_m688725295,
 	ChatInput_Update_m44548296,
@@ -38280,6 +38336,9 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	DragDropRoot_Awake_m2573889321,
 	DragDropSurface__ctor_m2885641647,
 	DragDropSurface_OnDrop_m3662549775,
+	EnemyCar__ctor_m4224336717,
+	EnemyCar_Start_m2778549701,
+	EnemyCar_Update_m2723198140,
 	EquipItems__ctor_m2508878821,
 	EquipItems_Start_m3665532189,
 	EquipRandomItem__ctor_m3904740745,
@@ -38418,12 +38477,12 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	LoadingProcess_Start_m4254790716,
 	LoadingProcess_Update_m3191783039,
 	LoadingProcess_UpdateProcessBar_m1373146775,
-	U3CUpdateProcessBarU3Ec__Iterator5__ctor_m3054656228,
-	U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1089153238,
-	U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m3263057710,
-	U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184,
-	U3CUpdateProcessBarU3Ec__Iterator5_Dispose_m3281031183,
-	U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801,
+	U3CUpdateProcessBarU3Ec__Iterator6__ctor_m3055770275,
+	U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m126540921,
+	U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3320973777,
+	U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017,
+	U3CUpdateProcessBarU3Ec__Iterator6_Dispose_m3317932082,
+	U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072,
 	LoadLevelOnClick__ctor_m2820126616,
 	LoadLevelOnClick_OnClick_m931326351,
 	Localization__ctor_m3434466340,
@@ -38565,20 +38624,19 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	PlayerCarController_Jump_m3808470432,
 	PlayerCarController_CrashCallBack_m3159760084,
 	PlayerCarController_OnTriggerEnter2D_m3876316192,
-	PlayerCarController_OnTriggerExit2D_m2931615634,
 	PlayerCarController_OnTweenComplete_m3857909345,
-	U3CMoveDownCoroutineU3Ec__Iterator4__ctor_m696433809,
-	U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3013308307,
-	U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1565711547,
-	U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671,
-	U3CMoveDownCoroutineU3Ec__Iterator4_Dispose_m2032154194,
-	U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988,
-	U3CMoveUpCoroutineU3Ec__Iterator3__ctor_m1542069677,
-	U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m747310411,
-	U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2583548723,
-	U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391,
-	U3CMoveUpCoroutineU3Ec__Iterator3_Dispose_m905637506,
-	U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776,
+	U3CMoveDownCoroutineU3Ec__Iterator5__ctor_m695319762,
+	U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m391711220,
+	U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m2719809308,
+	U3CMoveDownCoroutineU3Ec__Iterator5_MoveNext_m3683506194,
+	U3CMoveDownCoroutineU3Ec__Iterator5_Dispose_m1995388467,
+	U3CMoveDownCoroutineU3Ec__Iterator5_Reset_m3326599941,
+	U3CMoveUpCoroutineU3Ec__Iterator4__ctor_m1548062444,
+	U3CMoveUpCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1227113702,
+	U3CMoveUpCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1827639886,
+	U3CMoveUpCoroutineU3Ec__Iterator4_MoveNext_m1449772320,
+	U3CMoveUpCoroutineU3Ec__Iterator4_Dispose_m1103544741,
+	U3CMoveUpCoroutineU3Ec__Iterator4_Reset_m4157038583,
 	PlayIdleAnimations__ctor_m1300294730,
 	PlayIdleAnimations_Start_m1656706198,
 	PlayIdleAnimations_Update_m1066760115,
@@ -39487,6 +39545,10 @@ extern const Il2CppMethodPointer g_MethodPointers[19741] =
 	Validator__ctor_m2252054365,
 	Validator__cctor_m3261463672,
 	Validator_IsValide_m4174400556,
+	ValidBounding__ctor_m2254870511,
+	ValidBounding_Start_m955858451,
+	ValidBounding_Update_m1271931708,
+	ValidBounding_OnTriggerExit2D_m1846888919,
 	WindowAutoYaw__ctor_m3664152079,
 	WindowAutoYaw_OnDisable_m78959674,
 	WindowAutoYaw_Start_m2880500651,

@@ -61,12 +61,16 @@ struct ByteU5BU5D_t3397334013;
 struct TextAsset_t3973159845;
 // System.Collections.Generic.Dictionary`2<System.String,System.String>
 struct Dictionary_2_t3943999495;
+// CarDodgeGame
+struct CarDodgeGame_t1650312537;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
+// CarDodgeGame/<SpawnCoroutine>c__Iterator3
+struct U3CSpawnCoroutineU3Ec__Iterator3_t148974859;
 // ChatInput
 struct ChatInput_t3005926974;
 // DownloadTexture
 struct DownloadTexture_t3149906093;
-// System.Collections.IEnumerator
-struct IEnumerator_t1466026749;
 // DownloadTexture/<Start>c__Iterator0
 struct U3CStartU3Ec__Iterator0_t3273143125;
 // UITexture
@@ -85,6 +89,8 @@ struct Collider_t3497673348;
 struct DragDropRoot_t598543981;
 // DragDropSurface
 struct DragDropSurface_t770334690;
+// EnemyCar
+struct EnemyCar_t2475715994;
 // EquipItems
 struct EquipItems_t3211185488;
 // InvEquipment
@@ -161,8 +167,8 @@ struct UIPopupList_t109953940;
 struct LoadingProcess_t282725851;
 // UIScrollBar
 struct UIScrollBar_t1736046648;
-// LoadingProcess/<UpdateProcessBar>c__Iterator5
-struct U3CUpdateProcessBarU3Ec__Iterator5_t1282375845;
+// LoadingProcess/<UpdateProcessBar>c__Iterator6
+struct U3CUpdateProcessBarU3Ec__Iterator6_t1282375848;
 // LoadLevelOnClick
 struct LoadLevelOnClick_t1630964649;
 // Localization
@@ -227,10 +233,10 @@ struct Tweener_t760404022;
 struct TweenCallback_t3697142134;
 // UnityEngine.Collider2D
 struct Collider2D_t646061738;
-// PlayerCarController/<MoveDownCoroutine>c__Iterator4
-struct U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208;
-// PlayerCarController/<MoveUpCoroutine>c__Iterator3
-struct U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952;
+// PlayerCarController/<MoveDownCoroutine>c__Iterator5
+struct U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209;
+// PlayerCarController/<MoveUpCoroutine>c__Iterator4
+struct U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947;
 // PlayIdleAnimations
 struct PlayIdleAnimations_t2133472875;
 // SetColorOnSelection
@@ -305,10 +311,6 @@ struct UIButtonKeys_t2099118702;
 struct UIButtonMessage_t3791537815;
 // UnityEngine.Transform[]
 struct TransformU5BU5D_t3764228911;
-// UIButtonOffset
-struct UIButtonOffset_t1501810361;
-// UIButtonPlayAnimation
-struct UIButtonPlayAnimation_t2267721830;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -410,6 +412,22 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g3943999495MethodDeclarations.h"
 #include "mscorlib_System_Char3454481338.h"
 #include "mscorlib_System_StringSplitOptions2996162939.h"
+#include "AssemblyU2DCSharp_CarDodgeGame1650312537.h"
+#include "AssemblyU2DCSharp_CarDodgeGame1650312537MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
+#include "AssemblyU2DCSharp_CarDodgeGame_U3CSpawnCoroutineU3E148974859MethodDeclarations.h"
+#include "AssemblyU2DCSharp_CarDodgeGame_U3CSpawnCoroutineU3E148974859.h"
+#include "UnityEngine_UnityEngine_Random1170710517MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
+#include "UnityEngine_UnityEngine_Quaternion4030073918MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds3839502067MethodDeclarations.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
+#include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
+#include "mscorlib_System_NotSupportedException1793819818.h"
 #include "AssemblyU2DCSharp_ChatInput3005926974.h"
 #include "AssemblyU2DCSharp_ChatInput3005926974MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UITextList652111117MethodDeclarations.h"
@@ -422,12 +440,9 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "AssemblyU2DCSharp_DownloadTexture_U3CStartU3Ec__It3273143125.h"
 #include "UnityEngine_UnityEngine_Texture2D3542995729.h"
 #include "UnityEngine_UnityEngine_WWW2919945039MethodDeclarations.h"
-#include "mscorlib_System_UInt322149682021.h"
 #include "UnityEngine_UnityEngine_WWW2919945039.h"
 #include "AssemblyU2DCSharp_UITexture2537039969.h"
 #include "AssemblyU2DCSharp_UITexture2537039969MethodDeclarations.h"
-#include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
-#include "mscorlib_System_NotSupportedException1793819818.h"
 #include "AssemblyU2DCSharp_DragDropContainer3035769598.h"
 #include "AssemblyU2DCSharp_DragDropContainer3035769598MethodDeclarations.h"
 #include "AssemblyU2DCSharp_DragDropItem699041384.h"
@@ -435,9 +450,7 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "AssemblyU2DCSharp_UITable3717403602.h"
 #include "AssemblyU2DCSharp_NGUITools2004302824.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Collider3497673348.h"
-#include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "AssemblyU2DCSharp_UICamera1496819779.h"
 #include "AssemblyU2DCSharp_UICamera1496819779MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320.h"
@@ -449,13 +462,14 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "UnityEngine_UnityEngine_Collider3497673348MethodDeclarations.h"
 #include "AssemblyU2DCSharp_DragDropSurface770334690.h"
 #include "AssemblyU2DCSharp_DragDropSurface770334690MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Quaternion4030073918MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Quaternion4030073918.h"
+#include "AssemblyU2DCSharp_EnemyCar2475715994.h"
+#include "AssemblyU2DCSharp_EnemyCar2475715994MethodDeclarations.h"
+#include "DOTween_DG_Tweening_ShortcutExtensions3524050470MethodDeclarations.h"
+#include "DOTween_DG_Tweening_Tweener760404022.h"
 #include "AssemblyU2DCSharp_EquipItems3211185488.h"
 #include "AssemblyU2DCSharp_EquipItems3211185488MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InvDatabase2993806330MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InvGameItem2091536978MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Random1170710517MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InvEquipment384603053MethodDeclarations.h"
 #include "AssemblyU2DCSharp_InvEquipment384603053.h"
 #include "AssemblyU2DCSharp_InvBaseItem3744336511.h"
@@ -577,17 +591,13 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "mscorlib_System_Collections_Generic_List_1_gen1398341365MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIPopupList109953940MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Localization3725902693.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1398341365.h"
 #include "AssemblyU2DCSharp_LoadingProcess282725851.h"
 #include "AssemblyU2DCSharp_LoadingProcess282725851MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIScrollBar1736046648.h"
-#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
-#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375845MethodDeclarations.h"
-#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375845.h"
+#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375848MethodDeclarations.h"
+#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375848.h"
 #include "AssemblyU2DCSharp_UIScrollBar1736046648MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WaitForSeconds3839502067MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
 #include "AssemblyU2DCSharp_LoadLevelOnClick1630964649.h"
 #include "AssemblyU2DCSharp_LoadLevelOnClick1630964649MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Resources339470017MethodDeclarations.h"
@@ -640,17 +650,20 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "AssemblyU2DCSharp_PlayerCarController116747357MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Animator69676727.h"
 #include "AssemblyU2DCSharp_UIEventListener_BoolDelegate2797443340MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_LayerMask3188175821MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Physics2D2540166467MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_RaycastHit2D4063908774MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Animator69676727MethodDeclarations.h"
-#include "DOTween_DG_Tweening_ShortcutExtensions3524050470MethodDeclarations.h"
 #include "DOTween_DG_Tweening_TweenCallback3697142134MethodDeclarations.h"
 #include "DOTween_DG_Tweening_TweenSettingsExtensions2285462830MethodDeclarations.h"
-#include "DOTween_DG_Tweening_Tweener760404022.h"
+#include "UnityEngine_UnityEngine_RaycastHit2D4063908774.h"
+#include "UnityEngine_UnityEngine_LayerMask3188175821.h"
 #include "DOTween_DG_Tweening_TweenCallback3697142134.h"
 #include "DOTween_DG_Tweening_TweenSettingsExtensions2285462830.h"
-#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247952MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247952.h"
-#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197208MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197208.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247947MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveUpCor3763247947.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197209MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PlayerCarController_U3CMoveDownC3114197209.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "AssemblyU2DCSharp_PlayIdleAnimations2133472875.h"
 #include "AssemblyU2DCSharp_PlayIdleAnimations2133472875MethodDeclarations.h"
@@ -736,12 +749,6 @@ struct UIButtonPlayAnimation_t2267721830;
 #include "AssemblyU2DCSharp_UIButtonMessage3791537815.h"
 #include "AssemblyU2DCSharp_UIButtonMessage3791537815MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIButtonMessage_Trigger610760934.h"
-#include "AssemblyU2DCSharp_UIButtonMessage_Trigger610760934MethodDeclarations.h"
-#include "AssemblyU2DCSharp_UIButtonOffset1501810361.h"
-#include "AssemblyU2DCSharp_UIButtonOffset1501810361MethodDeclarations.h"
-#include "AssemblyU2DCSharp_UITweener_Method1694901606.h"
-#include "AssemblyU2DCSharp_UIButtonPlayAnimation2267721830.h"
-#include "AssemblyU2DCSharp_UIButtonPlayAnimation2267721830MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3347661153_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
@@ -913,8 +920,6 @@ extern "C"  Il2CppObject * UITweener_Begin_TisIl2CppObject_m726876902_gshared (I
 #define GameObject_GetComponent_TisLight_t494725636_m3689457056(__this, method) ((  Light_t494725636 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3347661153_gshared)(__this, method)
 // !!0[] UnityEngine.GameObject::GetComponentsInChildren<UnityEngine.Transform>()
 #define GameObject_GetComponentsInChildren_TisTransform_t3275118058_m2357044025(__this, method) ((  TransformU5BU5D_t3764228911* (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<TweenPosition>()
-#define Component_GetComponent_TisTweenPosition_t1144714832_m4195983071(__this, method) ((  TweenPosition_t1144714832 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -3699,6 +3704,450 @@ IL_0089:
 		return L_23;
 	}
 }
+// System.Void CarDodgeGame::.ctor()
+extern "C"  void CarDodgeGame__ctor_m3991645306 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_mNormalCarSpawnChange_7((0.7f));
+		__this->set_mTruckSpawnChance_8((0.2f));
+		__this->set_mFastCarSpawnChance_9((0.1f));
+		__this->set_mMaxSpawnSpeed_10((3.0f));
+		__this->set_mMinSpawnSpeed_11((5.0f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CarDodgeGame::Awake()
+extern "C"  void CarDodgeGame_Awake_m2106247909 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method)
+{
+	{
+		float L_0 = __this->get_mMaxSpawnSpeed_10();
+		__this->set_mCurrentSpawnSpeed_12(L_0);
+		return;
+	}
+}
+// System.Void CarDodgeGame::Start()
+extern "C"  void CarDodgeGame_Start_m3638727482 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = CarDodgeGame_SpawnCoroutine_m358620679(__this, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CarDodgeGame::Update()
+extern "C"  void CarDodgeGame_Update_m3189749945 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Collections.IEnumerator CarDodgeGame::SpawnCoroutine()
+extern Il2CppClass* U3CSpawnCoroutineU3Ec__Iterator3_t148974859_il2cpp_TypeInfo_var;
+extern const uint32_t CarDodgeGame_SpawnCoroutine_m358620679_MetadataUsageId;
+extern "C"  Il2CppObject * CarDodgeGame_SpawnCoroutine_m358620679 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CarDodgeGame_SpawnCoroutine_m358620679_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * V_0 = NULL;
+	{
+		U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * L_0 = (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 *)il2cpp_codegen_object_new(U3CSpawnCoroutineU3Ec__Iterator3_t148974859_il2cpp_TypeInfo_var);
+		U3CSpawnCoroutineU3Ec__Iterator3__ctor_m1542020552(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * L_1 = V_0;
+		NullCheck(L_1);
+		L_1->set_U3CU3Ef__this_2(__this);
+		U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Void CarDodgeGame::SpawnEnemyCar()
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral578686736;
+extern const uint32_t CarDodgeGame_SpawnEnemyCar_m3242250389_MetadataUsageId;
+extern "C"  void CarDodgeGame_SpawnEnemyCar_m3242250389 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CarDodgeGame_SpawnEnemyCar_m3242250389_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		GameObjectU5BU5D_t3057952154* L_0 = __this->get_mEnemySpawnPoint_2();
+		NullCheck(L_0);
+		int32_t L_1 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))-(int32_t)1)), /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral578686736, L_4, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3057952154* L_6 = __this->get_mEnemySpawnPoint_2();
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		GameObject_t1756533147 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		NullCheck(L_9);
+		Transform_t3275118058 * L_10 = GameObject_get_transform_m909382139(L_9, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Vector3_t2243707580  L_11 = Transform_get_position_m1104419803(L_10, /*hidden argument*/NULL);
+		CarDodgeGame_ChooseCarToSpawn_m3421396064(__this, L_11, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void CarDodgeGame::ChooseCarToSpawn(UnityEngine.Vector3)
+extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral823845898;
+extern Il2CppCodeGenString* _stringLiteral256506175;
+extern const uint32_t CarDodgeGame_ChooseCarToSpawn_m3421396064_MetadataUsageId;
+extern "C"  void CarDodgeGame_ChooseCarToSpawn_m3421396064 (CarDodgeGame_t1650312537 * __this, Vector3_t2243707580  ___spawnposition0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CarDodgeGame_ChooseCarToSpawn_m3421396064_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		float L_0 = __this->get_mNormalCarSpawnChange_7();
+		float L_1 = __this->get_mTruckSpawnChance_8();
+		float L_2 = __this->get_mFastCarSpawnChance_9();
+		V_0 = ((float)((float)((float)((float)L_0+(float)L_1))+(float)L_2));
+		float L_3 = V_0;
+		float L_4 = L_3;
+		Il2CppObject * L_5 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_4);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_6 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral823845898, L_5, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		float L_7 = V_0;
+		float L_8 = Random_Range_m2884721203(NULL /*static, unused*/, (0.0f), L_7, /*hidden argument*/NULL);
+		V_1 = L_8;
+		float L_9 = V_1;
+		float L_10 = L_9;
+		Il2CppObject * L_11 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_10);
+		String_t* L_12 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral256506175, L_11, /*hidden argument*/NULL);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		float L_13 = V_1;
+		float L_14 = __this->get_mNormalCarSpawnChange_7();
+		if ((!(((float)L_13) < ((float)L_14))))
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		Vector3_t2243707580  L_15 = ___spawnposition0;
+		CarDodgeGame_SpawnNormalCar_m2529383949(__this, L_15, /*hidden argument*/NULL);
+		goto IL_0089;
+	}
+
+IL_0063:
+	{
+		float L_16 = V_1;
+		float L_17 = __this->get_mNormalCarSpawnChange_7();
+		float L_18 = __this->get_mTruckSpawnChance_8();
+		if ((!(((float)L_16) < ((float)((float)((float)L_17+(float)L_18))))))
+		{
+			goto IL_0082;
+		}
+	}
+	{
+		Vector3_t2243707580  L_19 = ___spawnposition0;
+		CarDodgeGame_SpawnTruckCar_m3492177509(__this, L_19, /*hidden argument*/NULL);
+		goto IL_0089;
+	}
+
+IL_0082:
+	{
+		Vector3_t2243707580  L_20 = ___spawnposition0;
+		CarDodgeGame_SpawnFastCar_m1959465054(__this, L_20, /*hidden argument*/NULL);
+	}
+
+IL_0089:
+	{
+		return;
+	}
+}
+// System.Void CarDodgeGame::SpawnNormalCar(UnityEngine.Vector3)
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameObject_t1756533147_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1080306258;
+extern const uint32_t CarDodgeGame_SpawnNormalCar_m2529383949_MetadataUsageId;
+extern "C"  void CarDodgeGame_SpawnNormalCar_m2529383949 (CarDodgeGame_t1650312537 * __this, Vector3_t2243707580  ___spawnposition0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CarDodgeGame_SpawnNormalCar_m2529383949_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	GameObject_t1756533147 * V_1 = NULL;
+	{
+		GameObjectU5BU5D_t3057952154* L_0 = __this->get_mNormalEnemyCar_4();
+		NullCheck(L_0);
+		int32_t L_1 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))-(int32_t)1)), /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral1080306258, L_4, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3057952154* L_6 = __this->get_mNormalEnemyCar_4();
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		GameObject_t1756533147 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		Vector3_t2243707580  L_10 = ___spawnposition0;
+		Quaternion_t4030073918  L_11 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (0.0f), (0.0f), (180.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_t1021602117 * L_12 = Object_Instantiate_m938141395(NULL /*static, unused*/, L_9, L_10, L_11, /*hidden argument*/NULL);
+		V_1 = ((GameObject_t1756533147 *)IsInstSealed(L_12, GameObject_t1756533147_il2cpp_TypeInfo_var));
+		return;
+	}
+}
+// System.Void CarDodgeGame::SpawnTruckCar(UnityEngine.Vector3)
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameObject_t1756533147_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3341033768;
+extern const uint32_t CarDodgeGame_SpawnTruckCar_m3492177509_MetadataUsageId;
+extern "C"  void CarDodgeGame_SpawnTruckCar_m3492177509 (CarDodgeGame_t1650312537 * __this, Vector3_t2243707580  ___spawnposition0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CarDodgeGame_SpawnTruckCar_m3492177509_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	GameObject_t1756533147 * V_1 = NULL;
+	{
+		GameObjectU5BU5D_t3057952154* L_0 = __this->get_mTruckEnemyCar_5();
+		NullCheck(L_0);
+		int32_t L_1 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))-(int32_t)1)), /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3341033768, L_4, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3057952154* L_6 = __this->get_mTruckEnemyCar_5();
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		GameObject_t1756533147 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		Vector3_t2243707580  L_10 = ___spawnposition0;
+		Quaternion_t4030073918  L_11 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (0.0f), (0.0f), (180.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_t1021602117 * L_12 = Object_Instantiate_m938141395(NULL /*static, unused*/, L_9, L_10, L_11, /*hidden argument*/NULL);
+		V_1 = ((GameObject_t1756533147 *)IsInstSealed(L_12, GameObject_t1756533147_il2cpp_TypeInfo_var));
+		return;
+	}
+}
+// System.Void CarDodgeGame::SpawnFastCar(UnityEngine.Vector3)
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* GameObject_t1756533147_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3641119013;
+extern const uint32_t CarDodgeGame_SpawnFastCar_m1959465054_MetadataUsageId;
+extern "C"  void CarDodgeGame_SpawnFastCar_m1959465054 (CarDodgeGame_t1650312537 * __this, Vector3_t2243707580  ___spawnposition0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CarDodgeGame_SpawnFastCar_m1959465054_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	GameObject_t1756533147 * V_1 = NULL;
+	{
+		GameObjectU5BU5D_t3057952154* L_0 = __this->get_mFastEnemyCar_6();
+		NullCheck(L_0);
+		int32_t L_1 = Random_Range_m694320887(NULL /*static, unused*/, 0, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))-(int32_t)1)), /*hidden argument*/NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		int32_t L_3 = L_2;
+		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_5 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3641119013, L_4, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		GameObjectU5BU5D_t3057952154* L_6 = __this->get_mFastEnemyCar_6();
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		GameObject_t1756533147 * L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		Vector3_t2243707580  L_10 = ___spawnposition0;
+		Quaternion_t4030073918  L_11 = Quaternion_Euler_m2887458175(NULL /*static, unused*/, (0.0f), (0.0f), (180.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_t1021602117 * L_12 = Object_Instantiate_m938141395(NULL /*static, unused*/, L_9, L_10, L_11, /*hidden argument*/NULL);
+		V_1 = ((GameObject_t1756533147 *)IsInstSealed(L_12, GameObject_t1756533147_il2cpp_TypeInfo_var));
+		return;
+	}
+}
+// System.Void CarDodgeGame/<SpawnCoroutine>c__Iterator3::.ctor()
+extern "C"  void U3CSpawnCoroutineU3Ec__Iterator3__ctor_m1542020552 (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object CarDodgeGame/<SpawnCoroutine>c__Iterator3::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1476153254 (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_1();
+		return L_0;
+	}
+}
+// System.Object CarDodgeGame/<SpawnCoroutine>c__Iterator3::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m3555604734 (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_1();
+		return L_0;
+	}
+}
+// System.Boolean CarDodgeGame/<SpawnCoroutine>c__Iterator3::MoveNext()
+extern Il2CppClass* Single_t2076509932_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4103039273;
+extern const uint32_t U3CSpawnCoroutineU3Ec__Iterator3_MoveNext_m4111728176_MetadataUsageId;
+extern "C"  bool U3CSpawnCoroutineU3Ec__Iterator3_MoveNext_m4111728176 (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CSpawnCoroutineU3Ec__Iterator3_MoveNext_m4111728176_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_U24PC_0();
+		V_0 = L_0;
+		__this->set_U24PC_0((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_0088;
+		}
+	}
+	{
+		goto IL_009f;
+	}
+
+IL_0021:
+	{
+		CarDodgeGame_t1650312537 * L_2 = __this->get_U3CU3Ef__this_2();
+		CarDodgeGame_t1650312537 * L_3 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_3);
+		float L_4 = L_3->get_mMaxSpawnSpeed_10();
+		CarDodgeGame_t1650312537 * L_5 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_5);
+		float L_6 = L_5->get_mMinSpawnSpeed_11();
+		float L_7 = Random_Range_m2884721203(NULL /*static, unused*/, L_4, L_6, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		L_2->set_mCurrentSpawnSpeed_12(L_7);
+		CarDodgeGame_t1650312537 * L_8 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_8);
+		float L_9 = L_8->get_mCurrentSpawnSpeed_12();
+		float L_10 = L_9;
+		Il2CppObject * L_11 = Box(Single_t2076509932_il2cpp_TypeInfo_var, &L_10);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_12 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral4103039273, L_11, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		CarDodgeGame_t1650312537 * L_13 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_13);
+		float L_14 = L_13->get_mCurrentSpawnSpeed_12();
+		WaitForSeconds_t3839502067 * L_15 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_15, L_14, /*hidden argument*/NULL);
+		__this->set_U24current_1(L_15);
+		__this->set_U24PC_0(1);
+		goto IL_00a1;
+	}
+
+IL_0088:
+	{
+		CarDodgeGame_t1650312537 * L_16 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_16);
+		CarDodgeGame_SpawnEnemyCar_m3242250389(L_16, /*hidden argument*/NULL);
+		goto IL_0021;
+	}
+	// Dead block : IL_0098: ldarg.0
+
+IL_009f:
+	{
+		return (bool)0;
+	}
+
+IL_00a1:
+	{
+		return (bool)1;
+	}
+}
+// System.Void CarDodgeGame/<SpawnCoroutine>c__Iterator3::Dispose()
+extern "C"  void U3CSpawnCoroutineU3Ec__Iterator3_Dispose_m2030391869 (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_0((-1));
+		return;
+	}
+}
+// System.Void CarDodgeGame/<SpawnCoroutine>c__Iterator3::Reset()
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern const uint32_t U3CSpawnCoroutineU3Ec__Iterator3_Reset_m2118408939_MetadataUsageId;
+extern "C"  void U3CSpawnCoroutineU3Ec__Iterator3_Reset_m2118408939 (U3CSpawnCoroutineU3Ec__Iterator3_t148974859 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CSpawnCoroutineU3Ec__Iterator3_Reset_m2118408939_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
 // System.Void ChatInput::.ctor()
 extern "C"  void ChatInput__ctor_m1480987787 (ChatInput_t3005926974 * __this, const MethodInfo* method)
 {
@@ -4620,6 +5069,64 @@ IL_0075:
 	}
 
 IL_007b:
+	{
+		return;
+	}
+}
+// System.Void EnemyCar::.ctor()
+extern "C"  void EnemyCar__ctor_m4224336717 (EnemyCar_t2475715994 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_mSpeed_2((0.4f));
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void EnemyCar::Start()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1411264326;
+extern const uint32_t EnemyCar_Start_m2778549701_MetadataUsageId;
+extern "C"  void EnemyCar_Start_m2778549701 (EnemyCar_t2475715994 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (EnemyCar_Start_m2778549701_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	{
+		Transform_t3275118058 * L_0 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Vector3_t2243707580  L_1 = Transform_get_position_m1104419803(L_0, /*hidden argument*/NULL);
+		V_1 = L_1;
+		String_t* L_2 = Vector3_ToString_m3857189970((&V_1), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_3 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1411264326, L_2, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_6;
+		memset(&L_6, 0, sizeof(L_6));
+		Vector3__ctor_m2638739322(&L_6, (0.0f), (10.0f), (0.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_7 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
+		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_9 = V_0;
+		float L_10 = __this->get_mSpeed_2();
+		ShortcutExtensions_DOMove_m813241662(NULL /*static, unused*/, L_8, L_9, ((float)((float)(10.0f)/(float)L_10)), (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void EnemyCar::Update()
+extern "C"  void EnemyCar_Update_m2723198140 (EnemyCar_t2475715994 * __this, const MethodInfo* method)
+{
 	{
 		return;
 	}
@@ -6288,10 +6795,21 @@ extern "C"  void GameManager__ctor_m293624896 (GameManager_t2252321495 * __this,
 	}
 }
 // System.Void GameManager::Awake()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t GameManager_Awake_m99497495_MetadataUsageId;
 extern "C"  void GameManager_Awake_m99497495 (GameManager_t2252321495 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameManager_Awake_m99497495_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	{
 		GameManager_GameInit_m3322512818(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -10241,7 +10759,7 @@ extern "C"  void LoadingProcess_Update_m3191783039 (LoadingProcess_t282725851 * 
 	}
 }
 // System.Collections.IEnumerator LoadingProcess::UpdateProcessBar()
-extern Il2CppClass* U3CUpdateProcessBarU3Ec__Iterator5_t1282375845_il2cpp_TypeInfo_var;
+extern Il2CppClass* U3CUpdateProcessBarU3Ec__Iterator6_t1282375848_il2cpp_TypeInfo_var;
 extern const uint32_t LoadingProcess_UpdateProcessBar_m1373146775_MetadataUsageId;
 extern "C"  Il2CppObject * LoadingProcess_UpdateProcessBar_m1373146775 (LoadingProcess_t282725851 * __this, const MethodInfo* method)
 {
@@ -10251,53 +10769,53 @@ extern "C"  Il2CppObject * LoadingProcess_UpdateProcessBar_m1373146775 (LoadingP
 		il2cpp_codegen_initialize_method (LoadingProcess_UpdateProcessBar_m1373146775_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * V_0 = NULL;
+	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * V_0 = NULL;
 	{
-		U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * L_0 = (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 *)il2cpp_codegen_object_new(U3CUpdateProcessBarU3Ec__Iterator5_t1282375845_il2cpp_TypeInfo_var);
-		U3CUpdateProcessBarU3Ec__Iterator5__ctor_m3054656228(L_0, /*hidden argument*/NULL);
+		U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * L_0 = (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 *)il2cpp_codegen_object_new(U3CUpdateProcessBarU3Ec__Iterator6_t1282375848_il2cpp_TypeInfo_var);
+		U3CUpdateProcessBarU3Ec__Iterator6__ctor_m3055770275(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * L_1 = V_0;
+		U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * L_1 = V_0;
 		NullCheck(L_1);
 		L_1->set_U3CU3Ef__this_5(__this);
-		U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * L_2 = V_0;
+		U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * L_2 = V_0;
 		return L_2;
 	}
 }
-// System.Void LoadingProcess/<UpdateProcessBar>c__Iterator5::.ctor()
-extern "C"  void U3CUpdateProcessBarU3Ec__Iterator5__ctor_m3054656228 (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * __this, const MethodInfo* method)
+// System.Void LoadingProcess/<UpdateProcessBar>c__Iterator6::.ctor()
+extern "C"  void U3CUpdateProcessBarU3Ec__Iterator6__ctor_m3055770275 (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Object LoadingProcess/<UpdateProcessBar>c__Iterator5::System.Collections.Generic.IEnumerator<object>.get_Current()
-extern "C"  Il2CppObject * U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1089153238 (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * __this, const MethodInfo* method)
+// System.Object LoadingProcess/<UpdateProcessBar>c__Iterator6::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m126540921 (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Object LoadingProcess/<UpdateProcessBar>c__Iterator5::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * U3CUpdateProcessBarU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m3263057710 (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * __this, const MethodInfo* method)
+// System.Object LoadingProcess/<UpdateProcessBar>c__Iterator6::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3320973777 (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Boolean LoadingProcess/<UpdateProcessBar>c__Iterator5::MoveNext()
+// System.Boolean LoadingProcess/<UpdateProcessBar>c__Iterator6::MoveNext()
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2328219732;
-extern const uint32_t U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184_MetadataUsageId;
-extern "C"  bool U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184 (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * __this, const MethodInfo* method)
+extern const uint32_t U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017_MetadataUsageId;
+extern "C"  bool U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017 (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CUpdateProcessBarU3Ec__Iterator5_MoveNext_m1642541184_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint32_t V_0 = 0;
@@ -10411,23 +10929,23 @@ IL_00fb:
 	}
 	// Dead block : IL_00fd: ldloc.1
 }
-// System.Void LoadingProcess/<UpdateProcessBar>c__Iterator5::Dispose()
-extern "C"  void U3CUpdateProcessBarU3Ec__Iterator5_Dispose_m3281031183 (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * __this, const MethodInfo* method)
+// System.Void LoadingProcess/<UpdateProcessBar>c__Iterator6::Dispose()
+extern "C"  void U3CUpdateProcessBarU3Ec__Iterator6_Dispose_m3317932082 (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * __this, const MethodInfo* method)
 {
 	{
 		__this->set_U24PC_3((-1));
 		return;
 	}
 }
-// System.Void LoadingProcess/<UpdateProcessBar>c__Iterator5::Reset()
+// System.Void LoadingProcess/<UpdateProcessBar>c__Iterator6::Reset()
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
-extern const uint32_t U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801_MetadataUsageId;
-extern "C"  void U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801 (U3CUpdateProcessBarU3Ec__Iterator5_t1282375845 * __this, const MethodInfo* method)
+extern const uint32_t U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072_MetadataUsageId;
+extern "C"  void U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072 (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CUpdateProcessBarU3Ec__Iterator5_Reset_m2068250801_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -17186,17 +17704,17 @@ IL_0042:
 extern "C"  void PlayerCarController__ctor_m3941186136 (PlayerCarController_t116747357 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_mMoveTweenTime_2((0.3f));
-		__this->set_mIntervalTimeToKeepMovingUPOrDown_3((0.025f));
+		__this->set_mMoveTweenTime_3((0.3f));
+		__this->set_mIntervalTimeToKeepMovingUPOrDown_4((0.025f));
 		Vector3_t2243707580  L_0;
 		memset(&L_0, 0, sizeof(L_0));
 		Vector3__ctor_m2638739322(&L_0, (0.9f), (0.0f), (0.0f), /*hidden argument*/NULL);
-		__this->set_mHorizontalOffset_4(L_0);
+		__this->set_mHorizontalOffset_5(L_0);
 		Vector3_t2243707580  L_1;
 		memset(&L_1, 0, sizeof(L_1));
 		Vector3__ctor_m2638739322(&L_1, (0.0f), (0.08f), (0.0f), /*hidden argument*/NULL);
-		__this->set_mVerticalOffset_5(L_1);
-		__this->set_mIsTweenComplete_7((bool)1);
+		__this->set_mVerticalOffset_6(L_1);
+		__this->set_mIsTweenComplete_9((bool)1);
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -17218,11 +17736,11 @@ extern "C"  void PlayerCarController_Awake_m2021496921 (PlayerCarController_t116
 		Transform_t3275118058 * L_1 = GameObject_get_transform_m909382139(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
 		Vector3_t2243707580  L_2 = Transform_get_position_m1104419803(L_1, /*hidden argument*/NULL);
-		__this->set_mTargetPosition_6(L_2);
+		__this->set_mTargetPosition_8(L_2);
 		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Animator_t69676727 * L_4 = GameObject_GetComponent_TisAnimator_t69676727_m2717502299(L_3, /*hidden argument*/GameObject_GetComponent_TisAnimator_t69676727_m2717502299_MethodInfo_var);
-		__this->set_mPlayerCarAnimator_10(L_4);
+		__this->set_mPlayerCarAnimator_12(L_4);
 		return;
 	}
 }
@@ -17314,6 +17832,7 @@ extern "C"  void PlayerCarController_Update_m484703677 (PlayerCarController_t116
 // System.Void PlayerCarController::MoveRight(UnityEngine.GameObject)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* TweenCallback_t3697142134_il2cpp_TypeInfo_var;
 extern const MethodInfo* PlayerCarController_OnTweenComplete_m3857909345_MethodInfo_var;
@@ -17329,6 +17848,16 @@ extern "C"  void PlayerCarController_MoveRight_m2971198157 (PlayerCarController_
 		il2cpp_codegen_initialize_method (PlayerCarController_MoveRight_m2971198157_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	RaycastHit2D_t4063908774  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector3_t2243707580  V_4;
+	memset(&V_4, 0, sizeof(V_4));
 	{
 		GameObject_t1756533147 * L_0 = ___go0;
 		NullCheck(L_0);
@@ -17337,48 +17866,80 @@ extern "C"  void PlayerCarController_MoveRight_m2971198157 (PlayerCarController_
 		String_t* L_2 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3248094155, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		bool L_3 = __this->get_mIsTweenComplete_7();
+		bool L_3 = __this->get_mIsTweenComplete_9();
 		if (!L_3)
 		{
-			goto IL_008e;
+			goto IL_00fe;
 		}
 	}
 	{
-		Animator_t69676727 * L_4 = __this->get_mPlayerCarAnimator_10();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_5 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_4, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_5)
-		{
-			goto IL_0041;
-		}
-	}
-	{
-		Animator_t69676727 * L_6 = __this->get_mPlayerCarAnimator_10();
-		NullCheck(L_6);
-		Animator_SetTrigger_m3418492570(L_6, _stringLiteral1824092911, /*hidden argument*/NULL);
-	}
-
-IL_0041:
-	{
-		__this->set_mIsTweenComplete_7((bool)0);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		V_3 = L_5;
+		float L_6 = (&V_3)->get_x_1();
 		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_9 = __this->get_mHorizontalOffset_4();
-		Vector3_t2243707580  L_10 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
-		__this->set_mTargetPosition_6(L_10);
-		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_12 = __this->get_mTargetPosition_6();
-		float L_13 = __this->get_mMoveTweenTime_2();
-		Tweener_t760404022 * L_14 = ShortcutExtensions_DOMove_m813241662(NULL /*static, unused*/, L_11, L_12, L_13, (bool)0, /*hidden argument*/NULL);
-		IntPtr_t L_15;
-		L_15.set_m_value_0((void*)(void*)PlayerCarController_OnTweenComplete_m3857909345_MethodInfo_var);
-		TweenCallback_t3697142134 * L_16 = (TweenCallback_t3697142134 *)il2cpp_codegen_object_new(TweenCallback_t3697142134_il2cpp_TypeInfo_var);
-		TweenCallback__ctor_m3479200459(L_16, __this, L_15, /*hidden argument*/NULL);
-		TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386(NULL /*static, unused*/, L_14, L_16, /*hidden argument*/TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386_MethodInfo_var);
+		V_4 = L_8;
+		float L_9 = (&V_4)->get_y_2();
+		Vector2__ctor_m3067419446((&V_0), L_6, L_9, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_10 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Vector3_t2243707580  L_11 = Transform_get_position_m1104419803(L_10, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_12 = __this->get_mHorizontalOffset_5();
+		Vector3_t2243707580  L_13 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
+		__this->set_mTargetPosition_8(L_13);
+		Vector3_t2243707580 * L_14 = __this->get_address_of_mTargetPosition_8();
+		float L_15 = L_14->get_x_1();
+		Vector3_t2243707580 * L_16 = __this->get_address_of_mTargetPosition_8();
+		float L_17 = L_16->get_y_2();
+		Vector2__ctor_m3067419446((&V_1), L_15, L_17, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_18 = V_0;
+		Vector2_t2243707579  L_19 = V_1;
+		LayerMask_t3188175821  L_20 = __this->get_mBolockingLayer_7();
+		int32_t L_21 = LayerMask_op_Implicit_m2135076047(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		RaycastHit2D_t4063908774  L_22 = Physics2D_Linecast_m2374117908(NULL /*static, unused*/, L_18, L_19, L_21, /*hidden argument*/NULL);
+		V_2 = L_22;
+		Transform_t3275118058 * L_23 = RaycastHit2D_get_transform_m747355930((&V_2), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_24 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_23, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_24)
+		{
+			goto IL_00fe;
+		}
+	}
+	{
+		Animator_t69676727 * L_25 = __this->get_mPlayerCarAnimator_12();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_26 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_25, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_26)
+		{
+			goto IL_00cd;
+		}
+	}
+	{
+		Animator_t69676727 * L_27 = __this->get_mPlayerCarAnimator_12();
+		NullCheck(L_27);
+		Animator_SetTrigger_m3418492570(L_27, _stringLiteral1824092911, /*hidden argument*/NULL);
 	}
 
-IL_008e:
+IL_00cd:
+	{
+		__this->set_mIsTweenComplete_9((bool)0);
+		Transform_t3275118058 * L_28 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_29 = __this->get_mTargetPosition_8();
+		float L_30 = __this->get_mMoveTweenTime_3();
+		Tweener_t760404022 * L_31 = ShortcutExtensions_DOMove_m813241662(NULL /*static, unused*/, L_28, L_29, L_30, (bool)0, /*hidden argument*/NULL);
+		IntPtr_t L_32;
+		L_32.set_m_value_0((void*)(void*)PlayerCarController_OnTweenComplete_m3857909345_MethodInfo_var);
+		TweenCallback_t3697142134 * L_33 = (TweenCallback_t3697142134 *)il2cpp_codegen_object_new(TweenCallback_t3697142134_il2cpp_TypeInfo_var);
+		TweenCallback__ctor_m3479200459(L_33, __this, L_32, /*hidden argument*/NULL);
+		TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386(NULL /*static, unused*/, L_31, L_33, /*hidden argument*/TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386_MethodInfo_var);
+	}
+
+IL_00fe:
 	{
 		return;
 	}
@@ -17386,6 +17947,7 @@ IL_008e:
 // System.Void PlayerCarController::MoveLeft(UnityEngine.GameObject)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* TweenCallback_t3697142134_il2cpp_TypeInfo_var;
 extern const MethodInfo* PlayerCarController_OnTweenComplete_m3857909345_MethodInfo_var;
@@ -17401,6 +17963,16 @@ extern "C"  void PlayerCarController_MoveLeft_m3565104488 (PlayerCarController_t
 		il2cpp_codegen_initialize_method (PlayerCarController_MoveLeft_m3565104488_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
+	Vector2_t2243707579  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	Vector2_t2243707579  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	RaycastHit2D_t4063908774  V_2;
+	memset(&V_2, 0, sizeof(V_2));
+	Vector3_t2243707580  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector3_t2243707580  V_4;
+	memset(&V_4, 0, sizeof(V_4));
 	{
 		GameObject_t1756533147 * L_0 = ___go0;
 		NullCheck(L_0);
@@ -17409,48 +17981,86 @@ extern "C"  void PlayerCarController_MoveLeft_m3565104488 (PlayerCarController_t
 		String_t* L_2 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral992573448, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		bool L_3 = __this->get_mIsTweenComplete_7();
+		bool L_3 = __this->get_mIsTweenComplete_9();
 		if (!L_3)
 		{
-			goto IL_008e;
+			goto IL_011a;
 		}
 	}
 	{
-		Animator_t69676727 * L_4 = __this->get_mPlayerCarAnimator_10();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_5 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_4, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_5)
-		{
-			goto IL_0041;
-		}
-	}
-	{
-		Animator_t69676727 * L_6 = __this->get_mPlayerCarAnimator_10();
-		NullCheck(L_6);
-		Animator_SetTrigger_m3418492570(L_6, _stringLiteral484938082, /*hidden argument*/NULL);
-	}
-
-IL_0041:
-	{
-		__this->set_mIsTweenComplete_7((bool)0);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		V_3 = L_5;
+		float L_6 = (&V_3)->get_x_1();
 		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_9 = __this->get_mHorizontalOffset_4();
-		Vector3_t2243707580  L_10 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
-		__this->set_mTargetPosition_6(L_10);
-		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_12 = __this->get_mTargetPosition_6();
-		float L_13 = __this->get_mMoveTweenTime_2();
-		Tweener_t760404022 * L_14 = ShortcutExtensions_DOMove_m813241662(NULL /*static, unused*/, L_11, L_12, L_13, (bool)0, /*hidden argument*/NULL);
-		IntPtr_t L_15;
-		L_15.set_m_value_0((void*)(void*)PlayerCarController_OnTweenComplete_m3857909345_MethodInfo_var);
-		TweenCallback_t3697142134 * L_16 = (TweenCallback_t3697142134 *)il2cpp_codegen_object_new(TweenCallback_t3697142134_il2cpp_TypeInfo_var);
-		TweenCallback__ctor_m3479200459(L_16, __this, L_15, /*hidden argument*/NULL);
-		TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386(NULL /*static, unused*/, L_14, L_16, /*hidden argument*/TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386_MethodInfo_var);
+		V_4 = L_8;
+		float L_9 = (&V_4)->get_y_2();
+		Vector2__ctor_m3067419446((&V_0), L_6, L_9, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_10 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Vector3_t2243707580  L_11 = Transform_get_position_m1104419803(L_10, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_12 = __this->get_mHorizontalOffset_5();
+		Vector3_t2243707580  L_13 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
+		__this->set_mTargetPosition_8(L_13);
+		Vector3_t2243707580 * L_14 = __this->get_address_of_mTargetPosition_8();
+		float L_15 = L_14->get_x_1();
+		Vector3_t2243707580 * L_16 = __this->get_address_of_mTargetPosition_8();
+		float L_17 = L_16->get_y_2();
+		Vector2__ctor_m3067419446((&V_1), L_15, L_17, /*hidden argument*/NULL);
+		Vector2_t2243707579  L_18 = V_0;
+		Vector2_t2243707579  L_19 = V_1;
+		LayerMask_t3188175821  L_20 = __this->get_mBolockingLayer_7();
+		int32_t L_21 = LayerMask_op_Implicit_m2135076047(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		RaycastHit2D_t4063908774  L_22 = Physics2D_Linecast_m2374117908(NULL /*static, unused*/, L_18, L_19, L_21, /*hidden argument*/NULL);
+		V_2 = L_22;
+		Transform_t3275118058 * L_23 = RaycastHit2D_get_transform_m747355930((&V_2), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_24 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_23, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_24)
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		Animator_t69676727 * L_25 = __this->get_mPlayerCarAnimator_12();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_26 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_25, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_26)
+		{
+			goto IL_00cd;
+		}
+	}
+	{
+		Animator_t69676727 * L_27 = __this->get_mPlayerCarAnimator_12();
+		NullCheck(L_27);
+		Animator_SetTrigger_m3418492570(L_27, _stringLiteral484938082, /*hidden argument*/NULL);
 	}
 
-IL_008e:
+IL_00cd:
+	{
+		__this->set_mIsTweenComplete_9((bool)0);
+		Transform_t3275118058 * L_28 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_28);
+		Vector3_t2243707580  L_29 = Transform_get_position_m1104419803(L_28, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_30 = __this->get_mHorizontalOffset_5();
+		Vector3_t2243707580  L_31 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_29, L_30, /*hidden argument*/NULL);
+		__this->set_mTargetPosition_8(L_31);
+		Transform_t3275118058 * L_32 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_33 = __this->get_mTargetPosition_8();
+		float L_34 = __this->get_mMoveTweenTime_3();
+		Tweener_t760404022 * L_35 = ShortcutExtensions_DOMove_m813241662(NULL /*static, unused*/, L_32, L_33, L_34, (bool)0, /*hidden argument*/NULL);
+		IntPtr_t L_36;
+		L_36.set_m_value_0((void*)(void*)PlayerCarController_OnTweenComplete_m3857909345_MethodInfo_var);
+		TweenCallback_t3697142134 * L_37 = (TweenCallback_t3697142134 *)il2cpp_codegen_object_new(TweenCallback_t3697142134_il2cpp_TypeInfo_var);
+		TweenCallback__ctor_m3479200459(L_37, __this, L_36, /*hidden argument*/NULL);
+		TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386(NULL /*static, unused*/, L_35, L_37, /*hidden argument*/TweenSettingsExtensions_OnComplete_TisTweener_t760404022_m67810386_MethodInfo_var);
+	}
+
+IL_011a:
 	{
 		return;
 	}
@@ -17476,16 +18086,6 @@ extern "C"  void PlayerCarController_MoveUp_m2824957612 (PlayerCarController_t11
 		String_t* L_2 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3433793548, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t2243707580  L_4 = Transform_get_position_m1104419803(L_3, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_5 = __this->get_mVerticalOffset_5();
-		Vector3_t2243707580  L_6 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
-		__this->set_mTargetPosition_6(L_6);
-		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_8 = __this->get_mTargetPosition_6();
-		NullCheck(L_7);
-		Transform_set_position_m2469242620(L_7, L_8, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -17518,13 +18118,13 @@ extern "C"  void PlayerCarController_KeepMoveUp_m1331347744 (PlayerCarController
 		}
 	}
 	{
-		__this->set_mIsKeepMovingUp_8((bool)1);
+		__this->set_mIsKeepMovingUp_10((bool)1);
 		goto IL_002e;
 	}
 
 IL_0027:
 	{
-		__this->set_mIsKeepMovingUp_8((bool)0);
+		__this->set_mIsKeepMovingUp_10((bool)0);
 	}
 
 IL_002e:
@@ -17533,7 +18133,7 @@ IL_002e:
 	}
 }
 // System.Collections.IEnumerator PlayerCarController::MoveUpCoroutine()
-extern Il2CppClass* U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952_il2cpp_TypeInfo_var;
+extern Il2CppClass* U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947_il2cpp_TypeInfo_var;
 extern const uint32_t PlayerCarController_MoveUpCoroutine_m2693190894_MetadataUsageId;
 extern "C"  Il2CppObject * PlayerCarController_MoveUpCoroutine_m2693190894 (PlayerCarController_t116747357 * __this, const MethodInfo* method)
 {
@@ -17543,15 +18143,15 @@ extern "C"  Il2CppObject * PlayerCarController_MoveUpCoroutine_m2693190894 (Play
 		il2cpp_codegen_initialize_method (PlayerCarController_MoveUpCoroutine_m2693190894_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * V_0 = NULL;
+	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * V_0 = NULL;
 	{
-		U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * L_0 = (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 *)il2cpp_codegen_object_new(U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952_il2cpp_TypeInfo_var);
-		U3CMoveUpCoroutineU3Ec__Iterator3__ctor_m1542069677(L_0, /*hidden argument*/NULL);
+		U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * L_0 = (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 *)il2cpp_codegen_object_new(U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947_il2cpp_TypeInfo_var);
+		U3CMoveUpCoroutineU3Ec__Iterator4__ctor_m1548062444(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * L_1 = V_0;
+		U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * L_1 = V_0;
 		NullCheck(L_1);
-		L_1->set_U3CU3Ef__this_2(__this);
-		U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * L_2 = V_0;
+		L_1->set_U3CU3Ef__this_5(__this);
+		U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * L_2 = V_0;
 		return L_2;
 	}
 }
@@ -17576,16 +18176,6 @@ extern "C"  void PlayerCarController_MoveDown_m254707483 (PlayerCarController_t1
 		String_t* L_2 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3226947217, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t2243707580  L_4 = Transform_get_position_m1104419803(L_3, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_5 = __this->get_mVerticalOffset_5();
-		Vector3_t2243707580  L_6 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
-		__this->set_mTargetPosition_6(L_6);
-		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_8 = __this->get_mTargetPosition_6();
-		NullCheck(L_7);
-		Transform_set_position_m2469242620(L_7, L_8, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -17618,13 +18208,13 @@ extern "C"  void PlayerCarController_KeepMoveDown_m1247487731 (PlayerCarControll
 		}
 	}
 	{
-		__this->set_mIsKeepMovingDown_9((bool)1);
+		__this->set_mIsKeepMovingDown_11((bool)1);
 		goto IL_002e;
 	}
 
 IL_0027:
 	{
-		__this->set_mIsKeepMovingDown_9((bool)0);
+		__this->set_mIsKeepMovingDown_11((bool)0);
 	}
 
 IL_002e:
@@ -17633,7 +18223,7 @@ IL_002e:
 	}
 }
 // System.Collections.IEnumerator PlayerCarController::MoveDownCoroutine()
-extern Il2CppClass* U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208_il2cpp_TypeInfo_var;
+extern Il2CppClass* U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209_il2cpp_TypeInfo_var;
 extern const uint32_t PlayerCarController_MoveDownCoroutine_m3523165399_MetadataUsageId;
 extern "C"  Il2CppObject * PlayerCarController_MoveDownCoroutine_m3523165399 (PlayerCarController_t116747357 * __this, const MethodInfo* method)
 {
@@ -17643,15 +18233,15 @@ extern "C"  Il2CppObject * PlayerCarController_MoveDownCoroutine_m3523165399 (Pl
 		il2cpp_codegen_initialize_method (PlayerCarController_MoveDownCoroutine_m3523165399_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * V_0 = NULL;
+	U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * V_0 = NULL;
 	{
-		U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * L_0 = (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 *)il2cpp_codegen_object_new(U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208_il2cpp_TypeInfo_var);
-		U3CMoveDownCoroutineU3Ec__Iterator4__ctor_m696433809(L_0, /*hidden argument*/NULL);
+		U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * L_0 = (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 *)il2cpp_codegen_object_new(U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209_il2cpp_TypeInfo_var);
+		U3CMoveDownCoroutineU3Ec__Iterator5__ctor_m695319762(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * L_1 = V_0;
+		U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * L_1 = V_0;
 		NullCheck(L_1);
-		L_1->set_U3CU3Ef__this_2(__this);
-		U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * L_2 = V_0;
+		L_1->set_U3CU3Ef__this_5(__this);
+		U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * L_2 = V_0;
 		return L_2;
 	}
 }
@@ -17703,6 +18293,9 @@ extern "C"  void PlayerCarController_CrashCallBack_m3159760084 (PlayerCarControl
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2329477892;
+extern Il2CppCodeGenString* _stringLiteral3203794512;
+extern Il2CppCodeGenString* _stringLiteral1652512497;
+extern Il2CppCodeGenString* _stringLiteral2105618009;
 extern const uint32_t PlayerCarController_OnTriggerEnter2D_m3876316192_MetadataUsageId;
 extern "C"  void PlayerCarController_OnTriggerEnter2D_m3876316192 (PlayerCarController_t116747357 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method)
 {
@@ -17720,30 +18313,31 @@ extern "C"  void PlayerCarController_OnTriggerEnter2D_m3876316192 (PlayerCarCont
 		String_t* L_2 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral2329477892, L_1, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerCarController::OnTriggerExit2D(UnityEngine.Collider2D)
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3571563752;
-extern const uint32_t PlayerCarController_OnTriggerExit2D_m2931615634_MetadataUsageId;
-extern "C"  void PlayerCarController_OnTriggerExit2D_m2931615634 (PlayerCarController_t116747357 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (PlayerCarController_OnTriggerExit2D_m2931615634_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
+		Collider2D_t646061738 * L_3 = ___collision0;
+		NullCheck(L_3);
+		String_t* L_4 = Component_get_tag_m357168014(L_3, /*hidden argument*/NULL);
+		bool L_5 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_4, _stringLiteral3203794512, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0056;
+		}
 	}
 	{
-		Collider2D_t646061738 * L_0 = ___collision0;
-		NullCheck(L_0);
-		String_t* L_1 = Object_get_name_m2079638459(L_0, /*hidden argument*/NULL);
+		Collider2D_t646061738 * L_6 = ___collision0;
+		NullCheck(L_6);
+		String_t* L_7 = Object_get_name_m2079638459(L_6, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_2 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral3571563752, L_1, /*hidden argument*/NULL);
+		String_t* L_8 = String_Format_m2024975688(NULL /*static, unused*/, _stringLiteral1652512497, L_7, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
+		__this->set_mIsCrash_13((bool)1);
+		Animator_t69676727 * L_9 = __this->get_mPlayerCarAnimator_12();
+		NullCheck(L_9);
+		Animator_SetTrigger_m3418492570(L_9, _stringLiteral2105618009, /*hidden argument*/NULL);
+	}
+
+IL_0056:
+	{
 		return;
 	}
 }
@@ -17761,57 +18355,74 @@ extern "C"  void PlayerCarController_OnTweenComplete_m3857909345 (PlayerCarContr
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		__this->set_mIsTweenComplete_7((bool)1);
-		Animator_t69676727 * L_0 = __this->get_mPlayerCarAnimator_10();
-		NullCheck(L_0);
-		Animator_SetTrigger_m3418492570(L_0, _stringLiteral3303960896, /*hidden argument*/NULL);
+		__this->set_mIsTweenComplete_9((bool)1);
+		bool L_0 = __this->get_mIsCrash_13();
+		if (L_0)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Animator_t69676727 * L_1 = __this->get_mPlayerCarAnimator_12();
+		NullCheck(L_1);
+		Animator_SetTrigger_m3418492570(L_1, _stringLiteral3303960896, /*hidden argument*/NULL);
+	}
+
+IL_0022:
+	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3230123334, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void PlayerCarController/<MoveDownCoroutine>c__Iterator4::.ctor()
-extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator4__ctor_m696433809 (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * __this, const MethodInfo* method)
+// System.Void PlayerCarController/<MoveDownCoroutine>c__Iterator5::.ctor()
+extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator5__ctor_m695319762 (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Object PlayerCarController/<MoveDownCoroutine>c__Iterator4::System.Collections.Generic.IEnumerator<object>.get_Current()
-extern "C"  Il2CppObject * U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3013308307 (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * __this, const MethodInfo* method)
+// System.Object PlayerCarController/<MoveDownCoroutine>c__Iterator5::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m391711220 (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_1();
+		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Object PlayerCarController/<MoveDownCoroutine>c__Iterator4::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * U3CMoveDownCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1565711547 (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * __this, const MethodInfo* method)
+// System.Object PlayerCarController/<MoveDownCoroutine>c__Iterator5::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m2719809308 (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_1();
+		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Boolean PlayerCarController/<MoveDownCoroutine>c__Iterator4::MoveNext()
+// System.Boolean PlayerCarController/<MoveDownCoroutine>c__Iterator5::MoveNext()
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1590037775;
-extern const uint32_t U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671_MetadataUsageId;
-extern "C"  bool U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671 (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * __this, const MethodInfo* method)
+extern const uint32_t U3CMoveDownCoroutineU3Ec__Iterator5_MoveNext_m3683506194_MetadataUsageId;
+extern "C"  bool U3CMoveDownCoroutineU3Ec__Iterator5_MoveNext_m3683506194 (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CMoveDownCoroutineU3Ec__Iterator5_MoveNext_m3683506194_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint32_t V_0 = 0;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
 	{
-		int32_t L_0 = __this->get_U24PC_0();
+		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
-		__this->set_U24PC_0((-1));
+		__this->set_U24PC_3((-1));
 		uint32_t L_1 = V_0;
 		if (L_1 == 0)
 		{
@@ -17819,11 +18430,11 @@ extern "C"  bool U3CMoveDownCoroutineU3Ec__Iterator4_MoveNext_m823183671 (U3CMov
 		}
 		if (L_1 == 1)
 		{
-			goto IL_00a3;
+			goto IL_017b;
 		}
 	}
 	{
-		goto IL_00af;
+		goto IL_0187;
 	}
 
 IL_0021:
@@ -17834,82 +18445,144 @@ IL_0021:
 
 IL_002b:
 	{
-		PlayerCarController_t116747357 * L_2 = __this->get_U3CU3Ef__this_2();
+		PlayerCarController_t116747357 * L_2 = __this->get_U3CU3Ef__this_5();
 		NullCheck(L_2);
-		bool L_3 = L_2->get_mIsKeepMovingDown_9();
+		bool L_3 = L_2->get_mIsKeepMovingDown_11();
 		if (!L_3)
 		{
-			goto IL_0081;
+			goto IL_0159;
 		}
 	}
 	{
-		PlayerCarController_t116747357 * L_4 = __this->get_U3CU3Ef__this_2();
-		PlayerCarController_t116747357 * L_5 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_5);
-		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(L_5, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
-		PlayerCarController_t116747357 * L_8 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_8);
-		Vector3_t2243707580  L_9 = L_8->get_mVerticalOffset_5();
-		Vector3_t2243707580  L_10 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_7, L_9, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_4 = __this->get_U3CU3Ef__this_5();
 		NullCheck(L_4);
-		L_4->set_mTargetPosition_6(L_10);
-		PlayerCarController_t116747357 * L_11 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_11);
-		Transform_t3275118058 * L_12 = Component_get_transform_m2697483695(L_11, /*hidden argument*/NULL);
-		PlayerCarController_t116747357 * L_13 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_13);
-		Vector3_t2243707580  L_14 = L_13->get_mTargetPosition_6();
-		NullCheck(L_12);
-		Transform_set_position_m2469242620(L_12, L_14, /*hidden argument*/NULL);
-	}
-
-IL_0081:
-	{
-		PlayerCarController_t116747357 * L_15 = __this->get_U3CU3Ef__this_2();
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(L_4, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		float L_7 = (&V_1)->get_x_1();
+		PlayerCarController_t116747357 * L_8 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_8);
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(L_8, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
+		V_2 = L_10;
+		float L_11 = (&V_2)->get_y_2();
+		Vector2_t2243707579  L_12;
+		memset(&L_12, 0, sizeof(L_12));
+		Vector2__ctor_m3067419446(&L_12, L_7, L_11, /*hidden argument*/NULL);
+		__this->set_U3CstartU3E__0_0(L_12);
+		PlayerCarController_t116747357 * L_13 = __this->get_U3CU3Ef__this_5();
+		PlayerCarController_t116747357 * L_14 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_14);
+		Transform_t3275118058 * L_15 = Component_get_transform_m2697483695(L_14, /*hidden argument*/NULL);
 		NullCheck(L_15);
-		float L_16 = L_15->get_mIntervalTimeToKeepMovingUPOrDown_3();
-		WaitForSeconds_t3839502067 * L_17 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_17, L_16, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_17);
-		__this->set_U24PC_0(1);
-		goto IL_00b1;
+		Vector3_t2243707580  L_16 = Transform_get_position_m1104419803(L_15, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_17 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_17);
+		Vector3_t2243707580  L_18 = L_17->get_mVerticalOffset_6();
+		Vector3_t2243707580  L_19 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_18, (10.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_20 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_16, L_19, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		L_13->set_mTargetPosition_8(L_20);
+		PlayerCarController_t116747357 * L_21 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_21);
+		Vector3_t2243707580 * L_22 = L_21->get_address_of_mTargetPosition_8();
+		float L_23 = L_22->get_x_1();
+		PlayerCarController_t116747357 * L_24 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_24);
+		Vector3_t2243707580 * L_25 = L_24->get_address_of_mTargetPosition_8();
+		float L_26 = L_25->get_y_2();
+		Vector2_t2243707579  L_27;
+		memset(&L_27, 0, sizeof(L_27));
+		Vector2__ctor_m3067419446(&L_27, L_23, L_26, /*hidden argument*/NULL);
+		__this->set_U3CendU3E__1_1(L_27);
+		Vector2_t2243707579  L_28 = __this->get_U3CstartU3E__0_0();
+		Vector2_t2243707579  L_29 = __this->get_U3CendU3E__1_1();
+		PlayerCarController_t116747357 * L_30 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_30);
+		LayerMask_t3188175821  L_31 = L_30->get_mBolockingLayer_7();
+		int32_t L_32 = LayerMask_op_Implicit_m2135076047(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		RaycastHit2D_t4063908774  L_33 = Physics2D_Linecast_m2374117908(NULL /*static, unused*/, L_28, L_29, L_32, /*hidden argument*/NULL);
+		__this->set_U3ChitU3E__2_2(L_33);
+		RaycastHit2D_t4063908774 * L_34 = __this->get_address_of_U3ChitU3E__2_2();
+		Transform_t3275118058 * L_35 = RaycastHit2D_get_transform_m747355930(L_34, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_36 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_35, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_36)
+		{
+			goto IL_0159;
+		}
+	}
+	{
+		PlayerCarController_t116747357 * L_37 = __this->get_U3CU3Ef__this_5();
+		PlayerCarController_t116747357 * L_38 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_38);
+		Transform_t3275118058 * L_39 = Component_get_transform_m2697483695(L_38, /*hidden argument*/NULL);
+		NullCheck(L_39);
+		Vector3_t2243707580  L_40 = Transform_get_position_m1104419803(L_39, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_41 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_41);
+		Vector3_t2243707580  L_42 = L_41->get_mVerticalOffset_6();
+		Vector3_t2243707580  L_43 = Vector3_op_Subtraction_m2407545601(NULL /*static, unused*/, L_40, L_42, /*hidden argument*/NULL);
+		NullCheck(L_37);
+		L_37->set_mTargetPosition_8(L_43);
+		PlayerCarController_t116747357 * L_44 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_44);
+		Transform_t3275118058 * L_45 = Component_get_transform_m2697483695(L_44, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_46 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_46);
+		Vector3_t2243707580  L_47 = L_46->get_mTargetPosition_8();
+		NullCheck(L_45);
+		Transform_set_position_m2469242620(L_45, L_47, /*hidden argument*/NULL);
 	}
 
-IL_00a3:
+IL_0159:
+	{
+		PlayerCarController_t116747357 * L_48 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_48);
+		float L_49 = L_48->get_mIntervalTimeToKeepMovingUPOrDown_4();
+		WaitForSeconds_t3839502067 * L_50 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_50, L_49, /*hidden argument*/NULL);
+		__this->set_U24current_4(L_50);
+		__this->set_U24PC_3(1);
+		goto IL_0189;
+	}
+
+IL_017b:
 	{
 		goto IL_002b;
 	}
-	// Dead block : IL_00a8: ldarg.0
+	// Dead block : IL_0180: ldarg.0
 
-IL_00af:
+IL_0187:
 	{
 		return (bool)0;
 	}
 
-IL_00b1:
+IL_0189:
 	{
 		return (bool)1;
 	}
 }
-// System.Void PlayerCarController/<MoveDownCoroutine>c__Iterator4::Dispose()
-extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator4_Dispose_m2032154194 (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * __this, const MethodInfo* method)
+// System.Void PlayerCarController/<MoveDownCoroutine>c__Iterator5::Dispose()
+extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator5_Dispose_m1995388467 (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_U24PC_0((-1));
+		__this->set_U24PC_3((-1));
 		return;
 	}
 }
-// System.Void PlayerCarController/<MoveDownCoroutine>c__Iterator4::Reset()
+// System.Void PlayerCarController/<MoveDownCoroutine>c__Iterator5::Reset()
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
-extern const uint32_t U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988_MetadataUsageId;
-extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988 (U3CMoveDownCoroutineU3Ec__Iterator4_t3114197208 * __this, const MethodInfo* method)
+extern const uint32_t U3CMoveDownCoroutineU3Ec__Iterator5_Reset_m3326599941_MetadataUsageId;
+extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator5_Reset_m3326599941 (U3CMoveDownCoroutineU3Ec__Iterator5_t3114197209 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CMoveDownCoroutineU3Ec__Iterator5_Reset_m3326599941_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -17918,48 +18591,54 @@ extern "C"  void U3CMoveDownCoroutineU3Ec__Iterator4_Reset_m3327713988 (U3CMoveD
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
-// System.Void PlayerCarController/<MoveUpCoroutine>c__Iterator3::.ctor()
-extern "C"  void U3CMoveUpCoroutineU3Ec__Iterator3__ctor_m1542069677 (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * __this, const MethodInfo* method)
+// System.Void PlayerCarController/<MoveUpCoroutine>c__Iterator4::.ctor()
+extern "C"  void U3CMoveUpCoroutineU3Ec__Iterator4__ctor_m1548062444 (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Object PlayerCarController/<MoveUpCoroutine>c__Iterator3::System.Collections.Generic.IEnumerator<object>.get_Current()
-extern "C"  Il2CppObject * U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m747310411 (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * __this, const MethodInfo* method)
+// System.Object PlayerCarController/<MoveUpCoroutine>c__Iterator4::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CMoveUpCoroutineU3Ec__Iterator4_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1227113702 (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_1();
+		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Object PlayerCarController/<MoveUpCoroutine>c__Iterator3::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * U3CMoveUpCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m2583548723 (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * __this, const MethodInfo* method)
+// System.Object PlayerCarController/<MoveUpCoroutine>c__Iterator4::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CMoveUpCoroutineU3Ec__Iterator4_System_Collections_IEnumerator_get_Current_m1827639886 (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * __this, const MethodInfo* method)
 {
 	{
-		Il2CppObject * L_0 = __this->get_U24current_1();
+		Il2CppObject * L_0 = __this->get_U24current_4();
 		return L_0;
 	}
 }
-// System.Boolean PlayerCarController/<MoveUpCoroutine>c__Iterator3::MoveNext()
+// System.Boolean PlayerCarController/<MoveUpCoroutine>c__Iterator4::MoveNext()
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Physics2D_t2540166467_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2514599860;
-extern const uint32_t U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391_MetadataUsageId;
-extern "C"  bool U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391 (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * __this, const MethodInfo* method)
+extern const uint32_t U3CMoveUpCoroutineU3Ec__Iterator4_MoveNext_m1449772320_MetadataUsageId;
+extern "C"  bool U3CMoveUpCoroutineU3Ec__Iterator4_MoveNext_m1449772320 (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CMoveUpCoroutineU3Ec__Iterator4_MoveNext_m1449772320_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint32_t V_0 = 0;
+	Vector3_t2243707580  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Vector3_t2243707580  V_2;
+	memset(&V_2, 0, sizeof(V_2));
 	{
-		int32_t L_0 = __this->get_U24PC_0();
+		int32_t L_0 = __this->get_U24PC_3();
 		V_0 = L_0;
-		__this->set_U24PC_0((-1));
+		__this->set_U24PC_3((-1));
 		uint32_t L_1 = V_0;
 		if (L_1 == 0)
 		{
@@ -17967,11 +18646,11 @@ extern "C"  bool U3CMoveUpCoroutineU3Ec__Iterator3_MoveNext_m2523900391 (U3CMove
 		}
 		if (L_1 == 1)
 		{
-			goto IL_00a3;
+			goto IL_017b;
 		}
 	}
 	{
-		goto IL_00af;
+		goto IL_0187;
 	}
 
 IL_0021:
@@ -17982,82 +18661,144 @@ IL_0021:
 
 IL_002b:
 	{
-		PlayerCarController_t116747357 * L_2 = __this->get_U3CU3Ef__this_2();
+		PlayerCarController_t116747357 * L_2 = __this->get_U3CU3Ef__this_5();
 		NullCheck(L_2);
-		bool L_3 = L_2->get_mIsKeepMovingUp_8();
+		bool L_3 = L_2->get_mIsKeepMovingUp_10();
 		if (!L_3)
 		{
-			goto IL_0081;
+			goto IL_0159;
 		}
 	}
 	{
-		PlayerCarController_t116747357 * L_4 = __this->get_U3CU3Ef__this_2();
-		PlayerCarController_t116747357 * L_5 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_5);
-		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(L_5, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
-		PlayerCarController_t116747357 * L_8 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_8);
-		Vector3_t2243707580  L_9 = L_8->get_mVerticalOffset_5();
-		Vector3_t2243707580  L_10 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_7, L_9, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_4 = __this->get_U3CU3Ef__this_5();
 		NullCheck(L_4);
-		L_4->set_mTargetPosition_6(L_10);
-		PlayerCarController_t116747357 * L_11 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_11);
-		Transform_t3275118058 * L_12 = Component_get_transform_m2697483695(L_11, /*hidden argument*/NULL);
-		PlayerCarController_t116747357 * L_13 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_13);
-		Vector3_t2243707580  L_14 = L_13->get_mTargetPosition_6();
-		NullCheck(L_12);
-		Transform_set_position_m2469242620(L_12, L_14, /*hidden argument*/NULL);
-	}
-
-IL_0081:
-	{
-		PlayerCarController_t116747357 * L_15 = __this->get_U3CU3Ef__this_2();
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(L_4, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		float L_7 = (&V_1)->get_x_1();
+		PlayerCarController_t116747357 * L_8 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_8);
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(L_8, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t2243707580  L_10 = Transform_get_position_m1104419803(L_9, /*hidden argument*/NULL);
+		V_2 = L_10;
+		float L_11 = (&V_2)->get_y_2();
+		Vector2_t2243707579  L_12;
+		memset(&L_12, 0, sizeof(L_12));
+		Vector2__ctor_m3067419446(&L_12, L_7, L_11, /*hidden argument*/NULL);
+		__this->set_U3CstartU3E__0_0(L_12);
+		PlayerCarController_t116747357 * L_13 = __this->get_U3CU3Ef__this_5();
+		PlayerCarController_t116747357 * L_14 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_14);
+		Transform_t3275118058 * L_15 = Component_get_transform_m2697483695(L_14, /*hidden argument*/NULL);
 		NullCheck(L_15);
-		float L_16 = L_15->get_mIntervalTimeToKeepMovingUPOrDown_3();
-		WaitForSeconds_t3839502067 * L_17 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_17, L_16, /*hidden argument*/NULL);
-		__this->set_U24current_1(L_17);
-		__this->set_U24PC_0(1);
-		goto IL_00b1;
+		Vector3_t2243707580  L_16 = Transform_get_position_m1104419803(L_15, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_17 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_17);
+		Vector3_t2243707580  L_18 = L_17->get_mVerticalOffset_6();
+		Vector3_t2243707580  L_19 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_18, (10.0f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_20 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_16, L_19, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		L_13->set_mTargetPosition_8(L_20);
+		PlayerCarController_t116747357 * L_21 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_21);
+		Vector3_t2243707580 * L_22 = L_21->get_address_of_mTargetPosition_8();
+		float L_23 = L_22->get_x_1();
+		PlayerCarController_t116747357 * L_24 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_24);
+		Vector3_t2243707580 * L_25 = L_24->get_address_of_mTargetPosition_8();
+		float L_26 = L_25->get_y_2();
+		Vector2_t2243707579  L_27;
+		memset(&L_27, 0, sizeof(L_27));
+		Vector2__ctor_m3067419446(&L_27, L_23, L_26, /*hidden argument*/NULL);
+		__this->set_U3CendU3E__1_1(L_27);
+		Vector2_t2243707579  L_28 = __this->get_U3CstartU3E__0_0();
+		Vector2_t2243707579  L_29 = __this->get_U3CendU3E__1_1();
+		PlayerCarController_t116747357 * L_30 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_30);
+		LayerMask_t3188175821  L_31 = L_30->get_mBolockingLayer_7();
+		int32_t L_32 = LayerMask_op_Implicit_m2135076047(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Physics2D_t2540166467_il2cpp_TypeInfo_var);
+		RaycastHit2D_t4063908774  L_33 = Physics2D_Linecast_m2374117908(NULL /*static, unused*/, L_28, L_29, L_32, /*hidden argument*/NULL);
+		__this->set_U3ChitU3E__2_2(L_33);
+		RaycastHit2D_t4063908774 * L_34 = __this->get_address_of_U3ChitU3E__2_2();
+		Transform_t3275118058 * L_35 = RaycastHit2D_get_transform_m747355930(L_34, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_36 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_35, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_36)
+		{
+			goto IL_0159;
+		}
+	}
+	{
+		PlayerCarController_t116747357 * L_37 = __this->get_U3CU3Ef__this_5();
+		PlayerCarController_t116747357 * L_38 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_38);
+		Transform_t3275118058 * L_39 = Component_get_transform_m2697483695(L_38, /*hidden argument*/NULL);
+		NullCheck(L_39);
+		Vector3_t2243707580  L_40 = Transform_get_position_m1104419803(L_39, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_41 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_41);
+		Vector3_t2243707580  L_42 = L_41->get_mVerticalOffset_6();
+		Vector3_t2243707580  L_43 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_40, L_42, /*hidden argument*/NULL);
+		NullCheck(L_37);
+		L_37->set_mTargetPosition_8(L_43);
+		PlayerCarController_t116747357 * L_44 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_44);
+		Transform_t3275118058 * L_45 = Component_get_transform_m2697483695(L_44, /*hidden argument*/NULL);
+		PlayerCarController_t116747357 * L_46 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_46);
+		Vector3_t2243707580  L_47 = L_46->get_mTargetPosition_8();
+		NullCheck(L_45);
+		Transform_set_position_m2469242620(L_45, L_47, /*hidden argument*/NULL);
 	}
 
-IL_00a3:
+IL_0159:
+	{
+		PlayerCarController_t116747357 * L_48 = __this->get_U3CU3Ef__this_5();
+		NullCheck(L_48);
+		float L_49 = L_48->get_mIntervalTimeToKeepMovingUPOrDown_4();
+		WaitForSeconds_t3839502067 * L_50 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_50, L_49, /*hidden argument*/NULL);
+		__this->set_U24current_4(L_50);
+		__this->set_U24PC_3(1);
+		goto IL_0189;
+	}
+
+IL_017b:
 	{
 		goto IL_002b;
 	}
-	// Dead block : IL_00a8: ldarg.0
+	// Dead block : IL_0180: ldarg.0
 
-IL_00af:
+IL_0187:
 	{
 		return (bool)0;
 	}
 
-IL_00b1:
+IL_0189:
 	{
 		return (bool)1;
 	}
 }
-// System.Void PlayerCarController/<MoveUpCoroutine>c__Iterator3::Dispose()
-extern "C"  void U3CMoveUpCoroutineU3Ec__Iterator3_Dispose_m905637506 (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * __this, const MethodInfo* method)
+// System.Void PlayerCarController/<MoveUpCoroutine>c__Iterator4::Dispose()
+extern "C"  void U3CMoveUpCoroutineU3Ec__Iterator4_Dispose_m1103544741 (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * __this, const MethodInfo* method)
 {
 	{
-		__this->set_U24PC_0((-1));
+		__this->set_U24PC_3((-1));
 		return;
 	}
 }
-// System.Void PlayerCarController/<MoveUpCoroutine>c__Iterator3::Reset()
+// System.Void PlayerCarController/<MoveUpCoroutine>c__Iterator4::Reset()
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
-extern const uint32_t U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776_MetadataUsageId;
-extern "C"  void U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776 (U3CMoveUpCoroutineU3Ec__Iterator3_t3763247952 * __this, const MethodInfo* method)
+extern const uint32_t U3CMoveUpCoroutineU3Ec__Iterator4_Reset_m4157038583_MetadataUsageId;
+extern "C"  void U3CMoveUpCoroutineU3Ec__Iterator4_Reset_m4157038583 (U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CMoveUpCoroutineU3Ec__Iterator3_Reset_m4151049776_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CMoveUpCoroutineU3Ec__Iterator4_Reset_m4157038583_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -25362,866 +26103,6 @@ IL_007c:
 	}
 
 IL_0094:
-	{
-		return;
-	}
-}
-// System.Void UIButtonOffset::.ctor()
-extern "C"  void UIButtonOffset__ctor_m3498279228 (UIButtonOffset_t1501810361 * __this, const MethodInfo* method)
-{
-	{
-		Vector3_t2243707580  L_0 = Vector3_get_zero_m1527993324(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_hover_3(L_0);
-		Vector3_t2243707580  L_1;
-		memset(&L_1, 0, sizeof(L_1));
-		Vector3__ctor_m2720820983(&L_1, (2.0f), (-2.0f), /*hidden argument*/NULL);
-		__this->set_pressed_4(L_1);
-		__this->set_duration_5((0.2f));
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UIButtonOffset::Start()
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const uint32_t UIButtonOffset_Start_m361450532_MetadataUsageId;
-extern "C"  void UIButtonOffset_Start_m361450532 (UIButtonOffset_t1501810361 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIButtonOffset_Start_m361450532_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		bool L_0 = __this->get_mStarted_7();
-		if (L_0)
-		{
-			goto IL_0040;
-		}
-	}
-	{
-		__this->set_mStarted_7((bool)1);
-		Transform_t3275118058 * L_1 = __this->get_tweenTarget_2();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_2 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		Transform_t3275118058 * L_3 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		__this->set_tweenTarget_2(L_3);
-	}
-
-IL_002f:
-	{
-		Transform_t3275118058 * L_4 = __this->get_tweenTarget_2();
-		NullCheck(L_4);
-		Vector3_t2243707580  L_5 = Transform_get_localPosition_m2533925116(L_4, /*hidden argument*/NULL);
-		__this->set_mPos_6(L_5);
-	}
-
-IL_0040:
-	{
-		return;
-	}
-}
-// System.Void UIButtonOffset::OnEnable()
-extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
-extern const uint32_t UIButtonOffset_OnEnable_m3974206372_MetadataUsageId;
-extern "C"  void UIButtonOffset_OnEnable_m3974206372 (UIButtonOffset_t1501810361 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIButtonOffset_OnEnable_m3974206372_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		bool L_0 = __this->get_mStarted_7();
-		if (!L_0)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		bool L_1 = __this->get_mHighlighted_8();
-		if (!L_1)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		GameObject_t1756533147 * L_2 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
-		bool L_3 = UICamera_IsHighlighted_m1075874621(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		UIButtonOffset_OnHover_m4254862172(__this, L_3, /*hidden argument*/NULL);
-	}
-
-IL_0027:
-	{
-		return;
-	}
-}
-// System.Void UIButtonOffset::OnDisable()
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisTweenPosition_t1144714832_m4195983071_MethodInfo_var;
-extern const uint32_t UIButtonOffset_OnDisable_m2112066809_MetadataUsageId;
-extern "C"  void UIButtonOffset_OnDisable_m2112066809 (UIButtonOffset_t1501810361 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIButtonOffset_OnDisable_m2112066809_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	TweenPosition_t1144714832 * V_0 = NULL;
-	{
-		bool L_0 = __this->get_mStarted_7();
-		if (!L_0)
-		{
-			goto IL_0047;
-		}
-	}
-	{
-		Transform_t3275118058 * L_1 = __this->get_tweenTarget_2();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0047;
-		}
-	}
-	{
-		Transform_t3275118058 * L_3 = __this->get_tweenTarget_2();
-		NullCheck(L_3);
-		TweenPosition_t1144714832 * L_4 = Component_GetComponent_TisTweenPosition_t1144714832_m4195983071(L_3, /*hidden argument*/Component_GetComponent_TisTweenPosition_t1144714832_m4195983071_MethodInfo_var);
-		V_0 = L_4;
-		TweenPosition_t1144714832 * L_5 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_6 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_5, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_6)
-		{
-			goto IL_0047;
-		}
-	}
-	{
-		TweenPosition_t1144714832 * L_7 = V_0;
-		Vector3_t2243707580  L_8 = __this->get_mPos_6();
-		NullCheck(L_7);
-		TweenPosition_set_position_m2721056190(L_7, L_8, /*hidden argument*/NULL);
-		TweenPosition_t1144714832 * L_9 = V_0;
-		NullCheck(L_9);
-		Behaviour_set_enabled_m1796096907(L_9, (bool)0, /*hidden argument*/NULL);
-	}
-
-IL_0047:
-	{
-		return;
-	}
-}
-// System.Void UIButtonOffset::OnPress(System.Boolean)
-extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
-extern const uint32_t UIButtonOffset_OnPress_m440235373_MetadataUsageId;
-extern "C"  void UIButtonOffset_OnPress_m440235373 (UIButtonOffset_t1501810361 * __this, bool ___isPressed0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIButtonOffset_OnPress_m440235373_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	float G_B5_0 = 0.0f;
-	GameObject_t1756533147 * G_B5_1 = NULL;
-	float G_B4_0 = 0.0f;
-	GameObject_t1756533147 * G_B4_1 = NULL;
-	Vector3_t2243707580  G_B8_0;
-	memset(&G_B8_0, 0, sizeof(G_B8_0));
-	float G_B8_1 = 0.0f;
-	GameObject_t1756533147 * G_B8_2 = NULL;
-	float G_B7_0 = 0.0f;
-	GameObject_t1756533147 * G_B7_1 = NULL;
-	float G_B6_0 = 0.0f;
-	GameObject_t1756533147 * G_B6_1 = NULL;
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0080;
-		}
-	}
-	{
-		bool L_1 = __this->get_mStarted_7();
-		if (L_1)
-		{
-			goto IL_001c;
-		}
-	}
-	{
-		UIButtonOffset_Start_m361450532(__this, /*hidden argument*/NULL);
-	}
-
-IL_001c:
-	{
-		Transform_t3275118058 * L_2 = __this->get_tweenTarget_2();
-		NullCheck(L_2);
-		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
-		float L_4 = __this->get_duration_5();
-		bool L_5 = ___isPressed0;
-		G_B4_0 = L_4;
-		G_B4_1 = L_3;
-		if (!L_5)
-		{
-			G_B5_0 = L_4;
-			G_B5_1 = L_3;
-			goto IL_0049;
-		}
-	}
-	{
-		Vector3_t2243707580  L_6 = __this->get_mPos_6();
-		Vector3_t2243707580  L_7 = __this->get_pressed_4();
-		Vector3_t2243707580  L_8 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
-		G_B8_0 = L_8;
-		G_B8_1 = G_B4_0;
-		G_B8_2 = G_B4_1;
-		goto IL_0075;
-	}
-
-IL_0049:
-	{
-		GameObject_t1756533147 * L_9 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
-		bool L_10 = UICamera_IsHighlighted_m1075874621(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
-		G_B6_0 = G_B5_0;
-		G_B6_1 = G_B5_1;
-		if (!L_10)
-		{
-			G_B7_0 = G_B5_0;
-			G_B7_1 = G_B5_1;
-			goto IL_006f;
-		}
-	}
-	{
-		Vector3_t2243707580  L_11 = __this->get_mPos_6();
-		Vector3_t2243707580  L_12 = __this->get_hover_3();
-		Vector3_t2243707580  L_13 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
-		G_B8_0 = L_13;
-		G_B8_1 = G_B6_0;
-		G_B8_2 = G_B6_1;
-		goto IL_0075;
-	}
-
-IL_006f:
-	{
-		Vector3_t2243707580  L_14 = __this->get_mPos_6();
-		G_B8_0 = L_14;
-		G_B8_1 = G_B7_0;
-		G_B8_2 = G_B7_1;
-	}
-
-IL_0075:
-	{
-		TweenPosition_t1144714832 * L_15 = TweenPosition_Begin_m23345143(NULL /*static, unused*/, G_B8_2, G_B8_1, G_B8_0, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		((UITweener_t2986641582 *)L_15)->set_method_8(3);
-	}
-
-IL_0080:
-	{
-		return;
-	}
-}
-// System.Void UIButtonOffset::OnHover(System.Boolean)
-extern "C"  void UIButtonOffset_OnHover_m4254862172 (UIButtonOffset_t1501810361 * __this, bool ___isOver0, const MethodInfo* method)
-{
-	float G_B5_0 = 0.0f;
-	GameObject_t1756533147 * G_B5_1 = NULL;
-	float G_B4_0 = 0.0f;
-	GameObject_t1756533147 * G_B4_1 = NULL;
-	Vector3_t2243707580  G_B6_0;
-	memset(&G_B6_0, 0, sizeof(G_B6_0));
-	float G_B6_1 = 0.0f;
-	GameObject_t1756533147 * G_B6_2 = NULL;
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0061;
-		}
-	}
-	{
-		bool L_1 = __this->get_mStarted_7();
-		if (L_1)
-		{
-			goto IL_001c;
-		}
-	}
-	{
-		UIButtonOffset_Start_m361450532(__this, /*hidden argument*/NULL);
-	}
-
-IL_001c:
-	{
-		Transform_t3275118058 * L_2 = __this->get_tweenTarget_2();
-		NullCheck(L_2);
-		GameObject_t1756533147 * L_3 = Component_get_gameObject_m3105766835(L_2, /*hidden argument*/NULL);
-		float L_4 = __this->get_duration_5();
-		bool L_5 = ___isOver0;
-		G_B4_0 = L_4;
-		G_B4_1 = L_3;
-		if (!L_5)
-		{
-			G_B5_0 = L_4;
-			G_B5_1 = L_3;
-			goto IL_0049;
-		}
-	}
-	{
-		Vector3_t2243707580  L_6 = __this->get_mPos_6();
-		Vector3_t2243707580  L_7 = __this->get_hover_3();
-		Vector3_t2243707580  L_8 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
-		G_B6_0 = L_8;
-		G_B6_1 = G_B4_0;
-		G_B6_2 = G_B4_1;
-		goto IL_004f;
-	}
-
-IL_0049:
-	{
-		Vector3_t2243707580  L_9 = __this->get_mPos_6();
-		G_B6_0 = L_9;
-		G_B6_1 = G_B5_0;
-		G_B6_2 = G_B5_1;
-	}
-
-IL_004f:
-	{
-		TweenPosition_t1144714832 * L_10 = TweenPosition_Begin_m23345143(NULL /*static, unused*/, G_B6_2, G_B6_1, G_B6_0, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		((UITweener_t2986641582 *)L_10)->set_method_8(3);
-		bool L_11 = ___isOver0;
-		__this->set_mHighlighted_8(L_11);
-	}
-
-IL_0061:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::.ctor()
-extern "C"  void UIButtonPlayAnimation__ctor_m1037260619 (UIButtonPlayAnimation_t2267721830 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_playDirection_5(1);
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::Start()
-extern "C"  void UIButtonPlayAnimation_Start_m2810294743 (UIButtonPlayAnimation_t2267721830 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_mStarted_13((bool)1);
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnEnable()
-extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
-extern const uint32_t UIButtonPlayAnimation_OnEnable_m2420103927_MetadataUsageId;
-extern "C"  void UIButtonPlayAnimation_OnEnable_m2420103927 (UIButtonPlayAnimation_t2267721830 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIButtonPlayAnimation_OnEnable_m2420103927_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		bool L_0 = __this->get_mStarted_13();
-		if (!L_0)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		bool L_1 = __this->get_mHighlighted_14();
-		if (!L_1)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		GameObject_t1756533147 * L_2 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
-		bool L_3 = UICamera_IsHighlighted_m1075874621(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		UIButtonPlayAnimation_OnHover_m4037757367(__this, L_3, /*hidden argument*/NULL);
-	}
-
-IL_0027:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnHover(System.Boolean)
-extern "C"  void UIButtonPlayAnimation_OnHover_m4037757367 (UIButtonPlayAnimation_t2267721830 * __this, bool ___isOver0, const MethodInfo* method)
-{
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0049;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_trigger_4();
-		if ((((int32_t)L_1) == ((int32_t)1)))
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		int32_t L_2 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_2) == ((uint32_t)3))))
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		bool L_3 = ___isOver0;
-		if (L_3)
-		{
-			goto IL_003b;
-		}
-	}
-
-IL_0029:
-	{
-		int32_t L_4 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_4) == ((uint32_t)4))))
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		bool L_5 = ___isOver0;
-		if (L_5)
-		{
-			goto IL_0042;
-		}
-	}
-
-IL_003b:
-	{
-		bool L_6 = ___isOver0;
-		UIButtonPlayAnimation_Play_m2284850622(__this, L_6, /*hidden argument*/NULL);
-	}
-
-IL_0042:
-	{
-		bool L_7 = ___isOver0;
-		__this->set_mHighlighted_14(L_7);
-	}
-
-IL_0049:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnPress(System.Boolean)
-extern "C"  void UIButtonPlayAnimation_OnPress_m3888522160 (UIButtonPlayAnimation_t2267721830 * __this, bool ___isPressed0, const MethodInfo* method)
-{
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_trigger_4();
-		if ((((int32_t)L_1) == ((int32_t)2)))
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		int32_t L_2 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_2) == ((uint32_t)5))))
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		bool L_3 = ___isPressed0;
-		if (L_3)
-		{
-			goto IL_003b;
-		}
-	}
-
-IL_0029:
-	{
-		int32_t L_4 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_4) == ((uint32_t)6))))
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		bool L_5 = ___isPressed0;
-		if (L_5)
-		{
-			goto IL_0042;
-		}
-	}
-
-IL_003b:
-	{
-		bool L_6 = ___isPressed0;
-		UIButtonPlayAnimation_Play_m2284850622(__this, L_6, /*hidden argument*/NULL);
-	}
-
-IL_0042:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnClick()
-extern "C"  void UIButtonPlayAnimation_OnClick_m126781322 (UIButtonPlayAnimation_t2267721830 * __this, const MethodInfo* method)
-{
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_001d;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_trigger_4();
-		if (L_1)
-		{
-			goto IL_001d;
-		}
-	}
-	{
-		UIButtonPlayAnimation_Play_m2284850622(__this, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_001d:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnDoubleClick()
-extern "C"  void UIButtonPlayAnimation_OnDoubleClick_m3580074225 (UIButtonPlayAnimation_t2267721830 * __this, const MethodInfo* method)
-{
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)10)))))
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		UIButtonPlayAnimation_Play_m2284850622(__this, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_001f:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnSelect(System.Boolean)
-extern "C"  void UIButtonPlayAnimation_OnSelect_m1536212829 (UIButtonPlayAnimation_t2267721830 * __this, bool ___isSelected0, const MethodInfo* method)
-{
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0045;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_trigger_4();
-		if ((((int32_t)L_1) == ((int32_t)((int32_t)11))))
-		{
-			goto IL_003e;
-		}
-	}
-	{
-		int32_t L_2 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_2) == ((uint32_t)((int32_t)12)))))
-		{
-			goto IL_002b;
-		}
-	}
-	{
-		bool L_3 = ___isSelected0;
-		if (L_3)
-		{
-			goto IL_003e;
-		}
-	}
-
-IL_002b:
-	{
-		int32_t L_4 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_4) == ((uint32_t)((int32_t)13)))))
-		{
-			goto IL_0045;
-		}
-	}
-	{
-		bool L_5 = ___isSelected0;
-		if (L_5)
-		{
-			goto IL_0045;
-		}
-	}
-
-IL_003e:
-	{
-		UIButtonPlayAnimation_Play_m2284850622(__this, (bool)1, /*hidden argument*/NULL);
-	}
-
-IL_0045:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::OnActivate(System.Boolean)
-extern "C"  void UIButtonPlayAnimation_OnActivate_m2870766268 (UIButtonPlayAnimation_t2267721830 * __this, bool ___isActive0, const MethodInfo* method)
-{
-	{
-		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0043;
-		}
-	}
-	{
-		int32_t L_1 = __this->get_trigger_4();
-		if ((((int32_t)L_1) == ((int32_t)7)))
-		{
-			goto IL_003c;
-		}
-	}
-	{
-		int32_t L_2 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_2) == ((uint32_t)8))))
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		bool L_3 = ___isActive0;
-		if (L_3)
-		{
-			goto IL_003c;
-		}
-	}
-
-IL_0029:
-	{
-		int32_t L_4 = __this->get_trigger_4();
-		if ((!(((uint32_t)L_4) == ((uint32_t)((int32_t)9)))))
-		{
-			goto IL_0043;
-		}
-	}
-	{
-		bool L_5 = ___isActive0;
-		if (L_5)
-		{
-			goto IL_0043;
-		}
-	}
-
-IL_003c:
-	{
-		bool L_6 = ___isActive0;
-		UIButtonPlayAnimation_Play_m2284850622(__this, L_6, /*hidden argument*/NULL);
-	}
-
-IL_0043:
-	{
-		return;
-	}
-}
-// System.Void UIButtonPlayAnimation::Play(System.Boolean)
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponentInChildren_TisAnimation_t2068071072_m3100081144_MethodInfo_var;
-extern const uint32_t UIButtonPlayAnimation_Play_m2284850622_MetadataUsageId;
-extern "C"  void UIButtonPlayAnimation_Play_m2284850622 (UIButtonPlayAnimation_t2267721830 * __this, bool ___forward0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UIButtonPlayAnimation_Play_m2284850622_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	ActiveAnimation_t4137610604 * V_2 = NULL;
-	int32_t G_B9_0 = 0;
-	{
-		Animation_t2068071072 * L_0 = __this->get_target_2();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_1 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_001d;
-		}
-	}
-	{
-		Animation_t2068071072 * L_2 = Component_GetComponentInChildren_TisAnimation_t2068071072_m3100081144(__this, /*hidden argument*/Component_GetComponentInChildren_TisAnimation_t2068071072_m3100081144_MethodInfo_var);
-		__this->set_target_2(L_2);
-	}
-
-IL_001d:
-	{
-		Animation_t2068071072 * L_3 = __this->get_target_2();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_4 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_3, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_4)
-		{
-			goto IL_00fd;
-		}
-	}
-	{
-		bool L_5 = __this->get_clearSelection_7();
-		if (!L_5)
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
-		GameObject_t1756533147 * L_6 = UICamera_get_selectedObject_m317248128(NULL /*static, unused*/, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_7 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_8 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
-		if (!L_8)
-		{
-			goto IL_0054;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
-		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, (GameObject_t1756533147 *)NULL, /*hidden argument*/NULL);
-	}
-
-IL_0054:
-	{
-		int32_t L_9 = __this->get_playDirection_5();
-		V_0 = ((-L_9));
-		bool L_10 = ___forward0;
-		if (!L_10)
-		{
-			goto IL_006d;
-		}
-	}
-	{
-		int32_t L_11 = __this->get_playDirection_5();
-		G_B9_0 = ((int32_t)(L_11));
-		goto IL_006e;
-	}
-
-IL_006d:
-	{
-		int32_t L_12 = V_0;
-		G_B9_0 = L_12;
-	}
-
-IL_006e:
-	{
-		V_1 = G_B9_0;
-		Animation_t2068071072 * L_13 = __this->get_target_2();
-		String_t* L_14 = __this->get_clipName_3();
-		int32_t L_15 = V_1;
-		int32_t L_16 = __this->get_ifDisabledOnPlay_8();
-		int32_t L_17 = __this->get_disableWhenFinished_9();
-		ActiveAnimation_t4137610604 * L_18 = ActiveAnimation_Play_m3266436159(NULL /*static, unused*/, L_13, L_14, L_15, L_16, L_17, /*hidden argument*/NULL);
-		V_2 = L_18;
-		ActiveAnimation_t4137610604 * L_19 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_20 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_19, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_20)
-		{
-			goto IL_009b;
-		}
-	}
-	{
-		return;
-	}
-
-IL_009b:
-	{
-		bool L_21 = __this->get_resetOnPlay_6();
-		if (!L_21)
-		{
-			goto IL_00ac;
-		}
-	}
-	{
-		ActiveAnimation_t4137610604 * L_22 = V_2;
-		NullCheck(L_22);
-		ActiveAnimation_Reset_m2370934072(L_22, /*hidden argument*/NULL);
-	}
-
-IL_00ac:
-	{
-		ActiveAnimation_t4137610604 * L_23 = V_2;
-		OnFinished_t1769996062 * L_24 = __this->get_onFinished_12();
-		NullCheck(L_23);
-		L_23->set_onFinished_7(L_24);
-		GameObject_t1756533147 * L_25 = __this->get_eventReceiver_10();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_26 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_25, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_26)
-		{
-			goto IL_00f6;
-		}
-	}
-	{
-		String_t* L_27 = __this->get_callWhenFinished_11();
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_28 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
-		if (L_28)
-		{
-			goto IL_00f6;
-		}
-	}
-	{
-		ActiveAnimation_t4137610604 * L_29 = V_2;
-		GameObject_t1756533147 * L_30 = __this->get_eventReceiver_10();
-		NullCheck(L_29);
-		L_29->set_eventReceiver_8(L_30);
-		ActiveAnimation_t4137610604 * L_31 = V_2;
-		String_t* L_32 = __this->get_callWhenFinished_11();
-		NullCheck(L_31);
-		L_31->set_callWhenFinished_9(L_32);
-		goto IL_00fd;
-	}
-
-IL_00f6:
-	{
-		ActiveAnimation_t4137610604 * L_33 = V_2;
-		NullCheck(L_33);
-		L_33->set_eventReceiver_8((GameObject_t1756533147 *)NULL);
-	}
-
-IL_00fd:
 	{
 		return;
 	}
