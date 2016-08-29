@@ -18523,15 +18523,21 @@ extern "C" void ByteReader_ReadLine_m1871758886 ();
 extern "C" void ByteReader_ReadLine_m3267484541 ();
 extern "C" void ByteReader_ReadDictionary_m3110959320 ();
 extern "C" void CarDodgeGame__ctor_m3991645306 ();
+extern "C" void CarDodgeGame_get_CurrentScore_m2987445214 ();
+extern "C" void CarDodgeGame_set_CurrentScore_m3706424917 ();
+extern "C" void CarDodgeGame_get_GameLevel_m2225809063 ();
+extern "C" void CarDodgeGame_set_GameLevel_m439010188 ();
 extern "C" void CarDodgeGame_Awake_m2106247909 ();
+extern "C" void CarDodgeGame_UpdateGameInfo_m818519589 ();
 extern "C" void CarDodgeGame_Start_m3638727482 ();
 extern "C" void CarDodgeGame_Update_m3189749945 ();
 extern "C" void CarDodgeGame_SpawnCoroutine_m358620679 ();
 extern "C" void CarDodgeGame_SpawnEnemyCar_m3242250389 ();
-extern "C" void CarDodgeGame_ChooseCarToSpawn_m3421396064 ();
-extern "C" void CarDodgeGame_SpawnNormalCar_m2529383949 ();
-extern "C" void CarDodgeGame_SpawnTruckCar_m3492177509 ();
-extern "C" void CarDodgeGame_SpawnFastCar_m1959465054 ();
+extern "C" void CarDodgeGame_ChooseRoadToSpawn_m390485783 ();
+extern "C" void CarDodgeGame_ChooseCarToSpawn_m4049764086 ();
+extern "C" void CarDodgeGame_SpawnNormalCar_m3874395735 ();
+extern "C" void CarDodgeGame_SpawnTruckCar_m37508511 ();
+extern "C" void CarDodgeGame_SpawnFastCar_m2911604860 ();
 extern "C" void U3CSpawnCoroutineU3Ec__Iterator3__ctor_m1542020552 ();
 extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1476153254 ();
 extern "C" void U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m3555604734 ();
@@ -18565,6 +18571,7 @@ extern "C" void DragDropSurface_OnDrop_m3662549775 ();
 extern "C" void EnemyCar__ctor_m4224336717 ();
 extern "C" void EnemyCar_Start_m2778549701 ();
 extern "C" void EnemyCar_Update_m2723198140 ();
+extern "C" void EnemyCar_StartMove_m2947418044 ();
 extern "C" void EquipItems__ctor_m2508878821 ();
 extern "C" void EquipItems_Start_m3665532189 ();
 extern "C" void EquipRandomItem__ctor_m3904740745 ();
@@ -19783,7 +19790,7 @@ extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_Start_m3663283896 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_CoroutineUpdate_m4284548736 ();
-extern const Il2CppMethodPointer g_MethodPointers[19772] = 
+extern const Il2CppMethodPointer g_MethodPointers[19779] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -38297,15 +38304,21 @@ extern const Il2CppMethodPointer g_MethodPointers[19772] =
 	ByteReader_ReadLine_m3267484541,
 	ByteReader_ReadDictionary_m3110959320,
 	CarDodgeGame__ctor_m3991645306,
+	CarDodgeGame_get_CurrentScore_m2987445214,
+	CarDodgeGame_set_CurrentScore_m3706424917,
+	CarDodgeGame_get_GameLevel_m2225809063,
+	CarDodgeGame_set_GameLevel_m439010188,
 	CarDodgeGame_Awake_m2106247909,
+	CarDodgeGame_UpdateGameInfo_m818519589,
 	CarDodgeGame_Start_m3638727482,
 	CarDodgeGame_Update_m3189749945,
 	CarDodgeGame_SpawnCoroutine_m358620679,
 	CarDodgeGame_SpawnEnemyCar_m3242250389,
-	CarDodgeGame_ChooseCarToSpawn_m3421396064,
-	CarDodgeGame_SpawnNormalCar_m2529383949,
-	CarDodgeGame_SpawnTruckCar_m3492177509,
-	CarDodgeGame_SpawnFastCar_m1959465054,
+	CarDodgeGame_ChooseRoadToSpawn_m390485783,
+	CarDodgeGame_ChooseCarToSpawn_m4049764086,
+	CarDodgeGame_SpawnNormalCar_m3874395735,
+	CarDodgeGame_SpawnTruckCar_m37508511,
+	CarDodgeGame_SpawnFastCar_m2911604860,
 	U3CSpawnCoroutineU3Ec__Iterator3__ctor_m1542020552,
 	U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1476153254,
 	U3CSpawnCoroutineU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m3555604734,
@@ -38339,6 +38352,7 @@ extern const Il2CppMethodPointer g_MethodPointers[19772] =
 	EnemyCar__ctor_m4224336717,
 	EnemyCar_Start_m2778549701,
 	EnemyCar_Update_m2723198140,
+	EnemyCar_StartMove_m2947418044,
 	EquipItems__ctor_m2508878821,
 	EquipItems_Start_m3665532189,
 	EquipRandomItem__ctor_m3904740745,

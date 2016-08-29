@@ -190,6 +190,8 @@ struct WindowDragTilt_t1404465963;
 #include "AssemblyU2DCSharp_ValidBounding40306510.h"
 #include "AssemblyU2DCSharp_ValidBounding40306510MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
+#include "AssemblyU2DCSharp_CarDodgeGame1650312537MethodDeclarations.h"
+#include "AssemblyU2DCSharp_CarDodgeGame1650312537.h"
 #include "AssemblyU2DCSharp_WindowAutoYaw3382257894.h"
 #include "AssemblyU2DCSharp_WindowAutoYaw3382257894MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion4030073918MethodDeclarations.h"
@@ -3405,8 +3407,12 @@ extern "C"  void ValidBounding_Update_m1271931708 (ValidBounding_t40306510 * __t
 // System.Void ValidBounding::OnTriggerExit2D(UnityEngine.Collider2D)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* CarDodgeGame_t1650312537_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral536057817;
 extern Il2CppCodeGenString* _stringLiteral3203794512;
+extern Il2CppCodeGenString* _stringLiteral2289184156;
+extern Il2CppCodeGenString* _stringLiteral3798227849;
 extern const uint32_t ValidBounding_OnTriggerExit2D_m1846888919_MetadataUsageId;
 extern "C"  void ValidBounding_OnTriggerExit2D_m1846888919 (ValidBounding_t40306510 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method)
 {
@@ -3430,7 +3436,7 @@ extern "C"  void ValidBounding_OnTriggerExit2D_m1846888919 (ValidBounding_t40306
 		bool L_5 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_4, _stringLiteral3203794512, /*hidden argument*/NULL);
 		if (!L_5)
 		{
-			goto IL_0036;
+			goto IL_00a6;
 		}
 	}
 	{
@@ -3439,9 +3445,40 @@ extern "C"  void ValidBounding_OnTriggerExit2D_m1846888919 (ValidBounding_t40306
 		GameObject_t1756533147 * L_7 = Component_get_gameObject_m3105766835(L_6, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		GameObject_SetActive_m2887581199(L_7, (bool)0, /*hidden argument*/NULL);
+		CarDodgeGame_t1650312537 * L_8 = ((CarDodgeGame_t1650312537_StaticFields*)CarDodgeGame_t1650312537_il2cpp_TypeInfo_var->static_fields)->get_mCarDodgeGameInstance_2();
+		CarDodgeGame_t1650312537 * L_9 = L_8;
+		NullCheck(L_9);
+		int32_t L_10 = CarDodgeGame_get_CurrentScore_m2987445214(L_9, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		CarDodgeGame_set_CurrentScore_m3706424917(L_9, ((int32_t)((int32_t)L_10+(int32_t)1)), /*hidden argument*/NULL);
+		CarDodgeGame_t1650312537 * L_11 = ((CarDodgeGame_t1650312537_StaticFields*)CarDodgeGame_t1650312537_il2cpp_TypeInfo_var->static_fields)->get_mCarDodgeGameInstance_2();
+		CarDodgeGame_t1650312537 * L_12 = ((CarDodgeGame_t1650312537_StaticFields*)CarDodgeGame_t1650312537_il2cpp_TypeInfo_var->static_fields)->get_mCarDodgeGameInstance_2();
+		NullCheck(L_12);
+		int32_t L_13 = CarDodgeGame_get_CurrentScore_m2987445214(L_12, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		CarDodgeGame_set_GameLevel_m439010188(L_11, ((int32_t)((int32_t)((int32_t)((int32_t)L_13+(int32_t)5))/(int32_t)5)), /*hidden argument*/NULL);
+		CarDodgeGame_t1650312537 * L_14 = ((CarDodgeGame_t1650312537_StaticFields*)CarDodgeGame_t1650312537_il2cpp_TypeInfo_var->static_fields)->get_mCarDodgeGameInstance_2();
+		NullCheck(L_14);
+		int32_t L_15 = CarDodgeGame_get_CurrentScore_m2987445214(L_14, /*hidden argument*/NULL);
+		int32_t L_16 = L_15;
+		Il2CppObject * L_17 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_16);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_18 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral2289184156, L_17, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
+		CarDodgeGame_t1650312537 * L_19 = ((CarDodgeGame_t1650312537_StaticFields*)CarDodgeGame_t1650312537_il2cpp_TypeInfo_var->static_fields)->get_mCarDodgeGameInstance_2();
+		NullCheck(L_19);
+		int32_t L_20 = CarDodgeGame_get_GameLevel_m2225809063(L_19, /*hidden argument*/NULL);
+		int32_t L_21 = L_20;
+		Il2CppObject * L_22 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_21);
+		String_t* L_23 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral3798227849, L_22, /*hidden argument*/NULL);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
+		CarDodgeGame_t1650312537 * L_24 = ((CarDodgeGame_t1650312537_StaticFields*)CarDodgeGame_t1650312537_il2cpp_TypeInfo_var->static_fields)->get_mCarDodgeGameInstance_2();
+		NullCheck(L_24);
+		CarDodgeGame_UpdateGameInfo_m818519589(L_24, /*hidden argument*/NULL);
 	}
 
-IL_0036:
+IL_00a6:
 	{
 		return;
 	}

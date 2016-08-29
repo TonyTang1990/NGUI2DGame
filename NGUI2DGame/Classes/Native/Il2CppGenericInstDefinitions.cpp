@@ -1663,6 +1663,15 @@ extern const Il2CppGenericInst GenInst_UIInput_t860674234_0_0_0 = { 1, GenInst_U
 extern const Il2CppType ActiveAnimation_t4137610604_0_0_0;
 static const Il2CppType* GenInst_ActiveAnimation_t4137610604_0_0_0_Types[] = { &ActiveAnimation_t4137610604_0_0_0 };
 extern const Il2CppGenericInst GenInst_ActiveAnimation_t4137610604_0_0_0 = { 1, GenInst_ActiveAnimation_t4137610604_0_0_0_Types };
+extern const Il2CppType OffsetScroller_t1610136665_0_0_0;
+static const Il2CppType* GenInst_OffsetScroller_t1610136665_0_0_0_Types[] = { &OffsetScroller_t1610136665_0_0_0 };
+extern const Il2CppGenericInst GenInst_OffsetScroller_t1610136665_0_0_0 = { 1, GenInst_OffsetScroller_t1610136665_0_0_0_Types };
+extern const Il2CppType AudioSource_t1135106623_0_0_0;
+static const Il2CppType* GenInst_AudioSource_t1135106623_0_0_0_Types[] = { &AudioSource_t1135106623_0_0_0 };
+extern const Il2CppGenericInst GenInst_AudioSource_t1135106623_0_0_0 = { 1, GenInst_AudioSource_t1135106623_0_0_0_Types };
+extern const Il2CppType EnemyCar_t2475715994_0_0_0;
+static const Il2CppType* GenInst_EnemyCar_t2475715994_0_0_0_Types[] = { &EnemyCar_t2475715994_0_0_0 };
+extern const Il2CppGenericInst GenInst_EnemyCar_t2475715994_0_0_0 = { 1, GenInst_EnemyCar_t2475715994_0_0_0_Types };
 extern const Il2CppType UITexture_t2537039969_0_0_0;
 static const Il2CppType* GenInst_UITexture_t2537039969_0_0_0_Types[] = { &UITexture_t2537039969_0_0_0 };
 extern const Il2CppGenericInst GenInst_UITexture_t2537039969_0_0_0 = { 1, GenInst_UITexture_t2537039969_0_0_0_Types };
@@ -1702,9 +1711,6 @@ extern const Il2CppGenericInst GenInst_NGUIDebug_t1735550160_0_0_0 = { 1, GenIns
 extern const Il2CppType AudioListener_t1996719162_0_0_0;
 static const Il2CppType* GenInst_AudioListener_t1996719162_0_0_0_Types[] = { &AudioListener_t1996719162_0_0_0 };
 extern const Il2CppGenericInst GenInst_AudioListener_t1996719162_0_0_0 = { 1, GenInst_AudioListener_t1996719162_0_0_0_Types };
-extern const Il2CppType AudioSource_t1135106623_0_0_0;
-static const Il2CppType* GenInst_AudioSource_t1135106623_0_0_0_Types[] = { &AudioSource_t1135106623_0_0_0 };
-extern const Il2CppGenericInst GenInst_AudioSource_t1135106623_0_0_0 = { 1, GenInst_AudioSource_t1135106623_0_0_0_Types };
 extern const Il2CppType BoxCollider_t22920061_0_0_0;
 static const Il2CppType* GenInst_BoxCollider_t22920061_0_0_0_Types[] = { &BoxCollider_t22920061_0_0_0 };
 extern const Il2CppGenericInst GenInst_BoxCollider_t22920061_0_0_0 = { 1, GenInst_BoxCollider_t22920061_0_0_0_Types };
@@ -1843,7 +1849,7 @@ static const Il2CppType* GenInst_Vector3ArrayOptions_t2672570171_0_0_0_Types[] =
 extern const Il2CppGenericInst GenInst_Vector3ArrayOptions_t2672570171_0_0_0 = { 1, GenInst_Vector3ArrayOptions_t2672570171_0_0_0_Types };
 static const Il2CppType* GenInst_VectorOptions_t293385261_0_0_0_Types[] = { &VectorOptions_t293385261_0_0_0 };
 extern const Il2CppGenericInst GenInst_VectorOptions_t293385261_0_0_0 = { 1, GenInst_VectorOptions_t293385261_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[634] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[636] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -2408,6 +2414,9 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[634] =
 	&GenInst_ZipWorker_t1305438663_0_0_0,
 	&GenInst_UIInput_t860674234_0_0_0,
 	&GenInst_ActiveAnimation_t4137610604_0_0_0,
+	&GenInst_OffsetScroller_t1610136665_0_0_0,
+	&GenInst_AudioSource_t1135106623_0_0_0,
+	&GenInst_EnemyCar_t2475715994_0_0_0,
 	&GenInst_UITexture_t2537039969_0_0_0,
 	&GenInst_UITable_t3717403602_0_0_0,
 	&GenInst_DragDropContainer_t3035769598_0_0_0,
@@ -2421,7 +2430,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[634] =
 	&GenInst_Localization_t3725902693_0_0_0,
 	&GenInst_NGUIDebug_t1735550160_0_0_0,
 	&GenInst_AudioListener_t1996719162_0_0_0,
-	&GenInst_AudioSource_t1135106623_0_0_0,
 	&GenInst_BoxCollider_t22920061_0_0_0,
 	&GenInst_MeshRenderer_t1268241104_0_0_0,
 	&GenInst_Animator_t69676727_0_0_0,

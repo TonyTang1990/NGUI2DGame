@@ -6059,6 +6059,7 @@ extern const Il2CppType IEnumerator_1_t2048969136_0_0_0 = { &IEnumerator_1_t2048
 extern const Il2CppType Tween_t278478013_0_0_0 = { (void*)2626, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType Tween_t278478013_1_0_0 = { (void*)2626, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 extern const Il2CppType Tween_t278478013_0_0_6 = { (void*)2626, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType Tween_t278478013_0_0_1 = { (void*)2626, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 Il2CppGenericClass InternalEnumerator_1_t1137230275_GenericClass = { 41, { &GenInst_Tween_t278478013_0_0_0, NULL }, NULL };
 extern const Il2CppType InternalEnumerator_1_t1137230275_0_0_0 = { &InternalEnumerator_1_t1137230275_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -19280,11 +19281,16 @@ extern const Il2CppType UIViewport_t1541362616_1_0_0 = { (void*)2911, 0, IL2CPP_
 
 extern const Il2CppType CarDodgeGame_t1650312537_0_0_0 = { (void*)2912, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType CarDodgeGame_t1650312537_1_0_0 = { (void*)2912, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const Il2CppType CarDodgeGame_t1650312537_0_0_22 = { (void*)2912, 22, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType CarDodgeGame_t1650312537_0_0_3 = { (void*)2912, 3, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const Il2CppType GameObject_t1756533147_0_0_0;
 extern const Il2CppType GameObjectU5BU5D_t3057952154_0_0_6 = { (void*)&GameObject_t1756533147_0_0_0, 6, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
 extern const Il2CppType GameObjectU5BU5D_t3057952154_0_0_0 = { (void*)&GameObject_t1756533147_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
+
+extern const Il2CppType OffsetScroller_t1610136665_0_0_1 = { (void*)2938, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType OffsetScroller_t1610136665_0_0_0 = { (void*)2938, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const Il2CppType OffsetScroller_t1610136665_1_0_0 = { (void*)2938, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const Il2CppType U3CSpawnCoroutineU3Ec__Iterator3_t148974859_0_0_0 = { (void*)2913, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType U3CSpawnCoroutineU3Ec__Iterator3_t148974859_1_0_0 = { (void*)2913, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -19371,9 +19377,6 @@ extern const Il2CppType Validator_t172396982_0_0_22 = { (void*)2936, 22, IL2CPP_
 extern const Il2CppType FPSDisplay_t3952194245_0_0_0 = { (void*)2937, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType FPSDisplay_t3952194245_1_0_0 = { (void*)2937, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType OffsetScroller_t1610136665_0_0_0 = { (void*)2938, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const Il2CppType OffsetScroller_t1610136665_1_0_0 = { (void*)2938, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
 extern const Il2CppType UIRootExtend_t1122248034_0_0_0 = { (void*)2939, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType UIRootExtend_t1122248034_1_0_0 = { (void*)2939, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
@@ -19457,7 +19460,7 @@ Il2CppArrayType BoundsU5BU2CU5D_t3976027471_ArrayType =
 extern const Il2CppType BoundsU5BU2CU5D_t3976027471_0_0_0 = { &BoundsU5BU2CU5D_t3976027471_ArrayType, 0, IL2CPP_TYPE_ARRAY, 0, 0, 0 };
 
 extern const Il2CppType BoundsU5BU5D_t3976027470_0_0_0 = { (void*)&Bounds_t3033363703_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[10988] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[10991] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -30279,12 +30282,15 @@ extern const Il2CppType* const  g_Il2CppTypeTable[10988] =
 	&UIViewport_t1541362616_1_0_0,
 	&CarDodgeGame_t1650312537_0_0_0,
 	&CarDodgeGame_t1650312537_1_0_0,
+	&CarDodgeGame_t1650312537_0_0_22,
 	&GameObjectU5BU5D_t3057952154_0_0_6,
+	&OffsetScroller_t1610136665_0_0_1,
 	&U3CSpawnCoroutineU3Ec__Iterator3_t148974859_0_0_0,
 	&U3CSpawnCoroutineU3Ec__Iterator3_t148974859_1_0_0,
 	&CarDodgeGame_t1650312537_0_0_3,
 	&EnemyCar_t2475715994_0_0_0,
 	&EnemyCar_t2475715994_1_0_0,
+	&Tween_t278478013_0_0_1,
 	&PlayerCarController_t116747357_0_0_0,
 	&PlayerCarController_t116747357_1_0_0,
 	&Animator_t69676727_0_0_1,
