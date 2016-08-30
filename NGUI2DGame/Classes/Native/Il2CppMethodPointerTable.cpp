@@ -15704,6 +15704,9 @@ extern "C" void AudioSource_get_volume_m66289169 ();
 extern "C" void AudioSource_set_volume_m2777308722 ();
 extern "C" void AudioSource_get_pitch_m4220572439 ();
 extern "C" void AudioSource_set_pitch_m3064416458 ();
+extern "C" void AudioSource_set_clip_m738814682 ();
+extern "C" void AudioSource_Play_m889724421 ();
+extern "C" void AudioSource_Play_m353744792 ();
 extern "C" void AudioSource_PlayOneShot_m4118899740 ();
 extern "C" void Behaviour__ctor_m2699265412 ();
 extern "C" void Behaviour_get_enabled_m4079055610 ();
@@ -18569,6 +18572,8 @@ extern "C" void DragDropRoot_Awake_m2573889321 ();
 extern "C" void DragDropSurface__ctor_m2885641647 ();
 extern "C" void DragDropSurface_OnDrop_m3662549775 ();
 extern "C" void EnemyCar__ctor_m4224336717 ();
+extern "C" void EnemyCar_get_DefaultSpeed_m3428943018 ();
+extern "C" void EnemyCar_Awake_m3589948842 ();
 extern "C" void EnemyCar_Start_m2778549701 ();
 extern "C" void EnemyCar_Update_m2723198140 ();
 extern "C" void EnemyCar_StartMove_m2947418044 ();
@@ -18597,7 +18602,7 @@ extern "C" void GameConfigurationManager_Init_m472125798 ();
 extern "C" void GameConfigurationManager_ReadConfiguration_m2238328344 ();
 extern "C" void GameConfigurationManager_ReadAccountInfo_m320921492 ();
 extern "C" void GameConfigurationManager_ReadGameSetting_m1228648688 ();
-extern "C" void GameConfigurationManager_SaveGameSettings_m2847366362 ();
+extern "C" void GameConfigurationManager_ApplyGameSettings_m952506225 ();
 extern "C" void Account__ctor_m2886151686 ();
 extern "C" void Account__ctor_m4155906892 ();
 extern "C" void Account_get_AccountName_m1231297310 ();
@@ -18620,6 +18625,7 @@ extern "C" void GameManager_Awake_m99497495 ();
 extern "C" void GameManager_Start_m2655388892 ();
 extern "C" void GameManager_Update_m969954595 ();
 extern "C" void GameManager_GameInit_m3322512818 ();
+extern "C" void GameManager_GameConfigurationInit_m2257848058 ();
 extern "C" void GameManager_InitDOTween_m4053187674 ();
 extern "C" void GamePanel__ctor_m941006463 ();
 extern "C" void GamePanel_Awake_m1922740256 ();
@@ -18834,6 +18840,11 @@ extern "C" void NGUITools_MarkParentAsChanged_m2361970558 ();
 extern "C" void NGUITools_GetSystemCopyBufferProperty_m2191884630 ();
 extern "C" void NGUITools_get_clipboard_m1224171497 ();
 extern "C" void NGUITools_set_clipboard_m1817767080 ();
+extern "C" void ObjectPoolManager__ctor_m1822775089 ();
+extern "C" void ObjectPoolManager__cctor_m3165818038 ();
+extern "C" void ObjectPoolManager_Awake_m3596487360 ();
+extern "C" void ObjectPoolManager_Start_m1991070249 ();
+extern "C" void ObjectPoolManager_GetEnemyCarObject_m1835518282 ();
 extern "C" void OffsetScroller__ctor_m1190285988 ();
 extern "C" void OffsetScroller_Awake_m556717801 ();
 extern "C" void OffsetScroller_Start_m190933060 ();
@@ -18857,7 +18868,10 @@ extern "C" void PlayerCarController_MoveDownCoroutine_m3523165399 ();
 extern "C" void PlayerCarController_Jump_m3808470432 ();
 extern "C" void PlayerCarController_CrashCallBack_m3159760084 ();
 extern "C" void PlayerCarController_OnTriggerEnter2D_m3876316192 ();
+extern "C" void PlayerCarController_OnTriggerExit2D_m2931615634 ();
 extern "C" void PlayerCarController_OnTweenComplete_m3857909345 ();
+extern "C" void PlayerCarController_OnJumpComplete_m1264366148 ();
+extern "C" void PlayerCarController_UpdateJumpAnimation_m3552892849 ();
 extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5__ctor_m695319762 ();
 extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m391711220 ();
 extern "C" void U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m2719809308 ();
@@ -18877,6 +18891,13 @@ extern "C" void SetColorOnSelection__ctor_m4075942549 ();
 extern "C" void SetColorOnSelection_OnSelectionChange_m1283237520 ();
 extern "C" void ShaderQuality__ctor_m249302687 ();
 extern "C" void ShaderQuality_Update_m2685159252 ();
+extern "C" void SoundManager__ctor_m3417712111 ();
+extern "C" void SoundManager_get_GameBackgroundMusic_m420244162 ();
+extern "C" void SoundManager_set_GameBackgroundMusic_m2032569559 ();
+extern "C" void SoundManager_Awake_m1006343474 ();
+extern "C" void SoundManager_Start_m640423507 ();
+extern "C" void SoundManager_Update_m1087474672 ();
+extern "C" void SoundManager_ApplySoundSetting_m70772120 ();
 extern "C" void Spin__ctor_m1657456431 ();
 extern "C" void Spin_Start_m3347264315 ();
 extern "C" void Spin_Update_m4062915630 ();
@@ -19790,7 +19811,7 @@ extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_Start_m3663283896 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_CoroutineUpdate_m4284548736 ();
-extern const Il2CppMethodPointer g_MethodPointers[19779] = 
+extern const Il2CppMethodPointer g_MethodPointers[19800] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -35485,6 +35506,9 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	AudioSource_set_volume_m2777308722,
 	AudioSource_get_pitch_m4220572439,
 	AudioSource_set_pitch_m3064416458,
+	AudioSource_set_clip_m738814682,
+	AudioSource_Play_m889724421,
+	AudioSource_Play_m353744792,
 	AudioSource_PlayOneShot_m4118899740,
 	Behaviour__ctor_m2699265412,
 	Behaviour_get_enabled_m4079055610,
@@ -38350,6 +38374,8 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	DragDropSurface__ctor_m2885641647,
 	DragDropSurface_OnDrop_m3662549775,
 	EnemyCar__ctor_m4224336717,
+	EnemyCar_get_DefaultSpeed_m3428943018,
+	EnemyCar_Awake_m3589948842,
 	EnemyCar_Start_m2778549701,
 	EnemyCar_Update_m2723198140,
 	EnemyCar_StartMove_m2947418044,
@@ -38378,7 +38404,7 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	GameConfigurationManager_ReadConfiguration_m2238328344,
 	GameConfigurationManager_ReadAccountInfo_m320921492,
 	GameConfigurationManager_ReadGameSetting_m1228648688,
-	GameConfigurationManager_SaveGameSettings_m2847366362,
+	GameConfigurationManager_ApplyGameSettings_m952506225,
 	Account__ctor_m2886151686,
 	Account__ctor_m4155906892,
 	Account_get_AccountName_m1231297310,
@@ -38401,6 +38427,7 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	GameManager_Start_m2655388892,
 	GameManager_Update_m969954595,
 	GameManager_GameInit_m3322512818,
+	GameManager_GameConfigurationInit_m2257848058,
 	GameManager_InitDOTween_m4053187674,
 	GamePanel__ctor_m941006463,
 	GamePanel_Awake_m1922740256,
@@ -38615,6 +38642,11 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	NGUITools_GetSystemCopyBufferProperty_m2191884630,
 	NGUITools_get_clipboard_m1224171497,
 	NGUITools_set_clipboard_m1817767080,
+	ObjectPoolManager__ctor_m1822775089,
+	ObjectPoolManager__cctor_m3165818038,
+	ObjectPoolManager_Awake_m3596487360,
+	ObjectPoolManager_Start_m1991070249,
+	ObjectPoolManager_GetEnemyCarObject_m1835518282,
 	OffsetScroller__ctor_m1190285988,
 	OffsetScroller_Awake_m556717801,
 	OffsetScroller_Start_m190933060,
@@ -38638,7 +38670,10 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	PlayerCarController_Jump_m3808470432,
 	PlayerCarController_CrashCallBack_m3159760084,
 	PlayerCarController_OnTriggerEnter2D_m3876316192,
+	PlayerCarController_OnTriggerExit2D_m2931615634,
 	PlayerCarController_OnTweenComplete_m3857909345,
+	PlayerCarController_OnJumpComplete_m1264366148,
+	PlayerCarController_UpdateJumpAnimation_m3552892849,
 	U3CMoveDownCoroutineU3Ec__Iterator5__ctor_m695319762,
 	U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m391711220,
 	U3CMoveDownCoroutineU3Ec__Iterator5_System_Collections_IEnumerator_get_Current_m2719809308,
@@ -38658,6 +38693,13 @@ extern const Il2CppMethodPointer g_MethodPointers[19779] =
 	SetColorOnSelection_OnSelectionChange_m1283237520,
 	ShaderQuality__ctor_m249302687,
 	ShaderQuality_Update_m2685159252,
+	SoundManager__ctor_m3417712111,
+	SoundManager_get_GameBackgroundMusic_m420244162,
+	SoundManager_set_GameBackgroundMusic_m2032569559,
+	SoundManager_Awake_m1006343474,
+	SoundManager_Start_m640423507,
+	SoundManager_Update_m1087474672,
+	SoundManager_ApplySoundSetting_m70772120,
 	Spin__ctor_m1657456431,
 	Spin_Start_m3347264315,
 	Spin_Update_m4062915630,

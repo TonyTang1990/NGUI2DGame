@@ -206,57 +206,57 @@ void RegisterAllClasses()
 	void RegisterClass_MeshRenderer();
 	RegisterClass_MeshRenderer();
 
-	//42. PreloadData
+	//42. BoxCollider2D
+	void RegisterClass_BoxCollider2D();
+	RegisterClass_BoxCollider2D();
+
+	//43. PreloadData
 	void RegisterClass_PreloadData();
 	RegisterClass_PreloadData();
 
-	//43. Cubemap
+	//44. Cubemap
 	void RegisterClass_Cubemap();
 	RegisterClass_Cubemap();
 
-	//44. Texture3D
+	//45. Texture3D
 	void RegisterClass_Texture3D();
 	RegisterClass_Texture3D();
 
-	//45. Texture2DArray
+	//46. Texture2DArray
 	void RegisterClass_Texture2DArray();
 	RegisterClass_Texture2DArray();
 
-	//46. LevelGameManager
+	//47. LevelGameManager
 	void RegisterClass_LevelGameManager();
 	RegisterClass_LevelGameManager();
 
-	//47. TimeManager
+	//48. TimeManager
 	void RegisterClass_TimeManager();
 	RegisterClass_TimeManager();
 
-	//48. AudioManager
+	//49. AudioManager
 	void RegisterClass_AudioManager();
 	RegisterClass_AudioManager();
 
-	//49. InputManager
+	//50. InputManager
 	void RegisterClass_InputManager();
 	RegisterClass_InputManager();
 
-	//50. Physics2DSettings
+	//51. Physics2DSettings
 	void RegisterClass_Physics2DSettings();
 	RegisterClass_Physics2DSettings();
 
-	//51. GraphicsSettings
+	//52. GraphicsSettings
 	void RegisterClass_GraphicsSettings();
 	RegisterClass_GraphicsSettings();
 
-	//52. Rigidbody2D
+	//53. Rigidbody2D
 	void RegisterClass_Rigidbody2D();
 	RegisterClass_Rigidbody2D();
 
-	//53. PhysicsManager
+	//54. PhysicsManager
 	void RegisterClass_PhysicsManager();
 	RegisterClass_PhysicsManager();
-
-	//54. BoxCollider2D
-	void RegisterClass_BoxCollider2D();
-	RegisterClass_BoxCollider2D();
 
 	//55. MeshCollider
 	void RegisterClass_MeshCollider();

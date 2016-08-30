@@ -474,7 +474,7 @@ extern "C" void TweenCallback_1__ctor_m3888348002_gshared ();
 extern "C" void TweenCallback_1_Invoke_m872757678_gshared ();
 extern "C" void TweenCallback_1_BeginInvoke_m138693653_gshared ();
 extern "C" void TweenCallback_1_EndInvoke_m3980063300_gshared ();
-extern "C" void TweenExtensions_Pause_TisIl2CppObject_m237266277_gshared ();
+extern "C" void TweenExtensions_Pause_TisIl2CppObject_m3510974071_gshared ();
 extern "C" void TweenExtensions_Play_TisIl2CppObject_m4156839947_gshared ();
 extern "C" void TweenSettingsExtensions_SetAutoKill_TisIl2CppObject_m1692088481_gshared ();
 extern "C" void TweenSettingsExtensions_SetAutoKill_TisIl2CppObject_m3918711238_gshared ();
@@ -4303,7 +4303,7 @@ extern const Il2CppMethodPointer g_Il2CppGenericMethodPointers[3827] =
 	(Il2CppMethodPointer)&TweenCallback_1_Invoke_m872757678_gshared/* 454*/,
 	(Il2CppMethodPointer)&TweenCallback_1_BeginInvoke_m138693653_gshared/* 455*/,
 	(Il2CppMethodPointer)&TweenCallback_1_EndInvoke_m3980063300_gshared/* 456*/,
-	(Il2CppMethodPointer)&TweenExtensions_Pause_TisIl2CppObject_m237266277_gshared/* 457*/,
+	(Il2CppMethodPointer)&TweenExtensions_Pause_TisIl2CppObject_m3510974071_gshared/* 457*/,
 	(Il2CppMethodPointer)&TweenExtensions_Play_TisIl2CppObject_m4156839947_gshared/* 458*/,
 	(Il2CppMethodPointer)&TweenSettingsExtensions_SetAutoKill_TisIl2CppObject_m1692088481_gshared/* 459*/,
 	(Il2CppMethodPointer)&TweenSettingsExtensions_SetAutoKill_TisIl2CppObject_m3918711238_gshared/* 460*/,

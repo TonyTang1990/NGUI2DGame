@@ -27,5 +27,7 @@ extern "C"  void GameManager_Start_m2655388892 (GameManager_t2252321495 * __this
 extern "C"  void GameManager_Update_m969954595 (GameManager_t2252321495 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameManager::GameInit()
 extern "C"  void GameManager_GameInit_m3322512818 (GameManager_t2252321495 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameManager::GameConfigurationInit()
+extern "C"  void GameManager_GameConfigurationInit_m2257848058 (GameManager_t2252321495 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameManager::InitDOTween()
 extern "C"  void GameManager_InitDOTween_m4053187674 (GameManager_t2252321495 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

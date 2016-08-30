@@ -1943,6 +1943,8 @@
 #include "AssemblyU2DCSharp_GameConfigurationManager_GameSet2958378805.h"
 #include "AssemblyU2DCSharp_GameManager2252321495.h"
 #include "AssemblyU2DCSharp_InputControllerManager1050051015.h"
+#include "AssemblyU2DCSharp_ObjectPoolManager3813236580.h"
+#include "AssemblyU2DCSharp_SoundManager654432262.h"
 #include "AssemblyU2DCSharp_GameChoosePanel1813263919.h"
 #include "AssemblyU2DCSharp_GamePanel539122112.h"
 #include "AssemblyU2DCSharp_GameSettingPanel4173768872.h"
@@ -2598,6 +2600,7 @@
 #include "UnityEngine_UnityEngine_CharacterController4094781467.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D502193897.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
+#include "UnityEngine_UnityEngine_BoxCollider2D948534547.h"
 #include "UnityEngine_UnityEngine_AudioSettings_AudioConfigu3743753033.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMReaderCallbac3007145346.h"
 #include "UnityEngine_UnityEngine_AudioClip_PCMSetPositionCal421863554.h"
@@ -2715,7 +2718,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[12359] = 
+extern const int32_t g_FieldOffsetTable[12378] = 
 {
 	0,
 	0,
@@ -14965,16 +14968,18 @@ extern const int32_t g_FieldOffsetTable[12359] =
 	CarDodgeGame_t1650312537::get_offset_of_mCurrentSpawnSpeed_15(),
 	CarDodgeGame_t1650312537::get_offset_of_mScoreLabel_16(),
 	CarDodgeGame_t1650312537::get_offset_of_mGameLevelLabel_17(),
-	CarDodgeGame_t1650312537::get_offset_of_mBackgroundMusic_18(),
-	CarDodgeGame_t1650312537::get_offset_of_mCurrentScore_19(),
-	CarDodgeGame_t1650312537::get_offset_of_mGameLevel_20(),
-	CarDodgeGame_t1650312537::get_offset_of_mScrollerBackground_21(),
-	CarDodgeGame_t1650312537::get_offset_of_mBackgroundOffsetScroller_22(),
+	CarDodgeGame_t1650312537::get_offset_of_mCurrentScore_18(),
+	CarDodgeGame_t1650312537::get_offset_of_mGameLevel_19(),
+	CarDodgeGame_t1650312537::get_offset_of_mScrollerBackground_20(),
+	CarDodgeGame_t1650312537::get_offset_of_mBackgroundOffsetScroller_21(),
+	CarDodgeGame_t1650312537::get_offset_of_mPlayerCar_22(),
+	CarDodgeGame_t1650312537::get_offset_of_mPlayerCarController_23(),
 	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U24PC_0(),
 	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U24current_1(),
 	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U3CU3Ef__this_2(),
-	EnemyCar_t2475715994::get_offset_of_mSpeed_2(),
-	EnemyCar_t2475715994::get_offset_of_mMoveTween_3(),
+	EnemyCar_t2475715994::get_offset_of_mDefaultSpeed_2(),
+	EnemyCar_t2475715994::get_offset_of_mSpeed_3(),
+	EnemyCar_t2475715994::get_offset_of_mMoveTween_4(),
 	0,
 	PlayerCarController_t116747357::get_offset_of_mMoveTweenTime_3(),
 	PlayerCarController_t116747357::get_offset_of_mIntervalTimeToKeepMovingUPOrDown_4(),
@@ -14983,10 +14988,18 @@ extern const int32_t g_FieldOffsetTable[12359] =
 	PlayerCarController_t116747357::get_offset_of_mBolockingLayer_7(),
 	PlayerCarController_t116747357::get_offset_of_mTargetPosition_8(),
 	PlayerCarController_t116747357::get_offset_of_mIsTweenComplete_9(),
-	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingUp_10(),
-	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingDown_11(),
-	PlayerCarController_t116747357::get_offset_of_mPlayerCarAnimator_12(),
-	PlayerCarController_t116747357::get_offset_of_mIsCrash_13(),
+	PlayerCarController_t116747357::get_offset_of_mIsJumpComplete_10(),
+	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingUp_11(),
+	PlayerCarController_t116747357::get_offset_of_mIsKeepMovingDown_12(),
+	PlayerCarController_t116747357::get_offset_of_mUpdateJumpAnimationLater_13(),
+	PlayerCarController_t116747357::get_offset_of_mPlayerCarAnimator_14(),
+	PlayerCarController_t116747357::get_offset_of_mIsCrash_15(),
+	PlayerCarController_t116747357::get_offset_of_mJumpDuration_16(),
+	PlayerCarController_t116747357::get_offset_of_mOriginalJumpDuration_17(),
+	PlayerCarController_t116747357::get_offset_of_mJumpEndScale_18(),
+	PlayerCarController_t116747357::get_offset_of_mOriginalScale_19(),
+	PlayerCarController_t116747357::get_offset_of_mJumpSequence_20(),
+	PlayerCarController_t116747357::get_offset_of_mPlayerCarBox2D_21(),
 	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3CstartU3E__0_0(),
 	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3CendU3E__1_1(),
 	U3CMoveUpCoroutineU3Ec__Iterator4_t3763247947::get_offset_of_U3ChitU3E__2_2(),
@@ -15016,7 +15029,7 @@ extern const int32_t g_FieldOffsetTable[12359] =
 	0,
 	SoundSetting_t2958378805::get_offset_of_mBackgroundMusic_2(),
 	SoundSetting_t2958378805::get_offset_of_mVolume_3(),
-	GameManager_t2252321495::get_offset_of_mGameConfigurationManager_2(),
+	GameManager_t2252321495_StaticFields::get_offset_of_mGameManagerInstance_2(),
 	InputControllerManager_t1050051015_StaticFields::get_offset_of_mInputControllerManager_2(),
 	InputControllerManager_t1050051015::get_offset_of_mControlButton_3(),
 	InputControllerManager_t1050051015::get_offset_of_mLeftButton_4(),
@@ -15028,6 +15041,15 @@ extern const int32_t g_FieldOffsetTable[12359] =
 	InputControllerManager_t1050051015::get_offset_of_mRightButtonUIEL_10(),
 	InputControllerManager_t1050051015::get_offset_of_mUpButtonUIEL_11(),
 	InputControllerManager_t1050051015::get_offset_of_mDownButtonUIEL_12(),
+	ObjectPoolManager_t3813236580_StaticFields::get_offset_of_mObjectPoolManagerInstance_2(),
+	ObjectPoolManager_t3813236580::get_offset_of_mEnemyCar_3(),
+	ObjectPoolManager_t3813236580::get_offset_of_mAmountForEachEnemyCar_4(),
+	ObjectPoolManager_t3813236580::get_offset_of_mEnemyCarTwoDimensionList_5(),
+	ObjectPoolManager_t3813236580::get_offset_of_mWillGrow_6(),
+	SoundManager_t654432262_StaticFields::get_offset_of_mSoundManagerInstance_2(),
+	SoundManager_t654432262::get_offset_of_mGameBackgroundMusic_3(),
+	SoundManager_t654432262::get_offset_of_mGameBackgroundMusciClipChoice_4(),
+	SoundManager_t654432262::get_offset_of_mBackgroundMusicClipDictionary_5(),
 	GameChoosePanel_t1813263919::get_offset_of_mGOGameChoice1Button_2(),
 	GameChoosePanel_t1813263919::get_offset_of_mGOGameChoice2Button_3(),
 	GameChoosePanel_t1813263919::get_offset_of_mGOGameChoice3Button_4(),
@@ -15080,7 +15102,7 @@ extern const int32_t g_FieldOffsetTable[12359] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2942] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2945] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -17459,6 +17481,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2942] =
 	sizeof (RaycastHit2D_t4063908774)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (Rigidbody2D_t502193897), -1, 0, 0,
 	sizeof (Collider2D_t646061738), -1, 0, 0,
+	sizeof (BoxCollider2D_t948534547), -1, 0, 0,
 	sizeof (ContactPoint2D_t3659330976)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (Collision2D_t1539500754), -1, 0, 0,
 	sizeof (AudioSettings_t3144015719), -1, sizeof(AudioSettings_t3144015719_StaticFields), 0,
@@ -18006,8 +18029,10 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2942] =
 	sizeof (GameSettings_t213610147), -1, 0, 0,
 	sizeof (GameDifficulty_t3332754345)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (SoundSetting_t2958378805), -1, 0, 0,
-	sizeof (GameManager_t2252321495), -1, 0, 0,
+	sizeof (GameManager_t2252321495), -1, sizeof(GameManager_t2252321495_StaticFields), 0,
 	sizeof (InputControllerManager_t1050051015), -1, sizeof(InputControllerManager_t1050051015_StaticFields), 0,
+	sizeof (ObjectPoolManager_t3813236580), -1, sizeof(ObjectPoolManager_t3813236580_StaticFields), 0,
+	sizeof (SoundManager_t654432262), -1, sizeof(SoundManager_t654432262_StaticFields), 0,
 	sizeof (GameChoosePanel_t1813263919), -1, 0, 0,
 	sizeof (GamePanel_t539122112), -1, 0, 0,
 	sizeof (GameSettingPanel_t4173768872), -1, 0, 0,

@@ -19,6 +19,10 @@ struct EnemyCar_t2475715994;
 
 // System.Void EnemyCar::.ctor()
 extern "C"  void EnemyCar__ctor_m4224336717 (EnemyCar_t2475715994 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single EnemyCar::get_DefaultSpeed()
+extern "C"  float EnemyCar_get_DefaultSpeed_m3428943018 (EnemyCar_t2475715994 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void EnemyCar::Awake()
+extern "C"  void EnemyCar_Awake_m3589948842 (EnemyCar_t2475715994 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void EnemyCar::Start()
 extern "C"  void EnemyCar_Start_m2778549701 (EnemyCar_t2475715994 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void EnemyCar::Update()

@@ -55,5 +55,11 @@ extern "C"  void PlayerCarController_Jump_m3808470432 (PlayerCarController_t1167
 extern "C"  void PlayerCarController_CrashCallBack_m3159760084 (PlayerCarController_t116747357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerCarController::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern "C"  void PlayerCarController_OnTriggerEnter2D_m3876316192 (PlayerCarController_t116747357 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerCarController::OnTriggerExit2D(UnityEngine.Collider2D)
+extern "C"  void PlayerCarController_OnTriggerExit2D_m2931615634 (PlayerCarController_t116747357 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerCarController::OnTweenComplete()
 extern "C"  void PlayerCarController_OnTweenComplete_m3857909345 (PlayerCarController_t116747357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerCarController::OnJumpComplete()
+extern "C"  void PlayerCarController_OnJumpComplete_m1264366148 (PlayerCarController_t116747357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerCarController::UpdateJumpAnimation()
+extern "C"  void PlayerCarController_UpdateJumpAnimation_m3552892849 (PlayerCarController_t116747357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

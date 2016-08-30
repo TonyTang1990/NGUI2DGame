@@ -25,27 +25,37 @@ struct Tween_t278478013;
 struct  EnemyCar_t2475715994  : public MonoBehaviour_t1158329972
 {
 public:
+	// System.Single EnemyCar::mDefaultSpeed
+	float ___mDefaultSpeed_2;
 	// System.Single EnemyCar::mSpeed
-	float ___mSpeed_2;
+	float ___mSpeed_3;
 	// DG.Tweening.Tween EnemyCar::mMoveTween
-	Tween_t278478013 * ___mMoveTween_3;
+	Tween_t278478013 * ___mMoveTween_4;
 
 public:
-	inline static int32_t get_offset_of_mSpeed_2() { return static_cast<int32_t>(offsetof(EnemyCar_t2475715994, ___mSpeed_2)); }
-	inline float get_mSpeed_2() const { return ___mSpeed_2; }
-	inline float* get_address_of_mSpeed_2() { return &___mSpeed_2; }
-	inline void set_mSpeed_2(float value)
+	inline static int32_t get_offset_of_mDefaultSpeed_2() { return static_cast<int32_t>(offsetof(EnemyCar_t2475715994, ___mDefaultSpeed_2)); }
+	inline float get_mDefaultSpeed_2() const { return ___mDefaultSpeed_2; }
+	inline float* get_address_of_mDefaultSpeed_2() { return &___mDefaultSpeed_2; }
+	inline void set_mDefaultSpeed_2(float value)
 	{
-		___mSpeed_2 = value;
+		___mDefaultSpeed_2 = value;
 	}
 
-	inline static int32_t get_offset_of_mMoveTween_3() { return static_cast<int32_t>(offsetof(EnemyCar_t2475715994, ___mMoveTween_3)); }
-	inline Tween_t278478013 * get_mMoveTween_3() const { return ___mMoveTween_3; }
-	inline Tween_t278478013 ** get_address_of_mMoveTween_3() { return &___mMoveTween_3; }
-	inline void set_mMoveTween_3(Tween_t278478013 * value)
+	inline static int32_t get_offset_of_mSpeed_3() { return static_cast<int32_t>(offsetof(EnemyCar_t2475715994, ___mSpeed_3)); }
+	inline float get_mSpeed_3() const { return ___mSpeed_3; }
+	inline float* get_address_of_mSpeed_3() { return &___mSpeed_3; }
+	inline void set_mSpeed_3(float value)
 	{
-		___mMoveTween_3 = value;
-		Il2CppCodeGenWriteBarrier(&___mMoveTween_3, value);
+		___mSpeed_3 = value;
+	}
+
+	inline static int32_t get_offset_of_mMoveTween_4() { return static_cast<int32_t>(offsetof(EnemyCar_t2475715994, ___mMoveTween_4)); }
+	inline Tween_t278478013 * get_mMoveTween_4() const { return ___mMoveTween_4; }
+	inline Tween_t278478013 ** get_address_of_mMoveTween_4() { return &___mMoveTween_4; }
+	inline void set_mMoveTween_4(Tween_t278478013 * value)
+	{
+		___mMoveTween_4 = value;
+		Il2CppCodeGenWriteBarrier(&___mMoveTween_4, value);
 	}
 };
 

@@ -50,5 +50,5 @@ extern "C"  void GameConfigurationManager_ReadConfiguration_m2238328344 (GameCon
 extern "C"  void GameConfigurationManager_ReadAccountInfo_m320921492 (GameConfigurationManager_t1548987031 * __this, DataTable_t3267612424 * ___dt0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameConfigurationManager::ReadGameSetting()
 extern "C"  void GameConfigurationManager_ReadGameSetting_m1228648688 (GameConfigurationManager_t1548987031 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void GameConfigurationManager::SaveGameSettings()
-extern "C"  void GameConfigurationManager_SaveGameSettings_m2847366362 (GameConfigurationManager_t1548987031 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameConfigurationManager::ApplyGameSettings()
+extern "C"  void GameConfigurationManager_ApplyGameSettings_m952506225 (GameConfigurationManager_t1548987031 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

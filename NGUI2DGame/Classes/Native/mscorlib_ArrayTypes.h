@@ -243,6 +243,8 @@ struct DynamicMethod_t3307743052;
 struct ByteU5BU5D_t3397334013;
 // System.IServiceProvider
 struct IServiceProvider_t2397848447;
+// System.Collections.Generic.List`1<UnityEngine.GameObject>
+struct List_1_t1125654279;
 
 #include "mscorlib_System_Array3829468939.h"
 #include "mscorlib_System_Object2689449295.h"
@@ -345,6 +347,8 @@ struct IServiceProvider_t2397848447;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21882432749.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_668667688.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23530214430.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen1125654279.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21604683114.h"
 
 #pragma once
 // System.Object[]
@@ -2912,6 +2916,35 @@ public:
 	inline KeyValuePair_2_t3530214430  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline KeyValuePair_2_t3530214430 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3530214430  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.List`1<UnityEngine.GameObject>[]
+struct List_1U5BU5D_t3122329854  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) List_1_t1125654279 * m_Items[1];
+
+public:
+	inline List_1_t1125654279 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline List_1_t1125654279 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, List_1_t1125654279 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.String,UnityEngine.AudioClip>[]
+struct KeyValuePair_2U5BU5D_t1921660335  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t1604683114  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1604683114  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1604683114 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1604683114  value)
 	{
 		m_Items[index] = value;
 	}

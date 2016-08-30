@@ -611,8 +611,8 @@ extern "C"  void Mesh_SetArrayForChannel_TisVector4_t2243707581_m1073491913_gsha
 extern "C"  Il2CppObject * Extensions_SetSpecialStartupMode_TisIl2CppObject_m2788906314_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___t0, int32_t ___mode1, const MethodInfo* method);
 #define Extensions_SetSpecialStartupMode_TisIl2CppObject_m2788906314(__this /* static, unused */, ___t0, ___mode1, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, int32_t, const MethodInfo*))Extensions_SetSpecialStartupMode_TisIl2CppObject_m2788906314_gshared)(__this /* static, unused */, ___t0, ___mode1, method)
 // T DG.Tweening.TweenExtensions::Pause<System.Object>(T)
-extern "C"  Il2CppObject * TweenExtensions_Pause_TisIl2CppObject_m237266277_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___t0, const MethodInfo* method);
-#define TweenExtensions_Pause_TisIl2CppObject_m237266277(__this /* static, unused */, ___t0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))TweenExtensions_Pause_TisIl2CppObject_m237266277_gshared)(__this /* static, unused */, ___t0, method)
+extern "C"  Il2CppObject * TweenExtensions_Pause_TisIl2CppObject_m3510974071_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___t0, const MethodInfo* method);
+#define TweenExtensions_Pause_TisIl2CppObject_m3510974071(__this /* static, unused */, ___t0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))TweenExtensions_Pause_TisIl2CppObject_m3510974071_gshared)(__this /* static, unused */, ___t0, method)
 // T DG.Tweening.TweenExtensions::Play<System.Object>(T)
 extern "C"  Il2CppObject * TweenExtensions_Play_TisIl2CppObject_m4156839947_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___t0, const MethodInfo* method);
 #define TweenExtensions_Play_TisIl2CppObject_m4156839947(__this /* static, unused */, ___t0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))TweenExtensions_Play_TisIl2CppObject_m4156839947_gshared)(__this /* static, unused */, ___t0, method)
@@ -6512,13 +6512,13 @@ extern "C"  Il2CppObject * Extensions_SetSpecialStartupMode_TisIl2CppObject_m278
 // T DG.Tweening.TweenExtensions::Pause<System.Object>(T)
 extern Il2CppClass* Debugger_t1404542751_il2cpp_TypeInfo_var;
 extern Il2CppClass* TweenManager_t1979661952_il2cpp_TypeInfo_var;
-extern const uint32_t TweenExtensions_Pause_TisIl2CppObject_m237266277_MetadataUsageId;
-extern "C"  Il2CppObject * TweenExtensions_Pause_TisIl2CppObject_m237266277_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___t0, const MethodInfo* method)
+extern const uint32_t TweenExtensions_Pause_TisIl2CppObject_m3510974071_MetadataUsageId;
+extern "C"  Il2CppObject * TweenExtensions_Pause_TisIl2CppObject_m3510974071_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * ___t0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (TweenExtensions_Pause_TisIl2CppObject_m237266277_MetadataUsageId);
+		il2cpp_codegen_initialize_method (TweenExtensions_Pause_TisIl2CppObject_m3510974071_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{

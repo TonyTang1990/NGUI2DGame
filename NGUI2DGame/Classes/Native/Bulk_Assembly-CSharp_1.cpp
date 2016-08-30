@@ -13,6 +13,14 @@
 #include <limits>
 #include <assert.h>
 
+// UIButtonKeys
+struct UIButtonKeys_t2099118702;
+// UIButtonMessage
+struct UIButtonMessage_t3791537815;
+// UnityEngine.Transform[]
+struct TransformU5BU5D_t3764228911;
+// System.Object[]
+struct ObjectU5BU5D_t3614634134;
 // UIButtonOffset
 struct UIButtonOffset_t1501810361;
 // TweenPosition
@@ -37,8 +45,6 @@ struct UIButtonSound_t2227319135;
 struct UIButtonTween_t1434310293;
 // UITweener[]
 struct UITweenerU5BU5D_t2857044187;
-// System.Object[]
-struct ObjectU5BU5D_t3614634134;
 // UICamera
 struct UICamera_t1496819779;
 // UnityEngine.Camera
@@ -213,8 +219,6 @@ struct UIWidgetU5BU5D_t1747340619;
 struct OnChangeDelegate_t1697451811;
 // UIPopupList
 struct UIPopupList_t109953940;
-// UIButtonKeys
-struct UIButtonKeys_t2099118702;
 // UIButtonSound[]
 struct UIButtonSoundU5BU5D_t270817862;
 // UnityEngine.Collider[]
@@ -267,31 +271,43 @@ struct UITiledSprite_t240360451;
 struct UITooltip_t1873874935;
 // UITweener
 struct UITweener_t2986641582;
-// UITweener/OnFinished
-struct OnFinished_t3688353092;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharp_UIButtonKeys2099118702.h"
+#include "AssemblyU2DCSharp_UIButtonKeys2099118702MethodDeclarations.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UICamera1496819779MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object1021602117MethodDeclarations.h"
+#include "AssemblyU2DCSharp_NGUITools2004302824MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "UnityEngine_UnityEngine_GameObject1756533147.h"
+#include "UnityEngine_UnityEngine_Object1021602117.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "UnityEngine_UnityEngine_KeyCode2283395152.h"
+#include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Input1785128008MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UIButtonMessage3791537815.h"
+#include "AssemblyU2DCSharp_UIButtonMessage3791537815MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIButtonMessage_Trigger610760934.h"
+#include "mscorlib_System_String2029220233MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GameObject1756533147MethodDeclarations.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_Transform3275118058.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "AssemblyU2DCSharp_UIButtonMessage_Trigger610760934MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIButtonOffset1501810361.h"
 #include "AssemblyU2DCSharp_UIButtonOffset1501810361MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_Vector32243707580MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "mscorlib_System_Single2076509932.h"
-#include "UnityEngine_UnityEngine_Object1021602117MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
-#include "mscorlib_System_Boolean3825574718.h"
-#include "UnityEngine_UnityEngine_Transform3275118058.h"
-#include "UnityEngine_UnityEngine_Object1021602117.h"
-#include "AssemblyU2DCSharp_UICamera1496819779MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "AssemblyU2DCSharp_TweenPosition1144714832MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TweenPosition1144714832.h"
 #include "UnityEngine_UnityEngine_Component3819376471.h"
 #include "AssemblyU2DCSharp_UITweener2986641582.h"
@@ -301,11 +317,8 @@ struct OnFinished_t3688353092;
 #include "AssemblyU2DCSharp_AnimationOrTween_Direction1874854737.h"
 #include "AssemblyU2DCSharp_AnimationOrTween_Trigger3949147154.h"
 #include "AssemblyU2DCSharp_ActiveAnimation4137610604MethodDeclarations.h"
-#include "mscorlib_System_String2029220233MethodDeclarations.h"
-#include "mscorlib_System_Int322071877448.h"
 #include "AssemblyU2DCSharp_ActiveAnimation4137610604.h"
 #include "UnityEngine_UnityEngine_Animation2068071072.h"
-#include "mscorlib_System_String2029220233.h"
 #include "AssemblyU2DCSharp_AnimationOrTween_EnableCondition2151086590.h"
 #include "AssemblyU2DCSharp_AnimationOrTween_DisableCondition122284263.h"
 #include "AssemblyU2DCSharp_ActiveAnimation_OnFinished1769996062.h"
@@ -321,7 +334,6 @@ struct OnFinished_t3688353092;
 #include "AssemblyU2DCSharp_TweenScale2697902175.h"
 #include "AssemblyU2DCSharp_UIButtonSound2227319135.h"
 #include "AssemblyU2DCSharp_UIButtonSound2227319135MethodDeclarations.h"
-#include "AssemblyU2DCSharp_NGUITools2004302824MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIButtonSound_Trigger462638590.h"
 #include "UnityEngine_UnityEngine_AudioClip1932558630.h"
 #include "UnityEngine_UnityEngine_AudioSource1135106623.h"
@@ -330,12 +342,10 @@ struct OnFinished_t3688353092;
 #include "AssemblyU2DCSharp_UIButtonTween1434310293MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UITweener2986641582MethodDeclarations.h"
 #include "Assembly-CSharp_ArrayTypes.h"
-#include "UnityEngine_UnityEngine_GameObject1756533147MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UITweener_OnFinished3688353092.h"
 #include "AssemblyU2DCSharp_UICamera1496819779.h"
 #include "UnityEngine_UnityEngine_LayerMask3188175821MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_LayerMask3188175821.h"
-#include "UnityEngine_UnityEngine_KeyCode2283395152.h"
 #include "UnityEngine_UnityEngine_Vector22243707579MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen865940911MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2777656077MethodDeclarations.h"
@@ -348,7 +358,6 @@ struct OnFinished_t3688353092;
 #include "mscorlib_System_Collections_Generic_List_1_gen865940911.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2777656077.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1477901912.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_E2797926614MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23530214430MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23530214430.h"
@@ -359,7 +368,6 @@ struct OnFinished_t3688353092;
 #include "mscorlib_System_Comparison_1_gen1348919171MethodDeclarations.h"
 #include "mscorlib_System_Array3829468939MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Ray2469606224.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "mscorlib_System_Comparison_1_gen1348919171.h"
 #include "mscorlib_System_IntPtr2504060609.h"
 #include "UnityEngine_UnityEngine_RaycastHit87180320MethodDeclarations.h"
@@ -367,11 +375,9 @@ struct OnFinished_t3688353092;
 #include "AssemblyU2DCSharp_UIPanel1795085332.h"
 #include "UnityEngine_UnityEngine_Collider3497673348.h"
 #include "AssemblyU2DCSharp_NGUITools2004302824.h"
-#include "UnityEngine_UnityEngine_Input1785128008MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Time31991979MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UICamera_Highlighted3408534945.h"
 #include "AssemblyU2DCSharp_UICamera_Highlighted3408534945MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "UnityEngine_UnityEngine_Application354826772MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform1869584967.h"
 #include "mscorlib_System_Comparison_1_gen2758558630MethodDeclarations.h"
@@ -623,7 +629,6 @@ struct OnFinished_t3688353092;
 #include "mscorlib_System_Collections_Generic_List_1_gen1164236560.h"
 #include "AssemblyU2DCSharp_UIPopupList_OnSelectionChange2430743522MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIPopupList_OnSelectionChange2430743522.h"
-#include "AssemblyU2DCSharp_UIButtonKeys2099118702.h"
 #include "AssemblyU2DCSharp_TweenColor3390486518MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TweenColor3390486518.h"
 #include "UnityEngine_UnityEngine_BoxCollider22920061MethodDeclarations.h"
@@ -696,8 +701,12 @@ struct OnFinished_t3688353092;
 #include "UnityEngine_UnityEngine_AnimationCurve3306541151.h"
 #include "AssemblyU2DCSharp_UITweener_OnFinished3688353092MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UITweener_Style4221671544.h"
-#include "AssemblyU2DCSharp_UITweener_Method1694901606MethodDeclarations.h"
 
+// !!0[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>()
+extern "C"  ObjectU5BU5D_t3614634134* GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
+#define GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482(__this, method) ((  ObjectU5BU5D_t3614634134* (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared)(__this, method)
+// !!0[] UnityEngine.GameObject::GetComponentsInChildren<UnityEngine.Transform>()
+#define GameObject_GetComponentsInChildren_TisTransform_t3275118058_m2357044025(__this, method) ((  TransformU5BU5D_t3764228911* (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m2721246802_gshared (Component_t3819376471 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m2721246802(__this, method) ((  Il2CppObject * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
@@ -712,9 +721,6 @@ extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m185
 #define Component_GetComponent_TisTweenRotation_t1747194511_m2794014878(__this, method) ((  TweenRotation_t1747194511 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<TweenScale>()
 #define Component_GetComponent_TisTweenScale_t2697902175_m3059496736(__this, method) ((  TweenScale_t2697902175 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
-// !!0[] UnityEngine.GameObject::GetComponentsInChildren<System.Object>()
-extern "C"  ObjectU5BU5D_t3614634134* GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
-#define GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482(__this, method) ((  ObjectU5BU5D_t3614634134* (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared)(__this, method)
 // !!0[] UnityEngine.GameObject::GetComponentsInChildren<UITweener>()
 #define GameObject_GetComponentsInChildren_TisUITweener_t2986641582_m2443222778(__this, method) ((  UITweenerU5BU5D_t2857044187* (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m1467294482_gshared)(__this, method)
 // !!0[] UnityEngine.GameObject::GetComponents<System.Object>()
@@ -846,6 +852,781 @@ extern "C"  Il2CppObject * NGUITools_AddWidget_TisIl2CppObject_m1924477599_gshar
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UIButtonKeys::.ctor()
+extern "C"  void UIButtonKeys__ctor_m2381967333 (UIButtonKeys_t2099118702 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UIButtonKeys::OnEnable()
+extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* NGUITools_t2004302824_il2cpp_TypeInfo_var;
+extern Il2CppClass* Boolean_t3825574718_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral567662507;
+extern const uint32_t UIButtonKeys_OnEnable_m3226467949_MetadataUsageId;
+extern "C"  void UIButtonKeys_OnEnable_m3226467949 (UIButtonKeys_t2099118702 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIButtonKeys_OnEnable_m3226467949_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_startsSelected_2();
+		if (!L_0)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_1 = UICamera_get_selectedObject_m317248128(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		GameObject_t1756533147 * L_3 = UICamera_get_selectedObject_m317248128(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(NGUITools_t2004302824_il2cpp_TypeInfo_var);
+		bool L_4 = NGUITools_GetActive_m96773627(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_5 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		goto IL_0050;
+	}
+
+IL_003a:
+	{
+		GameObject_t1756533147 * L_6 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		bool L_7 = ((bool)1);
+		Il2CppObject * L_8 = Box(Boolean_t3825574718_il2cpp_TypeInfo_var, &L_7);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_Notify_m2858345893(NULL /*static, unused*/, L_6, _stringLiteral567662507, L_8, /*hidden argument*/NULL);
+	}
+
+IL_0050:
+	{
+		return;
+	}
+}
+// System.Void UIButtonKeys::OnKey(UnityEngine.KeyCode)
+extern Il2CppClass* NGUITools_t2004302824_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
+extern Il2CppClass* Input_t1785128008_il2cpp_TypeInfo_var;
+extern const uint32_t UIButtonKeys_OnKey_m3917388804_MetadataUsageId;
+extern "C"  void UIButtonKeys_OnKey_m3917388804 (UIButtonKeys_t2099118702 * __this, int32_t ___key0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIButtonKeys_OnKey_m3917388804_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_022c;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_1 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(NGUITools_t2004302824_il2cpp_TypeInfo_var);
+		bool L_2 = NGUITools_GetActive_m96773627(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_022c;
+		}
+	}
+	{
+		int32_t L_3 = ___key0;
+		V_0 = L_3;
+		int32_t L_4 = V_0;
+		if (((int32_t)((int32_t)L_4-(int32_t)((int32_t)273))) == 0)
+		{
+			goto IL_0092;
+		}
+		if (((int32_t)((int32_t)L_4-(int32_t)((int32_t)273))) == 1)
+		{
+			goto IL_00b8;
+		}
+		if (((int32_t)((int32_t)L_4-(int32_t)((int32_t)273))) == 2)
+		{
+			goto IL_006c;
+		}
+		if (((int32_t)((int32_t)L_4-(int32_t)((int32_t)273))) == 3)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		int32_t L_5 = V_0;
+		if ((((int32_t)L_5) == ((int32_t)((int32_t)9))))
+		{
+			goto IL_00de;
+		}
+	}
+	{
+		goto IL_022c;
+	}
+
+IL_0046:
+	{
+		UIButtonKeys_t2099118702 * L_6 = __this->get_selectOnLeft_6();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_7 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_6, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_8 = __this->get_selectOnLeft_6();
+		NullCheck(L_8);
+		GameObject_t1756533147 * L_9 = Component_get_gameObject_m3105766835(L_8, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
+	}
+
+IL_0067:
+	{
+		goto IL_022c;
+	}
+
+IL_006c:
+	{
+		UIButtonKeys_t2099118702 * L_10 = __this->get_selectOnRight_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_11 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_10, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_11)
+		{
+			goto IL_008d;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_12 = __this->get_selectOnRight_7();
+		NullCheck(L_12);
+		GameObject_t1756533147 * L_13 = Component_get_gameObject_m3105766835(L_12, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+	}
+
+IL_008d:
+	{
+		goto IL_022c;
+	}
+
+IL_0092:
+	{
+		UIButtonKeys_t2099118702 * L_14 = __this->get_selectOnUp_4();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_15 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_14, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_15)
+		{
+			goto IL_00b3;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_16 = __this->get_selectOnUp_4();
+		NullCheck(L_16);
+		GameObject_t1756533147 * L_17 = Component_get_gameObject_m3105766835(L_16, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_17, /*hidden argument*/NULL);
+	}
+
+IL_00b3:
+	{
+		goto IL_022c;
+	}
+
+IL_00b8:
+	{
+		UIButtonKeys_t2099118702 * L_18 = __this->get_selectOnDown_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_19 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_18, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_00d9;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_20 = __this->get_selectOnDown_5();
+		NullCheck(L_20);
+		GameObject_t1756533147 * L_21 = Component_get_gameObject_m3105766835(L_20, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_21, /*hidden argument*/NULL);
+	}
+
+IL_00d9:
+	{
+		goto IL_022c;
+	}
+
+IL_00de:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_22 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)304), /*hidden argument*/NULL);
+		if (L_22)
+		{
+			goto IL_00fc;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1785128008_il2cpp_TypeInfo_var);
+		bool L_23 = Input_GetKey_m3849524999(NULL /*static, unused*/, ((int32_t)303), /*hidden argument*/NULL);
+		if (!L_23)
+		{
+			goto IL_0194;
+		}
+	}
+
+IL_00fc:
+	{
+		UIButtonKeys_t2099118702 * L_24 = __this->get_selectOnLeft_6();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_25 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_24, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_25)
+		{
+			goto IL_0122;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_26 = __this->get_selectOnLeft_6();
+		NullCheck(L_26);
+		GameObject_t1756533147 * L_27 = Component_get_gameObject_m3105766835(L_26, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
+		goto IL_018f;
+	}
+
+IL_0122:
+	{
+		UIButtonKeys_t2099118702 * L_28 = __this->get_selectOnUp_4();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_29 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_28, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_29)
+		{
+			goto IL_0148;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_30 = __this->get_selectOnUp_4();
+		NullCheck(L_30);
+		GameObject_t1756533147 * L_31 = Component_get_gameObject_m3105766835(L_30, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_31, /*hidden argument*/NULL);
+		goto IL_018f;
+	}
+
+IL_0148:
+	{
+		UIButtonKeys_t2099118702 * L_32 = __this->get_selectOnDown_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_33 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_32, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_33)
+		{
+			goto IL_016e;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_34 = __this->get_selectOnDown_5();
+		NullCheck(L_34);
+		GameObject_t1756533147 * L_35 = Component_get_gameObject_m3105766835(L_34, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_35, /*hidden argument*/NULL);
+		goto IL_018f;
+	}
+
+IL_016e:
+	{
+		UIButtonKeys_t2099118702 * L_36 = __this->get_selectOnRight_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_37 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_36, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_37)
+		{
+			goto IL_018f;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_38 = __this->get_selectOnRight_7();
+		NullCheck(L_38);
+		GameObject_t1756533147 * L_39 = Component_get_gameObject_m3105766835(L_38, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_39, /*hidden argument*/NULL);
+	}
+
+IL_018f:
+	{
+		goto IL_0227;
+	}
+
+IL_0194:
+	{
+		UIButtonKeys_t2099118702 * L_40 = __this->get_selectOnRight_7();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_41 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_40, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_41)
+		{
+			goto IL_01ba;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_42 = __this->get_selectOnRight_7();
+		NullCheck(L_42);
+		GameObject_t1756533147 * L_43 = Component_get_gameObject_m3105766835(L_42, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_43, /*hidden argument*/NULL);
+		goto IL_0227;
+	}
+
+IL_01ba:
+	{
+		UIButtonKeys_t2099118702 * L_44 = __this->get_selectOnDown_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_45 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_44, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_45)
+		{
+			goto IL_01e0;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_46 = __this->get_selectOnDown_5();
+		NullCheck(L_46);
+		GameObject_t1756533147 * L_47 = Component_get_gameObject_m3105766835(L_46, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_47, /*hidden argument*/NULL);
+		goto IL_0227;
+	}
+
+IL_01e0:
+	{
+		UIButtonKeys_t2099118702 * L_48 = __this->get_selectOnUp_4();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_49 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_48, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_49)
+		{
+			goto IL_0206;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_50 = __this->get_selectOnUp_4();
+		NullCheck(L_50);
+		GameObject_t1756533147 * L_51 = Component_get_gameObject_m3105766835(L_50, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_51, /*hidden argument*/NULL);
+		goto IL_0227;
+	}
+
+IL_0206:
+	{
+		UIButtonKeys_t2099118702 * L_52 = __this->get_selectOnLeft_6();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_53 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_52, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_53)
+		{
+			goto IL_0227;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_54 = __this->get_selectOnLeft_6();
+		NullCheck(L_54);
+		GameObject_t1756533147 * L_55 = Component_get_gameObject_m3105766835(L_54, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_55, /*hidden argument*/NULL);
+	}
+
+IL_0227:
+	{
+		goto IL_022c;
+	}
+
+IL_022c:
+	{
+		return;
+	}
+}
+// System.Void UIButtonKeys::OnClick()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
+extern const uint32_t UIButtonKeys_OnClick_m2168629058_MetadataUsageId;
+extern "C"  void UIButtonKeys_OnClick_m2168629058 (UIButtonKeys_t2099118702 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIButtonKeys_OnClick_m2168629058_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_1 = __this->get_selectOnClick_3();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		UIButtonKeys_t2099118702 * L_3 = __this->get_selectOnClick_3();
+		NullCheck(L_3);
+		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(L_3, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		UICamera_set_selectedObject_m3213041587(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+	}
+
+IL_002c:
+	{
+		return;
+	}
+}
+// System.Void UIButtonMessage::.ctor()
+extern "C"  void UIButtonMessage__ctor_m3792923956 (UIButtonMessage_t3791537815 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UIButtonMessage::Start()
+extern "C"  void UIButtonMessage_Start_m4235491016 (UIButtonMessage_t3791537815 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_mStarted_6((bool)1);
+		return;
+	}
+}
+// System.Void UIButtonMessage::OnEnable()
+extern Il2CppClass* UICamera_t1496819779_il2cpp_TypeInfo_var;
+extern const uint32_t UIButtonMessage_OnEnable_m2128297128_MetadataUsageId;
+extern "C"  void UIButtonMessage_OnEnable_m2128297128 (UIButtonMessage_t3791537815 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIButtonMessage_OnEnable_m2128297128_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_mStarted_6();
+		if (!L_0)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		bool L_1 = __this->get_mHighlighted_7();
+		if (!L_1)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_2 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(UICamera_t1496819779_il2cpp_TypeInfo_var);
+		bool L_3 = UICamera_IsHighlighted_m1075874621(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		UIButtonMessage_OnHover_m139473768(__this, L_3, /*hidden argument*/NULL);
+	}
+
+IL_0027:
+	{
+		return;
+	}
+}
+// System.Void UIButtonMessage::OnHover(System.Boolean)
+extern "C"  void UIButtonMessage_OnHover_m139473768 (UIButtonMessage_t3791537815 * __this, bool ___isOver0, const MethodInfo* method)
+{
+	{
+		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		bool L_1 = ___isOver0;
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_2 = __this->get_trigger_4();
+		if ((((int32_t)L_2) == ((int32_t)1)))
+		{
+			goto IL_002f;
+		}
+	}
+
+IL_001d:
+	{
+		bool L_3 = ___isOver0;
+		if (L_3)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		int32_t L_4 = __this->get_trigger_4();
+		if ((!(((uint32_t)L_4) == ((uint32_t)2))))
+		{
+			goto IL_0035;
+		}
+	}
+
+IL_002f:
+	{
+		UIButtonMessage_Send_m3946729644(__this, /*hidden argument*/NULL);
+	}
+
+IL_0035:
+	{
+		bool L_5 = ___isOver0;
+		__this->set_mHighlighted_7(L_5);
+	}
+
+IL_003c:
+	{
+		return;
+	}
+}
+// System.Void UIButtonMessage::OnPress(System.Boolean)
+extern "C"  void UIButtonMessage_OnPress_m1633933775 (UIButtonMessage_t3791537815 * __this, bool ___isPressed0, const MethodInfo* method)
+{
+	{
+		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		bool L_1 = ___isPressed0;
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_2 = __this->get_trigger_4();
+		if ((((int32_t)L_2) == ((int32_t)3)))
+		{
+			goto IL_002f;
+		}
+	}
+
+IL_001d:
+	{
+		bool L_3 = ___isPressed0;
+		if (L_3)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		int32_t L_4 = __this->get_trigger_4();
+		if ((!(((uint32_t)L_4) == ((uint32_t)4))))
+		{
+			goto IL_0035;
+		}
+	}
+
+IL_002f:
+	{
+		UIButtonMessage_Send_m3946729644(__this, /*hidden argument*/NULL);
+	}
+
+IL_0035:
+	{
+		return;
+	}
+}
+// System.Void UIButtonMessage::OnClick()
+extern "C"  void UIButtonMessage_OnClick_m503765105 (UIButtonMessage_t3791537815 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		int32_t L_1 = __this->get_trigger_4();
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		UIButtonMessage_Send_m3946729644(__this, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// System.Void UIButtonMessage::OnDoubleClick()
+extern "C"  void UIButtonMessage_OnDoubleClick_m1501383984 (UIButtonMessage_t3791537815 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = Behaviour_get_enabled_m4079055610(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_1 = __this->get_trigger_4();
+		if ((!(((uint32_t)L_1) == ((uint32_t)5))))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UIButtonMessage_Send_m3946729644(__this, /*hidden argument*/NULL);
+	}
+
+IL_001d:
+	{
+		return;
+	}
+}
+// System.Void UIButtonMessage::Send()
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponentsInChildren_TisTransform_t3275118058_m2357044025_MethodInfo_var;
+extern const uint32_t UIButtonMessage_Send_m3946729644_MetadataUsageId;
+extern "C"  void UIButtonMessage_Send_m3946729644 (UIButtonMessage_t3791537815 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIButtonMessage_Send_m3946729644_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	TransformU5BU5D_t3764228911* V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	Transform_t3275118058 * V_3 = NULL;
+	{
+		String_t* L_0 = __this->get_functionName_3();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_1 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0011:
+	{
+		GameObject_t1756533147 * L_2 = __this->get_target_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_3 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_2, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		__this->set_target_2(L_4);
+	}
+
+IL_002e:
+	{
+		bool L_5 = __this->get_includeChildren_5();
+		if (!L_5)
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_6 = __this->get_target_2();
+		NullCheck(L_6);
+		TransformU5BU5D_t3764228911* L_7 = GameObject_GetComponentsInChildren_TisTransform_t3275118058_m2357044025(L_6, /*hidden argument*/GameObject_GetComponentsInChildren_TisTransform_t3275118058_m2357044025_MethodInfo_var);
+		V_0 = L_7;
+		V_1 = 0;
+		TransformU5BU5D_t3764228911* L_8 = V_0;
+		NullCheck(L_8);
+		V_2 = (((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length))));
+		goto IL_0070;
+	}
+
+IL_0050:
+	{
+		TransformU5BU5D_t3764228911* L_9 = V_0;
+		int32_t L_10 = V_1;
+		NullCheck(L_9);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, L_10);
+		int32_t L_11 = L_10;
+		Transform_t3275118058 * L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		V_3 = L_12;
+		Transform_t3275118058 * L_13 = V_3;
+		NullCheck(L_13);
+		GameObject_t1756533147 * L_14 = Component_get_gameObject_m3105766835(L_13, /*hidden argument*/NULL);
+		String_t* L_15 = __this->get_functionName_3();
+		GameObject_t1756533147 * L_16 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		GameObject_SendMessage_m71956653(L_14, L_15, L_16, 1, /*hidden argument*/NULL);
+		int32_t L_17 = V_1;
+		V_1 = ((int32_t)((int32_t)L_17+(int32_t)1));
+	}
+
+IL_0070:
+	{
+		int32_t L_18 = V_1;
+		int32_t L_19 = V_2;
+		if ((((int32_t)L_18) < ((int32_t)L_19)))
+		{
+			goto IL_0050;
+		}
+	}
+	{
+		goto IL_0094;
+	}
+
+IL_007c:
+	{
+		GameObject_t1756533147 * L_20 = __this->get_target_2();
+		String_t* L_21 = __this->get_functionName_3();
+		GameObject_t1756533147 * L_22 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		NullCheck(L_20);
+		GameObject_SendMessage_m71956653(L_20, L_21, L_22, 1, /*hidden argument*/NULL);
+	}
+
+IL_0094:
+	{
+		return;
+	}
+}
 // System.Void UIButtonOffset::.ctor()
 extern "C"  void UIButtonOffset__ctor_m3498279228 (UIButtonOffset_t1501810361 * __this, const MethodInfo* method)
 {
@@ -48251,50 +49032,6 @@ IL_0033:
 		Behaviour_set_enabled_m1796096907(__this, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
-}
-// System.Void UITweener/OnFinished::.ctor(System.Object,System.IntPtr)
-extern "C"  void OnFinished__ctor_m9576121 (OnFinished_t3688353092 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
-{
-	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Void UITweener/OnFinished::Invoke(UITweener)
-extern "C"  void OnFinished_Invoke_m3742940519 (OnFinished_t3688353092 * __this, UITweener_t2986641582 * ___tween0, const MethodInfo* method)
-{
-	if(__this->get_prev_9() != NULL)
-	{
-		OnFinished_Invoke_m3742940519((OnFinished_t3688353092 *)__this->get_prev_9(),___tween0, method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, UITweener_t2986641582 * ___tween0, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___tween0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (void* __this, UITweener_t2986641582 * ___tween0, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___tween0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(___tween0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-}
-// System.IAsyncResult UITweener/OnFinished::BeginInvoke(UITweener,System.AsyncCallback,System.Object)
-extern "C"  Il2CppObject * OnFinished_BeginInvoke_m2829337724 (OnFinished_t3688353092 * __this, UITweener_t2986641582 * ___tween0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
-{
-	void *__d_args[2] = {0};
-	__d_args[0] = ___tween0;
-	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
-}
-// System.Void UITweener/OnFinished::EndInvoke(System.IAsyncResult)
-extern "C"  void OnFinished_EndInvoke_m2228454315 (OnFinished_t3688353092 * __this, Il2CppObject * ___result0, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

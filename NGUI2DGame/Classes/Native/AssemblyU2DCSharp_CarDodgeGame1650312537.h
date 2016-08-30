@@ -18,10 +18,10 @@ struct GameObjectU5BU5D_t3057952154;
 struct GameObject_t1756533147;
 // UILabel
 struct UILabel_t1795115428;
-// UnityEngine.AudioSource
-struct AudioSource_t1135106623;
 // OffsetScroller
 struct OffsetScroller_t1610136665;
+// PlayerCarController
+struct PlayerCarController_t116747357;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
@@ -65,16 +65,18 @@ public:
 	UILabel_t1795115428 * ___mScoreLabel_16;
 	// UILabel CarDodgeGame::mGameLevelLabel
 	UILabel_t1795115428 * ___mGameLevelLabel_17;
-	// UnityEngine.AudioSource CarDodgeGame::mBackgroundMusic
-	AudioSource_t1135106623 * ___mBackgroundMusic_18;
 	// System.Int32 CarDodgeGame::mCurrentScore
-	int32_t ___mCurrentScore_19;
+	int32_t ___mCurrentScore_18;
 	// System.Int32 CarDodgeGame::mGameLevel
-	int32_t ___mGameLevel_20;
+	int32_t ___mGameLevel_19;
 	// UnityEngine.GameObject CarDodgeGame::mScrollerBackground
-	GameObject_t1756533147 * ___mScrollerBackground_21;
+	GameObject_t1756533147 * ___mScrollerBackground_20;
 	// OffsetScroller CarDodgeGame::mBackgroundOffsetScroller
-	OffsetScroller_t1610136665 * ___mBackgroundOffsetScroller_22;
+	OffsetScroller_t1610136665 * ___mBackgroundOffsetScroller_21;
+	// UnityEngine.GameObject CarDodgeGame::mPlayerCar
+	GameObject_t1756533147 * ___mPlayerCar_22;
+	// PlayerCarController CarDodgeGame::mPlayerCarController
+	PlayerCarController_t116747357 * ___mPlayerCarController_23;
 
 public:
 	inline static int32_t get_offset_of_mEnemySpawnPoint_3() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mEnemySpawnPoint_3)); }
@@ -204,47 +206,56 @@ public:
 		Il2CppCodeGenWriteBarrier(&___mGameLevelLabel_17, value);
 	}
 
-	inline static int32_t get_offset_of_mBackgroundMusic_18() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mBackgroundMusic_18)); }
-	inline AudioSource_t1135106623 * get_mBackgroundMusic_18() const { return ___mBackgroundMusic_18; }
-	inline AudioSource_t1135106623 ** get_address_of_mBackgroundMusic_18() { return &___mBackgroundMusic_18; }
-	inline void set_mBackgroundMusic_18(AudioSource_t1135106623 * value)
+	inline static int32_t get_offset_of_mCurrentScore_18() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mCurrentScore_18)); }
+	inline int32_t get_mCurrentScore_18() const { return ___mCurrentScore_18; }
+	inline int32_t* get_address_of_mCurrentScore_18() { return &___mCurrentScore_18; }
+	inline void set_mCurrentScore_18(int32_t value)
 	{
-		___mBackgroundMusic_18 = value;
-		Il2CppCodeGenWriteBarrier(&___mBackgroundMusic_18, value);
+		___mCurrentScore_18 = value;
 	}
 
-	inline static int32_t get_offset_of_mCurrentScore_19() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mCurrentScore_19)); }
-	inline int32_t get_mCurrentScore_19() const { return ___mCurrentScore_19; }
-	inline int32_t* get_address_of_mCurrentScore_19() { return &___mCurrentScore_19; }
-	inline void set_mCurrentScore_19(int32_t value)
+	inline static int32_t get_offset_of_mGameLevel_19() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mGameLevel_19)); }
+	inline int32_t get_mGameLevel_19() const { return ___mGameLevel_19; }
+	inline int32_t* get_address_of_mGameLevel_19() { return &___mGameLevel_19; }
+	inline void set_mGameLevel_19(int32_t value)
 	{
-		___mCurrentScore_19 = value;
+		___mGameLevel_19 = value;
 	}
 
-	inline static int32_t get_offset_of_mGameLevel_20() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mGameLevel_20)); }
-	inline int32_t get_mGameLevel_20() const { return ___mGameLevel_20; }
-	inline int32_t* get_address_of_mGameLevel_20() { return &___mGameLevel_20; }
-	inline void set_mGameLevel_20(int32_t value)
+	inline static int32_t get_offset_of_mScrollerBackground_20() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mScrollerBackground_20)); }
+	inline GameObject_t1756533147 * get_mScrollerBackground_20() const { return ___mScrollerBackground_20; }
+	inline GameObject_t1756533147 ** get_address_of_mScrollerBackground_20() { return &___mScrollerBackground_20; }
+	inline void set_mScrollerBackground_20(GameObject_t1756533147 * value)
 	{
-		___mGameLevel_20 = value;
+		___mScrollerBackground_20 = value;
+		Il2CppCodeGenWriteBarrier(&___mScrollerBackground_20, value);
 	}
 
-	inline static int32_t get_offset_of_mScrollerBackground_21() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mScrollerBackground_21)); }
-	inline GameObject_t1756533147 * get_mScrollerBackground_21() const { return ___mScrollerBackground_21; }
-	inline GameObject_t1756533147 ** get_address_of_mScrollerBackground_21() { return &___mScrollerBackground_21; }
-	inline void set_mScrollerBackground_21(GameObject_t1756533147 * value)
+	inline static int32_t get_offset_of_mBackgroundOffsetScroller_21() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mBackgroundOffsetScroller_21)); }
+	inline OffsetScroller_t1610136665 * get_mBackgroundOffsetScroller_21() const { return ___mBackgroundOffsetScroller_21; }
+	inline OffsetScroller_t1610136665 ** get_address_of_mBackgroundOffsetScroller_21() { return &___mBackgroundOffsetScroller_21; }
+	inline void set_mBackgroundOffsetScroller_21(OffsetScroller_t1610136665 * value)
 	{
-		___mScrollerBackground_21 = value;
-		Il2CppCodeGenWriteBarrier(&___mScrollerBackground_21, value);
+		___mBackgroundOffsetScroller_21 = value;
+		Il2CppCodeGenWriteBarrier(&___mBackgroundOffsetScroller_21, value);
 	}
 
-	inline static int32_t get_offset_of_mBackgroundOffsetScroller_22() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mBackgroundOffsetScroller_22)); }
-	inline OffsetScroller_t1610136665 * get_mBackgroundOffsetScroller_22() const { return ___mBackgroundOffsetScroller_22; }
-	inline OffsetScroller_t1610136665 ** get_address_of_mBackgroundOffsetScroller_22() { return &___mBackgroundOffsetScroller_22; }
-	inline void set_mBackgroundOffsetScroller_22(OffsetScroller_t1610136665 * value)
+	inline static int32_t get_offset_of_mPlayerCar_22() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mPlayerCar_22)); }
+	inline GameObject_t1756533147 * get_mPlayerCar_22() const { return ___mPlayerCar_22; }
+	inline GameObject_t1756533147 ** get_address_of_mPlayerCar_22() { return &___mPlayerCar_22; }
+	inline void set_mPlayerCar_22(GameObject_t1756533147 * value)
 	{
-		___mBackgroundOffsetScroller_22 = value;
-		Il2CppCodeGenWriteBarrier(&___mBackgroundOffsetScroller_22, value);
+		___mPlayerCar_22 = value;
+		Il2CppCodeGenWriteBarrier(&___mPlayerCar_22, value);
+	}
+
+	inline static int32_t get_offset_of_mPlayerCarController_23() { return static_cast<int32_t>(offsetof(CarDodgeGame_t1650312537, ___mPlayerCarController_23)); }
+	inline PlayerCarController_t116747357 * get_mPlayerCarController_23() const { return ___mPlayerCarController_23; }
+	inline PlayerCarController_t116747357 ** get_address_of_mPlayerCarController_23() { return &___mPlayerCarController_23; }
+	inline void set_mPlayerCarController_23(PlayerCarController_t116747357 * value)
+	{
+		___mPlayerCarController_23 = value;
+		Il2CppCodeGenWriteBarrier(&___mPlayerCarController_23, value);
 	}
 };
 

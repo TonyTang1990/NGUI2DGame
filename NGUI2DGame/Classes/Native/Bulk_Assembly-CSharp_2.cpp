@@ -13,12 +13,20 @@
 #include <limits>
 #include <assert.h>
 
+// UITweener/OnFinished
+struct OnFinished_t3688353092;
+// System.Object
+struct Il2CppObject;
+// UITweener
+struct UITweener_t2986641582;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
 // UIViewport
 struct UIViewport_t1541362616;
 // UnityEngine.Camera
 struct Camera_t189460977;
-// System.Object
-struct Il2CppObject;
 // UIWidget
 struct UIWidget_t1453041918;
 // UnityEngine.GameObject
@@ -63,10 +71,6 @@ struct Object_t1021602117;
 struct U3CCoroutineFunctionU3Ec__Iterator1_t2628966417;
 // UpdateManager/DestroyEntry
 struct DestroyEntry_t4282624417;
-// System.IAsyncResult
-struct IAsyncResult_t1999651008;
-// System.AsyncCallback
-struct AsyncCallback_t163412349;
 // Validator
 struct Validator_t172396982;
 // System.String
@@ -83,11 +87,19 @@ struct WindowDragTilt_t1404465963;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharp_UITweener_Method1694901606.h"
+#include "AssemblyU2DCSharp_UITweener_Method1694901606MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UITweener_OnFinished3688353092.h"
+#include "AssemblyU2DCSharp_UITweener_OnFinished3688353092MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "AssemblyU2DCSharp_UITweener2986641582.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
 #include "AssemblyU2DCSharp_UITweener_Style4221671544.h"
 #include "AssemblyU2DCSharp_UITweener_Style4221671544MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIViewport1541362616.h"
 #include "AssemblyU2DCSharp_UIViewport1541362616MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
 #include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
@@ -113,7 +125,6 @@ struct WindowDragTilt_t1404465963;
 #include "AssemblyU2DCSharp_UIGeometry1005900006.h"
 #include "AssemblyU2DCSharp_BetterList_1_gen1673430560MethodDeclarations.h"
 #include "AssemblyU2DCSharp_BetterList_1_gen1673430560.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "AssemblyU2DCSharp_UIPanel1795085332MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIPanel1795085332.h"
 #include "AssemblyU2DCSharp_NGUIMath221371675MethodDeclarations.h"
@@ -138,7 +149,6 @@ struct WindowDragTilt_t1404465963;
 #include "AssemblyU2DCSharp_UICamera1496819779.h"
 #include "Assembly-CSharp_ArrayTypes.h"
 #include "mscorlib_System_Comparison_1_gen2714780769.h"
-#include "mscorlib_System_IntPtr2504060609.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
 #include "AssemblyU2DCSharp_NGUITools2004302824MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Application354826772MethodDeclarations.h"
@@ -179,7 +189,6 @@ struct WindowDragTilt_t1404465963;
 #include "mscorlib_System_UInt322149682021.h"
 #include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818.h"
-#include "mscorlib_System_AsyncCallback163412349.h"
 #include "AssemblyU2DCSharp_Validator172396982.h"
 #include "AssemblyU2DCSharp_Validator172396982MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Regex1803876613MethodDeclarations.h"
@@ -219,6 +228,50 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m2049635786_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UITweener/OnFinished::.ctor(System.Object,System.IntPtr)
+extern "C"  void OnFinished__ctor_m9576121 (OnFinished_t3688353092 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UITweener/OnFinished::Invoke(UITweener)
+extern "C"  void OnFinished_Invoke_m3742940519 (OnFinished_t3688353092 * __this, UITweener_t2986641582 * ___tween0, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		OnFinished_Invoke_m3742940519((OnFinished_t3688353092 *)__this->get_prev_9(),___tween0, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, UITweener_t2986641582 * ___tween0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___tween0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (void* __this, UITweener_t2986641582 * ___tween0, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___tween0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(___tween0,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult UITweener/OnFinished::BeginInvoke(UITweener,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * OnFinished_BeginInvoke_m2829337724 (OnFinished_t3688353092 * __this, UITweener_t2986641582 * ___tween0, AsyncCallback_t163412349 * ___callback1, Il2CppObject * ___object2, const MethodInfo* method)
+{
+	void *__d_args[2] = {0};
+	__d_args[0] = ___tween0;
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback1, (Il2CppObject*)___object2);
+}
+// System.Void UITweener/OnFinished::EndInvoke(System.IAsyncResult)
+extern "C"  void OnFinished_EndInvoke_m2228454315 (OnFinished_t3688353092 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
 // System.Void UIViewport::.ctor()
 extern "C"  void UIViewport__ctor_m4190691379 (UIViewport_t1541362616 * __this, const MethodInfo* method)
 {

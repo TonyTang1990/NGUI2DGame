@@ -1,4 +1,4 @@
-//Generated on : 8/30/2016 2:59:37 AM
+//Generated on : 8/30/2016 4:13:58 PM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -215,9 +215,17 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_get_volume();
 		Register_UnityEngine_AudioSource_get_volume();
 
+		//System.Void UnityEngine.AudioSource::Play(System.UInt64)
+		void Register_UnityEngine_AudioSource_Play();
+		Register_UnityEngine_AudioSource_Play();
+
 		//System.Void UnityEngine.AudioSource::PlayOneShot(UnityEngine.AudioClip,System.Single)
 		void Register_UnityEngine_AudioSource_PlayOneShot();
 		Register_UnityEngine_AudioSource_PlayOneShot();
+
+		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
+		void Register_UnityEngine_AudioSource_set_clip();
+		Register_UnityEngine_AudioSource_set_clip();
 
 		//System.Void UnityEngine.AudioSource::set_pitch(System.Single)
 		void Register_UnityEngine_AudioSource_set_pitch();

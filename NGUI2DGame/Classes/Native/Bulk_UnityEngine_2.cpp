@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// UnityEngine.Scripting.UsedByNativeCodeAttribute
+struct UsedByNativeCodeAttribute_t3212052468;
 // UnityEngine.GUILayer
 struct GUILayer_t3254902478;
 // System.Object
@@ -145,11 +147,14 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode3212052468.h"
+#include "UnityEngine_UnityEngine_Scripting_UsedByNativeCode3212052468MethodDeclarations.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_Attribute542643598MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents3505065032.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents3505065032MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents_HitInfo1761367055.h"
 #include "mscorlib_System_Boolean3825574718.h"
 #include "UnityEngine_ArrayTypes.h"
@@ -180,7 +185,6 @@ struct TypeInferenceRuleAttribute_t1390152093;
 #include "mscorlib_System_Object2689449295.h"
 #include "UnityEngine_UnityEngine_Serialization_FormerlySeri3673080018.h"
 #include "UnityEngine_UnityEngine_Serialization_FormerlySeri3673080018MethodDeclarations.h"
-#include "mscorlib_System_Attribute542643598MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SerializeField3073427462.h"
 #include "UnityEngine_UnityEngine_SerializeField3073427462MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SerializePrivateVariables2241034664.h"
@@ -408,6 +412,14 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m2721246802_gs
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.Scripting.UsedByNativeCodeAttribute::.ctor()
+extern "C"  void UsedByNativeCodeAttribute__ctor_m2459832290 (UsedByNativeCodeAttribute_t3212052468 * __this, const MethodInfo* method)
+{
+	{
+		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.SendMouseEvents::.cctor()
 extern Il2CppClass* SendMouseEvents_t3505065032_il2cpp_TypeInfo_var;
 extern Il2CppClass* HitInfoU5BU5D_t934504150_il2cpp_TypeInfo_var;

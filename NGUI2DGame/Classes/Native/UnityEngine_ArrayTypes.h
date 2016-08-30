@@ -73,6 +73,8 @@ struct Transform_t3275118058;
 struct Collider_t3497673348;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
+// UnityEngine.AudioClip
+struct AudioClip_t1932558630;
 
 #include "mscorlib_System_Array3829468939.h"
 #include "UnityEngine_UnityEngine_Object1021602117.h"
@@ -116,6 +118,7 @@ struct GameObject_t1756533147;
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "UnityEngine_UnityEngine_Bounds3033363703.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
+#include "UnityEngine_UnityEngine_AudioClip1932558630.h"
 
 #pragma once
 // UnityEngine.Object[]
@@ -818,6 +821,21 @@ public:
 	inline GameObject_t1756533147 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline GameObject_t1756533147 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, GameObject_t1756533147 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.AudioClip[]
+struct AudioClipU5BU5D_t2203355011  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) AudioClip_t1932558630 * m_Items[1];
+
+public:
+	inline AudioClip_t1932558630 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline AudioClip_t1932558630 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, AudioClip_t1932558630 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
