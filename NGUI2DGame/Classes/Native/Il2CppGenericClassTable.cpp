@@ -1953,6 +1953,13 @@ extern Il2CppGenericClass ICollection_1_t2077729584_GenericClass;
 extern Il2CppGenericClass Enumerator_t29505085_GenericClass;
 extern Il2CppGenericClass IComparer_1_t3375084697_GenericClass;
 extern Il2CppGenericClass Comparison_1_t2387393130_GenericClass;
+extern Il2CppGenericClass List_1_t106196250_GenericClass;
+extern Il2CppGenericClass IEnumerable_1_t1029202163_GenericClass;
+extern Il2CppGenericClass IEnumerator_1_t2507566241_GenericClass;
+extern Il2CppGenericClass ICollection_1_t1689150423_GenericClass;
+extern Il2CppGenericClass Enumerator_t3935893220_GenericClass;
+extern Il2CppGenericClass IComparer_1_t2986505536_GenericClass;
+extern Il2CppGenericClass Comparison_1_t1998813969_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t3703049753_GenericClass;
 extern Il2CppGenericClass InternalEnumerator_1_t2791310892_GenericClass;
 extern Il2CppGenericClass ICollection_1_t2884633935_GenericClass;
@@ -2162,7 +2169,7 @@ extern Il2CppGenericClass IEqualityComparer_1_t2063206230_GenericClass;
 extern Il2CppGenericClass IComparer_1_t1676750663_GenericClass;
 extern Il2CppGenericClass IComparer_1_t389494294_GenericClass;
 extern Il2CppGenericClass IList_1_t1971352055_GenericClass;
-extern Il2CppGenericClass* const s_Il2CppGenericTypes[2144] = 
+extern Il2CppGenericClass* const s_Il2CppGenericTypes[2151] = 
 {
 	&IEnumerator_1_t164973122_GenericClass,
 	&InternalEnumerator_1_t3548201557_GenericClass,
@@ -4099,6 +4106,13 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[2144] =
 	&Enumerator_t29505085_GenericClass,
 	&IComparer_1_t3375084697_GenericClass,
 	&Comparison_1_t2387393130_GenericClass,
+	&List_1_t106196250_GenericClass,
+	&IEnumerable_1_t1029202163_GenericClass,
+	&IEnumerator_1_t2507566241_GenericClass,
+	&ICollection_1_t1689150423_GenericClass,
+	&Enumerator_t3935893220_GenericClass,
+	&IComparer_1_t2986505536_GenericClass,
+	&Comparison_1_t1998813969_GenericClass,
 	&IEnumerator_1_t3703049753_GenericClass,
 	&InternalEnumerator_1_t2791310892_GenericClass,
 	&ICollection_1_t2884633935_GenericClass,

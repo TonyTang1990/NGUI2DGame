@@ -1,4 +1,4 @@
-//Generated on : 8/30/2016 7:47:17 PM
+//Generated on : 9/1/2016 12:57:22 AM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -2502,6 +2502,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::INTERNAL_set_rotation(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_INTERNAL_set_rotation();
 		Register_UnityEngine_Transform_INTERNAL_set_rotation();
+
+		//System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
+		void Register_UnityEngine_Transform_SetParent();
+		Register_UnityEngine_Transform_SetParent();
 
 		//System.Void UnityEngine.Transform::set_hasChanged(System.Boolean)
 		void Register_UnityEngine_Transform_set_hasChanged();

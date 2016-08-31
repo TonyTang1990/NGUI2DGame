@@ -61,6 +61,8 @@ struct UIRoot_t389944298;
 struct Paragraph_t2587095060;
 // GameConfigurationManager/Account
 struct Account_t3062613273;
+// MapManager/GridInfo
+struct GridInfo_t737075118;
 
 #include "mscorlib_System_Array3829468939.h"
 #include "AssemblyU2DCSharp_InvBaseItem3744336511.h"
@@ -89,6 +91,7 @@ struct Account_t3062613273;
 #include "AssemblyU2DCSharp_UIRoot389944298.h"
 #include "AssemblyU2DCSharp_UITextList_Paragraph2587095060.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_Account3062613273.h"
+#include "AssemblyU2DCSharp_MapManager_GridInfo737075118.h"
 
 #pragma once
 // InvBaseItem[]
@@ -476,6 +479,21 @@ public:
 	inline Account_t3062613273 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline Account_t3062613273 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, Account_t3062613273 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// MapManager/GridInfo[]
+struct GridInfoU5BU5D_t919696859  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) GridInfo_t737075118 * m_Items[1];
+
+public:
+	inline GridInfo_t737075118 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline GridInfo_t737075118 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, GridInfo_t737075118 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

@@ -1944,13 +1944,18 @@
 #include "AssemblyU2DCSharp_GameManager2252321495.h"
 #include "AssemblyU2DCSharp_InputControllerManager1050051015.h"
 #include "AssemblyU2DCSharp_ObjectPoolManager3813236580.h"
+#include "AssemblyU2DCSharp_MapManager3593696545.h"
+#include "AssemblyU2DCSharp_MapManager_GridInfo737075118.h"
+#include "AssemblyU2DCSharp_SnakeHead2301560042.h"
+#include "AssemblyU2DCSharp_SnakeManager2989862063.h"
+#include "AssemblyU2DCSharp_SnakeManager_U3CSnakeMoveU3Ec__Ite77864392.h"
 #include "AssemblyU2DCSharp_SoundManager654432262.h"
 #include "AssemblyU2DCSharp_GameChoosePanel1813263919.h"
 #include "AssemblyU2DCSharp_GamePanel539122112.h"
 #include "AssemblyU2DCSharp_GameSettingPanel4173768872.h"
 #include "AssemblyU2DCSharp_GameUI4016257260.h"
 #include "AssemblyU2DCSharp_LoadingProcess282725851.h"
-#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375848.h"
+#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375847.h"
 #include "AssemblyU2DCSharp_AccountInputField2916814735.h"
 #include "AssemblyU2DCSharp_LoginButton970805563.h"
 #include "AssemblyU2DCSharp_LoginManager973619992.h"
@@ -2709,6 +2714,8 @@
 #include "AssemblyU2DCSharp_UISlicedSprite4102963883.h"
 #include "AssemblyU2DCSharp_UITiledSprite240360451.h"
 #include "AssemblyU2DCSharp_ValidBounding40306510.h"
+#include "AssemblyU2DCSharp_Blocker3291696294.h"
+#include "AssemblyU2DCSharp_SnakeFood2261154416.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU2866209745.h"
 
 
@@ -2718,7 +2725,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[12378] = 
+extern const int32_t g_FieldOffsetTable[12416] = 
 {
 	0,
 	0,
@@ -14952,28 +14959,29 @@ extern const int32_t g_FieldOffsetTable[12378] =
 	UIViewport_t1541362616::get_offset_of_bottomRight_4(),
 	UIViewport_t1541362616::get_offset_of_fullSize_5(),
 	UIViewport_t1541362616::get_offset_of_mCam_6(),
-	CarDodgeGame_t1650312537_StaticFields::get_offset_of_mCarDodgeGameInstance_2(),
-	CarDodgeGame_t1650312537::get_offset_of_mEnemySpawnPoint_3(),
-	CarDodgeGame_t1650312537::get_offset_of_mPlayerSpawnPoint_4(),
-	CarDodgeGame_t1650312537::get_offset_of_mNormalEnemyCar_5(),
-	CarDodgeGame_t1650312537::get_offset_of_mTruckEnemyCar_6(),
-	CarDodgeGame_t1650312537::get_offset_of_mFastEnemyCar_7(),
-	CarDodgeGame_t1650312537::get_offset_of_mNormalCarSpawnChange_8(),
-	CarDodgeGame_t1650312537::get_offset_of_mTruckSpawnChance_9(),
-	CarDodgeGame_t1650312537::get_offset_of_mFastCarSpawnChance_10(),
-	CarDodgeGame_t1650312537::get_offset_of_mMaxSpawnSpeed_11(),
-	CarDodgeGame_t1650312537::get_offset_of_mMinSpawnSpeed_12(),
-	CarDodgeGame_t1650312537::get_offset_of_mOriginalMaxSpawnSpeed_13(),
-	CarDodgeGame_t1650312537::get_offset_of_mOriginalMinSpawnSpeed_14(),
-	CarDodgeGame_t1650312537::get_offset_of_mCurrentSpawnSpeed_15(),
-	CarDodgeGame_t1650312537::get_offset_of_mScoreLabel_16(),
-	CarDodgeGame_t1650312537::get_offset_of_mGameLevelLabel_17(),
-	CarDodgeGame_t1650312537::get_offset_of_mCurrentScore_18(),
-	CarDodgeGame_t1650312537::get_offset_of_mGameLevel_19(),
-	CarDodgeGame_t1650312537::get_offset_of_mScrollerBackground_20(),
-	CarDodgeGame_t1650312537::get_offset_of_mBackgroundOffsetScroller_21(),
-	CarDodgeGame_t1650312537::get_offset_of_mPlayerCar_22(),
-	CarDodgeGame_t1650312537::get_offset_of_mPlayerCarController_23(),
+	0,
+	CarDodgeGame_t1650312537_StaticFields::get_offset_of_mCarDodgeGameInstance_3(),
+	CarDodgeGame_t1650312537::get_offset_of_mEnemySpawnPoint_4(),
+	CarDodgeGame_t1650312537::get_offset_of_mPlayerSpawnPoint_5(),
+	CarDodgeGame_t1650312537::get_offset_of_mNormalEnemyCar_6(),
+	CarDodgeGame_t1650312537::get_offset_of_mTruckEnemyCar_7(),
+	CarDodgeGame_t1650312537::get_offset_of_mFastEnemyCar_8(),
+	CarDodgeGame_t1650312537::get_offset_of_mNormalCarSpawnChange_9(),
+	CarDodgeGame_t1650312537::get_offset_of_mTruckSpawnChance_10(),
+	CarDodgeGame_t1650312537::get_offset_of_mFastCarSpawnChance_11(),
+	CarDodgeGame_t1650312537::get_offset_of_mMaxSpawnSpeed_12(),
+	CarDodgeGame_t1650312537::get_offset_of_mMinSpawnSpeed_13(),
+	CarDodgeGame_t1650312537::get_offset_of_mOriginalMaxSpawnSpeed_14(),
+	CarDodgeGame_t1650312537::get_offset_of_mOriginalMinSpawnSpeed_15(),
+	CarDodgeGame_t1650312537::get_offset_of_mCurrentSpawnSpeed_16(),
+	CarDodgeGame_t1650312537::get_offset_of_mScoreLabel_17(),
+	CarDodgeGame_t1650312537::get_offset_of_mGameLevelLabel_18(),
+	CarDodgeGame_t1650312537::get_offset_of_mCurrentScore_19(),
+	CarDodgeGame_t1650312537::get_offset_of_mGameLevel_20(),
+	CarDodgeGame_t1650312537::get_offset_of_mScrollerBackground_21(),
+	CarDodgeGame_t1650312537::get_offset_of_mBackgroundOffsetScroller_22(),
+	CarDodgeGame_t1650312537::get_offset_of_mPlayerCar_23(),
+	CarDodgeGame_t1650312537::get_offset_of_mPlayerCarController_24(),
 	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U24PC_0(),
 	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U24current_1(),
 	U3CSpawnCoroutineU3Ec__Iterator3_t148974859::get_offset_of_U3CU3Ef__this_2(),
@@ -15046,6 +15054,43 @@ extern const int32_t g_FieldOffsetTable[12378] =
 	ObjectPoolManager_t3813236580::get_offset_of_mAmountForEachEnemyCar_4(),
 	ObjectPoolManager_t3813236580::get_offset_of_mEnemyCarTwoDimensionList_5(),
 	ObjectPoolManager_t3813236580::get_offset_of_mWillGrow_6(),
+	0,
+	0,
+	MapManager_t3593696545_StaticFields::get_offset_of_mMapManagerInstance_4(),
+	MapManager_t3593696545::get_offset_of_mEdgeBlock_5(),
+	MapManager_t3593696545::get_offset_of_mRow_6(),
+	MapManager_t3593696545::get_offset_of_mColumn_7(),
+	MapManager_t3593696545::get_offset_of_mGridList_8(),
+	MapManager_t3593696545::get_offset_of_mAvaliableGridList_9(),
+	GridInfo_t737075118::get_offset_of_mOccupied_0(),
+	GridInfo_t737075118::get_offset_of_mGridPosition_1(),
+	GridInfo_t737075118::get_offset_of_mGridIndex_2(),
+	SnakeHead_t2301560042::get_offset_of_mCurrentMoveDir_2(),
+	SnakeManager_t2989862063_StaticFields::get_offset_of_mSnakeManagerInstance_2(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeFood_3(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeHeadGO_4(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeHead_5(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeTailGO_6(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeFoodInstance_7(),
+	SnakeManager_t2989862063::get_offset_of_mCurrentAvaliableSnakeFoodGO_8(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeList_9(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeMoveIntervalTime_10(),
+	SnakeManager_t2989862063::get_offset_of_mOriginalSnakeMoveIntervalTime_11(),
+	SnakeManager_t2989862063::get_offset_of_mLastTailPosition_12(),
+	SnakeManager_t2989862063::get_offset_of_mLastTailIndex_13(),
+	SnakeManager_t2989862063::get_offset_of_mIsGameOver_14(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeTailNumber_15(),
+	SnakeManager_t2989862063::get_offset_of_mLevelUpNumbers_16(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeGameSpeedLevel_17(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeTailsNumberText_18(),
+	SnakeManager_t2989862063::get_offset_of_mSnakeGameSpeedText_19(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U3CsnakedotcountU3E__0_0(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U3ClasttailpostionU3E__1_1(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U3CindexU3E__2_2(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U3CiU3E__3_3(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U24PC_4(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U24current_5(),
+	U3CSnakeMoveU3Ec__Iterator6_t77864392::get_offset_of_U3CU3Ef__this_6(),
 	SoundManager_t654432262_StaticFields::get_offset_of_mSoundManagerInstance_2(),
 	SoundManager_t654432262::get_offset_of_mGameBackgroundMusic_3(),
 	SoundManager_t654432262::get_offset_of_mGameBackgroundMusciClipChoice_4(),
@@ -15067,12 +15112,12 @@ extern const int32_t g_FieldOffsetTable[12378] =
 	LoadingProcess_t282725851::get_offset_of_mProcessScrollBar_2(),
 	LoadingProcess_t282725851::get_offset_of_mCurrentProcessPer_3(),
 	LoadingProcess_t282725851::get_offset_of_mIsLoadingComplete_4(),
-	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CexecutecountU3E__0_0(),
-	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CinternaltimeU3E__1_1(),
-	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CiU3E__2_2(),
-	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U24PC_3(),
-	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U24current_4(),
-	U3CUpdateProcessBarU3Ec__Iterator6_t1282375848::get_offset_of_U3CU3Ef__this_5(),
+	U3CUpdateProcessBarU3Ec__Iterator7_t1282375847::get_offset_of_U3CexecutecountU3E__0_0(),
+	U3CUpdateProcessBarU3Ec__Iterator7_t1282375847::get_offset_of_U3CinternaltimeU3E__1_1(),
+	U3CUpdateProcessBarU3Ec__Iterator7_t1282375847::get_offset_of_U3CiU3E__2_2(),
+	U3CUpdateProcessBarU3Ec__Iterator7_t1282375847::get_offset_of_U24PC_3(),
+	U3CUpdateProcessBarU3Ec__Iterator7_t1282375847::get_offset_of_U24current_4(),
+	U3CUpdateProcessBarU3Ec__Iterator7_t1282375847::get_offset_of_U3CU3Ef__this_5(),
 	AccountInputField_t2916814735::get_offset_of_mInvalidePatterns_2(),
 	AccountInputField_t2916814735::get_offset_of_mAccountTip_3(),
 	AccountInputField_t2916814735::get_offset_of_mInput_4(),
@@ -15102,7 +15147,7 @@ extern const int32_t g_FieldOffsetTable[12378] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2945] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2952] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -18032,13 +18077,20 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2945] =
 	sizeof (GameManager_t2252321495), -1, sizeof(GameManager_t2252321495_StaticFields), 0,
 	sizeof (InputControllerManager_t1050051015), -1, sizeof(InputControllerManager_t1050051015_StaticFields), 0,
 	sizeof (ObjectPoolManager_t3813236580), -1, sizeof(ObjectPoolManager_t3813236580_StaticFields), 0,
+	sizeof (Blocker_t3291696294), -1, 0, 0,
+	sizeof (MapManager_t3593696545), -1, sizeof(MapManager_t3593696545_StaticFields), 0,
+	sizeof (GridInfo_t737075118), -1, 0, 0,
+	sizeof (SnakeFood_t2261154416), -1, 0, 0,
+	sizeof (SnakeHead_t2301560042), -1, 0, 0,
+	sizeof (SnakeManager_t2989862063), -1, sizeof(SnakeManager_t2989862063_StaticFields), 0,
+	sizeof (U3CSnakeMoveU3Ec__Iterator6_t77864392), -1, 0, 0,
 	sizeof (SoundManager_t654432262), -1, sizeof(SoundManager_t654432262_StaticFields), 0,
 	sizeof (GameChoosePanel_t1813263919), -1, 0, 0,
 	sizeof (GamePanel_t539122112), -1, 0, 0,
 	sizeof (GameSettingPanel_t4173768872), -1, 0, 0,
 	sizeof (GameUI_t4016257260), -1, sizeof(GameUI_t4016257260_StaticFields), 0,
 	sizeof (LoadingProcess_t282725851), -1, 0, 0,
-	sizeof (U3CUpdateProcessBarU3Ec__Iterator6_t1282375848), -1, 0, 0,
+	sizeof (U3CUpdateProcessBarU3Ec__Iterator7_t1282375847), -1, 0, 0,
 	sizeof (AccountInputField_t2916814735), -1, 0, 0,
 	sizeof (LoginButton_t970805563), -1, 0, 0,
 	sizeof (LoginManager_t973619992), -1, sizeof(LoginManager_t973619992_StaticFields), 0,

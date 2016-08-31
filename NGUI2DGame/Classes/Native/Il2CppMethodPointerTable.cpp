@@ -17330,6 +17330,7 @@ extern "C" void Transform_get_parent_m147407266 ();
 extern "C" void Transform_set_parent_m3281327839 ();
 extern "C" void Transform_get_parentInternal_m927919099 ();
 extern "C" void Transform_set_parentInternal_m4124721022 ();
+extern "C" void Transform_SetParent_m1963830867 ();
 extern "C" void Transform_get_worldToLocalMatrix_m3299477436 ();
 extern "C" void Transform_INTERNAL_get_worldToLocalMatrix_m3394773201 ();
 extern "C" void Transform_get_localToWorldMatrix_m2868579006 ();
@@ -17415,6 +17416,8 @@ extern "C" void Vector3_get_one_m627547232 ();
 extern "C" void Vector3_get_forward_m1201659139 ();
 extern "C" void Vector3_get_back_m4246539215 ();
 extern "C" void Vector3_get_up_m2725403797 ();
+extern "C" void Vector3_get_down_m2372302126 ();
+extern "C" void Vector3_get_left_m2429378123 ();
 extern "C" void Vector3_get_right_m1884123822 ();
 extern "C" void Vector3_op_Addition_m3146764857 ();
 extern "C" void Vector3_op_Subtraction_m2407545601 ();
@@ -18488,6 +18491,10 @@ extern "C" void AnimatedAlpha_Update_m900407113 ();
 extern "C" void AnimatedColor__ctor_m492693861 ();
 extern "C" void AnimatedColor_Awake_m1558642300 ();
 extern "C" void AnimatedColor_Update_m2501216346 ();
+extern "C" void Blocker__ctor_m1654606309 ();
+extern "C" void Blocker_Start_m2953589165 ();
+extern "C" void Blocker_Update_m4081629256 ();
+extern "C" void Blocker_OnTriggerEnter2D_m1610957349 ();
 extern "C" void BMFont__ctor_m2748453639 ();
 extern "C" void BMFont_get_isValid_m2851869616 ();
 extern "C" void BMFont_get_charSize_m3110935453 ();
@@ -18716,12 +18723,12 @@ extern "C" void LoadingProcess_Awake_m705420315 ();
 extern "C" void LoadingProcess_Start_m4254790716 ();
 extern "C" void LoadingProcess_Update_m3191783039 ();
 extern "C" void LoadingProcess_UpdateProcessBar_m1373146775 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator6__ctor_m3055770275 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m126540921 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3320973777 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_Dispose_m3317932082 ();
-extern "C" void U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator7__ctor_m3056884322 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1676968472 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator7_System_Collections_IEnumerator_get_Current_m3797395824 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator7_MoveNext_m4222565558 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator7_Dispose_m3354697809 ();
+extern "C" void U3CUpdateProcessBarU3Ec__Iterator7_Reset_m2070483119 ();
 extern "C" void LoadLevelOnClick__ctor_m2820126616 ();
 extern "C" void LoadLevelOnClick_OnClick_m931326351 ();
 extern "C" void Localization__ctor_m3434466340 ();
@@ -18757,6 +18764,25 @@ extern "C" void LoginUI_Update_m919173741 ();
 extern "C" void LookAtTarget__ctor_m1782423158 ();
 extern "C" void LookAtTarget_Start_m3161776094 ();
 extern "C" void LookAtTarget_LateUpdate_m4028316217 ();
+extern "C" void MapManager__ctor_m4263344916 ();
+extern "C" void MapManager_Awake_m1853530417 ();
+extern "C" void MapManager_Start_m2598983564 ();
+extern "C" void MapManager_Update_m1340025197 ();
+extern "C" void MapManager_SetupScene_m3584184101 ();
+extern "C" void MapManager_InitializeList_m2384168044 ();
+extern "C" void MapManager_MapSetup_m1067361627 ();
+extern "C" void MapManager_MarkOccupied_m3804236625 ();
+extern "C" void MapManager_ConvertGridPositionToIndex_m1724583357 ();
+extern "C" void MapManager_ObtainOneAvalibleGrid_m3567097640 ();
+extern "C" void MapManager_HasAvaibleGrid_m2079782154 ();
+extern "C" void GridInfo__ctor_m1495151973 ();
+extern "C" void GridInfo__ctor_m2438786155 ();
+extern "C" void GridInfo_get_Occupied_m3021441422 ();
+extern "C" void GridInfo_set_Occupied_m4211506389 ();
+extern "C" void GridInfo_get_GridPosition_m3445281838 ();
+extern "C" void GridInfo_set_GridPosition_m546961997 ();
+extern "C" void GridInfo_get_GridIndex_m873628440 ();
+extern "C" void GridInfo_set_GridIndex_m1199700727 ();
 extern "C" void NGUIDebug__ctor_m545890595 ();
 extern "C" void NGUIDebug__cctor_m2724728718 ();
 extern "C" void NGUIDebug_Log_m3211506513 ();
@@ -18891,6 +18917,34 @@ extern "C" void SetColorOnSelection__ctor_m4075942549 ();
 extern "C" void SetColorOnSelection_OnSelectionChange_m1283237520 ();
 extern "C" void ShaderQuality__ctor_m249302687 ();
 extern "C" void ShaderQuality_Update_m2685159252 ();
+extern "C" void SnakeFood__ctor_m1908917575 ();
+extern "C" void SnakeFood_Start_m2861306635 ();
+extern "C" void SnakeFood_Update_m731170386 ();
+extern "C" void SnakeFood_OnTriggerEnter2D_m800352819 ();
+extern "C" void SnakeHead__ctor_m4224707021 ();
+extern "C" void SnakeHead_get_CurrentMoveDir_m3460255713 ();
+extern "C" void SnakeHead_Start_m3498936069 ();
+extern "C" void SnakeHead_Update_m2948522760 ();
+extern "C" void SnakeHead_LookUp_m1592655247 ();
+extern "C" void SnakeHead_LookDown_m3503804628 ();
+extern "C" void SnakeHead_LookLeft_m4219591553 ();
+extern "C" void SnakeHead_LookRight_m3721572600 ();
+extern "C" void SnakeHead_MoveAhead_m1538312681 ();
+extern "C" void SnakeManager__ctor_m907049390 ();
+extern "C" void SnakeManager_Awake_m275528123 ();
+extern "C" void SnakeManager_Start_m1020846234 ();
+extern "C" void SnakeManager_Update_m2217374967 ();
+extern "C" void SnakeManager_GameOver_m281237456 ();
+extern "C" void SnakeManager_SpawnSnakeHead_m3861690187 ();
+extern "C" void SnakeManager_SnakeMove_m1943657587 ();
+extern "C" void SnakeManager_AddSnakeDotAtEnd_m3032207622 ();
+extern "C" void SnakeManager_SpawnSnakeFood_m2921307113 ();
+extern "C" void U3CSnakeMoveU3Ec__Iterator6__ctor_m838191811 ();
+extern "C" void U3CSnakeMoveU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2224166309 ();
+extern "C" void U3CSnakeMoveU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m467202013 ();
+extern "C" void U3CSnakeMoveU3Ec__Iterator6_MoveNext_m2038548417 ();
+extern "C" void U3CSnakeMoveU3Ec__Iterator6_Dispose_m767326798 ();
+extern "C" void U3CSnakeMoveU3Ec__Iterator6_Reset_m2802972612 ();
 extern "C" void SoundManager__ctor_m3417712111 ();
 extern "C" void SoundManager_get_GameBackgroundMusic_m420244162 ();
 extern "C" void SoundManager_set_GameBackgroundMusic_m2032569559 ();
@@ -19811,7 +19865,7 @@ extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_Start_m3663283896 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_CoroutineUpdate_m4284548736 ();
-extern const Il2CppMethodPointer g_MethodPointers[19800] = 
+extern const Il2CppMethodPointer g_MethodPointers[19854] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -37132,6 +37186,7 @@ extern const Il2CppMethodPointer g_MethodPointers[19800] =
 	Transform_set_parent_m3281327839,
 	Transform_get_parentInternal_m927919099,
 	Transform_set_parentInternal_m4124721022,
+	Transform_SetParent_m1963830867,
 	Transform_get_worldToLocalMatrix_m3299477436,
 	Transform_INTERNAL_get_worldToLocalMatrix_m3394773201,
 	Transform_get_localToWorldMatrix_m2868579006,
@@ -37217,6 +37272,8 @@ extern const Il2CppMethodPointer g_MethodPointers[19800] =
 	Vector3_get_forward_m1201659139,
 	Vector3_get_back_m4246539215,
 	Vector3_get_up_m2725403797,
+	Vector3_get_down_m2372302126,
+	Vector3_get_left_m2429378123,
 	Vector3_get_right_m1884123822,
 	Vector3_op_Addition_m3146764857,
 	Vector3_op_Subtraction_m2407545601,
@@ -38290,6 +38347,10 @@ extern const Il2CppMethodPointer g_MethodPointers[19800] =
 	AnimatedColor__ctor_m492693861,
 	AnimatedColor_Awake_m1558642300,
 	AnimatedColor_Update_m2501216346,
+	Blocker__ctor_m1654606309,
+	Blocker_Start_m2953589165,
+	Blocker_Update_m4081629256,
+	Blocker_OnTriggerEnter2D_m1610957349,
 	BMFont__ctor_m2748453639,
 	BMFont_get_isValid_m2851869616,
 	BMFont_get_charSize_m3110935453,
@@ -38518,12 +38579,12 @@ extern const Il2CppMethodPointer g_MethodPointers[19800] =
 	LoadingProcess_Start_m4254790716,
 	LoadingProcess_Update_m3191783039,
 	LoadingProcess_UpdateProcessBar_m1373146775,
-	U3CUpdateProcessBarU3Ec__Iterator6__ctor_m3055770275,
-	U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m126540921,
-	U3CUpdateProcessBarU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m3320973777,
-	U3CUpdateProcessBarU3Ec__Iterator6_MoveNext_m3042944017,
-	U3CUpdateProcessBarU3Ec__Iterator6_Dispose_m3317932082,
-	U3CUpdateProcessBarU3Ec__Iterator6_Reset_m2069369072,
+	U3CUpdateProcessBarU3Ec__Iterator7__ctor_m3056884322,
+	U3CUpdateProcessBarU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1676968472,
+	U3CUpdateProcessBarU3Ec__Iterator7_System_Collections_IEnumerator_get_Current_m3797395824,
+	U3CUpdateProcessBarU3Ec__Iterator7_MoveNext_m4222565558,
+	U3CUpdateProcessBarU3Ec__Iterator7_Dispose_m3354697809,
+	U3CUpdateProcessBarU3Ec__Iterator7_Reset_m2070483119,
 	LoadLevelOnClick__ctor_m2820126616,
 	LoadLevelOnClick_OnClick_m931326351,
 	Localization__ctor_m3434466340,
@@ -38559,6 +38620,25 @@ extern const Il2CppMethodPointer g_MethodPointers[19800] =
 	LookAtTarget__ctor_m1782423158,
 	LookAtTarget_Start_m3161776094,
 	LookAtTarget_LateUpdate_m4028316217,
+	MapManager__ctor_m4263344916,
+	MapManager_Awake_m1853530417,
+	MapManager_Start_m2598983564,
+	MapManager_Update_m1340025197,
+	MapManager_SetupScene_m3584184101,
+	MapManager_InitializeList_m2384168044,
+	MapManager_MapSetup_m1067361627,
+	MapManager_MarkOccupied_m3804236625,
+	MapManager_ConvertGridPositionToIndex_m1724583357,
+	MapManager_ObtainOneAvalibleGrid_m3567097640,
+	MapManager_HasAvaibleGrid_m2079782154,
+	GridInfo__ctor_m1495151973,
+	GridInfo__ctor_m2438786155,
+	GridInfo_get_Occupied_m3021441422,
+	GridInfo_set_Occupied_m4211506389,
+	GridInfo_get_GridPosition_m3445281838,
+	GridInfo_set_GridPosition_m546961997,
+	GridInfo_get_GridIndex_m873628440,
+	GridInfo_set_GridIndex_m1199700727,
 	NGUIDebug__ctor_m545890595,
 	NGUIDebug__cctor_m2724728718,
 	NGUIDebug_Log_m3211506513,
@@ -38693,6 +38773,34 @@ extern const Il2CppMethodPointer g_MethodPointers[19800] =
 	SetColorOnSelection_OnSelectionChange_m1283237520,
 	ShaderQuality__ctor_m249302687,
 	ShaderQuality_Update_m2685159252,
+	SnakeFood__ctor_m1908917575,
+	SnakeFood_Start_m2861306635,
+	SnakeFood_Update_m731170386,
+	SnakeFood_OnTriggerEnter2D_m800352819,
+	SnakeHead__ctor_m4224707021,
+	SnakeHead_get_CurrentMoveDir_m3460255713,
+	SnakeHead_Start_m3498936069,
+	SnakeHead_Update_m2948522760,
+	SnakeHead_LookUp_m1592655247,
+	SnakeHead_LookDown_m3503804628,
+	SnakeHead_LookLeft_m4219591553,
+	SnakeHead_LookRight_m3721572600,
+	SnakeHead_MoveAhead_m1538312681,
+	SnakeManager__ctor_m907049390,
+	SnakeManager_Awake_m275528123,
+	SnakeManager_Start_m1020846234,
+	SnakeManager_Update_m2217374967,
+	SnakeManager_GameOver_m281237456,
+	SnakeManager_SpawnSnakeHead_m3861690187,
+	SnakeManager_SnakeMove_m1943657587,
+	SnakeManager_AddSnakeDotAtEnd_m3032207622,
+	SnakeManager_SpawnSnakeFood_m2921307113,
+	U3CSnakeMoveU3Ec__Iterator6__ctor_m838191811,
+	U3CSnakeMoveU3Ec__Iterator6_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2224166309,
+	U3CSnakeMoveU3Ec__Iterator6_System_Collections_IEnumerator_get_Current_m467202013,
+	U3CSnakeMoveU3Ec__Iterator6_MoveNext_m2038548417,
+	U3CSnakeMoveU3Ec__Iterator6_Dispose_m767326798,
+	U3CSnakeMoveU3Ec__Iterator6_Reset_m2802972612,
 	SoundManager__ctor_m3417712111,
 	SoundManager_get_GameBackgroundMusic_m420244162,
 	SoundManager_set_GameBackgroundMusic_m2032569559,

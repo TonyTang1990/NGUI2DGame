@@ -7844,6 +7844,15 @@ extern "C"  void Transform_set_parentInternal_m4124721022 (Transform_t3275118058
 	_il2cpp_icall_func = (Transform_set_parentInternal_m4124721022_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::set_parentInternal(UnityEngine.Transform)");
 	_il2cpp_icall_func(__this, ___value0);
 }
+// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
+extern "C"  void Transform_SetParent_m1963830867 (Transform_t3275118058 * __this, Transform_t3275118058 * ___parent0, bool ___worldPositionStays1, const MethodInfo* method)
+{
+	typedef void (*Transform_SetParent_m1963830867_ftn) (Transform_t3275118058 *, Transform_t3275118058 *, bool);
+	static Transform_SetParent_m1963830867_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Transform_SetParent_m1963830867_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)");
+	_il2cpp_icall_func(__this, ___parent0, ___worldPositionStays1);
+}
 // UnityEngine.Matrix4x4 UnityEngine.Transform::get_worldToLocalMatrix()
 extern "C"  Matrix4x4_t2933234003  Transform_get_worldToLocalMatrix_m3299477436 (Transform_t3275118058 * __this, const MethodInfo* method)
 {
@@ -9380,6 +9389,26 @@ extern "C"  Vector3_t2243707580  Vector3_get_up_m2725403797 (Il2CppObject * __th
 		Vector3_t2243707580  L_0;
 		memset(&L_0, 0, sizeof(L_0));
 		Vector3__ctor_m2638739322(&L_0, (0.0f), (1.0f), (0.0f), /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Vector3::get_down()
+extern "C"  Vector3_t2243707580  Vector3_get_down_m2372302126 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		Vector3_t2243707580  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector3__ctor_m2638739322(&L_0, (0.0f), (-1.0f), (0.0f), /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Vector3::get_left()
+extern "C"  Vector3_t2243707580  Vector3_get_left_m2429378123 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		Vector3_t2243707580  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector3__ctor_m2638739322(&L_0, (-1.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		return L_0;
 	}
 }

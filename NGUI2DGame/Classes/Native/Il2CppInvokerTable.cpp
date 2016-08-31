@@ -11814,6 +11814,20 @@ void* RuntimeInvoker_GameDifficulty_t3332754345 (const MethodInfo* method, void*
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
+void* RuntimeInvoker_Int32_t2071877448_Vector2_t2243707579 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, Vector2_t2243707579  p1, const MethodInfo* method);
+	int32_t ret = ((Func)method->methodPointer)(obj, *((Vector2_t2243707579 *)args[0]), method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
+void* RuntimeInvoker_Void_t1841601450_SByte_t454417549_Vector2_t2243707579_Int32_t2071877448 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, int8_t p1, Vector2_t2243707579  p2, int32_t p3, const MethodInfo* method);
+	((Func)method->methodPointer)(obj, *((int8_t*)args[0]), *((Vector2_t2243707579 *)args[1]), *((int32_t*)args[2]), method);
+	return NULL;
+}
+
 void* RuntimeInvoker_Void_t1841601450_Int32_t2071877448_ObjectU26_t597476745 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef void (*Func)(void* obj, int32_t p1, Il2CppObject ** p2, const MethodInfo* method);
@@ -13078,13 +13092,6 @@ void* RuntimeInvoker_Int32_t2071877448_GcScoreData_t3676783238 (const MethodInfo
 {
 	typedef int32_t (*Func)(void* obj, GcScoreData_t3676783238  p1, const MethodInfo* method);
 	int32_t ret = ((Func)method->methodPointer)(obj, *((GcScoreData_t3676783238 *)args[0]), method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
-void* RuntimeInvoker_Int32_t2071877448_Vector2_t2243707579 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef int32_t (*Func)(void* obj, Vector2_t2243707579  p1, const MethodInfo* method);
-	int32_t ret = ((Func)method->methodPointer)(obj, *((Vector2_t2243707579 *)args[0]), method);
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
@@ -15132,7 +15139,7 @@ void* RuntimeInvoker_Il2CppObject_Scene_t1684909666_Scene_t1684909666_Il2CppObje
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2095] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2096] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
@@ -16755,6 +16762,8 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2095] =
 	RuntimeInvoker_FillDirection_t2438394762,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject_Il2CppObject_Single_t2076509932_SByte_t454417549,
 	RuntimeInvoker_GameDifficulty_t3332754345,
+	RuntimeInvoker_Int32_t2071877448_Vector2_t2243707579,
+	RuntimeInvoker_Void_t1841601450_SByte_t454417549_Vector2_t2243707579_Int32_t2071877448,
 	RuntimeInvoker_Void_t1841601450_Int32_t2071877448_ObjectU26_t597476745,
 	RuntimeInvoker_Void_t1841601450_ObjectU5BU5DU26_t3223402458_Int32_t2071877448,
 	RuntimeInvoker_Void_t1841601450_ObjectU5BU5DU26_t3223402458_Int32_t2071877448_Int32_t2071877448,
@@ -16936,7 +16945,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2095] =
 	RuntimeInvoker_Int32_t2071877448_HitInfo_t1761367055,
 	RuntimeInvoker_Int32_t2071877448_GcAchievementData_t1754866149,
 	RuntimeInvoker_Int32_t2071877448_GcScoreData_t3676783238,
-	RuntimeInvoker_Int32_t2071877448_Vector2_t2243707579,
 	RuntimeInvoker_Int32_t2071877448_Vector3_t2243707580,
 	RuntimeInvoker_Int32_t2071877448_Vector4_t2243707581,
 	RuntimeInvoker_Void_t1841601450_ControlPoint_t168081159,

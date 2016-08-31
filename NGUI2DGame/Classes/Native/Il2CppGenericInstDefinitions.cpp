@@ -1138,6 +1138,9 @@ extern const Il2CppGenericInst GenInst_Account_t3062613273_0_0_0 = { 1, GenInst_
 extern const Il2CppType List_1_t1125654279_0_0_0;
 static const Il2CppType* GenInst_List_1_t1125654279_0_0_0_Types[] = { &List_1_t1125654279_0_0_0 };
 extern const Il2CppGenericInst GenInst_List_1_t1125654279_0_0_0 = { 1, GenInst_List_1_t1125654279_0_0_0_Types };
+extern const Il2CppType GridInfo_t737075118_0_0_0;
+static const Il2CppType* GenInst_GridInfo_t737075118_0_0_0_Types[] = { &GridInfo_t737075118_0_0_0 };
+extern const Il2CppGenericInst GenInst_GridInfo_t737075118_0_0_0 = { 1, GenInst_GridInfo_t737075118_0_0_0_Types };
 extern const Il2CppType AudioClip_t1932558630_0_0_0;
 static const Il2CppType* GenInst_AudioClip_t1932558630_0_0_0_Types[] = { &AudioClip_t1932558630_0_0_0 };
 extern const Il2CppGenericInst GenInst_AudioClip_t1932558630_0_0_0 = { 1, GenInst_AudioClip_t1932558630_0_0_0_Types };
@@ -1742,6 +1745,9 @@ extern const Il2CppGenericInst GenInst_BoxCollider2D_t948534547_0_0_0 = { 1, Gen
 extern const Il2CppType Animation_t2068071072_0_0_0;
 static const Il2CppType* GenInst_Animation_t2068071072_0_0_0_Types[] = { &Animation_t2068071072_0_0_0 };
 extern const Il2CppGenericInst GenInst_Animation_t2068071072_0_0_0 = { 1, GenInst_Animation_t2068071072_0_0_0_Types };
+extern const Il2CppType SnakeHead_t2301560042_0_0_0;
+static const Il2CppType* GenInst_SnakeHead_t2301560042_0_0_0_Types[] = { &SnakeHead_t2301560042_0_0_0 };
+extern const Il2CppGenericInst GenInst_SnakeHead_t2301560042_0_0_0 = { 1, GenInst_SnakeHead_t2301560042_0_0_0_Types };
 extern const Il2CppType Rigidbody_t4233889191_0_0_0;
 static const Il2CppType* GenInst_Rigidbody_t4233889191_0_0_0_Types[] = { &Rigidbody_t4233889191_0_0_0 };
 extern const Il2CppGenericInst GenInst_Rigidbody_t4233889191_0_0_0 = { 1, GenInst_Rigidbody_t4233889191_0_0_0_Types };
@@ -1868,7 +1874,7 @@ static const Il2CppType* GenInst_Vector3ArrayOptions_t2672570171_0_0_0_Types[] =
 extern const Il2CppGenericInst GenInst_Vector3ArrayOptions_t2672570171_0_0_0 = { 1, GenInst_Vector3ArrayOptions_t2672570171_0_0_0_Types };
 static const Il2CppType* GenInst_VectorOptions_t293385261_0_0_0_Types[] = { &VectorOptions_t293385261_0_0_0 };
 extern const Il2CppGenericInst GenInst_VectorOptions_t293385261_0_0_0 = { 1, GenInst_VectorOptions_t293385261_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[643] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[645] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2071877448_0_0_0,
@@ -2265,6 +2271,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[643] =
 	&GenInst_Paragraph_t2587095060_0_0_0,
 	&GenInst_Account_t3062613273_0_0_0,
 	&GenInst_List_1_t1125654279_0_0_0,
+	&GenInst_GridInfo_t737075118_0_0_0,
 	&GenInst_AudioClip_t1932558630_0_0_0,
 	&GenInst_String_t_0_0_0_AudioClip_t1932558630_0_0_0,
 	&GenInst_String_t_0_0_0_AudioClip_t1932558630_0_0_0_DictionaryEntry_t3048875398_0_0_0,
@@ -2460,6 +2467,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[643] =
 	&GenInst_Animator_t69676727_0_0_0,
 	&GenInst_BoxCollider2D_t948534547_0_0_0,
 	&GenInst_Animation_t2068071072_0_0_0,
+	&GenInst_SnakeHead_t2301560042_0_0_0,
 	&GenInst_Rigidbody_t4233889191_0_0_0,
 	&GenInst_UIDraggablePanel_t252039129_0_0_0,
 	&GenInst_SpringPanel_t2962744957_0_0_0,
