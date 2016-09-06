@@ -9697,34 +9697,6 @@ void* RuntimeInvoker_Boolean_t3825574718_Playable_t3667545548_Il2CppObject (cons
 	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
 }
 
-void* RuntimeInvoker_Scene_t1684909666 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef Scene_t1684909666  (*Func)(void* obj, const MethodInfo* method);
-	Scene_t1684909666  ret = ((Func)method->methodPointer)(obj, method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
-void* RuntimeInvoker_Void_t1841601450_SceneU26_t1773220846 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef void (*Func)(void* obj, Scene_t1684909666 * p1, const MethodInfo* method);
-	((Func)method->methodPointer)(obj, (Scene_t1684909666 *)args[0], method);
-	return NULL;
-}
-
-void* RuntimeInvoker_Scene_t1684909666_Int32_t2071877448 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef Scene_t1684909666  (*Func)(void* obj, int32_t p1, const MethodInfo* method);
-	Scene_t1684909666  ret = ((Func)method->methodPointer)(obj, *((int32_t*)args[0]), method);
-	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
-}
-
-void* RuntimeInvoker_Void_t1841601450_Int32_t2071877448_SceneU26_t1773220846 (const MethodInfo* method, void* obj, void** args)
-{
-	typedef void (*Func)(void* obj, int32_t p1, Scene_t1684909666 * p2, const MethodInfo* method);
-	((Func)method->methodPointer)(obj, *((int32_t*)args[0]), (Scene_t1684909666 *)args[1], method);
-	return NULL;
-}
-
 void* RuntimeInvoker_Il2CppObject_Il2CppObject_Int32_t2071877448_SByte_t454417549_SByte_t454417549 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef Il2CppObject * (*Func)(void* obj, Il2CppObject * p1, int32_t p2, int8_t p3, int8_t p4, const MethodInfo* method);
@@ -15843,7 +15815,7 @@ void* RuntimeInvoker_Il2CppObject_Scene_t1684909666_Scene_t1684909666_Il2CppObje
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2194] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2190] = 
 {
 	RuntimeInvoker_Void_t1841601450,
 	RuntimeInvoker_Boolean_t3825574718_Il2CppObject,
@@ -17161,10 +17133,6 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2194] =
 	RuntimeInvoker_Void_t1841601450_Playable_t3667545548_Int32_t2071877448_Single_t2076509932_Il2CppObject,
 	RuntimeInvoker_Single_t2076509932_Playable_t3667545548_Int32_t2071877448_Il2CppObject,
 	RuntimeInvoker_Boolean_t3825574718_Playable_t3667545548_Il2CppObject,
-	RuntimeInvoker_Scene_t1684909666,
-	RuntimeInvoker_Void_t1841601450_SceneU26_t1773220846,
-	RuntimeInvoker_Scene_t1684909666_Int32_t2071877448,
-	RuntimeInvoker_Void_t1841601450_Int32_t2071877448_SceneU26_t1773220846,
 	RuntimeInvoker_Il2CppObject_Il2CppObject_Int32_t2071877448_SByte_t454417549_SByte_t454417549,
 	RuntimeInvoker_Void_t1841601450_Scene_t1684909666_Int32_t2071877448,
 	RuntimeInvoker_Void_t1841601450_Scene_t1684909666,

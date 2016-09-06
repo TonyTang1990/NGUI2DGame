@@ -19963,12 +19963,12 @@ static void CullingGroup_t1091689465_CustomAttributesCacheGenerator_CullingGroup
 static void CullingGroup_t1091689465_CustomAttributesCacheGenerator_CullingGroup_FinalizerFailure_m3675513936(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void Gradient_t3600583008_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -19988,12 +19988,12 @@ static void Gradient_t3600583008_CustomAttributesCacheGenerator_Gradient__ctor_m
 static void Gradient_t3600583008_CustomAttributesCacheGenerator_Gradient_Init_m4156899649(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void Gradient_t3600583008_CustomAttributesCacheGenerator_Gradient_Cleanup_m3573871739(CustomAttributesCache* cache)
@@ -20010,12 +20010,12 @@ static void Gradient_t3600583008_CustomAttributesCacheGenerator_Gradient_Cleanup
 static void TouchScreenKeyboard_t601950206_CustomAttributesCacheGenerator_TouchScreenKeyboard_Destroy_m1110429671(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void TouchScreenKeyboard_t601950206_CustomAttributesCacheGenerator_TouchScreenKeyboard_TouchScreenKeyboard_InternalConstructorHelper_m1440276778(CustomAttributesCache* cache)
@@ -20806,12 +20806,12 @@ static void Resources_t339470017_CustomAttributesCacheGenerator_Resources_FindOb
 static void Resources_t339470017_CustomAttributesCacheGenerator_Resources_Load_m243305716(CustomAttributesCache* cache)
 {
 	{
-		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[0];
-		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 1, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[1];
+		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 1, NULL);
 	}
 }
 static void TextAsset_t3973159845_CustomAttributesCacheGenerator_TextAsset_get_text_m2589865997(CustomAttributesCache* cache)
@@ -21176,6 +21176,13 @@ static void Application_t354826772_CustomAttributesCacheGenerator_Application_ge
 		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
+static void Application_t354826772_CustomAttributesCacheGenerator_Application_get_productName_m802208223(CustomAttributesCache* cache)
+{
+	{
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+	}
+}
 static void Application_t354826772_CustomAttributesCacheGenerator_Application_CallLogCallback_m3408386792(CustomAttributesCache* cache)
 {
 	{
@@ -21515,12 +21522,12 @@ static void Camera_t189460977_CustomAttributesCacheGenerator_Camera_INTERNAL_CAL
 static void DebugLogHandler_t865810509_CustomAttributesCacheGenerator_DebugLogHandler_Internal_Log_m3491540823(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void DebugLogHandler_t865810509_CustomAttributesCacheGenerator_DebugLogHandler_Internal_Log_m3491540823____obj2(CustomAttributesCache* cache)
@@ -21852,12 +21859,12 @@ static void Object_t1021602117_CustomAttributesCacheGenerator_Object_INTERNAL_CA
 static void Object_t1021602117_CustomAttributesCacheGenerator_Object_GetOffsetOfInstanceIDInCPlusPlusObject_m1587840561(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void Object_t1021602117_CustomAttributesCacheGenerator_Object_EnsureRunningOnMainThread_m3042842193(CustomAttributesCache* cache)
@@ -21916,12 +21923,12 @@ static void Object_t1021602117_CustomAttributesCacheGenerator_Object_DestroyImme
 static void Object_t1021602117_CustomAttributesCacheGenerator_Object_FindObjectsOfType_m2121813744(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[0];
+		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 2, NULL);
 	}
 	{
-		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[1];
-		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 2, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void Object_t1021602117_CustomAttributesCacheGenerator_Object_get_name_m2079638459(CustomAttributesCache* cache)
@@ -22012,12 +22019,12 @@ static void Object_t1021602117_CustomAttributesCacheGenerator_Object_ToString_m1
 static void Object_t1021602117_CustomAttributesCacheGenerator_Object_DoesObjectWithInstanceIDExist_m2570795274(CustomAttributesCache* cache)
 {
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 }
 static void Object_t1021602117_CustomAttributesCacheGenerator_Object_GetInstanceID_m1920497914(CustomAttributesCache* cache)
@@ -22345,12 +22352,12 @@ static void Light_t494725636_CustomAttributesCacheGenerator_Light_set_shadowStre
 static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_GetComponent_m306258075(CustomAttributesCache* cache)
 {
 	{
-		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[0];
-		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 0, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[1];
+		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 0, NULL);
 	}
 }
 static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_GetComponentFastPath_m481070871(CustomAttributesCache* cache)
@@ -22370,23 +22377,23 @@ static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_Get
 static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_GetComponentInChildren_m4263325740(CustomAttributesCache* cache)
 {
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
-	}
-	{
-		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[1];
-		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 0, NULL);
-	}
-}
-static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_GetComponentInParent_m1235194528(CustomAttributesCache* cache)
-{
-	{
 		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[0];
 		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 0, NULL);
 	}
 	{
 		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
 		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+	}
+}
+static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_GetComponentInParent_m1235194528(CustomAttributesCache* cache)
+{
+	{
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+	}
+	{
+		TypeInferenceRuleAttribute_t1390152093 * tmp = (TypeInferenceRuleAttribute_t1390152093 *)cache->attributes[1];
+		TypeInferenceRuleAttribute__ctor_m599630929(tmp, 0, NULL);
 	}
 }
 static void GameObject_t1756533147_CustomAttributesCacheGenerator_GameObject_GetComponentsInChildren_m993725821____includeInactive1(CustomAttributesCache* cache)
@@ -22872,12 +22879,12 @@ static void ADInterstitialAd_t1806615588_CustomAttributesCacheGenerator(CustomAt
 static void ADInterstitialAd_t1806615588_CustomAttributesCacheGenerator_ADInterstitialAd_Native_DestroyInterstitial_m151822972(CustomAttributesCache* cache)
 {
 	{
-		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[0];
-		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
+		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
+		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[1];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
+		ThreadAndSerializationSafe_t2122816804 * tmp = (ThreadAndSerializationSafe_t2122816804 *)cache->attributes[1];
+		ThreadAndSerializationSafe__ctor_m84326599(tmp, NULL);
 	}
 }
 static void ADInterstitialAd_t1806615588_CustomAttributesCacheGenerator_ADInterstitialAd_FireInterstitialWasLoaded_m47797910(CustomAttributesCache* cache)
@@ -23287,20 +23294,6 @@ static void SceneManager_t90660965_CustomAttributesCacheGenerator(CustomAttribut
 		RequiredByNativeCodeAttribute__ctor_m2374853658(tmp, NULL);
 	}
 }
-static void SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318(CustomAttributesCache* cache)
-{
-	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
-	}
-}
-static void SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402(CustomAttributesCache* cache)
-{
-	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
-	}
-}
 static void SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_LoadScene_m1619949821(CustomAttributesCache* cache)
 {
 	{
@@ -23341,13 +23334,6 @@ static void SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_I
 	{
 		RequiredByNativeCodeAttribute_t1913052472 * tmp = (RequiredByNativeCodeAttribute_t1913052472 *)cache->attributes[0];
 		RequiredByNativeCodeAttribute__ctor_m2374853658(tmp, NULL);
-	}
-}
-static void Scene_t1684909666_CustomAttributesCacheGenerator_Scene_GetNameInternal_m3140297940(CustomAttributesCache* cache)
-{
-	{
-		WrapperlessIcall_t2585285711 * tmp = (WrapperlessIcall_t2585285711 *)cache->attributes[0];
-		WrapperlessIcall__ctor_m4149541650(tmp, NULL);
 	}
 }
 static void ControllerColliderHit_t4070855101_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -24155,12 +24141,12 @@ static void Font_t4239498691_CustomAttributesCacheGenerator_Font_GetCharacterInf
 static void Font_t4239498691_CustomAttributesCacheGenerator_Font_t4239498691____textureRebuildCallback_PropertyInfo(CustomAttributesCache* cache)
 {
 	{
-		ObsoleteAttribute_t3878847927 * tmp = (ObsoleteAttribute_t3878847927 *)cache->attributes[0];
-		ObsoleteAttribute__ctor_m2711473620(tmp, il2cpp_codegen_string_new_wrapper("Font.textureRebuildCallback has been deprecated. Use Font.textureRebuilt instead."), NULL);
+		EditorBrowsableAttribute_t1050682502 * tmp = (EditorBrowsableAttribute_t1050682502 *)cache->attributes[0];
+		EditorBrowsableAttribute__ctor_m2635501285(tmp, 1, NULL);
 	}
 	{
-		EditorBrowsableAttribute_t1050682502 * tmp = (EditorBrowsableAttribute_t1050682502 *)cache->attributes[1];
-		EditorBrowsableAttribute__ctor_m2635501285(tmp, 1, NULL);
+		ObsoleteAttribute_t3878847927 * tmp = (ObsoleteAttribute_t3878847927 *)cache->attributes[1];
+		ObsoleteAttribute__ctor_m2711473620(tmp, il2cpp_codegen_string_new_wrapper("Font.textureRebuildCallback has been deprecated. Use Font.textureRebuilt instead."), NULL);
 	}
 }
 static void FontTextureRebuildCallback_t1272078033_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -25919,60 +25905,60 @@ static void StateMachineBehaviour_t2151245329_CustomAttributesCacheGenerator(Cus
 static void ArgumentCache_t4810721_CustomAttributesCacheGenerator_m_ObjectArgumentAssemblyTypeName(CustomAttributesCache* cache)
 {
 	{
-		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[0];
-		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("objectArgumentAssemblyTypeName"), NULL);
+		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[0];
+		SerializeField__ctor_m994129777(tmp, NULL);
 	}
 	{
-		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[1];
-		SerializeField__ctor_m994129777(tmp, NULL);
+		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[1];
+		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("objectArgumentAssemblyTypeName"), NULL);
 	}
 }
 static void PersistentCall_t3793436469_CustomAttributesCacheGenerator_m_Arguments(CustomAttributesCache* cache)
 {
 	{
-		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[0];
-		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("arguments"), NULL);
+		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[0];
+		SerializeField__ctor_m994129777(tmp, NULL);
 	}
 	{
-		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[1];
-		SerializeField__ctor_m994129777(tmp, NULL);
+		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[1];
+		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("arguments"), NULL);
 	}
 }
 static void PersistentCall_t3793436469_CustomAttributesCacheGenerator_m_CallState(CustomAttributesCache* cache)
 {
 	{
-		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[0];
-		SerializeField__ctor_m994129777(tmp, NULL);
-	}
-	{
-		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[1];
+		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[0];
 		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("enabled"), NULL);
 	}
 	{
-		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[2];
+		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[1];
 		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("m_Enabled"), NULL);
+	}
+	{
+		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[2];
+		SerializeField__ctor_m994129777(tmp, NULL);
 	}
 }
 static void PersistentCallGroup_t339478082_CustomAttributesCacheGenerator_m_Calls(CustomAttributesCache* cache)
 {
 	{
-		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[0];
-		SerializeField__ctor_m994129777(tmp, NULL);
+		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[0];
+		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("m_Listeners"), NULL);
 	}
 	{
-		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[1];
-		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("m_Listeners"), NULL);
+		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[1];
+		SerializeField__ctor_m994129777(tmp, NULL);
 	}
 }
 static void UnityEventBase_t828812576_CustomAttributesCacheGenerator_m_PersistentCalls(CustomAttributesCache* cache)
 {
 	{
-		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[0];
-		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("m_PersistentListeners"), NULL);
+		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[0];
+		SerializeField__ctor_m994129777(tmp, NULL);
 	}
 	{
-		SerializeField_t3073427462 * tmp = (SerializeField_t3073427462 *)cache->attributes[1];
-		SerializeField__ctor_m994129777(tmp, NULL);
+		FormerlySerializedAsAttribute_t3673080018 * tmp = (FormerlySerializedAsAttribute_t3673080018 *)cache->attributes[1];
+		FormerlySerializedAsAttribute__ctor_m3551035707(tmp, il2cpp_codegen_string_new_wrapper("m_PersistentListeners"), NULL);
 	}
 }
 static void UnityEventBase_t828812576_CustomAttributesCacheGenerator_m_TypeName(CustomAttributesCache* cache)
@@ -31288,7 +31274,7 @@ static void U3CPrivateImplementationDetailsU3E_t1486305144_CustomAttributesCache
 		CompilerGeneratedAttribute__ctor_m3017743394(tmp, NULL);
 	}
 }
-extern const CustomAttributesCacheGenerator g_AttributeGenerators[3623] = 
+extern const CustomAttributesCacheGenerator g_AttributeGenerators[3621] = 
 {
 	NULL,
 	g_mscorlib_Assembly_CustomAttributesCacheGenerator,
@@ -33611,6 +33597,7 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[3623] =
 	Application_t354826772_CustomAttributesCacheGenerator_Application_get_platform_m3989224144,
 	Application_t354826772_CustomAttributesCacheGenerator_Application_get_dataPath_m371940330,
 	Application_t354826772_CustomAttributesCacheGenerator_Application_get_persistentDataPath_m3129298355,
+	Application_t354826772_CustomAttributesCacheGenerator_Application_get_productName_m802208223,
 	Application_t354826772_CustomAttributesCacheGenerator_Application_CallLogCallback_m3408386792,
 	Application_t354826772_CustomAttributesCacheGenerator_Application_LoadLevel_m393995325,
 	Application_t354826772_CustomAttributesCacheGenerator_Application_t354826772____platform_PropertyInfo,
@@ -33904,15 +33891,12 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[3623] =
 	Playables_t2968292729_CustomAttributesCacheGenerator_Playables_INTERNAL_CALL_DisconnectInternal_m2526207778,
 	ScriptPlayable_t4067966717_CustomAttributesCacheGenerator,
 	SceneManager_t90660965_CustomAttributesCacheGenerator,
-	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318,
-	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402,
 	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_LoadScene_m1619949821,
 	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_LoadScene_m1386820036____mode1,
 	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_LoadSceneAsyncNameIndexInternal_m3279056043,
 	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_Internal_SceneLoaded_m4005732915,
 	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_Internal_SceneUnloaded_m4108957131,
 	SceneManager_t90660965_CustomAttributesCacheGenerator_SceneManager_Internal_ActiveSceneChanged_m1162592635,
-	Scene_t1684909666_CustomAttributesCacheGenerator_Scene_GetNameInternal_m3140297940,
 	ControllerColliderHit_t4070855101_CustomAttributesCacheGenerator,
 	Collision_t2876846408_CustomAttributesCacheGenerator,
 	Collision_t2876846408_CustomAttributesCacheGenerator_Collision_t2876846408____impactForceSum_PropertyInfo,

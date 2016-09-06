@@ -20098,20 +20098,6 @@ extern "C"  int32_t Scene_get_handle_m1555912301_AdjustorThunk (Il2CppObject * _
 	Scene_t1684909666 * _thisAdjusted = reinterpret_cast<Scene_t1684909666 *>(__this + 1);
 	return Scene_get_handle_m1555912301(_thisAdjusted, method);
 }
-// System.String UnityEngine.SceneManagement.Scene::get_name()
-extern "C"  String_t* Scene_get_name_m745914591 (Scene_t1684909666 * __this, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = Scene_get_handle_m1555912301(__this, /*hidden argument*/NULL);
-		String_t* L_1 = Scene_GetNameInternal_m3140297940(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-extern "C"  String_t* Scene_get_name_m745914591_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	Scene_t1684909666 * _thisAdjusted = reinterpret_cast<Scene_t1684909666 *>(__this + 1);
-	return Scene_get_name_m745914591(_thisAdjusted, method);
-}
 // System.Int32 UnityEngine.SceneManagement.Scene::GetHashCode()
 extern "C"  int32_t Scene_GetHashCode_m3223653899 (Scene_t1684909666 * __this, const MethodInfo* method)
 {
@@ -20163,15 +20149,6 @@ extern "C"  bool Scene_Equals_m3588907349_AdjustorThunk (Il2CppObject * __this, 
 	Scene_t1684909666 * _thisAdjusted = reinterpret_cast<Scene_t1684909666 *>(__this + 1);
 	return Scene_Equals_m3588907349(_thisAdjusted, ___other0, method);
 }
-// System.String UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)
-extern "C"  String_t* Scene_GetNameInternal_m3140297940 (Il2CppObject * __this /* static, unused */, int32_t ___sceneHandle0, const MethodInfo* method)
-{
-	typedef String_t* (*Scene_GetNameInternal_m3140297940_ftn) (int32_t);
-	static Scene_GetNameInternal_m3140297940_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Scene_GetNameInternal_m3140297940_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)");
-	return _il2cpp_icall_func(___sceneHandle0);
-}
 // Conversion methods for marshalling of: UnityEngine.SceneManagement.Scene
 extern "C" void Scene_t1684909666_marshal_pinvoke(const Scene_t1684909666& unmarshaled, Scene_t1684909666_marshaled_pinvoke& marshaled)
 {
@@ -20201,47 +20178,6 @@ extern "C" void Scene_t1684909666_marshal_com_back(const Scene_t1684909666_marsh
 // Conversion method for clean up from marshalling of: UnityEngine.SceneManagement.Scene
 extern "C" void Scene_t1684909666_marshal_com_cleanup(Scene_t1684909666_marshaled_com& marshaled)
 {
-}
-// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetActiveScene()
-extern "C"  Scene_t1684909666  SceneManager_GetActiveScene_m2964039490 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	Scene_t1684909666  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318(NULL /*static, unused*/, (&V_0), /*hidden argument*/NULL);
-		Scene_t1684909666  L_0 = V_0;
-		return L_0;
-	}
-}
-// System.Void UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetActiveScene(UnityEngine.SceneManagement.Scene&)
-extern "C"  void SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318 (Il2CppObject * __this /* static, unused */, Scene_t1684909666 * ___value0, const MethodInfo* method)
-{
-	typedef void (*SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318_ftn) (Scene_t1684909666 *);
-	static SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetActiveScene(UnityEngine.SceneManagement.Scene&)");
-	_il2cpp_icall_func(___value0);
-}
-// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetSceneAt(System.Int32)
-extern "C"  Scene_t1684909666  SceneManager_GetSceneAt_m4157291656 (Il2CppObject * __this /* static, unused */, int32_t ___index0, const MethodInfo* method)
-{
-	Scene_t1684909666  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		int32_t L_0 = ___index0;
-		SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402(NULL /*static, unused*/, L_0, (&V_0), /*hidden argument*/NULL);
-		Scene_t1684909666  L_1 = V_0;
-		return L_1;
-	}
-}
-// System.Void UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetSceneAt(System.Int32,UnityEngine.SceneManagement.Scene&)
-extern "C"  void SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402 (Il2CppObject * __this /* static, unused */, int32_t ___index0, Scene_t1684909666 * ___value1, const MethodInfo* method)
-{
-	typedef void (*SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402_ftn) (int32_t, Scene_t1684909666 *);
-	static SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetSceneAt(System.Int32,UnityEngine.SceneManagement.Scene&)");
-	_il2cpp_icall_func(___index0, ___value1);
 }
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 extern "C"  void SceneManager_LoadScene_m1619949821 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName0, const MethodInfo* method)

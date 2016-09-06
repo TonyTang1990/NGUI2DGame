@@ -15723,6 +15723,7 @@ extern "C" void Application_get_isEditor_m2474583393 ();
 extern "C" void Application_get_platform_m3989224144 ();
 extern "C" void Application_get_dataPath_m371940330 ();
 extern "C" void Application_get_persistentDataPath_m3129298355 ();
+extern "C" void Application_get_productName_m802208223 ();
 extern "C" void Application_CallLogCallback_m3408386792 ();
 extern "C" void Application_LoadLevel_m393995325 ();
 extern "C" void LogCallback__ctor_m898185969 ();
@@ -17132,14 +17133,8 @@ extern "C" void Rigidbody_MoveRotation_m3412525692 ();
 extern "C" void Rigidbody_INTERNAL_CALL_MoveRotation_m2205051919 ();
 extern "C" void RPC__ctor_m1432086380 ();
 extern "C" void Scene_get_handle_m1555912301_AdjustorThunk ();
-extern "C" void Scene_get_name_m745914591_AdjustorThunk ();
 extern "C" void Scene_GetHashCode_m3223653899_AdjustorThunk ();
 extern "C" void Scene_Equals_m3588907349_AdjustorThunk ();
-extern "C" void Scene_GetNameInternal_m3140297940 ();
-extern "C" void SceneManager_GetActiveScene_m2964039490 ();
-extern "C" void SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318 ();
-extern "C" void SceneManager_GetSceneAt_m4157291656 ();
-extern "C" void SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402 ();
 extern "C" void SceneManager_LoadScene_m1619949821 ();
 extern "C" void SceneManager_LoadScene_m1386820036 ();
 extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_m3279056043 ();
@@ -20850,7 +20845,7 @@ extern "C" void WindowDragTilt__ctor_m2212893564 ();
 extern "C" void WindowDragTilt_Start_m3663283896 ();
 extern "C" void WindowDragTilt_OnEnable_m2676420184 ();
 extern "C" void WindowDragTilt_CoroutineUpdate_m4284548736 ();
-extern const Il2CppMethodPointer g_MethodPointers[20839] = 
+extern const Il2CppMethodPointer g_MethodPointers[20834] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -36564,6 +36559,7 @@ extern const Il2CppMethodPointer g_MethodPointers[20839] =
 	Application_get_platform_m3989224144,
 	Application_get_dataPath_m371940330,
 	Application_get_persistentDataPath_m3129298355,
+	Application_get_productName_m802208223,
 	Application_CallLogCallback_m3408386792,
 	Application_LoadLevel_m393995325,
 	LogCallback__ctor_m898185969,
@@ -37973,14 +37969,8 @@ extern const Il2CppMethodPointer g_MethodPointers[20839] =
 	Rigidbody_INTERNAL_CALL_MoveRotation_m2205051919,
 	RPC__ctor_m1432086380,
 	Scene_get_handle_m1555912301_AdjustorThunk,
-	Scene_get_name_m745914591_AdjustorThunk,
 	Scene_GetHashCode_m3223653899_AdjustorThunk,
 	Scene_Equals_m3588907349_AdjustorThunk,
-	Scene_GetNameInternal_m3140297940,
-	SceneManager_GetActiveScene_m2964039490,
-	SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318,
-	SceneManager_GetSceneAt_m4157291656,
-	SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402,
 	SceneManager_LoadScene_m1619949821,
 	SceneManager_LoadScene_m1386820036,
 	SceneManager_LoadSceneAsyncNameIndexInternal_m3279056043,

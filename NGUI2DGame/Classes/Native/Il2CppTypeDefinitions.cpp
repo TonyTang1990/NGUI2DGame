@@ -5509,7 +5509,6 @@ extern const Il2CppType UnityAction_2_t1903595547_0_0_0 = { &UnityAction_2_t1903
 extern const Il2CppType UnityAction_2_t1903595547_0_0_17 = { &UnityAction_2_t1903595547_GenericClass, 17, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
 extern const Il2CppType Scene_t1684909666_0_0_0 = { (void*)2366, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType Scene_t1684909666_1_0_2 = { (void*)2366, 2, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
 extern const Il2CppType Scene_t1684909666_1_0_0 = { (void*)2366, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
 
 extern const Il2CppType LoadSceneMode_t2981886439_0_0_0 = { (void*)2364, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
@@ -20225,7 +20224,7 @@ Il2CppArrayType BoundsU5BU2CU5D_t3976027471_ArrayType =
 extern const Il2CppType BoundsU5BU2CU5D_t3976027471_0_0_0 = { &BoundsU5BU2CU5D_t3976027471_ArrayType, 0, IL2CPP_TYPE_ARRAY, 0, 0, 0 };
 
 extern const Il2CppType BoundsU5BU5D_t3976027470_0_0_0 = { (void*)&Bounds_t3033363703_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[11422] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[11421] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -29491,7 +29490,6 @@ extern const Il2CppType* const  g_Il2CppTypeTable[11422] =
 	&LoadSceneMode_t2981886439_0_0_32854,
 	&SceneManager_t90660965_0_0_0,
 	&SceneManager_t90660965_1_0_0,
-	&Scene_t1684909666_1_0_2,
 	&UnityAction_2_t1903595547_0_0_17,
 	&UnityAction_1_t3051495417_0_0_17,
 	&UnityAction_2_t606618774_0_0_17,

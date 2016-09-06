@@ -1869,6 +1869,15 @@ extern "C"  String_t* Application_get_persistentDataPath_m3129298355 (Il2CppObje
 	_il2cpp_icall_func = (Application_get_persistentDataPath_m3129298355_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_persistentDataPath()");
 	return _il2cpp_icall_func();
 }
+// System.String UnityEngine.Application::get_productName()
+extern "C"  String_t* Application_get_productName_m802208223 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef String_t* (*Application_get_productName_m802208223_ftn) ();
+	static Application_get_productName_m802208223_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_productName_m802208223_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_productName()");
+	return _il2cpp_icall_func();
+}
 // System.Void UnityEngine.Application::CallLogCallback(System.String,System.String,UnityEngine.LogType,System.Boolean)
 extern Il2CppClass* Application_t354826772_il2cpp_TypeInfo_var;
 extern const uint32_t Application_CallLogCallback_m3408386792_MetadataUsageId;
