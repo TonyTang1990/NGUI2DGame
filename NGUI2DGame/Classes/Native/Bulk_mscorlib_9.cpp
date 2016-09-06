@@ -13,10 +13,24 @@
 #include <limits>
 #include <assert.h>
 
-// System.UnitySerializationHolder
-struct UnitySerializationHolder_t2045574117;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t228987430;
+// System.Object
+struct Il2CppObject;
+// System.String
+struct String_t;
+// System.UnauthorizedAccessException
+struct UnauthorizedAccessException_t886535555;
+// System.UnhandledExceptionEventArgs
+struct UnhandledExceptionEventArgs_t3067050131;
+// System.UnhandledExceptionEventHandler
+struct UnhandledExceptionEventHandler_t1916531888;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
+// System.UnitySerializationHolder
+struct UnitySerializationHolder_t2045574117;
 // System.Type
 struct Type_t;
 // System.DBNull
@@ -25,14 +39,10 @@ struct DBNull_t972229383;
 struct Assembly_t4268412390;
 // System.Reflection.Module
 struct Module_t4282841206;
-// System.Object
-struct Il2CppObject;
 // System.ValueType
 struct ValueType_t3507792607;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
-// System.String
-struct String_t;
 // System.Version
 struct Version_t1755874712;
 // System.WeakReference
@@ -43,19 +53,41 @@ struct WindowsConsoleDriver_t276624544;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "mscorlib_System_UnitySerializationHolder2045574117.h"
-#include "mscorlib_System_UnitySerializationHolder2045574117MethodDeclarations.h"
+#include "mscorlib_System_UIntPtr1549717846.h"
+#include "mscorlib_System_UIntPtr1549717846MethodDeclarations.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_UInt642909196914.h"
+#include "mscorlib_Locale4255929014MethodDeclarations.h"
+#include "mscorlib_System_OverflowException1075868493MethodDeclarations.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_OverflowException1075868493.h"
+#include "mscorlib_System_UInt322149682021.h"
 #include "mscorlib_System_Runtime_Serialization_Serialization228987430.h"
 #include "mscorlib_System_Runtime_Serialization_StreamingCon1417235061.h"
-#include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Object2689449295MethodDeclarations.h"
+#include "mscorlib_System_ArgumentNullException628810857MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Serialization_Serialization228987430MethodDeclarations.h"
-#include "mscorlib_System_String2029220233.h"
-#include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_System_ArgumentNullException628810857.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "mscorlib_System_UInt322149682021MethodDeclarations.h"
+#include "mscorlib_System_UnauthorizedAccessException886535555.h"
+#include "mscorlib_System_UnauthorizedAccessException886535555MethodDeclarations.h"
+#include "mscorlib_System_SystemException3877406272MethodDeclarations.h"
+#include "mscorlib_System_Exception1927440687MethodDeclarations.h"
+#include "mscorlib_System_UnhandledExceptionEventArgs3067050131.h"
+#include "mscorlib_System_UnhandledExceptionEventArgs3067050131MethodDeclarations.h"
+#include "mscorlib_System_EventArgs3289624707MethodDeclarations.h"
+#include "mscorlib_System_UnhandledExceptionEventHandler1916531888.h"
+#include "mscorlib_System_UnhandledExceptionEventHandler1916531888MethodDeclarations.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
+#include "mscorlib_System_UnitySerializationHolder2045574117.h"
+#include "mscorlib_System_UnitySerializationHolder2045574117MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295MethodDeclarations.h"
 #include "mscorlib_System_UnitySerializationHolder_UnityType2934041722.h"
 #include "mscorlib_System_Type1303803226.h"
 #include "mscorlib_System_Type1303803226MethodDeclarations.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_Reflection_Assembly4268412390.h"
 #include "mscorlib_System_Reflection_Assembly4268412390MethodDeclarations.h"
 #include "mscorlib_System_RuntimeTypeHandle2330101084.h"
@@ -64,20 +96,16 @@ struct WindowsConsoleDriver_t276624544;
 #include "mscorlib_System_Reflection_Module4282841206MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1793819818.h"
-#include "mscorlib_Locale4255929014MethodDeclarations.h"
 #include "mscorlib_System_DBNull972229383MethodDeclarations.h"
 #include "mscorlib_System_UnitySerializationHolder_UnityType2934041722MethodDeclarations.h"
 #include "mscorlib_System_ValueType3507792607.h"
 #include "mscorlib_System_ValueType3507792607MethodDeclarations.h"
-#include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_Version1755874712.h"
 #include "mscorlib_System_Version1755874712MethodDeclarations.h"
-#include "mscorlib_System_ArgumentNullException628810857MethodDeclarations.h"
 #include "mscorlib_System_String2029220233MethodDeclarations.h"
 #include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
 #include "mscorlib_System_Int322071877448MethodDeclarations.h"
-#include "mscorlib_System_ArgumentNullException628810857.h"
 #include "mscorlib_System_Char3454481338.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
 #include "mscorlib_System_ArgumentOutOfRangeException279959794MethodDeclarations.h"
@@ -93,7 +121,6 @@ struct WindowsConsoleDriver_t276624544;
 #include "mscorlib_System_WindowsConsoleDriver276624544.h"
 #include "mscorlib_System_WindowsConsoleDriver276624544MethodDeclarations.h"
 #include "mscorlib_System_ConsoleScreenBufferInfo211837289.h"
-#include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_Handles2032702205.h"
 #include "mscorlib_System_Int164041245914.h"
 #include "mscorlib_System_ConsoleKeyInfo3124575640.h"
@@ -111,6 +138,449 @@ struct WindowsConsoleDriver_t276624544;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.UIntPtr::.ctor(System.UInt64)
+extern Il2CppClass* UIntPtr_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* OverflowException_t1075868493_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3404574361;
+extern const uint32_t UIntPtr__ctor_m2737768530_MetadataUsageId;
+extern "C"  void UIntPtr__ctor_m2737768530 (UIntPtr_t * __this, uint64_t ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIntPtr__ctor_m2737768530_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		uint64_t L_0 = ___value0;
+		if ((!(((uint64_t)L_0) > ((uint64_t)(((int64_t)((uint64_t)(((uint32_t)((uint32_t)(-1)))))))))))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(UIntPtr_t_il2cpp_TypeInfo_var);
+		int32_t L_1 = UIntPtr_get_Size_m537421489(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) >= ((int32_t)8)))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		String_t* L_2 = Locale_GetText_m1954433032(NULL /*static, unused*/, _stringLiteral3404574361, /*hidden argument*/NULL);
+		OverflowException_t1075868493 * L_3 = (OverflowException_t1075868493 *)il2cpp_codegen_object_new(OverflowException_t1075868493_il2cpp_TypeInfo_var);
+		OverflowException__ctor_m3249894750(L_3, L_2, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0023:
+	{
+		uint64_t L_4 = ___value0;
+		__this->set__pointer_1((void*)(((uintptr_t)L_4)));
+		return;
+	}
+}
+extern "C"  void UIntPtr__ctor_m2737768530_AdjustorThunk (Il2CppObject * __this, uint64_t ___value0, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	UIntPtr__ctor_m2737768530(_thisAdjusted, ___value0, method);
+}
+// System.Void System.UIntPtr::.ctor(System.UInt32)
+extern "C"  void UIntPtr__ctor_m3900568171 (UIntPtr_t * __this, uint32_t ___value0, const MethodInfo* method)
+{
+	{
+		uint32_t L_0 = ___value0;
+		__this->set__pointer_1((void*)(((uintptr_t)L_0)));
+		return;
+	}
+}
+extern "C"  void UIntPtr__ctor_m3900568171_AdjustorThunk (Il2CppObject * __this, uint32_t ___value0, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	UIntPtr__ctor_m3900568171(_thisAdjusted, ___value0, method);
+}
+// System.Void System.UIntPtr::.ctor(System.Void*)
+extern "C"  void UIntPtr__ctor_m2836115166 (UIntPtr_t * __this, void* ___value0, const MethodInfo* method)
+{
+	{
+		void* L_0 = ___value0;
+		__this->set__pointer_1((void*)L_0);
+		return;
+	}
+}
+extern "C"  void UIntPtr__ctor_m2836115166_AdjustorThunk (Il2CppObject * __this, void* ___value0, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	UIntPtr__ctor_m2836115166(_thisAdjusted, ___value0, method);
+}
+// System.Void System.UIntPtr::.cctor()
+extern Il2CppClass* UIntPtr_t_il2cpp_TypeInfo_var;
+extern const uint32_t UIntPtr__cctor_m889490270_MetadataUsageId;
+extern "C"  void UIntPtr__cctor_m889490270 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIntPtr__cctor_m889490270_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		UIntPtr_t  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		UIntPtr__ctor_m3900568171(&L_0, 0, /*hidden argument*/NULL);
+		((UIntPtr_t_StaticFields*)UIntPtr_t_il2cpp_TypeInfo_var->static_fields)->set_Zero_0(L_0);
+		return;
+	}
+}
+// System.Void System.UIntPtr::System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2792112382;
+extern Il2CppCodeGenString* _stringLiteral3638826367;
+extern const uint32_t UIntPtr_System_Runtime_Serialization_ISerializable_GetObjectData_m3481735378_MetadataUsageId;
+extern "C"  void UIntPtr_System_Runtime_Serialization_ISerializable_GetObjectData_m3481735378 (UIntPtr_t * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIntPtr_System_Runtime_Serialization_ISerializable_GetObjectData_m3481735378_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SerializationInfo_t228987430 * L_0 = ___info0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral2792112382, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		SerializationInfo_t228987430 * L_2 = ___info0;
+		void* L_3 = __this->get__pointer_1();
+		NullCheck(L_2);
+		SerializationInfo_AddValue_m4254971664(L_2, _stringLiteral3638826367, (((int64_t)((uint64_t)(intptr_t)L_3))), /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void UIntPtr_System_Runtime_Serialization_ISerializable_GetObjectData_m3481735378_AdjustorThunk (Il2CppObject * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	UIntPtr_System_Runtime_Serialization_ISerializable_GetObjectData_m3481735378(_thisAdjusted, ___info0, ___context1, method);
+}
+// System.Boolean System.UIntPtr::Equals(System.Object)
+extern Il2CppClass* UIntPtr_t_il2cpp_TypeInfo_var;
+extern const uint32_t UIntPtr_Equals_m2506169550_MetadataUsageId;
+extern "C"  bool UIntPtr_Equals_m2506169550 (UIntPtr_t * __this, Il2CppObject * ___obj0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UIntPtr_Equals_m2506169550_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	UIntPtr_t  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Il2CppObject * L_0 = ___obj0;
+		if (!((Il2CppObject *)IsInstSealed(L_0, UIntPtr_t_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Il2CppObject * L_1 = ___obj0;
+		V_0 = ((*(UIntPtr_t *)((UIntPtr_t *)UnBox (L_1, UIntPtr_t_il2cpp_TypeInfo_var))));
+		void* L_2 = __this->get__pointer_1();
+		void* L_3 = (&V_0)->get__pointer_1();
+		return (bool)((((intptr_t)L_2) == ((intptr_t)L_3))? 1 : 0);
+	}
+
+IL_0022:
+	{
+		return (bool)0;
+	}
+}
+extern "C"  bool UIntPtr_Equals_m2506169550_AdjustorThunk (Il2CppObject * __this, Il2CppObject * ___obj0, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	return UIntPtr_Equals_m2506169550(_thisAdjusted, ___obj0, method);
+}
+// System.Int32 System.UIntPtr::GetHashCode()
+extern "C"  int32_t UIntPtr_GetHashCode_m1914145578 (UIntPtr_t * __this, const MethodInfo* method)
+{
+	{
+		void* L_0 = __this->get__pointer_1();
+		return (((int32_t)((int32_t)(intptr_t)L_0)));
+	}
+}
+extern "C"  int32_t UIntPtr_GetHashCode_m1914145578_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	return UIntPtr_GetHashCode_m1914145578(_thisAdjusted, method);
+}
+// System.UInt32 System.UIntPtr::ToUInt32()
+extern "C"  uint32_t UIntPtr_ToUInt32_m1679632738 (UIntPtr_t * __this, const MethodInfo* method)
+{
+	{
+		void* L_0 = __this->get__pointer_1();
+		return (((int32_t)((uint32_t)(intptr_t)L_0)));
+	}
+}
+extern "C"  uint32_t UIntPtr_ToUInt32_m1679632738_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	return UIntPtr_ToUInt32_m1679632738(_thisAdjusted, method);
+}
+// System.UInt64 System.UIntPtr::ToUInt64()
+extern "C"  uint64_t UIntPtr_ToUInt64_m3466460944 (UIntPtr_t * __this, const MethodInfo* method)
+{
+	{
+		void* L_0 = __this->get__pointer_1();
+		return (((int64_t)((uint64_t)(intptr_t)L_0)));
+	}
+}
+extern "C"  uint64_t UIntPtr_ToUInt64_m3466460944_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	return UIntPtr_ToUInt64_m3466460944(_thisAdjusted, method);
+}
+// System.Void* System.UIntPtr::ToPointer()
+extern "C"  void* UIntPtr_ToPointer_m2844280029 (UIntPtr_t * __this, const MethodInfo* method)
+{
+	{
+		void* L_0 = __this->get__pointer_1();
+		return (void*)(L_0);
+	}
+}
+extern "C"  void* UIntPtr_ToPointer_m2844280029_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	return UIntPtr_ToPointer_m2844280029(_thisAdjusted, method);
+}
+// System.String System.UIntPtr::ToString()
+extern "C"  String_t* UIntPtr_ToString_m387842486 (UIntPtr_t * __this, const MethodInfo* method)
+{
+	uint32_t V_0 = 0;
+	{
+		void* L_0 = __this->get__pointer_1();
+		V_0 = (((int32_t)((uint32_t)(intptr_t)L_0)));
+		String_t* L_1 = UInt32_ToString_m554020223((&V_0), /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+extern "C"  String_t* UIntPtr_ToString_m387842486_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	UIntPtr_t * _thisAdjusted = reinterpret_cast<UIntPtr_t *>(__this + 1);
+	return UIntPtr_ToString_m387842486(_thisAdjusted, method);
+}
+// System.Int32 System.UIntPtr::get_Size()
+extern "C"  int32_t UIntPtr_get_Size_m537421489 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	{
+		uint32_t L_0 = sizeof(void*);
+		return L_0;
+	}
+}
+// System.Boolean System.UIntPtr::op_Equality(System.UIntPtr,System.UIntPtr)
+extern "C"  bool UIntPtr_op_Equality_m1435732519 (Il2CppObject * __this /* static, unused */, UIntPtr_t  ___value10, UIntPtr_t  ___value21, const MethodInfo* method)
+{
+	{
+		void* L_0 = (&___value10)->get__pointer_1();
+		void* L_1 = (&___value21)->get__pointer_1();
+		return (bool)((((intptr_t)L_0) == ((intptr_t)L_1))? 1 : 0);
+	}
+}
+// System.Boolean System.UIntPtr::op_Inequality(System.UIntPtr,System.UIntPtr)
+extern "C"  bool UIntPtr_op_Inequality_m2189183216 (Il2CppObject * __this /* static, unused */, UIntPtr_t  ___value10, UIntPtr_t  ___value21, const MethodInfo* method)
+{
+	{
+		void* L_0 = (&___value10)->get__pointer_1();
+		void* L_1 = (&___value21)->get__pointer_1();
+		return (bool)((((int32_t)((((intptr_t)L_0) == ((intptr_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.UInt64 System.UIntPtr::op_Explicit(System.UIntPtr)
+extern "C"  uint64_t UIntPtr_op_Explicit_m2207782856 (Il2CppObject * __this /* static, unused */, UIntPtr_t  ___value0, const MethodInfo* method)
+{
+	{
+		void* L_0 = (&___value0)->get__pointer_1();
+		return (((int64_t)((uint64_t)(intptr_t)L_0)));
+	}
+}
+// System.UInt32 System.UIntPtr::op_Explicit(System.UIntPtr)
+extern "C"  uint32_t UIntPtr_op_Explicit_m1113914169 (Il2CppObject * __this /* static, unused */, UIntPtr_t  ___value0, const MethodInfo* method)
+{
+	{
+		void* L_0 = (&___value0)->get__pointer_1();
+		return (((int32_t)((uint32_t)(intptr_t)L_0)));
+	}
+}
+// System.UIntPtr System.UIntPtr::op_Explicit(System.UInt64)
+extern "C"  UIntPtr_t  UIntPtr_op_Explicit_m2309994832 (Il2CppObject * __this /* static, unused */, uint64_t ___value0, const MethodInfo* method)
+{
+	{
+		uint64_t L_0 = ___value0;
+		UIntPtr_t  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		UIntPtr__ctor_m2737768530(&L_1, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.UIntPtr System.UIntPtr::op_Explicit(System.Void*)
+extern "C"  UIntPtr_t  UIntPtr_op_Explicit_m2497276212 (Il2CppObject * __this /* static, unused */, void* ___value0, const MethodInfo* method)
+{
+	{
+		void* L_0 = ___value0;
+		UIntPtr_t  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		UIntPtr__ctor_m2836115166(&L_1, (void*)(void*)L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void* System.UIntPtr::op_Explicit(System.UIntPtr)
+extern "C"  void* UIntPtr_op_Explicit_m2011523904 (Il2CppObject * __this /* static, unused */, UIntPtr_t  ___value0, const MethodInfo* method)
+{
+	{
+		void* L_0 = UIntPtr_ToPointer_m2844280029((&___value0), /*hidden argument*/NULL);
+		return (void*)(L_0);
+	}
+}
+// System.UIntPtr System.UIntPtr::op_Explicit(System.UInt32)
+extern "C"  UIntPtr_t  UIntPtr_op_Explicit_m199463861 (Il2CppObject * __this /* static, unused */, uint32_t ___value0, const MethodInfo* method)
+{
+	{
+		uint32_t L_0 = ___value0;
+		UIntPtr_t  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		UIntPtr__ctor_m3900568171(&L_1, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void System.UnauthorizedAccessException::.ctor()
+extern Il2CppCodeGenString* _stringLiteral2486644538;
+extern const uint32_t UnauthorizedAccessException__ctor_m117068094_MetadataUsageId;
+extern "C"  void UnauthorizedAccessException__ctor_m117068094 (UnauthorizedAccessException_t886535555 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UnauthorizedAccessException__ctor_m117068094_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = Locale_GetText_m1954433032(NULL /*static, unused*/, _stringLiteral2486644538, /*hidden argument*/NULL);
+		SystemException__ctor_m4001391027(__this, L_0, /*hidden argument*/NULL);
+		Exception_set_HResult_m2376998645(__this, ((int32_t)-2146233088), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.UnauthorizedAccessException::.ctor(System.String)
+extern "C"  void UnauthorizedAccessException__ctor_m3480402128 (UnauthorizedAccessException_t886535555 * __this, String_t* ___message0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___message0;
+		SystemException__ctor_m4001391027(__this, L_0, /*hidden argument*/NULL);
+		Exception_set_HResult_m2376998645(__this, ((int32_t)-2146233088), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.UnauthorizedAccessException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern "C"  void UnauthorizedAccessException__ctor_m259001183 (UnauthorizedAccessException_t886535555 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method)
+{
+	{
+		SerializationInfo_t228987430 * L_0 = ___info0;
+		StreamingContext_t1417235061  L_1 = ___context1;
+		SystemException__ctor_m2688248668(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.UnhandledExceptionEventArgs::.ctor(System.Object,System.Boolean)
+extern Il2CppClass* EventArgs_t3289624707_il2cpp_TypeInfo_var;
+extern const uint32_t UnhandledExceptionEventArgs__ctor_m550503747_MetadataUsageId;
+extern "C"  void UnhandledExceptionEventArgs__ctor_m550503747 (UnhandledExceptionEventArgs_t3067050131 * __this, Il2CppObject * ___exception0, bool ___isTerminating1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UnhandledExceptionEventArgs__ctor_m550503747_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(EventArgs_t3289624707_il2cpp_TypeInfo_var);
+		EventArgs__ctor_m3696060910(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_0 = ___exception0;
+		__this->set_exception_1(L_0);
+		bool L_1 = ___isTerminating1;
+		__this->set_m_isTerminating_2(L_1);
+		return;
+	}
+}
+// System.Object System.UnhandledExceptionEventArgs::get_ExceptionObject()
+extern "C"  Il2CppObject * UnhandledExceptionEventArgs_get_ExceptionObject_m2339769046 (UnhandledExceptionEventArgs_t3067050131 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_exception_1();
+		return L_0;
+	}
+}
+// System.Boolean System.UnhandledExceptionEventArgs::get_IsTerminating()
+extern "C"  bool UnhandledExceptionEventArgs_get_IsTerminating_m2266550949 (UnhandledExceptionEventArgs_t3067050131 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = __this->get_m_isTerminating_2();
+		return L_0;
+	}
+}
+// System.Void System.UnhandledExceptionEventHandler::.ctor(System.Object,System.IntPtr)
+extern "C"  void UnhandledExceptionEventHandler__ctor_m2731559345 (UnhandledExceptionEventHandler_t1916531888 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void System.UnhandledExceptionEventHandler::Invoke(System.Object,System.UnhandledExceptionEventArgs)
+extern "C"  void UnhandledExceptionEventHandler_Invoke_m60389477 (UnhandledExceptionEventHandler_t1916531888 * __this, Il2CppObject * ___sender0, UnhandledExceptionEventArgs_t3067050131 * ___e1, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		UnhandledExceptionEventHandler_Invoke_m60389477((UnhandledExceptionEventHandler_t1916531888 *)__this->get_prev_9(),___sender0, ___e1, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, Il2CppObject * ___sender0, UnhandledExceptionEventArgs_t3067050131 * ___e1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___sender0, ___e1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (void* __this, Il2CppObject * ___sender0, UnhandledExceptionEventArgs_t3067050131 * ___e1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___sender0, ___e1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, UnhandledExceptionEventArgs_t3067050131 * ___e1, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(___sender0, ___e1,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+// System.IAsyncResult System.UnhandledExceptionEventHandler::BeginInvoke(System.Object,System.UnhandledExceptionEventArgs,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * UnhandledExceptionEventHandler_BeginInvoke_m2643527438 (UnhandledExceptionEventHandler_t1916531888 * __this, Il2CppObject * ___sender0, UnhandledExceptionEventArgs_t3067050131 * ___e1, AsyncCallback_t163412349 * ___callback2, Il2CppObject * ___object3, const MethodInfo* method)
+{
+	void *__d_args[3] = {0};
+	__d_args[0] = ___sender0;
+	__d_args[1] = ___e1;
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback2, (Il2CppObject*)___object3);
+}
+// System.Void System.UnhandledExceptionEventHandler::EndInvoke(System.IAsyncResult)
+extern "C"  void UnhandledExceptionEventHandler_EndInvoke_m2207457167 (UnhandledExceptionEventHandler_t1916531888 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
 // System.Void System.UnitySerializationHolder::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern Il2CppCodeGenString* _stringLiteral2620942;
 extern Il2CppCodeGenString* _stringLiteral1756057731;

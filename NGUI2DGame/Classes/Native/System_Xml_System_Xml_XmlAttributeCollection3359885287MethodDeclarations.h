@@ -40,15 +40,15 @@ extern "C"  void XmlAttributeCollection_System_Collections_ICollection_CopyTo_m9
 // System.Boolean System.Xml.XmlAttributeCollection::get_IsReadOnly()
 extern "C"  bool XmlAttributeCollection_get_IsReadOnly_m1820463207 (XmlAttributeCollection_t3359885287 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlAttribute System.Xml.XmlAttributeCollection::get_ItemOf(System.String)
-extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_get_ItemOf_m2084104187 (XmlAttributeCollection_t3359885287 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_get_ItemOf_m2550557500 (XmlAttributeCollection_t3359885287 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlAttribute System.Xml.XmlAttributeCollection::get_ItemOf(System.Int32)
-extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_get_ItemOf_m177692376 (XmlAttributeCollection_t3359885287 * __this, int32_t ___i0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_get_ItemOf_m2813190611 (XmlAttributeCollection_t3359885287 * __this, int32_t ___i0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlAttribute System.Xml.XmlAttributeCollection::get_ItemOf(System.String,System.String)
 extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_get_ItemOf_m832735469 (XmlAttributeCollection_t3359885287 * __this, String_t* ___localName0, String_t* ___namespaceURI1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlAttribute System.Xml.XmlAttributeCollection::Append(System.Xml.XmlAttribute)
 extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_Append_m1481579495 (XmlAttributeCollection_t3359885287 * __this, XmlAttribute_t175731005 * ___node0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlAttribute System.Xml.XmlAttributeCollection::Remove(System.Xml.XmlAttribute)
-extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_Remove_m3813259959 (XmlAttributeCollection_t3359885287 * __this, XmlAttribute_t175731005 * ___node0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  XmlAttribute_t175731005 * XmlAttributeCollection_Remove_m1093779644 (XmlAttributeCollection_t3359885287 * __this, XmlAttribute_t175731005 * ___node0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlAttributeCollection::RemoveAll()
 extern "C"  void XmlAttributeCollection_RemoveAll_m1569676469 (XmlAttributeCollection_t3359885287 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlNode System.Xml.XmlAttributeCollection::SetNamedItem(System.Xml.XmlNode)

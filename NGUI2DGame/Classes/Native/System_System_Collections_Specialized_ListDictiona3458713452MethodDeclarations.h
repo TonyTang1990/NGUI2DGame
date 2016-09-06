@@ -35,7 +35,7 @@ struct IDictionaryEnumerator_t259680273;
 #include "mscorlib_System_Array3829468939.h"
 
 // System.Void System.Collections.Specialized.ListDictionary::.ctor()
-extern "C"  void ListDictionary__ctor_m2212872322 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ListDictionary__ctor_m3573908233 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.ListDictionary::.ctor(System.Collections.IComparer)
 extern "C"  void ListDictionary__ctor_m319558045 (ListDictionary_t3458713452 * __this, Il2CppObject * ___comparer0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.Collections.Specialized.ListDictionary::System.Collections.IEnumerable.GetEnumerator()
@@ -47,7 +47,7 @@ extern "C"  DictionaryNode_t2725637098 * ListDictionary_FindEntry_m432748847 (Li
 // System.Void System.Collections.Specialized.ListDictionary::AddImpl(System.Object,System.Object,System.Collections.Specialized.ListDictionary/DictionaryNode)
 extern "C"  void ListDictionary_AddImpl_m2604632092 (ListDictionary_t3458713452 * __this, Il2CppObject * ___key0, Il2CppObject * ___value1, DictionaryNode_t2725637098 * ___prev2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Specialized.ListDictionary::get_Count()
-extern "C"  int32_t ListDictionary_get_Count_m3864225576 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  int32_t ListDictionary_get_Count_m2397535557 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Specialized.ListDictionary::get_SyncRoot()
 extern "C"  Il2CppObject * ListDictionary_get_SyncRoot_m1212356752 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.ListDictionary::CopyTo(System.Array,System.Int32)
@@ -55,11 +55,11 @@ extern "C"  void ListDictionary_CopyTo_m1124479600 (ListDictionary_t3458713452 *
 // System.Object System.Collections.Specialized.ListDictionary::get_Item(System.Object)
 extern "C"  Il2CppObject * ListDictionary_get_Item_m3967158800 (ListDictionary_t3458713452 * __this, Il2CppObject * ___key0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.ListDictionary::set_Item(System.Object,System.Object)
-extern "C"  void ListDictionary_set_Item_m1846203896 (ListDictionary_t3458713452 * __this, Il2CppObject * ___key0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void ListDictionary_set_Item_m972551921 (ListDictionary_t3458713452 * __this, Il2CppObject * ___key0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.ICollection System.Collections.Specialized.ListDictionary::get_Keys()
 extern "C"  Il2CppObject * ListDictionary_get_Keys_m3344920214 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.ICollection System.Collections.Specialized.ListDictionary::get_Values()
-extern "C"  Il2CppObject * ListDictionary_get_Values_m625353351 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Il2CppObject * ListDictionary_get_Values_m4194383876 (ListDictionary_t3458713452 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.ListDictionary::Add(System.Object,System.Object)
 extern "C"  void ListDictionary_Add_m4276262662 (ListDictionary_t3458713452 * __this, Il2CppObject * ___key0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.ListDictionary::Clear()

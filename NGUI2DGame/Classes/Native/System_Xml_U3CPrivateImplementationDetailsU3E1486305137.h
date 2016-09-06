@@ -24,14 +24,14 @@
 #endif
 
 // <PrivateImplementationDetails>
-struct  U3CPrivateImplementationDetailsU3E_t1486305138  : public Il2CppObject
+struct  U3CPrivateImplementationDetailsU3E_t1486305139  : public Il2CppObject
 {
 public:
 
 public:
 };
 
-struct U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields
+struct U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields
 {
 public:
 	// <PrivateImplementationDetails>/$ArrayType$8 <PrivateImplementationDetails>::$$field-36
@@ -43,16 +43,16 @@ public:
 	// <PrivateImplementationDetails>/$ArrayType$1280 <PrivateImplementationDetails>::$$field-39
 	U24ArrayTypeU241280_t628910058  ___U24U24fieldU2D39_3;
 	// <PrivateImplementationDetails>/$ArrayType$12 <PrivateImplementationDetails>::$$field-40
-	U24ArrayTypeU2412_t3672778803  ___U24U24fieldU2D40_4;
+	U24ArrayTypeU2412_t3672778805  ___U24U24fieldU2D40_4;
 	// <PrivateImplementationDetails>/$ArrayType$12 <PrivateImplementationDetails>::$$field-41
-	U24ArrayTypeU2412_t3672778803  ___U24U24fieldU2D41_5;
+	U24ArrayTypeU2412_t3672778805  ___U24U24fieldU2D41_5;
 	// <PrivateImplementationDetails>/$ArrayType$8 <PrivateImplementationDetails>::$$field-43
 	U24ArrayTypeU248_t1957337328  ___U24U24fieldU2D43_6;
 	// <PrivateImplementationDetails>/$ArrayType$8 <PrivateImplementationDetails>::$$field-44
 	U24ArrayTypeU248_t1957337328  ___U24U24fieldU2D44_7;
 
 public:
-	inline static int32_t get_offset_of_U24U24fieldU2D36_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D36_0)); }
+	inline static int32_t get_offset_of_U24U24fieldU2D36_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D36_0)); }
 	inline U24ArrayTypeU248_t1957337328  get_U24U24fieldU2D36_0() const { return ___U24U24fieldU2D36_0; }
 	inline U24ArrayTypeU248_t1957337328 * get_address_of_U24U24fieldU2D36_0() { return &___U24U24fieldU2D36_0; }
 	inline void set_U24U24fieldU2D36_0(U24ArrayTypeU248_t1957337328  value)
@@ -60,7 +60,7 @@ public:
 		___U24U24fieldU2D36_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D37_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D37_1)); }
+	inline static int32_t get_offset_of_U24U24fieldU2D37_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D37_1)); }
 	inline U24ArrayTypeU24256_t2038352955  get_U24U24fieldU2D37_1() const { return ___U24U24fieldU2D37_1; }
 	inline U24ArrayTypeU24256_t2038352955 * get_address_of_U24U24fieldU2D37_1() { return &___U24U24fieldU2D37_1; }
 	inline void set_U24U24fieldU2D37_1(U24ArrayTypeU24256_t2038352955  value)
@@ -68,7 +68,7 @@ public:
 		___U24U24fieldU2D37_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D38_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D38_2)); }
+	inline static int32_t get_offset_of_U24U24fieldU2D38_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D38_2)); }
 	inline U24ArrayTypeU24256_t2038352955  get_U24U24fieldU2D38_2() const { return ___U24U24fieldU2D38_2; }
 	inline U24ArrayTypeU24256_t2038352955 * get_address_of_U24U24fieldU2D38_2() { return &___U24U24fieldU2D38_2; }
 	inline void set_U24U24fieldU2D38_2(U24ArrayTypeU24256_t2038352955  value)
@@ -76,7 +76,7 @@ public:
 		___U24U24fieldU2D38_2 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D39_3() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D39_3)); }
+	inline static int32_t get_offset_of_U24U24fieldU2D39_3() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D39_3)); }
 	inline U24ArrayTypeU241280_t628910058  get_U24U24fieldU2D39_3() const { return ___U24U24fieldU2D39_3; }
 	inline U24ArrayTypeU241280_t628910058 * get_address_of_U24U24fieldU2D39_3() { return &___U24U24fieldU2D39_3; }
 	inline void set_U24U24fieldU2D39_3(U24ArrayTypeU241280_t628910058  value)
@@ -84,23 +84,23 @@ public:
 		___U24U24fieldU2D39_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D40_4() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D40_4)); }
-	inline U24ArrayTypeU2412_t3672778803  get_U24U24fieldU2D40_4() const { return ___U24U24fieldU2D40_4; }
-	inline U24ArrayTypeU2412_t3672778803 * get_address_of_U24U24fieldU2D40_4() { return &___U24U24fieldU2D40_4; }
-	inline void set_U24U24fieldU2D40_4(U24ArrayTypeU2412_t3672778803  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D40_4() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D40_4)); }
+	inline U24ArrayTypeU2412_t3672778805  get_U24U24fieldU2D40_4() const { return ___U24U24fieldU2D40_4; }
+	inline U24ArrayTypeU2412_t3672778805 * get_address_of_U24U24fieldU2D40_4() { return &___U24U24fieldU2D40_4; }
+	inline void set_U24U24fieldU2D40_4(U24ArrayTypeU2412_t3672778805  value)
 	{
 		___U24U24fieldU2D40_4 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D41_5() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D41_5)); }
-	inline U24ArrayTypeU2412_t3672778803  get_U24U24fieldU2D41_5() const { return ___U24U24fieldU2D41_5; }
-	inline U24ArrayTypeU2412_t3672778803 * get_address_of_U24U24fieldU2D41_5() { return &___U24U24fieldU2D41_5; }
-	inline void set_U24U24fieldU2D41_5(U24ArrayTypeU2412_t3672778803  value)
+	inline static int32_t get_offset_of_U24U24fieldU2D41_5() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D41_5)); }
+	inline U24ArrayTypeU2412_t3672778805  get_U24U24fieldU2D41_5() const { return ___U24U24fieldU2D41_5; }
+	inline U24ArrayTypeU2412_t3672778805 * get_address_of_U24U24fieldU2D41_5() { return &___U24U24fieldU2D41_5; }
+	inline void set_U24U24fieldU2D41_5(U24ArrayTypeU2412_t3672778805  value)
 	{
 		___U24U24fieldU2D41_5 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D43_6() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D43_6)); }
+	inline static int32_t get_offset_of_U24U24fieldU2D43_6() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D43_6)); }
 	inline U24ArrayTypeU248_t1957337328  get_U24U24fieldU2D43_6() const { return ___U24U24fieldU2D43_6; }
 	inline U24ArrayTypeU248_t1957337328 * get_address_of_U24U24fieldU2D43_6() { return &___U24U24fieldU2D43_6; }
 	inline void set_U24U24fieldU2D43_6(U24ArrayTypeU248_t1957337328  value)
@@ -108,7 +108,7 @@ public:
 		___U24U24fieldU2D43_6 = value;
 	}
 
-	inline static int32_t get_offset_of_U24U24fieldU2D44_7() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305138_StaticFields, ___U24U24fieldU2D44_7)); }
+	inline static int32_t get_offset_of_U24U24fieldU2D44_7() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D44_7)); }
 	inline U24ArrayTypeU248_t1957337328  get_U24U24fieldU2D44_7() const { return ___U24U24fieldU2D44_7; }
 	inline U24ArrayTypeU248_t1957337328 * get_address_of_U24U24fieldU2D44_7() { return &___U24U24fieldU2D44_7; }
 	inline void set_U24U24fieldU2D44_7(U24ArrayTypeU248_t1957337328  value)

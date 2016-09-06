@@ -31,13 +31,13 @@ struct Exception_t1927440687;
 #include "mscorlib_System_String2029220233.h"
 
 // System.Void System.Xml.XmlTextWriter::.ctor(System.IO.TextWriter)
-extern "C"  void XmlTextWriter__ctor_m867344167 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlTextWriter__ctor_m3230461554 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlTextWriter::.cctor()
 extern "C"  void XmlTextWriter__cctor_m3952843481 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlTextWriter::Initialize(System.IO.TextWriter)
 extern "C"  void XmlTextWriter_Initialize_m467029607 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlTextWriter::set_Formatting(System.Xml.Formatting)
-extern "C"  void XmlTextWriter_set_Formatting_m324688091 (XmlTextWriter_t2527250655 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlTextWriter_set_Formatting_m3944030982 (XmlTextWriter_t2527250655 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Xml.XmlTextWriter::get_XmlLang()
 extern "C"  String_t* XmlTextWriter_get_XmlLang_m555922395 (XmlTextWriter_t2527250655 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlSpace System.Xml.XmlTextWriter::get_XmlSpace()

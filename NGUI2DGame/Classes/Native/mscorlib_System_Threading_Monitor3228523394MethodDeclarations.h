@@ -18,6 +18,8 @@ struct Il2CppObject;
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Object2689449295.h"
 
+// System.Boolean System.Threading.Monitor::Monitor_try_enter(System.Object,System.Int32)
+extern "C"  bool Monitor_Monitor_try_enter_m2410771975 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, int32_t ___ms1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.Monitor::Enter(System.Object)
 extern "C"  void Monitor_Enter_m2136705809 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.Monitor::Exit(System.Object)
@@ -28,6 +30,8 @@ extern "C"  void Monitor_Monitor_pulse_m2135582245 (Il2CppObject * __this /* sta
 extern "C"  bool Monitor_Monitor_test_synchronised_m1542589500 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.Monitor::Pulse(System.Object)
 extern "C"  void Monitor_Pulse_m15311376 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Threading.Monitor::TryEnter(System.Object,System.Int32)
+extern "C"  bool Monitor_TryEnter_m3833690335 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, int32_t ___millisecondsTimeout1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Threading.Monitor::Monitor_wait(System.Object,System.Int32)
 extern "C"  bool Monitor_Monitor_wait_m3813798368 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, int32_t ___ms1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Threading.Monitor::Wait(System.Object,System.Int32)

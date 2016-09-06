@@ -19,7 +19,6 @@ extern "C" void DelegatePInvokeWrapper_WriteDelegate_t489908132 ();
 extern "C" void DelegatePInvokeWrapper_CrossContextDelegate_t754146990 ();
 extern "C" void DelegatePInvokeWrapper_CallbackHandler_t362827733 ();
 extern "C" void DelegatePInvokeWrapper_ThreadStart_t3437517264 ();
-extern "C" void DelegatePInvokeWrapper_CharGetter_t1955031820 ();
 extern "C" void DelegatePInvokeWrapper_ReadMethod_t3362229488 ();
 extern "C" void DelegatePInvokeWrapper_UnmanagedReadOrWrite_t1990215745 ();
 extern "C" void DelegatePInvokeWrapper_WriteMethod_t1894833619 ();
@@ -27,6 +26,7 @@ extern "C" void DelegatePInvokeWrapper_ReadDelegate_t1559754630 ();
 extern "C" void DelegatePInvokeWrapper_WriteDelegate_t888270799 ();
 extern "C" void DelegatePInvokeWrapper_SocketAsyncCall_t3737776727 ();
 extern "C" void DelegatePInvokeWrapper_CostDelegate_t1824458113 ();
+extern "C" void DelegatePInvokeWrapper_CharGetter_t1955031820 ();
 extern "C" void DelegatePInvokeWrapper_LogCallback_t1867914413 ();
 extern "C" void DelegatePInvokeWrapper_PCMReaderCallback_t3007145346 ();
 extern "C" void DelegatePInvokeWrapper_PCMSetPositionCallback_t421863554 ();
@@ -65,7 +65,6 @@ extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[44] =
 	DelegatePInvokeWrapper_CrossContextDelegate_t754146990,
 	DelegatePInvokeWrapper_CallbackHandler_t362827733,
 	DelegatePInvokeWrapper_ThreadStart_t3437517264,
-	DelegatePInvokeWrapper_CharGetter_t1955031820,
 	DelegatePInvokeWrapper_ReadMethod_t3362229488,
 	DelegatePInvokeWrapper_UnmanagedReadOrWrite_t1990215745,
 	DelegatePInvokeWrapper_WriteMethod_t1894833619,
@@ -73,6 +72,7 @@ extern const Il2CppMethodPointer g_DelegateWrappersManagedToNative[44] =
 	DelegatePInvokeWrapper_WriteDelegate_t888270799,
 	DelegatePInvokeWrapper_SocketAsyncCall_t3737776727,
 	DelegatePInvokeWrapper_CostDelegate_t1824458113,
+	DelegatePInvokeWrapper_CharGetter_t1955031820,
 	DelegatePInvokeWrapper_LogCallback_t1867914413,
 	DelegatePInvokeWrapper_PCMReaderCallback_t3007145346,
 	DelegatePInvokeWrapper_PCMSetPositionCallback_t421863554,

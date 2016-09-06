@@ -22,3 +22,5 @@ struct String_t;
 
 // System.Void System.Runtime.CompilerServices.InternalsVisibleToAttribute::.ctor(System.String)
 extern "C"  void InternalsVisibleToAttribute__ctor_m573685517 (InternalsVisibleToAttribute_t1037732567 * __this, String_t* ___assemblyName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Runtime.CompilerServices.InternalsVisibleToAttribute::get_AssemblyName()
+extern "C"  String_t* InternalsVisibleToAttribute_get_AssemblyName_m6058514 (InternalsVisibleToAttribute_t1037732567 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

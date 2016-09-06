@@ -1324,7 +1324,7 @@ extern "C"  void Helpers__cctor_m3113545832 (Il2CppObject * __this /* static, un
 	}
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2930443103(L_0, _stringLiteral3191366431, /*hidden argument*/NULL);
+		Regex__ctor_m1229307206(L_0, _stringLiteral3191366431, /*hidden argument*/NULL);
 		((Helpers_t551273995_StaticFields*)Helpers_t551273995_il2cpp_TypeInfo_var->static_fields)->set_re_0(L_0);
 		return;
 	}
@@ -2911,7 +2911,7 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 	Int32U5BU5D_t3030399641* V_7 = NULL;
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2930443103(L_0, _stringLiteral2791784762, /*hidden argument*/NULL);
+		Regex__ctor_m1229307206(L_0, _stringLiteral2791784762, /*hidden argument*/NULL);
 		V_0 = L_0;
 		Regex_t1803876613 * L_1 = V_0;
 		String_t* L_2 = ___reference0;

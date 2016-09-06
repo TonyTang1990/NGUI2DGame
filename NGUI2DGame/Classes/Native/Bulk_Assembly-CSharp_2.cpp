@@ -13,14 +13,20 @@
 #include <limits>
 #include <assert.h>
 
+// UITable/OnReposition
+struct OnReposition_t1194954916;
+// System.Object
+struct Il2CppObject;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
 // UITextList
 struct UITextList_t652111117;
 // System.String
 struct String_t;
 // UILabel
 struct UILabel_t1795115428;
-// System.Object
-struct Il2CppObject;
 // UnityEngine.Collider
 struct Collider_t3497673348;
 // UITextList/Paragraph
@@ -51,10 +57,6 @@ struct ObjectU5BU5D_t3614634134;
 struct UITweener_t2986641582;
 // UITweener/OnFinished
 struct OnFinished_t3688353092;
-// System.IAsyncResult
-struct IAsyncResult_t1999651008;
-// System.AsyncCallback
-struct AsyncCallback_t163412349;
 // UIViewport
 struct UIViewport_t1541362616;
 // UnityEngine.Camera
@@ -103,9 +105,14 @@ struct WindowDragTilt_t1404465963;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharp_UITable_OnReposition1194954916.h"
+#include "AssemblyU2DCSharp_UITable_OnReposition1194954916MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
 #include "AssemblyU2DCSharp_UITextList652111117.h"
 #include "AssemblyU2DCSharp_UITextList652111117MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1956216192MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
 #include "mscorlib_System_Int322071877448.h"
@@ -198,12 +205,9 @@ struct WindowDragTilt_t1404465963;
 #include "AssemblyU2DCSharp_UITweener_OnFinished3688353092MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UITweener_Style4221671544.h"
 #include "AssemblyU2DCSharp_UITweener_OnFinished3688353092.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "AssemblyU2DCSharp_UITweener_Method1694901606.h"
 #include "AssemblyU2DCSharp_UITweener_Method1694901606MethodDeclarations.h"
-#include "mscorlib_System_IntPtr2504060609.h"
-#include "mscorlib_System_AsyncCallback163412349.h"
 #include "AssemblyU2DCSharp_UITweener_Style4221671544MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIViewport1541362616.h"
 #include "AssemblyU2DCSharp_UIViewport1541362616MethodDeclarations.h"
@@ -305,6 +309,53 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m2049635786_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UITable/OnReposition::.ctor(System.Object,System.IntPtr)
+extern "C"  void OnReposition__ctor_m2571090685 (OnReposition_t1194954916 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UITable/OnReposition::Invoke()
+extern "C"  void OnReposition_Invoke_m427597389 (OnReposition_t1194954916 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		OnReposition_Invoke_m427597389((OnReposition_t1194954916 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C"  void DelegatePInvokeWrapper_OnReposition_t1194954916 (OnReposition_t1194954916 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.IAsyncResult UITable/OnReposition::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * OnReposition_BeginInvoke_m2874977706 (OnReposition_t1194954916 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void UITable/OnReposition::EndInvoke(System.IAsyncResult)
+extern "C"  void OnReposition_EndInvoke_m3121874987 (OnReposition_t1194954916 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
 // System.Void UITextList::.ctor()
 extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
 extern Il2CppClass* List_1_t1956216192_il2cpp_TypeInfo_var;
@@ -6296,12 +6347,12 @@ IL_0000:
 			Debug_Log_m920475918(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 			String_t* L_2 = ___minvalidepatterns1;
 			Regex_t1803876613 * L_3 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-			Regex__ctor_m2930443103(L_3, L_2, /*hidden argument*/NULL);
+			Regex__ctor_m1229307206(L_3, L_2, /*hidden argument*/NULL);
 			V_0 = L_3;
 			Regex_t1803876613 * L_4 = V_0;
 			String_t* L_5 = ___value0;
 			NullCheck(L_4);
-			bool L_6 = Regex_IsMatch_m563118126(L_4, L_5, /*hidden argument*/NULL);
+			bool L_6 = Regex_IsMatch_m2159202025(L_4, L_5, /*hidden argument*/NULL);
 			V_2 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
 			goto IL_004e;
 		}

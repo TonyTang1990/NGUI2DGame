@@ -41,11 +41,11 @@ extern "C"  void XmlWriter_Dispose_m4278548107 (XmlWriter_t1048088568 * __this, 
 // System.Void System.Xml.XmlWriter::WriteAttribute(System.Xml.XmlReader,System.Boolean)
 extern "C"  void XmlWriter_WriteAttribute_m3300629885 (XmlWriter_t1048088568 * __this, XmlReader_t3675626668 * ___reader0, bool ___defattr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlWriter::WriteAttributeString(System.String,System.String)
-extern "C"  void XmlWriter_WriteAttributeString_m3169493699 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlWriter_WriteAttributeString_m4117287560 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlWriter::WriteAttributeString(System.String,System.String,System.String,System.String)
 extern "C"  void XmlWriter_WriteAttributeString_m2741345027 (XmlWriter_t1048088568 * __this, String_t* ___prefix0, String_t* ___localName1, String_t* ___ns2, String_t* ___value3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlWriter::WriteElementString(System.String,System.String)
-extern "C"  void XmlWriter_WriteElementString_m1467633369 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlWriter_WriteElementString_m4118563696 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlWriter::WriteQualifiedName(System.String,System.String)
 extern "C"  void XmlWriter_WriteQualifiedName_m1331506835 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___ns1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlWriter::WriteQualifiedNameInternal(System.String,System.String)
@@ -55,4 +55,4 @@ extern "C"  void XmlWriter_WriteNode_m1949395905 (XmlWriter_t1048088568 * __this
 // System.Void System.Xml.XmlWriter::WriteStartAttribute(System.String,System.String)
 extern "C"  void XmlWriter_WriteStartAttribute_m2608709902 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___ns1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlWriter::WriteStartElement(System.String)
-extern "C"  void XmlWriter_WriteStartElement_m2103041358 (XmlWriter_t1048088568 * __this, String_t* ___localName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlWriter_WriteStartElement_m3596839475 (XmlWriter_t1048088568 * __this, String_t* ___localName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

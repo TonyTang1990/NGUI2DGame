@@ -40,6 +40,8 @@ extern "C"  void CarDodgeGame_UpdateGameInfo_m818519589 (CarDodgeGame_t165031253
 extern "C"  void CarDodgeGame_Start_m3638727482 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CarDodgeGame::Update()
 extern "C"  void CarDodgeGame_Update_m3189749945 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void CarDodgeGame::GameOver()
+extern "C"  void CarDodgeGame_GameOver_m1088582128 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator CarDodgeGame::SpawnCoroutine()
 extern "C"  Il2CppObject * CarDodgeGame_SpawnCoroutine_m358620679 (CarDodgeGame_t1650312537 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CarDodgeGame::SpawnEnemyCar()

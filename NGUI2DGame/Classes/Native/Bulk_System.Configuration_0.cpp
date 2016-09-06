@@ -162,7 +162,7 @@ struct ProviderCollection_t2548499159;
 // System.MonoInternalNoteAttribute
 struct MonoInternalNoteAttribute_t4192790486;
 // System.MonoTODOAttribute
-struct MonoTODOAttribute_t3487514022;
+struct MonoTODOAttribute_t3487514021;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -426,7 +426,7 @@ extern "C"  void ConfigXmlTextReader__ctor_m965728314 (ConfigXmlTextReader_t3212
 	}
 	{
 		Stream_t3255436806 * L_0 = ___s0;
-		XmlTextReader__ctor_m2641719843(__this, L_0, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m2337406670(__this, L_0, /*hidden argument*/NULL);
 		String_t* L_1 = ___fileName1;
 		if (L_1)
 		{
@@ -460,7 +460,7 @@ extern "C"  void ConfigXmlTextReader__ctor_m2778808542 (ConfigXmlTextReader_t321
 	}
 	{
 		TextReader_t1561828458 * L_0 = ___input0;
-		XmlTextReader__ctor_m1482280167(__this, L_0, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m2186180914(__this, L_0, /*hidden argument*/NULL);
 		String_t* L_1 = ___fileName1;
 		if (L_1)
 		{
@@ -4542,7 +4542,7 @@ IL_0020:
 			NullCheck(L_10);
 			String_t* L_14 = ConfigurationProperty_ConvertToString_m137757750(L_10, L_13, /*hidden argument*/NULL);
 			NullCheck(L_7);
-			XmlWriter_WriteAttributeString_m3169493699(L_7, L_9, L_14, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_7, L_9, L_14, /*hidden argument*/NULL);
 		}
 
 IL_004a:
@@ -4680,7 +4680,7 @@ IL_00d5:
 			NullCheck(L_39);
 			String_t* L_40 = PropertyInformation_GetStringValue_m233999863(L_39, /*hidden argument*/NULL);
 			NullCheck(L_36);
-			XmlWriter_WriteAttributeString_m3169493699(L_36, L_38, L_40, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_36, L_38, L_40, /*hidden argument*/NULL);
 			V_3 = (bool)1;
 		}
 
@@ -4923,7 +4923,7 @@ IL_000d:
 		XmlWriter_t1048088568 * L_5 = ___writer0;
 		String_t* L_6 = ___elementName1;
 		NullCheck(L_5);
-		XmlWriter_WriteStartElement_m2103041358(L_5, L_6, /*hidden argument*/NULL);
+		XmlWriter_WriteStartElement_m3596839475(L_5, L_6, /*hidden argument*/NULL);
 	}
 
 IL_002a:
@@ -6590,7 +6590,7 @@ IL_0092:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_27 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
 		NullCheck(L_25);
-		XmlWriter_WriteElementString_m1467633369(L_25, L_26, L_27, /*hidden argument*/NULL);
+		XmlWriter_WriteElementString_m4118563696(L_25, L_26, L_27, /*hidden argument*/NULL);
 		V_0 = (bool)1;
 	}
 
@@ -6612,7 +6612,7 @@ IL_00c2:
 		XmlWriter_t1048088568 * L_29 = ___writer0;
 		String_t* L_30 = __this->get_removeElementName_22();
 		NullCheck(L_29);
-		XmlWriter_WriteStartElement_m2103041358(L_29, L_30, /*hidden argument*/NULL);
+		XmlWriter_WriteStartElement_m3596839475(L_29, L_30, /*hidden argument*/NULL);
 		ArrayList_t4252133567 * L_31 = __this->get_removed_14();
 		int32_t L_32 = V_3;
 		NullCheck(L_31);
@@ -7527,7 +7527,7 @@ extern "C"  String_t* ConfigurationErrorsException_get_Message_m3733233144 (Conf
 	}
 	{
 		ObjectU5BU5D_t3614634134* L_3 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)6));
-		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
+		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
 		NullCheck(L_3);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, 0);
 		ArrayElementTypeCheck (L_3, L_4);
@@ -7569,7 +7569,7 @@ extern "C"  String_t* ConfigurationErrorsException_get_Message_m3733233144 (Conf
 
 IL_0064:
 	{
-		String_t* L_15 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
+		String_t* L_15 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
 		String_t* L_16 = __this->get_filename_13();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_17 = String_Concat_m1561703559(NULL /*static, unused*/, L_15, _stringLiteral455075110, L_16, _stringLiteral372029317, /*hidden argument*/NULL);
@@ -7591,7 +7591,7 @@ IL_0085:
 	}
 	{
 		ObjectU5BU5D_t3614634134* L_19 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
-		String_t* L_20 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
+		String_t* L_20 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
 		NullCheck(L_19);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 0);
 		ArrayElementTypeCheck (L_19, L_20);
@@ -7622,7 +7622,7 @@ IL_0085:
 
 IL_00c8:
 	{
-		String_t* L_28 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
+		String_t* L_28 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationErrorsException::get_BareMessage() */, __this);
 		V_0 = L_28;
 	}
 
@@ -9488,7 +9488,7 @@ IL_0079:
 		NullCheck(L_16);
 		Type_t * L_17 = Object_GetType_m191970594(L_16, /*hidden argument*/NULL);
 		NullCheck(L_15);
-		bool L_18 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_15, L_17);
+		bool L_18 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_15, L_17);
 		if (L_18)
 		{
 			goto IL_00c6;
@@ -9726,7 +9726,7 @@ extern "C"  bool ConfigurationProperty_get_IsElement_m12977767 (ConfigurationPro
 		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(ConfigurationElement_t1776195828_0_0_0_var), /*hidden argument*/NULL);
 		Type_t * L_1 = __this->get_type_2();
 		NullCheck(L_0);
-		bool L_2 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_1);
+		bool L_2 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -10210,7 +10210,7 @@ CATCH_00eb:
 IL_00f1:
 	{
 		XmlDocument_t3649534162 * L_35 = (XmlDocument_t3649534162 *)il2cpp_codegen_object_new(XmlDocument_t3649534162_il2cpp_TypeInfo_var);
-		XmlDocument__ctor_m3336214851(L_35, /*hidden argument*/NULL);
+		XmlDocument__ctor_m3872501054(L_35, /*hidden argument*/NULL);
 		V_5 = L_35;
 		XmlDocument_t3649534162 * L_36 = V_5;
 		String_t* L_37 = ConfigurationElement_get_RawXml_m2664527628(__this, /*hidden argument*/NULL);
@@ -10221,7 +10221,7 @@ IL_00f1:
 		Il2CppObject * L_40 = ConfigurationSection_get_ConfigContext_m4131621597(__this, /*hidden argument*/NULL);
 		XmlDocument_t3649534162 * L_41 = V_5;
 		NullCheck(L_41);
-		XmlElement_t2877111883 * L_42 = XmlDocument_get_DocumentElement_m898495187(L_41, /*hidden argument*/NULL);
+		XmlElement_t2877111883 * L_42 = XmlDocument_get_DocumentElement_m846077342(L_41, /*hidden argument*/NULL);
 		NullCheck(L_38);
 		Il2CppObject * L_43 = InterfaceFuncInvoker3< Il2CppObject *, Il2CppObject *, Il2CppObject *, XmlNode_t616554813 * >::Invoke(0 /* System.Object System.Configuration.IConfigurationSectionHandler::Create(System.Object,System.Object,System.Xml.XmlNode) */, IConfigurationSectionHandler_t4214479838_il2cpp_TypeInfo_var, L_38, L_39, L_40, L_42);
 		return L_43;
@@ -10377,7 +10377,7 @@ IL_004a:
 		ProtectedConfigurationProvider_t3971982415 * L_15 = ProtectedConfiguration_GetProvider_m659380218(NULL /*static, unused*/, L_14, (bool)1, /*hidden argument*/NULL);
 		V_3 = L_15;
 		XmlDocument_t3649534162 * L_16 = (XmlDocument_t3649534162 *)il2cpp_codegen_object_new(XmlDocument_t3649534162_il2cpp_TypeInfo_var);
-		XmlDocument__ctor_m3336214851(L_16, /*hidden argument*/NULL);
+		XmlDocument__ctor_m3872501054(L_16, /*hidden argument*/NULL);
 		V_4 = L_16;
 		XmlReader_t3675626668 * L_17 = ___reader0;
 		NullCheck(L_17);
@@ -10397,7 +10397,7 @@ IL_004a:
 		V_5 = L_24;
 		XmlNode_t616554813 * L_25 = V_5;
 		XmlNodeReader_t1022603664 * L_26 = (XmlNodeReader_t1022603664 *)il2cpp_codegen_object_new(XmlNodeReader_t1022603664_il2cpp_TypeInfo_var);
-		XmlNodeReader__ctor_m1586642800(L_26, L_25, /*hidden argument*/NULL);
+		XmlNodeReader__ctor_m994151033(L_26, L_25, /*hidden argument*/NULL);
 		___reader0 = L_26;
 		SectionInformation_t2754609709 * L_27 = ConfigurationSection_get_SectionInformation_m4037021195(__this, /*hidden argument*/NULL);
 		String_t* L_28 = V_0;
@@ -10618,7 +10618,7 @@ IL_0030:
 		{
 			StringWriter_t4139609088 * L_7 = V_2;
 			XmlTextWriter_t2527250655 * L_8 = (XmlTextWriter_t2527250655 *)il2cpp_codegen_object_new(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
-			XmlTextWriter__ctor_m867344167(L_8, L_7, /*hidden argument*/NULL);
+			XmlTextWriter__ctor_m3230461554(L_8, L_7, /*hidden argument*/NULL);
 			V_3 = L_8;
 		}
 
@@ -10627,7 +10627,7 @@ IL_0037:
 		{ // begin try (depth: 2)
 			XmlTextWriter_t2527250655 * L_9 = V_3;
 			NullCheck(L_9);
-			XmlTextWriter_set_Formatting_m324688091(L_9, 1, /*hidden argument*/NULL);
+			XmlTextWriter_set_Formatting_m3944030982(L_9, 1, /*hidden argument*/NULL);
 			ConfigurationElement_t1776195828 * L_10 = V_0;
 			XmlTextWriter_t2527250655 * L_11 = V_3;
 			String_t* L_12 = ___name1;
@@ -10753,7 +10753,7 @@ IL_00a1:
 			V_6 = (bool)((((int32_t)L_28) == ((int32_t)0))? 1 : 0);
 			StringWriter_t4139609088 * L_29 = V_5;
 			XmlTextWriter_t2527250655 * L_30 = (XmlTextWriter_t2527250655 *)il2cpp_codegen_object_new(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
-			XmlTextWriter__ctor_m867344167(L_30, L_29, /*hidden argument*/NULL);
+			XmlTextWriter__ctor_m3230461554(L_30, L_29, /*hidden argument*/NULL);
 			V_7 = L_30;
 		}
 
@@ -10773,7 +10773,7 @@ IL_00bc:
 				XmlTextWriter_t2527250655 * L_32 = V_7;
 				String_t* L_33 = ___name1;
 				NullCheck(L_32);
-				XmlWriter_WriteStartElement_m2103041358(L_32, L_33, /*hidden argument*/NULL);
+				XmlWriter_WriteStartElement_m3596839475(L_32, L_33, /*hidden argument*/NULL);
 			}
 
 IL_00c4:
@@ -10781,7 +10781,7 @@ IL_00c4:
 				XmlTextWriter_t2527250655 * L_34 = V_7;
 				String_t* L_35 = V_4;
 				NullCheck(L_34);
-				XmlWriter_WriteAttributeString_m3169493699(L_34, _stringLiteral3969037827, L_35, /*hidden argument*/NULL);
+				XmlWriter_WriteAttributeString_m4117287560(L_34, _stringLiteral3969037827, L_35, /*hidden argument*/NULL);
 				bool L_36 = V_6;
 				if (!L_36)
 				{
@@ -12103,7 +12103,7 @@ extern "C"  void ElementMap__ctor_m2348370310 (ElementMap_t997038224 * __this, T
 		__this->set_collectionAttribute_2(((ConfigurationCollectionAttribute_t2811353736 *)IsInstSealed(L_3, ConfigurationCollectionAttribute_t2811353736_il2cpp_TypeInfo_var)));
 		Type_t * L_4 = ___t0;
 		NullCheck(L_4);
-		PropertyInfoU5BU5D_t1736152084* L_5 = VirtFuncInvoker1< PropertyInfoU5BU5D_t1736152084*, int32_t >::Invoke(56 /* System.Reflection.PropertyInfo[] System.Type::GetProperties(System.Reflection.BindingFlags) */, L_4, ((int32_t)60));
+		PropertyInfoU5BU5D_t1736152084* L_5 = VirtFuncInvoker1< PropertyInfoU5BU5D_t1736152084*, int32_t >::Invoke(64 /* System.Reflection.PropertyInfo[] System.Type::GetProperties(System.Reflection.BindingFlags) */, L_4, ((int32_t)60));
 		V_0 = L_5;
 		PropertyInfoU5BU5D_t1736152084* L_6 = V_0;
 		V_2 = L_6;
@@ -17406,7 +17406,7 @@ extern "C"  void MonoInternalNoteAttribute__ctor_m2854554221 (MonoInternalNoteAt
 	}
 }
 // System.Void System.MonoTODOAttribute::.ctor()
-extern "C"  void MonoTODOAttribute__ctor_m817868876 (MonoTODOAttribute_t3487514022 * __this, const MethodInfo* method)
+extern "C"  void MonoTODOAttribute__ctor_m817868876 (MonoTODOAttribute_t3487514021 * __this, const MethodInfo* method)
 {
 	{
 		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
@@ -17414,7 +17414,7 @@ extern "C"  void MonoTODOAttribute__ctor_m817868876 (MonoTODOAttribute_t34875140
 	}
 }
 // System.Void System.MonoTODOAttribute::.ctor(System.String)
-extern "C"  void MonoTODOAttribute__ctor_m1940477654 (MonoTODOAttribute_t3487514022 * __this, String_t* ___comment0, const MethodInfo* method)
+extern "C"  void MonoTODOAttribute__ctor_m1940477654 (MonoTODOAttribute_t3487514021 * __this, String_t* ___comment0, const MethodInfo* method)
 {
 	{
 		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);

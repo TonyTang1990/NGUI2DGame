@@ -94,7 +94,7 @@ struct WriteMethod_t1894833619;
 // System.IO.Compression.GZipStream
 struct GZipStream_t2274754946;
 // System.MonoTODOAttribute
-struct MonoTODOAttribute_t3487514021;
+struct MonoTODOAttribute_t3487514020;
 // System.Net.Authorization
 struct Authorization_t1602399;
 // System.Net.WebRequest
@@ -1315,7 +1315,7 @@ extern "C"  String_t* ConfigurationException_get_Message_m4079252099 (Configurat
 	}
 	{
 		ObjectU5BU5D_t3614634134* L_4 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)6));
-		String_t* L_5 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
+		String_t* L_5 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
 		NullCheck(L_4);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, 0);
 		ArrayElementTypeCheck (L_4, L_5);
@@ -1357,7 +1357,7 @@ extern "C"  String_t* ConfigurationException_get_Message_m4079252099 (Configurat
 
 IL_006f:
 	{
-		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
+		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
 		String_t* L_17 = __this->get_filename_11();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_18 = String_Concat_m1561703559(NULL /*static, unused*/, L_16, _stringLiteral455075110, L_17, _stringLiteral372029317, /*hidden argument*/NULL);
@@ -1379,7 +1379,7 @@ IL_0090:
 	}
 	{
 		ObjectU5BU5D_t3614634134* L_20 = ((ObjectU5BU5D_t3614634134*)SZArrayNew(ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var, (uint32_t)4));
-		String_t* L_21 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
+		String_t* L_21 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
 		NullCheck(L_20);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, 0);
 		ArrayElementTypeCheck (L_20, L_21);
@@ -1410,7 +1410,7 @@ IL_0090:
 
 IL_00d3:
 	{
-		String_t* L_29 = VirtFuncInvoker0< String_t* >::Invoke(11 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
+		String_t* L_29 = VirtFuncInvoker0< String_t* >::Invoke(12 /* System.String System.Configuration.ConfigurationException::get_BareMessage() */, __this);
 		V_0 = L_29;
 	}
 
@@ -4646,7 +4646,7 @@ extern "C"  String_t* DiagnosticsConfigurationHandler_GetAttribute_m416559747 (D
 		XmlAttributeCollection_t3359885287 * L_0 = ___attrs0;
 		String_t* L_1 = ___attr1;
 		NullCheck(L_0);
-		XmlAttribute_t175731005 * L_2 = XmlAttributeCollection_get_ItemOf_m2084104187(L_0, L_1, /*hidden argument*/NULL);
+		XmlAttribute_t175731005 * L_2 = XmlAttributeCollection_get_ItemOf_m2550557500(L_0, L_1, /*hidden argument*/NULL);
 		V_0 = L_2;
 		V_1 = (String_t*)NULL;
 		XmlAttribute_t175731005 * L_3 = V_0;
@@ -4678,7 +4678,7 @@ IL_0027:
 		XmlAttributeCollection_t3359885287 * L_10 = ___attrs0;
 		XmlAttribute_t175731005 * L_11 = V_0;
 		NullCheck(L_10);
-		XmlAttributeCollection_Remove_m3813259959(L_10, L_11, /*hidden argument*/NULL);
+		XmlAttributeCollection_Remove_m1093779644(L_10, L_11, /*hidden argument*/NULL);
 		goto IL_0043;
 	}
 
@@ -4763,7 +4763,7 @@ extern "C"  void DiagnosticsConfigurationHandler_ValidateInvalidAttributes_m2590
 	{
 		XmlAttributeCollection_t3359885287 * L_2 = ___c0;
 		NullCheck(L_2);
-		XmlAttribute_t175731005 * L_3 = XmlAttributeCollection_get_ItemOf_m177692376(L_2, 0, /*hidden argument*/NULL);
+		XmlAttribute_t175731005 * L_3 = XmlAttributeCollection_get_ItemOf_m2813190611(L_2, 0, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		String_t* L_4 = VirtFuncInvoker0< String_t* >::Invoke(16 /* System.String System.Xml.XmlAttribute::get_Name() */, L_3);
 		XmlNode_t616554813 * L_5 = ___node1;
@@ -8190,7 +8190,7 @@ extern "C"  void GZipStream_set_Position_m2544990935 (GZipStream_t2274754946 * _
 	}
 }
 // System.Void System.MonoTODOAttribute::.ctor()
-extern "C"  void MonoTODOAttribute__ctor_m4004919844 (MonoTODOAttribute_t3487514021 * __this, const MethodInfo* method)
+extern "C"  void MonoTODOAttribute__ctor_m4004919844 (MonoTODOAttribute_t3487514020 * __this, const MethodInfo* method)
 {
 	{
 		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
@@ -8198,7 +8198,7 @@ extern "C"  void MonoTODOAttribute__ctor_m4004919844 (MonoTODOAttribute_t3487514
 	}
 }
 // System.Void System.MonoTODOAttribute::.ctor(System.String)
-extern "C"  void MonoTODOAttribute__ctor_m991492462 (MonoTODOAttribute_t3487514021 * __this, String_t* ___comment0, const MethodInfo* method)
+extern "C"  void MonoTODOAttribute__ctor_m991492462 (MonoTODOAttribute_t3487514020 * __this, String_t* ___comment0, const MethodInfo* method)
 {
 	{
 		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
@@ -15235,7 +15235,7 @@ extern "C"  void Cookie__ctor_m1989068482 (Cookie_t3154017544 * __this, String_t
 // System.Void System.Net.Cookie::.cctor()
 extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
 extern Il2CppClass* Cookie_t3154017544_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D1_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D1_0_FieldInfo_var;
 extern Il2CppCodeGenString* _stringLiteral749251466;
 extern const uint32_t Cookie__cctor_m3187715567_MetadataUsageId;
 extern "C"  void Cookie__cctor_m3187715567 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
@@ -15248,7 +15248,7 @@ extern "C"  void Cookie__cctor_m3187715567 (Il2CppObject * __this /* static, unu
 	}
 	{
 		CharU5BU5D_t1328083999* L_0 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)7));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D1_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D1_0_FieldInfo_var), /*hidden argument*/NULL);
 		((Cookie_t3154017544_StaticFields*)Cookie_t3154017544_il2cpp_TypeInfo_var->static_fields)->set_reservedCharsName_14(L_0);
 		CharU5BU5D_t1328083999* L_1 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_1);
@@ -16233,7 +16233,7 @@ IL_00ab:
 	{
 		Uri_t19570940 * L_22 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_23 = Uri_op_Inequality_m854301563(NULL /*static, unused*/, L_22, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_23 = Uri_op_Inequality_m853767938(NULL /*static, unused*/, L_22, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_23)
 		{
 			goto IL_00ce;
@@ -16252,7 +16252,7 @@ IL_00ce:
 	{
 		Uri_t19570940 * L_27 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_28 = Uri_op_Equality_m415651348(NULL /*static, unused*/, L_27, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_28 = Uri_op_Equality_m110355127(NULL /*static, unused*/, L_27, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (L_28)
 		{
 			goto IL_00ed;
@@ -17367,7 +17367,7 @@ IL_0031:
 	{
 		Uri_t19570940 * L_7 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_8 = Uri_op_Inequality_m854301563(NULL /*static, unused*/, L_7, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_8 = Uri_op_Inequality_m853767938(NULL /*static, unused*/, L_7, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_8)
 		{
 			goto IL_0059;
@@ -17416,7 +17416,7 @@ IL_0059:
 	{
 		Uri_t19570940 * L_20 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_21 = Uri_op_Inequality_m854301563(NULL /*static, unused*/, L_20, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_21 = Uri_op_Inequality_m853767938(NULL /*static, unused*/, L_20, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_21)
 		{
 			goto IL_0091;
@@ -17426,7 +17426,7 @@ IL_0059:
 		Cookie_t3154017544 * L_22 = ___cookie1;
 		Uri_t19570940 * L_23 = ___uri0;
 		NullCheck(L_23);
-		String_t* L_24 = Uri_get_AbsolutePath_m950234534(L_23, /*hidden argument*/NULL);
+		String_t* L_24 = Uri_get_AbsolutePath_m802771013(L_23, /*hidden argument*/NULL);
 		NullCheck(L_22);
 		Cookie_set_Path_m3432117582(L_22, L_24, /*hidden argument*/NULL);
 		goto IL_009c;
@@ -17454,7 +17454,7 @@ IL_009c:
 	{
 		Uri_t19570940 * L_29 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_30 = Uri_op_Inequality_m854301563(NULL /*static, unused*/, L_29, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_30 = Uri_op_Inequality_m853767938(NULL /*static, unused*/, L_29, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_30)
 		{
 			goto IL_00e6;
@@ -17504,7 +17504,7 @@ extern "C"  void CookieContainer_Add_m1442357673 (CookieContainer_t2808809223 * 
 	{
 		Uri_t19570940 * L_0 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_1 = Uri_op_Equality_m415651348(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_1 = Uri_op_Equality_m110355127(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
 			goto IL_0017;
@@ -17586,7 +17586,7 @@ extern "C"  String_t* CookieContainer_GetCookieHeader_m3789169220 (CookieContain
 	{
 		Uri_t19570940 * L_0 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_1 = Uri_op_Equality_m415651348(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_1 = Uri_op_Equality_m110355127(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
 			goto IL_0017;
@@ -17875,7 +17875,7 @@ extern "C"  CookieCollection_t521422364 * CookieContainer_GetCookies_m781592810 
 	{
 		Uri_t19570940 * L_0 = ___uri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_1 = Uri_op_Equality_m415651348(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_1 = Uri_op_Equality_m110355127(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
 			goto IL_0017;
@@ -18011,7 +18011,7 @@ IL_00b4:
 			V_4 = L_31;
 			Uri_t19570940 * L_32 = ___uri0;
 			NullCheck(L_32);
-			String_t* L_33 = Uri_get_AbsolutePath_m950234534(L_32, /*hidden argument*/NULL);
+			String_t* L_33 = Uri_get_AbsolutePath_m802771013(L_32, /*hidden argument*/NULL);
 			V_5 = L_33;
 			String_t* L_34 = V_4;
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -18125,7 +18125,7 @@ IL_0156:
 		{
 			Uri_t19570940 * L_59 = ___uri0;
 			NullCheck(L_59);
-			String_t* L_60 = Uri_get_Scheme_m1862544965(L_59, /*hidden argument*/NULL);
+			String_t* L_60 = Uri_get_Scheme_m55908894(L_59, /*hidden argument*/NULL);
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 			bool L_61 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_60, _stringLiteral4021508911, /*hidden argument*/NULL);
 			if (!L_61)
@@ -19761,7 +19761,7 @@ extern "C"  void FileWebStream__ctor_m4147650078 (FileWebStream_t1952319648 * __
 		NullCheck(L_0);
 		Uri_t19570940 * L_1 = VirtFuncInvoker0< Uri_t19570940 * >::Invoke(13 /* System.Uri System.Net.FileWebRequest::get_RequestUri() */, L_0);
 		NullCheck(L_1);
-		String_t* L_2 = Uri_get_LocalPath_m1467029974(L_1, /*hidden argument*/NULL);
+		String_t* L_2 = Uri_get_LocalPath_m1625111831(L_1, /*hidden argument*/NULL);
 		int32_t L_3 = ___mode1;
 		int32_t L_4 = ___access2;
 		int32_t L_5 = ___share3;
@@ -22724,7 +22724,7 @@ extern "C"  String_t* FtpWebRequest_GetRemoteFolderPath_m62777050 (FtpWebRequest
 	{
 		Uri_t19570940 * L_0 = ___uri0;
 		NullCheck(L_0);
-		String_t* L_1 = Uri_get_LocalPath_m1467029974(L_0, /*hidden argument*/NULL);
+		String_t* L_1 = Uri_get_LocalPath_m1625111831(L_0, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		String_t* L_2 = Uri_UnescapeDataString_m2626506023(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		V_1 = L_2;
@@ -22774,14 +22774,14 @@ IL_0049:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_12 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3554521961, L_11, /*hidden argument*/NULL);
 		Uri_t19570940 * L_13 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1248212436(L_13, L_12, /*hidden argument*/NULL);
+		Uri__ctor_m3927533881(L_13, L_12, /*hidden argument*/NULL);
 		V_2 = L_13;
 		Uri_t19570940 * L_14 = V_2;
 		String_t* L_15 = V_1;
 		Uri_t19570940 * L_16 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m3196554323(L_16, L_14, L_15, /*hidden argument*/NULL);
+		Uri__ctor_m3550796566(L_16, L_14, L_15, /*hidden argument*/NULL);
 		NullCheck(L_16);
-		String_t* L_17 = Uri_get_LocalPath_m1467029974(L_16, /*hidden argument*/NULL);
+		String_t* L_17 = Uri_get_LocalPath_m1625111831(L_16, /*hidden argument*/NULL);
 		V_0 = L_17;
 	}
 
@@ -22874,7 +22874,7 @@ IL_004c:
 	{
 		Uri_t19570940 * L_12 = ___uri0;
 		NullCheck(L_12);
-		String_t* L_13 = Uri_get_LocalPath_m1467029974(L_12, /*hidden argument*/NULL);
+		String_t* L_13 = Uri_get_LocalPath_m1625111831(L_12, /*hidden argument*/NULL);
 		NullCheck(L_13);
 		int32_t L_14 = String_LastIndexOf_m3555875680(L_13, ((int32_t)47), /*hidden argument*/NULL);
 		V_2 = L_14;
@@ -22887,7 +22887,7 @@ IL_004c:
 	{
 		Uri_t19570940 * L_16 = ___uri0;
 		NullCheck(L_16);
-		String_t* L_17 = Uri_get_LocalPath_m1467029974(L_16, /*hidden argument*/NULL);
+		String_t* L_17 = Uri_get_LocalPath_m1625111831(L_16, /*hidden argument*/NULL);
 		int32_t L_18 = V_2;
 		NullCheck(L_17);
 		String_t* L_19 = String_Substring_m2032624251(L_17, ((int32_t)((int32_t)L_18+(int32_t)1)), /*hidden argument*/NULL);

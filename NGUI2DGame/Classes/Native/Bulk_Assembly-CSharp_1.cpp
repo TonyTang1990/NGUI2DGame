@@ -275,12 +275,12 @@ struct UIStretch_t4076885229;
 struct UITable_t3717403602;
 // System.Collections.Generic.List`1<UnityEngine.Transform>
 struct List_1_t2644239190;
-// UITable/OnReposition
-struct OnReposition_t1194954916;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharp_UIAnchor_Side3421105907.h"
+#include "AssemblyU2DCSharp_UIAnchor_Side3421105907MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIAtlas1304615221.h"
 #include "AssemblyU2DCSharp_UIAtlas1304615221MethodDeclarations.h"
 #include "mscorlib_System_Void1841601450.h"
@@ -48738,53 +48738,6 @@ IL_0018:
 	{
 		return;
 	}
-}
-// System.Void UITable/OnReposition::.ctor(System.Object,System.IntPtr)
-extern "C"  void OnReposition__ctor_m2571090685 (OnReposition_t1194954916 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
-{
-	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// System.Void UITable/OnReposition::Invoke()
-extern "C"  void OnReposition_Invoke_m427597389 (OnReposition_t1194954916 * __this, const MethodInfo* method)
-{
-	if(__this->get_prev_9() != NULL)
-	{
-		OnReposition_Invoke_m427597389((OnReposition_t1194954916 *)__this->get_prev_9(), method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-}
-extern "C"  void DelegatePInvokeWrapper_OnReposition_t1194954916 (OnReposition_t1194954916 * __this, const MethodInfo* method)
-{
-	typedef void (STDCALL *PInvokeFunc)();
-	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
-
-	// Native function invocation
-	il2cppPInvokeFunc();
-
-}
-// System.IAsyncResult UITable/OnReposition::BeginInvoke(System.AsyncCallback,System.Object)
-extern "C"  Il2CppObject * OnReposition_BeginInvoke_m2874977706 (OnReposition_t1194954916 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
-{
-	void *__d_args[1] = {0};
-	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
-}
-// System.Void UITable/OnReposition::EndInvoke(System.IAsyncResult)
-extern "C"  void OnReposition_EndInvoke_m3121874987 (OnReposition_t1194954916 * __this, Il2CppObject * ___result0, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

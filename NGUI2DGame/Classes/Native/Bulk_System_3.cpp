@@ -451,11 +451,11 @@ extern "C"  void Frame__ctor_m1848557383 (Frame_t997927490 * __this, ILGenerator
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		ILGenerator_t99948092 * L_0 = ___ilgen0;
 		NullCheck(L_0);
-		Label_t4243202660  L_1 = VirtFuncInvoker0< Label_t4243202660  >::Invoke(6 /* System.Reflection.Emit.Label System.Reflection.Emit.ILGenerator::DefineLabel() */, L_0);
+		Label_t4243202660  L_1 = VirtFuncInvoker0< Label_t4243202660  >::Invoke(8 /* System.Reflection.Emit.Label System.Reflection.Emit.ILGenerator::DefineLabel() */, L_0);
 		__this->set_label_fail_1(L_1);
 		ILGenerator_t99948092 * L_2 = ___ilgen0;
 		NullCheck(L_2);
-		Label_t4243202660  L_3 = VirtFuncInvoker0< Label_t4243202660  >::Invoke(6 /* System.Reflection.Emit.Label System.Reflection.Emit.ILGenerator::DefineLabel() */, L_2);
+		Label_t4243202660  L_3 = VirtFuncInvoker0< Label_t4243202660  >::Invoke(8 /* System.Reflection.Emit.Label System.Reflection.Emit.ILGenerator::DefineLabel() */, L_2);
 		__this->set_label_pass_0(L_3);
 		return;
 	}
@@ -10314,7 +10314,7 @@ extern "C"  void Regex__ctor_m3250610064 (Regex_t1803876613 * __this, const Meth
 	}
 }
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
-extern "C"  void Regex__ctor_m2930443103 (Regex_t1803876613 * __this, String_t* ___pattern0, const MethodInfo* method)
+extern "C"  void Regex__ctor_m1229307206 (Regex_t1803876613 * __this, String_t* ___pattern0, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___pattern0;
@@ -10954,7 +10954,7 @@ IL_001d:
 	}
 }
 // System.Boolean System.Text.RegularExpressions.Regex::IsMatch(System.String)
-extern "C"  bool Regex_IsMatch_m563118126 (Regex_t1803876613 * __this, String_t* ___input0, const MethodInfo* method)
+extern "C"  bool Regex_IsMatch_m2159202025 (Regex_t1803876613 * __this, String_t* ___input0, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___input0;
@@ -38033,11 +38033,11 @@ IL_00bc:
 	}
 }
 // System.Void System.Uri::.ctor(System.String)
-extern "C"  void Uri__ctor_m1248212436 (Uri_t19570940 * __this, String_t* ___uriString0, const MethodInfo* method)
+extern "C"  void Uri__ctor_m3927533881 (Uri_t19570940 * __this, String_t* ___uriString0, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___uriString0;
-		Uri__ctor_m3619178709(__this, L_0, (bool)0, /*hidden argument*/NULL);
+		Uri__ctor_m3854873816(__this, L_0, (bool)0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -38056,7 +38056,7 @@ extern "C"  void Uri__ctor_m1764202390 (Uri_t19570940 * __this, SerializationInf
 		SerializationInfo_t228987430 * L_0 = ___serializationInfo0;
 		NullCheck(L_0);
 		String_t* L_1 = SerializationInfo_GetString_m547109409(L_0, _stringLiteral4275022149, /*hidden argument*/NULL);
-		Uri__ctor_m3619178709(__this, L_1, (bool)1, /*hidden argument*/NULL);
+		Uri__ctor_m3854873816(__this, L_1, (bool)1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -38069,13 +38069,13 @@ extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1992137401;
 extern Il2CppCodeGenString* _stringLiteral3487679265;
 extern Il2CppCodeGenString* _stringLiteral3989517748;
-extern const uint32_t Uri__ctor_m1528033823_MetadataUsageId;
-extern "C"  void Uri__ctor_m1528033823 (Uri_t19570940 * __this, String_t* ___uriString0, int32_t ___uriKind1, const MethodInfo* method)
+extern const uint32_t Uri__ctor_m1027317340_MetadataUsageId;
+extern "C"  void Uri__ctor_m1027317340 (Uri_t19570940 * __this, String_t* ___uriString0, int32_t ___uriKind1, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri__ctor_m1528033823_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri__ctor_m1027317340_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	String_t* V_0 = NULL;
@@ -38123,7 +38123,7 @@ extern "C"  void Uri__ctor_m1528033823 (Uri_t19570940 * __this, String_t* ___uri
 
 IL_007d:
 	{
-		bool L_10 = Uri_get_IsAbsoluteUri_m615473366(__this, /*hidden argument*/NULL);
+		bool L_10 = Uri_get_IsAbsoluteUri_m4123650233(__this, /*hidden argument*/NULL);
 		if (L_10)
 		{
 			goto IL_0093;
@@ -38142,7 +38142,7 @@ IL_0093:
 
 IL_0098:
 	{
-		bool L_12 = Uri_get_IsAbsoluteUri_m615473366(__this, /*hidden argument*/NULL);
+		bool L_12 = Uri_get_IsAbsoluteUri_m4123650233(__this, /*hidden argument*/NULL);
 		if (!L_12)
 		{
 			goto IL_00ae;
@@ -38191,13 +38191,13 @@ IL_00d9:
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* UriFormatException_t3682083048_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral935542021;
-extern const uint32_t Uri__ctor_m3619178709_MetadataUsageId;
-extern "C"  void Uri__ctor_m3619178709 (Uri_t19570940 * __this, String_t* ___uriString0, bool ___dontEscape1, const MethodInfo* method)
+extern const uint32_t Uri__ctor_m3854873816_MetadataUsageId;
+extern "C"  void Uri__ctor_m3854873816 (Uri_t19570940 * __this, String_t* ___uriString0, bool ___dontEscape1, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri__ctor_m3619178709_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri__ctor_m3854873816_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -38244,13 +38244,13 @@ IL_0087:
 }
 // System.Void System.Uri::.ctor(System.Uri,System.String)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t Uri__ctor_m3196554323_MetadataUsageId;
-extern "C"  void Uri__ctor_m3196554323 (Uri_t19570940 * __this, Uri_t19570940 * ___baseUri0, String_t* ___relativeUri1, const MethodInfo* method)
+extern const uint32_t Uri__ctor_m3550796566_MetadataUsageId;
+extern "C"  void Uri__ctor_m3550796566 (Uri_t19570940 * __this, Uri_t19570940 * ___baseUri0, String_t* ___relativeUri1, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri__ctor_m3196554323_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri__ctor_m3550796566_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -38401,7 +38401,7 @@ extern "C"  void Uri_System_Runtime_Serialization_ISerializable_GetObjectData_m2
 	}
 	{
 		SerializationInfo_t228987430 * L_0 = ___info0;
-		String_t* L_1 = Uri_get_AbsoluteUri_m656589005(__this, /*hidden argument*/NULL);
+		String_t* L_1 = Uri_get_AbsoluteUri_m2120317928(__this, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		SerializationInfo_AddValue_m1740888931(L_0, _stringLiteral4275022149, L_1, /*hidden argument*/NULL);
 		return;
@@ -38436,7 +38436,7 @@ extern "C"  void Uri_Merge_m2181117222 (Uri_t19570940 * __this, Uri_t19570940 * 
 	{
 		Uri_t19570940 * L_0 = ___baseUri0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_1 = Uri_op_Equality_m415651348(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_1 = Uri_op_Equality_m110355127(NULL /*static, unused*/, L_0, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
 			goto IL_0017;
@@ -38452,7 +38452,7 @@ IL_0017:
 	{
 		Uri_t19570940 * L_3 = ___baseUri0;
 		NullCheck(L_3);
-		bool L_4 = Uri_get_IsAbsoluteUri_m615473366(L_3, /*hidden argument*/NULL);
+		bool L_4 = Uri_get_IsAbsoluteUri_m4123650233(L_3, /*hidden argument*/NULL);
 		if (L_4)
 		{
 			goto IL_002d;
@@ -38561,7 +38561,7 @@ IL_00ab:
 	{
 		Uri_t19570940 * L_26 = ___baseUri0;
 		NullCheck(L_26);
-		String_t* L_27 = Uri_get_Scheme_m1862544965(L_26, /*hidden argument*/NULL);
+		String_t* L_27 = Uri_get_Scheme_m55908894(L_26, /*hidden argument*/NULL);
 		String_t* L_28 = ___relativeUri1;
 		int32_t L_29 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -38574,7 +38574,7 @@ IL_00ab:
 	{
 		Uri_t19570940 * L_31 = ___baseUri0;
 		NullCheck(L_31);
-		String_t* L_32 = Uri_get_Scheme_m1862544965(L_31, /*hidden argument*/NULL);
+		String_t* L_32 = Uri_get_Scheme_m55908894(L_31, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		bool L_33 = Uri_IsPredefinedScheme_m3823323378(NULL /*static, unused*/, L_32, /*hidden argument*/NULL);
 		if (!L_33)
@@ -39194,13 +39194,13 @@ extern const MethodInfo* Dictionary_2_TryGetValue_m2977303364_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1813908152;
 extern Il2CppCodeGenString* _stringLiteral3457518716;
 extern Il2CppCodeGenString* _stringLiteral372029315;
-extern const uint32_t Uri_get_AbsolutePath_m950234534_MetadataUsageId;
-extern "C"  String_t* Uri_get_AbsolutePath_m950234534 (Uri_t19570940 * __this, const MethodInfo* method)
+extern const uint32_t Uri_get_AbsolutePath_m802771013_MetadataUsageId;
+extern "C"  String_t* Uri_get_AbsolutePath_m802771013 (Uri_t19570940 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri_get_AbsolutePath_m950234534_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri_get_AbsolutePath_m802771013_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	String_t* V_0 = NULL;
@@ -39209,7 +39209,7 @@ extern "C"  String_t* Uri_get_AbsolutePath_m950234534 (Uri_t19570940 * __this, c
 	int32_t V_3 = 0;
 	{
 		Uri_EnsureAbsoluteUri_m1892758054(__this, /*hidden argument*/NULL);
-		String_t* L_0 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_0 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		V_1 = L_0;
 		String_t* L_1 = V_1;
 		if (!L_1)
@@ -39280,7 +39280,7 @@ IL_0066:
 		}
 	}
 	{
-		String_t* L_14 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_14 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		String_t* L_15 = ((Uri_t19570940_StaticFields*)Uri_t19570940_il2cpp_TypeInfo_var->static_fields)->get_SchemeDelimiter_18();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -39314,13 +39314,13 @@ IL_00a4:
 }
 // System.String System.Uri::get_AbsoluteUri()
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t Uri_get_AbsoluteUri_m656589005_MetadataUsageId;
-extern "C"  String_t* Uri_get_AbsoluteUri_m656589005 (Uri_t19570940 * __this, const MethodInfo* method)
+extern const uint32_t Uri_get_AbsoluteUri_m2120317928_MetadataUsageId;
+extern "C"  String_t* Uri_get_AbsoluteUri_m2120317928 (Uri_t19570940 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri_get_AbsoluteUri_m656589005_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri_get_AbsoluteUri_m2120317928_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -39391,7 +39391,7 @@ extern "C"  String_t* Uri_get_Authority_m936382664 (Uri_t19570940 * __this, cons
 	String_t* G_B3_0 = NULL;
 	{
 		Uri_EnsureAbsoluteUri_m1892758054(__this, /*hidden argument*/NULL);
-		String_t* L_0 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_0 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		int32_t L_1 = Uri_GetDefaultPort_m2114319579(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		int32_t L_2 = __this->get_port_4();
@@ -39480,7 +39480,7 @@ extern "C"  int32_t Uri_get_HostNameType_m3115129436 (Uri_t19570940 * __this, co
 
 IL_001a:
 	{
-		String_t* L_4 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_4 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		V_1 = L_4;
 		String_t* L_5 = V_1;
 		if (!L_5)
@@ -39573,7 +39573,7 @@ extern "C"  bool Uri_get_IsDefaultPort_m3069892608 (Uri_t19570940 * __this, cons
 	}
 	{
 		Uri_EnsureAbsoluteUri_m1892758054(__this, /*hidden argument*/NULL);
-		String_t* L_0 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_0 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		int32_t L_1 = Uri_GetDefaultPort_m2114319579(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		int32_t L_2 = __this->get_port_4();
@@ -39594,7 +39594,7 @@ extern "C"  bool Uri_get_IsFile_m3814355526 (Uri_t19570940 * __this, const Metho
 	}
 	{
 		Uri_EnsureAbsoluteUri_m1892758054(__this, /*hidden argument*/NULL);
-		String_t* L_0 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_0 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		String_t* L_1 = ((Uri_t19570940_StaticFields*)Uri_t19570940_il2cpp_TypeInfo_var->static_fields)->get_UriSchemeFile_19();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -39725,13 +39725,13 @@ extern "C"  bool Uri_get_IsUnc_m2111738174 (Uri_t19570940 * __this, const Method
 extern Il2CppClass* Path_t41728875_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2088416310;
-extern const uint32_t Uri_get_LocalPath_m1467029974_MetadataUsageId;
-extern "C"  String_t* Uri_get_LocalPath_m1467029974 (Uri_t19570940 * __this, const MethodInfo* method)
+extern const uint32_t Uri_get_LocalPath_m1625111831_MetadataUsageId;
+extern "C"  String_t* Uri_get_LocalPath_m1625111831 (Uri_t19570940 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri_get_LocalPath_m1467029974_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri_get_LocalPath_m1625111831_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	bool V_0 = false;
@@ -39763,7 +39763,7 @@ IL_0018:
 		}
 	}
 	{
-		String_t* L_3 = Uri_get_AbsolutePath_m950234534(__this, /*hidden argument*/NULL);
+		String_t* L_3 = Uri_get_AbsolutePath_m802771013(__this, /*hidden argument*/NULL);
 		return L_3;
 	}
 
@@ -40020,7 +40020,7 @@ extern "C"  String_t* Uri_get_Query_m2101975817 (Uri_t19570940 * __this, const M
 	}
 }
 // System.String System.Uri::get_Scheme()
-extern "C"  String_t* Uri_get_Scheme_m1862544965 (Uri_t19570940 * __this, const MethodInfo* method)
+extern "C"  String_t* Uri_get_Scheme_m55908894 (Uri_t19570940 * __this, const MethodInfo* method)
 {
 	{
 		Uri_EnsureAbsoluteUri_m1892758054(__this, /*hidden argument*/NULL);
@@ -40038,7 +40038,7 @@ extern "C"  String_t* Uri_get_UserInfo_m420946958 (Uri_t19570940 * __this, const
 	}
 }
 // System.Boolean System.Uri::get_IsAbsoluteUri()
-extern "C"  bool Uri_get_IsAbsoluteUri_m615473366 (Uri_t19570940 * __this, const MethodInfo* method)
+extern "C"  bool Uri_get_IsAbsoluteUri_m4123650233 (Uri_t19570940 * __this, const MethodInfo* method)
 {
 	{
 		bool L_0 = __this->get_isAbsoluteUri_11();
@@ -40046,7 +40046,7 @@ extern "C"  bool Uri_get_IsAbsoluteUri_m615473366 (Uri_t19570940 * __this, const
 	}
 }
 // System.String System.Uri::get_OriginalString()
-extern "C"  String_t* Uri_get_OriginalString_m2610505086 (Uri_t19570940 * __this, const MethodInfo* method)
+extern "C"  String_t* Uri_get_OriginalString_m2475338851 (Uri_t19570940 * __this, const MethodInfo* method)
 {
 	String_t* G_B3_0 = NULL;
 	{
@@ -40636,7 +40636,7 @@ IL_0024:
 	{
 		String_t* L_5 = V_1;
 		Uri_t19570940 * L_6 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1248212436(L_6, L_5, /*hidden argument*/NULL);
+		Uri__ctor_m3927533881(L_6, L_5, /*hidden argument*/NULL);
 		V_0 = L_6;
 	}
 
@@ -41148,7 +41148,7 @@ IL_0200:
 		}
 	}
 	{
-		String_t* L_72 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_72 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		V_4 = L_72;
 		String_t* L_73 = V_4;
 		if (!L_73)
@@ -41215,7 +41215,7 @@ IL_0284:
 	{
 		StringBuilder_t1221177846 * L_85 = V_2;
 		String_t* L_86 = __this->get_path_5();
-		String_t* L_87 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_87 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
 		bool L_88 = Uri_CompactEscaped_m1050204715(NULL /*static, unused*/, L_87, /*hidden argument*/NULL);
 		String_t* L_89 = Uri_Reduce_m2577728307(NULL /*static, unused*/, L_86, L_88, /*hidden argument*/NULL);
@@ -45141,7 +45141,7 @@ extern "C"  UriParser_t1012511323 * Uri_get_Parser_m2250631932 (Uri_t19570940 * 
 		}
 	}
 	{
-		String_t* L_1 = Uri_get_Scheme_m1862544965(__this, /*hidden argument*/NULL);
+		String_t* L_1 = Uri_get_Scheme_m55908894(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(UriParser_t1012511323_il2cpp_TypeInfo_var);
 		UriParser_t1012511323 * L_2 = UriParser_GetParser_m1453767844(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 		__this->set_parser_30(L_2);
@@ -45955,7 +45955,7 @@ extern "C"  void Uri_EnsureAbsoluteUri_m1892758054 (Uri_t19570940 * __this, cons
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		bool L_0 = Uri_get_IsAbsoluteUri_m615473366(__this, /*hidden argument*/NULL);
+		bool L_0 = Uri_get_IsAbsoluteUri_m4123650233(__this, /*hidden argument*/NULL);
 		if (L_0)
 		{
 			goto IL_0016;
@@ -45973,7 +45973,7 @@ IL_0016:
 	}
 }
 // System.Boolean System.Uri::op_Equality(System.Uri,System.Uri)
-extern "C"  bool Uri_op_Equality_m415651348 (Il2CppObject * __this /* static, unused */, Uri_t19570940 * ___u10, Uri_t19570940 * ___u21, const MethodInfo* method)
+extern "C"  bool Uri_op_Equality_m110355127 (Il2CppObject * __this /* static, unused */, Uri_t19570940 * ___u10, Uri_t19570940 * ___u21, const MethodInfo* method)
 {
 	{
 		Uri_t19570940 * L_0 = ___u10;
@@ -45984,20 +45984,20 @@ extern "C"  bool Uri_op_Equality_m415651348 (Il2CppObject * __this /* static, un
 }
 // System.Boolean System.Uri::op_Inequality(System.Uri,System.Uri)
 extern Il2CppClass* Uri_t19570940_il2cpp_TypeInfo_var;
-extern const uint32_t Uri_op_Inequality_m854301563_MetadataUsageId;
-extern "C"  bool Uri_op_Inequality_m854301563 (Il2CppObject * __this /* static, unused */, Uri_t19570940 * ___u10, Uri_t19570940 * ___u21, const MethodInfo* method)
+extern const uint32_t Uri_op_Inequality_m853767938_MetadataUsageId;
+extern "C"  bool Uri_op_Inequality_m853767938 (Il2CppObject * __this /* static, unused */, Uri_t19570940 * ___u10, Uri_t19570940 * ___u21, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Uri_op_Inequality_m854301563_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Uri_op_Inequality_m853767938_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
 		Uri_t19570940 * L_0 = ___u10;
 		Uri_t19570940 * L_1 = ___u21;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_2 = Uri_op_Equality_m415651348(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		bool L_2 = Uri_op_Equality_m110355127(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
 		return (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -46081,7 +46081,7 @@ extern "C"  void UriBuilder__ctor_m2466436215 (UriBuilder_t2016461725 * __this, 
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		Uri_t19570940 * L_0 = ___uri0;
 		NullCheck(L_0);
-		String_t* L_1 = Uri_get_Scheme_m1862544965(L_0, /*hidden argument*/NULL);
+		String_t* L_1 = Uri_get_Scheme_m55908894(L_0, /*hidden argument*/NULL);
 		__this->set_scheme_0(L_1);
 		Uri_t19570940 * L_2 = ___uri0;
 		NullCheck(L_2);
@@ -46093,7 +46093,7 @@ extern "C"  void UriBuilder__ctor_m2466436215 (UriBuilder_t2016461725 * __this, 
 		__this->set_port_2(L_5);
 		Uri_t19570940 * L_6 = ___uri0;
 		NullCheck(L_6);
-		String_t* L_7 = Uri_get_AbsolutePath_m950234534(L_6, /*hidden argument*/NULL);
+		String_t* L_7 = Uri_get_AbsolutePath_m802771013(L_6, /*hidden argument*/NULL);
 		__this->set_path_3(L_7);
 		Uri_t19570940 * L_8 = ___uri0;
 		NullCheck(L_8);
@@ -46218,7 +46218,7 @@ IL_0012:
 	{
 		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.UriBuilder::ToString() */, __this);
 		Uri_t19570940 * L_3 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m3619178709(L_3, L_2, (bool)1, /*hidden argument*/NULL);
+		Uri__ctor_m3854873816(L_3, L_2, (bool)1, /*hidden argument*/NULL);
 		__this->set_uri_8(L_3);
 		__this->set_modified_9((bool)0);
 		Uri_t19570940 * L_4 = __this->get_uri_8();
@@ -46500,7 +46500,7 @@ extern "C"  void UriParser__cctor_m1839415991 (Il2CppObject * __this /* static, 
 		Regex__ctor_m2521903438(L_1, _stringLiteral704347881, 8, /*hidden argument*/NULL);
 		((UriParser_t1012511323_StaticFields*)UriParser_t1012511323_il2cpp_TypeInfo_var->static_fields)->set_uri_regex_4(L_1);
 		Regex_t1803876613 * L_2 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2930443103(L_2, _stringLiteral1509538344, /*hidden argument*/NULL);
+		Regex__ctor_m1229307206(L_2, _stringLiteral1509538344, /*hidden argument*/NULL);
 		((UriParser_t1012511323_StaticFields*)UriParser_t1012511323_il2cpp_TypeInfo_var->static_fields)->set_auth_regex_5(L_2);
 		return;
 	}
@@ -46522,7 +46522,7 @@ extern "C"  void UriParser_InitializeAndValidate_m251943319 (UriParser_t10125113
 	{
 		Uri_t19570940 * L_0 = ___uri0;
 		NullCheck(L_0);
-		String_t* L_1 = Uri_get_Scheme_m1862544965(L_0, /*hidden argument*/NULL);
+		String_t* L_1 = Uri_get_Scheme_m55908894(L_0, /*hidden argument*/NULL);
 		String_t* L_2 = __this->get_scheme_name_2();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_3 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
@@ -47044,7 +47044,7 @@ IL_0040:
 	{
 		String_t* L_12 = V_0;
 		Uri_t19570940 * L_13 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1528033823(L_13, L_12, 0, /*hidden argument*/NULL);
+		Uri__ctor_m1027317340(L_13, L_12, 0, /*hidden argument*/NULL);
 		return L_13;
 	}
 
@@ -47133,7 +47133,7 @@ IL_001e:
 		V_0 = ((Uri_t19570940 *)IsInstClass(L_5, Uri_t19570940_il2cpp_TypeInfo_var));
 		Uri_t19570940 * L_6 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_7 = Uri_op_Inequality_m854301563(NULL /*static, unused*/, L_6, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_7 = Uri_op_Inequality_m853767938(NULL /*static, unused*/, L_6, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		if (!L_7)
 		{
 			goto IL_00cd;
@@ -47210,7 +47210,7 @@ IL_005c:
 		ObjectU5BU5D_t3614634134* L_27 = L_24;
 		Uri_t19570940 * L_28 = V_0;
 		NullCheck(L_28);
-		bool L_29 = Uri_get_IsAbsoluteUri_m615473366(L_28, /*hidden argument*/NULL);
+		bool L_29 = Uri_get_IsAbsoluteUri_m4123650233(L_28, /*hidden argument*/NULL);
 		G_B9_0 = 1;
 		G_B9_1 = L_27;
 		G_B9_2 = L_27;

@@ -25,6 +25,6 @@ struct String_t;
 // System.Void System.Collections.Specialized.StringEnumerator::.ctor(System.Collections.Specialized.StringCollection)
 extern "C"  void StringEnumerator__ctor_m1312483144 (StringEnumerator_t441637433 * __this, StringCollection_t352985975 * ___coll0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Collections.Specialized.StringEnumerator::get_Current()
-extern "C"  String_t* StringEnumerator_get_Current_m2831460888 (StringEnumerator_t441637433 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* StringEnumerator_get_Current_m2945155571 (StringEnumerator_t441637433 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.Specialized.StringEnumerator::MoveNext()
-extern "C"  bool StringEnumerator_MoveNext_m326268307 (StringEnumerator_t441637433 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  bool StringEnumerator_MoveNext_m78691276 (StringEnumerator_t441637433 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

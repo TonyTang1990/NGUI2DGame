@@ -83,7 +83,7 @@ extern "C"  void WebRequest_Abort_m1466873215 (WebRequest_t1365124353 * __this, 
 // System.IAsyncResult System.Net.WebRequest::BeginGetResponse(System.AsyncCallback,System.Object)
 extern "C"  Il2CppObject * WebRequest_BeginGetResponse_m1390960979 (WebRequest_t1365124353 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___state1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Net.WebRequest System.Net.WebRequest::Create(System.Uri)
-extern "C"  WebRequest_t1365124353 * WebRequest_Create_m3200133307 (Il2CppObject * __this /* static, unused */, Uri_t19570940 * ___requestUri0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  WebRequest_t1365124353 * WebRequest_Create_m2515147542 (Il2CppObject * __this /* static, unused */, Uri_t19570940 * ___requestUri0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Net.WebResponse System.Net.WebRequest::EndGetResponse(System.IAsyncResult)
 extern "C"  WebResponse_t1895226051 * WebRequest_EndGetResponse_m179948544 (WebRequest_t1365124353 * __this, Il2CppObject * ___asyncResult0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Net.WebResponse System.Net.WebRequest::GetResponse()

@@ -677,25 +677,25 @@ struct XsdNotation_t720379093;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Conversion methods for marshalling of: <PrivateImplementationDetails>/$ArrayType$12
-extern "C" void U24ArrayTypeU2412_t3672778803_marshal_pinvoke(const U24ArrayTypeU2412_t3672778803& unmarshaled, U24ArrayTypeU2412_t3672778803_marshaled_pinvoke& marshaled)
+extern "C" void U24ArrayTypeU2412_t3672778805_marshal_pinvoke(const U24ArrayTypeU2412_t3672778805& unmarshaled, U24ArrayTypeU2412_t3672778805_marshaled_pinvoke& marshaled)
 {
 }
-extern "C" void U24ArrayTypeU2412_t3672778803_marshal_pinvoke_back(const U24ArrayTypeU2412_t3672778803_marshaled_pinvoke& marshaled, U24ArrayTypeU2412_t3672778803& unmarshaled)
+extern "C" void U24ArrayTypeU2412_t3672778805_marshal_pinvoke_back(const U24ArrayTypeU2412_t3672778805_marshaled_pinvoke& marshaled, U24ArrayTypeU2412_t3672778805& unmarshaled)
 {
 }
 // Conversion method for clean up from marshalling of: <PrivateImplementationDetails>/$ArrayType$12
-extern "C" void U24ArrayTypeU2412_t3672778803_marshal_pinvoke_cleanup(U24ArrayTypeU2412_t3672778803_marshaled_pinvoke& marshaled)
+extern "C" void U24ArrayTypeU2412_t3672778805_marshal_pinvoke_cleanup(U24ArrayTypeU2412_t3672778805_marshaled_pinvoke& marshaled)
 {
 }
 // Conversion methods for marshalling of: <PrivateImplementationDetails>/$ArrayType$12
-extern "C" void U24ArrayTypeU2412_t3672778803_marshal_com(const U24ArrayTypeU2412_t3672778803& unmarshaled, U24ArrayTypeU2412_t3672778803_marshaled_com& marshaled)
+extern "C" void U24ArrayTypeU2412_t3672778805_marshal_com(const U24ArrayTypeU2412_t3672778805& unmarshaled, U24ArrayTypeU2412_t3672778805_marshaled_com& marshaled)
 {
 }
-extern "C" void U24ArrayTypeU2412_t3672778803_marshal_com_back(const U24ArrayTypeU2412_t3672778803_marshaled_com& marshaled, U24ArrayTypeU2412_t3672778803& unmarshaled)
+extern "C" void U24ArrayTypeU2412_t3672778805_marshal_com_back(const U24ArrayTypeU2412_t3672778805_marshaled_com& marshaled, U24ArrayTypeU2412_t3672778805& unmarshaled)
 {
 }
 // Conversion method for clean up from marshalling of: <PrivateImplementationDetails>/$ArrayType$12
-extern "C" void U24ArrayTypeU2412_t3672778803_marshal_com_cleanup(U24ArrayTypeU2412_t3672778803_marshaled_com& marshaled)
+extern "C" void U24ArrayTypeU2412_t3672778805_marshal_com_cleanup(U24ArrayTypeU2412_t3672778805_marshaled_com& marshaled)
 {
 }
 // Conversion methods for marshalling of: <PrivateImplementationDetails>/$ArrayType$1280
@@ -3637,7 +3637,7 @@ IL_0060:
 		{
 			String_t* L_9 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String Mono.Xml.DTDNode::get_BaseURI() */, __this);
 			Uri_t19570940 * L_10 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-			Uri__ctor_m1248212436(L_10, L_9, /*hidden argument*/NULL);
+			Uri__ctor_m3927533881(L_10, L_9, /*hidden argument*/NULL);
 			V_0 = L_10;
 		}
 
@@ -3669,7 +3669,7 @@ IL_0077:
 		__this->set_absUri_11(L_14);
 		Uri_t19570940 * L_15 = __this->get_absUri_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		bool L_16 = Uri_op_Inequality_m854301563(NULL /*static, unused*/, L_15, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
+		bool L_16 = Uri_op_Inequality_m853767938(NULL /*static, unused*/, L_15, (Uri_t19570940 *)NULL, /*hidden argument*/NULL);
 		G_B12_0 = __this;
 		if (!L_16)
 		{
@@ -5518,7 +5518,7 @@ IL_003b:
 		NullCheck(L_10);
 		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String Mono.Xml.DTDNode::get_BaseURI() */, L_10);
 		Uri_t19570940 * L_12 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1248212436(L_12, L_11, /*hidden argument*/NULL);
+		Uri__ctor_m3927533881(L_12, L_11, /*hidden argument*/NULL);
 		G_B6_0 = L_12;
 	}
 
@@ -12991,7 +12991,7 @@ IL_0018:
 		bool L_4 = ___formal1;
 		NullCheck(G_B3_1);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m3619178709(G_B3_1, G_B3_0, (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
+		Uri__ctor_m3854873816(G_B3_1, G_B3_0, (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
 		String_t* L_5 = ___src0;
 		__this->set_value_36(L_5);
 		return;
@@ -13298,7 +13298,7 @@ IL_0068:
 		NullCheck(L_31);
 		String_t* L_32 = VirtFuncInvoker0< String_t* >::Invoke(6 /* System.String System.Xml.XmlReader::get_BaseURI() */, L_31);
 		Uri_t19570940 * L_33 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1248212436(L_33, L_32, /*hidden argument*/NULL);
+		Uri__ctor_m3927533881(L_33, L_32, /*hidden argument*/NULL);
 		NullCheck(L_30);
 		XmlSchemaValidator_set_SourceUri_m3356620067(L_30, L_33, /*hidden argument*/NULL);
 	}
@@ -16927,7 +16927,7 @@ IL_00a5:
 		StringCollection_t352985975 * L_24 = XmlSchemaAny_get_ResolvedNamespaces_m175136018(L_23, /*hidden argument*/NULL);
 		int32_t L_25 = V_0;
 		NullCheck(L_24);
-		String_t* L_26 = StringCollection_get_Item_m594027047(L_24, L_25, /*hidden argument*/NULL);
+		String_t* L_26 = StringCollection_get_Item_m4283262666(L_24, L_25, /*hidden argument*/NULL);
 		String_t* L_27 = ___ns0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_28 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_26, L_27, /*hidden argument*/NULL);
@@ -16953,7 +16953,7 @@ IL_00c7:
 		NullCheck(L_31);
 		StringCollection_t352985975 * L_32 = XmlSchemaAny_get_ResolvedNamespaces_m175136018(L_31, /*hidden argument*/NULL);
 		NullCheck(L_32);
-		int32_t L_33 = StringCollection_get_Count_m2493029763(L_32, /*hidden argument*/NULL);
+		int32_t L_33 = StringCollection_get_Count_m1458092700(L_32, /*hidden argument*/NULL);
 		if ((((int32_t)L_30) < ((int32_t)L_33)))
 		{
 			goto IL_00a5;

@@ -18,6 +18,8 @@ struct Exception_t1927440687;
 struct String_t;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t228987430;
+// System.Collections.IDictionary
+struct IDictionary_t596158605;
 // System.Text.StringBuilder
 struct StringBuilder_t1221177846;
 // System.Reflection.MethodBase
@@ -55,6 +57,8 @@ extern "C"  String_t* Exception_get_Message_m173095527 (Exception_t1927440687 * 
 extern "C"  String_t* Exception_get_Source_m1610892645 (Exception_t1927440687 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Exception::get_StackTrace()
 extern "C"  String_t* Exception_get_StackTrace_m2513587087 (Exception_t1927440687 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IDictionary System.Exception::get_Data()
+extern "C"  Il2CppObject * Exception_get_Data_m3664504611 (Exception_t1927440687 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Exception::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void Exception_GetObjectData_m2653827630 (Exception_t1927440687 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Exception::ToString()

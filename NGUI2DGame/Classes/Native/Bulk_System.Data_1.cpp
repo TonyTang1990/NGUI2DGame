@@ -4152,11 +4152,11 @@ IL_0039:
 		V_1 = L_6;
 		StringWriter_t4139609088 * L_7 = V_1;
 		XmlTextWriter_t2527250655 * L_8 = (XmlTextWriter_t2527250655 *)il2cpp_codegen_object_new(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
-		XmlTextWriter__ctor_m867344167(L_8, L_7, /*hidden argument*/NULL);
+		XmlTextWriter__ctor_m3230461554(L_8, L_7, /*hidden argument*/NULL);
 		V_2 = L_8;
 		XmlTextWriter_t2527250655 * L_9 = V_2;
 		NullCheck(L_9);
-		XmlTextWriter_set_Formatting_m324688091(L_9, 1, /*hidden argument*/NULL);
+		XmlTextWriter_set_Formatting_m3944030982(L_9, 1, /*hidden argument*/NULL);
 		DataSet_t3097402844 * L_10 = V_0;
 		XmlTextWriter_t2527250655 * L_11 = V_2;
 		NullCheck(L_10);
@@ -4177,7 +4177,7 @@ IL_0039:
 		DataSet_t3097402844 * L_17 = V_0;
 		StringWriter_t4139609088 * L_18 = V_3;
 		XmlTextWriter_t2527250655 * L_19 = (XmlTextWriter_t2527250655 *)il2cpp_codegen_object_new(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
-		XmlTextWriter__ctor_m867344167(L_19, L_18, /*hidden argument*/NULL);
+		XmlTextWriter__ctor_m3230461554(L_19, L_18, /*hidden argument*/NULL);
 		DataTableCollection_t787171642 * L_20 = V_4;
 		XmlSchemaWriter_WriteXmlSchema_m556424756(NULL /*static, unused*/, L_17, L_19, L_20, (DataRelationCollection_t3958690162 *)NULL, /*hidden argument*/NULL);
 		StringWriter_t4139609088 * L_21 = V_3;
@@ -27887,7 +27887,7 @@ extern "C"  void XmlDataInferenceLoader_ReadXml_m1308735681 (XmlDataInferenceLoa
 	{
 		XmlDocument_t3649534162 * L_0 = __this->get_document_1();
 		NullCheck(L_0);
-		XmlElement_t2877111883 * L_1 = XmlDocument_get_DocumentElement_m898495187(L_0, /*hidden argument*/NULL);
+		XmlElement_t2877111883 * L_1 = XmlDocument_get_DocumentElement_m846077342(L_0, /*hidden argument*/NULL);
 		if (L_1)
 		{
 			goto IL_0011;
@@ -27906,7 +27906,7 @@ IL_0011:
 		DataSet_set_Locale_m325046636(L_2, L_3, /*hidden argument*/NULL);
 		XmlDocument_t3649534162 * L_4 = __this->get_document_1();
 		NullCheck(L_4);
-		XmlElement_t2877111883 * L_5 = XmlDocument_get_DocumentElement_m898495187(L_4, /*hidden argument*/NULL);
+		XmlElement_t2877111883 * L_5 = XmlDocument_get_DocumentElement_m846077342(L_4, /*hidden argument*/NULL);
 		V_0 = L_5;
 		XmlElement_t2877111883 * L_6 = V_0;
 		NullCheck(L_6);
@@ -30857,7 +30857,7 @@ extern "C"  bool XmlDataInferenceLoader_IsDocumentElementTable_m3705770247 (XmlD
 	{
 		XmlDocument_t3649534162 * L_0 = __this->get_document_1();
 		NullCheck(L_0);
-		XmlElement_t2877111883 * L_1 = XmlDocument_get_DocumentElement_m898495187(L_0, /*hidden argument*/NULL);
+		XmlElement_t2877111883 * L_1 = XmlDocument_get_DocumentElement_m846077342(L_0, /*hidden argument*/NULL);
 		ArrayList_t4252133567 * L_2 = __this->get_ignoredNamespaces_3();
 		bool L_3 = XmlDataInferenceLoader_IsDocumentElementTable_m3336876403(NULL /*static, unused*/, L_1, L_2, /*hidden argument*/NULL);
 		return L_3;
@@ -31681,7 +31681,7 @@ extern "C"  bool XmlDataReader_IsTopLevelDataSet_m2907275022 (XmlDataReader_t110
 IL_002b:
 	{
 		XmlDocument_t3649534162 * L_8 = (XmlDocument_t3649534162 *)il2cpp_codegen_object_new(XmlDocument_t3649534162_il2cpp_TypeInfo_var);
-		XmlDocument__ctor_m3336214851(L_8, /*hidden argument*/NULL);
+		XmlDocument__ctor_m3872501054(L_8, /*hidden argument*/NULL);
 		V_2 = L_8;
 		XmlDocument_t3649534162 * L_9 = V_2;
 		XmlReader_t3675626668 * L_10 = __this->get_reader_1();
@@ -31694,7 +31694,7 @@ IL_002b:
 		VirtFuncInvoker1< XmlNode_t616554813 *, XmlNode_t616554813 * >::Invoke(31 /* System.Xml.XmlNode System.Xml.XmlNode::AppendChild(System.Xml.XmlNode) */, L_12, L_13);
 		XmlElement_t2877111883 * L_14 = V_3;
 		XmlNodeReader_t1022603664 * L_15 = (XmlNodeReader_t1022603664 *)il2cpp_codegen_object_new(XmlNodeReader_t1022603664_il2cpp_TypeInfo_var);
-		XmlNodeReader__ctor_m1586642800(L_15, L_14, /*hidden argument*/NULL);
+		XmlNodeReader__ctor_m994151033(L_15, L_14, /*hidden argument*/NULL);
 		__this->set_reader_1(L_15);
 		XmlReader_t3675626668 * L_16 = __this->get_reader_1();
 		NullCheck(L_16);
@@ -32505,7 +32505,7 @@ IL_007d:
 		NullCheck(L_27);
 		Type_t * L_28 = DataColumn_get_DataType_m3342791580(L_27, /*hidden argument*/NULL);
 		NullCheck(L_26);
-		bool L_29 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_26, L_28);
+		bool L_29 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_26, L_28);
 		if (!L_29)
 		{
 			goto IL_0141;
@@ -43968,10 +43968,10 @@ extern "C"  void XmlSchemaWriter_WriteSchema_m3676814214 (XmlSchemaWriter_t31545
 	NO_UNUSED_WARNING (__leave_target);
 	{
 		ListDictionary_t3458713452 * L_0 = (ListDictionary_t3458713452 *)il2cpp_codegen_object_new(ListDictionary_t3458713452_il2cpp_TypeInfo_var);
-		ListDictionary__ctor_m2212872322(L_0, /*hidden argument*/NULL);
+		ListDictionary__ctor_m3573908233(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
 		ListDictionary_t3458713452 * L_1 = (ListDictionary_t3458713452 *)il2cpp_codegen_object_new(ListDictionary_t3458713452_il2cpp_TypeInfo_var);
-		ListDictionary__ctor_m2212872322(L_1, /*hidden argument*/NULL);
+		ListDictionary__ctor_m3573908233(L_1, /*hidden argument*/NULL);
 		V_1 = L_1;
 		DataTableU5BU5D_t2488609753* L_2 = __this->get_tables_1();
 		V_3 = L_2;
@@ -44107,7 +44107,7 @@ IL_0097:
 		IL2CPP_RUNTIME_CLASS_INIT(XmlHelper_t925396301_il2cpp_TypeInfo_var);
 		String_t* L_35 = XmlHelper_Encode_m3223022556(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
 		NullCheck(L_33);
-		XmlWriter_WriteAttributeString_m3169493699(L_33, _stringLiteral287061489, L_35, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_33, _stringLiteral287061489, L_35, /*hidden argument*/NULL);
 		String_t* L_36 = __this->get_dataSetNamespace_5();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_37 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
@@ -44121,7 +44121,7 @@ IL_0097:
 		XmlWriter_t1048088568 * L_39 = __this->get_w_0();
 		String_t* L_40 = __this->get_dataSetNamespace_5();
 		NullCheck(L_39);
-		XmlWriter_WriteAttributeString_m3169493699(L_39, _stringLiteral2324490834, L_40, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_39, _stringLiteral2324490834, L_40, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_41 = __this->get_w_0();
 		String_t* L_42 = __this->get_dataSetNamespace_5();
 		NullCheck(L_41);
@@ -44133,7 +44133,7 @@ IL_0121:
 		XmlWriter_t1048088568 * L_43 = __this->get_w_0();
 		String_t* L_44 = __this->get_dataSetNamespace_5();
 		NullCheck(L_43);
-		XmlWriter_WriteAttributeString_m3169493699(L_43, _stringLiteral351558848, L_44, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_43, _stringLiteral351558848, L_44, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_45 = __this->get_w_0();
 		NullCheck(L_45);
 		XmlWriter_WriteAttributeString_m2741345027(L_45, _stringLiteral351558848, _stringLiteral3110053195, _stringLiteral3036435824, _stringLiteral4191651376, /*hidden argument*/NULL);
@@ -44168,10 +44168,10 @@ IL_01ab:
 	{
 		XmlWriter_t1048088568 * L_54 = __this->get_w_0();
 		NullCheck(L_54);
-		XmlWriter_WriteAttributeString_m3169493699(L_54, _stringLiteral4225992717, _stringLiteral2027768876, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_54, _stringLiteral4225992717, _stringLiteral2027768876, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_55 = __this->get_w_0();
 		NullCheck(L_55);
-		XmlWriter_WriteAttributeString_m3169493699(L_55, _stringLiteral4098886639, _stringLiteral2027768876, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_55, _stringLiteral4098886639, _stringLiteral2027768876, /*hidden argument*/NULL);
 	}
 
 IL_01ea:
@@ -44264,7 +44264,7 @@ IL_0255:
 	{
 		ListDictionary_t3458713452 * L_71 = V_1;
 		NullCheck(L_71);
-		int32_t L_72 = ListDictionary_get_Count_m3864225576(L_71, /*hidden argument*/NULL);
+		int32_t L_72 = ListDictionary_get_Count_m2397535557(L_71, /*hidden argument*/NULL);
 		if ((((int32_t)L_72) <= ((int32_t)0)))
 		{
 			goto IL_0271;
@@ -44305,14 +44305,14 @@ IL_0283:
 			XmlWriter_t1048088568 * L_80 = __this->get_w_0();
 			String_t* L_81 = V_9;
 			NullCheck(L_80);
-			XmlWriter_WriteAttributeString_m3169493699(L_80, _stringLiteral224585547, L_81, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_80, _stringLiteral224585547, L_81, /*hidden argument*/NULL);
 			XmlWriter_t1048088568 * L_82 = __this->get_w_0();
 			ListDictionary_t3458713452 * L_83 = V_1;
 			String_t* L_84 = V_9;
 			NullCheck(L_83);
 			Il2CppObject * L_85 = ListDictionary_get_Item_m3967158800(L_83, L_84, /*hidden argument*/NULL);
 			NullCheck(L_82);
-			XmlWriter_WriteAttributeString_m3169493699(L_82, _stringLiteral3617644062, ((String_t*)IsInstSealed(L_85, String_t_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_82, _stringLiteral3617644062, ((String_t*)IsInstSealed(L_85, String_t_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 			XmlWriter_t1048088568 * L_86 = __this->get_w_0();
 			NullCheck(L_86);
 			VirtActionInvoker0::Invoke(17 /* System.Void System.Xml.XmlWriter::WriteEndElement() */, L_86);
@@ -44588,7 +44588,7 @@ extern "C"  void XmlSchemaWriter_WriteDataSetElement_m1173938991 (XmlSchemaWrite
 		IL2CPP_RUNTIME_CLASS_INIT(XmlHelper_t925396301_il2cpp_TypeInfo_var);
 		String_t* L_3 = XmlHelper_Encode_m3223022556(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		XmlWriter_WriteAttributeString_m3169493699(L_1, _stringLiteral2328218955, L_3, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_1, _stringLiteral2328218955, L_3, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_4 = __this->get_w_0();
 		NullCheck(L_4);
 		XmlWriter_WriteAttributeString_m2741345027(L_4, _stringLiteral3080374566, _stringLiteral572885914, _stringLiteral1243204336, _stringLiteral3323263070, /*hidden argument*/NULL);
@@ -44660,10 +44660,10 @@ IL_00ee:
 		VirtActionInvoker3< String_t*, String_t*, String_t* >::Invoke(25 /* System.Void System.Xml.XmlWriter::WriteStartElement(System.String,System.String,System.String) */, L_20, _stringLiteral3110053195, _stringLiteral1117846319, _stringLiteral4191651376);
 		XmlWriter_t1048088568 * L_21 = __this->get_w_0();
 		NullCheck(L_21);
-		XmlWriter_WriteAttributeString_m3169493699(L_21, _stringLiteral1358871453, _stringLiteral372029326, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_21, _stringLiteral1358871453, _stringLiteral372029326, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_22 = __this->get_w_0();
 		NullCheck(L_22);
-		XmlWriter_WriteAttributeString_m3169493699(L_22, _stringLiteral1431668375, _stringLiteral2009640818, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_22, _stringLiteral1431668375, _stringLiteral2009640818, /*hidden argument*/NULL);
 		DataTableU5BU5D_t2488609753* L_23 = __this->get_tables_1();
 		V_2 = L_23;
 		V_3 = 0;
@@ -45045,7 +45045,7 @@ extern "C"  void XmlSchemaWriter_WriteDataRelationAnnotation_m230288925 (XmlSche
 		IL2CPP_RUNTIME_CLASS_INIT(XmlHelper_t925396301_il2cpp_TypeInfo_var);
 		String_t* L_5 = XmlHelper_Encode_m3223022556(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		XmlWriter_WriteAttributeString_m3169493699(L_2, _stringLiteral2328218955, L_5, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_2, _stringLiteral2328218955, L_5, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_6 = __this->get_w_0();
 		DataRelation_t790111712 * L_7 = ___rel0;
 		NullCheck(L_7);
@@ -45633,7 +45633,7 @@ IL_0023:
 		XmlWriter_t1048088568 * L_19 = __this->get_w_0();
 		String_t* L_20 = V_3;
 		NullCheck(L_19);
-		XmlWriter_WriteAttributeString_m3169493699(L_19, _stringLiteral2328218955, L_20, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_19, _stringLiteral2328218955, L_20, /*hidden argument*/NULL);
 		goto IL_00d5;
 	}
 
@@ -45656,7 +45656,7 @@ IL_0079:
 		XmlWriter_t1048088568 * L_29 = __this->get_w_0();
 		String_t* L_30 = V_3;
 		NullCheck(L_29);
-		XmlWriter_WriteAttributeString_m3169493699(L_29, _stringLiteral2328218955, L_30, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_29, _stringLiteral2328218955, L_30, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_31 = __this->get_w_0();
 		UniqueConstraint_t3624508568 * L_32 = ___uniq0;
 		NullCheck(L_32);
@@ -45707,7 +45707,7 @@ IL_0107:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_49 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral57472054, L_44, L_48, /*hidden argument*/NULL);
 		NullCheck(L_43);
-		XmlWriter_WriteAttributeString_m3169493699(L_43, _stringLiteral2616807513, L_49, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_43, _stringLiteral2616807513, L_49, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_50 = __this->get_w_0();
 		NullCheck(L_50);
 		VirtActionInvoker0::Invoke(17 /* System.Void System.Xml.XmlWriter::WriteEndElement() */, L_50);
@@ -45946,7 +45946,7 @@ IL_0055:
 		IL2CPP_RUNTIME_CLASS_INIT(XmlHelper_t925396301_il2cpp_TypeInfo_var);
 		String_t* L_26 = XmlHelper_Encode_m3223022556(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
 		NullCheck(L_23);
-		XmlWriter_WriteAttributeString_m3169493699(L_23, _stringLiteral2328218955, L_26, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_23, _stringLiteral2328218955, L_26, /*hidden argument*/NULL);
 		V_6 = (UniqueConstraint_t3624508568 *)NULL;
 		bool L_27 = ___isConstraintOnly2;
 		if (!L_27)
@@ -46192,7 +46192,7 @@ IL_0221:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_86 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral57472054, L_81, L_85, /*hidden argument*/NULL);
 		NullCheck(L_80);
-		XmlWriter_WriteAttributeString_m3169493699(L_80, _stringLiteral2616807513, L_86, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_80, _stringLiteral2616807513, L_86, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_87 = __this->get_w_0();
 		NullCheck(L_87);
 		VirtActionInvoker0::Invoke(17 /* System.Void System.Xml.XmlWriter::WriteEndElement() */, L_87);
@@ -46786,7 +46786,7 @@ extern "C"  void XmlSchemaWriter_WriteTableElement_m2458967300 (XmlSchemaWriter_
 		IL2CPP_RUNTIME_CLASS_INIT(XmlHelper_t925396301_il2cpp_TypeInfo_var);
 		String_t* L_4 = XmlHelper_Encode_m3223022556(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		XmlWriter_WriteAttributeString_m3169493699(L_1, _stringLiteral2328218955, L_4, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_1, _stringLiteral2328218955, L_4, /*hidden argument*/NULL);
 		DataTable_t3267612424 * L_5 = ___table0;
 		NullCheck(L_5);
 		PropertyCollection_t2281048903 * L_6 = DataTable_get_ExtendedProperties_m330154551(L_5, /*hidden argument*/NULL);
@@ -47258,7 +47258,7 @@ extern "C"  void XmlSchemaWriter_WriteTableTypeParticles_m3379552289 (XmlSchemaW
 		IL2CPP_RUNTIME_CLASS_INIT(XmlHelper_t925396301_il2cpp_TypeInfo_var);
 		String_t* L_4 = XmlHelper_Encode_m3223022556(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		XmlWriter_WriteAttributeString_m3169493699(L_1, _stringLiteral2328218955, L_4, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_1, _stringLiteral2328218955, L_4, /*hidden argument*/NULL);
 		DataColumn_t2152532948 * L_5 = ___col0;
 		NullCheck(L_5);
 		String_t* L_6 = DataColumn_get_ColumnName_m952398578(L_5, /*hidden argument*/NULL);
@@ -47375,7 +47375,7 @@ IL_010c:
 		Il2CppObject * L_40 = DataColumn_get_DefaultValue_m772983475(L_39, /*hidden argument*/NULL);
 		String_t* L_41 = DataSet_WriteObjectXml_m303333873(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
 		NullCheck(L_38);
-		XmlWriter_WriteAttributeString_m3169493699(L_38, _stringLiteral3564902503, L_41, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_38, _stringLiteral3564902503, L_41, /*hidden argument*/NULL);
 	}
 
 IL_0142:
@@ -47489,7 +47489,7 @@ IL_0225:
 	{
 		XmlWriter_t1048088568 * L_72 = __this->get_w_0();
 		NullCheck(L_72);
-		XmlWriter_WriteAttributeString_m3169493699(L_72, _stringLiteral1358871453, _stringLiteral372029326, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_72, _stringLiteral1358871453, _stringLiteral372029326, /*hidden argument*/NULL);
 	}
 
 IL_0245:
@@ -47624,10 +47624,10 @@ IL_008e:
 		VirtActionInvoker0::Invoke(16 /* System.Void System.Xml.XmlWriter::WriteEndAttribute() */, L_29);
 		XmlWriter_t1048088568 * L_30 = __this->get_w_0();
 		NullCheck(L_30);
-		XmlWriter_WriteAttributeString_m3169493699(L_30, _stringLiteral1358871453, _stringLiteral372029326, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_30, _stringLiteral1358871453, _stringLiteral372029326, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_31 = __this->get_w_0();
 		NullCheck(L_31);
-		XmlWriter_WriteAttributeString_m3169493699(L_31, _stringLiteral1431668375, _stringLiteral2009640818, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_31, _stringLiteral1431668375, _stringLiteral2009640818, /*hidden argument*/NULL);
 		ArrayList_t4252133567 * L_32 = __this->get_globalTypeTables_8();
 		DataRelation_t790111712 * L_33 = ___rel0;
 		NullCheck(L_33);
@@ -47749,7 +47749,7 @@ IL_0053:
 		{
 			XmlWriter_t1048088568 * L_12 = __this->get_w_0();
 			NullCheck(L_12);
-			XmlWriter_WriteAttributeString_m3169493699(L_12, _stringLiteral1770475252, _stringLiteral2027768876, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_12, _stringLiteral1770475252, _stringLiteral2027768876, /*hidden argument*/NULL);
 			DataColumn_t2152532948 * L_13 = V_0;
 			NullCheck(L_13);
 			String_t* L_14 = DataColumn_get_Prefix_m1612966875(L_13, /*hidden argument*/NULL);
@@ -47805,7 +47805,7 @@ IL_00c2:
 			XmlWriter_t1048088568 * L_31 = __this->get_w_0();
 			String_t* L_32 = V_2;
 			NullCheck(L_31);
-			XmlWriter_WriteAttributeString_m3169493699(L_31, _stringLiteral2328218955, L_32, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_31, _stringLiteral2328218955, L_32, /*hidden argument*/NULL);
 			DataColumn_t2152532948 * L_33 = V_0;
 			NullCheck(L_33);
 			PropertyCollection_t2281048903 * L_34 = DataColumn_get_ExtendedProperties_m2863778683(L_33, /*hidden argument*/NULL);
@@ -47869,7 +47869,7 @@ IL_0152:
 		{
 			XmlWriter_t1048088568 * L_48 = __this->get_w_0();
 			NullCheck(L_48);
-			XmlWriter_WriteAttributeString_m3169493699(L_48, _stringLiteral3115736867, _stringLiteral955473081, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_48, _stringLiteral3115736867, _stringLiteral955473081, /*hidden argument*/NULL);
 		}
 
 IL_0167:
@@ -47896,7 +47896,7 @@ IL_017d:
 			Il2CppObject * L_56 = DataColumn_get_DefaultValue_m772983475(L_55, /*hidden argument*/NULL);
 			String_t* L_57 = DataSet_WriteObjectXml_m303333873(NULL /*static, unused*/, L_56, /*hidden argument*/NULL);
 			NullCheck(L_54);
-			XmlWriter_WriteAttributeString_m3169493699(L_54, _stringLiteral3564902503, L_57, /*hidden argument*/NULL);
+			XmlWriter_WriteAttributeString_m4117287560(L_54, _stringLiteral3564902503, L_57, /*hidden argument*/NULL);
 		}
 
 IL_0198:
@@ -48030,7 +48030,7 @@ extern "C"  void XmlSchemaWriter_WriteSimpleType_m200645530 (XmlSchemaWriter_t31
 		IL2CPP_RUNTIME_CLASS_INIT(XmlConvert_t1936105738_il2cpp_TypeInfo_var);
 		String_t* L_12 = XmlConvert_ToString_m267231745(NULL /*static, unused*/, L_11, /*hidden argument*/NULL);
 		NullCheck(L_9);
-		XmlWriter_WriteAttributeString_m3169493699(L_9, _stringLiteral1803325615, L_12, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m4117287560(L_9, _stringLiteral1803325615, L_12, /*hidden argument*/NULL);
 		XmlWriter_t1048088568 * L_13 = __this->get_w_0();
 		NullCheck(L_13);
 		VirtActionInvoker0::Invoke(17 /* System.Void System.Xml.XmlWriter::WriteEndElement() */, L_13);

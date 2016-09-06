@@ -13,6 +13,12 @@
 #include <limits>
 #include <assert.h>
 
+// System.Runtime.InteropServices.GuidAttribute
+struct GuidAttribute_t222072359;
+// System.String
+struct String_t;
+// System.Runtime.InteropServices.InAttribute
+struct InAttribute_t1394050551;
 // System.Runtime.InteropServices.InterfaceTypeAttribute
 struct InterfaceTypeAttribute_t4113096249;
 // System.Array
@@ -33,8 +39,6 @@ struct OptionalAttribute_t827982902;
 struct OutAttribute_t1539424546;
 // System.Runtime.InteropServices.PreserveSigAttribute
 struct PreserveSigAttribute_t1564965109;
-// System.String
-struct String_t;
 // System.Runtime.InteropServices.SafeHandle
 struct SafeHandle_t2733794115;
 // System.Runtime.InteropServices.TypeLibImportClassAttribute
@@ -279,19 +283,22 @@ struct SingletonIdentity_t164722255;
 struct Assembly_t4268412390;
 // System.Runtime.Remoting.SoapServices/TypeInfo
 struct TypeInfo_t59877052;
-// System.Runtime.Remoting.TypeEntry
-struct TypeEntry_t3321373506;
-// System.Runtime.Remoting.TypeInfo
-struct TypeInfo_t942537562;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "mscorlib_System_Runtime_InteropServices_GCHandleTy1970708122.h"
+#include "mscorlib_System_Runtime_InteropServices_GCHandleTy1970708122MethodDeclarations.h"
+#include "mscorlib_System_Runtime_InteropServices_GuidAttribu222072359.h"
+#include "mscorlib_System_Runtime_InteropServices_GuidAttribu222072359MethodDeclarations.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_Attribute542643598MethodDeclarations.h"
+#include "mscorlib_System_Runtime_InteropServices_InAttribut1394050551.h"
+#include "mscorlib_System_Runtime_InteropServices_InAttribut1394050551MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_InterfaceT4113096249.h"
 #include "mscorlib_System_Runtime_InteropServices_InterfaceT4113096249MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_ComInterfa1898221498.h"
-#include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Attribute542643598MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_Marshal785896760.h"
 #include "mscorlib_System_Runtime_InteropServices_Marshal785896760MethodDeclarations.h"
 #include "mscorlib_System_Environment3662374671MethodDeclarations.h"
@@ -311,7 +318,6 @@ struct TypeInfo_t942537562;
 #include "mscorlib_Locale4255929014MethodDeclarations.h"
 #include "mscorlib_System_SystemException3877406272MethodDeclarations.h"
 #include "mscorlib_System_Exception1927440687MethodDeclarations.h"
-#include "mscorlib_System_String2029220233.h"
 #include "mscorlib_System_Runtime_Serialization_Serialization228987430.h"
 #include "mscorlib_System_Runtime_Serialization_StreamingCon1417235061.h"
 #include "mscorlib_System_Runtime_InteropServices_OptionalAtt827982902.h"
@@ -646,6 +652,24 @@ struct TypeInfo_t942537562;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Runtime.InteropServices.GuidAttribute::.ctor(System.String)
+extern "C"  void GuidAttribute__ctor_m1099153635 (GuidAttribute_t222072359 * __this, String_t* ___guid0, const MethodInfo* method)
+{
+	{
+		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___guid0;
+		__this->set_guidValue_0(L_0);
+		return;
+	}
+}
+// System.Void System.Runtime.InteropServices.InAttribute::.ctor()
+extern "C"  void InAttribute__ctor_m1401060713 (InAttribute_t1394050551 * __this, const MethodInfo* method)
+{
+	{
+		Attribute__ctor_m1730479323(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void System.Runtime.InteropServices.InterfaceTypeAttribute::.ctor(System.Runtime.InteropServices.ComInterfaceType)
 extern "C"  void InterfaceTypeAttribute__ctor_m1747686341 (InterfaceTypeAttribute_t4113096249 * __this, int32_t ___interfaceType0, const MethodInfo* method)
 {
@@ -3686,12 +3710,12 @@ IL_00ca:
 		Type_t * L_36 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IChannelSender_t714647579_0_0_0_var), /*hidden argument*/NULL);
 		Type_t * L_37 = V_8;
 		NullCheck(L_36);
-		bool L_38 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_36, L_37);
+		bool L_38 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_36, L_37);
 		V_11 = L_38;
 		Type_t * L_39 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IChannelReceiver_t2788889625_0_0_0_var), /*hidden argument*/NULL);
 		Type_t * L_40 = V_8;
 		NullCheck(L_39);
-		bool L_41 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_39, L_40);
+		bool L_41 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_39, L_40);
 		V_12 = L_41;
 		bool L_42 = V_11;
 		if (!L_42)
@@ -15621,7 +15645,7 @@ IL_01a9:
 	{
 		MethodBase_t904190842 * L_63 = __this->get__methodBase_5();
 		NullCheck(L_63);
-		bool L_64 = VirtFuncInvoker0< bool >::Invoke(30 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethod() */, L_63);
+		bool L_64 = VirtFuncInvoker0< bool >::Invoke(32 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethod() */, L_63);
 		if (!L_64)
 		{
 			goto IL_01fb;
@@ -15630,7 +15654,7 @@ IL_01a9:
 	{
 		MethodBase_t904190842 * L_65 = __this->get__methodBase_5();
 		NullCheck(L_65);
-		bool L_66 = VirtFuncInvoker0< bool >::Invoke(28 /* System.Boolean System.Reflection.MethodBase::get_ContainsGenericParameters() */, L_65);
+		bool L_66 = VirtFuncInvoker0< bool >::Invoke(30 /* System.Boolean System.Reflection.MethodBase::get_ContainsGenericParameters() */, L_65);
 		if (!L_66)
 		{
 			goto IL_01fb;
@@ -15654,7 +15678,7 @@ IL_01df:
 		MethodBase_t904190842 * L_69 = __this->get__methodBase_5();
 		TypeU5BU5D_t1664964607* L_70 = MethodCall_get_GenericArguments_m3765959301(__this, /*hidden argument*/NULL);
 		NullCheck(((MethodInfo_t *)CastclassClass(L_69, MethodInfo_t_il2cpp_TypeInfo_var)));
-		MethodInfo_t * L_71 = VirtFuncInvoker1< MethodInfo_t *, TypeU5BU5D_t1664964607* >::Invoke(33 /* System.Reflection.MethodInfo System.Reflection.MethodInfo::MakeGenericMethod(System.Type[]) */, ((MethodInfo_t *)CastclassClass(L_69, MethodInfo_t_il2cpp_TypeInfo_var)), L_70);
+		MethodInfo_t * L_71 = VirtFuncInvoker1< MethodInfo_t *, TypeU5BU5D_t1664964607* >::Invoke(35 /* System.Reflection.MethodInfo System.Reflection.MethodInfo::MakeGenericMethod(System.Type[]) */, ((MethodInfo_t *)CastclassClass(L_69, MethodInfo_t_il2cpp_TypeInfo_var)), L_70);
 		__this->set__methodBase_5(L_71);
 	}
 
@@ -15745,7 +15769,7 @@ IL_0041:
 	{
 		Type_t * L_17 = ___serverType1;
 		NullCheck(L_17);
-		TypeU5BU5D_t1664964607* L_18 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(40 /* System.Type[] System.Type::GetInterfaces() */, L_17);
+		TypeU5BU5D_t1664964607* L_18 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(44 /* System.Type[] System.Type::GetInterfaces() */, L_17);
 		V_1 = L_18;
 		TypeU5BU5D_t1664964607* L_19 = V_1;
 		V_3 = L_19;
@@ -15896,7 +15920,7 @@ IL_0012:
 	{
 		MethodBase_t904190842 * L_2 = MethodCall_get_MethodBase_m688041003(__this, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		TypeU5BU5D_t1664964607* L_3 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(27 /* System.Type[] System.Reflection.MethodBase::GetGenericArguments() */, L_2);
+		TypeU5BU5D_t1664964607* L_3 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(29 /* System.Type[] System.Reflection.MethodBase::GetGenericArguments() */, L_2);
 		TypeU5BU5D_t1664964607* L_4 = L_3;
 		V_0 = L_4;
 		__this->set__genericArguments_7(L_4);
@@ -18332,7 +18356,7 @@ IL_0014:
 		Type_t * L_4 = ((RemotingSurrogateSelector_t2821375126_StaticFields*)RemotingSurrogateSelector_t2821375126_il2cpp_TypeInfo_var->static_fields)->get_s_cachedTypeObjRef_0();
 		Type_t * L_5 = ___type0;
 		NullCheck(L_4);
-		bool L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_4, L_5);
+		bool L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_4, L_5);
 		if (!L_6)
 		{
 			goto IL_002d;
@@ -19295,7 +19319,7 @@ IL_0076:
 	{
 		Type_t * L_17 = V_0;
 		NullCheck(L_17);
-		String_t* L_18 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_17);
+		String_t* L_18 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_17);
 		String_t* L_19 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(SoapServices_t3397513225_il2cpp_TypeInfo_var);
 		String_t* L_20 = SoapServices_CodeXmlNamespaceForClrTypeNamespace_m3502771270(NULL /*static, unused*/, L_18, L_19, /*hidden argument*/NULL);
@@ -23104,7 +23128,7 @@ IL_0032:
 	{
 		Type_t * L_12 = ___type0;
 		NullCheck(L_12);
-		TypeU5BU5D_t1664964607* L_13 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(40 /* System.Type[] System.Type::GetInterfaces() */, L_12);
+		TypeU5BU5D_t1664964607* L_13 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(44 /* System.Type[] System.Type::GetInterfaces() */, L_12);
 		V_2 = L_13;
 		V_3 = 0;
 		goto IL_0059;
@@ -25598,7 +25622,7 @@ IL_0057:
 			V_2 = L_17;
 			Type_t * L_18 = ___type0;
 			NullCheck(L_18);
-			FieldInfoU5BU5D_t125053523* L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_t125053523*, int32_t >::Invoke(48 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
+			FieldInfoU5BU5D_t125053523* L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_t125053523*, int32_t >::Invoke(53 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
 			V_4 = L_19;
 			FieldInfoU5BU5D_t125053523* L_20 = V_4;
 			V_6 = L_20;
@@ -25938,350 +25962,6 @@ extern "C"  void TypeInfo__ctor_m1219583114 (TypeInfo_t59877052 * __this, const 
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
-	}
-}
-// System.Void System.Runtime.Remoting.TypeEntry::.ctor()
-extern "C"  void TypeEntry__ctor_m1756617362 (TypeEntry_t3321373506 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.String System.Runtime.Remoting.TypeEntry::get_AssemblyName()
-extern "C"  String_t* TypeEntry_get_AssemblyName_m1762285107 (TypeEntry_t3321373506 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_assembly_name_0();
-		return L_0;
-	}
-}
-// System.Void System.Runtime.Remoting.TypeEntry::set_AssemblyName(System.String)
-extern "C"  void TypeEntry_set_AssemblyName_m1108082984 (TypeEntry_t3321373506 * __this, String_t* ___value0, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value0;
-		__this->set_assembly_name_0(L_0);
-		return;
-	}
-}
-// System.String System.Runtime.Remoting.TypeEntry::get_TypeName()
-extern "C"  String_t* TypeEntry_get_TypeName_m3830387829 (TypeEntry_t3321373506 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_type_name_1();
-		return L_0;
-	}
-}
-// System.Void System.Runtime.Remoting.TypeEntry::set_TypeName(System.String)
-extern "C"  void TypeEntry_set_TypeName_m254935696 (TypeEntry_t3321373506 * __this, String_t* ___value0, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = ___value0;
-		__this->set_type_name_1(L_0);
-		return;
-	}
-}
-// System.Void System.Runtime.Remoting.TypeInfo::.ctor(System.Type)
-extern const Il2CppType* MarshalByRefObject_t1285298191_0_0_0_var;
-extern const Il2CppType* Il2CppObject_0_0_0_var;
-extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* StringU5BU5D_t1642385972_il2cpp_TypeInfo_var;
-extern const uint32_t TypeInfo__ctor_m1475908211_MetadataUsageId;
-extern "C"  void TypeInfo__ctor_m1475908211 (TypeInfo_t942537562 * __this, Type_t * ___type0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (TypeInfo__ctor_m1475908211_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	Type_t * V_1 = NULL;
-	int32_t V_2 = 0;
-	TypeU5BU5D_t1664964607* V_3 = NULL;
-	int32_t V_4 = 0;
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		Type_t * L_0 = ___type0;
-		NullCheck(L_0);
-		bool L_1 = Type_get_IsInterface_m3583817465(L_0, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_004c;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_2 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(MarshalByRefObject_t1285298191_0_0_0_var), /*hidden argument*/NULL);
-		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(15 /* System.String System.Type::get_AssemblyQualifiedName() */, L_2);
-		__this->set_serverType_0(L_3);
-		__this->set_serverHierarchy_1(((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)0)));
-		StringU5BU5D_t1642385972* L_4 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)1));
-		Type_t * L_5 = ___type0;
-		NullCheck(L_5);
-		String_t* L_6 = VirtFuncInvoker0< String_t* >::Invoke(15 /* System.String System.Type::get_AssemblyQualifiedName() */, L_5);
-		NullCheck(L_4);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, 0);
-		ArrayElementTypeCheck (L_4, L_6);
-		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_6);
-		__this->set_interfacesImplemented_2(L_4);
-		goto IL_010a;
-	}
-
-IL_004c:
-	{
-		Type_t * L_7 = ___type0;
-		NullCheck(L_7);
-		String_t* L_8 = VirtFuncInvoker0< String_t* >::Invoke(15 /* System.String System.Type::get_AssemblyQualifiedName() */, L_7);
-		__this->set_serverType_0(L_8);
-		V_0 = 0;
-		Type_t * L_9 = ___type0;
-		NullCheck(L_9);
-		Type_t * L_10 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_9);
-		V_1 = L_10;
-		goto IL_0071;
-	}
-
-IL_0066:
-	{
-		Type_t * L_11 = V_1;
-		NullCheck(L_11);
-		Type_t * L_12 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_11);
-		V_1 = L_12;
-		int32_t L_13 = V_0;
-		V_0 = ((int32_t)((int32_t)L_13+(int32_t)1));
-	}
-
-IL_0071:
-	{
-		Type_t * L_14 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_15 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(MarshalByRefObject_t1285298191_0_0_0_var), /*hidden argument*/NULL);
-		if ((((Il2CppObject*)(Type_t *)L_14) == ((Il2CppObject*)(Type_t *)L_15)))
-		{
-			goto IL_0091;
-		}
-	}
-	{
-		Type_t * L_16 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_17 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(Il2CppObject_0_0_0_var), /*hidden argument*/NULL);
-		if ((!(((Il2CppObject*)(Type_t *)L_16) == ((Il2CppObject*)(Type_t *)L_17))))
-		{
-			goto IL_0066;
-		}
-	}
-
-IL_0091:
-	{
-		int32_t L_18 = V_0;
-		__this->set_serverHierarchy_1(((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)L_18)));
-		Type_t * L_19 = ___type0;
-		NullCheck(L_19);
-		Type_t * L_20 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_19);
-		V_1 = L_20;
-		V_2 = 0;
-		goto IL_00c4;
-	}
-
-IL_00ab:
-	{
-		StringU5BU5D_t1642385972* L_21 = __this->get_serverHierarchy_1();
-		int32_t L_22 = V_2;
-		Type_t * L_23 = V_1;
-		NullCheck(L_23);
-		String_t* L_24 = VirtFuncInvoker0< String_t* >::Invoke(15 /* System.String System.Type::get_AssemblyQualifiedName() */, L_23);
-		NullCheck(L_21);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, L_22);
-		ArrayElementTypeCheck (L_21, L_24);
-		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(L_22), (String_t*)L_24);
-		Type_t * L_25 = V_1;
-		NullCheck(L_25);
-		Type_t * L_26 = VirtFuncInvoker0< Type_t * >::Invoke(17 /* System.Type System.Type::get_BaseType() */, L_25);
-		V_1 = L_26;
-		int32_t L_27 = V_2;
-		V_2 = ((int32_t)((int32_t)L_27+(int32_t)1));
-	}
-
-IL_00c4:
-	{
-		int32_t L_28 = V_2;
-		int32_t L_29 = V_0;
-		if ((((int32_t)L_28) < ((int32_t)L_29)))
-		{
-			goto IL_00ab;
-		}
-	}
-	{
-		Type_t * L_30 = ___type0;
-		NullCheck(L_30);
-		TypeU5BU5D_t1664964607* L_31 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(40 /* System.Type[] System.Type::GetInterfaces() */, L_30);
-		V_3 = L_31;
-		TypeU5BU5D_t1664964607* L_32 = V_3;
-		NullCheck(L_32);
-		__this->set_interfacesImplemented_2(((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_32)->max_length)))))));
-		V_4 = 0;
-		goto IL_0100;
-	}
-
-IL_00e8:
-	{
-		StringU5BU5D_t1642385972* L_33 = __this->get_interfacesImplemented_2();
-		int32_t L_34 = V_4;
-		TypeU5BU5D_t1664964607* L_35 = V_3;
-		int32_t L_36 = V_4;
-		NullCheck(L_35);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_35, L_36);
-		int32_t L_37 = L_36;
-		Type_t * L_38 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_37));
-		NullCheck(L_38);
-		String_t* L_39 = VirtFuncInvoker0< String_t* >::Invoke(15 /* System.String System.Type::get_AssemblyQualifiedName() */, L_38);
-		NullCheck(L_33);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_33, L_34);
-		ArrayElementTypeCheck (L_33, L_39);
-		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(L_34), (String_t*)L_39);
-		int32_t L_40 = V_4;
-		V_4 = ((int32_t)((int32_t)L_40+(int32_t)1));
-	}
-
-IL_0100:
-	{
-		int32_t L_41 = V_4;
-		TypeU5BU5D_t1664964607* L_42 = V_3;
-		NullCheck(L_42);
-		if ((((int32_t)L_41) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_42)->max_length)))))))
-		{
-			goto IL_00e8;
-		}
-	}
-
-IL_010a:
-	{
-		return;
-	}
-}
-// System.String System.Runtime.Remoting.TypeInfo::get_TypeName()
-extern "C"  String_t* TypeInfo_get_TypeName_m1722081275 (TypeInfo_t942537562 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_serverType_0();
-		return L_0;
-	}
-}
-// System.Void System.Runtime.Remoting.WellKnownClientTypeEntry::.ctor(System.String,System.String,System.String)
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* RemotingException_t109604560_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral7703353;
-extern Il2CppCodeGenString* _stringLiteral811305474;
-extern const uint32_t WellKnownClientTypeEntry__ctor_m670594074_MetadataUsageId;
-extern "C"  void WellKnownClientTypeEntry__ctor_m670594074 (WellKnownClientTypeEntry_t3314744170 * __this, String_t* ___typeName0, String_t* ___assemblyName1, String_t* ___objectUrl2, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (WellKnownClientTypeEntry__ctor_m670594074_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Assembly_t4268412390 * V_0 = NULL;
-	{
-		TypeEntry__ctor_m1756617362(__this, /*hidden argument*/NULL);
-		String_t* L_0 = ___objectUrl2;
-		__this->set_obj_url_3(L_0);
-		String_t* L_1 = ___assemblyName1;
-		TypeEntry_set_AssemblyName_m1108082984(__this, L_1, /*hidden argument*/NULL);
-		String_t* L_2 = ___typeName0;
-		TypeEntry_set_TypeName_m254935696(__this, L_2, /*hidden argument*/NULL);
-		String_t* L_3 = ___assemblyName1;
-		Assembly_t4268412390 * L_4 = Assembly_Load_m902205655(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		Assembly_t4268412390 * L_5 = V_0;
-		String_t* L_6 = ___typeName0;
-		NullCheck(L_5);
-		Type_t * L_7 = VirtFuncInvoker1< Type_t *, String_t* >::Invoke(17 /* System.Type System.Reflection.Assembly::GetType(System.String) */, L_5, L_6);
-		__this->set_obj_type_2(L_7);
-		Type_t * L_8 = __this->get_obj_type_2();
-		if (L_8)
-		{
-			goto IL_0051;
-		}
-	}
-	{
-		String_t* L_9 = ___typeName0;
-		String_t* L_10 = ___assemblyName1;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_11 = String_Concat_m1561703559(NULL /*static, unused*/, _stringLiteral7703353, L_9, _stringLiteral811305474, L_10, /*hidden argument*/NULL);
-		RemotingException_t109604560 * L_12 = (RemotingException_t109604560 *)il2cpp_codegen_object_new(RemotingException_t109604560_il2cpp_TypeInfo_var);
-		RemotingException__ctor_m3568495070(L_12, L_11, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_12);
-	}
-
-IL_0051:
-	{
-		return;
-	}
-}
-// System.String System.Runtime.Remoting.WellKnownClientTypeEntry::get_ApplicationUrl()
-extern "C"  String_t* WellKnownClientTypeEntry_get_ApplicationUrl_m3129286015 (WellKnownClientTypeEntry_t3314744170 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_app_url_4();
-		return L_0;
-	}
-}
-// System.Type System.Runtime.Remoting.WellKnownClientTypeEntry::get_ObjectType()
-extern "C"  Type_t * WellKnownClientTypeEntry_get_ObjectType_m2162355710 (WellKnownClientTypeEntry_t3314744170 * __this, const MethodInfo* method)
-{
-	{
-		Type_t * L_0 = __this->get_obj_type_2();
-		return L_0;
-	}
-}
-// System.String System.Runtime.Remoting.WellKnownClientTypeEntry::get_ObjectUrl()
-extern "C"  String_t* WellKnownClientTypeEntry_get_ObjectUrl_m4048447736 (WellKnownClientTypeEntry_t3314744170 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_obj_url_3();
-		return L_0;
-	}
-}
-// System.String System.Runtime.Remoting.WellKnownClientTypeEntry::ToString()
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t WellKnownClientTypeEntry_ToString_m3047525317_MetadataUsageId;
-extern "C"  String_t* WellKnownClientTypeEntry_ToString_m3047525317 (WellKnownClientTypeEntry_t3314744170 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (WellKnownClientTypeEntry_ToString_m3047525317_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		String_t* L_0 = WellKnownClientTypeEntry_get_ApplicationUrl_m3129286015(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		String_t* L_1 = TypeEntry_get_TypeName_m3830387829(__this, /*hidden argument*/NULL);
-		String_t* L_2 = TypeEntry_get_AssemblyName_m1762285107(__this, /*hidden argument*/NULL);
-		String_t* L_3 = WellKnownClientTypeEntry_get_ObjectUrl_m4048447736(__this, /*hidden argument*/NULL);
-		String_t* L_4 = WellKnownClientTypeEntry_get_ApplicationUrl_m3129286015(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_5 = String_Concat_m1561703559(NULL /*static, unused*/, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
-		return L_5;
-	}
-
-IL_0029:
-	{
-		String_t* L_6 = TypeEntry_get_TypeName_m3830387829(__this, /*hidden argument*/NULL);
-		String_t* L_7 = TypeEntry_get_AssemblyName_m1762285107(__this, /*hidden argument*/NULL);
-		String_t* L_8 = WellKnownClientTypeEntry_get_ObjectUrl_m4048447736(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_9 = String_Concat_m612901809(NULL /*static, unused*/, L_6, L_7, L_8, /*hidden argument*/NULL);
-		return L_9;
 	}
 }
 #ifdef __clang__

@@ -536,32 +536,32 @@ extern "C"  XmlNode_t616554813 * XmlText_CloneNode_m1561655307 (XmlText_t4111601
 }
 // System.Void System.Xml.XmlTextReader::.ctor(System.IO.Stream)
 extern Il2CppClass* XmlStreamReader_t2725532304_il2cpp_TypeInfo_var;
-extern const uint32_t XmlTextReader__ctor_m2641719843_MetadataUsageId;
-extern "C"  void XmlTextReader__ctor_m2641719843 (XmlTextReader_t3514170725 * __this, Stream_t3255436806 * ___input0, const MethodInfo* method)
+extern const uint32_t XmlTextReader__ctor_m2337406670_MetadataUsageId;
+extern "C"  void XmlTextReader__ctor_m2337406670 (XmlTextReader_t3514170725 * __this, Stream_t3255436806 * ___input0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (XmlTextReader__ctor_m2641719843_MetadataUsageId);
+		il2cpp_codegen_initialize_method (XmlTextReader__ctor_m2337406670_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
 		Stream_t3255436806 * L_0 = ___input0;
 		XmlStreamReader_t2725532304 * L_1 = (XmlStreamReader_t2725532304 *)il2cpp_codegen_object_new(XmlStreamReader_t2725532304_il2cpp_TypeInfo_var);
 		XmlStreamReader__ctor_m180296020(L_1, L_0, /*hidden argument*/NULL);
-		XmlTextReader__ctor_m1482280167(__this, L_1, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m2186180914(__this, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void System.Xml.XmlTextReader::.ctor(System.IO.TextReader)
 extern Il2CppClass* NameTable_t594386929_il2cpp_TypeInfo_var;
-extern const uint32_t XmlTextReader__ctor_m1482280167_MetadataUsageId;
-extern "C"  void XmlTextReader__ctor_m1482280167 (XmlTextReader_t3514170725 * __this, TextReader_t1561828458 * ___input0, const MethodInfo* method)
+extern const uint32_t XmlTextReader__ctor_m2186180914_MetadataUsageId;
+extern "C"  void XmlTextReader__ctor_m2186180914 (XmlTextReader_t3514170725 * __this, TextReader_t1561828458 * ___input0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (XmlTextReader__ctor_m1482280167_MetadataUsageId);
+		il2cpp_codegen_initialize_method (XmlTextReader__ctor_m2186180914_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -2352,13 +2352,13 @@ extern Il2CppClass* ArrayList_t4252133567_il2cpp_TypeInfo_var;
 extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral811305470;
 extern Il2CppCodeGenString* _stringLiteral3496454067;
-extern const uint32_t XmlTextWriter__ctor_m867344167_MetadataUsageId;
-extern "C"  void XmlTextWriter__ctor_m867344167 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method)
+extern const uint32_t XmlTextWriter__ctor_m3230461554_MetadataUsageId;
+extern "C"  void XmlTextWriter__ctor_m3230461554 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (XmlTextWriter__ctor_m867344167_MetadataUsageId);
+		il2cpp_codegen_initialize_method (XmlTextWriter__ctor_m3230461554_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -2427,8 +2427,8 @@ extern Il2CppClass* StreamWriter_t3858580635_il2cpp_TypeInfo_var;
 extern Il2CppClass* XmlNamespaceManager_t486731501_il2cpp_TypeInfo_var;
 extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
 extern Il2CppClass* XmlTextWriter_t2527250655_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D40_4_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D41_5_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D40_4_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D41_5_FieldInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3496454067;
 extern const uint32_t XmlTextWriter_Initialize_m467029607_MetadataUsageId;
 extern "C"  void XmlTextWriter_Initialize_m467029607 (XmlTextWriter_t2527250655 * __this, TextWriter_t4027217640 * ___writer0, const MethodInfo* method)
@@ -2494,7 +2494,7 @@ IL_003a:
 	}
 	{
 		CharU5BU5D_t1328083999* L_13 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)5));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_13, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D40_4_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_13, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D40_4_FieldInfo_var), /*hidden argument*/NULL);
 		G_B7_0 = L_13;
 		goto IL_0090;
 	}
@@ -2521,13 +2521,13 @@ IL_0090:
 		IL2CPP_RUNTIME_CLASS_INIT(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
 		((XmlTextWriter_t2527250655_StaticFields*)XmlTextWriter_t2527250655_il2cpp_TypeInfo_var->static_fields)->set_escaped_text_chars_2(G_B7_0);
 		CharU5BU5D_t1328083999* L_17 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)6));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_17, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D41_5_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_17, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D41_5_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlTextWriter_t2527250655_StaticFields*)XmlTextWriter_t2527250655_il2cpp_TypeInfo_var->static_fields)->set_escaped_attr_chars_3(L_17);
 		return;
 	}
 }
 // System.Void System.Xml.XmlTextWriter::set_Formatting(System.Xml.Formatting)
-extern "C"  void XmlTextWriter_set_Formatting_m324688091 (XmlTextWriter_t2527250655 * __this, int32_t ___value0, const MethodInfo* method)
+extern "C"  void XmlTextWriter_set_Formatting_m3944030982 (XmlTextWriter_t2527250655 * __this, int32_t ___value0, const MethodInfo* method)
 {
 	{
 		int32_t L_0 = ___value0;
@@ -7373,7 +7373,7 @@ IL_002d:
 	{
 		Uri_t19570940 * L_5 = ___absoluteUri0;
 		NullCheck(L_5);
-		bool L_6 = Uri_get_IsAbsoluteUri_m615473366(L_5, /*hidden argument*/NULL);
+		bool L_6 = Uri_get_IsAbsoluteUri_m4123650233(L_5, /*hidden argument*/NULL);
 		if (L_6)
 		{
 			goto IL_0048;
@@ -7389,7 +7389,7 @@ IL_0048:
 	{
 		Uri_t19570940 * L_8 = ___absoluteUri0;
 		NullCheck(L_8);
-		String_t* L_9 = Uri_get_Scheme_m1862544965(L_8, /*hidden argument*/NULL);
+		String_t* L_9 = Uri_get_Scheme_m55908894(L_8, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_10 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_9, _stringLiteral3457518716, /*hidden argument*/NULL);
 		if (!L_10)
@@ -7400,7 +7400,7 @@ IL_0048:
 	{
 		Uri_t19570940 * L_11 = ___absoluteUri0;
 		NullCheck(L_11);
-		String_t* L_12 = Uri_get_AbsolutePath_m950234534(L_11, /*hidden argument*/NULL);
+		String_t* L_12 = Uri_get_AbsolutePath_m802771013(L_11, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_13 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
 		bool L_14 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_12, L_13, /*hidden argument*/NULL);
@@ -7419,7 +7419,7 @@ IL_0082:
 	{
 		Uri_t19570940 * L_16 = ___absoluteUri0;
 		NullCheck(L_16);
-		String_t* L_17 = Uri_get_LocalPath_m1467029974(L_16, /*hidden argument*/NULL);
+		String_t* L_17 = Uri_get_LocalPath_m1625111831(L_16, /*hidden argument*/NULL);
 		String_t* L_18 = XmlUrlResolver_UnescapeRelativeUriBody_m4031529036(__this, L_17, /*hidden argument*/NULL);
 		FileStream_t1695958676 * L_19 = (FileStream_t1695958676 *)il2cpp_codegen_object_new(FileStream_t1695958676_il2cpp_TypeInfo_var);
 		FileStream__ctor_m3699774824(L_19, L_18, 3, 1, 1, /*hidden argument*/NULL);
@@ -7430,7 +7430,7 @@ IL_0097:
 	{
 		Uri_t19570940 * L_20 = ___absoluteUri0;
 		IL2CPP_RUNTIME_CLASS_INIT(WebRequest_t1365124353_il2cpp_TypeInfo_var);
-		WebRequest_t1365124353 * L_21 = WebRequest_Create_m3200133307(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		WebRequest_t1365124353 * L_21 = WebRequest_Create_m2515147542(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
 		V_0 = L_21;
 		Il2CppObject * L_22 = __this->get_credential_0();
 		if (!L_22)
@@ -9495,13 +9495,13 @@ IL_0071:
 }
 // System.Void System.Xml.XmlWriter::WriteAttributeString(System.String,System.String)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t XmlWriter_WriteAttributeString_m3169493699_MetadataUsageId;
-extern "C"  void XmlWriter_WriteAttributeString_m3169493699 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method)
+extern const uint32_t XmlWriter_WriteAttributeString_m4117287560_MetadataUsageId;
+extern "C"  void XmlWriter_WriteAttributeString_m4117287560 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (XmlWriter_WriteAttributeString_m3169493699_MetadataUsageId);
+		il2cpp_codegen_initialize_method (XmlWriter_WriteAttributeString_m4117287560_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -9548,11 +9548,11 @@ IL_0025:
 	}
 }
 // System.Void System.Xml.XmlWriter::WriteElementString(System.String,System.String)
-extern "C"  void XmlWriter_WriteElementString_m1467633369 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method)
+extern "C"  void XmlWriter_WriteElementString_m4118563696 (XmlWriter_t1048088568 * __this, String_t* ___localName0, String_t* ___value1, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___localName0;
-		XmlWriter_WriteStartElement_m2103041358(__this, L_0, /*hidden argument*/NULL);
+		XmlWriter_WriteStartElement_m3596839475(__this, L_0, /*hidden argument*/NULL);
 		String_t* L_1 = ___value1;
 		if (!L_1)
 		{
@@ -10172,7 +10172,7 @@ extern "C"  void XmlWriter_WriteStartAttribute_m2608709902 (XmlWriter_t104808856
 	}
 }
 // System.Void System.Xml.XmlWriter::WriteStartElement(System.String)
-extern "C"  void XmlWriter_WriteStartElement_m2103041358 (XmlWriter_t1048088568 * __this, String_t* ___localName0, const MethodInfo* method)
+extern "C"  void XmlWriter_WriteStartElement_m3596839475 (XmlWriter_t1048088568 * __this, String_t* ___localName0, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___localName0;

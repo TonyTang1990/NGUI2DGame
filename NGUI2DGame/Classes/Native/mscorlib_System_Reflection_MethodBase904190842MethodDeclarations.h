@@ -45,6 +45,10 @@ extern "C"  Il2CppObject * MethodBase_Invoke_m1075809207 (MethodBase_t904190842 
 extern "C"  int32_t MethodBase_get_CallingConvention_m2817807351 (MethodBase_t904190842 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.MethodBase::get_IsPublic()
 extern "C"  bool MethodBase_get_IsPublic_m479656180 (MethodBase_t904190842 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Reflection.MethodBase::get_IsAssembly()
+extern "C"  bool MethodBase_get_IsAssembly_m927299097 (MethodBase_t904190842 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Reflection.MethodBase::get_IsFamilyOrAssembly()
+extern "C"  bool MethodBase_get_IsFamilyOrAssembly_m2574859504 (MethodBase_t904190842 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.MethodBase::get_IsStatic()
 extern "C"  bool MethodBase_get_IsStatic_m1015686807 (MethodBase_t904190842 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.MethodBase::get_IsVirtual()

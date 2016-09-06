@@ -75,7 +75,7 @@ struct XmlReader_t3675626668;
 #include "System_Xml_System_Xml_XmlReader3675626668.h"
 
 // System.Void System.Xml.XmlDocument::.ctor()
-extern "C"  void XmlDocument__ctor_m3336214851 (XmlDocument_t3649534162 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlDocument__ctor_m3872501054 (XmlDocument_t3649534162 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlDocument::.ctor(System.Xml.XmlImplementation)
 extern "C"  void XmlDocument__ctor_m1629046080 (XmlDocument_t3649534162 * __this, XmlImplementation_t1664517635 * ___imp0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlDocument::.ctor(System.Xml.XmlImplementation,System.Xml.XmlNameTable)
@@ -89,7 +89,7 @@ extern "C"  void XmlDocument_System_Xml_IHasXmlChildNode_set_LastLinkedChild_m17
 // System.String System.Xml.XmlDocument::get_BaseURI()
 extern "C"  String_t* XmlDocument_get_BaseURI_m1481374712 (XmlDocument_t3649534162 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlElement System.Xml.XmlDocument::get_DocumentElement()
-extern "C"  XmlElement_t2877111883 * XmlDocument_get_DocumentElement_m898495187 (XmlDocument_t3649534162 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  XmlElement_t2877111883 * XmlDocument_get_DocumentElement_m846077342 (XmlDocument_t3649534162 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlDocumentType System.Xml.XmlDocument::get_DocumentType()
 extern "C"  XmlDocumentType_t824160610 * XmlDocument_get_DocumentType_m3596136406 (XmlDocument_t3649534162 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Xml.XmlDocument::get_IsReadOnly()

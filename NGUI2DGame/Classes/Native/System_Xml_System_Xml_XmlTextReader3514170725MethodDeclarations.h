@@ -50,9 +50,9 @@ struct XmlResolver_t2024571559;
 #include "System_Xml_System_Xml_XmlResolver2024571559.h"
 
 // System.Void System.Xml.XmlTextReader::.ctor(System.IO.Stream)
-extern "C"  void XmlTextReader__ctor_m2641719843 (XmlTextReader_t3514170725 * __this, Stream_t3255436806 * ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlTextReader__ctor_m2337406670 (XmlTextReader_t3514170725 * __this, Stream_t3255436806 * ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlTextReader::.ctor(System.IO.TextReader)
-extern "C"  void XmlTextReader__ctor_m1482280167 (XmlTextReader_t3514170725 * __this, TextReader_t1561828458 * ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlTextReader__ctor_m2186180914 (XmlTextReader_t3514170725 * __this, TextReader_t1561828458 * ___input0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlTextReader::.ctor(System.IO.TextReader,System.Xml.XmlNameTable)
 extern "C"  void XmlTextReader__ctor_m2818404075 (XmlTextReader_t3514170725 * __this, TextReader_t1561828458 * ___input0, XmlNameTable_t1345805268 * ___nt1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlTextReader::.ctor(System.IO.Stream,System.Xml.XmlNodeType,System.Xml.XmlParserContext)

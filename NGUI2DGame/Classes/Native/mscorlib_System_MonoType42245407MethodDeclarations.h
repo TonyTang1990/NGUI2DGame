@@ -30,10 +30,14 @@ struct ConstructorInfoU5BU5D_t1996683371;
 struct EventInfo_t;
 // System.String
 struct String_t;
+// System.Reflection.EventInfo[]
+struct EventInfoU5BU5D_t2843333291;
 // System.Reflection.FieldInfo
 struct FieldInfo_t;
 // System.Reflection.FieldInfo[]
 struct FieldInfoU5BU5D_t125053523;
+// System.Reflection.MemberInfo[]
+struct MemberInfoU5BU5D_t4238939941;
 // System.Reflection.MethodInfo[]
 struct MethodInfoU5BU5D_t152480188;
 // System.Reflection.MethodInfo
@@ -90,6 +94,10 @@ extern "C"  ConstructorInfoU5BU5D_t1996683371* MonoType_GetConstructors_m3402398
 extern "C"  EventInfo_t * MonoType_InternalGetEvent_m532443236 (MonoType_t * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.EventInfo System.MonoType::GetEvent(System.String,System.Reflection.BindingFlags)
 extern "C"  EventInfo_t * MonoType_GetEvent_m4160342003 (MonoType_t * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.EventInfo[] System.MonoType::GetEvents_internal(System.Reflection.BindingFlags,System.Type)
+extern "C"  EventInfoU5BU5D_t2843333291* MonoType_GetEvents_internal_m3325119371 (MonoType_t * __this, int32_t ___bindingAttr0, Type_t * ___reflected_type1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.EventInfo[] System.MonoType::GetEvents(System.Reflection.BindingFlags)
+extern "C"  EventInfoU5BU5D_t2843333291* MonoType_GetEvents_m505925844 (MonoType_t * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo System.MonoType::GetField(System.String,System.Reflection.BindingFlags)
 extern "C"  FieldInfo_t * MonoType_GetField_m341239795 (MonoType_t * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo[] System.MonoType::GetFields_internal(System.Reflection.BindingFlags,System.Type)
@@ -98,12 +106,16 @@ extern "C"  FieldInfoU5BU5D_t125053523* MonoType_GetFields_internal_m2022019979 
 extern "C"  FieldInfoU5BU5D_t125053523* MonoType_GetFields_m2030623572 (MonoType_t * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type[] System.MonoType::GetInterfaces()
 extern "C"  TypeU5BU5D_t1664964607* MonoType_GetInterfaces_m1917126622 (MonoType_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.MemberInfo[] System.MonoType::GetMembers(System.Reflection.BindingFlags)
+extern "C"  MemberInfoU5BU5D_t4238939941* MonoType_GetMembers_m618007296 (MonoType_t * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo[] System.MonoType::GetMethodsByName(System.String,System.Reflection.BindingFlags,System.Boolean,System.Type)
 extern "C"  MethodInfoU5BU5D_t152480188* MonoType_GetMethodsByName_m1854415088 (MonoType_t * __this, String_t* ___name0, int32_t ___bindingAttr1, bool ___ignoreCase2, Type_t * ___reflected_type3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo[] System.MonoType::GetMethods(System.Reflection.BindingFlags)
 extern "C"  MethodInfoU5BU5D_t152480188* MonoType_GetMethods_m353342170 (MonoType_t * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo System.MonoType::GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
 extern "C"  MethodInfo_t * MonoType_GetMethodImpl_m593754598 (MonoType_t * __this, String_t* ___name0, int32_t ___bindingAttr1, Binder_t3404612058 * ___binder2, int32_t ___callConvention3, TypeU5BU5D_t1664964607* ___types4, ParameterModifierU5BU5D_t963192633* ___modifiers5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Type[] System.MonoType::GetNestedTypes(System.Reflection.BindingFlags)
+extern "C"  TypeU5BU5D_t1664964607* MonoType_GetNestedTypes_m1362423698 (MonoType_t * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo[] System.MonoType::GetPropertiesByName(System.String,System.Reflection.BindingFlags,System.Boolean,System.Type)
 extern "C"  PropertyInfoU5BU5D_t1736152084* MonoType_GetPropertiesByName_m1524828075 (MonoType_t * __this, String_t* ___name0, int32_t ___bindingAttr1, bool ___icase2, Type_t * ___reflected_type3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo[] System.MonoType::GetProperties(System.Reflection.BindingFlags)

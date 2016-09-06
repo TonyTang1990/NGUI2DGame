@@ -12662,7 +12662,7 @@ extern "C"  void UnityWebRequest__cctor_m126744318 (Il2CppObject * __this /* sta
 	}
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2930443103(L_0, _stringLiteral2697683047, /*hidden argument*/NULL);
+		Regex__ctor_m1229307206(L_0, _stringLiteral2697683047, /*hidden argument*/NULL);
 		((UnityWebRequest_t254341728_StaticFields*)UnityWebRequest_t254341728_il2cpp_TypeInfo_var->static_fields)->set_domainRegex_7(L_0);
 		StringU5BU5D_t1642385972* L_1 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20)));
 		NullCheck(L_1);
@@ -14415,7 +14415,7 @@ extern "C"  void UnityWebRequest_set_url_m2494687159 (UnityWebRequest_t254341728
 		V_1 = _stringLiteral1591141764;
 		String_t* L_1 = V_1;
 		Uri_t19570940 * L_2 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1248212436(L_2, L_1, /*hidden argument*/NULL);
+		Uri__ctor_m3927533881(L_2, L_1, /*hidden argument*/NULL);
 		V_2 = L_2;
 		String_t* L_3 = V_0;
 		NullCheck(L_3);
@@ -14428,7 +14428,7 @@ extern "C"  void UnityWebRequest_set_url_m2494687159 (UnityWebRequest_t254341728
 	{
 		Uri_t19570940 * L_5 = V_2;
 		NullCheck(L_5);
-		String_t* L_6 = Uri_get_Scheme_m1862544965(L_5, /*hidden argument*/NULL);
+		String_t* L_6 = Uri_get_Scheme_m55908894(L_5, /*hidden argument*/NULL);
 		String_t* L_7 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_8 = String_Concat_m612901809(NULL /*static, unused*/, L_6, _stringLiteral372029336, L_7, /*hidden argument*/NULL);
@@ -14448,7 +14448,7 @@ IL_0031:
 	{
 		Uri_t19570940 * L_11 = V_2;
 		NullCheck(L_11);
-		String_t* L_12 = Uri_get_Scheme_m1862544965(L_11, /*hidden argument*/NULL);
+		String_t* L_12 = Uri_get_Scheme_m55908894(L_11, /*hidden argument*/NULL);
 		Uri_t19570940 * L_13 = V_2;
 		NullCheck(L_13);
 		String_t* L_14 = Uri_get_Host_m395387191(L_13, /*hidden argument*/NULL);
@@ -14464,7 +14464,7 @@ IL_0059:
 		Regex_t1803876613 * L_17 = ((UnityWebRequest_t254341728_StaticFields*)UnityWebRequest_t254341728_il2cpp_TypeInfo_var->static_fields)->get_domainRegex_7();
 		String_t* L_18 = V_0;
 		NullCheck(L_17);
-		bool L_19 = Regex_IsMatch_m563118126(L_17, L_18, /*hidden argument*/NULL);
+		bool L_19 = Regex_IsMatch_m2159202025(L_17, L_18, /*hidden argument*/NULL);
 		if (!L_19)
 		{
 			goto IL_007b;
@@ -14473,7 +14473,7 @@ IL_0059:
 	{
 		Uri_t19570940 * L_20 = V_2;
 		NullCheck(L_20);
-		String_t* L_21 = Uri_get_Scheme_m1862544965(L_20, /*hidden argument*/NULL);
+		String_t* L_21 = Uri_get_Scheme_m55908894(L_20, /*hidden argument*/NULL);
 		String_t* L_22 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_23 = String_Concat_m612901809(NULL /*static, unused*/, L_21, _stringLiteral57472706, L_22, /*hidden argument*/NULL);
@@ -14490,7 +14490,7 @@ IL_007d:
 	{ // begin try (depth: 1)
 		String_t* L_24 = V_0;
 		Uri_t19570940 * L_25 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m1248212436(L_25, L_24, /*hidden argument*/NULL);
+		Uri__ctor_m3927533881(L_25, L_24, /*hidden argument*/NULL);
 		V_3 = L_25;
 		goto IL_00a6;
 	} // end try (depth: 1)
@@ -14514,7 +14514,7 @@ IL_008b:
 			Uri_t19570940 * L_26 = V_2;
 			String_t* L_27 = V_0;
 			Uri_t19570940 * L_28 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-			Uri__ctor_m3196554323(L_28, L_26, L_27, /*hidden argument*/NULL);
+			Uri__ctor_m3550796566(L_28, L_26, L_27, /*hidden argument*/NULL);
 			V_3 = L_28;
 			goto IL_00a1;
 		} // end try (depth: 2)
@@ -14549,7 +14549,7 @@ IL_00a6:
 	{
 		Uri_t19570940 * L_30 = V_3;
 		NullCheck(L_30);
-		String_t* L_31 = Uri_get_AbsoluteUri_m656589005(L_30, /*hidden argument*/NULL);
+		String_t* L_31 = Uri_get_AbsoluteUri_m2120317928(L_30, /*hidden argument*/NULL);
 		UnityWebRequest_InternalSetUrl_m1669953255(__this, L_31, /*hidden argument*/NULL);
 		return;
 	}
@@ -20098,6 +20098,20 @@ extern "C"  int32_t Scene_get_handle_m1555912301_AdjustorThunk (Il2CppObject * _
 	Scene_t1684909666 * _thisAdjusted = reinterpret_cast<Scene_t1684909666 *>(__this + 1);
 	return Scene_get_handle_m1555912301(_thisAdjusted, method);
 }
+// System.String UnityEngine.SceneManagement.Scene::get_name()
+extern "C"  String_t* Scene_get_name_m745914591 (Scene_t1684909666 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = Scene_get_handle_m1555912301(__this, /*hidden argument*/NULL);
+		String_t* L_1 = Scene_GetNameInternal_m3140297940(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+extern "C"  String_t* Scene_get_name_m745914591_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	Scene_t1684909666 * _thisAdjusted = reinterpret_cast<Scene_t1684909666 *>(__this + 1);
+	return Scene_get_name_m745914591(_thisAdjusted, method);
+}
 // System.Int32 UnityEngine.SceneManagement.Scene::GetHashCode()
 extern "C"  int32_t Scene_GetHashCode_m3223653899 (Scene_t1684909666 * __this, const MethodInfo* method)
 {
@@ -20149,6 +20163,15 @@ extern "C"  bool Scene_Equals_m3588907349_AdjustorThunk (Il2CppObject * __this, 
 	Scene_t1684909666 * _thisAdjusted = reinterpret_cast<Scene_t1684909666 *>(__this + 1);
 	return Scene_Equals_m3588907349(_thisAdjusted, ___other0, method);
 }
+// System.String UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)
+extern "C"  String_t* Scene_GetNameInternal_m3140297940 (Il2CppObject * __this /* static, unused */, int32_t ___sceneHandle0, const MethodInfo* method)
+{
+	typedef String_t* (*Scene_GetNameInternal_m3140297940_ftn) (int32_t);
+	static Scene_GetNameInternal_m3140297940_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Scene_GetNameInternal_m3140297940_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.Scene::GetNameInternal(System.Int32)");
+	return _il2cpp_icall_func(___sceneHandle0);
+}
 // Conversion methods for marshalling of: UnityEngine.SceneManagement.Scene
 extern "C" void Scene_t1684909666_marshal_pinvoke(const Scene_t1684909666& unmarshaled, Scene_t1684909666_marshaled_pinvoke& marshaled)
 {
@@ -20178,6 +20201,47 @@ extern "C" void Scene_t1684909666_marshal_com_back(const Scene_t1684909666_marsh
 // Conversion method for clean up from marshalling of: UnityEngine.SceneManagement.Scene
 extern "C" void Scene_t1684909666_marshal_com_cleanup(Scene_t1684909666_marshaled_com& marshaled)
 {
+}
+// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetActiveScene()
+extern "C"  Scene_t1684909666  SceneManager_GetActiveScene_m2964039490 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	Scene_t1684909666  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318(NULL /*static, unused*/, (&V_0), /*hidden argument*/NULL);
+		Scene_t1684909666  L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetActiveScene(UnityEngine.SceneManagement.Scene&)
+extern "C"  void SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318 (Il2CppObject * __this /* static, unused */, Scene_t1684909666 * ___value0, const MethodInfo* method)
+{
+	typedef void (*SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318_ftn) (Scene_t1684909666 *);
+	static SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SceneManager_INTERNAL_CALL_GetActiveScene_m1595803318_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetActiveScene(UnityEngine.SceneManagement.Scene&)");
+	_il2cpp_icall_func(___value0);
+}
+// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetSceneAt(System.Int32)
+extern "C"  Scene_t1684909666  SceneManager_GetSceneAt_m4157291656 (Il2CppObject * __this /* static, unused */, int32_t ___index0, const MethodInfo* method)
+{
+	Scene_t1684909666  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___index0;
+		SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402(NULL /*static, unused*/, L_0, (&V_0), /*hidden argument*/NULL);
+		Scene_t1684909666  L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetSceneAt(System.Int32,UnityEngine.SceneManagement.Scene&)
+extern "C"  void SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402 (Il2CppObject * __this /* static, unused */, int32_t ___index0, Scene_t1684909666 * ___value1, const MethodInfo* method)
+{
+	typedef void (*SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402_ftn) (int32_t, Scene_t1684909666 *);
+	static SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SceneManager_INTERNAL_CALL_GetSceneAt_m4206081402_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetSceneAt(System.Int32,UnityEngine.SceneManagement.Scene&)");
+	_il2cpp_icall_func(___index0, ___value1);
 }
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 extern "C"  void SceneManager_LoadScene_m1619949821 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName0, const MethodInfo* method)

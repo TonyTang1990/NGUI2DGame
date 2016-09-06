@@ -38,7 +38,7 @@ struct IXmlSchemaInfo_t2533799901;
 #include "System_Xml_System_Xml_XmlSpace2880376877.h"
 
 // System.Void System.Xml.XmlNodeReader::.ctor(System.Xml.XmlNode)
-extern "C"  void XmlNodeReader__ctor_m1586642800 (XmlNodeReader_t1022603664 * __this, XmlNode_t616554813 * ___node0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void XmlNodeReader__ctor_m994151033 (XmlNodeReader_t1022603664 * __this, XmlNode_t616554813 * ___node0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlNodeReader::.ctor(System.Xml.XmlNodeReaderImpl,System.Boolean)
 extern "C"  void XmlNodeReader__ctor_m3189895030 (XmlNodeReader_t1022603664 * __this, XmlNodeReaderImpl_t2982135230 * ___entityContainer0, bool ___insideAttribute1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Xml.XmlParserContext System.Xml.XmlNodeReader::Mono.Xml.IHasXmlParserContext.get_ParserContext()
