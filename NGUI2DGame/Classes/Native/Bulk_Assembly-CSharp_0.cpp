@@ -7253,7 +7253,9 @@ extern Il2CppClass* GameManager_t2252321495_il2cpp_TypeInfo_var;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* PlayerData_t3643615029_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral2525929845;
+extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1349099896;
+extern Il2CppCodeGenString* _stringLiteral3477240382;
 extern const uint32_t GameManager_Awake_m99497495_MetadataUsageId;
 extern "C"  void GameManager_Awake_m99497495 (GameManager_t2252321495 * __this, const MethodInfo* method)
 {
@@ -7304,8 +7306,12 @@ IL_0036:
 		__this->set_mPlayerData_3(L_6);
 		String_t* L_7 = Application_get_persistentDataPath_m3129298355(NULL /*static, unused*/, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_8 = String_Concat_m2596409543(NULL /*static, unused*/, L_7, _stringLiteral2525929845, /*hidden argument*/NULL);
+		String_t* L_8 = String_Concat_m2596409543(NULL /*static, unused*/, L_7, _stringLiteral1349099896, /*hidden argument*/NULL);
 		__this->set_mProfilePath_4(L_8);
+		String_t* L_9 = __this->get_mProfilePath_4();
+		String_t* L_10 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3477240382, L_9, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
 		return;
 	}
 }
