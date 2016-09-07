@@ -22,14 +22,10 @@ struct TypeU5BU5D_t1664964607;
 struct EventInfo_t;
 // System.String
 struct String_t;
-// System.Reflection.EventInfo[]
-struct EventInfoU5BU5D_t2843333291;
 // System.Reflection.FieldInfo
 struct FieldInfo_t;
 // System.Reflection.FieldInfo[]
 struct FieldInfoU5BU5D_t125053523;
-// System.Reflection.MemberInfo[]
-struct MemberInfoU5BU5D_t4238939941;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
 // System.Reflection.Binder
@@ -80,20 +76,14 @@ extern "C"  TypeU5BU5D_t1664964607* DerivedType_GetInterfaces_m2710649328 (Deriv
 extern "C"  Type_t * DerivedType_GetElementType_m659905870 (DerivedType_t1016359113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.EventInfo System.Reflection.Emit.DerivedType::GetEvent(System.String,System.Reflection.BindingFlags)
 extern "C"  EventInfo_t * DerivedType_GetEvent_m2165020195 (DerivedType_t1016359113 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.EventInfo[] System.Reflection.Emit.DerivedType::GetEvents(System.Reflection.BindingFlags)
-extern "C"  EventInfoU5BU5D_t2843333291* DerivedType_GetEvents_m2308994524 (DerivedType_t1016359113 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo System.Reflection.Emit.DerivedType::GetField(System.String,System.Reflection.BindingFlags)
 extern "C"  FieldInfo_t * DerivedType_GetField_m3960169619 (DerivedType_t1016359113 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo[] System.Reflection.Emit.DerivedType::GetFields(System.Reflection.BindingFlags)
 extern "C"  FieldInfoU5BU5D_t125053523* DerivedType_GetFields_m2946331416 (DerivedType_t1016359113 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.MemberInfo[] System.Reflection.Emit.DerivedType::GetMembers(System.Reflection.BindingFlags)
-extern "C"  MemberInfoU5BU5D_t4238939941* DerivedType_GetMembers_m410752536 (DerivedType_t1016359113 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo System.Reflection.Emit.DerivedType::GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
 extern "C"  MethodInfo_t * DerivedType_GetMethodImpl_m2649456432 (DerivedType_t1016359113 * __this, String_t* ___name0, int32_t ___bindingAttr1, Binder_t3404612058 * ___binder2, int32_t ___callConvention3, TypeU5BU5D_t1664964607* ___types4, ParameterModifierU5BU5D_t963192633* ___modifiers5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo[] System.Reflection.Emit.DerivedType::GetMethods(System.Reflection.BindingFlags)
 extern "C"  MethodInfoU5BU5D_t152480188* DerivedType_GetMethods_m165266904 (DerivedType_t1016359113 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type[] System.Reflection.Emit.DerivedType::GetNestedTypes(System.Reflection.BindingFlags)
-extern "C"  TypeU5BU5D_t1664964607* DerivedType_GetNestedTypes_m2044133252 (DerivedType_t1016359113 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo[] System.Reflection.Emit.DerivedType::GetProperties(System.Reflection.BindingFlags)
 extern "C"  PropertyInfoU5BU5D_t1736152084* DerivedType_GetProperties_m3645894013 (DerivedType_t1016359113 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo System.Reflection.Emit.DerivedType::GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])

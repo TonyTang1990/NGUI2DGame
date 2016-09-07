@@ -32,10 +32,6 @@ struct MethodInfo_t;
 struct BasicList_t2284403912;
 // System.Exception
 struct Exception_t1927440687;
-// System.String
-struct String_t;
-// System.Reflection.Assembly
-struct Assembly_t4268412390;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Type1303803226.h"
@@ -49,8 +45,6 @@ struct Assembly_t4268412390;
 #include "protobufU2Dnet_ProtoBuf_ProtoReader3981212867.h"
 #include "protobufU2Dnet_ProtoBuf_Meta_TypeModel653695305.h"
 #include "protobufU2Dnet_ProtoBuf_Meta_BasicList2284403912.h"
-#include "mscorlib_System_String2029220233.h"
-#include "mscorlib_System_Reflection_Assembly4268412390.h"
 
 // System.Type ProtoBuf.Meta.TypeModel::MapType(System.Type)
 extern "C"  Type_t * TypeModel_MapType_m1376612940 (TypeModel_t653695305 * __this, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -98,16 +92,8 @@ extern "C"  void TypeModel_ThrowUnexpectedSubtype_m1437867326 (Il2CppObject * __
 extern "C"  void TypeModel_ThrowUnexpectedType_m1777965871 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Exception ProtoBuf.Meta.TypeModel::CreateNestedListsNotSupported()
 extern "C"  Exception_t1927440687 * TypeModel_CreateNestedListsNotSupported_m3196710079 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void ProtoBuf.Meta.TypeModel::ThrowCannotCreateInstance(System.Type)
-extern "C"  void TypeModel_ThrowCannotCreateInstance_m162028032 (Il2CppObject * __this /* static, unused */, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.String ProtoBuf.Meta.TypeModel::SerializeType(ProtoBuf.Meta.TypeModel,System.Type)
-extern "C"  String_t* TypeModel_SerializeType_m2009819262 (Il2CppObject * __this /* static, unused */, TypeModel_t653695305 * ___model0, Type_t * ___type1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type ProtoBuf.Meta.TypeModel::DeserializeType(ProtoBuf.Meta.TypeModel,System.String)
-extern "C"  Type_t * TypeModel_DeserializeType_m1868259295 (Il2CppObject * __this /* static, unused */, TypeModel_t653695305 * ___model0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type ProtoBuf.Meta.TypeModel::GetType(System.String,System.Reflection.Assembly)
-extern "C"  Type_t * TypeModel_GetType_m1394808083 (TypeModel_t653695305 * __this, String_t* ___fullName0, Assembly_t4268412390 * ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type ProtoBuf.Meta.TypeModel::ResolveKnownType(System.String,ProtoBuf.Meta.TypeModel,System.Reflection.Assembly)
-extern "C" IL2CPP_NO_INLINE Type_t * TypeModel_ResolveKnownType_m3041470891 (Il2CppObject * __this /* static, unused */, String_t* ___name0, TypeModel_t653695305 * ___model1, Assembly_t4268412390 * ___assembly2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean ProtoBuf.Meta.TypeModel::get_ForwardsOnly()
+extern "C"  bool TypeModel_get_ForwardsOnly_m2769872662 (TypeModel_t653695305 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ProtoBuf.Meta.TypeModel::.ctor()
 extern "C"  void TypeModel__ctor_m3606578987 (TypeModel_t653695305 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ProtoBuf.Meta.TypeModel::.cctor()

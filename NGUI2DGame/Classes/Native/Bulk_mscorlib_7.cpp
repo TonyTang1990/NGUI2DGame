@@ -13,6 +13,10 @@
 #include <limits>
 #include <assert.h>
 
+// System.Security.Cryptography.RC2
+struct RC2_t3410342145;
+// System.String
+struct String_t;
 // System.Security.Cryptography.RC2CryptoServiceProvider
 struct RC2CryptoServiceProvider_t663781682;
 // System.Security.Cryptography.ICryptoTransform
@@ -21,12 +25,8 @@ struct ICryptoTransform_t281704372;
 struct ByteU5BU5D_t3397334013;
 // System.Security.Cryptography.RC2Transform
 struct RC2Transform_t93681661;
-// System.Security.Cryptography.RC2
-struct RC2_t3410342145;
 // System.Security.Cryptography.Rijndael
 struct Rijndael_t2154803531;
-// System.String
-struct String_t;
 // System.Security.Cryptography.RijndaelManaged
 struct RijndaelManaged_t1034060848;
 // System.Security.Cryptography.RijndaelManagedTransform
@@ -213,35 +213,34 @@ struct StrongName_t2988747270;
 struct UnionCodeGroup_t2013835339;
 // System.Security.Policy.Url
 struct Url_t627176909;
-// System.Security.Policy.Zone
-struct Zone_t2399370716;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "mscorlib_System_Security_Cryptography_RC23410342145.h"
+#include "mscorlib_System_Security_Cryptography_RC23410342145MethodDeclarations.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_Security_Cryptography_SymmetricAlg1108166522MethodDeclarations.h"
+#include "mscorlib_System_Security_Cryptography_KeySizes3144736271MethodDeclarations.h"
+#include "mscorlib_System_Security_Cryptography_SymmetricAlg1108166522.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_ArrayTypes.h"
+#include "mscorlib_System_Security_Cryptography_KeySizes3144736271.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Security_Cryptography_CryptoConfig896479599MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_Security_Cryptography_RC2CryptoServ663781682.h"
 #include "mscorlib_System_Security_Cryptography_RC2CryptoServ663781682MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Security_Cryptography_RC23410342145MethodDeclarations.h"
-#include "mscorlib_System_Int322071877448.h"
-#include "mscorlib_System_Security_Cryptography_RC23410342145.h"
-#include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_Byte3683104436.h"
 #include "mscorlib_System_Security_Cryptography_RC2Transform93681661MethodDeclarations.h"
 #include "mscorlib_System_Security_Cryptography_RC2Transform93681661.h"
 #include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_Mono_Security_Cryptography_KeyBuilder3965881084MethodDeclarations.h"
-#include "mscorlib_System_Security_Cryptography_SymmetricAlg1108166522.h"
 #include "mscorlib_Mono_Security_Cryptography_SymmetricTrans1394030013MethodDeclarations.h"
 #include "mscorlib_System_Array3829468939MethodDeclarations.h"
 #include "mscorlib_System_Math2022911894MethodDeclarations.h"
-#include "mscorlib_System_Security_Cryptography_KeySizes3144736271MethodDeclarations.h"
 #include "mscorlib_Locale4255929014MethodDeclarations.h"
 #include "mscorlib_System_Security_Cryptography_Cryptographi3349726436MethodDeclarations.h"
-#include "mscorlib_System_String2029220233.h"
-#include "mscorlib_System_Object2689449295.h"
-#include "mscorlib_System_Security_Cryptography_SymmetricAlg1108166522MethodDeclarations.h"
-#include "mscorlib_System_Security_Cryptography_KeySizes3144736271.h"
 #include "mscorlib_System_Security_Cryptography_Cryptographi3349726436.h"
 #include "mscorlib_System_UInt16986882611.h"
 #include "mscorlib_System_Runtime_CompilerServices_RuntimeHel266230107MethodDeclarations.h"
@@ -252,7 +251,6 @@ struct Zone_t2399370716;
 #include "mscorlib_Mono_Security_Cryptography_SymmetricTrans1394030013.h"
 #include "mscorlib_System_Security_Cryptography_Rijndael2154803531.h"
 #include "mscorlib_System_Security_Cryptography_Rijndael2154803531MethodDeclarations.h"
-#include "mscorlib_System_Security_Cryptography_CryptoConfig896479599MethodDeclarations.h"
 #include "mscorlib_System_Security_Cryptography_RijndaelMana1034060848.h"
 #include "mscorlib_System_Security_Cryptography_RijndaelMana1034060848MethodDeclarations.h"
 #include "mscorlib_System_Security_Cryptography_RijndaelManag135163252MethodDeclarations.h"
@@ -616,6 +614,117 @@ struct Zone_t2399370716;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Security.Cryptography.RC2::.ctor()
+extern Il2CppClass* KeySizesU5BU5D_t1153004758_il2cpp_TypeInfo_var;
+extern Il2CppClass* KeySizes_t3144736271_il2cpp_TypeInfo_var;
+extern const uint32_t RC2__ctor_m329421516_MetadataUsageId;
+extern "C"  void RC2__ctor_m329421516 (RC2_t3410342145 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (RC2__ctor_m329421516_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		SymmetricAlgorithm__ctor_m851603055(__this, /*hidden argument*/NULL);
+		((SymmetricAlgorithm_t1108166522 *)__this)->set_KeySizeValue_2(((int32_t)128));
+		((SymmetricAlgorithm_t1108166522 *)__this)->set_BlockSizeValue_0(((int32_t)64));
+		((SymmetricAlgorithm_t1108166522 *)__this)->set_FeedbackSizeValue_6(8);
+		((SymmetricAlgorithm_t1108166522 *)__this)->set_LegalKeySizesValue_5(((KeySizesU5BU5D_t1153004758*)SZArrayNew(KeySizesU5BU5D_t1153004758_il2cpp_TypeInfo_var, (uint32_t)1)));
+		KeySizesU5BU5D_t1153004758* L_0 = ((SymmetricAlgorithm_t1108166522 *)__this)->get_LegalKeySizesValue_5();
+		KeySizes_t3144736271 * L_1 = (KeySizes_t3144736271 *)il2cpp_codegen_object_new(KeySizes_t3144736271_il2cpp_TypeInfo_var);
+		KeySizes__ctor_m3526899007(L_1, ((int32_t)40), ((int32_t)128), 8, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, 0);
+		ArrayElementTypeCheck (L_0, L_1);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (KeySizes_t3144736271 *)L_1);
+		((SymmetricAlgorithm_t1108166522 *)__this)->set_LegalBlockSizesValue_4(((KeySizesU5BU5D_t1153004758*)SZArrayNew(KeySizesU5BU5D_t1153004758_il2cpp_TypeInfo_var, (uint32_t)1)));
+		KeySizesU5BU5D_t1153004758* L_2 = ((SymmetricAlgorithm_t1108166522 *)__this)->get_LegalBlockSizesValue_4();
+		KeySizes_t3144736271 * L_3 = (KeySizes_t3144736271 *)il2cpp_codegen_object_new(KeySizes_t3144736271_il2cpp_TypeInfo_var);
+		KeySizes__ctor_m3526899007(L_3, ((int32_t)64), ((int32_t)64), 0, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (KeySizes_t3144736271 *)L_3);
+		return;
+	}
+}
+// System.Security.Cryptography.RC2 System.Security.Cryptography.RC2::Create()
+extern Il2CppCodeGenString* _stringLiteral2324002618;
+extern const uint32_t RC2_Create_m876813503_MetadataUsageId;
+extern "C"  RC2_t3410342145 * RC2_Create_m876813503 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (RC2_Create_m876813503_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		RC2_t3410342145 * L_0 = RC2_Create_m3069005493(NULL /*static, unused*/, _stringLiteral2324002618, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Security.Cryptography.RC2 System.Security.Cryptography.RC2::Create(System.String)
+extern Il2CppClass* CryptoConfig_t896479599_il2cpp_TypeInfo_var;
+extern Il2CppClass* RC2_t3410342145_il2cpp_TypeInfo_var;
+extern const uint32_t RC2_Create_m3069005493_MetadataUsageId;
+extern "C"  RC2_t3410342145 * RC2_Create_m3069005493 (Il2CppObject * __this /* static, unused */, String_t* ___AlgName0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (RC2_Create_m3069005493_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___AlgName0;
+		IL2CPP_RUNTIME_CLASS_INIT(CryptoConfig_t896479599_il2cpp_TypeInfo_var);
+		Il2CppObject * L_1 = CryptoConfig_CreateFromName_m391442950(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return ((RC2_t3410342145 *)CastclassClass(L_1, RC2_t3410342145_il2cpp_TypeInfo_var));
+	}
+}
+// System.Int32 System.Security.Cryptography.RC2::get_EffectiveKeySize()
+extern "C"  int32_t RC2_get_EffectiveKeySize_m38555738 (RC2_t3410342145 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_EffectiveKeySizeValue_10();
+		if (L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		int32_t L_1 = ((SymmetricAlgorithm_t1108166522 *)__this)->get_KeySizeValue_2();
+		return L_1;
+	}
+
+IL_0012:
+	{
+		int32_t L_2 = __this->get_EffectiveKeySizeValue_10();
+		return L_2;
+	}
+}
+// System.Int32 System.Security.Cryptography.RC2::get_KeySize()
+extern "C"  int32_t RC2_get_KeySize_m3287662345 (RC2_t3410342145 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = SymmetricAlgorithm_get_KeySize_m4259485468(__this, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Void System.Security.Cryptography.RC2::set_KeySize(System.Int32)
+extern "C"  void RC2_set_KeySize_m2015782960 (RC2_t3410342145 * __this, int32_t ___value0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		SymmetricAlgorithm_set_KeySize_m270664177(__this, L_0, /*hidden argument*/NULL);
+		int32_t L_1 = ___value0;
+		__this->set_EffectiveKeySizeValue_10(L_1);
+		return;
+	}
+}
 // System.Void System.Security.Cryptography.RC2CryptoServiceProvider::.ctor()
 extern "C"  void RC2CryptoServiceProvider__ctor_m9640855 (RC2CryptoServiceProvider_t663781682 * __this, const MethodInfo* method)
 {
@@ -63209,309 +63318,6 @@ IL_0099:
 	{
 		String_t* L_28 = ___url0;
 		return L_28;
-	}
-}
-// System.Void System.Security.Policy.Zone::.ctor(System.Security.SecurityZone)
-extern const Il2CppType* SecurityZone_t140334334_0_0_0_var;
-extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* SecurityZone_t140334334_il2cpp_TypeInfo_var;
-extern Il2CppClass* Enum_t2459695545_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1683480003;
-extern Il2CppCodeGenString* _stringLiteral1414245788;
-extern const uint32_t Zone__ctor_m836147714_MetadataUsageId;
-extern "C"  void Zone__ctor_m836147714 (Zone_t2399370716 * __this, int32_t ___zone0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Zone__ctor_m836147714_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	String_t* V_0 = NULL;
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(SecurityZone_t140334334_0_0_0_var), /*hidden argument*/NULL);
-		int32_t L_1 = ___zone0;
-		int32_t L_2 = L_1;
-		Il2CppObject * L_3 = Box(SecurityZone_t140334334_il2cpp_TypeInfo_var, &L_2);
-		IL2CPP_RUNTIME_CLASS_INIT(Enum_t2459695545_il2cpp_TypeInfo_var);
-		bool L_4 = Enum_IsDefined_m92789062(NULL /*static, unused*/, L_0, L_3, /*hidden argument*/NULL);
-		if (L_4)
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		String_t* L_5 = Locale_GetText_m1954433032(NULL /*static, unused*/, _stringLiteral1683480003, /*hidden argument*/NULL);
-		int32_t L_6 = ___zone0;
-		int32_t L_7 = L_6;
-		Il2CppObject * L_8 = Box(SecurityZone_t140334334_il2cpp_TypeInfo_var, &L_7);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_9 = String_Format_m2024975688(NULL /*static, unused*/, L_5, L_8, /*hidden argument*/NULL);
-		V_0 = L_9;
-		String_t* L_10 = V_0;
-		ArgumentException_t3259014390 * L_11 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
-		ArgumentException__ctor_m544251339(L_11, L_10, _stringLiteral1414245788, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
-	}
-
-IL_0042:
-	{
-		int32_t L_12 = ___zone0;
-		__this->set_zone_0(L_12);
-		return;
-	}
-}
-// System.Security.SecurityZone System.Security.Policy.Zone::get_SecurityZone()
-extern "C"  int32_t Zone_get_SecurityZone_m1193238538 (Zone_t2399370716 * __this, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = __this->get_zone_0();
-		return L_0;
-	}
-}
-// System.Security.IPermission System.Security.Policy.Zone::CreateIdentityPermission(System.Security.Policy.Evidence)
-extern Il2CppClass* ZoneIdentityPermission_t639379881_il2cpp_TypeInfo_var;
-extern const uint32_t Zone_CreateIdentityPermission_m1568079366_MetadataUsageId;
-extern "C"  Il2CppObject * Zone_CreateIdentityPermission_m1568079366 (Zone_t2399370716 * __this, Evidence_t1407710183 * ___evidence0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Zone_CreateIdentityPermission_m1568079366_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		int32_t L_0 = __this->get_zone_0();
-		ZoneIdentityPermission_t639379881 * L_1 = (ZoneIdentityPermission_t639379881 *)il2cpp_codegen_object_new(ZoneIdentityPermission_t639379881_il2cpp_TypeInfo_var);
-		ZoneIdentityPermission__ctor_m1746885113(L_1, L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
-// System.Security.Policy.Zone System.Security.Policy.Zone::CreateFromUrl(System.String)
-extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
-extern Il2CppClass* Zone_t2399370716_il2cpp_TypeInfo_var;
-extern Il2CppClass* Uri_t1510604476_il2cpp_TypeInfo_var;
-extern Il2CppClass* CultureInfo_t3500843524_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral386853519;
-extern Il2CppCodeGenString* _stringLiteral1017507992;
-extern const uint32_t Zone_CreateFromUrl_m1488377684_MetadataUsageId;
-extern "C"  Zone_t2399370716 * Zone_CreateFromUrl_m1488377684 (Il2CppObject * __this /* static, unused */, String_t* ___url0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Zone_CreateFromUrl_m1488377684_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	Uri_t1510604476 * V_1 = NULL;
-	{
-		String_t* L_0 = ___url0;
-		if (L_0)
-		{
-			goto IL_0011;
-		}
-	}
-	{
-		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
-		ArgumentNullException__ctor_m3380712306(L_1, _stringLiteral386853519, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
-	}
-
-IL_0011:
-	{
-		V_0 = (-1);
-		String_t* L_2 = ___url0;
-		NullCheck(L_2);
-		int32_t L_3 = String_get_Length_m1606060069(L_2, /*hidden argument*/NULL);
-		if (L_3)
-		{
-			goto IL_0025;
-		}
-	}
-	{
-		int32_t L_4 = V_0;
-		Zone_t2399370716 * L_5 = (Zone_t2399370716 *)il2cpp_codegen_object_new(Zone_t2399370716_il2cpp_TypeInfo_var);
-		Zone__ctor_m836147714(L_5, L_4, /*hidden argument*/NULL);
-		return L_5;
-	}
-
-IL_0025:
-	{
-		String_t* L_6 = ___url0;
-		Uri_t1510604476 * L_7 = (Uri_t1510604476 *)il2cpp_codegen_object_new(Uri_t1510604476_il2cpp_TypeInfo_var);
-		Uri__ctor_m1603132169(L_7, L_6, /*hidden argument*/NULL);
-		V_1 = L_7;
-		int32_t L_8 = V_0;
-		if ((!(((uint32_t)L_8) == ((uint32_t)(-1)))))
-		{
-			goto IL_0090;
-		}
-	}
-	{
-		Uri_t1510604476 * L_9 = V_1;
-		NullCheck(L_9);
-		bool L_10 = Uri_get_IsFile_m2465890306(L_9, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_007c;
-		}
-	}
-	{
-		Uri_t1510604476 * L_11 = V_1;
-		NullCheck(L_11);
-		String_t* L_12 = Uri_get_LocalPath_m798968787(L_11, /*hidden argument*/NULL);
-		bool L_13 = File_Exists_m1685968367(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
-		if (!L_13)
-		{
-			goto IL_0055;
-		}
-	}
-	{
-		V_0 = 0;
-		goto IL_0077;
-	}
-
-IL_0055:
-	{
-		String_t* L_14 = ___url0;
-		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t3500843524_il2cpp_TypeInfo_var);
-		CultureInfo_t3500843524 * L_15 = CultureInfo_get_InvariantCulture_m398972276(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		int32_t L_16 = String_Compare_m560208559(NULL /*static, unused*/, _stringLiteral1017507992, 0, L_14, 0, 7, (bool)1, L_15, /*hidden argument*/NULL);
-		if (L_16)
-		{
-			goto IL_0075;
-		}
-	}
-	{
-		V_0 = 1;
-		goto IL_0077;
-	}
-
-IL_0075:
-	{
-		V_0 = 3;
-	}
-
-IL_0077:
-	{
-		goto IL_0090;
-	}
-
-IL_007c:
-	{
-		Uri_t1510604476 * L_17 = V_1;
-		NullCheck(L_17);
-		bool L_18 = Uri_get_IsLoopback_m350861923(L_17, /*hidden argument*/NULL);
-		if (!L_18)
-		{
-			goto IL_008e;
-		}
-	}
-	{
-		V_0 = 1;
-		goto IL_0090;
-	}
-
-IL_008e:
-	{
-		V_0 = 3;
-	}
-
-IL_0090:
-	{
-		int32_t L_19 = V_0;
-		Zone_t2399370716 * L_20 = (Zone_t2399370716 *)il2cpp_codegen_object_new(Zone_t2399370716_il2cpp_TypeInfo_var);
-		Zone__ctor_m836147714(L_20, L_19, /*hidden argument*/NULL);
-		return L_20;
-	}
-}
-// System.Boolean System.Security.Policy.Zone::Equals(System.Object)
-extern Il2CppClass* Zone_t2399370716_il2cpp_TypeInfo_var;
-extern const uint32_t Zone_Equals_m1087500270_MetadataUsageId;
-extern "C"  bool Zone_Equals_m1087500270 (Zone_t2399370716 * __this, Il2CppObject * ___o0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Zone_Equals_m1087500270_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Zone_t2399370716 * V_0 = NULL;
-	{
-		Il2CppObject * L_0 = ___o0;
-		V_0 = ((Zone_t2399370716 *)IsInstSealed(L_0, Zone_t2399370716_il2cpp_TypeInfo_var));
-		Zone_t2399370716 * L_1 = V_0;
-		if (L_1)
-		{
-			goto IL_000f;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_000f:
-	{
-		Zone_t2399370716 * L_2 = V_0;
-		NullCheck(L_2);
-		int32_t L_3 = L_2->get_zone_0();
-		int32_t L_4 = __this->get_zone_0();
-		return (bool)((((int32_t)L_3) == ((int32_t)L_4))? 1 : 0);
-	}
-}
-// System.Int32 System.Security.Policy.Zone::GetHashCode()
-extern "C"  int32_t Zone_GetHashCode_m839510550 (Zone_t2399370716 * __this, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = __this->get_zone_0();
-		return L_0;
-	}
-}
-// System.String System.Security.Policy.Zone::ToString()
-extern Il2CppClass* SecurityElement_t2325568386_il2cpp_TypeInfo_var;
-extern Il2CppClass* SecurityZone_t140334334_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral4210217091;
-extern Il2CppCodeGenString* _stringLiteral3617362;
-extern Il2CppCodeGenString* _stringLiteral372029325;
-extern Il2CppCodeGenString* _stringLiteral1414246780;
-extern const uint32_t Zone_ToString_m4007492560_MetadataUsageId;
-extern "C"  String_t* Zone_ToString_m4007492560 (Zone_t2399370716 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Zone_ToString_m4007492560_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	SecurityElement_t2325568386 * V_0 = NULL;
-	{
-		SecurityElement_t2325568386 * L_0 = (SecurityElement_t2325568386 *)il2cpp_codegen_object_new(SecurityElement_t2325568386_il2cpp_TypeInfo_var);
-		SecurityElement__ctor_m1988489885(L_0, _stringLiteral4210217091, /*hidden argument*/NULL);
-		V_0 = L_0;
-		SecurityElement_t2325568386 * L_1 = V_0;
-		NullCheck(L_1);
-		SecurityElement_AddAttribute_m2324447756(L_1, _stringLiteral3617362, _stringLiteral372029325, /*hidden argument*/NULL);
-		SecurityElement_t2325568386 * L_2 = V_0;
-		int32_t L_3 = __this->get_zone_0();
-		int32_t L_4 = L_3;
-		Il2CppObject * L_5 = Box(SecurityZone_t140334334_il2cpp_TypeInfo_var, &L_4);
-		NullCheck((Enum_t2459695545 *)L_5);
-		String_t* L_6 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Enum::ToString() */, (Enum_t2459695545 *)L_5);
-		SecurityElement_t2325568386 * L_7 = (SecurityElement_t2325568386 *)il2cpp_codegen_object_new(SecurityElement_t2325568386_il2cpp_TypeInfo_var);
-		SecurityElement__ctor_m3543712927(L_7, _stringLiteral1414246780, L_6, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		SecurityElement_AddChild_m4178544467(L_2, L_7, /*hidden argument*/NULL);
-		SecurityElement_t2325568386 * L_8 = V_0;
-		NullCheck(L_8);
-		String_t* L_9 = SecurityElement_ToString_m2206560848(L_8, /*hidden argument*/NULL);
-		return L_9;
 	}
 }
 #ifdef __clang__

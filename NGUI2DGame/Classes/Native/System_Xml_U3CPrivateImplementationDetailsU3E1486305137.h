@@ -37,15 +37,15 @@ public:
 	// <PrivateImplementationDetails>/$ArrayType$8 <PrivateImplementationDetails>::$$field-36
 	U24ArrayTypeU248_t1957337328  ___U24U24fieldU2D36_0;
 	// <PrivateImplementationDetails>/$ArrayType$256 <PrivateImplementationDetails>::$$field-37
-	U24ArrayTypeU24256_t2038352955  ___U24U24fieldU2D37_1;
+	U24ArrayTypeU24256_t2038352956  ___U24U24fieldU2D37_1;
 	// <PrivateImplementationDetails>/$ArrayType$256 <PrivateImplementationDetails>::$$field-38
-	U24ArrayTypeU24256_t2038352955  ___U24U24fieldU2D38_2;
+	U24ArrayTypeU24256_t2038352956  ___U24U24fieldU2D38_2;
 	// <PrivateImplementationDetails>/$ArrayType$1280 <PrivateImplementationDetails>::$$field-39
 	U24ArrayTypeU241280_t628910058  ___U24U24fieldU2D39_3;
 	// <PrivateImplementationDetails>/$ArrayType$12 <PrivateImplementationDetails>::$$field-40
-	U24ArrayTypeU2412_t3672778805  ___U24U24fieldU2D40_4;
+	U24ArrayTypeU2412_t3672778806  ___U24U24fieldU2D40_4;
 	// <PrivateImplementationDetails>/$ArrayType$12 <PrivateImplementationDetails>::$$field-41
-	U24ArrayTypeU2412_t3672778805  ___U24U24fieldU2D41_5;
+	U24ArrayTypeU2412_t3672778806  ___U24U24fieldU2D41_5;
 	// <PrivateImplementationDetails>/$ArrayType$8 <PrivateImplementationDetails>::$$field-43
 	U24ArrayTypeU248_t1957337328  ___U24U24fieldU2D43_6;
 	// <PrivateImplementationDetails>/$ArrayType$8 <PrivateImplementationDetails>::$$field-44
@@ -61,17 +61,17 @@ public:
 	}
 
 	inline static int32_t get_offset_of_U24U24fieldU2D37_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D37_1)); }
-	inline U24ArrayTypeU24256_t2038352955  get_U24U24fieldU2D37_1() const { return ___U24U24fieldU2D37_1; }
-	inline U24ArrayTypeU24256_t2038352955 * get_address_of_U24U24fieldU2D37_1() { return &___U24U24fieldU2D37_1; }
-	inline void set_U24U24fieldU2D37_1(U24ArrayTypeU24256_t2038352955  value)
+	inline U24ArrayTypeU24256_t2038352956  get_U24U24fieldU2D37_1() const { return ___U24U24fieldU2D37_1; }
+	inline U24ArrayTypeU24256_t2038352956 * get_address_of_U24U24fieldU2D37_1() { return &___U24U24fieldU2D37_1; }
+	inline void set_U24U24fieldU2D37_1(U24ArrayTypeU24256_t2038352956  value)
 	{
 		___U24U24fieldU2D37_1 = value;
 	}
 
 	inline static int32_t get_offset_of_U24U24fieldU2D38_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D38_2)); }
-	inline U24ArrayTypeU24256_t2038352955  get_U24U24fieldU2D38_2() const { return ___U24U24fieldU2D38_2; }
-	inline U24ArrayTypeU24256_t2038352955 * get_address_of_U24U24fieldU2D38_2() { return &___U24U24fieldU2D38_2; }
-	inline void set_U24U24fieldU2D38_2(U24ArrayTypeU24256_t2038352955  value)
+	inline U24ArrayTypeU24256_t2038352956  get_U24U24fieldU2D38_2() const { return ___U24U24fieldU2D38_2; }
+	inline U24ArrayTypeU24256_t2038352956 * get_address_of_U24U24fieldU2D38_2() { return &___U24U24fieldU2D38_2; }
+	inline void set_U24U24fieldU2D38_2(U24ArrayTypeU24256_t2038352956  value)
 	{
 		___U24U24fieldU2D38_2 = value;
 	}
@@ -85,17 +85,17 @@ public:
 	}
 
 	inline static int32_t get_offset_of_U24U24fieldU2D40_4() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D40_4)); }
-	inline U24ArrayTypeU2412_t3672778805  get_U24U24fieldU2D40_4() const { return ___U24U24fieldU2D40_4; }
-	inline U24ArrayTypeU2412_t3672778805 * get_address_of_U24U24fieldU2D40_4() { return &___U24U24fieldU2D40_4; }
-	inline void set_U24U24fieldU2D40_4(U24ArrayTypeU2412_t3672778805  value)
+	inline U24ArrayTypeU2412_t3672778806  get_U24U24fieldU2D40_4() const { return ___U24U24fieldU2D40_4; }
+	inline U24ArrayTypeU2412_t3672778806 * get_address_of_U24U24fieldU2D40_4() { return &___U24U24fieldU2D40_4; }
+	inline void set_U24U24fieldU2D40_4(U24ArrayTypeU2412_t3672778806  value)
 	{
 		___U24U24fieldU2D40_4 = value;
 	}
 
 	inline static int32_t get_offset_of_U24U24fieldU2D41_5() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t1486305139_StaticFields, ___U24U24fieldU2D41_5)); }
-	inline U24ArrayTypeU2412_t3672778805  get_U24U24fieldU2D41_5() const { return ___U24U24fieldU2D41_5; }
-	inline U24ArrayTypeU2412_t3672778805 * get_address_of_U24U24fieldU2D41_5() { return &___U24U24fieldU2D41_5; }
-	inline void set_U24U24fieldU2D41_5(U24ArrayTypeU2412_t3672778805  value)
+	inline U24ArrayTypeU2412_t3672778806  get_U24U24fieldU2D41_5() const { return ___U24U24fieldU2D41_5; }
+	inline U24ArrayTypeU2412_t3672778806 * get_address_of_U24U24fieldU2D41_5() { return &___U24U24fieldU2D41_5; }
+	inline void set_U24U24fieldU2D41_5(U24ArrayTypeU2412_t3672778806  value)
 	{
 		___U24U24fieldU2D41_5 = value;
 	}

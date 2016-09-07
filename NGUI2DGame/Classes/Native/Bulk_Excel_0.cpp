@@ -1300,9 +1300,9 @@ extern "C"  String_t* Helpers_U3CConvertEscapeCharsU3Eb__0_m1680631643 (Il2CppOb
 		NullCheck(L_0);
 		GroupCollection_t939014605 * L_1 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_0);
 		NullCheck(L_1);
-		Group_t3761430853 * L_2 = GroupCollection_get_Item_m3627349778(L_1, 1, /*hidden argument*/NULL);
+		Group_t3761430853 * L_2 = GroupCollection_get_Item_m3695725918(L_1, 1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		String_t* L_3 = Capture_get_Value_m147072698(L_2, /*hidden argument*/NULL);
+		String_t* L_3 = Capture_get_Value_m1059492002(L_2, /*hidden argument*/NULL);
 		uint32_t L_4 = UInt32_Parse_m3190548235(NULL /*static, unused*/, L_3, ((int32_t)515), /*hidden argument*/NULL);
 		V_0 = (((int32_t)((uint16_t)L_4)));
 		String_t* L_5 = Char_ToString_m1976753030((&V_0), /*hidden argument*/NULL);
@@ -1324,7 +1324,7 @@ extern "C"  void Helpers__cctor_m3113545832 (Il2CppObject * __this /* static, un
 	}
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m1229307206(L_0, _stringLiteral3191366431, /*hidden argument*/NULL);
+		Regex__ctor_m2794328522(L_0, _stringLiteral3191366431, /*hidden argument*/NULL);
 		((Helpers_t551273995_StaticFields*)Helpers_t551273995_il2cpp_TypeInfo_var->static_fields)->set_re_0(L_0);
 		return;
 	}
@@ -2911,7 +2911,7 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 	Int32U5BU5D_t3030399641* V_7 = NULL;
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m1229307206(L_0, _stringLiteral2791784762, /*hidden argument*/NULL);
+		Regex__ctor_m2794328522(L_0, _stringLiteral2791784762, /*hidden argument*/NULL);
 		V_0 = L_0;
 		Regex_t1803876613 * L_1 = V_0;
 		String_t* L_2 = ___reference0;
@@ -2920,9 +2920,9 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 		NullCheck(L_3);
 		GroupCollection_t939014605 * L_4 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_3);
 		NullCheck(L_4);
-		Group_t3761430853 * L_5 = GroupCollection_get_Item_m3627349778(L_4, 1, /*hidden argument*/NULL);
+		Group_t3761430853 * L_5 = GroupCollection_get_Item_m3695725918(L_4, 1, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		String_t* L_6 = Capture_get_Value_m147072698(L_5, /*hidden argument*/NULL);
+		String_t* L_6 = Capture_get_Value_m1059492002(L_5, /*hidden argument*/NULL);
 		NullCheck(L_6);
 		String_t* L_7 = String_ToUpper_m3715743312(L_6, /*hidden argument*/NULL);
 		V_1 = L_7;
@@ -2933,9 +2933,9 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 		NullCheck(L_10);
 		GroupCollection_t939014605 * L_11 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_10);
 		NullCheck(L_11);
-		Group_t3761430853 * L_12 = GroupCollection_get_Item_m3627349778(L_11, 2, /*hidden argument*/NULL);
+		Group_t3761430853 * L_12 = GroupCollection_get_Item_m3695725918(L_11, 2, /*hidden argument*/NULL);
 		NullCheck(L_12);
-		String_t* L_13 = Capture_get_Value_m147072698(L_12, /*hidden argument*/NULL);
+		String_t* L_13 = Capture_get_Value_m1059492002(L_12, /*hidden argument*/NULL);
 		V_2 = L_13;
 		V_3 = 0;
 		V_4 = 1;

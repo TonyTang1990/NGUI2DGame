@@ -17,7 +17,7 @@
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2281509423MethodDeclarations.h"
 
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor()
-#define Dictionary_2__ctor_m760167321(__this, method) ((  void (*) (Dictionary_2_t3943999495 *, const MethodInfo*))Dictionary_2__ctor_m584589095_gshared)(__this, method)
+#define Dictionary_2__ctor_m2056970961(__this, method) ((  void (*) (Dictionary_2_t3943999495 *, const MethodInfo*))Dictionary_2__ctor_m584589095_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
 #define Dictionary_2__ctor_m3973354408(__this, ___comparer0, method) ((  void (*) (Dictionary_2_t3943999495 *, Il2CppObject*, const MethodInfo*))Dictionary_2__ctor_m406310120_gshared)(__this, ___comparer0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor(System.Int32)
@@ -83,7 +83,7 @@
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Resize()
 #define Dictionary_2_Resize_m444345733(__this, method) ((  void (*) (Dictionary_2_t3943999495 *, const MethodInfo*))Dictionary_2_Resize_m2672264133_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Add(TKey,TValue)
-#define Dictionary_2_Add_m2509825489(__this, ___key0, ___value1, method) ((  void (*) (Dictionary_2_t3943999495 *, String_t*, String_t*, const MethodInfo*))Dictionary_2_Add_m1708621268_gshared)(__this, ___key0, ___value1, method)
+#define Dictionary_2_Add_m2773471257(__this, ___key0, ___value1, method) ((  void (*) (Dictionary_2_t3943999495 *, String_t*, String_t*, const MethodInfo*))Dictionary_2_Add_m1708621268_gshared)(__this, ___key0, ___value1, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Clear()
 #define Dictionary_2_Clear_m939246206(__this, method) ((  void (*) (Dictionary_2_t3943999495 *, const MethodInfo*))Dictionary_2_Clear_m2325793156_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.String>::ContainsKey(TKey)

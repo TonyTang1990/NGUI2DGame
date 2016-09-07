@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// System.Object
+struct Il2CppObject;
 // System.Runtime.InteropServices.GuidAttribute
 struct GuidAttribute_t222072359;
 // System.String
@@ -57,8 +59,6 @@ struct IContextAttributeU5BU5D_t435398453;
 struct ActivatedServiceTypeEntry_t3934090848;
 // System.Runtime.Remoting.Activation.IActivator
 struct IActivator_t1538980900;
-// System.Object
-struct Il2CppObject;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
 // System.Runtime.Remoting.Messaging.ConstructionCall
@@ -281,18 +281,29 @@ struct SingleCallIdentity_t3377680076;
 struct SingletonIdentity_t164722255;
 // System.Reflection.Assembly
 struct Assembly_t4268412390;
-// System.Runtime.Remoting.SoapServices/TypeInfo
-struct TypeInfo_t59877052;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "mscorlib_System_Runtime_InteropServices_GCHandle3409268066.h"
+#include "mscorlib_System_Runtime_InteropServices_GCHandle3409268066MethodDeclarations.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_IntPtr2504060609MethodDeclarations.h"
+#include "mscorlib_System_Int322071877448.h"
+#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_Runtime_InteropServices_GCHandleTy1970708122.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "mscorlib_Locale4255929014MethodDeclarations.h"
+#include "mscorlib_System_InvalidOperationException721527559MethodDeclarations.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_InvalidOperationException721527559.h"
+#include "mscorlib_System_Int322071877448MethodDeclarations.h"
+#include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
+#include "mscorlib_System_ArgumentException3259014390.h"
 #include "mscorlib_System_Runtime_InteropServices_GCHandleTy1970708122MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_GuidAttribu222072359.h"
 #include "mscorlib_System_Runtime_InteropServices_GuidAttribu222072359MethodDeclarations.h"
-#include "mscorlib_System_String2029220233.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_Attribute542643598MethodDeclarations.h"
 #include "mscorlib_System_Runtime_InteropServices_InAttribut1394050551.h"
 #include "mscorlib_System_Runtime_InteropServices_InAttribut1394050551MethodDeclarations.h"
@@ -303,10 +314,8 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Runtime_InteropServices_Marshal785896760MethodDeclarations.h"
 #include "mscorlib_System_Environment3662374671MethodDeclarations.h"
 #include "mscorlib_System_OperatingSystem290860502MethodDeclarations.h"
-#include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_OperatingSystem290860502.h"
 #include "mscorlib_System_PlatformID1006634368.h"
-#include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_Byte3683104436.h"
 #include "mscorlib_System_Char3454481338.h"
@@ -315,7 +324,6 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Runtime_InteropServices_UnmanagedT2550630890.h"
 #include "mscorlib_System_Runtime_InteropServices_MarshalDir1326890414.h"
 #include "mscorlib_System_Runtime_InteropServices_MarshalDir1326890414MethodDeclarations.h"
-#include "mscorlib_Locale4255929014MethodDeclarations.h"
 #include "mscorlib_System_SystemException3877406272MethodDeclarations.h"
 #include "mscorlib_System_Exception1927440687MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Serialization_Serialization228987430.h"
@@ -331,7 +339,6 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Security_SecurityManager3191249573MethodDeclarations.h"
 #include "mscorlib_System_Security_Permissions_FileIOPermiss3702443043MethodDeclarations.h"
 #include "mscorlib_System_Security_CodeAccessPermission3468021764MethodDeclarations.h"
-#include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_System_Security_Permissions_FileIOPermiss3702443043.h"
 #include "mscorlib_System_Security_Permissions_FileIOPermiss1079931101.h"
 #include "mscorlib_System_Security_CodeAccessPermission3468021764.h"
@@ -345,7 +352,6 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Type1303803226MethodDeclarations.h"
 #include "mscorlib_System_ObjectDisposedException2695136451.h"
 #include "mscorlib_System_GC2902933594MethodDeclarations.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_Runtime_ConstrainedExecution_Criti1920899984.h"
 #include "mscorlib_System_Runtime_InteropServices_TypeLibImp2390314680.h"
 #include "mscorlib_System_Runtime_InteropServices_TypeLibImp2390314680MethodDeclarations.h"
@@ -473,12 +479,8 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Runtime_Remoting_Contexts_DynamicP2282532998.h"
 #include "mscorlib_System_ContextBoundObject4264702438.h"
 #include "mscorlib_System_Runtime_Remoting_Proxies_RealProxy298428346MethodDeclarations.h"
-#include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_Proxies_RealProxy298428346.h"
-#include "mscorlib_System_ArgumentException3259014390.h"
 #include "mscorlib_System_Runtime_Remoting_Messaging_ClientC3236389774.h"
-#include "mscorlib_System_InvalidOperationException721527559MethodDeclarations.h"
-#include "mscorlib_System_InvalidOperationException721527559.h"
 #include "mscorlib_System_Runtime_Remoting_Messaging_ServerC1054294306MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_Messaging_ServerC1054294306.h"
 #include "mscorlib_System_Runtime_Remoting_Messaging_ClientC3236389774MethodDeclarations.h"
@@ -612,7 +614,6 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Runtime_Remoting_Proxies_ProxyAttr4031752430MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_Proxies_RemotingP2419155897MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_Proxies_RemotingP2419155897.h"
-#include "mscorlib_System_IntPtr2504060609MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_Proxies_Transpare3836393972.h"
 #include "mscorlib_System_Runtime_Remoting_Proxies_Transpare3836393972MethodDeclarations.h"
 #include "mscorlib_System_Runtime_Remoting_RemotingConfigurat438177651.h"
@@ -631,7 +632,6 @@ struct TypeInfo_t59877052;
 #include "mscorlib_System_Runtime_Serialization_Formatters_Fo999493661.h"
 #include "mscorlib_System_Runtime_Remoting_Services_Tracking3722365321MethodDeclarations.h"
 #include "mscorlib_System_Attribute542643598.h"
-#include "mscorlib_System_Int322071877448MethodDeclarations.h"
 #include "mscorlib_System_Reflection_Binder3404612058.h"
 #include "mscorlib_System_Reflection_ParameterModifier1820634920.h"
 #include "mscorlib_System_MonoType42245407MethodDeclarations.h"
@@ -652,6 +652,361 @@ struct TypeInfo_t59877052;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.IntPtr)
+extern "C"  void GCHandle__ctor_m4011861154 (GCHandle_t3409268066 * __this, IntPtr_t ___h0, const MethodInfo* method)
+{
+	{
+		IntPtr_t L_0 = ___h0;
+		int32_t L_1 = IntPtr_op_Explicit_m1458664696(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		__this->set_handle_0(L_1);
+		return;
+	}
+}
+extern "C"  void GCHandle__ctor_m4011861154_AdjustorThunk (Il2CppObject * __this, IntPtr_t ___h0, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	GCHandle__ctor_m4011861154(_thisAdjusted, ___h0, method);
+}
+// System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.Object)
+extern "C"  void GCHandle__ctor_m3715741256 (GCHandle_t3409268066 * __this, Il2CppObject * ___obj0, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = ___obj0;
+		GCHandle__ctor_m2952050298(__this, L_0, 2, /*hidden argument*/NULL);
+		return;
+	}
+}
+extern "C"  void GCHandle__ctor_m3715741256_AdjustorThunk (Il2CppObject * __this, Il2CppObject * ___obj0, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	GCHandle__ctor_m3715741256(_thisAdjusted, ___obj0, method);
+}
+// System.Void System.Runtime.InteropServices.GCHandle::.ctor(System.Object,System.Runtime.InteropServices.GCHandleType)
+extern "C"  void GCHandle__ctor_m2952050298 (GCHandle_t3409268066 * __this, Il2CppObject * ___value0, int32_t ___type1, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___type1;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		int32_t L_1 = ___type1;
+		if ((((int32_t)L_1) <= ((int32_t)3)))
+		{
+			goto IL_0011;
+		}
+	}
+
+IL_000e:
+	{
+		___type1 = 2;
+	}
+
+IL_0011:
+	{
+		Il2CppObject * L_2 = ___value0;
+		int32_t L_3 = ___type1;
+		int32_t L_4 = GCHandle_GetTargetHandle_m3810891574(NULL /*static, unused*/, L_2, 0, L_3, /*hidden argument*/NULL);
+		__this->set_handle_0(L_4);
+		return;
+	}
+}
+extern "C"  void GCHandle__ctor_m2952050298_AdjustorThunk (Il2CppObject * __this, Il2CppObject * ___value0, int32_t ___type1, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	GCHandle__ctor_m2952050298(_thisAdjusted, ___value0, ___type1, method);
+}
+// System.Boolean System.Runtime.InteropServices.GCHandle::get_IsAllocated()
+extern "C"  bool GCHandle_get_IsAllocated_m2246567034 (GCHandle_t3409268066 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_handle_0();
+		return (bool)((((int32_t)((((int32_t)L_0) == ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+extern "C"  bool GCHandle_get_IsAllocated_m2246567034_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	return GCHandle_get_IsAllocated_m2246567034(_thisAdjusted, method);
+}
+// System.Object System.Runtime.InteropServices.GCHandle::get_Target()
+extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2100846476;
+extern const uint32_t GCHandle_get_Target_m2327042781_MetadataUsageId;
+extern "C"  Il2CppObject * GCHandle_get_Target_m2327042781 (GCHandle_t3409268066 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GCHandle_get_Target_m2327042781_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = GCHandle_get_IsAllocated_m2246567034(__this, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		String_t* L_1 = Locale_GetText_m1954433032(NULL /*static, unused*/, _stringLiteral2100846476, /*hidden argument*/NULL);
+		InvalidOperationException_t721527559 * L_2 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
+		InvalidOperationException__ctor_m2801133788(L_2, L_1, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_001b:
+	{
+		int32_t L_3 = __this->get_handle_0();
+		Il2CppObject * L_4 = GCHandle_GetTarget_m2056570211(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+extern "C"  Il2CppObject * GCHandle_get_Target_m2327042781_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	return GCHandle_get_Target_m2327042781(_thisAdjusted, method);
+}
+// System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::Alloc(System.Object)
+extern "C"  GCHandle_t3409268066  GCHandle_Alloc_m3171748614 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___value0, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = ___value0;
+		GCHandle_t3409268066  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		GCHandle__ctor_m3715741256(&L_1, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::Alloc(System.Object,System.Runtime.InteropServices.GCHandleType)
+extern "C"  GCHandle_t3409268066  GCHandle_Alloc_m1063472408 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___value0, int32_t ___type1, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = ___value0;
+		int32_t L_1 = ___type1;
+		GCHandle_t3409268066  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		GCHandle__ctor_m2952050298(&L_2, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Void System.Runtime.InteropServices.GCHandle::Free()
+extern "C"  void GCHandle_Free_m1639542352 (GCHandle_t3409268066 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_handle_0();
+		GCHandle_FreeHandle_m2466807271(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		__this->set_handle_0(0);
+		return;
+	}
+}
+extern "C"  void GCHandle_Free_m1639542352_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	GCHandle_Free_m1639542352(_thisAdjusted, method);
+}
+// System.Boolean System.Runtime.InteropServices.GCHandle::CheckCurrentDomain(System.Int32)
+extern "C"  bool GCHandle_CheckCurrentDomain_m2505085614 (Il2CppObject * __this /* static, unused */, int32_t ___handle0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef bool (*GCHandle_CheckCurrentDomain_m2505085614_ftn) (int32_t);
+	return  ((GCHandle_CheckCurrentDomain_m2505085614_ftn)mscorlib::System::Runtime::InteropServices::GCHandle::CheckCurrentDomain) (___handle0);
+}
+// System.Object System.Runtime.InteropServices.GCHandle::GetTarget(System.Int32)
+extern "C"  Il2CppObject * GCHandle_GetTarget_m2056570211 (Il2CppObject * __this /* static, unused */, int32_t ___handle0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef Il2CppObject * (*GCHandle_GetTarget_m2056570211_ftn) (int32_t);
+	return  ((GCHandle_GetTarget_m2056570211_ftn)mscorlib::System::Runtime::InteropServices::GCHandle::GetTarget) (___handle0);
+}
+// System.Int32 System.Runtime.InteropServices.GCHandle::GetTargetHandle(System.Object,System.Int32,System.Runtime.InteropServices.GCHandleType)
+extern "C"  int32_t GCHandle_GetTargetHandle_m3810891574 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, int32_t ___handle1, int32_t ___type2, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef int32_t (*GCHandle_GetTargetHandle_m3810891574_ftn) (Il2CppObject *, int32_t, int32_t);
+	return  ((GCHandle_GetTargetHandle_m3810891574_ftn)mscorlib::System::Runtime::InteropServices::GCHandle::GetTargetHandle) (___obj0, ___handle1, ___type2);
+}
+// System.Void System.Runtime.InteropServices.GCHandle::FreeHandle(System.Int32)
+extern "C"  void GCHandle_FreeHandle_m2466807271 (Il2CppObject * __this /* static, unused */, int32_t ___handle0, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef void (*GCHandle_FreeHandle_m2466807271_ftn) (int32_t);
+	 ((GCHandle_FreeHandle_m2466807271_ftn)mscorlib::System::Runtime::InteropServices::GCHandle::FreeHandle) (___handle0);
+}
+// System.Boolean System.Runtime.InteropServices.GCHandle::Equals(System.Object)
+extern Il2CppClass* GCHandle_t3409268066_il2cpp_TypeInfo_var;
+extern const uint32_t GCHandle_Equals_m170815541_MetadataUsageId;
+extern "C"  bool GCHandle_Equals_m170815541 (GCHandle_t3409268066 * __this, Il2CppObject * ___o0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GCHandle_Equals_m170815541_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GCHandle_t3409268066  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Il2CppObject * L_0 = ___o0;
+		if (!L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		Il2CppObject * L_1 = ___o0;
+		if (((Il2CppObject *)IsInstSealed(L_1, GCHandle_t3409268066_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0013;
+		}
+	}
+
+IL_0011:
+	{
+		return (bool)0;
+	}
+
+IL_0013:
+	{
+		int32_t L_2 = __this->get_handle_0();
+		Il2CppObject * L_3 = ___o0;
+		V_0 = ((*(GCHandle_t3409268066 *)((GCHandle_t3409268066 *)UnBox (L_3, GCHandle_t3409268066_il2cpp_TypeInfo_var))));
+		int32_t L_4 = (&V_0)->get_handle_0();
+		return (bool)((((int32_t)L_2) == ((int32_t)L_4))? 1 : 0);
+	}
+}
+extern "C"  bool GCHandle_Equals_m170815541_AdjustorThunk (Il2CppObject * __this, Il2CppObject * ___o0, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	return GCHandle_Equals_m170815541(_thisAdjusted, ___o0, method);
+}
+// System.Int32 System.Runtime.InteropServices.GCHandle::GetHashCode()
+extern "C"  int32_t GCHandle_GetHashCode_m1664905595 (GCHandle_t3409268066 * __this, const MethodInfo* method)
+{
+	{
+		int32_t* L_0 = __this->get_address_of_handle_0();
+		int32_t L_1 = Int32_GetHashCode_m1381647448(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+extern "C"  int32_t GCHandle_GetHashCode_m1664905595_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
+{
+	GCHandle_t3409268066 * _thisAdjusted = reinterpret_cast<GCHandle_t3409268066 *>(__this + 1);
+	return GCHandle_GetHashCode_m1664905595(_thisAdjusted, method);
+}
+// System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::FromIntPtr(System.IntPtr)
+extern "C"  GCHandle_t3409268066  GCHandle_FromIntPtr_m390042100 (Il2CppObject * __this /* static, unused */, IntPtr_t ___value0, const MethodInfo* method)
+{
+	{
+		IntPtr_t L_0 = ___value0;
+		GCHandle_t3409268066  L_1 = GCHandle_op_Explicit_m1207158571(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.IntPtr System.Runtime.InteropServices.GCHandle::ToIntPtr(System.Runtime.InteropServices.GCHandle)
+extern "C"  IntPtr_t GCHandle_ToIntPtr_m290813543 (Il2CppObject * __this /* static, unused */, GCHandle_t3409268066  ___value0, const MethodInfo* method)
+{
+	{
+		GCHandle_t3409268066  L_0 = ___value0;
+		IntPtr_t L_1 = GCHandle_op_Explicit_m1252045235(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.IntPtr System.Runtime.InteropServices.GCHandle::op_Explicit(System.Runtime.InteropServices.GCHandle)
+extern "C"  IntPtr_t GCHandle_op_Explicit_m1252045235 (Il2CppObject * __this /* static, unused */, GCHandle_t3409268066  ___value0, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = (&___value0)->get_handle_0();
+		IntPtr_t L_1 = IntPtr_op_Explicit_m3896766622(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Runtime.InteropServices.GCHandle System.Runtime.InteropServices.GCHandle::op_Explicit(System.IntPtr)
+extern Il2CppClass* IntPtr_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral390927325;
+extern Il2CppCodeGenString* _stringLiteral3305930442;
+extern const uint32_t GCHandle_op_Explicit_m1207158571_MetadataUsageId;
+extern "C"  GCHandle_t3409268066  GCHandle_op_Explicit_m1207158571 (Il2CppObject * __this /* static, unused */, IntPtr_t ___value0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GCHandle_op_Explicit_m1207158571_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0 = ___value0;
+		IntPtr_t L_1 = ((IntPtr_t_StaticFields*)IntPtr_t_il2cpp_TypeInfo_var->static_fields)->get_Zero_1();
+		bool L_2 = IntPtr_op_Equality_m1573482188(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_3 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_3, _stringLiteral390927325, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_001b:
+	{
+		IntPtr_t L_4 = ___value0;
+		int32_t L_5 = IntPtr_op_Explicit_m1458664696(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		bool L_6 = GCHandle_CheckCurrentDomain_m2505085614(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		if (L_6)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		ArgumentException_t3259014390 * L_7 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3739475201(L_7, _stringLiteral3305930442, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7);
+	}
+
+IL_0036:
+	{
+		IntPtr_t L_8 = ___value0;
+		GCHandle_t3409268066  L_9;
+		memset(&L_9, 0, sizeof(L_9));
+		GCHandle__ctor_m4011861154(&L_9, L_8, /*hidden argument*/NULL);
+		return L_9;
+	}
+}
+// Conversion methods for marshalling of: System.Runtime.InteropServices.GCHandle
+extern "C" void GCHandle_t3409268066_marshal_pinvoke(const GCHandle_t3409268066& unmarshaled, GCHandle_t3409268066_marshaled_pinvoke& marshaled)
+{
+	marshaled.___handle_0 = unmarshaled.get_handle_0();
+}
+extern "C" void GCHandle_t3409268066_marshal_pinvoke_back(const GCHandle_t3409268066_marshaled_pinvoke& marshaled, GCHandle_t3409268066& unmarshaled)
+{
+	int32_t unmarshaled_handle_temp_0 = 0;
+	unmarshaled_handle_temp_0 = marshaled.___handle_0;
+	unmarshaled.set_handle_0(unmarshaled_handle_temp_0);
+}
+// Conversion method for clean up from marshalling of: System.Runtime.InteropServices.GCHandle
+extern "C" void GCHandle_t3409268066_marshal_pinvoke_cleanup(GCHandle_t3409268066_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: System.Runtime.InteropServices.GCHandle
+extern "C" void GCHandle_t3409268066_marshal_com(const GCHandle_t3409268066& unmarshaled, GCHandle_t3409268066_marshaled_com& marshaled)
+{
+	marshaled.___handle_0 = unmarshaled.get_handle_0();
+}
+extern "C" void GCHandle_t3409268066_marshal_com_back(const GCHandle_t3409268066_marshaled_com& marshaled, GCHandle_t3409268066& unmarshaled)
+{
+	int32_t unmarshaled_handle_temp_0 = 0;
+	unmarshaled_handle_temp_0 = marshaled.___handle_0;
+	unmarshaled.set_handle_0(unmarshaled_handle_temp_0);
+}
+// Conversion method for clean up from marshalling of: System.Runtime.InteropServices.GCHandle
+extern "C" void GCHandle_t3409268066_marshal_com_cleanup(GCHandle_t3409268066_marshaled_com& marshaled)
+{
+}
 // System.Void System.Runtime.InteropServices.GuidAttribute::.ctor(System.String)
 extern "C"  void GuidAttribute__ctor_m1099153635 (GuidAttribute_t222072359 * __this, String_t* ___guid0, const MethodInfo* method)
 {
@@ -3710,12 +4065,12 @@ IL_00ca:
 		Type_t * L_36 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IChannelSender_t714647579_0_0_0_var), /*hidden argument*/NULL);
 		Type_t * L_37 = V_8;
 		NullCheck(L_36);
-		bool L_38 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_36, L_37);
+		bool L_38 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_36, L_37);
 		V_11 = L_38;
 		Type_t * L_39 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(IChannelReceiver_t2788889625_0_0_0_var), /*hidden argument*/NULL);
 		Type_t * L_40 = V_8;
 		NullCheck(L_39);
-		bool L_41 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_39, L_40);
+		bool L_41 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_39, L_40);
 		V_12 = L_41;
 		bool L_42 = V_11;
 		if (!L_42)
@@ -15645,7 +16000,7 @@ IL_01a9:
 	{
 		MethodBase_t904190842 * L_63 = __this->get__methodBase_5();
 		NullCheck(L_63);
-		bool L_64 = VirtFuncInvoker0< bool >::Invoke(32 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethod() */, L_63);
+		bool L_64 = VirtFuncInvoker0< bool >::Invoke(30 /* System.Boolean System.Reflection.MethodBase::get_IsGenericMethod() */, L_63);
 		if (!L_64)
 		{
 			goto IL_01fb;
@@ -15654,7 +16009,7 @@ IL_01a9:
 	{
 		MethodBase_t904190842 * L_65 = __this->get__methodBase_5();
 		NullCheck(L_65);
-		bool L_66 = VirtFuncInvoker0< bool >::Invoke(30 /* System.Boolean System.Reflection.MethodBase::get_ContainsGenericParameters() */, L_65);
+		bool L_66 = VirtFuncInvoker0< bool >::Invoke(28 /* System.Boolean System.Reflection.MethodBase::get_ContainsGenericParameters() */, L_65);
 		if (!L_66)
 		{
 			goto IL_01fb;
@@ -15678,7 +16033,7 @@ IL_01df:
 		MethodBase_t904190842 * L_69 = __this->get__methodBase_5();
 		TypeU5BU5D_t1664964607* L_70 = MethodCall_get_GenericArguments_m3765959301(__this, /*hidden argument*/NULL);
 		NullCheck(((MethodInfo_t *)CastclassClass(L_69, MethodInfo_t_il2cpp_TypeInfo_var)));
-		MethodInfo_t * L_71 = VirtFuncInvoker1< MethodInfo_t *, TypeU5BU5D_t1664964607* >::Invoke(35 /* System.Reflection.MethodInfo System.Reflection.MethodInfo::MakeGenericMethod(System.Type[]) */, ((MethodInfo_t *)CastclassClass(L_69, MethodInfo_t_il2cpp_TypeInfo_var)), L_70);
+		MethodInfo_t * L_71 = VirtFuncInvoker1< MethodInfo_t *, TypeU5BU5D_t1664964607* >::Invoke(33 /* System.Reflection.MethodInfo System.Reflection.MethodInfo::MakeGenericMethod(System.Type[]) */, ((MethodInfo_t *)CastclassClass(L_69, MethodInfo_t_il2cpp_TypeInfo_var)), L_70);
 		__this->set__methodBase_5(L_71);
 	}
 
@@ -15769,7 +16124,7 @@ IL_0041:
 	{
 		Type_t * L_17 = ___serverType1;
 		NullCheck(L_17);
-		TypeU5BU5D_t1664964607* L_18 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(44 /* System.Type[] System.Type::GetInterfaces() */, L_17);
+		TypeU5BU5D_t1664964607* L_18 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(40 /* System.Type[] System.Type::GetInterfaces() */, L_17);
 		V_1 = L_18;
 		TypeU5BU5D_t1664964607* L_19 = V_1;
 		V_3 = L_19;
@@ -15920,7 +16275,7 @@ IL_0012:
 	{
 		MethodBase_t904190842 * L_2 = MethodCall_get_MethodBase_m688041003(__this, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		TypeU5BU5D_t1664964607* L_3 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(29 /* System.Type[] System.Reflection.MethodBase::GetGenericArguments() */, L_2);
+		TypeU5BU5D_t1664964607* L_3 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(27 /* System.Type[] System.Reflection.MethodBase::GetGenericArguments() */, L_2);
 		TypeU5BU5D_t1664964607* L_4 = L_3;
 		V_0 = L_4;
 		__this->set__genericArguments_7(L_4);
@@ -18356,7 +18711,7 @@ IL_0014:
 		Type_t * L_4 = ((RemotingSurrogateSelector_t2821375126_StaticFields*)RemotingSurrogateSelector_t2821375126_il2cpp_TypeInfo_var->static_fields)->get_s_cachedTypeObjRef_0();
 		Type_t * L_5 = ___type0;
 		NullCheck(L_4);
-		bool L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_4, L_5);
+		bool L_6 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_4, L_5);
 		if (!L_6)
 		{
 			goto IL_002d;
@@ -19319,7 +19674,7 @@ IL_0076:
 	{
 		Type_t * L_17 = V_0;
 		NullCheck(L_17);
-		String_t* L_18 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_17);
+		String_t* L_18 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_17);
 		String_t* L_19 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(SoapServices_t3397513225_il2cpp_TypeInfo_var);
 		String_t* L_20 = SoapServices_CodeXmlNamespaceForClrTypeNamespace_m3502771270(NULL /*static, unused*/, L_18, L_19, /*hidden argument*/NULL);
@@ -23128,7 +23483,7 @@ IL_0032:
 	{
 		Type_t * L_12 = ___type0;
 		NullCheck(L_12);
-		TypeU5BU5D_t1664964607* L_13 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(44 /* System.Type[] System.Type::GetInterfaces() */, L_12);
+		TypeU5BU5D_t1664964607* L_13 = VirtFuncInvoker0< TypeU5BU5D_t1664964607* >::Invoke(40 /* System.Type[] System.Type::GetInterfaces() */, L_12);
 		V_2 = L_13;
 		V_3 = 0;
 		goto IL_0059;
@@ -25622,7 +25977,7 @@ IL_0057:
 			V_2 = L_17;
 			Type_t * L_18 = ___type0;
 			NullCheck(L_18);
-			FieldInfoU5BU5D_t125053523* L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_t125053523*, int32_t >::Invoke(53 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
+			FieldInfoU5BU5D_t125053523* L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_t125053523*, int32_t >::Invoke(48 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
 			V_4 = L_19;
 			FieldInfoU5BU5D_t125053523* L_20 = V_4;
 			V_6 = L_20;
@@ -25954,14 +26309,6 @@ extern "C"  String_t* SoapServices_EncodeNs_m1418675853 (Il2CppObject * __this /
 		NullCheck(L_4);
 		String_t* L_5 = String_Replace_m1941156251(L_4, _stringLiteral372029329, _stringLiteral1670609906, /*hidden argument*/NULL);
 		return L_5;
-	}
-}
-// System.Void System.Runtime.Remoting.SoapServices/TypeInfo::.ctor()
-extern "C"  void TypeInfo__ctor_m1219583114 (TypeInfo_t59877052 * __this, const MethodInfo* method)
-{
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		return;
 	}
 }
 #ifdef __clang__

@@ -28,6 +28,8 @@ struct String_t;
 
 // System.Void System.Diagnostics.StackTrace::.ctor()
 extern "C"  void StackTrace__ctor_m2404985356 (StackTrace_t2500644597 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Diagnostics.StackTrace::.ctor(System.Boolean)
+extern "C"  void StackTrace__ctor_m3282848393 (StackTrace_t2500644597 * __this, bool ___fNeedFileInfo0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Diagnostics.StackTrace::.ctor(System.Int32,System.Boolean)
 extern "C"  void StackTrace__ctor_m1811467992 (StackTrace_t2500644597 * __this, int32_t ___skipFrames0, bool ___fNeedFileInfo1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Diagnostics.StackTrace::.ctor(System.Exception,System.Boolean)

@@ -25259,7 +25259,7 @@ IL_0094:
 		V_6 = L_30;
 		Match_t3164245899 * L_31 = V_6;
 		NullCheck(L_31);
-		bool L_32 = Group_get_Success_m1068765996(L_31, /*hidden argument*/NULL);
+		bool L_32 = Group_get_Success_m2001463544(L_31, /*hidden argument*/NULL);
 		if (!L_32)
 		{
 			goto IL_01a4;
@@ -25392,14 +25392,14 @@ IL_0157:
 		StringBuilder_t1221177846 * L_65 = ((StringPlugin_t3620786088_StaticFields*)StringPlugin_t3620786088_il2cpp_TypeInfo_var->static_fields)->get__Buffer_0();
 		Match_t3164245899 * L_66 = V_6;
 		NullCheck(L_66);
-		String_t* L_67 = Capture_get_Value_m147072698(L_66, /*hidden argument*/NULL);
+		String_t* L_67 = Capture_get_Value_m1059492002(L_66, /*hidden argument*/NULL);
 		NullCheck(L_65);
 		StringBuilder_Append_m3636508479(L_65, L_67, /*hidden argument*/NULL);
 		Match_t3164245899 * L_68 = V_6;
 		NullCheck(L_68);
 		GroupCollection_t939014605 * L_69 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_68);
 		NullCheck(L_69);
-		Group_t3761430853 * L_70 = GroupCollection_get_Item_m3627349778(L_69, 1, /*hidden argument*/NULL);
+		Group_t3761430853 * L_70 = GroupCollection_get_Item_m3695725918(L_69, 1, /*hidden argument*/NULL);
 		NullCheck(L_70);
 		int32_t L_71 = Capture_get_Index_m819425556(L_70, /*hidden argument*/NULL);
 		V_7 = ((int32_t)((int32_t)L_71+(int32_t)1));
@@ -25480,7 +25480,7 @@ IL_01ca:
 		V_11 = L_92;
 		Match_t3164245899 * L_93 = V_11;
 		NullCheck(L_93);
-		bool L_94 = Group_get_Success_m1068765996(L_93, /*hidden argument*/NULL);
+		bool L_94 = Group_get_Success_m2001463544(L_93, /*hidden argument*/NULL);
 		if (!L_94)
 		{
 			goto IL_0258;
@@ -25489,7 +25489,7 @@ IL_01ca:
 	{
 		Match_t3164245899 * L_95 = V_11;
 		NullCheck(L_95);
-		String_t* L_96 = Capture_get_Value_m147072698(L_95, /*hidden argument*/NULL);
+		String_t* L_96 = Capture_get_Value_m1059492002(L_95, /*hidden argument*/NULL);
 		NullCheck(L_96);
 		Il2CppChar L_97 = String_get_Chars_m4230566705(L_96, 2, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(StringPlugin_t3620786088_il2cpp_TypeInfo_var);
@@ -25509,7 +25509,7 @@ IL_01ca:
 		StringBuilder_t1221177846 * L_102 = ((StringPlugin_t3620786088_StaticFields*)StringPlugin_t3620786088_il2cpp_TypeInfo_var->static_fields)->get__Buffer_0();
 		Match_t3164245899 * L_103 = V_11;
 		NullCheck(L_103);
-		String_t* L_104 = Capture_get_Value_m147072698(L_103, /*hidden argument*/NULL);
+		String_t* L_104 = Capture_get_Value_m1059492002(L_103, /*hidden argument*/NULL);
 		NullCheck(L_102);
 		StringBuilder_Append_m3636508479(L_102, L_104, /*hidden argument*/NULL);
 		List_1_t2823602470 * L_105 = ((StringPlugin_t3620786088_StaticFields*)StringPlugin_t3620786088_il2cpp_TypeInfo_var->static_fields)->get__OpenedTags_1();
@@ -25525,7 +25525,7 @@ IL_0233:
 		int32_t L_108 = V_2;
 		Match_t3164245899 * L_109 = V_11;
 		NullCheck(L_109);
-		String_t* L_110 = Capture_get_Value_m147072698(L_109, /*hidden argument*/NULL);
+		String_t* L_110 = Capture_get_Value_m1059492002(L_109, /*hidden argument*/NULL);
 		NullCheck(L_110);
 		int32_t L_111 = String_get_Length_m1606060069(L_110, /*hidden argument*/NULL);
 		V_2 = ((int32_t)((int32_t)L_108+(int32_t)L_111));

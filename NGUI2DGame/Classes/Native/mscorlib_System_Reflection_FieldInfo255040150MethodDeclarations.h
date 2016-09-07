@@ -35,14 +35,8 @@ extern "C"  int32_t FieldInfo_get_MemberType_m4190511717 (FieldInfo_t * __this, 
 extern "C"  bool FieldInfo_get_IsLiteral_m267898096 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.FieldInfo::get_IsStatic()
 extern "C"  bool FieldInfo_get_IsStatic_m1411173225 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Reflection.FieldInfo::get_IsInitOnly()
-extern "C"  bool FieldInfo_get_IsInitOnly_m3059790683 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.FieldInfo::get_IsPublic()
 extern "C"  bool FieldInfo_get_IsPublic_m618896610 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Reflection.FieldInfo::get_IsAssembly()
-extern "C"  bool FieldInfo_get_IsAssembly_m2367592203 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Reflection.FieldInfo::get_IsFamilyOrAssembly()
-extern "C"  bool FieldInfo_get_IsFamilyOrAssembly_m56166614 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.FieldInfo::get_IsNotSerialized()
 extern "C"  bool FieldInfo_get_IsNotSerialized_m2322769148 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.FieldInfo::SetValue(System.Object,System.Object)
@@ -59,5 +53,3 @@ extern "C"  UnmanagedMarshal_t4270021860 * FieldInfo_GetUnmanagedMarshal_m386909
 extern "C"  UnmanagedMarshal_t4270021860 * FieldInfo_get_UMarshal_m1934544188 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object[] System.Reflection.FieldInfo::GetPseudoCustomAttributes()
 extern "C"  ObjectU5BU5D_t3614634134* FieldInfo_GetPseudoCustomAttributes_m2500972355 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Object System.Reflection.FieldInfo::GetRawConstantValue()
-extern "C"  Il2CppObject * FieldInfo_GetRawConstantValue_m2739257940 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

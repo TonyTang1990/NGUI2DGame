@@ -9,6 +9,8 @@
 #endif
 
 
+// System.Text.RegularExpressions.Regex
+struct Regex_t1803876613;
 // System.ComponentModel.PropertyDescriptor
 struct PropertyDescriptor_t4250402154;
 // System.ComponentModel.MemberDescriptor
@@ -27,8 +29,6 @@ struct IPAddress_t1399971723;
 struct Capture_t4157900610;
 // System.Text.RegularExpressions.Group
 struct Group_t3761430853;
-// System.Text.RegularExpressions.Regex
-struct Regex_t1803876613;
 // System.ComponentModel.MarshalByValueComponent
 struct MarshalByValueComponent_t3997823175;
 // System.ComponentModel.IComponent
@@ -41,6 +41,7 @@ struct ISupportInitialize_t1887203168;
 struct ISupportInitializeNotification_t2045243097;
 
 #include "mscorlib_System_Array3829468939.h"
+#include "System_System_Text_RegularExpressions_Regex1803876613.h"
 #include "System_System_ComponentModel_PropertyDescriptor4250402154.h"
 #include "System_System_ComponentModel_MemberDescriptor3749827553.h"
 #include "System_System_ComponentModel_TypeDescriptionProvid2438624375.h"
@@ -53,11 +54,25 @@ struct ISupportInitializeNotification_t2045243097;
 #include "System_System_Text_RegularExpressions_Group3761430853.h"
 #include "System_System_Text_RegularExpressions_Mark2724874473.h"
 #include "System_System_Uri_UriScheme1876590943.h"
-#include "System_System_Text_RegularExpressions_Regex1803876613.h"
 #include "System_System_ComponentModel_MarshalByValueCompone3997823175.h"
 #include "System_System_ComponentModel_ListSortDirection4186912589.h"
 
 #pragma once
+// System.Text.RegularExpressions.Regex[]
+struct RegexU5BU5D_t3677892936  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Regex_t1803876613 * m_Items[1];
+
+public:
+	inline Regex_t1803876613 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Regex_t1803876613 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Regex_t1803876613 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // System.ComponentModel.PropertyDescriptor[]
 struct PropertyDescriptorU5BU5D_t2049367471  : public Il2CppArray
 {
@@ -233,21 +248,6 @@ public:
 	inline void SetAt(il2cpp_array_size_t index, UriScheme_t1876590943  value)
 	{
 		m_Items[index] = value;
-	}
-};
-// System.Text.RegularExpressions.Regex[]
-struct RegexU5BU5D_t3677892936  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) Regex_t1803876613 * m_Items[1];
-
-public:
-	inline Regex_t1803876613 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline Regex_t1803876613 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, Regex_t1803876613 * value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // System.ComponentModel.MarshalByValueComponent[]

@@ -1482,7 +1482,7 @@ IL_0013:
 		Il2CppObject * L_6 = ___behaviour0;
 		ObjectU5BU5D_t3614634134* L_7 = V_0;
 		NullCheck(L_4);
-		Il2CppObject * L_8 = VirtFuncInvoker8< Il2CppObject *, String_t*, int32_t, Binder_t3404612058 *, Il2CppObject *, ObjectU5BU5D_t3614634134*, ParameterModifierU5BU5D_t963192633*, CultureInfo_t3500843524 *, StringU5BU5D_t1642385972* >::Invoke(86 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_4, L_5, ((int32_t)308), (Binder_t3404612058 *)NULL, L_6, L_7, (ParameterModifierU5BU5D_t963192633*)(ParameterModifierU5BU5D_t963192633*)NULL, (CultureInfo_t3500843524 *)NULL, (StringU5BU5D_t1642385972*)(StringU5BU5D_t1642385972*)NULL);
+		Il2CppObject * L_8 = VirtFuncInvoker8< Il2CppObject *, String_t*, int32_t, Binder_t3404612058 *, Il2CppObject *, ObjectU5BU5D_t3614634134*, ParameterModifierU5BU5D_t963192633*, CultureInfo_t3500843524 *, StringU5BU5D_t1642385972* >::Invoke(78 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_4, L_5, ((int32_t)308), (Binder_t3404612058 *)NULL, L_6, L_7, (ParameterModifierU5BU5D_t963192633*)(ParameterModifierU5BU5D_t963192633*)NULL, (CultureInfo_t3500843524 *)NULL, (StringU5BU5D_t1642385972*)(StringU5BU5D_t1642385972*)NULL);
 		return L_8;
 	}
 }
@@ -6260,7 +6260,7 @@ IL_0040:
 	{
 		Type_t * L_10 = V_4;
 		NullCheck(L_10);
-		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_10);
 		V_5 = L_11;
 		String_t* L_12 = V_5;
 		if (!L_12)
@@ -6393,7 +6393,7 @@ IL_00ee:
 	{
 		Type_t * L_47 = V_4;
 		NullCheck(L_47);
-		String_t* L_48 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_47);
+		String_t* L_48 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_47);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_49 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_48, _stringLiteral3379456769, /*hidden argument*/NULL);
 		if (L_49)
@@ -6417,7 +6417,7 @@ IL_0140:
 	{
 		Type_t * L_53 = V_4;
 		NullCheck(L_53);
-		String_t* L_54 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_53);
+		String_t* L_54 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_53);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_55 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_54, _stringLiteral3379456769, /*hidden argument*/NULL);
 		if (L_55)
@@ -6441,7 +6441,7 @@ IL_016c:
 	{
 		Type_t * L_59 = V_4;
 		NullCheck(L_59);
-		String_t* L_60 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_59);
+		String_t* L_60 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_59);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_61 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_60, _stringLiteral3379456769, /*hidden argument*/NULL);
 		if (L_61)
@@ -6465,7 +6465,7 @@ IL_0198:
 	{
 		Type_t * L_65 = V_4;
 		NullCheck(L_65);
-		String_t* L_66 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_65);
+		String_t* L_66 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_65);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_67 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_66, _stringLiteral1799027380, /*hidden argument*/NULL);
 		G_B24_0 = ((int32_t)(L_67));
@@ -10280,7 +10280,7 @@ IL_006f:
 extern Il2CppClass* Dictionary_2_t3943999495_il2cpp_TypeInfo_var;
 extern Il2CppClass* Encoding_t663144255_il2cpp_TypeInfo_var;
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const MethodInfo* Dictionary_2__ctor_m760167321_MethodInfo_var;
+extern const MethodInfo* Dictionary_2__ctor_m2056970961_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_set_Item_m4244870320_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1048821954;
 extern Il2CppCodeGenString* _stringLiteral1605073222;
@@ -10298,7 +10298,7 @@ extern "C"  Dictionary_2_t3943999495 * WWWForm_get_headers_m3744493569 (WWWForm_
 	Dictionary_2_t3943999495 * V_0 = NULL;
 	{
 		Dictionary_2_t3943999495 * L_0 = (Dictionary_2_t3943999495 *)il2cpp_codegen_object_new(Dictionary_2_t3943999495_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m760167321(L_0, /*hidden argument*/Dictionary_2__ctor_m760167321_MethodInfo_var);
+		Dictionary_2__ctor_m2056970961(L_0, /*hidden argument*/Dictionary_2__ctor_m2056970961_MethodInfo_var);
 		V_0 = L_0;
 		bool L_1 = __this->get_containsFiles_5();
 		if (!L_1)

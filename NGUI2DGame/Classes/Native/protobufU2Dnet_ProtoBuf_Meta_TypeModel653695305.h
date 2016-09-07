@@ -12,8 +12,6 @@
 
 // System.Type
 struct Type_t;
-// ProtoBuf.Meta.TypeFormatEventHandler
-struct TypeFormatEventHandler_t3452100977;
 
 #include "mscorlib_System_Object2689449295.h"
 
@@ -27,17 +25,16 @@ struct TypeFormatEventHandler_t3452100977;
 struct  TypeModel_t653695305  : public Il2CppObject
 {
 public:
-	// ProtoBuf.Meta.TypeFormatEventHandler ProtoBuf.Meta.TypeModel::DynamicTypeFormatting
-	TypeFormatEventHandler_t3452100977 * ___DynamicTypeFormatting_1;
+	// System.Boolean ProtoBuf.Meta.TypeModel::forwardsOnly
+	bool ___forwardsOnly_1;
 
 public:
-	inline static int32_t get_offset_of_DynamicTypeFormatting_1() { return static_cast<int32_t>(offsetof(TypeModel_t653695305, ___DynamicTypeFormatting_1)); }
-	inline TypeFormatEventHandler_t3452100977 * get_DynamicTypeFormatting_1() const { return ___DynamicTypeFormatting_1; }
-	inline TypeFormatEventHandler_t3452100977 ** get_address_of_DynamicTypeFormatting_1() { return &___DynamicTypeFormatting_1; }
-	inline void set_DynamicTypeFormatting_1(TypeFormatEventHandler_t3452100977 * value)
+	inline static int32_t get_offset_of_forwardsOnly_1() { return static_cast<int32_t>(offsetof(TypeModel_t653695305, ___forwardsOnly_1)); }
+	inline bool get_forwardsOnly_1() const { return ___forwardsOnly_1; }
+	inline bool* get_address_of_forwardsOnly_1() { return &___forwardsOnly_1; }
+	inline void set_forwardsOnly_1(bool value)
 	{
-		___DynamicTypeFormatting_1 = value;
-		Il2CppCodeGenWriteBarrier(&___DynamicTypeFormatting_1, value);
+		___forwardsOnly_1 = value;
 	}
 };
 

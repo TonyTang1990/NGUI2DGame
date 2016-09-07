@@ -10,8 +10,6 @@
 
 #include <stdint.h>
 
-// System.Reflection.MemberInfo
-struct MemberInfo_t;
 // System.String
 struct String_t;
 
@@ -29,68 +27,47 @@ struct String_t;
 struct  ProtoMemberAttribute_t3383080044  : public Attribute_t542643598
 {
 public:
-	// System.Reflection.MemberInfo ProtoBuf.ProtoMemberAttribute::Member
-	MemberInfo_t * ___Member_0;
-	// System.Boolean ProtoBuf.ProtoMemberAttribute::TagIsPinned
-	bool ___TagIsPinned_1;
 	// System.String ProtoBuf.ProtoMemberAttribute::name
-	String_t* ___name_2;
+	String_t* ___name_0;
 	// ProtoBuf.DataFormat ProtoBuf.ProtoMemberAttribute::dataFormat
-	int32_t ___dataFormat_3;
+	int32_t ___dataFormat_1;
 	// System.Int32 ProtoBuf.ProtoMemberAttribute::tag
-	int32_t ___tag_4;
+	int32_t ___tag_2;
 	// ProtoBuf.MemberSerializationOptions ProtoBuf.ProtoMemberAttribute::options
-	int32_t ___options_5;
+	int32_t ___options_3;
 
 public:
-	inline static int32_t get_offset_of_Member_0() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___Member_0)); }
-	inline MemberInfo_t * get_Member_0() const { return ___Member_0; }
-	inline MemberInfo_t ** get_address_of_Member_0() { return &___Member_0; }
-	inline void set_Member_0(MemberInfo_t * value)
+	inline static int32_t get_offset_of_name_0() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___name_0)); }
+	inline String_t* get_name_0() const { return ___name_0; }
+	inline String_t** get_address_of_name_0() { return &___name_0; }
+	inline void set_name_0(String_t* value)
 	{
-		___Member_0 = value;
-		Il2CppCodeGenWriteBarrier(&___Member_0, value);
+		___name_0 = value;
+		Il2CppCodeGenWriteBarrier(&___name_0, value);
 	}
 
-	inline static int32_t get_offset_of_TagIsPinned_1() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___TagIsPinned_1)); }
-	inline bool get_TagIsPinned_1() const { return ___TagIsPinned_1; }
-	inline bool* get_address_of_TagIsPinned_1() { return &___TagIsPinned_1; }
-	inline void set_TagIsPinned_1(bool value)
+	inline static int32_t get_offset_of_dataFormat_1() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___dataFormat_1)); }
+	inline int32_t get_dataFormat_1() const { return ___dataFormat_1; }
+	inline int32_t* get_address_of_dataFormat_1() { return &___dataFormat_1; }
+	inline void set_dataFormat_1(int32_t value)
 	{
-		___TagIsPinned_1 = value;
+		___dataFormat_1 = value;
 	}
 
-	inline static int32_t get_offset_of_name_2() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___name_2)); }
-	inline String_t* get_name_2() const { return ___name_2; }
-	inline String_t** get_address_of_name_2() { return &___name_2; }
-	inline void set_name_2(String_t* value)
+	inline static int32_t get_offset_of_tag_2() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___tag_2)); }
+	inline int32_t get_tag_2() const { return ___tag_2; }
+	inline int32_t* get_address_of_tag_2() { return &___tag_2; }
+	inline void set_tag_2(int32_t value)
 	{
-		___name_2 = value;
-		Il2CppCodeGenWriteBarrier(&___name_2, value);
+		___tag_2 = value;
 	}
 
-	inline static int32_t get_offset_of_dataFormat_3() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___dataFormat_3)); }
-	inline int32_t get_dataFormat_3() const { return ___dataFormat_3; }
-	inline int32_t* get_address_of_dataFormat_3() { return &___dataFormat_3; }
-	inline void set_dataFormat_3(int32_t value)
+	inline static int32_t get_offset_of_options_3() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___options_3)); }
+	inline int32_t get_options_3() const { return ___options_3; }
+	inline int32_t* get_address_of_options_3() { return &___options_3; }
+	inline void set_options_3(int32_t value)
 	{
-		___dataFormat_3 = value;
-	}
-
-	inline static int32_t get_offset_of_tag_4() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___tag_4)); }
-	inline int32_t get_tag_4() const { return ___tag_4; }
-	inline int32_t* get_address_of_tag_4() { return &___tag_4; }
-	inline void set_tag_4(int32_t value)
-	{
-		___tag_4 = value;
-	}
-
-	inline static int32_t get_offset_of_options_5() { return static_cast<int32_t>(offsetof(ProtoMemberAttribute_t3383080044, ___options_5)); }
-	inline int32_t get_options_5() const { return ___options_5; }
-	inline int32_t* get_address_of_options_5() { return &___options_5; }
-	inline void set_options_5(int32_t value)
-	{
-		___options_5 = value;
+		___options_3 = value;
 	}
 };
 

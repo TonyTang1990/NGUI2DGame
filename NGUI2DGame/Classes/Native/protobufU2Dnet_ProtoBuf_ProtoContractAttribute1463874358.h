@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+// System.String
+struct String_t;
 
 #include "mscorlib_System_Attribute542643598.h"
 
@@ -23,8 +25,18 @@
 struct  ProtoContractAttribute_t1463874358  : public Attribute_t542643598
 {
 public:
+	// System.String ProtoBuf.ProtoContractAttribute::name
+	String_t* ___name_0;
 
 public:
+	inline static int32_t get_offset_of_name_0() { return static_cast<int32_t>(offsetof(ProtoContractAttribute_t1463874358, ___name_0)); }
+	inline String_t* get_name_0() const { return ___name_0; }
+	inline String_t** get_address_of_name_0() { return &___name_0; }
+	inline void set_name_0(String_t* value)
+	{
+		___name_0 = value;
+		Il2CppCodeGenWriteBarrier(&___name_0, value);
+	}
 };
 
 #ifdef __clang__

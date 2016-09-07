@@ -118,8 +118,6 @@ extern "C"  ModuleU5BU5D_t3593287923* Assembly_GetModulesInternal_m666827793 (As
 extern "C"  ModuleU5BU5D_t3593287923* Assembly_GetModules_m2242070953 (Assembly_t4268412390 * __this, bool ___getResourceModules0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Assembly System.Reflection.Assembly::GetExecutingAssembly()
 extern "C"  Assembly_t4268412390 * Assembly_GetExecutingAssembly_m776016337 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.Assembly System.Reflection.Assembly::GetCallingAssembly()
-extern "C"  Assembly_t4268412390 * Assembly_GetCallingAssembly_m3174927549 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Module System.Reflection.Assembly::GetManifestModule()
 extern "C"  Module_t4282841206 * Assembly_GetManifestModule_m767264474 (Assembly_t4268412390 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Module System.Reflection.Assembly::GetManifestModuleInternal()

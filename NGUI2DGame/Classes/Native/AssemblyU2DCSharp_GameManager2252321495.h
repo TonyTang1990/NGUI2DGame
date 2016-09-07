@@ -12,8 +12,8 @@
 
 // GameManager
 struct GameManager_t2252321495;
-// PlayerData
-struct PlayerData_t3643615029;
+// NGUI2DGame.PlayerData
+struct PlayerData_t4175080041;
 // System.String
 struct String_t;
 
@@ -29,16 +29,16 @@ struct String_t;
 struct  GameManager_t2252321495  : public MonoBehaviour_t1158329972
 {
 public:
-	// PlayerData GameManager::mPlayerData
-	PlayerData_t3643615029 * ___mPlayerData_3;
+	// NGUI2DGame.PlayerData GameManager::mPlayerData
+	PlayerData_t4175080041 * ___mPlayerData_3;
 	// System.String GameManager::mProfilePath
 	String_t* ___mProfilePath_4;
 
 public:
 	inline static int32_t get_offset_of_mPlayerData_3() { return static_cast<int32_t>(offsetof(GameManager_t2252321495, ___mPlayerData_3)); }
-	inline PlayerData_t3643615029 * get_mPlayerData_3() const { return ___mPlayerData_3; }
-	inline PlayerData_t3643615029 ** get_address_of_mPlayerData_3() { return &___mPlayerData_3; }
-	inline void set_mPlayerData_3(PlayerData_t3643615029 * value)
+	inline PlayerData_t4175080041 * get_mPlayerData_3() const { return ___mPlayerData_3; }
+	inline PlayerData_t4175080041 ** get_address_of_mPlayerData_3() { return &___mPlayerData_3; }
+	inline void set_mPlayerData_3(PlayerData_t4175080041 * value)
 	{
 		___mPlayerData_3 = value;
 		Il2CppCodeGenWriteBarrier(&___mPlayerData_3, value);

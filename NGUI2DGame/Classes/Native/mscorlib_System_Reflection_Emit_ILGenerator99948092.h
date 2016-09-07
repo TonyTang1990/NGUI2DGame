@@ -16,8 +16,6 @@ struct Type_t;
 struct ByteU5BU5D_t3397334013;
 // System.Reflection.Emit.LocalBuilder[]
 struct LocalBuilderU5BU5D_t3701810439;
-// System.Reflection.Emit.ILExceptionInfo[]
-struct ILExceptionInfoU5BU5D_t2883624771;
 // System.Reflection.Emit.ILTokenInfo[]
 struct ILTokenInfoU5BU5D_t4103159791;
 // System.Reflection.Emit.ILGenerator/LabelData[]
@@ -26,8 +24,6 @@ struct LabelDataU5BU5D_t4181946617;
 struct LabelFixupU5BU5D_t2807174223;
 // System.Reflection.Module
 struct Module_t4282841206;
-// System.Collections.Stack
-struct Stack_t1043988394;
 // System.Reflection.Emit.TokenGenerator
 struct TokenGenerator_t4150817334;
 
@@ -53,28 +49,22 @@ public:
 	int32_t ___cur_stack_4;
 	// System.Reflection.Emit.LocalBuilder[] System.Reflection.Emit.ILGenerator::locals
 	LocalBuilderU5BU5D_t3701810439* ___locals_5;
-	// System.Reflection.Emit.ILExceptionInfo[] System.Reflection.Emit.ILGenerator::ex_handlers
-	ILExceptionInfoU5BU5D_t2883624771* ___ex_handlers_6;
 	// System.Int32 System.Reflection.Emit.ILGenerator::num_token_fixups
-	int32_t ___num_token_fixups_7;
+	int32_t ___num_token_fixups_6;
 	// System.Reflection.Emit.ILTokenInfo[] System.Reflection.Emit.ILGenerator::token_fixups
-	ILTokenInfoU5BU5D_t4103159791* ___token_fixups_8;
+	ILTokenInfoU5BU5D_t4103159791* ___token_fixups_7;
 	// System.Reflection.Emit.ILGenerator/LabelData[] System.Reflection.Emit.ILGenerator::labels
-	LabelDataU5BU5D_t4181946617* ___labels_9;
+	LabelDataU5BU5D_t4181946617* ___labels_8;
 	// System.Int32 System.Reflection.Emit.ILGenerator::num_labels
-	int32_t ___num_labels_10;
+	int32_t ___num_labels_9;
 	// System.Reflection.Emit.ILGenerator/LabelFixup[] System.Reflection.Emit.ILGenerator::fixups
-	LabelFixupU5BU5D_t2807174223* ___fixups_11;
+	LabelFixupU5BU5D_t2807174223* ___fixups_10;
 	// System.Int32 System.Reflection.Emit.ILGenerator::num_fixups
-	int32_t ___num_fixups_12;
+	int32_t ___num_fixups_11;
 	// System.Reflection.Module System.Reflection.Emit.ILGenerator::module
-	Module_t4282841206 * ___module_13;
-	// System.Int32 System.Reflection.Emit.ILGenerator::cur_block
-	int32_t ___cur_block_14;
-	// System.Collections.Stack System.Reflection.Emit.ILGenerator::open_blocks
-	Stack_t1043988394 * ___open_blocks_15;
+	Module_t4282841206 * ___module_12;
 	// System.Reflection.Emit.TokenGenerator System.Reflection.Emit.ILGenerator::token_gen
-	Il2CppObject * ___token_gen_16;
+	Il2CppObject * ___token_gen_13;
 
 public:
 	inline static int32_t get_offset_of_code_1() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___code_1)); }
@@ -119,99 +109,73 @@ public:
 		Il2CppCodeGenWriteBarrier(&___locals_5, value);
 	}
 
-	inline static int32_t get_offset_of_ex_handlers_6() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___ex_handlers_6)); }
-	inline ILExceptionInfoU5BU5D_t2883624771* get_ex_handlers_6() const { return ___ex_handlers_6; }
-	inline ILExceptionInfoU5BU5D_t2883624771** get_address_of_ex_handlers_6() { return &___ex_handlers_6; }
-	inline void set_ex_handlers_6(ILExceptionInfoU5BU5D_t2883624771* value)
+	inline static int32_t get_offset_of_num_token_fixups_6() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___num_token_fixups_6)); }
+	inline int32_t get_num_token_fixups_6() const { return ___num_token_fixups_6; }
+	inline int32_t* get_address_of_num_token_fixups_6() { return &___num_token_fixups_6; }
+	inline void set_num_token_fixups_6(int32_t value)
 	{
-		___ex_handlers_6 = value;
-		Il2CppCodeGenWriteBarrier(&___ex_handlers_6, value);
+		___num_token_fixups_6 = value;
 	}
 
-	inline static int32_t get_offset_of_num_token_fixups_7() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___num_token_fixups_7)); }
-	inline int32_t get_num_token_fixups_7() const { return ___num_token_fixups_7; }
-	inline int32_t* get_address_of_num_token_fixups_7() { return &___num_token_fixups_7; }
-	inline void set_num_token_fixups_7(int32_t value)
+	inline static int32_t get_offset_of_token_fixups_7() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___token_fixups_7)); }
+	inline ILTokenInfoU5BU5D_t4103159791* get_token_fixups_7() const { return ___token_fixups_7; }
+	inline ILTokenInfoU5BU5D_t4103159791** get_address_of_token_fixups_7() { return &___token_fixups_7; }
+	inline void set_token_fixups_7(ILTokenInfoU5BU5D_t4103159791* value)
 	{
-		___num_token_fixups_7 = value;
+		___token_fixups_7 = value;
+		Il2CppCodeGenWriteBarrier(&___token_fixups_7, value);
 	}
 
-	inline static int32_t get_offset_of_token_fixups_8() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___token_fixups_8)); }
-	inline ILTokenInfoU5BU5D_t4103159791* get_token_fixups_8() const { return ___token_fixups_8; }
-	inline ILTokenInfoU5BU5D_t4103159791** get_address_of_token_fixups_8() { return &___token_fixups_8; }
-	inline void set_token_fixups_8(ILTokenInfoU5BU5D_t4103159791* value)
+	inline static int32_t get_offset_of_labels_8() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___labels_8)); }
+	inline LabelDataU5BU5D_t4181946617* get_labels_8() const { return ___labels_8; }
+	inline LabelDataU5BU5D_t4181946617** get_address_of_labels_8() { return &___labels_8; }
+	inline void set_labels_8(LabelDataU5BU5D_t4181946617* value)
 	{
-		___token_fixups_8 = value;
-		Il2CppCodeGenWriteBarrier(&___token_fixups_8, value);
+		___labels_8 = value;
+		Il2CppCodeGenWriteBarrier(&___labels_8, value);
 	}
 
-	inline static int32_t get_offset_of_labels_9() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___labels_9)); }
-	inline LabelDataU5BU5D_t4181946617* get_labels_9() const { return ___labels_9; }
-	inline LabelDataU5BU5D_t4181946617** get_address_of_labels_9() { return &___labels_9; }
-	inline void set_labels_9(LabelDataU5BU5D_t4181946617* value)
+	inline static int32_t get_offset_of_num_labels_9() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___num_labels_9)); }
+	inline int32_t get_num_labels_9() const { return ___num_labels_9; }
+	inline int32_t* get_address_of_num_labels_9() { return &___num_labels_9; }
+	inline void set_num_labels_9(int32_t value)
 	{
-		___labels_9 = value;
-		Il2CppCodeGenWriteBarrier(&___labels_9, value);
+		___num_labels_9 = value;
 	}
 
-	inline static int32_t get_offset_of_num_labels_10() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___num_labels_10)); }
-	inline int32_t get_num_labels_10() const { return ___num_labels_10; }
-	inline int32_t* get_address_of_num_labels_10() { return &___num_labels_10; }
-	inline void set_num_labels_10(int32_t value)
+	inline static int32_t get_offset_of_fixups_10() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___fixups_10)); }
+	inline LabelFixupU5BU5D_t2807174223* get_fixups_10() const { return ___fixups_10; }
+	inline LabelFixupU5BU5D_t2807174223** get_address_of_fixups_10() { return &___fixups_10; }
+	inline void set_fixups_10(LabelFixupU5BU5D_t2807174223* value)
 	{
-		___num_labels_10 = value;
+		___fixups_10 = value;
+		Il2CppCodeGenWriteBarrier(&___fixups_10, value);
 	}
 
-	inline static int32_t get_offset_of_fixups_11() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___fixups_11)); }
-	inline LabelFixupU5BU5D_t2807174223* get_fixups_11() const { return ___fixups_11; }
-	inline LabelFixupU5BU5D_t2807174223** get_address_of_fixups_11() { return &___fixups_11; }
-	inline void set_fixups_11(LabelFixupU5BU5D_t2807174223* value)
+	inline static int32_t get_offset_of_num_fixups_11() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___num_fixups_11)); }
+	inline int32_t get_num_fixups_11() const { return ___num_fixups_11; }
+	inline int32_t* get_address_of_num_fixups_11() { return &___num_fixups_11; }
+	inline void set_num_fixups_11(int32_t value)
 	{
-		___fixups_11 = value;
-		Il2CppCodeGenWriteBarrier(&___fixups_11, value);
+		___num_fixups_11 = value;
 	}
 
-	inline static int32_t get_offset_of_num_fixups_12() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___num_fixups_12)); }
-	inline int32_t get_num_fixups_12() const { return ___num_fixups_12; }
-	inline int32_t* get_address_of_num_fixups_12() { return &___num_fixups_12; }
-	inline void set_num_fixups_12(int32_t value)
+	inline static int32_t get_offset_of_module_12() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___module_12)); }
+	inline Module_t4282841206 * get_module_12() const { return ___module_12; }
+	inline Module_t4282841206 ** get_address_of_module_12() { return &___module_12; }
+	inline void set_module_12(Module_t4282841206 * value)
 	{
-		___num_fixups_12 = value;
+		___module_12 = value;
+		Il2CppCodeGenWriteBarrier(&___module_12, value);
 	}
 
-	inline static int32_t get_offset_of_module_13() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___module_13)); }
-	inline Module_t4282841206 * get_module_13() const { return ___module_13; }
-	inline Module_t4282841206 ** get_address_of_module_13() { return &___module_13; }
-	inline void set_module_13(Module_t4282841206 * value)
+	inline static int32_t get_offset_of_token_gen_13() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___token_gen_13)); }
+	inline Il2CppObject * get_token_gen_13() const { return ___token_gen_13; }
+	inline Il2CppObject ** get_address_of_token_gen_13() { return &___token_gen_13; }
+	inline void set_token_gen_13(Il2CppObject * value)
 	{
-		___module_13 = value;
-		Il2CppCodeGenWriteBarrier(&___module_13, value);
-	}
-
-	inline static int32_t get_offset_of_cur_block_14() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___cur_block_14)); }
-	inline int32_t get_cur_block_14() const { return ___cur_block_14; }
-	inline int32_t* get_address_of_cur_block_14() { return &___cur_block_14; }
-	inline void set_cur_block_14(int32_t value)
-	{
-		___cur_block_14 = value;
-	}
-
-	inline static int32_t get_offset_of_open_blocks_15() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___open_blocks_15)); }
-	inline Stack_t1043988394 * get_open_blocks_15() const { return ___open_blocks_15; }
-	inline Stack_t1043988394 ** get_address_of_open_blocks_15() { return &___open_blocks_15; }
-	inline void set_open_blocks_15(Stack_t1043988394 * value)
-	{
-		___open_blocks_15 = value;
-		Il2CppCodeGenWriteBarrier(&___open_blocks_15, value);
-	}
-
-	inline static int32_t get_offset_of_token_gen_16() { return static_cast<int32_t>(offsetof(ILGenerator_t99948092, ___token_gen_16)); }
-	inline Il2CppObject * get_token_gen_16() const { return ___token_gen_16; }
-	inline Il2CppObject ** get_address_of_token_gen_16() { return &___token_gen_16; }
-	inline void set_token_gen_16(Il2CppObject * value)
-	{
-		___token_gen_16 = value;
-		Il2CppCodeGenWriteBarrier(&___token_gen_16, value);
+		___token_gen_13 = value;
+		Il2CppCodeGenWriteBarrier(&___token_gen_13, value);
 	}
 };
 

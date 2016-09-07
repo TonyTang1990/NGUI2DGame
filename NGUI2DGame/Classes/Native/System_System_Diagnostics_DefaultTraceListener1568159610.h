@@ -12,6 +12,8 @@
 
 // System.String
 struct String_t;
+// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
+struct Dictionary_2_t3986656710;
 
 #include "System_System_Diagnostics_TraceListener3414949279.h"
 
@@ -58,6 +60,10 @@ public:
 	String_t* ___MonoTracePrefix_8;
 	// System.String System.Diagnostics.DefaultTraceListener::MonoTraceFile
 	String_t* ___MonoTraceFile_9;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> System.Diagnostics.DefaultTraceListener::<>f__switch$map3
+	Dictionary_2_t3986656710 * ___U3CU3Ef__switchU24map3_12;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> System.Diagnostics.DefaultTraceListener::<>f__switch$map4
+	Dictionary_2_t3986656710 * ___U3CU3Ef__switchU24map4_13;
 
 public:
 	inline static int32_t get_offset_of_OnWin32_7() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t1568159610_StaticFields, ___OnWin32_7)); }
@@ -84,6 +90,24 @@ public:
 	{
 		___MonoTraceFile_9 = value;
 		Il2CppCodeGenWriteBarrier(&___MonoTraceFile_9, value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map3_12() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t1568159610_StaticFields, ___U3CU3Ef__switchU24map3_12)); }
+	inline Dictionary_2_t3986656710 * get_U3CU3Ef__switchU24map3_12() const { return ___U3CU3Ef__switchU24map3_12; }
+	inline Dictionary_2_t3986656710 ** get_address_of_U3CU3Ef__switchU24map3_12() { return &___U3CU3Ef__switchU24map3_12; }
+	inline void set_U3CU3Ef__switchU24map3_12(Dictionary_2_t3986656710 * value)
+	{
+		___U3CU3Ef__switchU24map3_12 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map3_12, value);
+	}
+
+	inline static int32_t get_offset_of_U3CU3Ef__switchU24map4_13() { return static_cast<int32_t>(offsetof(DefaultTraceListener_t1568159610_StaticFields, ___U3CU3Ef__switchU24map4_13)); }
+	inline Dictionary_2_t3986656710 * get_U3CU3Ef__switchU24map4_13() const { return ___U3CU3Ef__switchU24map4_13; }
+	inline Dictionary_2_t3986656710 ** get_address_of_U3CU3Ef__switchU24map4_13() { return &___U3CU3Ef__switchU24map4_13; }
+	inline void set_U3CU3Ef__switchU24map4_13(Dictionary_2_t3986656710 * value)
+	{
+		___U3CU3Ef__switchU24map4_13 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU3Ef__switchU24map4_13, value);
 	}
 };
 

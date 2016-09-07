@@ -30,14 +30,10 @@ struct ConstructorInfoU5BU5D_t1996683371;
 struct EventInfo_t;
 // System.String
 struct String_t;
-// System.Reflection.EventInfo[]
-struct EventInfoU5BU5D_t2843333291;
 // System.Reflection.FieldInfo
 struct FieldInfo_t;
 // System.Reflection.FieldInfo[]
 struct FieldInfoU5BU5D_t125053523;
-// System.Reflection.MemberInfo[]
-struct MemberInfoU5BU5D_t4238939941;
 // System.Reflection.MethodInfo[]
 struct MethodInfoU5BU5D_t152480188;
 // System.Reflection.MethodInfo
@@ -82,22 +78,16 @@ extern "C"  ConstructorInfo_t2851816542 * GenericTypeParameterBuilder_GetConstru
 extern "C"  ConstructorInfoU5BU5D_t1996683371* GenericTypeParameterBuilder_GetConstructors_m103067670 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.EventInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetEvent(System.String,System.Reflection.BindingFlags)
 extern "C"  EventInfo_t * GenericTypeParameterBuilder_GetEvent_m4210567427 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.EventInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetEvents(System.Reflection.BindingFlags)
-extern "C"  EventInfoU5BU5D_t2843333291* GenericTypeParameterBuilder_GetEvents_m76213758 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetField(System.String,System.Reflection.BindingFlags)
 extern "C"  FieldInfo_t * GenericTypeParameterBuilder_GetField_m1135650395 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetFields(System.Reflection.BindingFlags)
 extern "C"  FieldInfoU5BU5D_t125053523* GenericTypeParameterBuilder_GetFields_m1855948450 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type[] System.Reflection.Emit.GenericTypeParameterBuilder::GetInterfaces()
 extern "C"  TypeU5BU5D_t1664964607* GenericTypeParameterBuilder_GetInterfaces_m922686350 (GenericTypeParameterBuilder_t1370236603 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.MemberInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetMembers(System.Reflection.BindingFlags)
-extern "C"  MemberInfoU5BU5D_t4238939941* GenericTypeParameterBuilder_GetMembers_m2125458826 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetMethods(System.Reflection.BindingFlags)
 extern "C"  MethodInfoU5BU5D_t152480188* GenericTypeParameterBuilder_GetMethods_m1243855818 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
 extern "C"  MethodInfo_t * GenericTypeParameterBuilder_GetMethodImpl_m528545634 (GenericTypeParameterBuilder_t1370236603 * __this, String_t* ___name0, int32_t ___bindingAttr1, Binder_t3404612058 * ___binder2, int32_t ___callConvention3, TypeU5BU5D_t1664964607* ___types4, ParameterModifierU5BU5D_t963192633* ___modifiers5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type[] System.Reflection.Emit.GenericTypeParameterBuilder::GetNestedTypes(System.Reflection.BindingFlags)
-extern "C"  TypeU5BU5D_t1664964607* GenericTypeParameterBuilder_GetNestedTypes_m1002253338 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo[] System.Reflection.Emit.GenericTypeParameterBuilder::GetProperties(System.Reflection.BindingFlags)
 extern "C"  PropertyInfoU5BU5D_t1736152084* GenericTypeParameterBuilder_GetProperties_m571906413 (GenericTypeParameterBuilder_t1370236603 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo System.Reflection.Emit.GenericTypeParameterBuilder::GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])

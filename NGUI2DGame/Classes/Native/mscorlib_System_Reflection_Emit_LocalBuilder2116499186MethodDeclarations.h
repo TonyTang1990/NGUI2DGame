@@ -25,7 +25,3 @@ struct ILGenerator_t99948092;
 
 // System.Void System.Reflection.Emit.LocalBuilder::.ctor(System.Type,System.Reflection.Emit.ILGenerator)
 extern "C"  void LocalBuilder__ctor_m4116797581 (LocalBuilder_t2116499186 * __this, Type_t * ___t0, ILGenerator_t99948092 * ___ilgen1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type System.Reflection.Emit.LocalBuilder::get_LocalType()
-extern "C"  Type_t * LocalBuilder_get_LocalType_m3854069765 (LocalBuilder_t2116499186 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.Reflection.Emit.LocalBuilder::get_LocalIndex()
-extern "C"  int32_t LocalBuilder_get_LocalIndex_m1519477457 (LocalBuilder_t2116499186 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

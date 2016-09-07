@@ -10,13 +10,10 @@
 
 #include <stdint.h>
 
-// System.Object
-struct Il2CppObject;
 // ProtoBuf.SerializationContext
 struct SerializationContext_t3878296411;
 
 #include "mscorlib_System_Object2689449295.h"
-#include "mscorlib_System_Runtime_Serialization_StreamingCon4264247603.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -30,10 +27,6 @@ struct  SerializationContext_t3878296411  : public Il2CppObject
 public:
 	// System.Boolean ProtoBuf.SerializationContext::frozen
 	bool ___frozen_0;
-	// System.Object ProtoBuf.SerializationContext::context
-	Il2CppObject * ___context_1;
-	// System.Runtime.Serialization.StreamingContextStates ProtoBuf.SerializationContext::state
-	int32_t ___state_3;
 
 public:
 	inline static int32_t get_offset_of_frozen_0() { return static_cast<int32_t>(offsetof(SerializationContext_t3878296411, ___frozen_0)); }
@@ -43,39 +36,22 @@ public:
 	{
 		___frozen_0 = value;
 	}
-
-	inline static int32_t get_offset_of_context_1() { return static_cast<int32_t>(offsetof(SerializationContext_t3878296411, ___context_1)); }
-	inline Il2CppObject * get_context_1() const { return ___context_1; }
-	inline Il2CppObject ** get_address_of_context_1() { return &___context_1; }
-	inline void set_context_1(Il2CppObject * value)
-	{
-		___context_1 = value;
-		Il2CppCodeGenWriteBarrier(&___context_1, value);
-	}
-
-	inline static int32_t get_offset_of_state_3() { return static_cast<int32_t>(offsetof(SerializationContext_t3878296411, ___state_3)); }
-	inline int32_t get_state_3() const { return ___state_3; }
-	inline int32_t* get_address_of_state_3() { return &___state_3; }
-	inline void set_state_3(int32_t value)
-	{
-		___state_3 = value;
-	}
 };
 
 struct SerializationContext_t3878296411_StaticFields
 {
 public:
 	// ProtoBuf.SerializationContext ProtoBuf.SerializationContext::default
-	SerializationContext_t3878296411 * ___default_2;
+	SerializationContext_t3878296411 * ___default_1;
 
 public:
-	inline static int32_t get_offset_of_default_2() { return static_cast<int32_t>(offsetof(SerializationContext_t3878296411_StaticFields, ___default_2)); }
-	inline SerializationContext_t3878296411 * get_default_2() const { return ___default_2; }
-	inline SerializationContext_t3878296411 ** get_address_of_default_2() { return &___default_2; }
-	inline void set_default_2(SerializationContext_t3878296411 * value)
+	inline static int32_t get_offset_of_default_1() { return static_cast<int32_t>(offsetof(SerializationContext_t3878296411_StaticFields, ___default_1)); }
+	inline SerializationContext_t3878296411 * get_default_1() const { return ___default_1; }
+	inline SerializationContext_t3878296411 ** get_address_of_default_1() { return &___default_1; }
+	inline void set_default_1(SerializationContext_t3878296411 * value)
 	{
-		___default_2 = value;
-		Il2CppCodeGenWriteBarrier(&___default_2, value);
+		___default_1 = value;
+		Il2CppCodeGenWriteBarrier(&___default_1, value);
 	}
 };
 

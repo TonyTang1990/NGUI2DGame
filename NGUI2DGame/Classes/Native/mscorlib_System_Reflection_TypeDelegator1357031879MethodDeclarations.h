@@ -36,14 +36,10 @@ struct ConstructorInfoU5BU5D_t1996683371;
 struct ObjectU5BU5D_t3614634134;
 // System.Reflection.EventInfo
 struct EventInfo_t;
-// System.Reflection.EventInfo[]
-struct EventInfoU5BU5D_t2843333291;
 // System.Reflection.FieldInfo
 struct FieldInfo_t;
 // System.Reflection.FieldInfo[]
 struct FieldInfoU5BU5D_t125053523;
-// System.Reflection.MemberInfo[]
-struct MemberInfoU5BU5D_t4238939941;
 // System.Reflection.MethodInfo
 struct MethodInfo_t;
 // System.Reflection.MethodInfo[]
@@ -104,22 +100,16 @@ extern "C"  ObjectU5BU5D_t3614634134* TypeDelegator_GetCustomAttributes_m1425512
 extern "C"  Type_t * TypeDelegator_GetElementType_m2787693229 (TypeDelegator_t1357031879 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.EventInfo System.Reflection.TypeDelegator::GetEvent(System.String,System.Reflection.BindingFlags)
 extern "C"  EventInfo_t * TypeDelegator_GetEvent_m2099640616 (TypeDelegator_t1357031879 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.EventInfo[] System.Reflection.TypeDelegator::GetEvents(System.Reflection.BindingFlags)
-extern "C"  EventInfoU5BU5D_t2843333291* TypeDelegator_GetEvents_m3745268361 (TypeDelegator_t1357031879 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo System.Reflection.TypeDelegator::GetField(System.String,System.Reflection.BindingFlags)
 extern "C"  FieldInfo_t * TypeDelegator_GetField_m1232516904 (TypeDelegator_t1357031879 * __this, String_t* ___name0, int32_t ___bindingAttr1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.FieldInfo[] System.Reflection.TypeDelegator::GetFields(System.Reflection.BindingFlags)
 extern "C"  FieldInfoU5BU5D_t125053523* TypeDelegator_GetFields_m2495791561 (TypeDelegator_t1357031879 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type[] System.Reflection.TypeDelegator::GetInterfaces()
 extern "C"  TypeU5BU5D_t1664964607* TypeDelegator_GetInterfaces_m2637438819 (TypeDelegator_t1357031879 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.MemberInfo[] System.Reflection.TypeDelegator::GetMembers(System.Reflection.BindingFlags)
-extern "C"  MemberInfoU5BU5D_t4238939941* TypeDelegator_GetMembers_m372453249 (TypeDelegator_t1357031879 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo System.Reflection.TypeDelegator::GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
 extern "C"  MethodInfo_t * TypeDelegator_GetMethodImpl_m1305669365 (TypeDelegator_t1357031879 * __this, String_t* ___name0, int32_t ___bindingAttr1, Binder_t3404612058 * ___binder2, int32_t ___callConvention3, TypeU5BU5D_t1664964607* ___types4, ParameterModifierU5BU5D_t963192633* ___modifiers5, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MethodInfo[] System.Reflection.TypeDelegator::GetMethods(System.Reflection.BindingFlags)
 extern "C"  MethodInfoU5BU5D_t152480188* TypeDelegator_GetMethods_m95415129 (TypeDelegator_t1357031879 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Type[] System.Reflection.TypeDelegator::GetNestedTypes(System.Reflection.BindingFlags)
-extern "C"  TypeU5BU5D_t1664964607* TypeDelegator_GetNestedTypes_m4191095175 (TypeDelegator_t1357031879 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo[] System.Reflection.TypeDelegator::GetProperties(System.Reflection.BindingFlags)
 extern "C"  PropertyInfoU5BU5D_t1736152084* TypeDelegator_GetProperties_m1948602632 (TypeDelegator_t1357031879 * __this, int32_t ___bindingAttr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.PropertyInfo System.Reflection.TypeDelegator::GetPropertyImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])

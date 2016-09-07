@@ -12662,7 +12662,7 @@ extern "C"  void UnityWebRequest__cctor_m126744318 (Il2CppObject * __this /* sta
 	}
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m1229307206(L_0, _stringLiteral2697683047, /*hidden argument*/NULL);
+		Regex__ctor_m2794328522(L_0, _stringLiteral2697683047, /*hidden argument*/NULL);
 		((UnityWebRequest_t254341728_StaticFields*)UnityWebRequest_t254341728_il2cpp_TypeInfo_var->static_fields)->set_domainRegex_7(L_0);
 		StringU5BU5D_t1642385972* L_1 = ((StringU5BU5D_t1642385972*)SZArrayNew(StringU5BU5D_t1642385972_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20)));
 		NullCheck(L_1);
@@ -14415,7 +14415,7 @@ extern "C"  void UnityWebRequest_set_url_m2494687159 (UnityWebRequest_t254341728
 		V_1 = _stringLiteral1591141764;
 		String_t* L_1 = V_1;
 		Uri_t19570940 * L_2 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m3927533881(L_2, L_1, /*hidden argument*/NULL);
+		Uri__ctor_m1248212436(L_2, L_1, /*hidden argument*/NULL);
 		V_2 = L_2;
 		String_t* L_3 = V_0;
 		NullCheck(L_3);
@@ -14428,7 +14428,7 @@ extern "C"  void UnityWebRequest_set_url_m2494687159 (UnityWebRequest_t254341728
 	{
 		Uri_t19570940 * L_5 = V_2;
 		NullCheck(L_5);
-		String_t* L_6 = Uri_get_Scheme_m55908894(L_5, /*hidden argument*/NULL);
+		String_t* L_6 = Uri_get_Scheme_m1862544965(L_5, /*hidden argument*/NULL);
 		String_t* L_7 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_8 = String_Concat_m612901809(NULL /*static, unused*/, L_6, _stringLiteral372029336, L_7, /*hidden argument*/NULL);
@@ -14448,10 +14448,10 @@ IL_0031:
 	{
 		Uri_t19570940 * L_11 = V_2;
 		NullCheck(L_11);
-		String_t* L_12 = Uri_get_Scheme_m55908894(L_11, /*hidden argument*/NULL);
+		String_t* L_12 = Uri_get_Scheme_m1862544965(L_11, /*hidden argument*/NULL);
 		Uri_t19570940 * L_13 = V_2;
 		NullCheck(L_13);
-		String_t* L_14 = Uri_get_Host_m395387191(L_13, /*hidden argument*/NULL);
+		String_t* L_14 = Uri_get_Host_m2492204157(L_13, /*hidden argument*/NULL);
 		String_t* L_15 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_16 = String_Concat_m1561703559(NULL /*static, unused*/, L_12, _stringLiteral57472706, L_14, L_15, /*hidden argument*/NULL);
@@ -14464,7 +14464,7 @@ IL_0059:
 		Regex_t1803876613 * L_17 = ((UnityWebRequest_t254341728_StaticFields*)UnityWebRequest_t254341728_il2cpp_TypeInfo_var->static_fields)->get_domainRegex_7();
 		String_t* L_18 = V_0;
 		NullCheck(L_17);
-		bool L_19 = Regex_IsMatch_m2159202025(L_17, L_18, /*hidden argument*/NULL);
+		bool L_19 = Regex_IsMatch_m563118126(L_17, L_18, /*hidden argument*/NULL);
 		if (!L_19)
 		{
 			goto IL_007b;
@@ -14473,7 +14473,7 @@ IL_0059:
 	{
 		Uri_t19570940 * L_20 = V_2;
 		NullCheck(L_20);
-		String_t* L_21 = Uri_get_Scheme_m55908894(L_20, /*hidden argument*/NULL);
+		String_t* L_21 = Uri_get_Scheme_m1862544965(L_20, /*hidden argument*/NULL);
 		String_t* L_22 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_23 = String_Concat_m612901809(NULL /*static, unused*/, L_21, _stringLiteral57472706, L_22, /*hidden argument*/NULL);
@@ -14490,7 +14490,7 @@ IL_007d:
 	{ // begin try (depth: 1)
 		String_t* L_24 = V_0;
 		Uri_t19570940 * L_25 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-		Uri__ctor_m3927533881(L_25, L_24, /*hidden argument*/NULL);
+		Uri__ctor_m1248212436(L_25, L_24, /*hidden argument*/NULL);
 		V_3 = L_25;
 		goto IL_00a6;
 	} // end try (depth: 1)
@@ -14514,7 +14514,7 @@ IL_008b:
 			Uri_t19570940 * L_26 = V_2;
 			String_t* L_27 = V_0;
 			Uri_t19570940 * L_28 = (Uri_t19570940 *)il2cpp_codegen_object_new(Uri_t19570940_il2cpp_TypeInfo_var);
-			Uri__ctor_m3550796566(L_28, L_26, L_27, /*hidden argument*/NULL);
+			Uri__ctor_m3196554323(L_28, L_26, L_27, /*hidden argument*/NULL);
 			V_3 = L_28;
 			goto IL_00a1;
 		} // end try (depth: 2)
@@ -14549,7 +14549,7 @@ IL_00a6:
 	{
 		Uri_t19570940 * L_30 = V_3;
 		NullCheck(L_30);
-		String_t* L_31 = Uri_get_AbsoluteUri_m2120317928(L_30, /*hidden argument*/NULL);
+		String_t* L_31 = Uri_get_AbsoluteUri_m656589005(L_30, /*hidden argument*/NULL);
 		UnityWebRequest_InternalSetUrl_m1669953255(__this, L_31, /*hidden argument*/NULL);
 		return;
 	}
@@ -14812,7 +14812,7 @@ extern "C"  StringU5BU5D_t1642385972* UnityWebRequest_InternalGetResponseHeaderK
 extern Il2CppClass* StringComparer_t1574862926_il2cpp_TypeInfo_var;
 extern Il2CppClass* Dictionary_2_t3943999495_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m2975482961_MethodInfo_var;
-extern const MethodInfo* Dictionary_2_Add_m2509825489_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_Add_m2773471257_MethodInfo_var;
 extern const uint32_t UnityWebRequest_GetResponseHeaders_m3806990876_MetadataUsageId;
 extern "C"  Dictionary_2_t3943999495 * UnityWebRequest_GetResponseHeaders_m3806990876 (UnityWebRequest_t254341728 * __this, const MethodInfo* method)
 {
@@ -14871,7 +14871,7 @@ IL_0024:
 		String_t* L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
 		String_t* L_15 = V_3;
 		NullCheck(L_10);
-		Dictionary_2_Add_m2509825489(L_10, L_14, L_15, /*hidden argument*/Dictionary_2_Add_m2509825489_MethodInfo_var);
+		Dictionary_2_Add_m2773471257(L_10, L_14, L_15, /*hidden argument*/Dictionary_2_Add_m2773471257_MethodInfo_var);
 		int32_t L_16 = V_2;
 		V_2 = ((int32_t)((int32_t)L_16+(int32_t)1));
 	}

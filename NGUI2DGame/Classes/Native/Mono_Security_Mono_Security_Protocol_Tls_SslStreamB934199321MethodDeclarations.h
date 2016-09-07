@@ -77,7 +77,7 @@ extern "C"  AsymmetricAlgorithm_t784058677 * SslStreamBase_RaiseLocalPrivateKeyS
 // System.Boolean Mono.Security.Protocol.Tls.SslStreamBase::get_CheckCertRevocationStatus()
 extern "C"  bool SslStreamBase_get_CheckCertRevocationStatus_m2467957380 (SslStreamBase_t934199321 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.Protocol.Tls.SslStreamBase::set_CheckCertRevocationStatus(System.Boolean)
-extern "C"  void SslStreamBase_set_CheckCertRevocationStatus_m2272076007 (SslStreamBase_t934199321 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void SslStreamBase_set_CheckCertRevocationStatus_m703827149 (SslStreamBase_t934199321 * __this, bool ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // Mono.Security.Protocol.Tls.CipherAlgorithmType Mono.Security.Protocol.Tls.SslStreamBase::get_CipherAlgorithm()
 extern "C"  int32_t SslStreamBase_get_CipherAlgorithm_m692718075 (SslStreamBase_t934199321 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 Mono.Security.Protocol.Tls.SslStreamBase::get_CipherStrength()

@@ -36,10 +36,6 @@ struct MethodInfoU5BU5D_t152480188;
 struct PropertyInfo_t;
 // System.Reflection.ConstructorInfo
 struct ConstructorInfo_t2851816542;
-// System.Reflection.MemberInfo[]
-struct MemberInfoU5BU5D_t4238939941;
-// System.Reflection.MemberFilter
-struct MemberFilter_t3405857066;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
 
@@ -56,7 +52,6 @@ struct ObjectU5BU5D_t3614634134;
 #include "mscorlib_System_Reflection_BindingFlags1082350898.h"
 #include "mscorlib_System_Reflection_Binder3404612058.h"
 #include "mscorlib_System_Reflection_CallingConventions1097349142.h"
-#include "mscorlib_System_Reflection_MemberFilter3405857066.h"
 
 // System.Void System.Type::.ctor()
 extern "C"  void Type__ctor_m882675131 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -92,18 +87,10 @@ extern "C"  bool Type_get_IsExplicitLayout_m1489853866 (Type_t * __this, const M
 extern "C"  bool Type_get_IsInterface_m3583817465 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Type::get_IsMarshalByRef()
 extern "C"  bool Type_get_IsMarshalByRef_m863073076 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Type::get_IsNestedAssembly()
-extern "C"  bool Type_get_IsNestedAssembly_m1951285811 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Type::get_IsNestedFamORAssem()
-extern "C"  bool Type_get_IsNestedFamORAssem_m266356355 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Type::get_IsNestedPublic()
-extern "C"  bool Type_get_IsNestedPublic_m2575056966 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Type::get_IsPointer()
 extern "C"  bool Type_get_IsPointer_m3832342327 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Type::get_IsPrimitive()
 extern "C"  bool Type_get_IsPrimitive_m1522841565 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean System.Type::get_IsPublic()
-extern "C"  bool Type_get_IsPublic_m2509548609 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Type::get_IsSealed()
 extern "C"  bool Type_get_IsSealed_m2380985836 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Type::get_IsSerializable()
@@ -198,8 +185,6 @@ extern "C"  ConstructorInfo_t2851816542 * Type_GetConstructor_m132234455 (Type_t
 extern "C"  ConstructorInfo_t2851816542 * Type_GetConstructor_m663514781 (Type_t * __this, int32_t ___bindingAttr0, Binder_t3404612058 * ___binder1, TypeU5BU5D_t1664964607* ___types2, ParameterModifierU5BU5D_t963192633* ___modifiers3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.ConstructorInfo System.Type::GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])
 extern "C"  ConstructorInfo_t2851816542 * Type_GetConstructor_m835344477 (Type_t * __this, int32_t ___bindingAttr0, Binder_t3404612058 * ___binder1, int32_t ___callConvention2, TypeU5BU5D_t1664964607* ___types3, ParameterModifierU5BU5D_t963192633* ___modifiers4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Reflection.MemberInfo[] System.Type::FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)
-extern "C"  MemberInfoU5BU5D_t4238939941* Type_FindMembers_m523804157 (Type_t * __this, int32_t ___memberType0, int32_t ___bindingAttr1, MemberFilter_t3405857066 * ___filter2, Il2CppObject * ___filterCriteria3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Type::ToString()
 extern "C"  String_t* Type_ToString_m2596437994 (Type_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Type::get_IsSystemType()

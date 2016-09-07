@@ -14946,7 +14946,7 @@ extern "C"  Il2CppObject * DataContainer_GetContainerData_m2274948411 (DataConta
 		Type_t * L_0 = __this->get__type_1();
 		Il2CppObject * L_1 = ___value0;
 		NullCheck(L_0);
-		bool L_2 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(46 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_0, L_1);
+		bool L_2 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(42 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_0, L_1);
 		if (!L_2)
 		{
 			goto IL_0013;
@@ -16444,7 +16444,7 @@ extern "C"  DbProviderFactory_t661609867 * DbProviderFactories_GetFactory_m92300
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_6 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(DbProviderFactory_t661609867_0_0_0_var), /*hidden argument*/NULL);
 		NullCheck(L_5);
-		bool L_7 = VirtFuncInvoker1< bool, Type_t * >::Invoke(43 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_5, L_6);
+		bool L_7 = VirtFuncInvoker1< bool, Type_t * >::Invoke(39 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_5, L_6);
 		if (!L_7)
 		{
 			goto IL_0056;
@@ -16453,7 +16453,7 @@ extern "C"  DbProviderFactory_t661609867 * DbProviderFactories_GetFactory_m92300
 	{
 		Type_t * L_8 = V_1;
 		NullCheck(L_8);
-		FieldInfo_t * L_9 = VirtFuncInvoker2< FieldInfo_t *, String_t*, int32_t >::Invoke(52 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_8, _stringLiteral3920381729, ((int32_t)24));
+		FieldInfo_t * L_9 = VirtFuncInvoker2< FieldInfo_t *, String_t*, int32_t >::Invoke(47 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_8, _stringLiteral3920381729, ((int32_t)24));
 		V_2 = L_9;
 		FieldInfo_t * L_10 = V_2;
 		if (!L_10)
@@ -25742,7 +25742,7 @@ IL_003e:
 		Type_t * L_9 = DataColumn_get_DataType_m3342791580(__this, /*hidden argument*/NULL);
 		Il2CppObject * L_10 = ___value0;
 		NullCheck(L_9);
-		bool L_11 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(46 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_9, L_10);
+		bool L_11 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(42 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_9, L_10);
 		if (!L_11)
 		{
 			goto IL_005b;
@@ -27428,7 +27428,7 @@ IL_000c:
 	{
 		Type_t * L_2 = ___type0;
 		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(38 /* System.String System.Type::get_Namespace() */, L_2);
+		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(34 /* System.String System.Type::get_Namespace() */, L_2);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		bool L_4 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_3, _stringLiteral1370049534, /*hidden argument*/NULL);
 		if (!L_4)
@@ -40251,7 +40251,7 @@ IL_001b:
 		StringReader_t1480123486 * L_8 = (StringReader_t1480123486 *)il2cpp_codegen_object_new(StringReader_t1480123486_il2cpp_TypeInfo_var);
 		StringReader__ctor_m643998729(L_8, L_7, /*hidden argument*/NULL);
 		XmlTextReader_t3514170725 * L_9 = (XmlTextReader_t3514170725 *)il2cpp_codegen_object_new(XmlTextReader_t3514170725_il2cpp_TypeInfo_var);
-		XmlTextReader__ctor_m2186180914(L_9, L_8, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m1482280167(L_9, L_8, /*hidden argument*/NULL);
 		V_1 = L_9;
 		XmlTextReader_t3514170725 * L_10 = V_1;
 		DataSet_ReadXmlSchema_m197103709(__this, L_10, /*hidden argument*/NULL);
@@ -42976,7 +42976,7 @@ extern "C"  void DataSet_ReadXmlSchema_m1454591420 (DataSet_t3097402844 * __this
 	{
 		TextReader_t1561828458 * L_0 = ___reader0;
 		XmlTextReader_t3514170725 * L_1 = (XmlTextReader_t3514170725 *)il2cpp_codegen_object_new(XmlTextReader_t3514170725_il2cpp_TypeInfo_var);
-		XmlTextReader__ctor_m2186180914(L_1, L_0, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m1482280167(L_1, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		XmlReader_t3675626668 * L_2 = V_0;
 		DataSet_ReadXmlSchema_m197103709(__this, L_2, /*hidden argument*/NULL);
@@ -43033,7 +43033,7 @@ extern "C"  int32_t DataSet_ReadXml_m2895269194 (DataSet_t3097402844 * __this, T
 	{
 		TextReader_t1561828458 * L_0 = ___reader0;
 		XmlTextReader_t3514170725 * L_1 = (XmlTextReader_t3514170725 *)il2cpp_codegen_object_new(XmlTextReader_t3514170725_il2cpp_TypeInfo_var);
-		XmlTextReader__ctor_m2186180914(L_1, L_0, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m1482280167(L_1, L_0, /*hidden argument*/NULL);
 		int32_t L_2 = ___mode1;
 		int32_t L_3 = DataSet_ReadXml_m1687787759(__this, L_1, L_2, /*hidden argument*/NULL);
 		return L_3;
@@ -43389,7 +43389,7 @@ IL_0187:
 	{
 		V_1 = G_B33_0;
 		XmlDocument_t3649534162 * L_51 = (XmlDocument_t3649534162 *)il2cpp_codegen_object_new(XmlDocument_t3649534162_il2cpp_TypeInfo_var);
-		XmlDocument__ctor_m3872501054(L_51, /*hidden argument*/NULL);
+		XmlDocument__ctor_m3336214851(L_51, /*hidden argument*/NULL);
 		V_2 = L_51;
 		XmlDocument_t3649534162 * L_52 = V_2;
 		XmlReader_t3675626668 * L_53 = ___reader0;
@@ -43821,7 +43821,7 @@ IL_03d6:
 	{
 		XmlDocument_t3649534162 * L_148 = V_2;
 		XmlNodeReader_t1022603664 * L_149 = (XmlNodeReader_t1022603664 *)il2cpp_codegen_object_new(XmlNodeReader_t1022603664_il2cpp_TypeInfo_var);
-		XmlNodeReader__ctor_m994151033(L_149, L_148, /*hidden argument*/NULL);
+		XmlNodeReader__ctor_m1586642800(L_149, L_148, /*hidden argument*/NULL);
 		___reader0 = L_149;
 		XmlReader_t3675626668 * L_150 = ___reader0;
 		int32_t L_151 = ___mode1;
@@ -43893,7 +43893,7 @@ extern "C"  void DataSet_GetObjectData_m1658932847 (DataSet_t3097402844 * __this
 		V_0 = L_5;
 		StringWriter_t4139609088 * L_6 = V_0;
 		XmlTextWriter_t2527250655 * L_7 = (XmlTextWriter_t2527250655 *)il2cpp_codegen_object_new(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
-		XmlTextWriter__ctor_m3230461554(L_7, L_6, /*hidden argument*/NULL);
+		XmlTextWriter__ctor_m867344167(L_7, L_6, /*hidden argument*/NULL);
 		V_1 = L_7;
 		XmlTextWriter_t2527250655 * L_8 = V_1;
 		DataSet_DoWriteXmlSchema_m1443107091(__this, L_8, /*hidden argument*/NULL);
@@ -43911,7 +43911,7 @@ extern "C"  void DataSet_GetObjectData_m1658932847 (DataSet_t3097402844 * __this
 		V_0 = L_13;
 		StringWriter_t4139609088 * L_14 = V_0;
 		XmlTextWriter_t2527250655 * L_15 = (XmlTextWriter_t2527250655 *)il2cpp_codegen_object_new(XmlTextWriter_t2527250655_il2cpp_TypeInfo_var);
-		XmlTextWriter__ctor_m3230461554(L_15, L_14, /*hidden argument*/NULL);
+		XmlTextWriter__ctor_m867344167(L_15, L_14, /*hidden argument*/NULL);
 		V_1 = L_15;
 		XmlTextWriter_t2527250655 * L_16 = V_1;
 		DataSet_WriteXml_m2215249435(__this, L_16, 2, /*hidden argument*/NULL);
@@ -43967,7 +43967,7 @@ extern "C"  void DataSet_GetSerializationData_m1534592590 (DataSet_t3097402844 *
 		StringReader_t1480123486 * L_4 = (StringReader_t1480123486 *)il2cpp_codegen_object_new(StringReader_t1480123486_il2cpp_TypeInfo_var);
 		StringReader__ctor_m643998729(L_4, L_3, /*hidden argument*/NULL);
 		XmlTextReader_t3514170725 * L_5 = (XmlTextReader_t3514170725 *)il2cpp_codegen_object_new(XmlTextReader_t3514170725_il2cpp_TypeInfo_var);
-		XmlTextReader__ctor_m2186180914(L_5, L_4, /*hidden argument*/NULL);
+		XmlTextReader__ctor_m1482280167(L_5, L_4, /*hidden argument*/NULL);
 		V_1 = L_5;
 		XmlTextReader_t3514170725 * L_6 = V_1;
 		DataSet_ReadXml_m1687787759(__this, L_6, 4, /*hidden argument*/NULL);
@@ -44794,7 +44794,7 @@ IL_0172:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_65 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
 		NullCheck(L_61);
-		XmlWriter_WriteElementString_m4118563696(L_61, L_64, L_65, /*hidden argument*/NULL);
+		XmlWriter_WriteElementString_m1467633369(L_61, L_64, L_65, /*hidden argument*/NULL);
 		goto IL_02c5;
 	}
 
@@ -45203,7 +45203,7 @@ IL_003a:
 		NullCheck(L_22);
 		Type_t * L_23 = DataColumn_get_DataType_m3342791580(L_22, /*hidden argument*/NULL);
 		NullCheck(L_21);
-		bool L_24 = VirtFuncInvoker1< bool, Type_t * >::Invoke(45 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_21, L_23);
+		bool L_24 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_21, L_23);
 		if (L_24)
 		{
 			goto IL_0082;
@@ -45524,7 +45524,7 @@ IL_001f:
 		String_t* L_8 = ___name4;
 		String_t* L_9 = ___stringValue5;
 		NullCheck(L_7);
-		XmlWriter_WriteAttributeString_m4117287560(L_7, L_8, L_9, /*hidden argument*/NULL);
+		XmlWriter_WriteAttributeString_m3169493699(L_7, L_8, L_9, /*hidden argument*/NULL);
 		goto IL_002e;
 	}
 
@@ -46457,7 +46457,7 @@ IL_02c9:
 		NullCheck(L_120);
 		Type_t * L_121 = Object_GetType_m191970594(L_120, /*hidden argument*/NULL);
 		NullCheck(L_121);
-		Type_t * L_122 = VirtFuncInvoker0< Type_t * >::Invoke(48 /* System.Type System.Type::GetElementType() */, L_121);
+		Type_t * L_122 = VirtFuncInvoker0< Type_t * >::Invoke(44 /* System.Type System.Type::GetElementType() */, L_121);
 		if ((!(((Il2CppObject*)(Type_t *)L_117) == ((Il2CppObject*)(Type_t *)L_122))))
 		{
 			goto IL_0389;

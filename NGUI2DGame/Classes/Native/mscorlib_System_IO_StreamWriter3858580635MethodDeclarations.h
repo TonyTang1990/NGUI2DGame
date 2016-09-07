@@ -28,6 +28,8 @@ struct CharU5BU5D_t1328083999;
 #include "mscorlib_System_Text_Encoding663144255.h"
 #include "mscorlib_System_String2029220233.h"
 
+// System.Void System.IO.StreamWriter::.ctor(System.IO.Stream)
+extern "C"  void StreamWriter__ctor_m3847064531 (StreamWriter_t3858580635 * __this, Stream_t3255436806 * ___stream0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamWriter::.ctor(System.IO.Stream,System.Text.Encoding)
 extern "C"  void StreamWriter__ctor_m3823607994 (StreamWriter_t3858580635 * __this, Stream_t3255436806 * ___stream0, Encoding_t663144255 * ___encoding1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.StreamWriter::.ctor(System.IO.Stream,System.Text.Encoding,System.Int32)

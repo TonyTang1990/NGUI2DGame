@@ -14,16 +14,16 @@
 
 // GameManager
 struct GameManager_t2252321495;
-// PlayerData
-struct PlayerData_t3643615029;
+// NGUI2DGame.PlayerData
+struct PlayerData_t4175080041;
 
 #include "codegen/il2cpp-codegen.h"
-#include "AssemblyU2DCSharp_PlayerData3643615029.h"
+#include "PlayerData_NGUI2DGame_PlayerData4175080041.h"
 
 // System.Void GameManager::.ctor()
 extern "C"  void GameManager__ctor_m293624896 (GameManager_t2252321495 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void GameManager::set_ValidPlayerData(PlayerData)
-extern "C"  void GameManager_set_ValidPlayerData_m3514350613 (GameManager_t2252321495 * __this, PlayerData_t3643615029 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void GameManager::set_ValidPlayerData(NGUI2DGame.PlayerData)
+extern "C"  void GameManager_set_ValidPlayerData_m4228567702 (GameManager_t2252321495 * __this, PlayerData_t4175080041 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameManager::Awake()
 extern "C"  void GameManager_Awake_m99497495 (GameManager_t2252321495 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void GameManager::SavePlayerData()

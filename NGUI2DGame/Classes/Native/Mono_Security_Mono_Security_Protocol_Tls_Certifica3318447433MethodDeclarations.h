@@ -32,7 +32,7 @@ struct AsyncCallback_t163412349;
 #include "mscorlib_System_AsyncCallback163412349.h"
 
 // System.Void Mono.Security.Protocol.Tls.CertificateValidationCallback2::.ctor(System.Object,System.IntPtr)
-extern "C"  void CertificateValidationCallback2__ctor_m1103932635 (CertificateValidationCallback2_t3318447433 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void CertificateValidationCallback2__ctor_m1915259009 (CertificateValidationCallback2_t3318447433 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // Mono.Security.Protocol.Tls.ValidationResult Mono.Security.Protocol.Tls.CertificateValidationCallback2::Invoke(Mono.Security.X509.X509CertificateCollection)
 extern "C"  ValidationResult_t1782558132 * CertificateValidationCallback2_Invoke_m436894540 (CertificateValidationCallback2_t3318447433 * __this, X509CertificateCollection_t3592472866 * ___collection0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IAsyncResult Mono.Security.Protocol.Tls.CertificateValidationCallback2::BeginInvoke(Mono.Security.X509.X509CertificateCollection,System.AsyncCallback,System.Object)
