@@ -32,8 +32,14 @@ struct IEnumerator_t1466026749;
 extern "C"  Il2CppObject * DataTableMappingCollection_System_Collections_IList_get_Item_m1079733259 (DataTableMappingCollection_t394073712 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Data.Common.DataTableMappingCollection::System.Collections.IList.set_Item(System.Int32,System.Object)
 extern "C"  void DataTableMappingCollection_System_Collections_IList_set_Item_m4214970742 (DataTableMappingCollection_t394073712 * __this, int32_t ___index0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.Common.DataTableMappingCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool DataTableMappingCollection_System_Collections_ICollection_get_IsSynchronized_m746570132 (DataTableMappingCollection_t394073712 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Data.Common.DataTableMappingCollection::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * DataTableMappingCollection_System_Collections_ICollection_get_SyncRoot_m2510543170 (DataTableMappingCollection_t394073712 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.Common.DataTableMappingCollection::System.Collections.IList.get_IsFixedSize()
+extern "C"  bool DataTableMappingCollection_System_Collections_IList_get_IsFixedSize_m2032807551 (DataTableMappingCollection_t394073712 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.Common.DataTableMappingCollection::System.Collections.IList.get_IsReadOnly()
+extern "C"  bool DataTableMappingCollection_System_Collections_IList_get_IsReadOnly_m2693453408 (DataTableMappingCollection_t394073712 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Data.Common.DataTableMappingCollection::get_Count()
 extern "C"  int32_t DataTableMappingCollection_get_Count_m3931308140 (DataTableMappingCollection_t394073712 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Data.Common.DataTableMapping System.Data.Common.DataTableMappingCollection::get_Item(System.Int32)

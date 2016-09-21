@@ -32,6 +32,8 @@ extern "C"  void StandardValuesCollection__ctor_m3588346378 (StandardValuesColle
 extern "C"  void StandardValuesCollection_System_Collections_ICollection_CopyTo_m2336033813 (StandardValuesCollection_t191679357 * __this, Il2CppArray * ___array0, int32_t ___index1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.ComponentModel.TypeConverter/StandardValuesCollection::System.Collections.IEnumerable.GetEnumerator()
 extern "C"  Il2CppObject * StandardValuesCollection_System_Collections_IEnumerable_GetEnumerator_m2527894192 (StandardValuesCollection_t191679357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.ComponentModel.TypeConverter/StandardValuesCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool StandardValuesCollection_System_Collections_ICollection_get_IsSynchronized_m143668789 (StandardValuesCollection_t191679357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.TypeConverter/StandardValuesCollection::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * StandardValuesCollection_System_Collections_ICollection_get_SyncRoot_m1219513013 (StandardValuesCollection_t191679357 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.ComponentModel.TypeConverter/StandardValuesCollection::System.Collections.ICollection.get_Count()

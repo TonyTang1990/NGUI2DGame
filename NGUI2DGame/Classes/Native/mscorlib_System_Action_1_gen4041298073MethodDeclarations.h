@@ -17,7 +17,7 @@
 #include "mscorlib_System_Action_1_gen2491248677MethodDeclarations.h"
 
 // System.Void System.Action`1<UnityEngine.Font>::.ctor(System.Object,System.IntPtr)
-#define Action_1__ctor_m3094392686(__this, ___object0, ___method1, method) ((  void (*) (Action_1_t4041298073 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Action_1__ctor_m584977596_gshared)(__this, ___object0, ___method1, method)
+#define Action_1__ctor_m3513547072(__this, ___object0, ___method1, method) ((  void (*) (Action_1_t4041298073 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Action_1__ctor_m584977596_gshared)(__this, ___object0, ___method1, method)
 // System.Void System.Action`1<UnityEngine.Font>::Invoke(T)
 #define Action_1_Invoke_m1059548733(__this, ___obj0, method) ((  void (*) (Action_1_t4041298073 *, Font_t4239498691 *, const MethodInfo*))Action_1_Invoke_m1684652980_gshared)(__this, ___obj0, method)
 // System.IAsyncResult System.Action`1<UnityEngine.Font>::BeginInvoke(T,System.AsyncCallback,System.Object)

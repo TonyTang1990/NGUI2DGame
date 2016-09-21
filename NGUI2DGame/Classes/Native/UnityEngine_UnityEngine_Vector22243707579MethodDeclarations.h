@@ -28,6 +28,10 @@ struct Vector2_t2243707579_marshaled_com;
 
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
 extern "C"  void Vector2__ctor_m3067419446 (Vector2_t2243707579 * __this, float ___x0, float ___y1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Vector2::get_Item(System.Int32)
+extern "C"  float Vector2_get_Item_m2792130561 (Vector2_t2243707579 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Vector2::set_Item(System.Int32,System.Single)
+extern "C"  void Vector2_set_Item_m3881967114 (Vector2_t2243707579 * __this, int32_t ___index0, float ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::Lerp(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
 extern "C"  Vector2_t2243707579  Vector2_Lerp_m1511850087 (Il2CppObject * __this /* static, unused */, Vector2_t2243707579  ___a0, Vector2_t2243707579  ___b1, float ___t2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::Scale(UnityEngine.Vector2,UnityEngine.Vector2)
@@ -56,6 +60,8 @@ extern "C"  float Vector2_SqrMagnitude_m1793890068 (Il2CppObject * __this /* sta
 extern "C"  Vector2_t2243707579  Vector2_get_zero_m3966848876 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::get_one()
 extern "C"  Vector2_t2243707579  Vector2_get_one_m3174311904 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.Vector2::get_up()
+extern "C"  Vector2_t2243707579  Vector2_get_up_m977201173 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::get_right()
 extern "C"  Vector2_t2243707579  Vector2_get_right_m28012078 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.Vector2::op_Addition(UnityEngine.Vector2,UnityEngine.Vector2)

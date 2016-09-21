@@ -22,6 +22,8 @@ struct String_t;
 
 // UnityEngine.Shader UnityEngine.Shader::Find(System.String)
 extern "C"  Shader_t2430389951 * Shader_Find_m4179408078 (Il2CppObject * __this /* static, unused */, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Shader::get_isSupported()
+extern "C"  bool Shader_get_isSupported_m344486701 (Shader_t2430389951 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Shader::set_globalMaximumLOD(System.Int32)
 extern "C"  void Shader_set_globalMaximumLOD_m3178892718 (Il2CppObject * __this /* static, unused */, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)

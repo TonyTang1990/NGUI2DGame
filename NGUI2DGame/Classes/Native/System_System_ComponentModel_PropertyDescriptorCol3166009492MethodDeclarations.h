@@ -71,6 +71,12 @@ extern "C"  void PropertyDescriptorCollection_System_Collections_IDictionary_Rem
 extern "C"  void PropertyDescriptorCollection_System_Collections_IList_Remove_m269098166 (PropertyDescriptorCollection_t3166009492 * __this, Il2CppObject * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.ComponentModel.PropertyDescriptorCollection::System.Collections.IList.RemoveAt(System.Int32)
 extern "C"  void PropertyDescriptorCollection_System_Collections_IList_RemoveAt_m4243254102 (PropertyDescriptorCollection_t3166009492 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.ComponentModel.PropertyDescriptorCollection::System.Collections.IList.get_IsFixedSize()
+extern "C"  bool PropertyDescriptorCollection_System_Collections_IList_get_IsFixedSize_m2356655192 (PropertyDescriptorCollection_t3166009492 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.ComponentModel.PropertyDescriptorCollection::System.Collections.IList.get_IsReadOnly()
+extern "C"  bool PropertyDescriptorCollection_System_Collections_IList_get_IsReadOnly_m3720213229 (PropertyDescriptorCollection_t3166009492 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.ComponentModel.PropertyDescriptorCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool PropertyDescriptorCollection_System_Collections_ICollection_get_IsSynchronized_m3263756009 (PropertyDescriptorCollection_t3166009492 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.ComponentModel.PropertyDescriptorCollection::System.Collections.ICollection.get_Count()
 extern "C"  int32_t PropertyDescriptorCollection_System_Collections_ICollection_get_Count_m417392944 (PropertyDescriptorCollection_t3166009492 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.PropertyDescriptorCollection::System.Collections.ICollection.get_SyncRoot()

@@ -1,0 +1,42 @@
+﻿#pragma once
+
+#include "il2cpp-config.h"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+#include <stdint.h>
+#include <assert.h>
+#include <exception>
+
+// Tank
+struct Tank_t2050480468;
+// UnityEngine.GameObject
+struct GameObject_t1756533147;
+
+#include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_UnityEngine_GameObject1756533147.h"
+
+// System.Void Tank::.ctor()
+extern "C"  void Tank__ctor_m750150259 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::set_MoveSpeed(System.Single)
+extern "C"  void Tank_set_MoveSpeed_m3985201005 (Tank_t2050480468 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::Awake()
+extern "C"  void Tank_Awake_m3158931696 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::Start()
+extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::Update()
+extern "C"  void Tank_Update_m546628242 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::OnDestroy()
+extern "C"  void Tank_OnDestroy_m4042988626 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::MoveForward()
+extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::Shoot()
+extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::TakeDamage(System.Single)
+extern "C"  void Tank_TakeDamage_m3119853146 (Tank_t2050480468 * __this, float ___damage0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::BulletDestroyDelegate(UnityEngine.GameObject)
+extern "C"  void Tank_BulletDestroyDelegate_m1148978620 (Tank_t2050480468 * __this, GameObject_t1756533147 * ___go0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

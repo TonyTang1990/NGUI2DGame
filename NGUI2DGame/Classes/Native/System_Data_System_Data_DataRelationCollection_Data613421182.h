@@ -26,16 +26,16 @@ struct  DataTableRelationCollection_t613421182  : public DataRelationCollection_
 {
 public:
 	// System.Data.DataTable System.Data.DataRelationCollection/DataTableRelationCollection::dataTable
-	DataTable_t3267612424 * ___dataTable_4;
+	DataTable_t3267612424 * ___dataTable_5;
 
 public:
-	inline static int32_t get_offset_of_dataTable_4() { return static_cast<int32_t>(offsetof(DataTableRelationCollection_t613421182, ___dataTable_4)); }
-	inline DataTable_t3267612424 * get_dataTable_4() const { return ___dataTable_4; }
-	inline DataTable_t3267612424 ** get_address_of_dataTable_4() { return &___dataTable_4; }
-	inline void set_dataTable_4(DataTable_t3267612424 * value)
+	inline static int32_t get_offset_of_dataTable_5() { return static_cast<int32_t>(offsetof(DataTableRelationCollection_t613421182, ___dataTable_5)); }
+	inline DataTable_t3267612424 * get_dataTable_5() const { return ___dataTable_5; }
+	inline DataTable_t3267612424 ** get_address_of_dataTable_5() { return &___dataTable_5; }
+	inline void set_dataTable_5(DataTable_t3267612424 * value)
 	{
-		___dataTable_4 = value;
-		Il2CppCodeGenWriteBarrier(&___dataTable_4, value);
+		___dataTable_5 = value;
+		Il2CppCodeGenWriteBarrier(&___dataTable_5, value);
 	}
 };
 

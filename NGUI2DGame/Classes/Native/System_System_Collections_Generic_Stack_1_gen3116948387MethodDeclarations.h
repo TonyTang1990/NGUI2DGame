@@ -18,6 +18,8 @@
 
 // System.Void System.Collections.Generic.Stack`1<System.String>::.ctor()
 #define Stack_1__ctor_m5574897(__this, method) ((  void (*) (Stack_1_t3116948387 *, const MethodInfo*))Stack_1__ctor_m1041657164_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Stack`1<System.String>::System.Collections.ICollection.get_IsSynchronized()
+#define Stack_1_System_Collections_ICollection_get_IsSynchronized_m2920661454(__this, method) ((  bool (*) (Stack_1_t3116948387 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_IsSynchronized_m2076161108_gshared)(__this, method)
 // System.Object System.Collections.Generic.Stack`1<System.String>::System.Collections.ICollection.get_SyncRoot()
 #define Stack_1_System_Collections_ICollection_get_SyncRoot_m3206466736(__this, method) ((  Il2CppObject * (*) (Stack_1_t3116948387 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_SyncRoot_m3151629354_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<System.String>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
@@ -30,6 +32,8 @@
 #define Stack_1_Clear_m4242215783(__this, method) ((  void (*) (Stack_1_t3116948387 *, const MethodInfo*))Stack_1_Clear_m3792598883_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Stack`1<System.String>::Contains(T)
 #define Stack_1_Contains_m3559039251(__this, ___t0, method) ((  bool (*) (Stack_1_t3116948387 *, String_t*, const MethodInfo*))Stack_1_Contains_m973625077_gshared)(__this, ___t0, method)
+// T System.Collections.Generic.Stack`1<System.String>::Peek()
+#define Stack_1_Peek_m1658089312(__this, method) ((  String_t* (*) (Stack_1_t3116948387 *, const MethodInfo*))Stack_1_Peek_m1548778538_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.String>::Pop()
 #define Stack_1_Pop_m2496128052(__this, method) ((  String_t* (*) (Stack_1_t3116948387 *, const MethodInfo*))Stack_1_Pop_m535185982_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<System.String>::Push(T)

@@ -27,6 +27,8 @@ extern "C"  int64_t Math_Abs_m4060679202 (Il2CppObject * __this /* static, unuse
 extern "C"  double Math_Ceiling_m614624719 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Floor(System.Double)
 extern "C"  double Math_Floor_m4118366418 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Log(System.Double,System.Double)
+extern "C"  double Math_Log_m3325929366 (Il2CppObject * __this /* static, unused */, double ___a0, double ___newBase1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Decimal System.Math::Max(System.Decimal,System.Decimal)
 extern "C"  Decimal_t724701077  Math_Max_m730332546 (Il2CppObject * __this /* static, unused */, Decimal_t724701077  ___val10, Decimal_t724701077  ___val21, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Max(System.Double,System.Double)
@@ -57,6 +59,8 @@ extern "C"  double Math_Truncate_m2511675028 (Il2CppObject * __this /* static, u
 extern "C"  double Math_Sin_m2320256962 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Cos(System.Double)
 extern "C"  double Math_Cos_m43596019 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Tan(System.Double)
+extern "C"  double Math_Tan_m2337827751 (Il2CppObject * __this /* static, unused */, double ___a0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Acos(System.Double)
 extern "C"  double Math_Acos_m2218287828 (Il2CppObject * __this /* static, unused */, double ___d0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Asin(System.Double)

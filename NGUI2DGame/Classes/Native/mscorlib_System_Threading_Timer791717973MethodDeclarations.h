@@ -24,6 +24,8 @@ struct Il2CppObject;
 #include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_TimeSpan3430258949.h"
 
+// System.Void System.Threading.Timer::.ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)
+extern "C"  void Timer__ctor_m3728192463 (Timer_t791717973 * __this, TimerCallback_t1684927372 * ___callback0, Il2CppObject * ___state1, int32_t ___dueTime2, int32_t ___period3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.Timer::.ctor(System.Threading.TimerCallback,System.Object,System.TimeSpan,System.TimeSpan)
 extern "C"  void Timer__ctor_m2196406451 (Timer_t791717973 * __this, TimerCallback_t1684927372 * ___callback0, Il2CppObject * ___state1, TimeSpan_t3430258949  ___dueTime2, TimeSpan_t3430258949  ___period3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.Timer::.cctor()

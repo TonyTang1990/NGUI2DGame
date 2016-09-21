@@ -32,10 +32,16 @@ struct IEnumerator_t1466026749;
 extern "C"  void ListValues__ctor_m4103727729 (ListValues_t4117764156 * __this, SortedList_t3004938869 * ___host0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.SortedList/ListValues::get_Count()
 extern "C"  int32_t ListValues_get_Count_m1459667676 (ListValues_t4117764156 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.SortedList/ListValues::get_IsSynchronized()
+extern "C"  bool ListValues_get_IsSynchronized_m1090894957 (ListValues_t4117764156 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.SortedList/ListValues::get_SyncRoot()
 extern "C"  Il2CppObject * ListValues_get_SyncRoot_m2112826509 (ListValues_t4117764156 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.SortedList/ListValues::CopyTo(System.Array,System.Int32)
 extern "C"  void ListValues_CopyTo_m4225983489 (ListValues_t4117764156 * __this, Il2CppArray * ___array0, int32_t ___arrayIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.SortedList/ListValues::get_IsFixedSize()
+extern "C"  bool ListValues_get_IsFixedSize_m2190255112 (ListValues_t4117764156 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.SortedList/ListValues::get_IsReadOnly()
+extern "C"  bool ListValues_get_IsReadOnly_m3032311649 (ListValues_t4117764156 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.SortedList/ListValues::get_Item(System.Int32)
 extern "C"  Il2CppObject * ListValues_get_Item_m3051911546 (ListValues_t4117764156 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.SortedList/ListValues::set_Item(System.Int32,System.Object)

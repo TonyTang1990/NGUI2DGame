@@ -443,7 +443,7 @@ extern "C"  int32_t ProtobufSerializer_GetKeyImpl_m1998698764 (ProtobufSerialize
 		TypeU5BU5D_t1664964607* L_0 = ((ProtobufSerializer_t806432981_StaticFields*)ProtobufSerializer_t806432981_il2cpp_TypeInfo_var->static_fields)->get_knownTypes_2();
 		Type_t * L_1 = p0;
 		NullCheck((Il2CppObject *)(Il2CppObject *)L_0);
-		int32_t L_2 = InterfaceFuncInvoker1< int32_t, Il2CppObject * >::Invoke(5 /* System.Int32 System.Collections.IList::IndexOf(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, (Il2CppObject *)(Il2CppObject *)L_0, L_1);
+		int32_t L_2 = InterfaceFuncInvoker1< int32_t, Il2CppObject * >::Invoke(7 /* System.Int32 System.Collections.IList::IndexOf(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, (Il2CppObject *)(Il2CppObject *)L_0, L_1);
 		return L_2;
 	}
 }

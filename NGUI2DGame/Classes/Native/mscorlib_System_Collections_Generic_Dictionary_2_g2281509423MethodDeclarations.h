@@ -82,6 +82,9 @@ extern "C"  bool Dictionary_2_System_Collections_IDictionary_Contains_m286800676
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::System.Collections.IDictionary.Remove(System.Object)
 extern "C"  void Dictionary_2_System_Collections_IDictionary_Remove_m2017099222_gshared (Dictionary_2_t2281509423 * __this, Il2CppObject * ___key0, const MethodInfo* method);
 #define Dictionary_2_System_Collections_IDictionary_Remove_m2017099222(__this, ___key0, method) ((  void (*) (Dictionary_2_t2281509423 *, Il2CppObject *, const MethodInfo*))Dictionary_2_System_Collections_IDictionary_Remove_m2017099222_gshared)(__this, ___key0, method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m960517203_gshared (Dictionary_2_t2281509423 * __this, const MethodInfo* method);
+#define Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m960517203(__this, method) ((  bool (*) (Dictionary_2_t2281509423 *, const MethodInfo*))Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m960517203_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2<System.Object,System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * Dictionary_2_System_Collections_ICollection_get_SyncRoot_m1900166091_gshared (Dictionary_2_t2281509423 * __this, const MethodInfo* method);
 #define Dictionary_2_System_Collections_ICollection_get_SyncRoot_m1900166091(__this, method) ((  Il2CppObject * (*) (Dictionary_2_t2281509423 *, const MethodInfo*))Dictionary_2_System_Collections_ICollection_get_SyncRoot_m1900166091_gshared)(__this, method)

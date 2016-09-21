@@ -34,6 +34,8 @@
 #define KeyCollection_System_Collections_IEnumerable_GetEnumerator_m225973938(__this, method) ((  Il2CppObject * (*) (KeyCollection_t2313618002 *, const MethodInfo*))KeyCollection_System_Collections_IEnumerable_GetEnumerator_m1743416022_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Excel.Log.ILog>::System.Collections.Generic.ICollection<TKey>.get_IsReadOnly()
 #define KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m2081949231(__this, method) ((  bool (*) (KeyCollection_t2313618002 *, const MethodInfo*))KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m701366755_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Excel.Log.ILog>::System.Collections.ICollection.get_IsSynchronized()
+#define KeyCollection_System_Collections_ICollection_get_IsSynchronized_m2780770085(__this, method) ((  bool (*) (KeyCollection_t2313618002 *, const MethodInfo*))KeyCollection_System_Collections_ICollection_get_IsSynchronized_m4278618649_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Excel.Log.ILog>::System.Collections.ICollection.get_SyncRoot()
 #define KeyCollection_System_Collections_ICollection_get_SyncRoot_m439135133(__this, method) ((  Il2CppObject * (*) (KeyCollection_t2313618002 *, const MethodInfo*))KeyCollection_System_Collections_ICollection_get_SyncRoot_m3348206461_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Excel.Log.ILog>::CopyTo(TKey[],System.Int32)

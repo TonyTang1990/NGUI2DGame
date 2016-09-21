@@ -40,6 +40,8 @@
 #define Dictionary_2_System_Collections_IDictionary_Contains_m663775716(__this, ___key0, method) ((  bool (*) (Dictionary_2_t633821276 *, Il2CppObject *, const MethodInfo*))Dictionary_2_System_Collections_IDictionary_Contains_m2868006769_gshared)(__this, ___key0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Type,DG.Tweening.Plugins.Core.ITweenPlugin>::System.Collections.IDictionary.Remove(System.Object)
 #define Dictionary_2_System_Collections_IDictionary_Remove_m3998544669(__this, ___key0, method) ((  void (*) (Dictionary_2_t633821276 *, Il2CppObject *, const MethodInfo*))Dictionary_2_System_Collections_IDictionary_Remove_m2017099222_gshared)(__this, ___key0, method)
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Type,DG.Tweening.Plugins.Core.ITweenPlugin>::System.Collections.ICollection.get_IsSynchronized()
+#define Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m1857168698(__this, method) ((  bool (*) (Dictionary_2_t633821276 *, const MethodInfo*))Dictionary_2_System_Collections_ICollection_get_IsSynchronized_m960517203_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2<System.Type,DG.Tweening.Plugins.Core.ITweenPlugin>::System.Collections.ICollection.get_SyncRoot()
 #define Dictionary_2_System_Collections_ICollection_get_SyncRoot_m1702902926(__this, method) ((  Il2CppObject * (*) (Dictionary_2_t633821276 *, const MethodInfo*))Dictionary_2_System_Collections_ICollection_get_SyncRoot_m1900166091_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Type,DG.Tweening.Plugins.Core.ITweenPlugin>::System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.get_IsReadOnly()

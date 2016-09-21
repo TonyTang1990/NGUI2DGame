@@ -59,10 +59,18 @@ struct UIDrawCall_t3291843512;
 struct UIRoot_t389944298;
 // UITextList/Paragraph
 struct Paragraph_t2587095060;
+// MyIntEvent
+struct MyIntEvent_t2982049109;
+// MyGameObjectEvent
+struct MyGameObjectEvent_t13084089;
 // GameConfigurationManager/Account
 struct Account_t3062613273;
 // MapManager/GridInfo
 struct GridInfo_t737075118;
+// Tile
+struct Tile_t2729441780;
+// MyRC
+struct MyRC_t2924564543;
 
 #include "mscorlib_System_Array3829468939.h"
 #include "AssemblyU2DCSharp_InvBaseItem3744336511.h"
@@ -90,8 +98,13 @@ struct GridInfo_t737075118;
 #include "AssemblyU2DCSharp_UIDrawCall3291843512.h"
 #include "AssemblyU2DCSharp_UIRoot389944298.h"
 #include "AssemblyU2DCSharp_UITextList_Paragraph2587095060.h"
+#include "AssemblyU2DCSharp_MyIntEvent2982049109.h"
+#include "AssemblyU2DCSharp_MyGameObjectEvent13084089.h"
 #include "AssemblyU2DCSharp_GameConfigurationManager_Account3062613273.h"
 #include "AssemblyU2DCSharp_MapManager_GridInfo737075118.h"
+#include "AssemblyU2DCSharp_Tile2729441780.h"
+#include "AssemblyU2DCSharp_MyRC2924564543.h"
+#include "AssemblyU2DCSharp_TileType701644524.h"
 
 #pragma once
 // InvBaseItem[]
@@ -469,6 +482,36 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+// MyIntEvent[]
+struct MyIntEventU5BU5D_t1966090680  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) MyIntEvent_t2982049109 * m_Items[1];
+
+public:
+	inline MyIntEvent_t2982049109 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline MyIntEvent_t2982049109 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, MyIntEvent_t2982049109 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// MyGameObjectEvent[]
+struct MyGameObjectEventU5BU5D_t341038916  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) MyGameObjectEvent_t13084089 * m_Items[1];
+
+public:
+	inline MyGameObjectEvent_t13084089 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline MyGameObjectEvent_t13084089 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, MyGameObjectEvent_t13084089 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // GameConfigurationManager/Account[]
 struct AccountU5BU5D_t3535105636  : public Il2CppArray
 {
@@ -497,5 +540,109 @@ public:
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// Tile[,]
+struct TileU5BU2CU5D_t1358904254  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Tile_t2729441780 * m_Items[1];
+
+public:
+	inline Tile_t2729441780 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Tile_t2729441780 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Tile_t2729441780 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Tile_t2729441780 * GetAt(il2cpp_array_size_t i, il2cpp_array_size_t j) const
+	{
+		il2cpp_array_size_t index = i * bounds[1].length + j;
+		return m_Items[index];
+	}
+	inline Tile_t2729441780 ** GetAddressAt(il2cpp_array_size_t i, il2cpp_array_size_t j)
+	{
+		il2cpp_array_size_t index = i * bounds[1].length + j;
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t i, il2cpp_array_size_t j, Tile_t2729441780 * value)
+	{
+		il2cpp_array_size_t index = i * bounds[1].length + j;
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// Tile[]
+struct TileU5BU5D_t1358904253  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Tile_t2729441780 * m_Items[1];
+
+public:
+	inline Tile_t2729441780 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Tile_t2729441780 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Tile_t2729441780 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// MyRC[]
+struct MyRCU5BU5D_t3588064230  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) MyRC_t2924564543 * m_Items[1];
+
+public:
+	inline MyRC_t2924564543 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline MyRC_t2924564543 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, MyRC_t2924564543 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// TileType[,]
+struct TileTypeU5BU2CU5D_t354757606  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+	inline int32_t GetAt(il2cpp_array_size_t i, il2cpp_array_size_t j) const
+	{
+		il2cpp_array_size_t index = i * bounds[1].length + j;
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t i, il2cpp_array_size_t j)
+	{
+		il2cpp_array_size_t index = i * bounds[1].length + j;
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t i, il2cpp_array_size_t j, int32_t value)
+	{
+		il2cpp_array_size_t index = i * bounds[1].length + j;
+		m_Items[index] = value;
+	}
+};
+// TileType[]
+struct TileTypeU5BU5D_t354757605  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
 	}
 };

@@ -39,6 +39,8 @@ extern "C"  void Queue__ctor_m2383808700 (Queue_t1288490777 * __this, Il2CppObje
 extern "C"  void Queue__ctor_m214205393 (Queue_t1288490777 * __this, int32_t ___capacity0, float ___growFactor1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Queue::get_Count()
 extern "C"  int32_t Queue_get_Count_m3458189249 (Queue_t1288490777 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Queue::get_IsSynchronized()
+extern "C"  bool Queue_get_IsSynchronized_m417245178 (Queue_t1288490777 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Queue::get_SyncRoot()
 extern "C"  Il2CppObject * Queue_get_SyncRoot_m1664561188 (Queue_t1288490777 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Queue::CopyTo(System.Array,System.Int32)

@@ -31,6 +31,8 @@ struct IEnumerator_t1466026749;
 extern "C"  void DictionaryNodeCollection__ctor_m445138956 (DictionaryNodeCollection_t528898270 * __this, ListDictionary_t3458713452 * ___dict0, bool ___isKeyList1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Specialized.ListDictionary/DictionaryNodeCollection::get_Count()
 extern "C"  int32_t DictionaryNodeCollection_get_Count_m3891757076 (DictionaryNodeCollection_t528898270 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Specialized.ListDictionary/DictionaryNodeCollection::get_IsSynchronized()
+extern "C"  bool DictionaryNodeCollection_get_IsSynchronized_m4126252101 (DictionaryNodeCollection_t528898270 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Specialized.ListDictionary/DictionaryNodeCollection::get_SyncRoot()
 extern "C"  Il2CppObject * DictionaryNodeCollection_get_SyncRoot_m4292609649 (DictionaryNodeCollection_t528898270 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.ListDictionary/DictionaryNodeCollection::CopyTo(System.Array,System.Int32)

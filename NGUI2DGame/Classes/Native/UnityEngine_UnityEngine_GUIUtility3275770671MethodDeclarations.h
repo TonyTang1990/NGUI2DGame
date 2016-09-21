@@ -16,9 +16,12 @@
 struct GUISkin_t1436893342;
 // System.Exception
 struct Exception_t1927440687;
+// System.String
+struct String_t;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Exception1927440687.h"
+#include "mscorlib_System_String2029220233.h"
 
 // System.Void UnityEngine.GUIUtility::.cctor()
 extern "C"  void GUIUtility__cctor_m46116445 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -44,6 +47,10 @@ extern "C"  float GUIUtility_Internal_GetPixelsPerPoint_m1770975086 (Il2CppObjec
 extern "C"  int32_t GUIUtility_Internal_GetHotControl_m2510727642 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.GUIUtility::get_keyboardControl()
 extern "C"  int32_t GUIUtility_get_keyboardControl_m2418463643 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String UnityEngine.GUIUtility::get_systemCopyBuffer()
+extern "C"  String_t* GUIUtility_get_systemCopyBuffer_m396434174 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GUIUtility::set_systemCopyBuffer(System.String)
+extern "C"  void GUIUtility_set_systemCopyBuffer_m2040945785 (Il2CppObject * __this /* static, unused */, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GUISkin UnityEngine.GUIUtility::Internal_GetDefaultSkin(System.Int32)
 extern "C"  GUISkin_t1436893342 * GUIUtility_Internal_GetDefaultSkin_m2135852437 (Il2CppObject * __this /* static, unused */, int32_t ___skinMode0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GUIUtility::Internal_ExitGUI()

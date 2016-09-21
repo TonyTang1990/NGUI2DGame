@@ -28,27 +28,27 @@ struct  ConstraintCollection_t4088681537  : public InternalDataCollectionBase_t6
 {
 public:
 	// System.Data.DataTable System.Data.ConstraintCollection::table
-	DataTable_t3267612424 * ___table_1;
+	DataTable_t3267612424 * ___table_2;
 	// System.ComponentModel.CollectionChangeEventHandler System.Data.ConstraintCollection::CollectionChanged
-	CollectionChangeEventHandler_t790626706 * ___CollectionChanged_2;
+	CollectionChangeEventHandler_t790626706 * ___CollectionChanged_3;
 
 public:
-	inline static int32_t get_offset_of_table_1() { return static_cast<int32_t>(offsetof(ConstraintCollection_t4088681537, ___table_1)); }
-	inline DataTable_t3267612424 * get_table_1() const { return ___table_1; }
-	inline DataTable_t3267612424 ** get_address_of_table_1() { return &___table_1; }
-	inline void set_table_1(DataTable_t3267612424 * value)
+	inline static int32_t get_offset_of_table_2() { return static_cast<int32_t>(offsetof(ConstraintCollection_t4088681537, ___table_2)); }
+	inline DataTable_t3267612424 * get_table_2() const { return ___table_2; }
+	inline DataTable_t3267612424 ** get_address_of_table_2() { return &___table_2; }
+	inline void set_table_2(DataTable_t3267612424 * value)
 	{
-		___table_1 = value;
-		Il2CppCodeGenWriteBarrier(&___table_1, value);
+		___table_2 = value;
+		Il2CppCodeGenWriteBarrier(&___table_2, value);
 	}
 
-	inline static int32_t get_offset_of_CollectionChanged_2() { return static_cast<int32_t>(offsetof(ConstraintCollection_t4088681537, ___CollectionChanged_2)); }
-	inline CollectionChangeEventHandler_t790626706 * get_CollectionChanged_2() const { return ___CollectionChanged_2; }
-	inline CollectionChangeEventHandler_t790626706 ** get_address_of_CollectionChanged_2() { return &___CollectionChanged_2; }
-	inline void set_CollectionChanged_2(CollectionChangeEventHandler_t790626706 * value)
+	inline static int32_t get_offset_of_CollectionChanged_3() { return static_cast<int32_t>(offsetof(ConstraintCollection_t4088681537, ___CollectionChanged_3)); }
+	inline CollectionChangeEventHandler_t790626706 * get_CollectionChanged_3() const { return ___CollectionChanged_3; }
+	inline CollectionChangeEventHandler_t790626706 ** get_address_of_CollectionChanged_3() { return &___CollectionChanged_3; }
+	inline void set_CollectionChanged_3(CollectionChangeEventHandler_t790626706 * value)
 	{
-		___CollectionChanged_2 = value;
-		Il2CppCodeGenWriteBarrier(&___CollectionChanged_2, value);
+		___CollectionChanged_3 = value;
+		Il2CppCodeGenWriteBarrier(&___CollectionChanged_3, value);
 	}
 };
 

@@ -47,5 +47,7 @@ extern "C"  Il2CppObject * ConfigurationLockCollection_GetEnumerator_m3742833280
 extern "C"  void ConfigurationLockCollection_SetFromList_m2739237306 (ConfigurationLockCollection_t1011762925 * __this, String_t* ___attributeList0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Configuration.ConfigurationLockCollection::get_Count()
 extern "C"  int32_t ConfigurationLockCollection_get_Count_m3926033248 (ConfigurationLockCollection_t1011762925 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Configuration.ConfigurationLockCollection::get_IsSynchronized()
+extern "C"  bool ConfigurationLockCollection_get_IsSynchronized_m1658122353 (ConfigurationLockCollection_t1011762925 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Configuration.ConfigurationLockCollection::get_SyncRoot()
 extern "C"  Il2CppObject * ConfigurationLockCollection_get_SyncRoot_m1477706993 (ConfigurationLockCollection_t1011762925 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

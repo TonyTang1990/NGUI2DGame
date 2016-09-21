@@ -19,5 +19,7 @@ struct FPSDisplay_t3952194245;
 
 // System.Void FPSDisplay::.ctor()
 extern "C"  void FPSDisplay__ctor_m1019612258 (FPSDisplay_t3952194245 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void FPSDisplay::Awake()
+extern "C"  void FPSDisplay_Awake_m390282549 (FPSDisplay_t3952194245 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void FPSDisplay::Update()
 extern "C"  void FPSDisplay_Update_m3681504265 (FPSDisplay_t3952194245 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -89,6 +89,8 @@ extern "C"  SecurityElement_t2325568386 * PermissionSet_ToXml_m3312410464 (Permi
 extern "C"  PermissionSet_t1941658161 * PermissionSet_Union_m2363188946 (PermissionSet_t1941658161 * __this, PermissionSet_t1941658161 * ___other0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Security.PermissionSet::get_Count()
 extern "C"  int32_t PermissionSet_get_Count_m304938402 (PermissionSet_t1941658161 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Security.PermissionSet::get_IsSynchronized()
+extern "C"  bool PermissionSet_get_IsSynchronized_m1237814815 (PermissionSet_t1941658161 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Security.PermissionSet::get_SyncRoot()
 extern "C"  Il2CppObject * PermissionSet_get_SyncRoot_m900105327 (PermissionSet_t1941658161 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.PermissionSet::set_DeclarativeSecurity(System.Boolean)

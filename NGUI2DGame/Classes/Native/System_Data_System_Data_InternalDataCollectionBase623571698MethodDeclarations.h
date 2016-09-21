@@ -30,6 +30,8 @@ struct IEnumerator_t1466026749;
 extern "C"  void InternalDataCollectionBase__ctor_m3275374681 (InternalDataCollectionBase_t623571698 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Data.InternalDataCollectionBase::get_Count()
 extern "C"  int32_t InternalDataCollectionBase_get_Count_m2968977469 (InternalDataCollectionBase_t623571698 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.InternalDataCollectionBase::get_IsSynchronized()
+extern "C"  bool InternalDataCollectionBase_get_IsSynchronized_m3480827858 (InternalDataCollectionBase_t623571698 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.ArrayList System.Data.InternalDataCollectionBase::get_List()
 extern "C"  ArrayList_t4252133567 * InternalDataCollectionBase_get_List_m2159366550 (InternalDataCollectionBase_t623571698 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Data.InternalDataCollectionBase::get_SyncRoot()

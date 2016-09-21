@@ -95,6 +95,8 @@ extern "C"  bool Char_IsLower_m569373973 (Il2CppObject * __this /* static, unuse
 extern "C"  bool Char_IsNumber_m2562002865 (Il2CppObject * __this /* static, unused */, Il2CppChar ___c0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Char::IsSurrogate(System.Char)
 extern "C"  bool Char_IsSurrogate_m2088974128 (Il2CppObject * __this /* static, unused */, Il2CppChar ___c0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Char::IsUpper(System.Char)
+extern "C"  bool Char_IsUpper_m4083577610 (Il2CppObject * __this /* static, unused */, Il2CppChar ___c0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Char::IsWhiteSpace(System.Char)
 extern "C"  bool Char_IsWhiteSpace_m1507160293 (Il2CppObject * __this /* static, unused */, Il2CppChar ___c0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Char::IsWhiteSpace(System.String,System.Int32)

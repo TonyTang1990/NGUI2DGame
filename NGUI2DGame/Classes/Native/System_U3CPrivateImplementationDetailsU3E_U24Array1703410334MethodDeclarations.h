@@ -13,25 +13,25 @@
 #include <exception>
 
 // <PrivateImplementationDetails>/$ArrayType$16
-struct U24ArrayTypeU2416_t1703410336;
-struct U24ArrayTypeU2416_t1703410336_marshaled_pinvoke;
-struct U24ArrayTypeU2416_t1703410336_marshaled_com;
+struct U24ArrayTypeU2416_t1703410335;
+struct U24ArrayTypeU2416_t1703410335_marshaled_pinvoke;
+struct U24ArrayTypeU2416_t1703410335_marshaled_com;
 
 #include "codegen/il2cpp-codegen.h"
 
 
 // Methods for marshaling
-struct U24ArrayTypeU2416_t1703410336;
-struct U24ArrayTypeU2416_t1703410336_marshaled_pinvoke;
+struct U24ArrayTypeU2416_t1703410335;
+struct U24ArrayTypeU2416_t1703410335_marshaled_pinvoke;
 
-extern "C" void U24ArrayTypeU2416_t1703410336_marshal_pinvoke(const U24ArrayTypeU2416_t1703410336& unmarshaled, U24ArrayTypeU2416_t1703410336_marshaled_pinvoke& marshaled);
-extern "C" void U24ArrayTypeU2416_t1703410336_marshal_pinvoke_back(const U24ArrayTypeU2416_t1703410336_marshaled_pinvoke& marshaled, U24ArrayTypeU2416_t1703410336& unmarshaled);
-extern "C" void U24ArrayTypeU2416_t1703410336_marshal_pinvoke_cleanup(U24ArrayTypeU2416_t1703410336_marshaled_pinvoke& marshaled);
+extern "C" void U24ArrayTypeU2416_t1703410335_marshal_pinvoke(const U24ArrayTypeU2416_t1703410335& unmarshaled, U24ArrayTypeU2416_t1703410335_marshaled_pinvoke& marshaled);
+extern "C" void U24ArrayTypeU2416_t1703410335_marshal_pinvoke_back(const U24ArrayTypeU2416_t1703410335_marshaled_pinvoke& marshaled, U24ArrayTypeU2416_t1703410335& unmarshaled);
+extern "C" void U24ArrayTypeU2416_t1703410335_marshal_pinvoke_cleanup(U24ArrayTypeU2416_t1703410335_marshaled_pinvoke& marshaled);
 
 // Methods for marshaling
-struct U24ArrayTypeU2416_t1703410336;
-struct U24ArrayTypeU2416_t1703410336_marshaled_com;
+struct U24ArrayTypeU2416_t1703410335;
+struct U24ArrayTypeU2416_t1703410335_marshaled_com;
 
-extern "C" void U24ArrayTypeU2416_t1703410336_marshal_com(const U24ArrayTypeU2416_t1703410336& unmarshaled, U24ArrayTypeU2416_t1703410336_marshaled_com& marshaled);
-extern "C" void U24ArrayTypeU2416_t1703410336_marshal_com_back(const U24ArrayTypeU2416_t1703410336_marshaled_com& marshaled, U24ArrayTypeU2416_t1703410336& unmarshaled);
-extern "C" void U24ArrayTypeU2416_t1703410336_marshal_com_cleanup(U24ArrayTypeU2416_t1703410336_marshaled_com& marshaled);
+extern "C" void U24ArrayTypeU2416_t1703410335_marshal_com(const U24ArrayTypeU2416_t1703410335& unmarshaled, U24ArrayTypeU2416_t1703410335_marshaled_com& marshaled);
+extern "C" void U24ArrayTypeU2416_t1703410335_marshal_com_back(const U24ArrayTypeU2416_t1703410335_marshaled_com& marshaled, U24ArrayTypeU2416_t1703410335& unmarshaled);
+extern "C" void U24ArrayTypeU2416_t1703410335_marshal_com_cleanup(U24ArrayTypeU2416_t1703410335_marshaled_com& marshaled);

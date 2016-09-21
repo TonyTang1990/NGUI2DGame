@@ -787,7 +787,7 @@ extern "C"  void Helpers_FixDataTypes_m3481117268 (Il2CppObject * __this /* stat
 		NullCheck(L_0);
 		DataTableCollection_t787171642 * L_1 = DataSet_get_Tables_m3728796977(L_0, /*hidden argument*/NULL);
 		NullCheck(L_1);
-		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
+		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_1);
 		List_1_t2636733556 * L_3 = (List_1_t2636733556 *)il2cpp_codegen_object_new(List_1_t2636733556_il2cpp_TypeInfo_var);
 		List_1__ctor_m4215987206(L_3, L_2, /*hidden argument*/List_1__ctor_m4215987206_MethodInfo_var);
 		V_0 = L_3;
@@ -796,7 +796,7 @@ extern "C"  void Helpers_FixDataTypes_m3481117268 (Il2CppObject * __this /* stat
 		NullCheck(L_4);
 		DataTableCollection_t787171642 * L_5 = DataSet_get_Tables_m3728796977(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		Il2CppObject * L_6 = VirtFuncInvoker0< Il2CppObject * >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_5);
+		Il2CppObject * L_6 = VirtFuncInvoker0< Il2CppObject * >::Invoke(12 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_5);
 		V_9 = L_6;
 	}
 
@@ -817,7 +817,7 @@ IL_0025:
 			NullCheck(L_9);
 			DataRowCollection_t111352322 * L_10 = DataTable_get_Rows_m2382828861(L_9, /*hidden argument*/NULL);
 			NullCheck(L_10);
-			int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_10);
+			int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_10);
 			if (L_11)
 			{
 				goto IL_004b;
@@ -847,7 +847,7 @@ IL_0055:
 			NullCheck(L_14);
 			DataRowCollection_t111352322 * L_15 = DataTable_get_Rows_m2382828861(L_14, /*hidden argument*/NULL);
 			NullCheck(L_15);
-			Il2CppObject * L_16 = VirtFuncInvoker0< Il2CppObject * >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_15);
+			Il2CppObject * L_16 = VirtFuncInvoker0< Il2CppObject * >::Invoke(12 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_15);
 			V_10 = L_16;
 		}
 
@@ -1018,7 +1018,7 @@ IL_00ef:
 			NullCheck(L_46);
 			DataColumnCollection_t195763618 * L_47 = DataTable_get_Columns_m2034004513(L_46, /*hidden argument*/NULL);
 			NullCheck(L_47);
-			int32_t L_48 = VirtFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_47);
+			int32_t L_48 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_47);
 			if ((((int32_t)L_45) < ((int32_t)L_48)))
 			{
 				goto IL_0055;
@@ -1043,7 +1043,7 @@ IL_0104:
 			NullCheck(L_51);
 			DataRowCollection_t111352322 * L_52 = DataTable_get_Rows_m2382828861(L_51, /*hidden argument*/NULL);
 			NullCheck(L_52);
-			Il2CppObject * L_53 = VirtFuncInvoker0< Il2CppObject * >::Invoke(11 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_52);
+			Il2CppObject * L_53 = VirtFuncInvoker0< Il2CppObject * >::Invoke(12 /* System.Collections.IEnumerator System.Data.InternalDataCollectionBase::GetEnumerator() */, L_52);
 			V_12 = L_53;
 		}
 
@@ -1300,9 +1300,9 @@ extern "C"  String_t* Helpers_U3CConvertEscapeCharsU3Eb__0_m1680631643 (Il2CppOb
 		NullCheck(L_0);
 		GroupCollection_t939014605 * L_1 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_0);
 		NullCheck(L_1);
-		Group_t3761430853 * L_2 = GroupCollection_get_Item_m3695725918(L_1, 1, /*hidden argument*/NULL);
+		Group_t3761430853 * L_2 = GroupCollection_get_Item_m3627349778(L_1, 1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		String_t* L_3 = Capture_get_Value_m1059492002(L_2, /*hidden argument*/NULL);
+		String_t* L_3 = Capture_get_Value_m147072698(L_2, /*hidden argument*/NULL);
 		uint32_t L_4 = UInt32_Parse_m3190548235(NULL /*static, unused*/, L_3, ((int32_t)515), /*hidden argument*/NULL);
 		V_0 = (((int32_t)((uint16_t)L_4)));
 		String_t* L_5 = Char_ToString_m1976753030((&V_0), /*hidden argument*/NULL);
@@ -1324,7 +1324,7 @@ extern "C"  void Helpers__cctor_m3113545832 (Il2CppObject * __this /* static, un
 	}
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2794328522(L_0, _stringLiteral3191366431, /*hidden argument*/NULL);
+		Regex__ctor_m2930443103(L_0, _stringLiteral3191366431, /*hidden argument*/NULL);
 		((Helpers_t551273995_StaticFields*)Helpers_t551273995_il2cpp_TypeInfo_var->static_fields)->set_re_0(L_0);
 		return;
 	}
@@ -2911,7 +2911,7 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 	Int32U5BU5D_t3030399641* V_7 = NULL;
 	{
 		Regex_t1803876613 * L_0 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-		Regex__ctor_m2794328522(L_0, _stringLiteral2791784762, /*hidden argument*/NULL);
+		Regex__ctor_m2930443103(L_0, _stringLiteral2791784762, /*hidden argument*/NULL);
 		V_0 = L_0;
 		Regex_t1803876613 * L_1 = V_0;
 		String_t* L_2 = ___reference0;
@@ -2920,9 +2920,9 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 		NullCheck(L_3);
 		GroupCollection_t939014605 * L_4 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_3);
 		NullCheck(L_4);
-		Group_t3761430853 * L_5 = GroupCollection_get_Item_m3695725918(L_4, 1, /*hidden argument*/NULL);
+		Group_t3761430853 * L_5 = GroupCollection_get_Item_m3627349778(L_4, 1, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		String_t* L_6 = Capture_get_Value_m1059492002(L_5, /*hidden argument*/NULL);
+		String_t* L_6 = Capture_get_Value_m147072698(L_5, /*hidden argument*/NULL);
 		NullCheck(L_6);
 		String_t* L_7 = String_ToUpper_m3715743312(L_6, /*hidden argument*/NULL);
 		V_1 = L_7;
@@ -2933,9 +2933,9 @@ extern "C"  Int32U5BU5D_t3030399641* ReferenceHelper_ReferenceToColumnAndRow_m89
 		NullCheck(L_10);
 		GroupCollection_t939014605 * L_11 = VirtFuncInvoker0< GroupCollection_t939014605 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_10);
 		NullCheck(L_11);
-		Group_t3761430853 * L_12 = GroupCollection_get_Item_m3695725918(L_11, 2, /*hidden argument*/NULL);
+		Group_t3761430853 * L_12 = GroupCollection_get_Item_m3627349778(L_11, 2, /*hidden argument*/NULL);
 		NullCheck(L_12);
-		String_t* L_13 = Capture_get_Value_m1059492002(L_12, /*hidden argument*/NULL);
+		String_t* L_13 = Capture_get_Value_m147072698(L_12, /*hidden argument*/NULL);
 		V_2 = L_13;
 		V_3 = 0;
 		V_4 = 1;
@@ -5383,7 +5383,7 @@ IL_0153:
 		NullCheck(L_66);
 		DataRowCollection_t111352322 * L_67 = DataTable_get_Rows_m2382828861(L_66, /*hidden argument*/NULL);
 		NullCheck(L_67);
-		int32_t L_68 = VirtFuncInvoker0< int32_t >::Invoke(8 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_67);
+		int32_t L_68 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Data.InternalDataCollectionBase::get_Count() */, L_67);
 		if ((((int32_t)L_68) <= ((int32_t)0)))
 		{
 			goto IL_0186;

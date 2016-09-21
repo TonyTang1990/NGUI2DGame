@@ -33,6 +33,8 @@ struct String_t;
 
 // System.Void System.Xml.XmlAttributeCollection::.ctor(System.Xml.XmlNode)
 extern "C"  void XmlAttributeCollection__ctor_m1553454851 (XmlAttributeCollection_t3359885287 * __this, XmlNode_t616554813 * ___parent0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Xml.XmlAttributeCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool XmlAttributeCollection_System_Collections_ICollection_get_IsSynchronized_m197325354 (XmlAttributeCollection_t3359885287 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Xml.XmlAttributeCollection::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * XmlAttributeCollection_System_Collections_ICollection_get_SyncRoot_m3415810582 (XmlAttributeCollection_t3359885287 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.XmlAttributeCollection::System.Collections.ICollection.CopyTo(System.Array,System.Int32)

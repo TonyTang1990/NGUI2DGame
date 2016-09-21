@@ -66,7 +66,7 @@ extern "C"  String_t* Uri_get_Authority_m936382664 (Uri_t19570940 * __this, cons
 // System.String System.Uri::get_Fragment()
 extern "C"  String_t* Uri_get_Fragment_m769951107 (Uri_t19570940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Uri::get_Host()
-extern "C"  String_t* Uri_get_Host_m2492204157 (Uri_t19570940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* Uri_get_Host_m395387191 (Uri_t19570940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.UriHostNameType System.Uri::get_HostNameType()
 extern "C"  int32_t Uri_get_HostNameType_m3115129436 (Uri_t19570940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Uri::get_IsDefaultPort()

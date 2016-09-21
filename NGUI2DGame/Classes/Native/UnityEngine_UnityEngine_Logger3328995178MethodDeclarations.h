@@ -24,12 +24,15 @@ struct Il2CppObject;
 struct Object_t1021602117;
 // System.Object[]
 struct ObjectU5BU5D_t3614634134;
+// System.Exception
+struct Exception_t1927440687;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_LogType1559732862.h"
 #include "mscorlib_System_Object2689449295.h"
 #include "UnityEngine_UnityEngine_Object1021602117.h"
 #include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Exception1927440687.h"
 
 // System.Void UnityEngine.Logger::.ctor(UnityEngine.ILogHandler)
 extern "C"  void Logger__ctor_m3834134587 (Logger_t3328995178 * __this, Il2CppObject * ___logHandler0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -55,3 +58,5 @@ extern "C"  void Logger_Log_m3587255568 (Logger_t3328995178 * __this, int32_t __
 extern "C"  void Logger_Log_m4012064130 (Logger_t3328995178 * __this, int32_t ___logType0, Il2CppObject * ___message1, Object_t1021602117 * ___context2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Logger::LogFormat(UnityEngine.LogType,UnityEngine.Object,System.String,System.Object[])
 extern "C"  void Logger_LogFormat_m193464629 (Logger_t3328995178 * __this, int32_t ___logType0, Object_t1021602117 * ___context1, String_t* ___format2, ObjectU5BU5D_t3614634134* ___args3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Logger::LogException(System.Exception,UnityEngine.Object)
+extern "C"  void Logger_LogException_m206035446 (Logger_t3328995178 * __this, Exception_t1927440687 * ___exception0, Object_t1021602117 * ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;

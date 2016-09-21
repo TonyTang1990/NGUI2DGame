@@ -34,6 +34,8 @@ extern "C"  Il2CppObject * ReadOnlyCollectionBase_System_Collections_IEnumerable
 extern "C"  void ReadOnlyCollectionBase_System_Collections_ICollection_CopyTo_m2482432953 (ReadOnlyCollectionBase_t22281769 * __this, Il2CppArray * ___array0, int32_t ___index1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.ReadOnlyCollectionBase::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * ReadOnlyCollectionBase_System_Collections_ICollection_get_SyncRoot_m37147101 (ReadOnlyCollectionBase_t22281769 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.ReadOnlyCollectionBase::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool ReadOnlyCollectionBase_System_Collections_ICollection_get_IsSynchronized_m2714897237 (ReadOnlyCollectionBase_t22281769 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.ReadOnlyCollectionBase::get_Count()
 extern "C"  int32_t ReadOnlyCollectionBase_get_Count_m1288981401 (ReadOnlyCollectionBase_t22281769 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.Collections.ReadOnlyCollectionBase::GetEnumerator()

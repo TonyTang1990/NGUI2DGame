@@ -18,6 +18,8 @@
 
 // System.Void System.Collections.Generic.Stack`1<DG.Tweening.Tween>::.ctor()
 #define Stack_1__ctor_m3475430708(__this, method) ((  void (*) (Stack_1_t1366206167 *, const MethodInfo*))Stack_1__ctor_m1041657164_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Stack`1<DG.Tweening.Tween>::System.Collections.ICollection.get_IsSynchronized()
+#define Stack_1_System_Collections_ICollection_get_IsSynchronized_m2385168115(__this, method) ((  bool (*) (Stack_1_t1366206167 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_IsSynchronized_m2076161108_gshared)(__this, method)
 // System.Object System.Collections.Generic.Stack`1<DG.Tweening.Tween>::System.Collections.ICollection.get_SyncRoot()
 #define Stack_1_System_Collections_ICollection_get_SyncRoot_m2790160895(__this, method) ((  Il2CppObject * (*) (Stack_1_t1366206167 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_SyncRoot_m3151629354_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<DG.Tweening.Tween>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
@@ -30,6 +32,8 @@
 #define Stack_1_Clear_m3585887377(__this, method) ((  void (*) (Stack_1_t1366206167 *, const MethodInfo*))Stack_1_Clear_m3792598883_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Stack`1<DG.Tweening.Tween>::Contains(T)
 #define Stack_1_Contains_m1141723628(__this, ___t0, method) ((  bool (*) (Stack_1_t1366206167 *, Tween_t278478013 *, const MethodInfo*))Stack_1_Contains_m973625077_gshared)(__this, ___t0, method)
+// T System.Collections.Generic.Stack`1<DG.Tweening.Tween>::Peek()
+#define Stack_1_Peek_m3851541399(__this, method) ((  Tween_t278478013 * (*) (Stack_1_t1366206167 *, const MethodInfo*))Stack_1_Peek_m1548778538_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<DG.Tweening.Tween>::Pop()
 #define Stack_1_Pop_m535074873(__this, method) ((  Tween_t278478013 * (*) (Stack_1_t1366206167 *, const MethodInfo*))Stack_1_Pop_m535185982_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<DG.Tweening.Tween>::Push(T)

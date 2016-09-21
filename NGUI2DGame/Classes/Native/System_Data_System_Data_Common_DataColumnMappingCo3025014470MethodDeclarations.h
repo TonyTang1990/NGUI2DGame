@@ -37,10 +37,16 @@ struct IEnumerator_t1466026749;
 extern "C"  void DataColumnMappingCollection__ctor_m4236477332 (DataColumnMappingCollection_t3025014470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Data.Common.DataColumnMappingCollection::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * DataColumnMappingCollection_System_Collections_ICollection_get_SyncRoot_m547097832 (DataColumnMappingCollection_t3025014470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.Common.DataColumnMappingCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool DataColumnMappingCollection_System_Collections_ICollection_get_IsSynchronized_m4113849716 (DataColumnMappingCollection_t3025014470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Data.Common.DataColumnMappingCollection::System.Collections.IList.get_Item(System.Int32)
 extern "C"  Il2CppObject * DataColumnMappingCollection_System_Collections_IList_get_Item_m216186459 (DataColumnMappingCollection_t3025014470 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Data.Common.DataColumnMappingCollection::System.Collections.IList.set_Item(System.Int32,System.Object)
 extern "C"  void DataColumnMappingCollection_System_Collections_IList_set_Item_m2617203118 (DataColumnMappingCollection_t3025014470 * __this, int32_t ___index0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.Common.DataColumnMappingCollection::System.Collections.IList.get_IsReadOnly()
+extern "C"  bool DataColumnMappingCollection_System_Collections_IList_get_IsReadOnly_m2737917632 (DataColumnMappingCollection_t3025014470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Data.Common.DataColumnMappingCollection::System.Collections.IList.get_IsFixedSize()
+extern "C"  bool DataColumnMappingCollection_System_Collections_IList_get_IsFixedSize_m447207299 (DataColumnMappingCollection_t3025014470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Data.Common.DataColumnMappingCollection::get_Count()
 extern "C"  int32_t DataColumnMappingCollection_get_Count_m65205972 (DataColumnMappingCollection_t3025014470 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Data.Common.DataColumnMapping System.Data.Common.DataColumnMappingCollection::get_Item(System.Int32)

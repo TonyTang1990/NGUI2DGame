@@ -28,8 +28,8 @@ struct AsyncCallback_t163412349;
 #include "mscorlib_System_AsyncCallback163412349.h"
 
 // System.Void System.Comparison`1<UnityEngine.RaycastHit>::.ctor(System.Object,System.IntPtr)
-extern "C"  void Comparison_1__ctor_m3202832183_gshared (Comparison_1_t1348919171 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method);
-#define Comparison_1__ctor_m3202832183(__this, ___object0, ___method1, method) ((  void (*) (Comparison_1_t1348919171 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Comparison_1__ctor_m3202832183_gshared)(__this, ___object0, ___method1, method)
+extern "C"  void Comparison_1__ctor_m1178069812_gshared (Comparison_1_t1348919171 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method);
+#define Comparison_1__ctor_m1178069812(__this, ___object0, ___method1, method) ((  void (*) (Comparison_1_t1348919171 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Comparison_1__ctor_m1178069812_gshared)(__this, ___object0, ___method1, method)
 // System.Int32 System.Comparison`1<UnityEngine.RaycastHit>::Invoke(T,T)
 extern "C"  int32_t Comparison_1_Invoke_m1670081898_gshared (Comparison_1_t1348919171 * __this, RaycastHit_t87180320  ___x0, RaycastHit_t87180320  ___y1, const MethodInfo* method);
 #define Comparison_1_Invoke_m1670081898(__this, ___x0, ___y1, method) ((  int32_t (*) (Comparison_1_t1348919171 *, RaycastHit_t87180320 , RaycastHit_t87180320 , const MethodInfo*))Comparison_1_Invoke_m1670081898_gshared)(__this, ___x0, ___y1, method)

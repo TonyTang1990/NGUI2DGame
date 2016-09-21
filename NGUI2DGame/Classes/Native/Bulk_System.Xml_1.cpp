@@ -901,7 +901,7 @@ extern "C"  void XsdParticleStateManager_PushContext_m2773125792 (XsdParticleSta
 		NullCheck(L_1);
 		Il2CppObject * L_2 = XsdValidationContext_Clone_m1553360189(L_1, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		VirtActionInvoker1< Il2CppObject * >::Invoke(18 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_2);
+		VirtActionInvoker1< Il2CppObject * >::Invoke(20 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_2);
 		return;
 	}
 }
@@ -919,7 +919,7 @@ extern "C"  void XsdParticleStateManager_PopContext_m3641816743 (XsdParticleStat
 	{
 		Stack_t1043988394 * L_0 = __this->get_ContextStack_3();
 		NullCheck(L_0);
-		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(17 /* System.Object System.Collections.Stack::Pop() */, L_0);
+		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(19 /* System.Object System.Collections.Stack::Pop() */, L_0);
 		__this->set_Context_4(((XsdValidationContext_t3720679969 *)CastclassClass(L_1, XsdValidationContext_t3720679969_il2cpp_TypeInfo_var)));
 		return;
 	}
@@ -1553,7 +1553,7 @@ IL_003d:
 		XmlSchemaObjectCollection_t395083109 * L_10 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_9, /*hidden argument*/NULL);
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
-		XmlSchemaObject_t2050913741 * L_12 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_10, L_11);
+		XmlSchemaObject_t2050913741 * L_12 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_10, L_11);
 		NullCheck(L_8);
 		XsdValidationState_t3545965403 * L_13 = XsdParticleStateManager_Create_m2387283472(L_8, ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_12, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		V_1 = L_13;
@@ -1725,7 +1725,7 @@ IL_0153:
 		XmlSchemaObjectCollection_t395083109 * L_56 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_55, /*hidden argument*/NULL);
 		int32_t L_57 = V_0;
 		NullCheck(L_56);
-		XmlSchemaObject_t2050913741 * L_58 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_56, L_57);
+		XmlSchemaObject_t2050913741 * L_58 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_56, L_57);
 		NullCheck(L_54);
 		XsdValidationState_t3545965403 * L_59 = XsdParticleStateManager_Create_m2387283472(L_54, ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_58, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		V_1 = L_59;
@@ -1868,7 +1868,7 @@ IL_0080:
 		XmlSchemaObjectCollection_t395083109 * L_20 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_19, /*hidden argument*/NULL);
 		int32_t L_21 = V_0;
 		NullCheck(L_20);
-		XmlSchemaObject_t2050913741 * L_22 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_20, L_21);
+		XmlSchemaObject_t2050913741 * L_22 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_20, L_21);
 		NullCheck(L_18);
 		XsdValidationState_t3545965403 * L_23 = XsdParticleStateManager_Create_m2387283472(L_18, ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_22, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		V_1 = L_23;
@@ -1924,7 +1924,7 @@ IL_00cd:
 		XmlSchemaObjectCollection_t395083109 * L_35 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_34, /*hidden argument*/NULL);
 		int32_t L_36 = V_0;
 		NullCheck(L_35);
-		XmlSchemaObject_t2050913741 * L_37 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_35, L_36);
+		XmlSchemaObject_t2050913741 * L_37 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_35, L_36);
 		NullCheck(L_33);
 		XsdValidationState_t3545965403 * L_38 = XsdParticleStateManager_Create_m2387283472(L_33, ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_37, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		V_1 = L_38;
@@ -2115,7 +2115,7 @@ IL_0088:
 		XmlSchemaObjectCollection_t395083109 * L_20 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_19, /*hidden argument*/NULL);
 		int32_t L_21 = V_0;
 		NullCheck(L_20);
-		XmlSchemaObject_t2050913741 * L_22 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_20, L_21);
+		XmlSchemaObject_t2050913741 * L_22 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_20, L_21);
 		NullCheck(L_18);
 		XsdValidationState_t3545965403 * L_23 = XsdParticleStateManager_Create_m2387283472(L_18, ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_22, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		V_1 = L_23;
@@ -2162,7 +2162,7 @@ IL_00ca:
 		XmlSchemaObjectCollection_t395083109 * L_33 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_32, /*hidden argument*/NULL);
 		int32_t L_34 = V_0;
 		NullCheck(L_33);
-		XmlSchemaObject_t2050913741 * L_35 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_33, L_34);
+		XmlSchemaObject_t2050913741 * L_35 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_33, L_34);
 		NullCheck(L_31);
 		XsdValidationState_t3545965403 * L_36 = XsdParticleStateManager_Create_m2387283472(L_31, ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_35, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		V_1 = L_36;
@@ -7141,7 +7141,7 @@ IL_01bb:
 			ArrayList_t4252133567 * L_62 = __this->get_defaultAttributesCache_26();
 			XmlSchemaAttribute_t4015859774 * L_63 = V_5;
 			NullCheck(L_62);
-			VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_62, L_63);
+			VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_62, L_63);
 		}
 
 IL_01c9:
@@ -7201,7 +7201,7 @@ IL_01f0:
 	{
 		ArrayList_t4252133567 * L_69 = __this->get_defaultAttributesCache_26();
 		NullCheck(L_69);
-		int32_t L_70 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_69);
+		int32_t L_70 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_69);
 		if (L_70)
 		{
 			goto IL_0210;
@@ -7220,7 +7220,7 @@ IL_0210:
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_73 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(XmlSchemaAttribute_t4015859774_0_0_0_var), /*hidden argument*/NULL);
 		NullCheck(L_72);
-		Il2CppArray * L_74 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(44 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_72, L_73);
+		Il2CppArray * L_74 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(48 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_72, L_73);
 		__this->set_defaultAttributes_24(((XmlSchemaAttributeU5BU5D_t3434391819*)Castclass(L_74, XmlSchemaAttributeU5BU5D_t3434391819_il2cpp_TypeInfo_var)));
 	}
 
@@ -7228,7 +7228,7 @@ IL_0230:
 	{
 		ArrayList_t4252133567 * L_75 = __this->get_defaultAttributesCache_26();
 		NullCheck(L_75);
-		VirtActionInvoker0::Invoke(27 /* System.Void System.Collections.ArrayList::Clear() */, L_75);
+		VirtActionInvoker0::Invoke(31 /* System.Void System.Collections.ArrayList::Clear() */, L_75);
 		return;
 	}
 }
@@ -7443,9 +7443,9 @@ IL_0121:
 		ArrayList_t4252133567 * L_56 = __this->get_elementQNameStack_18();
 		ArrayList_t4252133567 * L_57 = __this->get_elementQNameStack_18();
 		NullCheck(L_57);
-		int32_t L_58 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_57);
+		int32_t L_58 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_57);
 		NullCheck(L_56);
-		Il2CppObject * L_59 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_56, ((int32_t)((int32_t)L_58-(int32_t)1)));
+		Il2CppObject * L_59 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_56, ((int32_t)((int32_t)L_58-(int32_t)1)));
 		NullCheck(((XmlQualifiedName_t1944712516 *)CastclassClass(L_59, XmlQualifiedName_t1944712516_il2cpp_TypeInfo_var)));
 		String_t* L_60 = XmlQualifiedName_get_Name_m4055250010(((XmlQualifiedName_t1944712516 *)CastclassClass(L_59, XmlQualifiedName_t1944712516_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		NullCheck(L_53);
@@ -7570,7 +7570,7 @@ IL_0007:
 		ArrayList_t4252133567 * L_0 = __this->get_keyTables_15();
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
-		Il2CppObject * L_2 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
+		Il2CppObject * L_2 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
 		V_1 = ((XsdKeyTable_t2980902100 *)IsInstClass(L_2, XsdKeyTable_t2980902100_il2cpp_TypeInfo_var));
 		XsdKeyTable_t2980902100 * L_3 = V_1;
 		NullCheck(L_3);
@@ -7756,7 +7756,7 @@ IL_012c:
 		int32_t L_50 = V_0;
 		ArrayList_t4252133567 * L_51 = __this->get_keyTables_15();
 		NullCheck(L_51);
-		int32_t L_52 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_51);
+		int32_t L_52 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_51);
 		if ((((int32_t)L_50) < ((int32_t)L_52)))
 		{
 			goto IL_0007;
@@ -7772,7 +7772,7 @@ IL_0145:
 		ArrayList_t4252133567 * L_53 = __this->get_keyTables_15();
 		int32_t L_54 = V_6;
 		NullCheck(L_53);
-		Il2CppObject * L_55 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_53, L_54);
+		Il2CppObject * L_55 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_53, L_54);
 		V_7 = ((XsdKeyTable_t2980902100 *)IsInstClass(L_55, XsdKeyTable_t2980902100_il2cpp_TypeInfo_var));
 		XsdKeyTable_t2980902100 * L_56 = V_7;
 		NullCheck(L_56);
@@ -7789,7 +7789,7 @@ IL_0145:
 		ArrayList_t4252133567 * L_60 = __this->get_keyTables_15();
 		int32_t L_61 = V_6;
 		NullCheck(L_60);
-		VirtActionInvoker1< int32_t >::Invoke(35 /* System.Void System.Collections.ArrayList::RemoveAt(System.Int32) */, L_60, L_61);
+		VirtActionInvoker1< int32_t >::Invoke(39 /* System.Void System.Collections.ArrayList::RemoveAt(System.Int32) */, L_60, L_61);
 		int32_t L_62 = V_6;
 		V_6 = ((int32_t)((int32_t)L_62-(int32_t)1));
 	}
@@ -7805,7 +7805,7 @@ IL_0189:
 		int32_t L_64 = V_6;
 		ArrayList_t4252133567 * L_65 = __this->get_keyTables_15();
 		NullCheck(L_65);
-		int32_t L_66 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_65);
+		int32_t L_66 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_65);
 		if ((((int32_t)L_64) < ((int32_t)L_66)))
 		{
 			goto IL_0145;
@@ -7846,7 +7846,7 @@ extern "C"  void XsdValidatingReader_ValidateKeySelectors_m3250231594 (XsdValida
 	{
 		ArrayList_t4252133567 * L_1 = __this->get_tmpKeyrefPool_17();
 		NullCheck(L_1);
-		VirtActionInvoker0::Invoke(27 /* System.Void System.Collections.ArrayList::Clear() */, L_1);
+		VirtActionInvoker0::Invoke(31 /* System.Void System.Collections.ArrayList::Clear() */, L_1);
 	}
 
 IL_0016:
@@ -7886,7 +7886,7 @@ IL_0048:
 		XmlSchemaObjectCollection_t395083109 * L_10 = XmlSchemaElement_get_Constraints_m1833727398(L_9, /*hidden argument*/NULL);
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
-		XmlSchemaObject_t2050913741 * L_12 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_10, L_11);
+		XmlSchemaObject_t2050913741 * L_12 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_10, L_11);
 		V_1 = ((XmlSchemaIdentityConstraint_t1058613623 *)CastclassClass(L_12, XmlSchemaIdentityConstraint_t1058613623_il2cpp_TypeInfo_var));
 		XmlSchemaIdentityConstraint_t1058613623 * L_13 = V_1;
 		XsdKeyTable_t2980902100 * L_14 = XsdValidatingReader_CreateNewKeyTable_m2532340422(__this, L_13, /*hidden argument*/NULL);
@@ -7915,7 +7915,7 @@ IL_008d:
 		ArrayList_t4252133567 * L_18 = __this->get_tmpKeyrefPool_17();
 		XsdKeyTable_t2980902100 * L_19 = V_2;
 		NullCheck(L_18);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_18, L_19);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_18, L_19);
 	}
 
 IL_009a:
@@ -7951,7 +7951,7 @@ IL_00c0:
 		ArrayList_t4252133567 * L_26 = __this->get_keyTables_15();
 		int32_t L_27 = V_3;
 		NullCheck(L_26);
-		Il2CppObject * L_28 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_26, L_27);
+		Il2CppObject * L_28 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_26, L_27);
 		V_4 = ((XsdKeyTable_t2980902100 *)CastclassClass(L_28, XsdKeyTable_t2980902100_il2cpp_TypeInfo_var));
 		XsdKeyTable_t2980902100 * L_29 = V_4;
 		ArrayList_t4252133567 * L_30 = __this->get_elementQNameStack_18();
@@ -7993,7 +7993,7 @@ IL_011c:
 		int32_t L_43 = V_3;
 		ArrayList_t4252133567 * L_44 = __this->get_keyTables_15();
 		NullCheck(L_44);
-		int32_t L_45 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_44);
+		int32_t L_45 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_44);
 		if ((((int32_t)L_43) < ((int32_t)L_45)))
 		{
 			goto IL_00c0;
@@ -8035,7 +8035,7 @@ IL_0007:
 		ArrayList_t4252133567 * L_0 = __this->get_keyTables_15();
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
-		Il2CppObject * L_2 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
+		Il2CppObject * L_2 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_0, L_1);
 		V_1 = ((XsdKeyTable_t2980902100 *)CastclassClass(L_2, XsdKeyTable_t2980902100_il2cpp_TypeInfo_var));
 		V_2 = 0;
 		goto IL_0048;
@@ -8098,7 +8098,7 @@ IL_005d:
 		int32_t L_14 = V_0;
 		ArrayList_t4252133567 * L_15 = __this->get_keyTables_15();
 		NullCheck(L_15);
-		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_15);
+		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_15);
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
 			goto IL_0007;
@@ -8380,7 +8380,7 @@ extern "C"  XsdKeyTable_t2980902100 * XsdValidatingReader_CreateNewKeyTable_m253
 		ArrayList_t4252133567 * L_5 = __this->get_keyTables_15();
 		XsdKeyTable_t2980902100 * L_6 = V_0;
 		NullCheck(L_5);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_5, L_6);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_5, L_6);
 		XsdKeyTable_t2980902100 * L_7 = V_0;
 		return L_7;
 	}
@@ -8428,7 +8428,7 @@ IL_0010:
 	{
 		ArrayList_t4252133567 * L_1 = __this->get_currentKeyFieldConsumers_16();
 		NullCheck(L_1);
-		Il2CppObject * L_2 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, 0);
+		Il2CppObject * L_2 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_1, 0);
 		V_0 = ((XsdKeyEntryField_t3632833996 *)IsInstClass(L_2, XsdKeyEntryField_t3632833996_il2cpp_TypeInfo_var));
 		XsdKeyEntryField_t3632833996 * L_3 = V_0;
 		NullCheck(L_3);
@@ -8534,14 +8534,14 @@ IL_00da:
 	{
 		ArrayList_t4252133567 * L_33 = __this->get_currentKeyFieldConsumers_16();
 		NullCheck(L_33);
-		VirtActionInvoker1< int32_t >::Invoke(35 /* System.Void System.Collections.ArrayList::RemoveAt(System.Int32) */, L_33, 0);
+		VirtActionInvoker1< int32_t >::Invoke(39 /* System.Void System.Collections.ArrayList::RemoveAt(System.Int32) */, L_33, 0);
 	}
 
 IL_00e6:
 	{
 		ArrayList_t4252133567 * L_34 = __this->get_currentKeyFieldConsumers_16();
 		NullCheck(L_34);
-		int32_t L_35 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_34);
+		int32_t L_35 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_34);
 		if ((((int32_t)L_35) > ((int32_t)0)))
 		{
 			goto IL_0010;
@@ -8666,7 +8666,7 @@ IL_0042:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_23 = String_Concat_m3881798623(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_10, L_23);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_10, L_23);
 	}
 
 IL_0080:
@@ -8700,7 +8700,7 @@ IL_0084:
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_31 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(String_t_0_0_0_var), /*hidden argument*/NULL);
 		NullCheck(L_30);
-		Il2CppArray * L_32 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(44 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_30, L_31);
+		Il2CppArray * L_32 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(48 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_30, L_31);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_33 = String_Join_m1966872927(NULL /*static, unused*/, _stringLiteral811305474, ((StringU5BU5D_t1642385972*)IsInst(L_32, StringU5BU5D_t1642385972_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		String_t* L_34 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3581164671, L_33, /*hidden argument*/NULL);
@@ -8767,7 +8767,7 @@ extern "C"  void XsdValidatingReader_EndKeyrefValidation_m1654847604 (XsdValidat
 	{
 		ArrayList_t4252133567 * L_0 = __this->get_keyTables_15();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_0);
 		V_0 = ((int32_t)((int32_t)L_1-(int32_t)1));
 		goto IL_00b2;
 	}
@@ -8777,7 +8777,7 @@ IL_0013:
 		ArrayList_t4252133567 * L_2 = __this->get_keyTables_15();
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
-		Il2CppObject * L_4 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_2, L_3);
+		Il2CppObject * L_4 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_2, L_3);
 		V_1 = ((XsdKeyTable_t2980902100 *)IsInstClass(L_4, XsdKeyTable_t2980902100_il2cpp_TypeInfo_var));
 		XsdKeyTable_t2980902100 * L_5 = V_1;
 		NullCheck(L_5);
@@ -8980,7 +8980,7 @@ IL_0103:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_57 = String_Concat_m3881798623(NULL /*static, unused*/, L_52, /*hidden argument*/NULL);
 		NullCheck(L_44);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_44, L_57);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_44, L_57);
 	}
 
 IL_0144:
@@ -9014,7 +9014,7 @@ IL_014a:
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_65 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(String_t_0_0_0_var), /*hidden argument*/NULL);
 		NullCheck(L_64);
-		Il2CppArray * L_66 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(44 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_64, L_65);
+		Il2CppArray * L_66 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(48 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_64, L_65);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_67 = String_Join_m1966872927(NULL /*static, unused*/, _stringLiteral57471863, ((StringU5BU5D_t1642385972*)IsInst(L_66, StringU5BU5D_t1642385972_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		String_t* L_68 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral2045008954, L_67, /*hidden argument*/NULL);
@@ -10869,7 +10869,7 @@ IL_0140:
 		XmlQualifiedName_t1944712516 * L_38 = (XmlQualifiedName_t1944712516 *)il2cpp_codegen_object_new(XmlQualifiedName_t1944712516_il2cpp_TypeInfo_var);
 		XmlQualifiedName__ctor_m968458525(L_38, L_35, L_37, /*hidden argument*/NULL);
 		NullCheck(L_33);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_33, L_38);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_33, L_38);
 	}
 
 IL_0172:
@@ -10983,9 +10983,9 @@ IL_0221:
 		ArrayList_t4252133567 * L_56 = __this->get_elementQNameStack_18();
 		ArrayList_t4252133567 * L_57 = __this->get_elementQNameStack_18();
 		NullCheck(L_57);
-		int32_t L_58 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_57);
+		int32_t L_58 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_57);
 		NullCheck(L_56);
-		VirtActionInvoker1< int32_t >::Invoke(35 /* System.Void System.Collections.ArrayList::RemoveAt(System.Int32) */, L_56, ((int32_t)((int32_t)L_58-(int32_t)1)));
+		VirtActionInvoker1< int32_t >::Invoke(39 /* System.Void System.Collections.ArrayList::RemoveAt(System.Int32) */, L_56, ((int32_t)((int32_t)L_58-(int32_t)1)));
 	}
 
 IL_0244:
@@ -11200,7 +11200,7 @@ extern "C"  XmlSchemaElement_t2433337156 * XsdValidationContext_get_Element_m142
 	{
 		Stack_t1043988394 * L_0 = __this->get_element_stack_2();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_0);
 		if ((((int32_t)L_1) <= ((int32_t)0)))
 		{
 			goto IL_0026;
@@ -11209,7 +11209,7 @@ extern "C"  XmlSchemaElement_t2433337156 * XsdValidationContext_get_Element_m142
 	{
 		Stack_t1043988394 * L_2 = __this->get_element_stack_2();
 		NullCheck(L_2);
-		Il2CppObject * L_3 = VirtFuncInvoker0< Il2CppObject * >::Invoke(16 /* System.Object System.Collections.Stack::Peek() */, L_2);
+		Il2CppObject * L_3 = VirtFuncInvoker0< Il2CppObject * >::Invoke(18 /* System.Object System.Collections.Stack::Peek() */, L_2);
 		G_B3_0 = ((XmlSchemaElement_t2433337156 *)IsInstClass(L_3, XmlSchemaElement_t2433337156_il2cpp_TypeInfo_var));
 		goto IL_0027;
 	}
@@ -11231,7 +11231,7 @@ extern "C"  void XsdValidationContext_PushCurrentElement_m3212453151 (XsdValidat
 		Stack_t1043988394 * L_0 = __this->get_element_stack_2();
 		XmlSchemaElement_t2433337156 * L_1 = ___element0;
 		NullCheck(L_0);
-		VirtActionInvoker1< Il2CppObject * >::Invoke(18 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_1);
+		VirtActionInvoker1< Il2CppObject * >::Invoke(20 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_1);
 		return;
 	}
 }
@@ -11241,7 +11241,7 @@ extern "C"  void XsdValidationContext_PopCurrentElement_m93102503 (XsdValidation
 	{
 		Stack_t1043988394 * L_0 = __this->get_element_stack_2();
 		NullCheck(L_0);
-		VirtFuncInvoker0< Il2CppObject * >::Invoke(17 /* System.Object System.Collections.Stack::Pop() */, L_0);
+		VirtFuncInvoker0< Il2CppObject * >::Invoke(19 /* System.Object System.Collections.Stack::Pop() */, L_0);
 		return;
 	}
 }
@@ -11252,7 +11252,7 @@ extern "C"  Il2CppObject * XsdValidationContext_get_ActualType_m632539417 (XsdVa
 	{
 		Stack_t1043988394 * L_0 = __this->get_element_stack_2();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_0);
 		if (L_1)
 		{
 			goto IL_0012;
@@ -23479,7 +23479,7 @@ extern "C"  int32_t DtdInputStateStack_Peek_m512334119 (DtdInputStateStack_t3023
 	{
 		Stack_t1043988394 * L_0 = __this->get_intern_0();
 		NullCheck(L_0);
-		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(16 /* System.Object System.Collections.Stack::Peek() */, L_0);
+		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(18 /* System.Object System.Collections.Stack::Peek() */, L_0);
 		return (int32_t)(((*(int32_t*)((int32_t*)UnBox (L_1, Int32_t2071877448_il2cpp_TypeInfo_var)))));
 	}
 }
@@ -23497,7 +23497,7 @@ extern "C"  int32_t DtdInputStateStack_Pop_m2588206123 (DtdInputStateStack_t3023
 	{
 		Stack_t1043988394 * L_0 = __this->get_intern_0();
 		NullCheck(L_0);
-		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(17 /* System.Object System.Collections.Stack::Pop() */, L_0);
+		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(19 /* System.Object System.Collections.Stack::Pop() */, L_0);
 		return (int32_t)(((*(int32_t*)((int32_t*)UnBox (L_1, Int32_t2071877448_il2cpp_TypeInfo_var)))));
 	}
 }
@@ -23518,7 +23518,7 @@ extern "C"  void DtdInputStateStack_Push_m56418693 (DtdInputStateStack_t30239284
 		int32_t L_2 = L_1;
 		Il2CppObject * L_3 = Box(DtdInputState_t3313602765_il2cpp_TypeInfo_var, &L_2);
 		NullCheck(L_0);
-		VirtActionInvoker1< Il2CppObject * >::Invoke(18 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_3);
+		VirtActionInvoker1< Il2CppObject * >::Invoke(20 /* System.Void System.Collections.Stack::Push(System.Object) */, L_0, L_3);
 		return;
 	}
 }
@@ -24246,7 +24246,7 @@ extern "C"  DTDObjectModel_t1113953282 * DTDReader_GenerateDTDObjectModel_m24868
 	{
 		Stack_t1043988394 * L_0 = __this->get_parserInputStack_1();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_0);
 		V_0 = L_1;
 		DTDObjectModel_t1113953282 * L_2 = __this->get_DTD_13();
 		NullCheck(L_2);
@@ -24302,7 +24302,7 @@ IL_007e:
 	{
 		Stack_t1043988394 * L_19 = __this->get_parserInputStack_1();
 		NullCheck(L_19);
-		int32_t L_20 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_19);
+		int32_t L_20 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_19);
 		if ((((int32_t)L_20) <= ((int32_t)0)))
 		{
 			goto IL_00a8;
@@ -24323,7 +24323,7 @@ IL_00a8:
 	{
 		Stack_t1043988394 * L_22 = __this->get_parserInputStack_1();
 		NullCheck(L_22);
-		int32_t L_23 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_22);
+		int32_t L_23 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_22);
 		int32_t L_24 = V_0;
 		if ((((int32_t)L_23) > ((int32_t)L_24)))
 		{
@@ -24400,7 +24400,7 @@ IL_012f:
 	{
 		Stack_t1043988394 * L_40 = __this->get_parserInputStack_1();
 		NullCheck(L_40);
-		int32_t L_41 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_40);
+		int32_t L_41 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_40);
 		if ((((int32_t)L_41) <= ((int32_t)1)))
 		{
 			goto IL_0159;
@@ -24421,7 +24421,7 @@ IL_0159:
 	{
 		Stack_t1043988394 * L_43 = __this->get_parserInputStack_1();
 		NullCheck(L_43);
-		int32_t L_44 = VirtFuncInvoker0< int32_t >::Invoke(9 /* System.Int32 System.Collections.Stack::get_Count() */, L_43);
+		int32_t L_44 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Stack::get_Count() */, L_43);
 		int32_t L_45 = V_0;
 		if ((((int32_t)L_44) > ((int32_t)((int32_t)((int32_t)L_45+(int32_t)1)))))
 		{
@@ -24490,7 +24490,7 @@ IL_01cb:
 			DTDEntityDeclaration_ScanEntityValue_m4021782236(L_57, L_58, /*hidden argument*/NULL);
 			ArrayList_t4252133567 * L_59 = V_3;
 			NullCheck(L_59);
-			VirtActionInvoker0::Invoke(27 /* System.Void System.Collections.ArrayList::Clear() */, L_59);
+			VirtActionInvoker0::Invoke(31 /* System.Void System.Collections.ArrayList::Clear() */, L_59);
 		}
 
 IL_01d9:
@@ -24550,7 +24550,7 @@ IL_01f7:
 		NullCheck(L_64);
 		Hashtable_t909839986 * L_65 = DTDObjectModel_get_ExternalResources_m2164608555(L_64, /*hidden argument*/NULL);
 		NullCheck(L_65);
-		VirtActionInvoker0::Invoke(28 /* System.Void System.Collections.Hashtable::Clear() */, L_65);
+		VirtActionInvoker0::Invoke(30 /* System.Void System.Collections.Hashtable::Clear() */, L_65);
 		DTDObjectModel_t1113953282 * L_66 = __this->get_DTD_13();
 		return L_66;
 	}
@@ -27919,7 +27919,7 @@ IL_0248:
 		ArrayList_t4252133567 * L_41 = DTDAttributeDefinition_get_EnumeratedNotations_m2950036770(L_40, /*hidden argument*/NULL);
 		String_t* L_42 = DTDReader_ReadName_m3281724576(__this, /*hidden argument*/NULL);
 		NullCheck(L_41);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_41, L_42);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_41, L_42);
 		DTDReader_SkipWhitespace_m1496239926(__this, /*hidden argument*/NULL);
 		DTDReader_TryExpandPERef_m2663515709(__this, /*hidden argument*/NULL);
 		goto IL_02b8;
@@ -27935,7 +27935,7 @@ IL_0283:
 		ArrayList_t4252133567 * L_44 = DTDAttributeDefinition_get_EnumeratedNotations_m2950036770(L_43, /*hidden argument*/NULL);
 		String_t* L_45 = DTDReader_ReadName_m3281724576(__this, /*hidden argument*/NULL);
 		NullCheck(L_44);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_44, L_45);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_44, L_45);
 		DTDReader_SkipWhitespace_m1496239926(__this, /*hidden argument*/NULL);
 		DTDReader_TryExpandPERef_m2663515709(__this, /*hidden argument*/NULL);
 	}
@@ -27985,7 +27985,7 @@ IL_02e3:
 		NullCheck(L_53);
 		String_t* L_55 = XmlSchemaDatatype_Normalize_m3717401456(L_53, L_54, /*hidden argument*/NULL);
 		NullCheck(L_51);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_51, L_55);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_51, L_55);
 		DTDReader_SkipWhitespace_m1496239926(__this, /*hidden argument*/NULL);
 		goto IL_037e;
 	}
@@ -28005,7 +28005,7 @@ IL_033e:
 		NullCheck(L_59);
 		String_t* L_61 = XmlSchemaDatatype_Normalize_m3717401456(L_59, L_60, /*hidden argument*/NULL);
 		NullCheck(L_57);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_57, L_61);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_57, L_61);
 		DTDReader_SkipWhitespace_m1496239926(__this, /*hidden argument*/NULL);
 		DTDReader_TryExpandPERef_m2663515709(__this, /*hidden argument*/NULL);
 	}
@@ -28209,7 +28209,7 @@ IL_00cb:
 		NullCheck(L_20);
 		ArrayList_t4252133567 * L_21 = DTDAttributeDefinition_get_EnumeratedAttributeDeclaration_m2607115935(L_20, /*hidden argument*/NULL);
 		NullCheck(L_21);
-		int32_t L_22 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_21);
+		int32_t L_22 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_21);
 		if ((((int32_t)L_22) <= ((int32_t)0)))
 		{
 			goto IL_0134;
@@ -28221,7 +28221,7 @@ IL_00cb:
 		ArrayList_t4252133567 * L_24 = DTDAttributeDefinition_get_EnumeratedAttributeDeclaration_m2607115935(L_23, /*hidden argument*/NULL);
 		String_t* L_25 = V_0;
 		NullCheck(L_24);
-		bool L_26 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(28 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_24, L_25);
+		bool L_26 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(32 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_24, L_25);
 		if (L_26)
 		{
 			goto IL_0134;
@@ -28249,7 +28249,7 @@ IL_0134:
 		NullCheck(L_34);
 		ArrayList_t4252133567 * L_35 = DTDAttributeDefinition_get_EnumeratedNotations_m2950036770(L_34, /*hidden argument*/NULL);
 		NullCheck(L_35);
-		int32_t L_36 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_35);
+		int32_t L_36 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_35);
 		if ((((int32_t)L_36) <= ((int32_t)0)))
 		{
 			goto IL_017c;
@@ -28261,7 +28261,7 @@ IL_0134:
 		ArrayList_t4252133567 * L_38 = DTDAttributeDefinition_get_EnumeratedNotations_m2950036770(L_37, /*hidden argument*/NULL);
 		String_t* L_39 = V_0;
 		NullCheck(L_38);
-		bool L_40 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(28 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_38, L_39);
+		bool L_40 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(32 /* System.Boolean System.Collections.ArrayList::Contains(System.Object) */, L_38, L_39);
 		if (L_40)
 		{
 			goto IL_017c;
@@ -30373,7 +30373,7 @@ IL_008b:
 		V_2 = G_B13_0;
 		Stack_t1043988394 * L_22 = __this->get_parserInputStack_1();
 		NullCheck(L_22);
-		ObjectU5BU5D_t3614634134* L_23 = VirtFuncInvoker0< ObjectU5BU5D_t3614634134* >::Invoke(19 /* System.Object[] System.Collections.Stack::ToArray() */, L_22);
+		ObjectU5BU5D_t3614634134* L_23 = VirtFuncInvoker0< ObjectU5BU5D_t3614634134* >::Invoke(21 /* System.Object[] System.Collections.Stack::ToArray() */, L_22);
 		V_4 = L_23;
 		V_5 = 0;
 		goto IL_00d5;
@@ -30427,7 +30427,7 @@ IL_00d5:
 		Stack_t1043988394 * L_38 = __this->get_parserInputStack_1();
 		XmlParserInput_t2366782760 * L_39 = __this->get_currentInput_0();
 		NullCheck(L_38);
-		VirtActionInvoker1< Il2CppObject * >::Invoke(18 /* System.Void System.Collections.Stack::Push(System.Object) */, L_38, L_39);
+		VirtActionInvoker1< Il2CppObject * >::Invoke(20 /* System.Void System.Collections.Stack::Push(System.Object) */, L_38, L_39);
 		V_6 = (Stream_t3255436806 *)NULL;
 		MemoryStream_t743994179 * L_40 = (MemoryStream_t743994179 *)il2cpp_codegen_object_new(MemoryStream_t743994179_il2cpp_TypeInfo_var);
 		MemoryStream__ctor_m1043059966(L_40, /*hidden argument*/NULL);
@@ -30634,7 +30634,7 @@ extern "C"  void DTDReader_PopParserInput_m3467118866 (DTDReader_t2453137441 * _
 		XmlParserInput_Close_m3504584711(L_0, /*hidden argument*/NULL);
 		Stack_t1043988394 * L_1 = __this->get_parserInputStack_1();
 		NullCheck(L_1);
-		Il2CppObject * L_2 = VirtFuncInvoker0< Il2CppObject * >::Invoke(17 /* System.Object System.Collections.Stack::Pop() */, L_1);
+		Il2CppObject * L_2 = VirtFuncInvoker0< Il2CppObject * >::Invoke(19 /* System.Object System.Collections.Stack::Pop() */, L_1);
 		__this->set_currentInput_0(((XmlParserInput_t2366782760 *)IsInstClass(L_2, XmlParserInput_t2366782760_il2cpp_TypeInfo_var)));
 		return;
 	}
@@ -33423,7 +33423,7 @@ IL_00eb:
 	{
 		Il2CppObject * L_29 = V_0;
 		NullCheck(((Il2CppObject *)Castclass(L_29, IList_t3321498491_il2cpp_TypeInfo_var)));
-		Il2CppObject * L_30 = InterfaceFuncInvoker1< Il2CppObject *, int32_t >::Invoke(0 /* System.Object System.Collections.IList::get_Item(System.Int32) */, IList_t3321498491_il2cpp_TypeInfo_var, ((Il2CppObject *)Castclass(L_29, IList_t3321498491_il2cpp_TypeInfo_var)), 0);
+		Il2CppObject * L_30 = InterfaceFuncInvoker1< Il2CppObject *, int32_t >::Invoke(2 /* System.Object System.Collections.IList::get_Item(System.Int32) */, IList_t3321498491_il2cpp_TypeInfo_var, ((Il2CppObject *)Castclass(L_29, IList_t3321498491_il2cpp_TypeInfo_var)), 0);
 		XmlSchemaType_t1795078578 * L_31 = ___xmlType1;
 		XmlAtomicValue_Init_m3088079718(__this, L_30, L_31, /*hidden argument*/NULL);
 		goto IL_0177;
@@ -35341,7 +35341,7 @@ extern "C"  void XmlSchema_CompileSubset_m3854363955 (XmlSchema_t880472818 * __t
 		Hashtable_t909839986 * L_3 = ___handledUris3;
 		String_t* L_4 = XmlSchemaObject_get_SourceUri_m2019817266(__this, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		bool L_5 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(29 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_3, L_4);
+		bool L_5 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(31 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_3, L_4);
 		if (!L_5)
 		{
 			goto IL_002f;
@@ -35357,7 +35357,7 @@ IL_002f:
 		String_t* L_7 = XmlSchemaObject_get_SourceUri_m2019817266(__this, /*hidden argument*/NULL);
 		String_t* L_8 = XmlSchemaObject_get_SourceUri_m2019817266(__this, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_6, L_7, L_8);
+		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(29 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_6, L_7, L_8);
 	}
 
 IL_0042:
@@ -35385,7 +35385,7 @@ IL_0007:
 		XmlSchemaObjectCollection_t395083109 * L_0 = XmlSchema_get_Items_m1444401730(__this, /*hidden argument*/NULL);
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
-		XmlSchemaObject_t2050913741 * L_2 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_0, L_1);
+		XmlSchemaObject_t2050913741 * L_2 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_0, L_1);
 		NullCheck(L_2);
 		VirtActionInvoker1< XmlSchemaObject_t2050913741 * >::Invoke(4 /* System.Void System.Xml.Schema.XmlSchemaObject::SetParent(System.Xml.Schema.XmlSchemaObject) */, L_2, __this);
 		int32_t L_3 = V_0;
@@ -35413,7 +35413,7 @@ IL_0035:
 		XmlSchemaObjectCollection_t395083109 * L_7 = XmlSchema_get_Includes_m3401500551(__this, /*hidden argument*/NULL);
 		int32_t L_8 = V_1;
 		NullCheck(L_7);
-		XmlSchemaObject_t2050913741 * L_9 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_7, L_8);
+		XmlSchemaObject_t2050913741 * L_9 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_7, L_8);
 		NullCheck(L_9);
 		VirtActionInvoker1< XmlSchemaObject_t2050913741 * >::Invoke(4 /* System.Void System.Xml.Schema.XmlSchemaObject::SetParent(System.Xml.Schema.XmlSchemaObject) */, L_9, __this);
 		int32_t L_10 = V_1;
@@ -35656,7 +35656,7 @@ IL_017f:
 		XmlSchemaObjectCollection_t395083109 * L_40 = XmlSchema_get_Items_m1444401730(__this, /*hidden argument*/NULL);
 		int32_t L_41 = V_0;
 		NullCheck(L_40);
-		XmlSchemaObject_t2050913741 * L_42 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_40, L_41);
+		XmlSchemaObject_t2050913741 * L_42 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_40, L_41);
 		NullCheck(L_39);
 		XmlSchemaObjectCollection_Add_m1540383378(L_39, L_42, /*hidden argument*/NULL);
 		int32_t L_43 = V_0;
@@ -35687,7 +35687,7 @@ IL_01b3:
 		XmlSchemaObjectCollection_t395083109 * L_50 = XmlSchema_get_Includes_m3401500551(__this, /*hidden argument*/NULL);
 		int32_t L_51 = V_1;
 		NullCheck(L_50);
-		XmlSchemaObject_t2050913741 * L_52 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_50, L_51);
+		XmlSchemaObject_t2050913741 * L_52 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_50, L_51);
 		XmlSchemaSet_t313318308 * L_53 = ___col2;
 		XmlSchema_ProcessExternal_m382455060(__this, L_47, L_48, L_49, ((XmlSchemaExternal_t3943748629 *)IsInstClass(L_52, XmlSchemaExternal_t3943748629_il2cpp_TypeInfo_var)), L_53, /*hidden argument*/NULL);
 		int32_t L_54 = V_1;
@@ -35715,7 +35715,7 @@ IL_01eb:
 		XmlSchemaObjectCollection_t395083109 * L_58 = __this->get_compilationItems_31();
 		int32_t L_59 = V_2;
 		NullCheck(L_58);
-		XmlSchemaObject_t2050913741 * L_60 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_58, L_59);
+		XmlSchemaObject_t2050913741 * L_60 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_58, L_59);
 		V_3 = L_60;
 		XmlSchemaObject_t2050913741 * L_61 = V_3;
 		if (!((XmlSchemaAnnotation_t2400301303 *)IsInstClass(L_61, XmlSchemaAnnotation_t2400301303_il2cpp_TypeInfo_var)))
@@ -36260,7 +36260,7 @@ IL_0040:
 		Hashtable_t909839986 * L_17 = ___handledUris1;
 		String_t* L_18 = V_3;
 		NullCheck(L_17);
-		bool L_19 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(29 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_17, L_18);
+		bool L_19 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(31 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_17, L_18);
 		if (!L_19)
 		{
 			goto IL_0074;
@@ -36276,7 +36276,7 @@ IL_0074:
 		String_t* L_21 = V_3;
 		String_t* L_22 = V_3;
 		NullCheck(L_20);
-		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_20, L_21, L_22);
+		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(29 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_20, L_21, L_22);
 	}
 
 IL_007c:
@@ -36334,7 +36334,7 @@ IL_00d0:
 		XmlSchemaObjectCollection_t395083109 * L_34 = XmlSchemaRedefine_get_Items_m118653912(L_33, /*hidden argument*/NULL);
 		int32_t L_35 = V_5;
 		NullCheck(L_34);
-		XmlSchemaObject_t2050913741 * L_36 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_34, L_35);
+		XmlSchemaObject_t2050913741 * L_36 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_34, L_35);
 		V_6 = L_36;
 		XmlSchemaObject_t2050913741 * L_37 = V_6;
 		NullCheck(L_37);
@@ -39725,7 +39725,7 @@ IL_004a:
 		VirtActionInvoker1< XmlSchemaParticle_t3365045970 * >::Invoke(7 /* System.Void System.Xml.Schema.XmlSchemaParticle::CopyInfo(System.Xml.Schema.XmlSchemaParticle) */, __this, L_18);
 		XmlSchemaObjectCollection_t395083109 * L_19 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaAll::get_Items() */, __this);
 		NullCheck(L_19);
-		XmlSchemaObject_t2050913741 * L_20 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_19, 0);
+		XmlSchemaObject_t2050913741 * L_20 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_19, 0);
 		V_1 = ((XmlSchemaParticle_t3365045970 *)CastclassClass(L_20, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_21 = V_1;
 		NullCheck(L_21);
@@ -40017,7 +40017,7 @@ IL_000e:
 		XmlSchemaObjectCollection_t395083109 * L_0 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaAll::get_Items() */, __this);
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
-		XmlSchemaObject_t2050913741 * L_2 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_0, L_1);
+		XmlSchemaObject_t2050913741 * L_2 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_0, L_1);
 		NullCheck(((XmlSchemaParticle_t3365045970 *)CastclassClass(L_2, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)));
 		Decimal_t724701077  L_3 = XmlSchemaParticle_get_ValidatedMinOccurs_m690640807(((XmlSchemaParticle_t3365045970 *)CastclassClass(L_2, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		Decimal_t724701077  L_4;
@@ -40903,7 +40903,7 @@ extern "C"  XmlAttributeU5BU5D_t287209776* XmlSchemaAnnotated_get_UnhandledAttri
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_2 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(XmlAttribute_t175731005_0_0_0_var), /*hidden argument*/NULL);
 		NullCheck(L_1);
-		Il2CppArray * L_3 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(44 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_1, L_2);
+		Il2CppArray * L_3 = VirtFuncInvoker1< Il2CppArray *, Type_t * >::Invoke(48 /* System.Array System.Collections.ArrayList::ToArray(System.Type) */, L_1, L_2);
 		__this->set_unhandledAttributes_15(((XmlAttributeU5BU5D_t287209776*)Castclass(L_3, XmlAttributeU5BU5D_t287209776_il2cpp_TypeInfo_var)));
 		((XmlSchemaObject_t2050913741 *)__this)->set_unhandledAttributeList_4((ArrayList_t4252133567 *)NULL);
 	}
@@ -42058,7 +42058,7 @@ extern "C"  void XmlSchemaAny_ValidateUniqueParticleAttribution_m2992958452 (Xml
 	{
 		ArrayList_t4252133567 * L_0 = ___nsNames1;
 		NullCheck(L_0);
-		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(39 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_0);
+		Il2CppObject * L_1 = VirtFuncInvoker0< Il2CppObject * >::Invoke(43 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_0);
 		V_1 = L_1;
 	}
 
@@ -42148,7 +42148,7 @@ IL_0055:
 	{
 		ArrayList_t4252133567 * L_14 = ___nsNames1;
 		NullCheck(L_14);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_14, __this);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_14, __this);
 		return;
 	}
 }
@@ -47416,7 +47416,7 @@ IL_0048:
 	{
 		XmlSchemaObjectCollection_t395083109 * L_17 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaChoice::get_Items() */, __this);
 		NullCheck(L_17);
-		XmlSchemaObject_t2050913741 * L_18 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_17, 0);
+		XmlSchemaObject_t2050913741 * L_18 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_17, 0);
 		NullCheck(((XmlSchemaParticle_t3365045970 *)CastclassClass(L_18, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)));
 		XmlSchemaParticle_t3365045970 * L_19 = VirtFuncInvoker1< XmlSchemaParticle_t3365045970 *, bool >::Invoke(8 /* System.Xml.Schema.XmlSchemaParticle System.Xml.Schema.XmlSchemaParticle::GetOptimizedParticle(System.Boolean) */, ((XmlSchemaParticle_t3365045970 *)CastclassClass(L_18, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var)), (bool)0);
 		((XmlSchemaParticle_t3365045970 *)__this)->set_OptimizedParticle_26(L_19);
@@ -47439,7 +47439,7 @@ IL_00c1:
 		XmlSchemaObjectCollection_t395083109 * L_22 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaChoice::get_Items() */, __this);
 		int32_t L_23 = V_1;
 		NullCheck(L_22);
-		XmlSchemaObject_t2050913741 * L_24 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_22, L_23);
+		XmlSchemaObject_t2050913741 * L_24 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_22, L_23);
 		V_2 = ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_24, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_25 = V_2;
 		NullCheck(L_25);
@@ -47509,7 +47509,7 @@ IL_0131:
 		XmlSchemaObjectCollection_t395083109 * L_42 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaChoice::get_Items() */, L_41);
 		int32_t L_43 = V_4;
 		NullCheck(L_42);
-		XmlSchemaObject_t2050913741 * L_44 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_42, L_43);
+		XmlSchemaObject_t2050913741 * L_44 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_42, L_43);
 		NullCheck(L_40);
 		XmlSchemaObjectCollection_Add_m1540383378(L_40, L_44, /*hidden argument*/NULL);
 		XmlSchemaChoice_t654568461 * L_45 = V_0;
@@ -47520,7 +47520,7 @@ IL_0131:
 		XmlSchemaObjectCollection_t395083109 * L_48 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaChoice::get_Items() */, L_47);
 		int32_t L_49 = V_4;
 		NullCheck(L_48);
-		XmlSchemaObject_t2050913741 * L_50 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_48, L_49);
+		XmlSchemaObject_t2050913741 * L_50 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_48, L_49);
 		NullCheck(L_46);
 		XmlSchemaObjectCollection_Add_m1540383378(L_46, L_50, /*hidden argument*/NULL);
 		int32_t L_51 = V_4;
@@ -48990,6 +48990,13 @@ FINALLY_001f:
 IL_0026:
 	{
 		return;
+	}
+}
+// System.Boolean System.Xml.Schema.XmlSchemaCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool XmlSchemaCollection_System_Collections_ICollection_get_IsSynchronized_m423318334 (XmlSchemaCollection_t3518500204 * __this, const MethodInfo* method)
+{
+	{
+		return (bool)1;
 	}
 }
 // System.Collections.IEnumerator System.Xml.Schema.XmlSchemaCollection::System.Collections.IEnumerable.GetEnumerator()
@@ -58491,7 +58498,7 @@ extern Il2CppClass* XdtAnyAtomicType_t3359210273_il2cpp_TypeInfo_var;
 extern Il2CppClass* XdtUntypedAtomic_t2904699188_il2cpp_TypeInfo_var;
 extern Il2CppClass* XdtDayTimeDuration_t2797717973_il2cpp_TypeInfo_var;
 extern Il2CppClass* XdtYearMonthDuration_t1764328599_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D43_6_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D43_6_FieldInfo_var;
 extern const uint32_t XmlSchemaDatatype__cctor_m74693117_MetadataUsageId;
 extern "C"  void XmlSchemaDatatype__cctor_m74693117 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -58503,7 +58510,7 @@ extern "C"  void XmlSchemaDatatype__cctor_m74693117 (Il2CppObject * __this /* st
 	}
 	{
 		CharU5BU5D_t1328083999* L_0 = ((CharU5BU5D_t1328083999*)SZArrayNew(CharU5BU5D_t1328083999_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305139____U24U24fieldU2D43_6_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m3920580167(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t1486305138____U24U24fieldU2D43_6_FieldInfo_var), /*hidden argument*/NULL);
 		((XmlSchemaDatatype_t1195946242_StaticFields*)XmlSchemaDatatype_t1195946242_il2cpp_TypeInfo_var->static_fields)->set_wsChars_1(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(XsdAnySimpleType_t1096449895_il2cpp_TypeInfo_var);
 		XsdAnySimpleType_t1096449895 * L_1 = XsdAnySimpleType_get_Instance_m2353095684(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -60231,7 +60238,7 @@ extern "C"  void XmlSchemaElement_InitPostCompileInformations_m2095138184 (XmlSc
 		__this->set_referencedElement_47((XmlSchemaElement_t2433337156 *)NULL);
 		ArrayList_t4252133567 * L_1 = __this->get_substitutingElements_48();
 		NullCheck(L_1);
-		VirtActionInvoker0::Invoke(27 /* System.Void System.Collections.ArrayList::Clear() */, L_1);
+		VirtActionInvoker0::Invoke(31 /* System.Void System.Collections.ArrayList::Clear() */, L_1);
 		__this->set_substitutionGroupElement_49((XmlSchemaElement_t2433337156 *)NULL);
 		__this->set_actualIsAbstract_50((bool)0);
 		__this->set_actualIsNillable_51((bool)0);
@@ -62090,7 +62097,7 @@ IL_0075:
 	{
 		ArrayList_t4252133567 * L_15 = XmlSchemaElement_get_SubstitutingElements_m2295551251(__this, /*hidden argument*/NULL);
 		NullCheck(L_15);
-		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_15);
+		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_15);
 		if ((((int32_t)L_16) <= ((int32_t)0)))
 		{
 			goto IL_016e;
@@ -62141,7 +62148,7 @@ IL_00f6:
 		ArrayList_t4252133567 * L_31 = XmlSchemaElement_get_SubstitutingElements_m2295551251(__this, /*hidden argument*/NULL);
 		int32_t L_32 = V_2;
 		NullCheck(L_31);
-		Il2CppObject * L_33 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_31, L_32);
+		Il2CppObject * L_33 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_31, L_32);
 		V_3 = ((XmlSchemaElement_t2433337156 *)IsInstClass(L_33, XmlSchemaElement_t2433337156_il2cpp_TypeInfo_var));
 		XmlSchemaChoice_t654568461 * L_34 = V_0;
 		NullCheck(L_34);
@@ -62162,7 +62169,7 @@ IL_0126:
 		int32_t L_41 = V_2;
 		ArrayList_t4252133567 * L_42 = XmlSchemaElement_get_SubstitutingElements_m2295551251(__this, /*hidden argument*/NULL);
 		NullCheck(L_42);
-		int32_t L_43 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_42);
+		int32_t L_43 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_42);
 		if ((((int32_t)L_41) < ((int32_t)L_43)))
 		{
 			goto IL_00f6;
@@ -62247,7 +62254,7 @@ IL_0012:
 		ArrayList_t4252133567 * L_4 = XmlSchemaElement_get_SubstitutingElements_m2295551251(L_3, /*hidden argument*/NULL);
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
-		Il2CppObject * L_6 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(18 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_4, L_5);
+		Il2CppObject * L_6 = VirtFuncInvoker1< Il2CppObject *, int32_t >::Invoke(21 /* System.Object System.Collections.ArrayList::get_Item(System.Int32) */, L_4, L_5);
 		XmlSchemaElement_AddSubstElementRecursively_m1199170100(__this, L_2, ((XmlSchemaElement_t2433337156 *)IsInstClass(L_6, XmlSchemaElement_t2433337156_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 		int32_t L_7 = V_0;
 		V_0 = ((int32_t)((int32_t)L_7+(int32_t)1));
@@ -62260,7 +62267,7 @@ IL_002e:
 		NullCheck(L_9);
 		ArrayList_t4252133567 * L_10 = XmlSchemaElement_get_SubstitutingElements_m2295551251(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_10);
+		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(23 /* System.Int32 System.Collections.ArrayList::get_Count() */, L_10);
 		if ((((int32_t)L_8) < ((int32_t)L_11)))
 		{
 			goto IL_0012;
@@ -62343,7 +62350,7 @@ IL_000c:
 		NullCheck(L_9);
 		ArrayList_t4252133567 * L_10 = L_9->get_substitutingElements_48();
 		NullCheck(L_10);
-		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(26 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_10, __this);
+		VirtFuncInvoker1< int32_t, Il2CppObject * >::Invoke(30 /* System.Int32 System.Collections.ArrayList::Add(System.Object) */, L_10, __this);
 	}
 
 IL_004d:
@@ -63142,14 +63149,14 @@ IL_0088:
 		XmlSchemaObjectCollection_t395083109 * L_22 = XmlSchemaElement_get_Constraints_m1833727398(__this, /*hidden argument*/NULL);
 		int32_t L_23 = V_1;
 		NullCheck(L_22);
-		XmlSchemaObject_t2050913741 * L_24 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_22, L_23);
+		XmlSchemaObject_t2050913741 * L_24 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_22, L_23);
 		V_2 = ((XmlSchemaIdentityConstraint_t1058613623 *)IsInstClass(L_24, XmlSchemaIdentityConstraint_t1058613623_il2cpp_TypeInfo_var));
 		XmlSchemaElement_t2433337156 * L_25 = V_0;
 		NullCheck(L_25);
 		XmlSchemaObjectCollection_t395083109 * L_26 = XmlSchemaElement_get_Constraints_m1833727398(L_25, /*hidden argument*/NULL);
 		int32_t L_27 = V_1;
 		NullCheck(L_26);
-		XmlSchemaObject_t2050913741 * L_28 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_26, L_27);
+		XmlSchemaObject_t2050913741 * L_28 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_26, L_27);
 		V_3 = ((XmlSchemaIdentityConstraint_t1058613623 *)IsInstClass(L_28, XmlSchemaIdentityConstraint_t1058613623_il2cpp_TypeInfo_var));
 		XmlSchemaIdentityConstraint_t1058613623 * L_29 = V_2;
 		NullCheck(L_29);
@@ -63217,14 +63224,14 @@ IL_0107:
 		XmlSchemaObjectCollection_t395083109 * L_48 = XmlSchemaIdentityConstraint_get_Fields_m3717834620(L_47, /*hidden argument*/NULL);
 		int32_t L_49 = V_4;
 		NullCheck(L_48);
-		XmlSchemaObject_t2050913741 * L_50 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_48, L_49);
+		XmlSchemaObject_t2050913741 * L_50 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_48, L_49);
 		V_5 = ((XmlSchemaXPath_t604820427 *)IsInstClass(L_50, XmlSchemaXPath_t604820427_il2cpp_TypeInfo_var));
 		XmlSchemaIdentityConstraint_t1058613623 * L_51 = V_3;
 		NullCheck(L_51);
 		XmlSchemaObjectCollection_t395083109 * L_52 = XmlSchemaIdentityConstraint_get_Fields_m3717834620(L_51, /*hidden argument*/NULL);
 		int32_t L_53 = V_4;
 		NullCheck(L_52);
-		XmlSchemaObject_t2050913741 * L_54 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_52, L_53);
+		XmlSchemaObject_t2050913741 * L_54 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_52, L_53);
 		V_6 = ((XmlSchemaXPath_t604820427 *)IsInstClass(L_54, XmlSchemaXPath_t604820427_il2cpp_TypeInfo_var));
 		XmlSchemaXPath_t604820427 * L_55 = V_5;
 		NullCheck(L_55);
@@ -63868,7 +63875,7 @@ IL_002d:
 	{
 		ArrayList_t4252133567 * L_6 = ___nsNames1;
 		NullCheck(L_6);
-		Il2CppObject * L_7 = VirtFuncInvoker0< Il2CppObject * >::Invoke(39 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_6);
+		Il2CppObject * L_7 = VirtFuncInvoker0< Il2CppObject * >::Invoke(43 /* System.Collections.IEnumerator System.Collections.ArrayList::GetEnumerator() */, L_6);
 		V_1 = L_7;
 	}
 
@@ -67794,7 +67801,7 @@ IL_0007:
 		XmlSchemaObjectCollection_t395083109 * L_0 = VirtFuncInvoker0< XmlSchemaObjectCollection_t395083109 * >::Invoke(17 /* System.Xml.Schema.XmlSchemaObjectCollection System.Xml.Schema.XmlSchemaGroupBase::get_Items() */, __this);
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
-		XmlSchemaObject_t2050913741 * L_2 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_0, L_1);
+		XmlSchemaObject_t2050913741 * L_2 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_0, L_1);
 		V_1 = ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_2, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_3 = V_1;
 		NullCheck(L_3);
@@ -67954,14 +67961,14 @@ IL_0074:
 		XmlSchemaObjectCollection_t395083109 * L_18 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(__this, /*hidden argument*/NULL);
 		int32_t L_19 = V_1;
 		NullCheck(L_18);
-		XmlSchemaObject_t2050913741 * L_20 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_18, L_19);
+		XmlSchemaObject_t2050913741 * L_20 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_18, L_19);
 		V_2 = ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_20, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaGroupBase_t3811767860 * L_21 = V_0;
 		NullCheck(L_21);
 		XmlSchemaObjectCollection_t395083109 * L_22 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_21, /*hidden argument*/NULL);
 		int32_t L_23 = V_1;
 		NullCheck(L_22);
-		XmlSchemaObject_t2050913741 * L_24 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_22, L_23);
+		XmlSchemaObject_t2050913741 * L_24 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_22, L_23);
 		V_3 = ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_24, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_25 = V_2;
 		XmlSchemaParticle_t3365045970 * L_26 = V_3;
@@ -68333,7 +68340,7 @@ IL_0050:
 		XmlSchemaObjectCollection_t395083109 * L_8 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(__this, /*hidden argument*/NULL);
 		int32_t L_9 = V_0;
 		NullCheck(L_8);
-		XmlSchemaObject_t2050913741 * L_10 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_8, L_9);
+		XmlSchemaObject_t2050913741 * L_10 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_8, L_9);
 		V_4 = ((XmlSchemaParticle_t3365045970 *)CastclassClass(L_10, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_11 = V_4;
 		XmlSchemaParticle_t3365045970 * L_12 = XmlSchemaParticle_get_Empty_m3425435386(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -68405,7 +68412,7 @@ IL_00b7:
 		XmlSchemaObjectCollection_t395083109 * L_23 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_22, /*hidden argument*/NULL);
 		int32_t L_24 = V_1;
 		NullCheck(L_23);
-		XmlSchemaObject_t2050913741 * L_25 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_23, L_24);
+		XmlSchemaObject_t2050913741 * L_25 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_23, L_24);
 		V_5 = ((XmlSchemaParticle_t3365045970 *)CastclassClass(L_25, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_26 = V_5;
 		XmlSchemaParticle_t3365045970 * L_27 = XmlSchemaParticle_get_Empty_m3425435386(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -68656,7 +68663,7 @@ IL_020f:
 		XmlSchemaObjectCollection_t395083109 * L_83 = XmlSchemaGroupBase_get_CompiledItems_m1894191985(L_82, /*hidden argument*/NULL);
 		int32_t L_84 = V_6;
 		NullCheck(L_83);
-		XmlSchemaObject_t2050913741 * L_85 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_83, L_84);
+		XmlSchemaObject_t2050913741 * L_85 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_83, L_84);
 		V_7 = ((XmlSchemaParticle_t3365045970 *)IsInstClass(L_85, XmlSchemaParticle_t3365045970_il2cpp_TypeInfo_var));
 		XmlSchemaParticle_t3365045970 * L_86 = V_7;
 		NullCheck(L_86);
@@ -70187,7 +70194,7 @@ IL_0180:
 		XmlSchemaObjectCollection_t395083109 * L_53 = XmlSchemaIdentityConstraint_get_Fields_m3717834620(__this, /*hidden argument*/NULL);
 		int32_t L_54 = V_1;
 		NullCheck(L_53);
-		XmlSchemaObject_t2050913741 * L_55 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_53, L_54);
+		XmlSchemaObject_t2050913741 * L_55 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_53, L_54);
 		V_2 = ((XmlSchemaXPath_t604820427 *)IsInstClass(L_55, XmlSchemaXPath_t604820427_il2cpp_TypeInfo_var));
 		XmlSchemaXPath_t604820427 * L_56 = V_2;
 		if (!L_56)
@@ -70232,7 +70239,7 @@ IL_01cf:
 		XmlSchemaObjectCollection_t395083109 * L_69 = XmlSchemaIdentityConstraint_get_Fields_m3717834620(__this, /*hidden argument*/NULL);
 		int32_t L_70 = V_1;
 		NullCheck(L_69);
-		XmlSchemaObject_t2050913741 * L_71 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(26 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_69, L_70);
+		XmlSchemaObject_t2050913741 * L_71 = VirtFuncInvoker1< XmlSchemaObject_t2050913741 *, int32_t >::Invoke(29 /* System.Xml.Schema.XmlSchemaObject System.Xml.Schema.XmlSchemaObjectCollection::get_Item(System.Int32) */, L_69, L_70);
 		NullCheck(L_71);
 		Type_t * L_72 = Object_GetType_m191970594(L_71, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -75935,7 +75942,7 @@ extern "C"  XmlSchemaObject_t2050913741 * XmlSchemaObjectCollection_get_Item_m97
 		Il2CppObject * L_0 = CollectionBase_get_List_m303528484(__this, /*hidden argument*/NULL);
 		int32_t L_1 = ___index0;
 		NullCheck(L_0);
-		Il2CppObject * L_2 = InterfaceFuncInvoker1< Il2CppObject *, int32_t >::Invoke(0 /* System.Object System.Collections.IList::get_Item(System.Int32) */, IList_t3321498491_il2cpp_TypeInfo_var, L_0, L_1);
+		Il2CppObject * L_2 = InterfaceFuncInvoker1< Il2CppObject *, int32_t >::Invoke(2 /* System.Object System.Collections.IList::get_Item(System.Int32) */, IList_t3321498491_il2cpp_TypeInfo_var, L_0, L_1);
 		return ((XmlSchemaObject_t2050913741 *)CastclassClass(L_2, XmlSchemaObject_t2050913741_il2cpp_TypeInfo_var));
 	}
 }
@@ -75954,7 +75961,7 @@ extern "C"  int32_t XmlSchemaObjectCollection_Add_m1540383378 (XmlSchemaObjectCo
 		Il2CppObject * L_0 = CollectionBase_get_List_m303528484(__this, /*hidden argument*/NULL);
 		XmlSchemaObject_t2050913741 * L_1 = ___item0;
 		NullCheck(L_0);
-		int32_t L_2 = InterfaceFuncInvoker1< int32_t, Il2CppObject * >::Invoke(2 /* System.Int32 System.Collections.IList::Add(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, L_0, L_1);
+		int32_t L_2 = InterfaceFuncInvoker1< int32_t, Il2CppObject * >::Invoke(4 /* System.Int32 System.Collections.IList::Add(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, L_0, L_1);
 		return L_2;
 	}
 }
@@ -75973,7 +75980,7 @@ extern "C"  bool XmlSchemaObjectCollection_Contains_m984801564 (XmlSchemaObjectC
 		Il2CppObject * L_0 = CollectionBase_get_List_m303528484(__this, /*hidden argument*/NULL);
 		XmlSchemaObject_t2050913741 * L_1 = ___item0;
 		NullCheck(L_0);
-		bool L_2 = InterfaceFuncInvoker1< bool, Il2CppObject * >::Invoke(4 /* System.Boolean System.Collections.IList::Contains(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, L_0, L_1);
+		bool L_2 = InterfaceFuncInvoker1< bool, Il2CppObject * >::Invoke(6 /* System.Boolean System.Collections.IList::Contains(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, L_0, L_1);
 		return L_2;
 	}
 }

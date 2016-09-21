@@ -42,8 +42,14 @@ extern "C"  void TraceListenerCollection__ctor_m1111368365 (TraceListenerCollect
 extern "C"  Il2CppObject * TraceListenerCollection_System_Collections_IList_get_Item_m2284809303 (TraceListenerCollection_t2289511703 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Diagnostics.TraceListenerCollection::System.Collections.IList.set_Item(System.Int32,System.Object)
 extern "C"  void TraceListenerCollection_System_Collections_IList_set_Item_m1205995108 (TraceListenerCollection_t2289511703 * __this, int32_t ___index0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Diagnostics.TraceListenerCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool TraceListenerCollection_System_Collections_ICollection_get_IsSynchronized_m3012852146 (TraceListenerCollection_t2289511703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Diagnostics.TraceListenerCollection::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * TraceListenerCollection_System_Collections_ICollection_get_SyncRoot_m1482199550 (TraceListenerCollection_t2289511703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Diagnostics.TraceListenerCollection::System.Collections.IList.get_IsFixedSize()
+extern "C"  bool TraceListenerCollection_System_Collections_IList_get_IsFixedSize_m3154681719 (TraceListenerCollection_t2289511703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Diagnostics.TraceListenerCollection::System.Collections.IList.get_IsReadOnly()
+extern "C"  bool TraceListenerCollection_System_Collections_IList_get_IsReadOnly_m667078910 (TraceListenerCollection_t2289511703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Diagnostics.TraceListenerCollection::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
 extern "C"  void TraceListenerCollection_System_Collections_ICollection_CopyTo_m1594045198 (TraceListenerCollection_t2289511703 * __this, Il2CppArray * ___array0, int32_t ___index1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Diagnostics.TraceListenerCollection::System.Collections.IList.Add(System.Object)

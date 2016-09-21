@@ -18,9 +18,19 @@ struct SnakeManager_t2989862063;
 struct IEnumerator_t1466026749;
 
 #include "codegen/il2cpp-codegen.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
 
 // System.Void SnakeManager::.ctor()
 extern "C"  void SnakeManager__ctor_m907049390 (SnakeManager_t2989862063 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SnakeManager::SavePlayerData()
+extern "C"  void SnakeManager_SavePlayerData_m425722112 (SnakeManager_t2989862063 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SnakeManager::LoadPlayerData()
+extern "C"  void SnakeManager_LoadPlayerData_m2050202643 (SnakeManager_t2989862063 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SnakeManager::UpdateLeftMouseClickEvent(UnityEngine.Vector3)
+extern "C"  void SnakeManager_UpdateLeftMouseClickEvent_m1131655838 (SnakeManager_t2989862063 * __this, Vector3_t2243707580  ___mouseposition0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void SnakeManager::UpdateOneFingerTouchEvent(UnityEngine.Vector2)
+extern "C"  void SnakeManager_UpdateOneFingerTouchEvent_m65132475 (SnakeManager_t2989862063 * __this, Vector2_t2243707579  ___screentouchposition0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void SnakeManager::Awake()
 extern "C"  void SnakeManager_Awake_m275528123 (SnakeManager_t2989862063 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void SnakeManager::Start()

@@ -73,7 +73,7 @@ extern "C"  void HttpWebRequest__cctor_m3013631978 (Il2CppObject * __this /* sta
 // System.Void System.Net.HttpWebRequest::System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void HttpWebRequest_System_Runtime_Serialization_ISerializable_GetObjectData_m3671622902 (HttpWebRequest_t1951404513 * __this, SerializationInfo_t228987430 * ___serializationInfo0, StreamingContext_t1417235061  ___streamingContext1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Uri System.Net.HttpWebRequest::get_Address()
-extern "C"  Uri_t19570940 * HttpWebRequest_get_Address_m118358390 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Uri_t19570940 * HttpWebRequest_get_Address_m4268264978 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Net.DecompressionMethods System.Net.HttpWebRequest::get_AutomaticDecompression()
 extern "C"  int32_t HttpWebRequest_get_AutomaticDecompression_m1315413034 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Net.HttpWebRequest::get_InternalAllowBuffering()
@@ -103,7 +103,7 @@ extern "C"  Uri_t19570940 * HttpWebRequest_get_RequestUri_m458351293 (HttpWebReq
 // System.Boolean System.Net.HttpWebRequest::get_SendChunked()
 extern "C"  bool HttpWebRequest_get_SendChunked_m2061793458 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Net.ServicePoint System.Net.HttpWebRequest::get_ServicePoint()
-extern "C"  ServicePoint_t2765344313 * HttpWebRequest_get_ServicePoint_m424340275 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  ServicePoint_t2765344313 * HttpWebRequest_get_ServicePoint_m3235755721 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Net.HttpWebRequest::get_TransferEncoding()
 extern "C"  String_t* HttpWebRequest_get_TransferEncoding_m3466636497 (HttpWebRequest_t1951404513 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Net.HttpWebRequest::get_UnsafeAuthenticatedConnectionSharing()

@@ -34,6 +34,8 @@
 #define ValueCollection_System_Collections_IEnumerable_GetEnumerator_m3059562179(__this, method) ((  Il2CppObject * (*) (ValueCollection_t2689716553 *, const MethodInfo*))ValueCollection_System_Collections_IEnumerable_GetEnumerator_m802880903_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Int32>::System.Collections.Generic.ICollection<TValue>.get_IsReadOnly()
 #define ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m3540479450(__this, method) ((  bool (*) (ValueCollection_t2689716553 *, const MethodInfo*))ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m1915900932_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Int32>::System.Collections.ICollection.get_IsSynchronized()
+#define ValueCollection_System_Collections_ICollection_get_IsSynchronized_m3929285260(__this, method) ((  bool (*) (ValueCollection_t2689716553 *, const MethodInfo*))ValueCollection_System_Collections_ICollection_get_IsSynchronized_m45572582_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Int32>::System.Collections.ICollection.get_SyncRoot()
 #define ValueCollection_System_Collections_ICollection_get_SyncRoot_m1516282458(__this, method) ((  Il2CppObject * (*) (ValueCollection_t2689716553 *, const MethodInfo*))ValueCollection_System_Collections_ICollection_get_SyncRoot_m1458344512_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Int32>::CopyTo(TValue[],System.Int32)

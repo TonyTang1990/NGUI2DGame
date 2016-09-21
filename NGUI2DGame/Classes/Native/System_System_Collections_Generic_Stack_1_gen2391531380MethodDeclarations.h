@@ -18,6 +18,8 @@
 
 // System.Void System.Collections.Generic.Stack`1<System.Type>::.ctor()
 #define Stack_1__ctor_m1240888107(__this, method) ((  void (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1__ctor_m1041657164_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Stack`1<System.Type>::System.Collections.ICollection.get_IsSynchronized()
+#define Stack_1_System_Collections_ICollection_get_IsSynchronized_m2464541523(__this, method) ((  bool (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_IsSynchronized_m2076161108_gshared)(__this, method)
 // System.Object System.Collections.Generic.Stack`1<System.Type>::System.Collections.ICollection.get_SyncRoot()
 #define Stack_1_System_Collections_ICollection_get_SyncRoot_m1715167367(__this, method) ((  Il2CppObject * (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_System_Collections_ICollection_get_SyncRoot_m3151629354_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<System.Type>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
@@ -30,6 +32,8 @@
 #define Stack_1_Clear_m1733067070(__this, method) ((  void (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_Clear_m3792598883_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Stack`1<System.Type>::Contains(T)
 #define Stack_1_Contains_m950610296(__this, ___t0, method) ((  bool (*) (Stack_1_t2391531380 *, Type_t *, const MethodInfo*))Stack_1_Contains_m973625077_gshared)(__this, ___t0, method)
+// T System.Collections.Generic.Stack`1<System.Type>::Peek()
+#define Stack_1_Peek_m736531919(__this, method) ((  Type_t * (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_Peek_m1548778538_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.Type>::Pop()
 #define Stack_1_Pop_m685736912(__this, method) ((  Type_t * (*) (Stack_1_t2391531380 *, const MethodInfo*))Stack_1_Pop_m535185982_gshared)(__this, method)
 // System.Void System.Collections.Generic.Stack`1<System.Type>::Push(T)

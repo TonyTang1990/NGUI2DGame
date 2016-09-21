@@ -34,6 +34,8 @@
 #define KeyCollection_System_Collections_IEnumerable_GetEnumerator_m2674653748(__this, method) ((  Il2CppObject * (*) (KeyCollection_t317137155 *, const MethodInfo*))KeyCollection_System_Collections_IEnumerable_GetEnumerator_m1589406383_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,UnityEngine.GUILayoutUtility/LayoutCache>::System.Collections.Generic.ICollection<TKey>.get_IsReadOnly()
 #define KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m2426224973(__this, method) ((  bool (*) (KeyCollection_t317137155 *, const MethodInfo*))KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m1119857328_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,UnityEngine.GUILayoutUtility/LayoutCache>::System.Collections.ICollection.get_IsSynchronized()
+#define KeyCollection_System_Collections_ICollection_get_IsSynchronized_m997877183(__this, method) ((  bool (*) (KeyCollection_t317137155 *, const MethodInfo*))KeyCollection_System_Collections_ICollection_get_IsSynchronized_m1423289640_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,UnityEngine.GUILayoutUtility/LayoutCache>::System.Collections.ICollection.get_SyncRoot()
 #define KeyCollection_System_Collections_ICollection_get_SyncRoot_m2855442863(__this, method) ((  Il2CppObject * (*) (KeyCollection_t317137155 *, const MethodInfo*))KeyCollection_System_Collections_ICollection_get_SyncRoot_m3802319686_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,UnityEngine.GUILayoutUtility/LayoutCache>::CopyTo(TKey[],System.Int32)

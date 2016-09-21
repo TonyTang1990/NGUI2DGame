@@ -57,6 +57,9 @@ extern "C"  Il2CppObject * LinkedList_1_System_Collections_IEnumerable_GetEnumer
 // System.Boolean System.Collections.Generic.LinkedList`1<System.Object>::System.Collections.Generic.ICollection<T>.get_IsReadOnly()
 extern "C"  bool LinkedList_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m382194114_gshared (LinkedList_1_t2994157524 * __this, const MethodInfo* method);
 #define LinkedList_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m382194114(__this, method) ((  bool (*) (LinkedList_1_t2994157524 *, const MethodInfo*))LinkedList_1_System_Collections_Generic_ICollectionU3CTU3E_get_IsReadOnly_m382194114_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.LinkedList`1<System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool LinkedList_1_System_Collections_ICollection_get_IsSynchronized_m2849171683_gshared (LinkedList_1_t2994157524 * __this, const MethodInfo* method);
+#define LinkedList_1_System_Collections_ICollection_get_IsSynchronized_m2849171683(__this, method) ((  bool (*) (LinkedList_1_t2994157524 *, const MethodInfo*))LinkedList_1_System_Collections_ICollection_get_IsSynchronized_m2849171683_gshared)(__this, method)
 // System.Object System.Collections.Generic.LinkedList`1<System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * LinkedList_1_System_Collections_ICollection_get_SyncRoot_m550341923_gshared (LinkedList_1_t2994157524 * __this, const MethodInfo* method);
 #define LinkedList_1_System_Collections_ICollection_get_SyncRoot_m550341923(__this, method) ((  Il2CppObject * (*) (LinkedList_1_t2994157524 *, const MethodInfo*))LinkedList_1_System_Collections_ICollection_get_SyncRoot_m550341923_gshared)(__this, method)

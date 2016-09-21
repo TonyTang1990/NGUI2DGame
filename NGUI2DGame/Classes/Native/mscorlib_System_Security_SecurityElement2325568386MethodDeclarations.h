@@ -42,6 +42,8 @@ extern "C"  Hashtable_t909839986 * SecurityElement_get_Attributes_m3244705680 (S
 extern "C"  ArrayList_t4252133567 * SecurityElement_get_Children_m38620993 (SecurityElement_t2325568386 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Security.SecurityElement::get_Tag()
 extern "C"  String_t* SecurityElement_get_Tag_m3790054077 (SecurityElement_t2325568386 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Security.SecurityElement::get_Text()
+extern "C"  String_t* SecurityElement_get_Text_m1078237722 (SecurityElement_t2325568386 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.SecurityElement::set_Text(System.String)
 extern "C"  void SecurityElement_set_Text_m2410443257 (SecurityElement_t2325568386 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.SecurityElement::AddAttribute(System.String,System.String)

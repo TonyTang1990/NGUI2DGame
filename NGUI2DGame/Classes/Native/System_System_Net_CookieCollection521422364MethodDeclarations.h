@@ -37,6 +37,8 @@ extern "C"  void CookieCollection__cctor_m1612480269 (Il2CppObject * __this /* s
 extern "C"  Il2CppObject* CookieCollection_get_List_m2326436043 (CookieCollection_t521422364 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Net.CookieCollection::get_Count()
 extern "C"  int32_t CookieCollection_get_Count_m2224755408 (CookieCollection_t521422364 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Net.CookieCollection::get_IsSynchronized()
+extern "C"  bool CookieCollection_get_IsSynchronized_m3152974947 (CookieCollection_t521422364 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Net.CookieCollection::get_SyncRoot()
 extern "C"  Il2CppObject * CookieCollection_get_SyncRoot_m121352699 (CookieCollection_t521422364 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Net.CookieCollection::CopyTo(System.Array,System.Int32)

@@ -10,8 +10,8 @@
 
 #include <stdint.h>
 
-// UILabel
-struct UILabel_t1795115428;
+// UnityEngine.UI.Text
+struct Text_t356221433;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 
@@ -25,8 +25,8 @@ struct UILabel_t1795115428;
 struct  FPSDisplay_t3952194245  : public MonoBehaviour_t1158329972
 {
 public:
-	// UILabel FPSDisplay::mFPSText
-	UILabel_t1795115428 * ___mFPSText_2;
+	// UnityEngine.UI.Text FPSDisplay::mFPSText
+	Text_t356221433 * ___mFPSText_2;
 	// System.Single FPSDisplay::mDeltaTime
 	float ___mDeltaTime_3;
 	// System.Single FPSDisplay::mFPS
@@ -34,9 +34,9 @@ public:
 
 public:
 	inline static int32_t get_offset_of_mFPSText_2() { return static_cast<int32_t>(offsetof(FPSDisplay_t3952194245, ___mFPSText_2)); }
-	inline UILabel_t1795115428 * get_mFPSText_2() const { return ___mFPSText_2; }
-	inline UILabel_t1795115428 ** get_address_of_mFPSText_2() { return &___mFPSText_2; }
-	inline void set_mFPSText_2(UILabel_t1795115428 * value)
+	inline Text_t356221433 * get_mFPSText_2() const { return ___mFPSText_2; }
+	inline Text_t356221433 ** get_address_of_mFPSText_2() { return &___mFPSText_2; }
+	inline void set_mFPSText_2(Text_t356221433 * value)
 	{
 		___mFPSText_2 = value;
 		Il2CppCodeGenWriteBarrier(&___mFPSText_2, value);

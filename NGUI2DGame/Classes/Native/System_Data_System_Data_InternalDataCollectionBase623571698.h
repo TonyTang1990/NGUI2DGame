@@ -27,6 +27,8 @@ struct  InternalDataCollectionBase_t623571698  : public Il2CppObject
 public:
 	// System.Collections.ArrayList System.Data.InternalDataCollectionBase::list
 	ArrayList_t4252133567 * ___list_0;
+	// System.Boolean System.Data.InternalDataCollectionBase::synchronized
+	bool ___synchronized_1;
 
 public:
 	inline static int32_t get_offset_of_list_0() { return static_cast<int32_t>(offsetof(InternalDataCollectionBase_t623571698, ___list_0)); }
@@ -36,6 +38,14 @@ public:
 	{
 		___list_0 = value;
 		Il2CppCodeGenWriteBarrier(&___list_0, value);
+	}
+
+	inline static int32_t get_offset_of_synchronized_1() { return static_cast<int32_t>(offsetof(InternalDataCollectionBase_t623571698, ___synchronized_1)); }
+	inline bool get_synchronized_1() const { return ___synchronized_1; }
+	inline bool* get_address_of_synchronized_1() { return &___synchronized_1; }
+	inline void set_synchronized_1(bool value)
+	{
+		___synchronized_1 = value;
 	}
 };
 

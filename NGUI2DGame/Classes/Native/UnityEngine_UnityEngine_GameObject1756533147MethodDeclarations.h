@@ -16,6 +16,8 @@
 struct GameObject_t1756533147;
 // System.String
 struct String_t;
+// System.Type[]
+struct TypeU5BU5D_t1664964607;
 // UnityEngine.Component
 struct Component_t3819376471;
 // System.Type
@@ -41,6 +43,8 @@ struct Transform_t3275118058;
 extern "C"  void GameObject__ctor_m962601984 (GameObject_t1756533147 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::.ctor()
 extern "C"  void GameObject__ctor_m498247354 (GameObject_t1756533147 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.GameObject::.ctor(System.String,System.Type[])
+extern "C"  void GameObject__ctor_m1633632305 (GameObject_t1756533147 * __this, String_t* ___name0, TypeU5BU5D_t1664964607* ___components1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Component UnityEngine.GameObject::GetComponent(System.Type)
 extern "C"  Component_t3819376471 * GameObject_GetComponent_m306258075 (GameObject_t1756533147 * __this, Type_t * ___type0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::GetComponentFastPath(System.Type,System.IntPtr)
@@ -83,3 +87,5 @@ extern "C"  Component_t3819376471 * GameObject_Internal_AddComponentWithType_m21
 extern "C"  Component_t3819376471 * GameObject_AddComponent_m3757565614 (GameObject_t1756533147 * __this, Type_t * ___componentType0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)
 extern "C"  void GameObject_Internal_CreateGameObject_m3428198595 (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * ___mono0, String_t* ___name1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+extern "C"  GameObject_t1756533147 * GameObject_Find_m836511350 (Il2CppObject * __this /* static, unused */, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

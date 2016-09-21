@@ -38,6 +38,8 @@ extern "C"  Vector3_t2243707580  Bounds_get_center_m129401026 (Bounds_t303336370
 extern "C"  void Bounds_set_center_m2069004927 (Bounds_t3033363703 * __this, Vector3_t2243707580  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Bounds::get_size()
 extern "C"  Vector3_t2243707580  Bounds_get_size_m1728027642 (Bounds_t3033363703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Bounds::set_size(UnityEngine.Vector3)
+extern "C"  void Bounds_set_size_m3943815629 (Bounds_t3033363703 * __this, Vector3_t2243707580  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Bounds::get_extents()
 extern "C"  Vector3_t2243707580  Bounds_get_extents_m4077324178 (Bounds_t3033363703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Bounds::set_extents(UnityEngine.Vector3)
@@ -58,6 +60,10 @@ extern "C"  void Bounds_Encapsulate_m3688171368 (Bounds_t3033363703 * __this, Ve
 extern "C"  void Bounds_Encapsulate_m2552492417 (Bounds_t3033363703 * __this, Bounds_t3033363703  ___bounds0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.Bounds::ToString()
 extern "C"  String_t* Bounds_ToString_m1966597703 (Bounds_t3033363703 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Bounds::op_Equality(UnityEngine.Bounds,UnityEngine.Bounds)
+extern "C"  bool Bounds_op_Equality_m2161830280 (Il2CppObject * __this /* static, unused */, Bounds_t3033363703  ___lhs0, Bounds_t3033363703  ___rhs1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Bounds::op_Inequality(UnityEngine.Bounds,UnityEngine.Bounds)
+extern "C"  bool Bounds_op_Inequality_m2315096783 (Il2CppObject * __this /* static, unused */, Bounds_t3033363703  ___lhs0, Bounds_t3033363703  ___rhs1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 
 // Methods for marshaling
 struct Bounds_t3033363703;

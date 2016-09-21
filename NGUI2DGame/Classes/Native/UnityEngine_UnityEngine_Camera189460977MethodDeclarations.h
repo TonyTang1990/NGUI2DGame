@@ -18,16 +18,25 @@ struct Camera_t189460977;
 struct RenderTexture_t2666733923;
 // UnityEngine.Camera[]
 struct CameraU5BU5D_t3079764780;
+// UnityEngine.Shader
+struct Shader_t2430389951;
+// System.String
+struct String_t;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
+#include "UnityEngine_UnityEngine_RenderTexture2666733923.h"
+#include "UnityEngine_UnityEngine_Matrix4x42933234003.h"
 #include "UnityEngine_UnityEngine_CameraClearFlags452084705.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
 #include "UnityEngine_UnityEngine_Ray2469606224.h"
+#include "UnityEngine_UnityEngine_Shader2430389951.h"
+#include "mscorlib_System_String2029220233.h"
+#include "UnityEngine_UnityEngine_DepthTextureMode1156392273.h"
 #include "UnityEngine_UnityEngine_QueryTriggerInteraction478029726.h"
 
 // System.Single UnityEngine.Camera::get_fieldOfView()
@@ -42,6 +51,8 @@ extern "C"  void Camera_set_nearClipPlane_m3510849382 (Camera_t189460977 * __thi
 extern "C"  float Camera_get_farClipPlane_m3137713566 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::set_farClipPlane(System.Single)
 extern "C"  void Camera_set_farClipPlane_m1845065941 (Camera_t189460977 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Camera::get_hdr()
+extern "C"  bool Camera_get_hdr_m3267784575 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Camera::get_orthographicSize()
 extern "C"  float Camera_get_orthographicSize_m1801974358 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::set_orthographicSize(System.Single)
@@ -58,6 +69,8 @@ extern "C"  float Camera_get_aspect_m935361871 (Camera_t189460977 * __this, cons
 extern "C"  void Camera_set_aspect_m792328692 (Camera_t189460977 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Camera::get_cullingMask()
 extern "C"  int32_t Camera_get_cullingMask_m73686965 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_cullingMask(System.Int32)
+extern "C"  void Camera_set_cullingMask_m2396665826 (Camera_t189460977 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Camera::get_eventMask()
 extern "C"  int32_t Camera_get_eventMask_m4241372419 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::set_eventMask(System.Int32)
@@ -88,12 +101,24 @@ extern "C"  void Camera_INTERNAL_get_pixelRect_m1785951490 (Camera_t189460977 * 
 extern "C"  void Camera_INTERNAL_set_pixelRect_m3301406310 (Camera_t189460977 * __this, Rect_t3681755626 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.RenderTexture UnityEngine.Camera::get_targetTexture()
 extern "C"  RenderTexture_t2666733923 * Camera_get_targetTexture_m705925974 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_targetTexture(UnityEngine.RenderTexture)
+extern "C"  void Camera_set_targetTexture_m3925036117 (Camera_t189460977 * __this, RenderTexture_t2666733923 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Camera::get_pixelWidth()
 extern "C"  int32_t Camera_get_pixelWidth_m2325481193 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Camera::get_pixelHeight()
 extern "C"  int32_t Camera_get_pixelHeight_m2527046964 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Matrix4x4 UnityEngine.Camera::get_worldToCameraMatrix()
+extern "C"  Matrix4x4_t2933234003  Camera_get_worldToCameraMatrix_m3492031261 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::INTERNAL_get_worldToCameraMatrix(UnityEngine.Matrix4x4&)
+extern "C"  void Camera_INTERNAL_get_worldToCameraMatrix_m121677592 (Camera_t189460977 * __this, Matrix4x4_t2933234003 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Matrix4x4 UnityEngine.Camera::get_projectionMatrix()
+extern "C"  Matrix4x4_t2933234003  Camera_get_projectionMatrix_m2365994324 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::INTERNAL_get_projectionMatrix(UnityEngine.Matrix4x4&)
+extern "C"  void Camera_INTERNAL_get_projectionMatrix_m3593932001 (Camera_t189460977 * __this, Matrix4x4_t2933234003 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 extern "C"  int32_t Camera_get_clearFlags_m1743144302 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)
+extern "C"  void Camera_set_clearFlags_m4142614199 (Camera_t189460977 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Camera::WorldToScreenPoint(UnityEngine.Vector3)
 extern "C"  Vector3_t2243707580  Camera_WorldToScreenPoint_m638747266 (Camera_t189460977 * __this, Vector3_t2243707580  ___position0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::INTERNAL_CALL_WorldToScreenPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
@@ -130,6 +155,14 @@ extern "C"  void Camera_FireOnPreCull_m1679634170 (Il2CppObject * __this /* stat
 extern "C"  void Camera_FireOnPreRender_m24116662 (Il2CppObject * __this /* static, unused */, Camera_t189460977 * ___cam0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Camera::FireOnPostRender(UnityEngine.Camera)
 extern "C"  void Camera_FireOnPostRender_m94860165 (Il2CppObject * __this /* static, unused */, Camera_t189460977 * ___cam0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::RenderWithShader(UnityEngine.Shader,System.String)
+extern "C"  void Camera_RenderWithShader_m1923138105 (Camera_t189460977 * __this, Shader_t2430389951 * ___shader0, String_t* ___replacementTag1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::CopyFrom(UnityEngine.Camera)
+extern "C"  void Camera_CopyFrom_m3357636325 (Camera_t189460977 * __this, Camera_t189460977 * ___other0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.DepthTextureMode UnityEngine.Camera::get_depthTextureMode()
+extern "C"  int32_t Camera_get_depthTextureMode_m924131993 (Camera_t189460977 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_depthTextureMode(UnityEngine.DepthTextureMode)
+extern "C"  void Camera_set_depthTextureMode_m1269215020 (Camera_t189460977 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject UnityEngine.Camera::RaycastTry(UnityEngine.Ray,System.Single,System.Int32)
 extern "C"  GameObject_t1756533147 * Camera_RaycastTry_m3412198936 (Camera_t189460977 * __this, Ray_t2469606224  ___ray0, float ___distance1, int32_t ___layerMask2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject UnityEngine.Camera::INTERNAL_CALL_RaycastTry(UnityEngine.Camera,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)

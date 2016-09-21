@@ -20,7 +20,7 @@
 #endif
 
 // <PrivateImplementationDetails>/$ArrayType$32
-struct  U24ArrayTypeU2432_t3672778805 
+struct  U24ArrayTypeU2432_t3672778806 
 {
 public:
 	union
@@ -31,7 +31,7 @@ public:
 			{
 			};
 		};
-		uint8_t U24ArrayTypeU2432_t3672778805__padding[32];
+		uint8_t U24ArrayTypeU2432_t3672778806__padding[32];
 	};
 
 public:
@@ -41,7 +41,7 @@ public:
 #pragma clang diagnostic pop
 #endif
 // Native definition for marshalling of: <PrivateImplementationDetails>/$ArrayType$32
-struct U24ArrayTypeU2432_t3672778805_marshaled_pinvoke
+struct U24ArrayTypeU2432_t3672778806_marshaled_pinvoke
 {
 	union
 	{
@@ -51,11 +51,11 @@ struct U24ArrayTypeU2432_t3672778805_marshaled_pinvoke
 			{
 			};
 		};
-		uint8_t U24ArrayTypeU2432_t3672778805__padding[32];
+		uint8_t U24ArrayTypeU2432_t3672778806__padding[32];
 	};
 };
 // Native definition for marshalling of: <PrivateImplementationDetails>/$ArrayType$32
-struct U24ArrayTypeU2432_t3672778805_marshaled_com
+struct U24ArrayTypeU2432_t3672778806_marshaled_com
 {
 	union
 	{
@@ -65,6 +65,6 @@ struct U24ArrayTypeU2432_t3672778805_marshaled_com
 			{
 			};
 		};
-		uint8_t U24ArrayTypeU2432_t3672778805__padding[32];
+		uint8_t U24ArrayTypeU2432_t3672778806__padding[32];
 	};
 };

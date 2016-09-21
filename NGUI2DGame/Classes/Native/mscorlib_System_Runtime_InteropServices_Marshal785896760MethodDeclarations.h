@@ -18,10 +18,13 @@ struct Il2CppArray;
 struct ByteU5BU5D_t3397334013;
 // System.Char[]
 struct CharU5BU5D_t1328083999;
+// System.Type
+struct Type_t;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
 #include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Type1303803226.h"
 
 // System.Void System.Runtime.InteropServices.Marshal::.cctor()
 extern "C"  void Marshal__cctor_m802981325 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -39,5 +42,7 @@ extern "C"  void Marshal_Copy_m275157126 (Il2CppObject * __this /* static, unuse
 extern "C"  int32_t Marshal_GetLastWin32Error_m4162683157 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte System.Runtime.InteropServices.Marshal::ReadByte(System.IntPtr,System.Int32)
 extern "C"  uint8_t Marshal_ReadByte_m536122811 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, int32_t ___ofs1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Runtime.InteropServices.Marshal::SizeOf(System.Type)
+extern "C"  int32_t Marshal_SizeOf_m2982427619 (Il2CppObject * __this /* static, unused */, Type_t * ___t0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.InteropServices.Marshal::WriteByte(System.IntPtr,System.Int32,System.Byte)
 extern "C"  void Marshal_WriteByte_m2971909611 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, int32_t ___ofs1, uint8_t ___val2, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -32,6 +32,10 @@ struct StringEnumerator_t441637433;
 
 // System.Void System.Collections.Specialized.StringCollection::.ctor()
 extern "C"  void StringCollection__ctor_m2392274323 (StringCollection_t352985975 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Specialized.StringCollection::System.Collections.IList.get_IsReadOnly()
+extern "C"  bool StringCollection_System_Collections_IList_get_IsReadOnly_m3716594668 (StringCollection_t352985975 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Specialized.StringCollection::System.Collections.IList.get_IsFixedSize()
+extern "C"  bool StringCollection_System_Collections_IList_get_IsFixedSize_m1043931093 (StringCollection_t352985975 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.Specialized.StringCollection::System.Collections.IList.get_Item(System.Int32)
 extern "C"  Il2CppObject * StringCollection_System_Collections_IList_get_Item_m2290212549 (StringCollection_t352985975 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.StringCollection::System.Collections.IList.set_Item(System.Int32,System.Object)
@@ -68,6 +72,10 @@ extern "C"  StringEnumerator_t441637433 * StringCollection_GetEnumerator_m108270
 extern "C"  int32_t StringCollection_IndexOf_m1014856711 (StringCollection_t352985975 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.StringCollection::Insert(System.Int32,System.String)
 extern "C"  void StringCollection_Insert_m1467620830 (StringCollection_t352985975 * __this, int32_t ___index0, String_t* ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Specialized.StringCollection::get_IsReadOnly()
+extern "C"  bool StringCollection_get_IsReadOnly_m3129120249 (StringCollection_t352985975 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Collections.Specialized.StringCollection::get_IsSynchronized()
+extern "C"  bool StringCollection_get_IsSynchronized_m1699466861 (StringCollection_t352985975 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.StringCollection::Remove(System.String)
 extern "C"  void StringCollection_Remove_m4131969964 (StringCollection_t352985975 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Specialized.StringCollection::RemoveAt(System.Int32)

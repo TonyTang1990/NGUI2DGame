@@ -44,6 +44,8 @@ extern "C"  void XmlSchemaCollection__ctor_m1133926657 (XmlSchemaCollection_t351
 extern "C"  int32_t XmlSchemaCollection_System_Collections_ICollection_get_Count_m1888700565 (XmlSchemaCollection_t3518500204 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Xml.Schema.XmlSchemaCollection::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
 extern "C"  void XmlSchemaCollection_System_Collections_ICollection_CopyTo_m1625227336 (XmlSchemaCollection_t3518500204 * __this, Il2CppArray * ___array0, int32_t ___index1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Xml.Schema.XmlSchemaCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool XmlSchemaCollection_System_Collections_ICollection_get_IsSynchronized_m423318334 (XmlSchemaCollection_t3518500204 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.Xml.Schema.XmlSchemaCollection::System.Collections.IEnumerable.GetEnumerator()
 extern "C"  Il2CppObject * XmlSchemaCollection_System_Collections_IEnumerable_GetEnumerator_m2059563369 (XmlSchemaCollection_t3518500204 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Xml.Schema.XmlSchemaCollection::System.Collections.ICollection.get_SyncRoot()

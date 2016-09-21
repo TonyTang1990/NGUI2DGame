@@ -207,6 +207,8 @@ extern "C"  int32_t String_IndexOf_m1887352430 (String_t* __this, String_t* ___v
 extern "C"  int32_t String_IndexOf_m3750299821 (String_t* __this, String_t* ___value0, int32_t ___startIndex1, int32_t ___count2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOfAny(System.Char[])
 extern "C"  int32_t String_LastIndexOfAny_m1473637802 (String_t* __this, CharU5BU5D_t1328083999* ___anyOf0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.String::LastIndexOfAny(System.Char[],System.Int32)
+extern "C"  int32_t String_LastIndexOfAny_m4281325295 (String_t* __this, CharU5BU5D_t1328083999* ___anyOf0, int32_t ___startIndex1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOfAnyUnchecked(System.Char[],System.Int32,System.Int32)
 extern "C"  int32_t String_LastIndexOfAnyUnchecked_m3515098196 (String_t* __this, CharU5BU5D_t1328083999* ___anyOf0, int32_t ___startIndex1, int32_t ___count2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::LastIndexOf(System.Char)

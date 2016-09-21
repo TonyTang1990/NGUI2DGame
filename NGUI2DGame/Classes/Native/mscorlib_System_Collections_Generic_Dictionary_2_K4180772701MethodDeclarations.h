@@ -58,6 +58,9 @@ extern "C"  Il2CppObject * KeyCollection_System_Collections_IEnumerable_GetEnume
 // System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,System.Object>::System.Collections.Generic.ICollection<TKey>.get_IsReadOnly()
 extern "C"  bool KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m1119857328_gshared (KeyCollection_t4180772701 * __this, const MethodInfo* method);
 #define KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m1119857328(__this, method) ((  bool (*) (KeyCollection_t4180772701 *, const MethodInfo*))KeyCollection_System_Collections_Generic_ICollectionU3CTKeyU3E_get_IsReadOnly_m1119857328_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,System.Object>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool KeyCollection_System_Collections_ICollection_get_IsSynchronized_m1423289640_gshared (KeyCollection_t4180772701 * __this, const MethodInfo* method);
+#define KeyCollection_System_Collections_ICollection_get_IsSynchronized_m1423289640(__this, method) ((  bool (*) (KeyCollection_t4180772701 *, const MethodInfo*))KeyCollection_System_Collections_ICollection_get_IsSynchronized_m1423289640_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,System.Object>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * KeyCollection_System_Collections_ICollection_get_SyncRoot_m3802319686_gshared (KeyCollection_t4180772701 * __this, const MethodInfo* method);
 #define KeyCollection_System_Collections_ICollection_get_SyncRoot_m3802319686(__this, method) ((  Il2CppObject * (*) (KeyCollection_t4180772701 *, const MethodInfo*))KeyCollection_System_Collections_ICollection_get_SyncRoot_m3802319686_gshared)(__this, method)

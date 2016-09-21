@@ -58,6 +58,9 @@ extern "C"  Il2CppObject * ValueCollection_System_Collections_IEnumerable_GetEnu
 // System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Int32>::System.Collections.Generic.ICollection<TValue>.get_IsReadOnly()
 extern "C"  bool ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m1915900932_gshared (ValueCollection_t366997419 * __this, const MethodInfo* method);
 #define ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m1915900932(__this, method) ((  bool (*) (ValueCollection_t366997419 *, const MethodInfo*))ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m1915900932_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Int32>::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool ValueCollection_System_Collections_ICollection_get_IsSynchronized_m45572582_gshared (ValueCollection_t366997419 * __this, const MethodInfo* method);
+#define ValueCollection_System_Collections_ICollection_get_IsSynchronized_m45572582(__this, method) ((  bool (*) (ValueCollection_t366997419 *, const MethodInfo*))ValueCollection_System_Collections_ICollection_get_IsSynchronized_m45572582_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Int32>::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * ValueCollection_System_Collections_ICollection_get_SyncRoot_m1458344512_gshared (ValueCollection_t366997419 * __this, const MethodInfo* method);
 #define ValueCollection_System_Collections_ICollection_get_SyncRoot_m1458344512(__this, method) ((  Il2CppObject * (*) (ValueCollection_t366997419 *, const MethodInfo*))ValueCollection_System_Collections_ICollection_get_SyncRoot_m1458344512_gshared)(__this, method)

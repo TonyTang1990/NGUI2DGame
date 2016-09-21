@@ -28,7 +28,10 @@ struct Event_t3028476042_marshaled_com;
 #include "UnityEngine_UnityEngine_EventModifiers2690251474.h"
 #include "UnityEngine_UnityEngine_KeyCode2283395152.h"
 #include "mscorlib_System_IntPtr2504060609.h"
+#include "UnityEngine_UnityEngine_Event3028476042.h"
 
+// System.Void UnityEngine.Event::.ctor()
+extern "C"  void Event__ctor_m4174297401 (Event_t3028476042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Event::.ctor(System.Int32)
 extern "C"  void Event__ctor_m3375547476 (Event_t3028476042 * __this, int32_t ___displayIndex0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Event::Finalize()
@@ -71,6 +74,8 @@ extern "C"  int32_t Event_get_keyCode_m3364681288 (Event_t3028476042 * __this, c
 extern "C"  void Event_Internal_SetNativeEvent_m1899228752 (Il2CppObject * __this /* static, unused */, IntPtr_t ___ptr0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Event::set_displayIndex(System.Int32)
 extern "C"  void Event_set_displayIndex_m3631666901 (Event_t3028476042 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Event::PopEvent(UnityEngine.Event)
+extern "C"  bool Event_PopEvent_m1952528237 (Il2CppObject * __this /* static, unused */, Event_t3028476042 * ___outEvent0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 
 // Methods for marshaling
 struct Event_t3028476042;

@@ -40,6 +40,8 @@ extern "C"  void ProviderCollection_Add_m2062313466 (ProviderCollection_t2548499
 extern "C"  Il2CppObject * ProviderCollection_GetEnumerator_m2535943389 (ProviderCollection_t2548499159 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Configuration.Provider.ProviderCollection::get_Count()
 extern "C"  int32_t ProviderCollection_get_Count_m1651598797 (ProviderCollection_t2548499159 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Configuration.Provider.ProviderCollection::get_IsSynchronized()
+extern "C"  bool ProviderCollection_get_IsSynchronized_m2860234084 (ProviderCollection_t2548499159 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Configuration.Provider.ProviderCollection::get_SyncRoot()
 extern "C"  Il2CppObject * ProviderCollection_get_SyncRoot_m2583585530 (ProviderCollection_t2548499159 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Configuration.Provider.ProviderBase System.Configuration.Provider.ProviderCollection::get_Item(System.String)

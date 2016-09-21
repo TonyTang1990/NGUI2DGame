@@ -43,6 +43,8 @@ extern "C"  void AttributeCollection__ctor_m701388612 (AttributeCollection_t1925
 extern "C"  void AttributeCollection__cctor_m2801958540 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator System.ComponentModel.AttributeCollection::System.Collections.IEnumerable.GetEnumerator()
 extern "C"  Il2CppObject * AttributeCollection_System_Collections_IEnumerable_GetEnumerator_m4186702062 (AttributeCollection_t1925812292 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.ComponentModel.AttributeCollection::System.Collections.ICollection.get_IsSynchronized()
+extern "C"  bool AttributeCollection_System_Collections_ICollection_get_IsSynchronized_m451528281 (AttributeCollection_t1925812292 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.ComponentModel.AttributeCollection::System.Collections.ICollection.get_SyncRoot()
 extern "C"  Il2CppObject * AttributeCollection_System_Collections_ICollection_get_SyncRoot_m2339323621 (AttributeCollection_t1925812292 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.ComponentModel.AttributeCollection::System.Collections.ICollection.get_Count()

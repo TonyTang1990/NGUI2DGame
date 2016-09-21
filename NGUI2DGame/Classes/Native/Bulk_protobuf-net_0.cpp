@@ -6470,7 +6470,7 @@ IL_0097:
 		Il2CppObject * L_25 = V_4;
 		Il2CppObject * L_26 = V_3;
 		NullCheck(L_25);
-		InterfaceFuncInvoker1< int32_t, Il2CppObject * >::Invoke(2 /* System.Int32 System.Collections.IList::Add(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, L_25, L_26);
+		InterfaceFuncInvoker1< int32_t, Il2CppObject * >::Invoke(4 /* System.Int32 System.Collections.IList::Add(System.Object) */, IList_t3321498491_il2cpp_TypeInfo_var, L_25, L_26);
 		goto IL_00da;
 	}
 

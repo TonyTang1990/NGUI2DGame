@@ -34,6 +34,8 @@
 #define ValueCollection_System_Collections_IEnumerable_GetEnumerator_m1371139572(__this, method) ((  Il2CppObject * (*) (ValueCollection_t180961755 *, const MethodInfo*))ValueCollection_System_Collections_IEnumerable_GetEnumerator_m1073215119_gshared)(__this, method)
 // System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,UICamera/MouseOrTouch>::System.Collections.Generic.ICollection<TValue>.get_IsReadOnly()
 #define ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m4103207037(__this, method) ((  bool (*) (ValueCollection_t180961755 *, const MethodInfo*))ValueCollection_System_Collections_Generic_ICollectionU3CTValueU3E_get_IsReadOnly_m1325719984_gshared)(__this, method)
+// System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,UICamera/MouseOrTouch>::System.Collections.ICollection.get_IsSynchronized()
+#define ValueCollection_System_Collections_ICollection_get_IsSynchronized_m2175593547(__this, method) ((  bool (*) (ValueCollection_t180961755 *, const MethodInfo*))ValueCollection_System_Collections_ICollection_get_IsSynchronized_m4041633470_gshared)(__this, method)
 // System.Object System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,UICamera/MouseOrTouch>::System.Collections.ICollection.get_SyncRoot()
 #define ValueCollection_System_Collections_ICollection_get_SyncRoot_m4245743847(__this, method) ((  Il2CppObject * (*) (ValueCollection_t180961755 *, const MethodInfo*))ValueCollection_System_Collections_ICollection_get_SyncRoot_m3927965720_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2/ValueCollection<System.Int32,UICamera/MouseOrTouch>::CopyTo(TValue[],System.Int32)

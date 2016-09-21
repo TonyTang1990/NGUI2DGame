@@ -39,6 +39,8 @@ extern "C"  void KeyContainerPermissionAccessEntryCollection_System_Collections_
 extern "C"  Il2CppObject * KeyContainerPermissionAccessEntryCollection_System_Collections_IEnumerable_GetEnumerator_m2250011761 (KeyContainerPermissionAccessEntryCollection_t592240881 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Security.Permissions.KeyContainerPermissionAccessEntryCollection::get_Count()
 extern "C"  int32_t KeyContainerPermissionAccessEntryCollection_get_Count_m2606655992 (KeyContainerPermissionAccessEntryCollection_t592240881 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Security.Permissions.KeyContainerPermissionAccessEntryCollection::get_IsSynchronized()
+extern "C"  bool KeyContainerPermissionAccessEntryCollection_get_IsSynchronized_m4069397193 (KeyContainerPermissionAccessEntryCollection_t592240881 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Security.Permissions.KeyContainerPermissionAccessEntryCollection::get_SyncRoot()
 extern "C"  Il2CppObject * KeyContainerPermissionAccessEntryCollection_get_SyncRoot_m3735837549 (KeyContainerPermissionAccessEntryCollection_t592240881 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Security.Permissions.KeyContainerPermissionAccessEntryCollection::Add(System.Security.Permissions.KeyContainerPermissionAccessEntry)
