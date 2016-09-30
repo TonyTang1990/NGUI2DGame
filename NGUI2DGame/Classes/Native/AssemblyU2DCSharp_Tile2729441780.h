@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+// System.Collections.Generic.List`1<System.Int32>
+struct List_1_t1440998580;
 // UnityEngine.SpriteRenderer
 struct SpriteRenderer_t1209076198;
 
@@ -32,12 +34,16 @@ public:
 	bool ___mPassable_4;
 	// System.Boolean Tile::mDestroyable
 	bool ___mDestroyable_5;
-	// System.Int32 Tile::mIndex
-	int32_t ___mIndex_6;
+	// System.Int32 Tile::mPartitionLevel
+	int32_t ___mPartitionLevel_6;
+	// System.Collections.Generic.List`1<System.Int32> Tile::mIndexs
+	List_1_t1440998580 * ___mIndexs_7;
+	// System.Int32 Tile::mMinIndex
+	int32_t ___mMinIndex_8;
+	// System.Int32 Tile::mMaxIndex
+	int32_t ___mMaxIndex_9;
 	// UnityEngine.SpriteRenderer Tile::mSpriteRender
-	SpriteRenderer_t1209076198 * ___mSpriteRender_7;
-	// System.Int32 Tile::<Index>k__BackingField
-	int32_t ___U3CIndexU3Ek__BackingField_8;
+	SpriteRenderer_t1209076198 * ___mSpriteRender_10;
 
 public:
 	inline static int32_t get_offset_of_mTileType_3() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mTileType_3)); }
@@ -64,29 +70,46 @@ public:
 		___mDestroyable_5 = value;
 	}
 
-	inline static int32_t get_offset_of_mIndex_6() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mIndex_6)); }
-	inline int32_t get_mIndex_6() const { return ___mIndex_6; }
-	inline int32_t* get_address_of_mIndex_6() { return &___mIndex_6; }
-	inline void set_mIndex_6(int32_t value)
+	inline static int32_t get_offset_of_mPartitionLevel_6() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mPartitionLevel_6)); }
+	inline int32_t get_mPartitionLevel_6() const { return ___mPartitionLevel_6; }
+	inline int32_t* get_address_of_mPartitionLevel_6() { return &___mPartitionLevel_6; }
+	inline void set_mPartitionLevel_6(int32_t value)
 	{
-		___mIndex_6 = value;
+		___mPartitionLevel_6 = value;
 	}
 
-	inline static int32_t get_offset_of_mSpriteRender_7() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mSpriteRender_7)); }
-	inline SpriteRenderer_t1209076198 * get_mSpriteRender_7() const { return ___mSpriteRender_7; }
-	inline SpriteRenderer_t1209076198 ** get_address_of_mSpriteRender_7() { return &___mSpriteRender_7; }
-	inline void set_mSpriteRender_7(SpriteRenderer_t1209076198 * value)
+	inline static int32_t get_offset_of_mIndexs_7() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mIndexs_7)); }
+	inline List_1_t1440998580 * get_mIndexs_7() const { return ___mIndexs_7; }
+	inline List_1_t1440998580 ** get_address_of_mIndexs_7() { return &___mIndexs_7; }
+	inline void set_mIndexs_7(List_1_t1440998580 * value)
 	{
-		___mSpriteRender_7 = value;
-		Il2CppCodeGenWriteBarrier(&___mSpriteRender_7, value);
+		___mIndexs_7 = value;
+		Il2CppCodeGenWriteBarrier(&___mIndexs_7, value);
 	}
 
-	inline static int32_t get_offset_of_U3CIndexU3Ek__BackingField_8() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___U3CIndexU3Ek__BackingField_8)); }
-	inline int32_t get_U3CIndexU3Ek__BackingField_8() const { return ___U3CIndexU3Ek__BackingField_8; }
-	inline int32_t* get_address_of_U3CIndexU3Ek__BackingField_8() { return &___U3CIndexU3Ek__BackingField_8; }
-	inline void set_U3CIndexU3Ek__BackingField_8(int32_t value)
+	inline static int32_t get_offset_of_mMinIndex_8() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mMinIndex_8)); }
+	inline int32_t get_mMinIndex_8() const { return ___mMinIndex_8; }
+	inline int32_t* get_address_of_mMinIndex_8() { return &___mMinIndex_8; }
+	inline void set_mMinIndex_8(int32_t value)
 	{
-		___U3CIndexU3Ek__BackingField_8 = value;
+		___mMinIndex_8 = value;
+	}
+
+	inline static int32_t get_offset_of_mMaxIndex_9() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mMaxIndex_9)); }
+	inline int32_t get_mMaxIndex_9() const { return ___mMaxIndex_9; }
+	inline int32_t* get_address_of_mMaxIndex_9() { return &___mMaxIndex_9; }
+	inline void set_mMaxIndex_9(int32_t value)
+	{
+		___mMaxIndex_9 = value;
+	}
+
+	inline static int32_t get_offset_of_mSpriteRender_10() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mSpriteRender_10)); }
+	inline SpriteRenderer_t1209076198 * get_mSpriteRender_10() const { return ___mSpriteRender_10; }
+	inline SpriteRenderer_t1209076198 ** get_address_of_mSpriteRender_10() { return &___mSpriteRender_10; }
+	inline void set_mSpriteRender_10(SpriteRenderer_t1209076198 * value)
+	{
+		___mSpriteRender_10 = value;
+		Il2CppCodeGenWriteBarrier(&___mSpriteRender_10, value);
 	}
 };
 

@@ -16192,6 +16192,8 @@ extern "C" void BoxCollider_get_size_m201254358 ();
 extern "C" void BoxCollider_set_size_m4101048759 ();
 extern "C" void BoxCollider_INTERNAL_get_size_m1952151385 ();
 extern "C" void BoxCollider_INTERNAL_set_size_m251806021 ();
+extern "C" void BoxCollider2D_set_size_m3505152706 ();
+extern "C" void BoxCollider2D_INTERNAL_set_size_m1726574954 ();
 extern "C" void Camera_get_fieldOfView_m3384007405 ();
 extern "C" void Camera_set_fieldOfView_m3974156396 ();
 extern "C" void Camera_get_nearClipPlane_m3536967407 ();
@@ -17756,6 +17758,7 @@ extern "C" void RectTransform_get_anchorMax_m3816015142 ();
 extern "C" void RectTransform_set_anchorMax_m2955899993 ();
 extern "C" void RectTransform_INTERNAL_get_anchorMax_m834202955 ();
 extern "C" void RectTransform_INTERNAL_set_anchorMax_m1551648727 ();
+extern "C" void RectTransform_set_anchoredPosition3D_m3116733735 ();
 extern "C" void RectTransform_get_anchoredPosition_m3570822376 ();
 extern "C" void RectTransform_set_anchoredPosition_m2077229449 ();
 extern "C" void RectTransform_INTERNAL_get_anchoredPosition_m3564306187 ();
@@ -20966,6 +20969,7 @@ extern "C" void EnemyTank_Awake_m3252339256 ();
 extern "C" void EnemyTank_Start_m3107023537 ();
 extern "C" void EnemyTank_Update_m69816086 ();
 extern "C" void EnemyTank_OnDestroy_m1198924850 ();
+extern "C" void EnemyTank_CanMoveForward_m2644624451 ();
 extern "C" void EnemyTank_OnTriggerEnter2D_m1821377321 ();
 extern "C" void EquipItems__ctor_m2508878821 ();
 extern "C" void EquipItems_Start_m3665532189 ();
@@ -21199,16 +21203,19 @@ extern "C" void MapEditorMenu_OccupiedTileChoose_m1604752334 ();
 extern "C" void MapEditorMenu_MapLoadButtonClick_m3108317095 ();
 extern "C" void MapEditorMenu_MapSaveButtonClick_m104082990 ();
 extern "C" void MapInfo__ctor_m2587620305 ();
+extern "C" void MapInfo__ctor_m2025884677 ();
 extern "C" void MapInfo_ResetMapInfo_m1634975558 ();
 extern "C" void MapInfo_InitTileToDefault_m2224773395 ();
 extern "C" void MapInfo_SetTileType_m2402730835 ();
 extern "C" void MapInfo_GetTileTypeAtRC_m3803970656 ();
 extern "C" void MapInfo_HasBaseInMap_m3611527769 ();
 extern "C" void MapInfo_PrintAllTileType_m1056260121 ();
-extern "C" void MapInfo_get_MapSize_m1936617491 ();
+extern "C" void MapInfo_get_MapSize_m834926595 ();
 extern "C" void MapInfo_get_PlayerSpawnPoint_m18084016 ();
 extern "C" void MapInfo_get_EnemySpawnPoint_m310562173 ();
 extern "C" void MapInfo_get_BaseRC_m659654070 ();
+extern "C" void MapInfo_get_MapName_m68506810 ();
+extern "C" void MapInfo_set_MapName_m1115695913 ();
 extern "C" void MapManager__ctor_m4263344916 ();
 extern "C" void MapManager_Awake_m1853530417 ();
 extern "C" void MapManager_Start_m2598983564 ();
@@ -21228,6 +21235,7 @@ extern "C" void GridInfo_get_GridPosition_m3445281838 ();
 extern "C" void GridInfo_set_GridPosition_m546961997 ();
 extern "C" void GridInfo_get_GridIndex_m873628440 ();
 extern "C" void GridInfo_set_GridIndex_m1199700727 ();
+extern "C" void MathFunctions_PowerOfTwo_m1193248491 ();
 extern "C" void MyGameObjectEvent__ctor_m813394032 ();
 extern "C" void MyIntEvent__ctor_m4175290760 ();
 extern "C" void MyRC__ctor_m2627661320 ();
@@ -21369,6 +21377,7 @@ extern "C" void PlayerTank_Awake_m2826192185 ();
 extern "C" void PlayerTank_Start_m747621468 ();
 extern "C" void PlayerTank_Update_m3559437637 ();
 extern "C" void PlayerTank_OnDestroy_m2404851883 ();
+extern "C" void PlayerTank_CanMoveForward_m1869593364 ();
 extern "C" void PlayerTank_MoveUp_m3492352248 ();
 extern "C" void PlayerTank_MoveDown_m1400553579 ();
 extern "C" void PlayerTank_MoveLeft_m212331972 ();
@@ -21458,10 +21467,14 @@ extern "C" void OnFinished_BeginInvoke_m622573734 ();
 extern "C" void OnFinished_EndInvoke_m1929061697 ();
 extern "C" void Tank__ctor_m750150259 ();
 extern "C" void Tank_set_MoveSpeed_m3985201005 ();
+extern "C" void Tank_set_CurrentMoveAction_m3482680283 ();
+extern "C" void Tank_InitOccupiedInfo_m3183291521 ();
+extern "C" void Tank_UpdateOccupiedInfo_m3660004542 ();
 extern "C" void Tank_Awake_m3158931696 ();
 extern "C" void Tank_Start_m1332170943 ();
 extern "C" void Tank_Update_m546628242 ();
 extern "C" void Tank_OnDestroy_m4042988626 ();
+extern "C" void Tank_CanMoveForward_m362955925 ();
 extern "C" void Tank_MoveForward_m327062121 ();
 extern "C" void Tank_Shoot_m1374073324 ();
 extern "C" void Tank_TakeDamage_m3119853146 ();
@@ -21491,6 +21504,10 @@ extern "C" void U3CEnemySpawnU3Ec__Iterator9_System_Collections_IEnumerator_get_
 extern "C" void U3CEnemySpawnU3Ec__Iterator9_MoveNext_m3166599809 ();
 extern "C" void U3CEnemySpawnU3Ec__Iterator9_Dispose_m50906178 ();
 extern "C" void U3CEnemySpawnU3Ec__Iterator9_Reset_m4075930048 ();
+extern "C" void TankGameUIBackgroundScale__ctor_m758514503 ();
+extern "C" void TankGameUIBackgroundScale_Awake_m3144060510 ();
+extern "C" void TankGameUIBackgroundScale_Start_m4269805395 ();
+extern "C" void TankGameUIBackgroundScale_Update_m1942633020 ();
 extern "C" void TankMainMenu__ctor_m3467431375 ();
 extern "C" void TankMainMenu_Start_m1481166931 ();
 extern "C" void TankMainMenu_Update_m570583904 ();
@@ -21498,43 +21515,63 @@ extern "C" void TankMainMenu_PlayButtonClick_m1841766363 ();
 extern "C" void TankMainMenu_NewMapButtonClick_m1732520123 ();
 extern "C" void TankMainMenu_LoadMapButtonClick_m438700081 ();
 extern "C" void TankMap__ctor_m213562167 ();
-extern "C" void TankMap__ctor_m3857169269 ();
+extern "C" void TankMap__ctor_m57404882 ();
 extern "C" void TankMap_ResetMap_m2481124046 ();
-extern "C" void TankMap_SetTileGO_m4008890553 ();
+extern "C" void TankMap_IsAllowedMoveForward_m3099524668 ();
+extern "C" void TankMap_ObtainOccupiedIndexsAtRC_m1736165015 ();
+extern "C" void TankMap_IsValideIndex_m3312078381 ();
+extern "C" void TankMap_MarkIndexOccupied_m1278869435 ();
+extern "C" void TankMap_IsIndexOccupied_m454502790 ();
+extern "C" void TankMap_IsIndexOccupiedByPlayer_m3732645810 ();
 extern "C" void TankMap_GetTileGOAtRC_m653895236 ();
 extern "C" void TankMap_GetTileComponentAtRC_m2508923597 ();
 extern "C" void TankMap_ChangeTile_m2029563357 ();
+extern "C" void TankMap_MapLoadSetup_m3069937111 ();
+extern "C" void TankMap_SetTileGO_m4008890553 ();
 extern "C" void TankMap_LoadAllMapRelativedData_m2421996480 ();
+extern "C" void TankMap_LoadMapSize_m73920282 ();
 extern "C" void TankMap_LoadPlayerAndEnemySpawnPointInfo_m1433320536 ();
 extern "C" void TankMap_LoadBaseInfo_m2225644744 ();
+extern "C" void TankMap_LoadMapOccupiedInfo_m1588763645 ();
+extern "C" void TankMap_LoadTilesIndexInfo_m712984062 ();
 extern "C" void TankMap_get_MapName_m62734434 ();
 extern "C" void TankMap_set_MapName_m2382976507 ();
 extern "C" void TankMap_get_CurrentMapInfo_m19403220 ();
 extern "C" void TankMap_set_CurrentMapInfo_m4279421267 ();
 extern "C" void TankMap_get_PlayerSpawnPoint_m1980858739 ();
 extern "C" void TankMap_get_EnemySpawnPoint_m944176628 ();
-extern "C" void TankMap_get_MapSize_m4147373457 ();
+extern "C" void TankMap_get_MapSize_m666918170 ();
 extern "C" void TankMapManager__ctor_m3761019032 ();
 extern "C" void TankMapManager_get_MapContainer_m2460322545 ();
 extern "C" void TankMapManager_set_MapContainer_m2643543988 ();
 extern "C" void TankMapManager_get_CurrentMap_m3658240791 ();
 extern "C" void TankMapManager_get_CurrentMapEditor_m791254219 ();
 extern "C" void TankMapManager_set_CurrentMapEditor_m2054754258 ();
+extern "C" void TankMapManager_get_MaximumPartitionLevel_m2567732511 ();
+extern "C" void TankMapManager_IsTileExsit_m945684717 ();
+extern "C" void TankMapManager_GetTileWithTileType_m2858551527 ();
+extern "C" void TankMapManager_ObtainOccupiedIndexsAtPosition_m187975517 ();
 extern "C" void TankMapManager_ConvertPositionToRC_m3969556063 ();
 extern "C" void TankMapManager_ConvertRCToPosition_m3709476895 ();
+extern "C" void TankMapManager_IsValideIndex_m1049710584 ();
+extern "C" void TankMapManager_MarkIndexOccupied_m1212840652 ();
+extern "C" void TankMapManager_IsIndexOccupied_m3041376139 ();
+extern "C" void TankMapManager_IsIndexOccupiedByPlayer_m3009478035 ();
+extern "C" void TankMapManager_ObtainTotalRows_m465477534 ();
+extern "C" void TankMapManager_ObtainTotalColumns_m3449826552 ();
 extern "C" void TankMapManager_Awake_m1349445605 ();
 extern "C" void TankMapManager_Start_m1270690728 ();
 extern "C" void TankMapManager_SaveMap_m3006956507 ();
 extern "C" void TankMapManager_LoadMap_m1202517434 ();
-extern "C" void TankMapManager_ClearMap_m1819520907 ();
-extern "C" void TankMapManager_MapLoadSetup_m3199658021 ();
+extern "C" void TankMapManager_DelterMap_m538161778 ();
 extern "C" void TankMapManager_Update_m2655608177 ();
 extern "C" void Tile__ctor_m3293075927 ();
-extern "C" void Tile_get_Index_m3224577230 ();
-extern "C" void Tile_set_Index_m1872909085 ();
 extern "C" void Tile_get_SpriteRender_m1224444129 ();
 extern "C" void Tile_set_SpriteRender_m739074376 ();
+extern "C" void Tile_IsIndexFull_m878568584 ();
+extern "C" void Tile_AddIndex_m4235336753 ();
 extern "C" void Tile_Awake_m3924417876 ();
+extern "C" void Tile_Start_m1772953651 ();
 extern "C" void Tile_OnTriggerEnter2D_m1966252571 ();
 extern "C" void TouchInputManager__ctor_m3048716615 ();
 extern "C" void TouchInputManager__cctor_m2815256678 ();
@@ -22643,7 +22680,7 @@ extern "C" void VignetteAndChromaticAberration_CheckResources_m394291804 ();
 extern "C" void VignetteAndChromaticAberration_OnRenderImage_m3555084659 ();
 extern "C" void Vortex__ctor_m3778734735 ();
 extern "C" void Vortex_OnRenderImage_m3762609939 ();
-extern const Il2CppMethodPointer g_MethodPointers[22632] = 
+extern const Il2CppMethodPointer g_MethodPointers[22669] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -38826,6 +38863,8 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	BoxCollider_set_size_m4101048759,
 	BoxCollider_INTERNAL_get_size_m1952151385,
 	BoxCollider_INTERNAL_set_size_m251806021,
+	BoxCollider2D_set_size_m3505152706,
+	BoxCollider2D_INTERNAL_set_size_m1726574954,
 	Camera_get_fieldOfView_m3384007405,
 	Camera_set_fieldOfView_m3974156396,
 	Camera_get_nearClipPlane_m3536967407,
@@ -40390,6 +40429,7 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	RectTransform_set_anchorMax_m2955899993,
 	RectTransform_INTERNAL_get_anchorMax_m834202955,
 	RectTransform_INTERNAL_set_anchorMax_m1551648727,
+	RectTransform_set_anchoredPosition3D_m3116733735,
 	RectTransform_get_anchoredPosition_m3570822376,
 	RectTransform_set_anchoredPosition_m2077229449,
 	RectTransform_INTERNAL_get_anchoredPosition_m3564306187,
@@ -43600,6 +43640,7 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	EnemyTank_Start_m3107023537,
 	EnemyTank_Update_m69816086,
 	EnemyTank_OnDestroy_m1198924850,
+	EnemyTank_CanMoveForward_m2644624451,
 	EnemyTank_OnTriggerEnter2D_m1821377321,
 	EquipItems__ctor_m2508878821,
 	EquipItems_Start_m3665532189,
@@ -43833,16 +43874,19 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	MapEditorMenu_MapLoadButtonClick_m3108317095,
 	MapEditorMenu_MapSaveButtonClick_m104082990,
 	MapInfo__ctor_m2587620305,
+	MapInfo__ctor_m2025884677,
 	MapInfo_ResetMapInfo_m1634975558,
 	MapInfo_InitTileToDefault_m2224773395,
 	MapInfo_SetTileType_m2402730835,
 	MapInfo_GetTileTypeAtRC_m3803970656,
 	MapInfo_HasBaseInMap_m3611527769,
 	MapInfo_PrintAllTileType_m1056260121,
-	MapInfo_get_MapSize_m1936617491,
+	MapInfo_get_MapSize_m834926595,
 	MapInfo_get_PlayerSpawnPoint_m18084016,
 	MapInfo_get_EnemySpawnPoint_m310562173,
 	MapInfo_get_BaseRC_m659654070,
+	MapInfo_get_MapName_m68506810,
+	MapInfo_set_MapName_m1115695913,
 	MapManager__ctor_m4263344916,
 	MapManager_Awake_m1853530417,
 	MapManager_Start_m2598983564,
@@ -43862,6 +43906,7 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	GridInfo_set_GridPosition_m546961997,
 	GridInfo_get_GridIndex_m873628440,
 	GridInfo_set_GridIndex_m1199700727,
+	MathFunctions_PowerOfTwo_m1193248491,
 	MyGameObjectEvent__ctor_m813394032,
 	MyIntEvent__ctor_m4175290760,
 	MyRC__ctor_m2627661320,
@@ -44003,6 +44048,7 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	PlayerTank_Start_m747621468,
 	PlayerTank_Update_m3559437637,
 	PlayerTank_OnDestroy_m2404851883,
+	PlayerTank_CanMoveForward_m1869593364,
 	PlayerTank_MoveUp_m3492352248,
 	PlayerTank_MoveDown_m1400553579,
 	PlayerTank_MoveLeft_m212331972,
@@ -44092,10 +44138,14 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	OnFinished_EndInvoke_m1929061697,
 	Tank__ctor_m750150259,
 	Tank_set_MoveSpeed_m3985201005,
+	Tank_set_CurrentMoveAction_m3482680283,
+	Tank_InitOccupiedInfo_m3183291521,
+	Tank_UpdateOccupiedInfo_m3660004542,
 	Tank_Awake_m3158931696,
 	Tank_Start_m1332170943,
 	Tank_Update_m546628242,
 	Tank_OnDestroy_m4042988626,
+	Tank_CanMoveForward_m362955925,
 	Tank_MoveForward_m327062121,
 	Tank_Shoot_m1374073324,
 	Tank_TakeDamage_m3119853146,
@@ -44125,6 +44175,10 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	U3CEnemySpawnU3Ec__Iterator9_MoveNext_m3166599809,
 	U3CEnemySpawnU3Ec__Iterator9_Dispose_m50906178,
 	U3CEnemySpawnU3Ec__Iterator9_Reset_m4075930048,
+	TankGameUIBackgroundScale__ctor_m758514503,
+	TankGameUIBackgroundScale_Awake_m3144060510,
+	TankGameUIBackgroundScale_Start_m4269805395,
+	TankGameUIBackgroundScale_Update_m1942633020,
 	TankMainMenu__ctor_m3467431375,
 	TankMainMenu_Start_m1481166931,
 	TankMainMenu_Update_m570583904,
@@ -44132,43 +44186,63 @@ extern const Il2CppMethodPointer g_MethodPointers[22632] =
 	TankMainMenu_NewMapButtonClick_m1732520123,
 	TankMainMenu_LoadMapButtonClick_m438700081,
 	TankMap__ctor_m213562167,
-	TankMap__ctor_m3857169269,
+	TankMap__ctor_m57404882,
 	TankMap_ResetMap_m2481124046,
-	TankMap_SetTileGO_m4008890553,
+	TankMap_IsAllowedMoveForward_m3099524668,
+	TankMap_ObtainOccupiedIndexsAtRC_m1736165015,
+	TankMap_IsValideIndex_m3312078381,
+	TankMap_MarkIndexOccupied_m1278869435,
+	TankMap_IsIndexOccupied_m454502790,
+	TankMap_IsIndexOccupiedByPlayer_m3732645810,
 	TankMap_GetTileGOAtRC_m653895236,
 	TankMap_GetTileComponentAtRC_m2508923597,
 	TankMap_ChangeTile_m2029563357,
+	TankMap_MapLoadSetup_m3069937111,
+	TankMap_SetTileGO_m4008890553,
 	TankMap_LoadAllMapRelativedData_m2421996480,
+	TankMap_LoadMapSize_m73920282,
 	TankMap_LoadPlayerAndEnemySpawnPointInfo_m1433320536,
 	TankMap_LoadBaseInfo_m2225644744,
+	TankMap_LoadMapOccupiedInfo_m1588763645,
+	TankMap_LoadTilesIndexInfo_m712984062,
 	TankMap_get_MapName_m62734434,
 	TankMap_set_MapName_m2382976507,
 	TankMap_get_CurrentMapInfo_m19403220,
 	TankMap_set_CurrentMapInfo_m4279421267,
 	TankMap_get_PlayerSpawnPoint_m1980858739,
 	TankMap_get_EnemySpawnPoint_m944176628,
-	TankMap_get_MapSize_m4147373457,
+	TankMap_get_MapSize_m666918170,
 	TankMapManager__ctor_m3761019032,
 	TankMapManager_get_MapContainer_m2460322545,
 	TankMapManager_set_MapContainer_m2643543988,
 	TankMapManager_get_CurrentMap_m3658240791,
 	TankMapManager_get_CurrentMapEditor_m791254219,
 	TankMapManager_set_CurrentMapEditor_m2054754258,
+	TankMapManager_get_MaximumPartitionLevel_m2567732511,
+	TankMapManager_IsTileExsit_m945684717,
+	TankMapManager_GetTileWithTileType_m2858551527,
+	TankMapManager_ObtainOccupiedIndexsAtPosition_m187975517,
 	TankMapManager_ConvertPositionToRC_m3969556063,
 	TankMapManager_ConvertRCToPosition_m3709476895,
+	TankMapManager_IsValideIndex_m1049710584,
+	TankMapManager_MarkIndexOccupied_m1212840652,
+	TankMapManager_IsIndexOccupied_m3041376139,
+	TankMapManager_IsIndexOccupiedByPlayer_m3009478035,
+	TankMapManager_ObtainTotalRows_m465477534,
+	TankMapManager_ObtainTotalColumns_m3449826552,
 	TankMapManager_Awake_m1349445605,
 	TankMapManager_Start_m1270690728,
 	TankMapManager_SaveMap_m3006956507,
 	TankMapManager_LoadMap_m1202517434,
-	TankMapManager_ClearMap_m1819520907,
-	TankMapManager_MapLoadSetup_m3199658021,
+	TankMapManager_DelterMap_m538161778,
 	TankMapManager_Update_m2655608177,
 	Tile__ctor_m3293075927,
-	Tile_get_Index_m3224577230,
-	Tile_set_Index_m1872909085,
 	Tile_get_SpriteRender_m1224444129,
 	Tile_set_SpriteRender_m739074376,
+	Tile_IsIndexFull_m878568584,
+	Tile_AddIndex_m4235336753,
 	Tile_Awake_m3924417876,
+	Tile_Start_m1772953651,
 	Tile_OnTriggerEnter2D_m1966252571,
 	TouchInputManager__ctor_m3048716615,
 	TouchInputManager__cctor_m2815256678,

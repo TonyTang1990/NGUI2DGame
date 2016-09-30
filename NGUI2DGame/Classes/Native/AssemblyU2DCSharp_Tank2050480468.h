@@ -16,9 +16,11 @@ struct Transform_t3275118058;
 struct GameObject_t1756533147;
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_t1125654279;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
+struct Dictionary_2_t1079703083;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
-#include "AssemblyU2DCSharp_Tank_TankMoveAction3959339170.h"
+#include "AssemblyU2DCSharp_TankMoveAction944032589.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -42,16 +44,18 @@ public:
 	int32_t ___mNumbersOfBulletAllowed_7;
 	// System.Single Tank::mHealth
 	float ___mHealth_8;
-	// Tank/TankMoveAction Tank::mCurrentMoveAction
-	int32_t ___mCurrentMoveAction_9;
 	// System.Boolean Tank::mIsDead
-	bool ___mIsDead_10;
+	bool ___mIsDead_9;
 	// System.Single Tank::mKeepMoveIntervalTime
-	float ___mKeepMoveIntervalTime_11;
+	float ___mKeepMoveIntervalTime_10;
+	// TankMoveAction Tank::mCurrentMoveAction
+	int32_t ___mCurrentMoveAction_11;
 	// System.Single Tank::mMoveDeltaTime
 	float ___mMoveDeltaTime_12;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Tank::mBulletsList
 	List_1_t1125654279 * ___mBulletsList_13;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> Tank::mCurrentOccupiedIndexs
+	Dictionary_2_t1079703083 * ___mCurrentOccupiedIndexs_14;
 
 public:
 	inline static int32_t get_offset_of_mMoveSpeed_3() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveSpeed_3)); }
@@ -104,28 +108,28 @@ public:
 		___mHealth_8 = value;
 	}
 
-	inline static int32_t get_offset_of_mCurrentMoveAction_9() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentMoveAction_9)); }
-	inline int32_t get_mCurrentMoveAction_9() const { return ___mCurrentMoveAction_9; }
-	inline int32_t* get_address_of_mCurrentMoveAction_9() { return &___mCurrentMoveAction_9; }
-	inline void set_mCurrentMoveAction_9(int32_t value)
+	inline static int32_t get_offset_of_mIsDead_9() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsDead_9)); }
+	inline bool get_mIsDead_9() const { return ___mIsDead_9; }
+	inline bool* get_address_of_mIsDead_9() { return &___mIsDead_9; }
+	inline void set_mIsDead_9(bool value)
 	{
-		___mCurrentMoveAction_9 = value;
+		___mIsDead_9 = value;
 	}
 
-	inline static int32_t get_offset_of_mIsDead_10() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsDead_10)); }
-	inline bool get_mIsDead_10() const { return ___mIsDead_10; }
-	inline bool* get_address_of_mIsDead_10() { return &___mIsDead_10; }
-	inline void set_mIsDead_10(bool value)
+	inline static int32_t get_offset_of_mKeepMoveIntervalTime_10() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mKeepMoveIntervalTime_10)); }
+	inline float get_mKeepMoveIntervalTime_10() const { return ___mKeepMoveIntervalTime_10; }
+	inline float* get_address_of_mKeepMoveIntervalTime_10() { return &___mKeepMoveIntervalTime_10; }
+	inline void set_mKeepMoveIntervalTime_10(float value)
 	{
-		___mIsDead_10 = value;
+		___mKeepMoveIntervalTime_10 = value;
 	}
 
-	inline static int32_t get_offset_of_mKeepMoveIntervalTime_11() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mKeepMoveIntervalTime_11)); }
-	inline float get_mKeepMoveIntervalTime_11() const { return ___mKeepMoveIntervalTime_11; }
-	inline float* get_address_of_mKeepMoveIntervalTime_11() { return &___mKeepMoveIntervalTime_11; }
-	inline void set_mKeepMoveIntervalTime_11(float value)
+	inline static int32_t get_offset_of_mCurrentMoveAction_11() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentMoveAction_11)); }
+	inline int32_t get_mCurrentMoveAction_11() const { return ___mCurrentMoveAction_11; }
+	inline int32_t* get_address_of_mCurrentMoveAction_11() { return &___mCurrentMoveAction_11; }
+	inline void set_mCurrentMoveAction_11(int32_t value)
 	{
-		___mKeepMoveIntervalTime_11 = value;
+		___mCurrentMoveAction_11 = value;
 	}
 
 	inline static int32_t get_offset_of_mMoveDeltaTime_12() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveDeltaTime_12)); }
@@ -143,6 +147,15 @@ public:
 	{
 		___mBulletsList_13 = value;
 		Il2CppCodeGenWriteBarrier(&___mBulletsList_13, value);
+	}
+
+	inline static int32_t get_offset_of_mCurrentOccupiedIndexs_14() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentOccupiedIndexs_14)); }
+	inline Dictionary_2_t1079703083 * get_mCurrentOccupiedIndexs_14() const { return ___mCurrentOccupiedIndexs_14; }
+	inline Dictionary_2_t1079703083 ** get_address_of_mCurrentOccupiedIndexs_14() { return &___mCurrentOccupiedIndexs_14; }
+	inline void set_mCurrentOccupiedIndexs_14(Dictionary_2_t1079703083 * value)
+	{
+		___mCurrentOccupiedIndexs_14 = value;
+		Il2CppCodeGenWriteBarrier(&___mCurrentOccupiedIndexs_14, value);
 	}
 };
 

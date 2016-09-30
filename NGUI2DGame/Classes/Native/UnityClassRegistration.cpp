@@ -177,69 +177,69 @@ void RegisterAllClasses()
 	void RegisterClass_Collider2D();
 	RegisterClass_Collider2D();
 
-	//34. AudioClip
+	//34. BoxCollider2D
+	void RegisterClass_BoxCollider2D();
+	RegisterClass_BoxCollider2D();
+
+	//35. AudioClip
 	void RegisterClass_AudioClip();
 	RegisterClass_AudioClip();
 
-	//35. SampleClip
+	//36. SampleClip
 	void RegisterClass_SampleClip();
 	RegisterClass_SampleClip();
 
-	//36. AudioSource
+	//37. AudioSource
 	void RegisterClass_AudioSource();
 	RegisterClass_AudioSource();
 
-	//37. AudioBehaviour
+	//38. AudioBehaviour
 	void RegisterClass_AudioBehaviour();
 	RegisterClass_AudioBehaviour();
 
-	//38. AnimationClip
+	//39. AnimationClip
 	void RegisterClass_AnimationClip();
 	RegisterClass_AnimationClip();
 
-	//39. Motion
+	//40. Motion
 	void RegisterClass_Motion();
 	RegisterClass_Motion();
 
-	//40. Animation
+	//41. Animation
 	void RegisterClass_Animation();
 	RegisterClass_Animation();
 
-	//41. Animator
+	//42. Animator
 	void RegisterClass_Animator();
 	RegisterClass_Animator();
 
-	//42. DirectorPlayer
+	//43. DirectorPlayer
 	void RegisterClass_DirectorPlayer();
 	RegisterClass_DirectorPlayer();
 
-	//43. Font
+	//44. Font
 	void RegisterClass_Font();
 	RegisterClass_Font();
 
-	//44. Canvas
+	//45. Canvas
 	void RegisterClass_Canvas();
 	RegisterClass_Canvas();
 
-	//45. CanvasGroup
+	//46. CanvasGroup
 	void RegisterClass_CanvasGroup();
 	RegisterClass_CanvasGroup();
 
-	//46. CanvasRenderer
+	//47. CanvasRenderer
 	void RegisterClass_CanvasRenderer();
 	RegisterClass_CanvasRenderer();
 
-	//47. AudioListener
+	//48. AudioListener
 	void RegisterClass_AudioListener();
 	RegisterClass_AudioListener();
 
-	//48. MeshRenderer
+	//49. MeshRenderer
 	void RegisterClass_MeshRenderer();
 	RegisterClass_MeshRenderer();
-
-	//49. BoxCollider2D
-	void RegisterClass_BoxCollider2D();
-	RegisterClass_BoxCollider2D();
 
 	//50. SpriteRenderer
 	void RegisterClass_SpriteRenderer();

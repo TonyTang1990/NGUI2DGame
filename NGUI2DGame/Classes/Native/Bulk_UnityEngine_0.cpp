@@ -81,6 +81,8 @@ struct Behaviour_t955675639;
 struct BitStream_t1979465639;
 // UnityEngine.BoxCollider
 struct BoxCollider_t22920061;
+// UnityEngine.BoxCollider2D
+struct BoxCollider2D_t948534547;
 // UnityEngine.Camera
 struct Camera_t189460977;
 // UnityEngine.RenderTexture
@@ -333,6 +335,7 @@ struct ScriptPlayable_t4067966717;
 #include "UnityEngine_UnityEngine_BoxCollider22920061MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_BoxCollider2D948534547.h"
 #include "UnityEngine_UnityEngine_BoxCollider2D948534547MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
 #include "UnityEngine_UnityEngine_Camera189460977MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
@@ -358,7 +361,6 @@ struct ScriptPlayable_t4067966717;
 #include "UnityEngine_UnityEngine_Canvas_WillRenderCanvases3522132132MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_CanvasGroup3296560743.h"
 #include "UnityEngine_UnityEngine_CanvasGroup3296560743MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "UnityEngine_UnityEngine_CanvasRenderer261436805.h"
 #include "UnityEngine_UnityEngine_CanvasRenderer261436805MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Texture2243626319.h"
@@ -3982,6 +3984,23 @@ extern "C"  void BoxCollider_INTERNAL_set_size_m251806021 (BoxCollider_t22920061
 	static BoxCollider_INTERNAL_set_size_m251806021_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (BoxCollider_INTERNAL_set_size_m251806021_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.BoxCollider::INTERNAL_set_size(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.BoxCollider2D::set_size(UnityEngine.Vector2)
+extern "C"  void BoxCollider2D_set_size_m3505152706 (BoxCollider2D_t948534547 * __this, Vector2_t2243707579  ___value0, const MethodInfo* method)
+{
+	{
+		BoxCollider2D_INTERNAL_set_size_m1726574954(__this, (&___value0), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.BoxCollider2D::INTERNAL_set_size(UnityEngine.Vector2&)
+extern "C"  void BoxCollider2D_INTERNAL_set_size_m1726574954 (BoxCollider2D_t948534547 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method)
+{
+	typedef void (*BoxCollider2D_INTERNAL_set_size_m1726574954_ftn) (BoxCollider2D_t948534547 *, Vector2_t2243707579 *);
+	static BoxCollider2D_INTERNAL_set_size_m1726574954_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (BoxCollider2D_INTERNAL_set_size_m1726574954_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.BoxCollider2D::INTERNAL_set_size(UnityEngine.Vector2&)");
 	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Single UnityEngine.Camera::get_fieldOfView()

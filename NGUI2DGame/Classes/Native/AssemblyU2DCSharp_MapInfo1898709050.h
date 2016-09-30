@@ -12,10 +12,12 @@
 
 // TileType[,]
 struct TileTypeU5BU2CU5D_t354757606;
-// System.Collections.Generic.Dictionary`2<System.Int32,MyRC>
-struct Dictionary_2_t1932390178;
 // MyRC
 struct MyRC_t2924564543;
+// System.Collections.Generic.Dictionary`2<System.Int32,MyRC>
+struct Dictionary_2_t1932390178;
+// System.String
+struct String_t;
 
 #include "mscorlib_System_Object2689449295.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
@@ -32,8 +34,8 @@ struct  MapInfo_t1898709050  : public Il2CppObject
 public:
 	// TileType[,] MapInfo::mMapTiles
 	TileTypeU5BU2CU5D_t354757606* ___mMapTiles_1;
-	// System.Int32 MapInfo::mMapSize
-	int32_t ___mMapSize_2;
+	// MyRC MapInfo::mMapSize
+	MyRC_t2924564543 * ___mMapSize_2;
 	// System.Collections.Generic.Dictionary`2<System.Int32,MyRC> MapInfo::mPlayerSpawnPoint
 	Dictionary_2_t1932390178 * ___mPlayerSpawnPoint_3;
 	// System.Collections.Generic.Dictionary`2<System.Int32,MyRC> MapInfo::mEnemySpawnPoint
@@ -42,6 +44,8 @@ public:
 	MyRC_t2924564543 * ___mBaseRC_5;
 	// System.Boolean MapInfo::mHasBase
 	bool ___mHasBase_6;
+	// System.String MapInfo::mMapName
+	String_t* ___mMapName_7;
 
 public:
 	inline static int32_t get_offset_of_mMapTiles_1() { return static_cast<int32_t>(offsetof(MapInfo_t1898709050, ___mMapTiles_1)); }
@@ -54,11 +58,12 @@ public:
 	}
 
 	inline static int32_t get_offset_of_mMapSize_2() { return static_cast<int32_t>(offsetof(MapInfo_t1898709050, ___mMapSize_2)); }
-	inline int32_t get_mMapSize_2() const { return ___mMapSize_2; }
-	inline int32_t* get_address_of_mMapSize_2() { return &___mMapSize_2; }
-	inline void set_mMapSize_2(int32_t value)
+	inline MyRC_t2924564543 * get_mMapSize_2() const { return ___mMapSize_2; }
+	inline MyRC_t2924564543 ** get_address_of_mMapSize_2() { return &___mMapSize_2; }
+	inline void set_mMapSize_2(MyRC_t2924564543 * value)
 	{
 		___mMapSize_2 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapSize_2, value);
 	}
 
 	inline static int32_t get_offset_of_mPlayerSpawnPoint_3() { return static_cast<int32_t>(offsetof(MapInfo_t1898709050, ___mPlayerSpawnPoint_3)); }
@@ -94,6 +99,15 @@ public:
 	inline void set_mHasBase_6(bool value)
 	{
 		___mHasBase_6 = value;
+	}
+
+	inline static int32_t get_offset_of_mMapName_7() { return static_cast<int32_t>(offsetof(MapInfo_t1898709050, ___mMapName_7)); }
+	inline String_t* get_mMapName_7() const { return ___mMapName_7; }
+	inline String_t** get_address_of_mMapName_7() { return &___mMapName_7; }
+	inline void set_mMapName_7(String_t* value)
+	{
+		___mMapName_7 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapName_7, value);
 	}
 };
 

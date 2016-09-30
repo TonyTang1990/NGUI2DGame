@@ -23,6 +23,7 @@ struct Vector3U5BU5D_t1172311765;
 #include "UnityEngine_UnityEngine_RectTransform_ReapplyDrive2020713228.h"
 #include "UnityEngine_UnityEngine_Rect3681755626.h"
 #include "UnityEngine_UnityEngine_Vector22243707579.h"
+#include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
 #include "UnityEngine_UnityEngine_RectTransform_Edge3306019089.h"
 #include "UnityEngine_UnityEngine_RectTransform_Axis3420330537.h"
@@ -51,6 +52,8 @@ extern "C"  void RectTransform_set_anchorMax_m2955899993 (RectTransform_t3349966
 extern "C"  void RectTransform_INTERNAL_get_anchorMax_m834202955 (RectTransform_t3349966182 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectTransform::INTERNAL_set_anchorMax(UnityEngine.Vector2&)
 extern "C"  void RectTransform_INTERNAL_set_anchorMax_m1551648727 (RectTransform_t3349966182 * __this, Vector2_t2243707579 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.RectTransform::set_anchoredPosition3D(UnityEngine.Vector3)
+extern "C"  void RectTransform_set_anchoredPosition3D_m3116733735 (RectTransform_t3349966182 * __this, Vector3_t2243707580  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.RectTransform::get_anchoredPosition()
 extern "C"  Vector2_t2243707579  RectTransform_get_anchoredPosition_m3570822376 (RectTransform_t3349966182 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectTransform::set_anchoredPosition(UnityEngine.Vector2)

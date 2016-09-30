@@ -103,8 +103,8 @@ struct MyRC_t2924564543;
 #include "AssemblyU2DCSharp_GameConfigurationManager_Account3062613273.h"
 #include "AssemblyU2DCSharp_MapManager_GridInfo737075118.h"
 #include "AssemblyU2DCSharp_Tile2729441780.h"
-#include "AssemblyU2DCSharp_MyRC2924564543.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
+#include "AssemblyU2DCSharp_MyRC2924564543.h"
 
 #pragma once
 // InvBaseItem[]
@@ -588,6 +588,20 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+// TileType[]
+struct TileTypeU5BU5D_t354757605  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+public:
+	inline int32_t GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
 // MyRC[]
 struct MyRCU5BU5D_t3588064230  : public Il2CppArray
 {
@@ -629,20 +643,6 @@ public:
 	inline void SetAt(il2cpp_array_size_t i, il2cpp_array_size_t j, int32_t value)
 	{
 		il2cpp_array_size_t index = i * bounds[1].length + j;
-		m_Items[index] = value;
-	}
-};
-// TileType[]
-struct TileTypeU5BU5D_t354757605  : public Il2CppArray
-{
-public:
-	ALIGN_FIELD (8) int32_t m_Items[1];
-
-public:
-	inline int32_t GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline int32_t* GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, int32_t value)
-	{
 		m_Items[index] = value;
 	}
 };

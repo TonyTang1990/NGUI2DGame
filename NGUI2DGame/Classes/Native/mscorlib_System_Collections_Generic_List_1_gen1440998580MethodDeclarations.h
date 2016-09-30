@@ -49,8 +49,8 @@ extern "C"  void List_1__ctor_m3311112068_gshared (List_1_t1440998580 * __this, 
 extern "C"  void List_1__ctor_m2018441489_gshared (List_1_t1440998580 * __this, Il2CppObject* ___collection0, const MethodInfo* method);
 #define List_1__ctor_m2018441489(__this, ___collection0, method) ((  void (*) (List_1_t1440998580 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m2018441489_gshared)(__this, ___collection0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::.ctor(System.Int32)
-extern "C"  void List_1__ctor_m2475747412_gshared (List_1_t1440998580 * __this, int32_t ___capacity0, const MethodInfo* method);
-#define List_1__ctor_m2475747412(__this, ___capacity0, method) ((  void (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1__ctor_m2475747412_gshared)(__this, ___capacity0, method)
+extern "C"  void List_1__ctor_m555649161_gshared (List_1_t1440998580 * __this, int32_t ___capacity0, const MethodInfo* method);
+#define List_1__ctor_m555649161(__this, ___capacity0, method) ((  void (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1__ctor_m555649161_gshared)(__this, ___capacity0, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::.cctor()
 extern "C"  void List_1__cctor_m2189212316_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method);
 #define List_1__cctor_m2189212316(__this /* static, unused */, method) ((  void (*) (Il2CppObject * /* static, unused */, const MethodInfo*))List_1__cctor_m2189212316_gshared)(__this /* static, unused */, method)
@@ -184,8 +184,8 @@ extern "C"  Int32U5BU5D_t3030399641* List_1_ToArray_m3223175690_gshared (List_1_
 extern "C"  void List_1_TrimExcess_m4133698154_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
 #define List_1_TrimExcess_m4133698154(__this, method) ((  void (*) (List_1_t1440998580 *, const MethodInfo*))List_1_TrimExcess_m4133698154_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Capacity()
-extern "C"  int32_t List_1_get_Capacity_m531373308_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
-#define List_1_get_Capacity_m531373308(__this, method) ((  int32_t (*) (List_1_t1440998580 *, const MethodInfo*))List_1_get_Capacity_m531373308_gshared)(__this, method)
+extern "C"  int32_t List_1_get_Capacity_m3004412059_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
+#define List_1_get_Capacity_m3004412059(__this, method) ((  int32_t (*) (List_1_t1440998580 *, const MethodInfo*))List_1_get_Capacity_m3004412059_gshared)(__this, method)
 // System.Void System.Collections.Generic.List`1<System.Int32>::set_Capacity(System.Int32)
 extern "C"  void List_1_set_Capacity_m1511847951_gshared (List_1_t1440998580 * __this, int32_t ___value0, const MethodInfo* method);
 #define List_1_set_Capacity_m1511847951(__this, ___value0, method) ((  void (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_set_Capacity_m1511847951_gshared)(__this, ___value0, method)

@@ -20,6 +20,12 @@ struct GameObjectU5BU2CU5D_t3057952155;
 struct TileU5BU2CU5D_t1358904254;
 // System.Collections.Generic.List`1<UnityEngine.Vector2>
 struct List_1_t1612828711;
+// System.Collections.BitArray
+struct BitArray_t4180138994;
+// System.Collections.Generic.Dictionary`2<System.Int32,TileType>
+struct Dictionary_2_t4004437455;
+// UnityEngine.Transform
+struct Transform_t3275118058;
 
 #include "mscorlib_System_Object2689449295.h"
 #include "UnityEngine_UnityEngine_Vector22243707579.h"
@@ -50,8 +56,20 @@ public:
 	List_1_t1612828711 * ___mPlayerSpawnPoint_6;
 	// System.Collections.Generic.List`1<UnityEngine.Vector2> TankMap::mEnemySpawnPoint
 	List_1_t1612828711 * ___mEnemySpawnPoint_7;
-	// System.Int32 TankMap::mMapSize
-	int32_t ___mMapSize_8;
+	// UnityEngine.Vector2 TankMap::mMapSize
+	Vector2_t2243707579  ___mMapSize_8;
+	// System.Collections.BitArray TankMap::mMapOccupiedInfo
+	BitArray_t4180138994 * ___mMapOccupiedInfo_9;
+	// System.Collections.BitArray TankMap::mMapPlayerOcupiedInfo
+	BitArray_t4180138994 * ___mMapPlayerOcupiedInfo_10;
+	// System.Collections.Generic.Dictionary`2<System.Int32,TileType> TankMap::mMapOccupiedTileTypeInfo
+	Dictionary_2_t4004437455 * ___mMapOccupiedTileTypeInfo_11;
+	// UnityEngine.Transform TankMap::mMapParent
+	Transform_t3275118058 * ___mMapParent_12;
+	// System.Int32 TankMap::mMaxPartitionLevel
+	int32_t ___mMaxPartitionLevel_13;
+	// System.Int32 TankMap::mMaxmumIndexNumber
+	int32_t ___mMaxmumIndexNumber_14;
 
 public:
 	inline static int32_t get_offset_of_mMapName_0() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapName_0)); }
@@ -125,11 +143,63 @@ public:
 	}
 
 	inline static int32_t get_offset_of_mMapSize_8() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapSize_8)); }
-	inline int32_t get_mMapSize_8() const { return ___mMapSize_8; }
-	inline int32_t* get_address_of_mMapSize_8() { return &___mMapSize_8; }
-	inline void set_mMapSize_8(int32_t value)
+	inline Vector2_t2243707579  get_mMapSize_8() const { return ___mMapSize_8; }
+	inline Vector2_t2243707579 * get_address_of_mMapSize_8() { return &___mMapSize_8; }
+	inline void set_mMapSize_8(Vector2_t2243707579  value)
 	{
 		___mMapSize_8 = value;
+	}
+
+	inline static int32_t get_offset_of_mMapOccupiedInfo_9() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapOccupiedInfo_9)); }
+	inline BitArray_t4180138994 * get_mMapOccupiedInfo_9() const { return ___mMapOccupiedInfo_9; }
+	inline BitArray_t4180138994 ** get_address_of_mMapOccupiedInfo_9() { return &___mMapOccupiedInfo_9; }
+	inline void set_mMapOccupiedInfo_9(BitArray_t4180138994 * value)
+	{
+		___mMapOccupiedInfo_9 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapOccupiedInfo_9, value);
+	}
+
+	inline static int32_t get_offset_of_mMapPlayerOcupiedInfo_10() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapPlayerOcupiedInfo_10)); }
+	inline BitArray_t4180138994 * get_mMapPlayerOcupiedInfo_10() const { return ___mMapPlayerOcupiedInfo_10; }
+	inline BitArray_t4180138994 ** get_address_of_mMapPlayerOcupiedInfo_10() { return &___mMapPlayerOcupiedInfo_10; }
+	inline void set_mMapPlayerOcupiedInfo_10(BitArray_t4180138994 * value)
+	{
+		___mMapPlayerOcupiedInfo_10 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapPlayerOcupiedInfo_10, value);
+	}
+
+	inline static int32_t get_offset_of_mMapOccupiedTileTypeInfo_11() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapOccupiedTileTypeInfo_11)); }
+	inline Dictionary_2_t4004437455 * get_mMapOccupiedTileTypeInfo_11() const { return ___mMapOccupiedTileTypeInfo_11; }
+	inline Dictionary_2_t4004437455 ** get_address_of_mMapOccupiedTileTypeInfo_11() { return &___mMapOccupiedTileTypeInfo_11; }
+	inline void set_mMapOccupiedTileTypeInfo_11(Dictionary_2_t4004437455 * value)
+	{
+		___mMapOccupiedTileTypeInfo_11 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapOccupiedTileTypeInfo_11, value);
+	}
+
+	inline static int32_t get_offset_of_mMapParent_12() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapParent_12)); }
+	inline Transform_t3275118058 * get_mMapParent_12() const { return ___mMapParent_12; }
+	inline Transform_t3275118058 ** get_address_of_mMapParent_12() { return &___mMapParent_12; }
+	inline void set_mMapParent_12(Transform_t3275118058 * value)
+	{
+		___mMapParent_12 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapParent_12, value);
+	}
+
+	inline static int32_t get_offset_of_mMaxPartitionLevel_13() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMaxPartitionLevel_13)); }
+	inline int32_t get_mMaxPartitionLevel_13() const { return ___mMaxPartitionLevel_13; }
+	inline int32_t* get_address_of_mMaxPartitionLevel_13() { return &___mMaxPartitionLevel_13; }
+	inline void set_mMaxPartitionLevel_13(int32_t value)
+	{
+		___mMaxPartitionLevel_13 = value;
+	}
+
+	inline static int32_t get_offset_of_mMaxmumIndexNumber_14() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMaxmumIndexNumber_14)); }
+	inline int32_t get_mMaxmumIndexNumber_14() const { return ___mMaxmumIndexNumber_14; }
+	inline int32_t* get_address_of_mMaxmumIndexNumber_14() { return &___mMaxmumIndexNumber_14; }
+	inline void set_mMaxmumIndexNumber_14(int32_t value)
+	{
+		___mMaxmumIndexNumber_14 = value;
 	}
 };
 

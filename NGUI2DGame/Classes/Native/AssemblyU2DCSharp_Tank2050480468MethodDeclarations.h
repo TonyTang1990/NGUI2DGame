@@ -18,12 +18,19 @@ struct Tank_t2050480468;
 struct GameObject_t1756533147;
 
 #include "codegen/il2cpp-codegen.h"
+#include "AssemblyU2DCSharp_TankMoveAction944032589.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 
 // System.Void Tank::.ctor()
 extern "C"  void Tank__ctor_m750150259 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::set_MoveSpeed(System.Single)
 extern "C"  void Tank_set_MoveSpeed_m3985201005 (Tank_t2050480468 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::set_CurrentMoveAction(TankMoveAction)
+extern "C"  void Tank_set_CurrentMoveAction_m3482680283 (Tank_t2050480468 * __this, int32_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::InitOccupiedInfo()
+extern "C"  void Tank_InitOccupiedInfo_m3183291521 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::UpdateOccupiedInfo()
+extern "C"  void Tank_UpdateOccupiedInfo_m3660004542 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Awake()
 extern "C"  void Tank_Awake_m3158931696 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Start()
@@ -32,6 +39,8 @@ extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const Method
 extern "C"  void Tank_Update_m546628242 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::OnDestroy()
 extern "C"  void Tank_OnDestroy_m4042988626 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Tank::CanMoveForward()
+extern "C"  bool Tank_CanMoveForward_m362955925 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::MoveForward()
 extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Shoot()

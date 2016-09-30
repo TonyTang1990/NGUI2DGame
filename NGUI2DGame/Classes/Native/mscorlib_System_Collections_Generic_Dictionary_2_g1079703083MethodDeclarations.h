@@ -53,8 +53,8 @@ extern "C"  void Dictionary_2__ctor_m3272440485_gshared (Dictionary_2_t107970308
 extern "C"  void Dictionary_2__ctor_m3914855494_gshared (Dictionary_2_t1079703083 * __this, Il2CppObject* ___comparer0, const MethodInfo* method);
 #define Dictionary_2__ctor_m3914855494(__this, ___comparer0, method) ((  void (*) (Dictionary_2_t1079703083 *, Il2CppObject*, const MethodInfo*))Dictionary_2__ctor_m3914855494_gshared)(__this, ___comparer0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::.ctor(System.Int32)
-extern "C"  void Dictionary_2__ctor_m4012179026_gshared (Dictionary_2_t1079703083 * __this, int32_t ___capacity0, const MethodInfo* method);
-#define Dictionary_2__ctor_m4012179026(__this, ___capacity0, method) ((  void (*) (Dictionary_2_t1079703083 *, int32_t, const MethodInfo*))Dictionary_2__ctor_m4012179026_gshared)(__this, ___capacity0, method)
+extern "C"  void Dictionary_2__ctor_m1177908585_gshared (Dictionary_2_t1079703083 * __this, int32_t ___capacity0, const MethodInfo* method);
+#define Dictionary_2__ctor_m1177908585(__this, ___capacity0, method) ((  void (*) (Dictionary_2_t1079703083 *, int32_t, const MethodInfo*))Dictionary_2__ctor_m1177908585_gshared)(__this, ___capacity0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::.ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
 extern "C"  void Dictionary_2__ctor_m3889299473_gshared (Dictionary_2_t1079703083 * __this, int32_t ___capacity0, Il2CppObject* ___comparer1, const MethodInfo* method);
 #define Dictionary_2__ctor_m3889299473(__this, ___capacity0, ___comparer1, method) ((  void (*) (Dictionary_2_t1079703083 *, int32_t, Il2CppObject*, const MethodInfo*))Dictionary_2__ctor_m3889299473_gshared)(__this, ___capacity0, ___comparer1, method)
@@ -116,8 +116,8 @@ extern "C"  Il2CppObject* Dictionary_2_System_Collections_Generic_IEnumerableU3C
 extern "C"  Il2CppObject * Dictionary_2_System_Collections_IDictionary_GetEnumerator_m671084566_gshared (Dictionary_2_t1079703083 * __this, const MethodInfo* method);
 #define Dictionary_2_System_Collections_IDictionary_GetEnumerator_m671084566(__this, method) ((  Il2CppObject * (*) (Dictionary_2_t1079703083 *, const MethodInfo*))Dictionary_2_System_Collections_IDictionary_GetEnumerator_m671084566_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::get_Count()
-extern "C"  int32_t Dictionary_2_get_Count_m1173552103_gshared (Dictionary_2_t1079703083 * __this, const MethodInfo* method);
-#define Dictionary_2_get_Count_m1173552103(__this, method) ((  int32_t (*) (Dictionary_2_t1079703083 *, const MethodInfo*))Dictionary_2_get_Count_m1173552103_gshared)(__this, method)
+extern "C"  int32_t Dictionary_2_get_Count_m2873422858_gshared (Dictionary_2_t1079703083 * __this, const MethodInfo* method);
+#define Dictionary_2_get_Count_m2873422858(__this, method) ((  int32_t (*) (Dictionary_2_t1079703083 *, const MethodInfo*))Dictionary_2_get_Count_m2873422858_gshared)(__this, method)
 // TValue System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::get_Item(TKey)
 extern "C"  int32_t Dictionary_2_get_Item_m4108211359_gshared (Dictionary_2_t1079703083 * __this, int32_t ___key0, const MethodInfo* method);
 #define Dictionary_2_get_Item_m4108211359(__this, ___key0, method) ((  int32_t (*) (Dictionary_2_t1079703083 *, int32_t, const MethodInfo*))Dictionary_2_get_Item_m4108211359_gshared)(__this, ___key0, method)
@@ -149,8 +149,8 @@ extern "C"  void Dictionary_2_CopyTo_m3390790255_gshared (Dictionary_2_t10797030
 extern "C"  void Dictionary_2_Resize_m2592707569_gshared (Dictionary_2_t1079703083 * __this, const MethodInfo* method);
 #define Dictionary_2_Resize_m2592707569(__this, method) ((  void (*) (Dictionary_2_t1079703083 *, const MethodInfo*))Dictionary_2_Resize_m2592707569_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::Add(TKey,TValue)
-extern "C"  void Dictionary_2_Add_m905742878_gshared (Dictionary_2_t1079703083 * __this, int32_t ___key0, int32_t ___value1, const MethodInfo* method);
-#define Dictionary_2_Add_m905742878(__this, ___key0, ___value1, method) ((  void (*) (Dictionary_2_t1079703083 *, int32_t, int32_t, const MethodInfo*))Dictionary_2_Add_m905742878_gshared)(__this, ___key0, ___value1, method)
+extern "C"  void Dictionary_2_Add_m3036760224_gshared (Dictionary_2_t1079703083 * __this, int32_t ___key0, int32_t ___value1, const MethodInfo* method);
+#define Dictionary_2_Add_m3036760224(__this, ___key0, ___value1, method) ((  void (*) (Dictionary_2_t1079703083 *, int32_t, int32_t, const MethodInfo*))Dictionary_2_Add_m3036760224_gshared)(__this, ___key0, ___value1, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::Clear()
 extern "C"  void Dictionary_2_Clear_m1234384046_gshared (Dictionary_2_t1079703083 * __this, const MethodInfo* method);
 #define Dictionary_2_Clear_m1234384046(__this, method) ((  void (*) (Dictionary_2_t1079703083 *, const MethodInfo*))Dictionary_2_Clear_m1234384046_gshared)(__this, method)
@@ -158,8 +158,8 @@ extern "C"  void Dictionary_2_Clear_m1234384046_gshared (Dictionary_2_t107970308
 extern "C"  bool Dictionary_2_ContainsKey_m1625660454_gshared (Dictionary_2_t1079703083 * __this, int32_t ___key0, const MethodInfo* method);
 #define Dictionary_2_ContainsKey_m1625660454(__this, ___key0, method) ((  bool (*) (Dictionary_2_t1079703083 *, int32_t, const MethodInfo*))Dictionary_2_ContainsKey_m1625660454_gshared)(__this, ___key0, method)
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::ContainsValue(TValue)
-extern "C"  bool Dictionary_2_ContainsValue_m1984076542_gshared (Dictionary_2_t1079703083 * __this, int32_t ___value0, const MethodInfo* method);
-#define Dictionary_2_ContainsValue_m1984076542(__this, ___value0, method) ((  bool (*) (Dictionary_2_t1079703083 *, int32_t, const MethodInfo*))Dictionary_2_ContainsValue_m1984076542_gshared)(__this, ___value0, method)
+extern "C"  bool Dictionary_2_ContainsValue_m4115451390_gshared (Dictionary_2_t1079703083 * __this, int32_t ___value0, const MethodInfo* method);
+#define Dictionary_2_ContainsValue_m4115451390(__this, ___value0, method) ((  bool (*) (Dictionary_2_t1079703083 *, int32_t, const MethodInfo*))Dictionary_2_ContainsValue_m4115451390_gshared)(__this, ___value0, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void Dictionary_2_GetObjectData_m2921989747_gshared (Dictionary_2_t1079703083 * __this, SerializationInfo_t228987430 * ___info0, StreamingContext_t1417235061  ___context1, const MethodInfo* method);
 #define Dictionary_2_GetObjectData_m2921989747(__this, ___info0, ___context1, method) ((  void (*) (Dictionary_2_t1079703083 *, SerializationInfo_t228987430 *, StreamingContext_t1417235061 , const MethodInfo*))Dictionary_2_GetObjectData_m2921989747_gshared)(__this, ___info0, ___context1, method)

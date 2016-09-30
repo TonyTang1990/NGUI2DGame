@@ -24,15 +24,15 @@ struct  PlayerTank_t155216285  : public Tank_t2050480468
 {
 public:
 	// System.Boolean PlayerTank::mIsKeepMoving
-	bool ___mIsKeepMoving_14;
+	bool ___mIsKeepMoving_15;
 
 public:
-	inline static int32_t get_offset_of_mIsKeepMoving_14() { return static_cast<int32_t>(offsetof(PlayerTank_t155216285, ___mIsKeepMoving_14)); }
-	inline bool get_mIsKeepMoving_14() const { return ___mIsKeepMoving_14; }
-	inline bool* get_address_of_mIsKeepMoving_14() { return &___mIsKeepMoving_14; }
-	inline void set_mIsKeepMoving_14(bool value)
+	inline static int32_t get_offset_of_mIsKeepMoving_15() { return static_cast<int32_t>(offsetof(PlayerTank_t155216285, ___mIsKeepMoving_15)); }
+	inline bool get_mIsKeepMoving_15() const { return ___mIsKeepMoving_15; }
+	inline bool* get_address_of_mIsKeepMoving_15() { return &___mIsKeepMoving_15; }
+	inline void set_mIsKeepMoving_15(bool value)
 	{
-		___mIsKeepMoving_14 = value;
+		___mIsKeepMoving_15 = value;
 	}
 };
 

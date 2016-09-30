@@ -13,14 +13,20 @@
 #include <limits>
 #include <assert.h>
 
+// UIPanel/OnChangeDelegate
+struct OnChangeDelegate_t1697451811;
+// System.Object
+struct Il2CppObject;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
 // UIPopupList
 struct UIPopupList_t109953940;
 // System.String
 struct String_t;
 // UIButtonKeys
 struct UIButtonKeys_t2099118702;
-// System.Object
-struct Il2CppObject;
 // Localization
 struct Localization_t3725902693;
 // UILabel
@@ -43,10 +49,6 @@ struct ColliderU5BU5D_t462843629;
 struct UIWidget_t1453041918;
 // UIPopupList/OnSelectionChange
 struct OnSelectionChange_t2430743522;
-// System.IAsyncResult
-struct IAsyncResult_t1999651008;
-// System.AsyncCallback
-struct AsyncCallback_t163412349;
 // UIRoot
 struct UIRoot_t389944298;
 // System.Collections.Generic.List`1<UIRoot>
@@ -177,9 +179,16 @@ struct WindowDragTilt_t1404465963;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "AssemblyU2DCSharp_UIPanel_DebugInfo1876253092.h"
+#include "AssemblyU2DCSharp_UIPanel_DebugInfo1876253092MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UIPanel_OnChangeDelegate1697451811.h"
+#include "AssemblyU2DCSharp_UIPanel_OnChangeDelegate1697451811MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_IntPtr2504060609.h"
+#include "mscorlib_System_Void1841601450.h"
+#include "mscorlib_System_AsyncCallback163412349.h"
 #include "AssemblyU2DCSharp_UIPopupList109953940.h"
 #include "AssemblyU2DCSharp_UIPopupList109953940MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1398341365MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector22243707579MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color2020392075MethodDeclarations.h"
@@ -205,7 +214,6 @@ struct WindowDragTilt_t1404465963;
 #include "UnityEngine_UnityEngine_GameObject1756533147MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UILabel1795115428.h"
 #include "AssemblyU2DCSharp_UIPopupList_OnSelectionChange2430743522.h"
-#include "mscorlib_System_Object2689449295.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
@@ -264,10 +272,8 @@ struct WindowDragTilt_t1404465963;
 #include "AssemblyU2DCSharp_UIWidget_Pivot752586349.h"
 #include "AssemblyU2DCSharp_NGUITools2004302824.h"
 #include "AssemblyU2DCSharp_UIEventListener_BoolDelegate2797443340.h"
-#include "mscorlib_System_IntPtr2504060609.h"
 #include "AssemblyU2DCSharp_UIPopupList_Position1780870098.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
-#include "mscorlib_System_AsyncCallback163412349.h"
 #include "AssemblyU2DCSharp_UIPopupList_Position1780870098MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIRoot389944298.h"
 #include "AssemblyU2DCSharp_UIRoot389944298MethodDeclarations.h"
@@ -554,6 +560,53 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m2049635786_g
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UIPanel/OnChangeDelegate::.ctor(System.Object,System.IntPtr)
+extern "C"  void OnChangeDelegate__ctor_m3396767174 (OnChangeDelegate_t1697451811 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
+{
+	__this->set_method_ptr_0((Il2CppMethodPointer)((MethodInfo*)___method1.get_m_value_0())->methodPointer);
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UIPanel/OnChangeDelegate::Invoke()
+extern "C"  void OnChangeDelegate_Invoke_m1229860108 (OnChangeDelegate_t1697451811 * __this, const MethodInfo* method)
+{
+	if(__this->get_prev_9() != NULL)
+	{
+		OnChangeDelegate_Invoke_m1229860108((OnChangeDelegate_t1697451811 *)__this->get_prev_9(), method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	if ((__this->get_m_target_2() != NULL || MethodHasParameters((MethodInfo*)(__this->get_method_3().get_m_value_0()))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Il2CppObject *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->get_method_3().get_m_value_0()));
+	}
+}
+extern "C"  void DelegatePInvokeWrapper_OnChangeDelegate_t1697451811 (OnChangeDelegate_t1697451811 * __this, const MethodInfo* method)
+{
+	typedef void (STDCALL *PInvokeFunc)();
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(((Il2CppDelegate*)__this)->method->methodPointer);
+
+	// Native function invocation
+	il2cppPInvokeFunc();
+
+}
+// System.IAsyncResult UIPanel/OnChangeDelegate::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * OnChangeDelegate_BeginInvoke_m557663277 (OnChangeDelegate_t1697451811 * __this, AsyncCallback_t163412349 * ___callback0, Il2CppObject * ___object1, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback0, (Il2CppObject*)___object1);
+}
+// System.Void UIPanel/OnChangeDelegate::EndInvoke(System.IAsyncResult)
+extern "C"  void OnChangeDelegate_EndInvoke_m2377587372 (OnChangeDelegate_t1697451811 * __this, Il2CppObject * ___result0, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
 // System.Void UIPopupList::.ctor()
 extern Il2CppClass* List_1_t1398341365_il2cpp_TypeInfo_var;
 extern Il2CppClass* List_1_t1164236560_il2cpp_TypeInfo_var;

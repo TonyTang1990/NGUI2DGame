@@ -247,10 +247,10 @@ struct TrailRenderer_t2490637367;
 #include "UnityEngine_UnityEngine_RectTransform_ReapplyDrive2020713228.h"
 #include "mscorlib_System_Delegate3022476291MethodDeclarations.h"
 #include "mscorlib_System_Delegate3022476291.h"
+#include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectTransform_ReapplyDrive2020713228MethodDeclarations.h"
 #include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Debug1368543263MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectTransform_Edge3306019089.h"
 #include "UnityEngine_UnityEngine_RectTransform_Axis3420330537.h"
 #include "UnityEngine_UnityEngine_RectTransform_Axis3420330537MethodDeclarations.h"
@@ -2995,6 +2995,27 @@ extern "C"  void RectTransform_INTERNAL_set_anchorMax_m1551648727 (RectTransform
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (RectTransform_INTERNAL_set_anchorMax_m1551648727_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.RectTransform::INTERNAL_set_anchorMax(UnityEngine.Vector2&)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.RectTransform::set_anchoredPosition3D(UnityEngine.Vector3)
+extern "C"  void RectTransform_set_anchoredPosition3D_m3116733735 (RectTransform_t3349966182 * __this, Vector3_t2243707580  ___value0, const MethodInfo* method)
+{
+	Vector3_t2243707580  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		float L_0 = (&___value0)->get_x_1();
+		float L_1 = (&___value0)->get_y_2();
+		Vector2_t2243707579  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		Vector2__ctor_m3067419446(&L_2, L_0, L_1, /*hidden argument*/NULL);
+		RectTransform_set_anchoredPosition_m2077229449(__this, L_2, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_3 = Transform_get_localPosition_m2533925116(__this, /*hidden argument*/NULL);
+		V_0 = L_3;
+		float L_4 = (&___value0)->get_z_3();
+		(&V_0)->set_z_3(L_4);
+		Vector3_t2243707580  L_5 = V_0;
+		Transform_set_localPosition_m1026930133(__this, L_5, /*hidden argument*/NULL);
+		return;
+	}
 }
 // UnityEngine.Vector2 UnityEngine.RectTransform::get_anchoredPosition()
 extern "C"  Vector2_t2243707579  RectTransform_get_anchoredPosition_m3570822376 (RectTransform_t3349966182 * __this, const MethodInfo* method)

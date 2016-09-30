@@ -1,4 +1,4 @@
-//Generated on : 9/22/2016 1:59:44 AM
+//Generated on : 9/30/2016 12:49:11 PM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -336,6 +336,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_BoxCollider_INTERNAL_set_size();
 
 	//End Registrations for type : UnityEngine.BoxCollider
+
+	//Start Registrations for type : UnityEngine.BoxCollider2D
+
+		//System.Void UnityEngine.BoxCollider2D::INTERNAL_set_size(UnityEngine.Vector2&)
+		void Register_UnityEngine_BoxCollider2D_INTERNAL_set_size();
+		Register_UnityEngine_BoxCollider2D_INTERNAL_set_size();
+
+	//End Registrations for type : UnityEngine.BoxCollider2D
 
 	//Start Registrations for type : UnityEngine.Camera
 

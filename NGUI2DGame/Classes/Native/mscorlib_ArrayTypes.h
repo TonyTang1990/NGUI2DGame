@@ -398,6 +398,7 @@ struct List_1_t1125654279;
 #include "mscorlib_System_Collections_Generic_List_1_gen1125654279.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21604683114.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23159568114.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21761782677.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23984702696.h"
 
 #pragma once
@@ -3330,6 +3331,20 @@ public:
 	inline KeyValuePair_2_t3159568114  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline KeyValuePair_2_t3159568114 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3159568114  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Int32,TileType>[]
+struct KeyValuePair_2U5BU5D_t1633620600  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t1761782677  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1761782677  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1761782677 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1761782677  value)
 	{
 		m_Items[index] = value;
 	}
