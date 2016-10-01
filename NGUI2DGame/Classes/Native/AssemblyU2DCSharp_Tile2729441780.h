@@ -14,9 +14,12 @@
 struct List_1_t1440998580;
 // UnityEngine.SpriteRenderer
 struct SpriteRenderer_t1209076198;
+// System.Collections.Generic.Dictionary`2<MoveAction,System.Int32>
+struct Dictionary_2_t841443130;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -44,6 +47,10 @@ public:
 	int32_t ___mMaxIndex_9;
 	// UnityEngine.SpriteRenderer Tile::mSpriteRender
 	SpriteRenderer_t1209076198 * ___mSpriteRender_10;
+	// System.Collections.Generic.Dictionary`2<MoveAction,System.Int32> Tile::mTileIndexsOffset
+	Dictionary_2_t841443130 * ___mTileIndexsOffset_11;
+	// UnityEngine.Vector2 Tile::mLocatedTileRC
+	Vector2_t2243707579  ___mLocatedTileRC_12;
 
 public:
 	inline static int32_t get_offset_of_mTileType_3() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mTileType_3)); }
@@ -110,6 +117,23 @@ public:
 	{
 		___mSpriteRender_10 = value;
 		Il2CppCodeGenWriteBarrier(&___mSpriteRender_10, value);
+	}
+
+	inline static int32_t get_offset_of_mTileIndexsOffset_11() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mTileIndexsOffset_11)); }
+	inline Dictionary_2_t841443130 * get_mTileIndexsOffset_11() const { return ___mTileIndexsOffset_11; }
+	inline Dictionary_2_t841443130 ** get_address_of_mTileIndexsOffset_11() { return &___mTileIndexsOffset_11; }
+	inline void set_mTileIndexsOffset_11(Dictionary_2_t841443130 * value)
+	{
+		___mTileIndexsOffset_11 = value;
+		Il2CppCodeGenWriteBarrier(&___mTileIndexsOffset_11, value);
+	}
+
+	inline static int32_t get_offset_of_mLocatedTileRC_12() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mLocatedTileRC_12)); }
+	inline Vector2_t2243707579  get_mLocatedTileRC_12() const { return ___mLocatedTileRC_12; }
+	inline Vector2_t2243707579 * get_address_of_mLocatedTileRC_12() { return &___mLocatedTileRC_12; }
+	inline void set_mLocatedTileRC_12(Vector2_t2243707579  value)
+	{
+		___mLocatedTileRC_12 = value;
 	}
 };
 

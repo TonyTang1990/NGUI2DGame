@@ -397,7 +397,9 @@ struct List_1_t1125654279;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23980175869.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1125654279.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21604683114.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_22893755648.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23159568114.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_23789579933.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21761782677.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23984702696.h"
 
@@ -3321,6 +3323,20 @@ public:
 		m_Items[index] = value;
 	}
 };
+// System.Collections.Generic.KeyValuePair`2<MoveAction,System.Int32>[]
+struct KeyValuePair_2U5BU5D_t1190156033  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t2893755648  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t2893755648  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t2893755648 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t2893755648  value)
+	{
+		m_Items[index] = value;
+	}
+};
 // System.Collections.Generic.KeyValuePair`2<UnityEngine.GameObject,System.Int32>[]
 struct KeyValuePair_2U5BU5D_t254954759  : public Il2CppArray
 {
@@ -3331,6 +3347,20 @@ public:
 	inline KeyValuePair_2_t3159568114  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline KeyValuePair_2_t3159568114 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3159568114  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Int32,Tile>[]
+struct KeyValuePair_2U5BU5D_t2637767248  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t3789579933  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t3789579933  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t3789579933 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3789579933  value)
 	{
 		m_Items[index] = value;
 	}

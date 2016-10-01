@@ -16,10 +16,10 @@
 struct TankMap_t1120032466;
 // System.Collections.Generic.List`1<System.Int32>
 struct List_1_t1440998580;
-// UnityEngine.GameObject
-struct GameObject_t1756533147;
 // Tile
 struct Tile_t2729441780;
+// UnityEngine.GameObject
+struct GameObject_t1756533147;
 // System.String
 struct String_t;
 // MapInfo
@@ -29,7 +29,6 @@ struct List_1_t1612828711;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
-#include "AssemblyU2DCSharp_TankMoveAction944032589.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 #include "mscorlib_System_String2029220233.h"
@@ -42,18 +41,26 @@ extern "C"  void TankMap__ctor_m213562167 (TankMap_t1120032466 * __this, const M
 extern "C"  void TankMap__ctor_m57404882 (TankMap_t1120032466 * __this, int32_t ___row0, int32_t ___column1, int32_t ___maxpartitionlevel2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TankMap::ResetMap()
 extern "C"  void TankMap_ResetMap_m2481124046 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean TankMap::IsAllowedMoveForward(UnityEngine.Vector3,System.Single,TankMoveAction)
-extern "C"  bool TankMap_IsAllowedMoveForward_m3099524668 (TankMap_t1120032466 * __this, Vector3_t2243707580  ___currentposiion0, float ___moveoffset1, int32_t ___moveaction2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.Generic.List`1<System.Int32> TankMap::ObtainOccupiedIndexsAtRC(System.Int32,System.Int32)
 extern "C"  List_1_t1440998580 * TankMap_ObtainOccupiedIndexsAtRC_m1736165015 (TankMap_t1120032466 * __this, int32_t ___row0, int32_t ___column1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TankMap::IsValideIndex(System.Int32)
 extern "C"  bool TankMap_IsValideIndex_m3312078381 (TankMap_t1120032466 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean TankMap::IsValidePosition(UnityEngine.Vector3)
+extern "C"  bool TankMap_IsValidePosition_m1365541722 (TankMap_t1120032466 * __this, Vector3_t2243707580  ___position0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TankMap::MarkIndexOccupied(System.Int32,System.Boolean,System.Boolean)
 extern "C"  void TankMap_MarkIndexOccupied_m1278869435 (TankMap_t1120032466 * __this, int32_t ___index0, bool ___isoccupied1, bool ___isoccupiedbyplayer2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TankMap::IsIndexOccupied(System.Int32)
 extern "C"  bool TankMap_IsIndexOccupied_m454502790 (TankMap_t1120032466 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TankMap::IsIndexOccupiedByPlayer(System.Int32)
 extern "C"  bool TankMap_IsIndexOccupiedByPlayer_m3732645810 (TankMap_t1120032466 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 TankMap::ObtainTotalRows()
+extern "C"  int32_t TankMap_ObtainTotalRows_m750648973 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 TankMap::ObtainTotalColumns()
+extern "C"  int32_t TankMap_ObtainTotalColumns_m863416973 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// Tile TankMap::GetDestroyableTileAtIndex(System.Int32)
+extern "C"  Tile_t2729441780 * TankMap_GetDestroyableTileAtIndex_m1265184158 (TankMap_t1120032466 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean TankMap::RemoveDestroyableTileAtIndex(System.Int32)
+extern "C"  bool TankMap_RemoveDestroyableTileAtIndex_m3260938983 (TankMap_t1120032466 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject TankMap::GetTileGOAtRC(System.Int32,System.Int32)
 extern "C"  GameObject_t1756533147 * TankMap_GetTileGOAtRC_m653895236 (TankMap_t1120032466 * __this, int32_t ___row0, int32_t ___column1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // Tile TankMap::GetTileComponentAtRC(System.Int32,System.Int32)
@@ -74,8 +81,8 @@ extern "C"  void TankMap_LoadPlayerAndEnemySpawnPointInfo_m1433320536 (TankMap_t
 extern "C"  void TankMap_LoadBaseInfo_m2225644744 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TankMap::LoadMapOccupiedInfo()
 extern "C"  void TankMap_LoadMapOccupiedInfo_m1588763645 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void TankMap::LoadTilesIndexInfo()
-extern "C"  void TankMap_LoadTilesIndexInfo_m712984062 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void TankMap::LoadTilesInfo()
+extern "C"  void TankMap_LoadTilesInfo_m1840794792 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String TankMap::get_MapName()
 extern "C"  String_t* TankMap_get_MapName_m62734434 (TankMap_t1120032466 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TankMap::set_MapName(System.String)

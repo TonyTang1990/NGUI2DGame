@@ -29,28 +29,39 @@ struct Game_t1600141214;
 struct  GameManager_t2252321495  : public MonoBehaviour_t1158329972
 {
 public:
+	// System.String GameManager::mQuickLoadScene
+	String_t* ___mQuickLoadScene_4;
 	// Game GameManager::mCurrentGame
-	Game_t1600141214 * ___mCurrentGame_4;
+	Game_t1600141214 * ___mCurrentGame_5;
 	// System.String GameManager::mProfilePath
-	String_t* ___mProfilePath_5;
+	String_t* ___mProfilePath_6;
 
 public:
-	inline static int32_t get_offset_of_mCurrentGame_4() { return static_cast<int32_t>(offsetof(GameManager_t2252321495, ___mCurrentGame_4)); }
-	inline Game_t1600141214 * get_mCurrentGame_4() const { return ___mCurrentGame_4; }
-	inline Game_t1600141214 ** get_address_of_mCurrentGame_4() { return &___mCurrentGame_4; }
-	inline void set_mCurrentGame_4(Game_t1600141214 * value)
+	inline static int32_t get_offset_of_mQuickLoadScene_4() { return static_cast<int32_t>(offsetof(GameManager_t2252321495, ___mQuickLoadScene_4)); }
+	inline String_t* get_mQuickLoadScene_4() const { return ___mQuickLoadScene_4; }
+	inline String_t** get_address_of_mQuickLoadScene_4() { return &___mQuickLoadScene_4; }
+	inline void set_mQuickLoadScene_4(String_t* value)
 	{
-		___mCurrentGame_4 = value;
-		Il2CppCodeGenWriteBarrier(&___mCurrentGame_4, value);
+		___mQuickLoadScene_4 = value;
+		Il2CppCodeGenWriteBarrier(&___mQuickLoadScene_4, value);
 	}
 
-	inline static int32_t get_offset_of_mProfilePath_5() { return static_cast<int32_t>(offsetof(GameManager_t2252321495, ___mProfilePath_5)); }
-	inline String_t* get_mProfilePath_5() const { return ___mProfilePath_5; }
-	inline String_t** get_address_of_mProfilePath_5() { return &___mProfilePath_5; }
-	inline void set_mProfilePath_5(String_t* value)
+	inline static int32_t get_offset_of_mCurrentGame_5() { return static_cast<int32_t>(offsetof(GameManager_t2252321495, ___mCurrentGame_5)); }
+	inline Game_t1600141214 * get_mCurrentGame_5() const { return ___mCurrentGame_5; }
+	inline Game_t1600141214 ** get_address_of_mCurrentGame_5() { return &___mCurrentGame_5; }
+	inline void set_mCurrentGame_5(Game_t1600141214 * value)
 	{
-		___mProfilePath_5 = value;
-		Il2CppCodeGenWriteBarrier(&___mProfilePath_5, value);
+		___mCurrentGame_5 = value;
+		Il2CppCodeGenWriteBarrier(&___mCurrentGame_5, value);
+	}
+
+	inline static int32_t get_offset_of_mProfilePath_6() { return static_cast<int32_t>(offsetof(GameManager_t2252321495, ___mProfilePath_6)); }
+	inline String_t* get_mProfilePath_6() const { return ___mProfilePath_6; }
+	inline String_t** get_address_of_mProfilePath_6() { return &___mProfilePath_6; }
+	inline void set_mProfilePath_6(String_t* value)
+	{
+		___mProfilePath_6 = value;
+		Il2CppCodeGenWriteBarrier(&___mProfilePath_6, value);
 	}
 };
 

@@ -14,9 +14,12 @@
 struct Tank_t2050480468;
 // System.String
 struct String_t;
+// UnityEngine.Animator
+struct Animator_t69676727;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
+#include "AssemblyU2DCSharp_MoveAction868615717.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -34,12 +37,18 @@ public:
 	float ___mDamage_3;
 	// UnityEngine.Vector3 Bullet::mMoveDir
 	Vector3_t2243707580  ___mMoveDir_4;
+	// MoveAction Bullet::mBulletMoveAction
+	int32_t ___mBulletMoveAction_5;
 	// System.Single Bullet::mMoveIntervalTime
-	float ___mMoveIntervalTime_5;
+	float ___mMoveIntervalTime_6;
 	// Tank Bullet::mOwner
-	Tank_t2050480468 * ___mOwner_6;
+	Tank_t2050480468 * ___mOwner_7;
 	// System.String Bullet::mOwnerTag
-	String_t* ___mOwnerTag_7;
+	String_t* ___mOwnerTag_8;
+	// UnityEngine.Animator Bullet::mExplosionAnimator
+	Animator_t69676727 * ___mExplosionAnimator_9;
+	// System.Boolean Bullet::mIsDestroy
+	bool ___mIsDestroy_10;
 
 public:
 	inline static int32_t get_offset_of_mMoveSpeed_2() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mMoveSpeed_2)); }
@@ -66,30 +75,55 @@ public:
 		___mMoveDir_4 = value;
 	}
 
-	inline static int32_t get_offset_of_mMoveIntervalTime_5() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mMoveIntervalTime_5)); }
-	inline float get_mMoveIntervalTime_5() const { return ___mMoveIntervalTime_5; }
-	inline float* get_address_of_mMoveIntervalTime_5() { return &___mMoveIntervalTime_5; }
-	inline void set_mMoveIntervalTime_5(float value)
+	inline static int32_t get_offset_of_mBulletMoveAction_5() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mBulletMoveAction_5)); }
+	inline int32_t get_mBulletMoveAction_5() const { return ___mBulletMoveAction_5; }
+	inline int32_t* get_address_of_mBulletMoveAction_5() { return &___mBulletMoveAction_5; }
+	inline void set_mBulletMoveAction_5(int32_t value)
 	{
-		___mMoveIntervalTime_5 = value;
+		___mBulletMoveAction_5 = value;
 	}
 
-	inline static int32_t get_offset_of_mOwner_6() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mOwner_6)); }
-	inline Tank_t2050480468 * get_mOwner_6() const { return ___mOwner_6; }
-	inline Tank_t2050480468 ** get_address_of_mOwner_6() { return &___mOwner_6; }
-	inline void set_mOwner_6(Tank_t2050480468 * value)
+	inline static int32_t get_offset_of_mMoveIntervalTime_6() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mMoveIntervalTime_6)); }
+	inline float get_mMoveIntervalTime_6() const { return ___mMoveIntervalTime_6; }
+	inline float* get_address_of_mMoveIntervalTime_6() { return &___mMoveIntervalTime_6; }
+	inline void set_mMoveIntervalTime_6(float value)
 	{
-		___mOwner_6 = value;
-		Il2CppCodeGenWriteBarrier(&___mOwner_6, value);
+		___mMoveIntervalTime_6 = value;
 	}
 
-	inline static int32_t get_offset_of_mOwnerTag_7() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mOwnerTag_7)); }
-	inline String_t* get_mOwnerTag_7() const { return ___mOwnerTag_7; }
-	inline String_t** get_address_of_mOwnerTag_7() { return &___mOwnerTag_7; }
-	inline void set_mOwnerTag_7(String_t* value)
+	inline static int32_t get_offset_of_mOwner_7() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mOwner_7)); }
+	inline Tank_t2050480468 * get_mOwner_7() const { return ___mOwner_7; }
+	inline Tank_t2050480468 ** get_address_of_mOwner_7() { return &___mOwner_7; }
+	inline void set_mOwner_7(Tank_t2050480468 * value)
 	{
-		___mOwnerTag_7 = value;
-		Il2CppCodeGenWriteBarrier(&___mOwnerTag_7, value);
+		___mOwner_7 = value;
+		Il2CppCodeGenWriteBarrier(&___mOwner_7, value);
+	}
+
+	inline static int32_t get_offset_of_mOwnerTag_8() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mOwnerTag_8)); }
+	inline String_t* get_mOwnerTag_8() const { return ___mOwnerTag_8; }
+	inline String_t** get_address_of_mOwnerTag_8() { return &___mOwnerTag_8; }
+	inline void set_mOwnerTag_8(String_t* value)
+	{
+		___mOwnerTag_8 = value;
+		Il2CppCodeGenWriteBarrier(&___mOwnerTag_8, value);
+	}
+
+	inline static int32_t get_offset_of_mExplosionAnimator_9() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mExplosionAnimator_9)); }
+	inline Animator_t69676727 * get_mExplosionAnimator_9() const { return ___mExplosionAnimator_9; }
+	inline Animator_t69676727 ** get_address_of_mExplosionAnimator_9() { return &___mExplosionAnimator_9; }
+	inline void set_mExplosionAnimator_9(Animator_t69676727 * value)
+	{
+		___mExplosionAnimator_9 = value;
+		Il2CppCodeGenWriteBarrier(&___mExplosionAnimator_9, value);
+	}
+
+	inline static int32_t get_offset_of_mIsDestroy_10() { return static_cast<int32_t>(offsetof(Bullet_t2590115616, ___mIsDestroy_10)); }
+	inline bool get_mIsDestroy_10() const { return ___mIsDestroy_10; }
+	inline bool* get_address_of_mIsDestroy_10() { return &___mIsDestroy_10; }
+	inline void set_mIsDestroy_10(bool value)
+	{
+		___mIsDestroy_10 = value;
 	}
 };
 

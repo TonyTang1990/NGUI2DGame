@@ -56,10 +56,6 @@ public:
 	int32_t ___mMaximumPartitionLevel_11;
 	// System.Single TankMapManager::mHeightOffset
 	float ___mHeightOffset_12;
-	// System.Int32 TankMapManager::mTotalRowsAfterPartition
-	int32_t ___mTotalRowsAfterPartition_13;
-	// System.Int32 TankMapManager::mTotalColumnsAfterPartition
-	int32_t ___mTotalColumnsAfterPartition_14;
 
 public:
 	inline static int32_t get_offset_of_mMapSize_4() { return static_cast<int32_t>(offsetof(TankMapManager_t3692802025, ___mMapSize_4)); }
@@ -138,22 +134,6 @@ public:
 	inline void set_mHeightOffset_12(float value)
 	{
 		___mHeightOffset_12 = value;
-	}
-
-	inline static int32_t get_offset_of_mTotalRowsAfterPartition_13() { return static_cast<int32_t>(offsetof(TankMapManager_t3692802025, ___mTotalRowsAfterPartition_13)); }
-	inline int32_t get_mTotalRowsAfterPartition_13() const { return ___mTotalRowsAfterPartition_13; }
-	inline int32_t* get_address_of_mTotalRowsAfterPartition_13() { return &___mTotalRowsAfterPartition_13; }
-	inline void set_mTotalRowsAfterPartition_13(int32_t value)
-	{
-		___mTotalRowsAfterPartition_13 = value;
-	}
-
-	inline static int32_t get_offset_of_mTotalColumnsAfterPartition_14() { return static_cast<int32_t>(offsetof(TankMapManager_t3692802025, ___mTotalColumnsAfterPartition_14)); }
-	inline int32_t get_mTotalColumnsAfterPartition_14() const { return ___mTotalColumnsAfterPartition_14; }
-	inline int32_t* get_address_of_mTotalColumnsAfterPartition_14() { return &___mTotalColumnsAfterPartition_14; }
-	inline void set_mTotalColumnsAfterPartition_14(int32_t value)
-	{
-		___mTotalColumnsAfterPartition_14 = value;
 	}
 };
 

@@ -57,18 +57,6 @@ extern "C"  List_1_t1440998580 * TankMapManager_ObtainOccupiedIndexsAtPosition_m
 extern "C"  bool TankMapManager_ConvertPositionToRC_m3969556063 (TankMapManager_t3692802025 * __this, Vector3_t2243707580  ___position0, Vector2_t2243707579 * ___rc1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean TankMapManager::ConvertRCToPosition(UnityEngine.Vector2,UnityEngine.Vector3&)
 extern "C"  bool TankMapManager_ConvertRCToPosition_m3709476895 (TankMapManager_t3692802025 * __this, Vector2_t2243707579  ___rc0, Vector3_t2243707580 * ___position1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean TankMapManager::IsValideIndex(System.Int32)
-extern "C"  bool TankMapManager_IsValideIndex_m1049710584 (TankMapManager_t3692802025 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void TankMapManager::MarkIndexOccupied(System.Int32,System.Boolean,System.Boolean)
-extern "C"  void TankMapManager_MarkIndexOccupied_m1212840652 (TankMapManager_t3692802025 * __this, int32_t ___index0, bool ___isocupied1, bool ___isoccupiedbyplayer2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean TankMapManager::IsIndexOccupied(System.Int32)
-extern "C"  bool TankMapManager_IsIndexOccupied_m3041376139 (TankMapManager_t3692802025 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean TankMapManager::IsIndexOccupiedByPlayer(System.Int32)
-extern "C"  bool TankMapManager_IsIndexOccupiedByPlayer_m3009478035 (TankMapManager_t3692802025 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 TankMapManager::ObtainTotalRows()
-extern "C"  int32_t TankMapManager_ObtainTotalRows_m465477534 (TankMapManager_t3692802025 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 TankMapManager::ObtainTotalColumns()
-extern "C"  int32_t TankMapManager_ObtainTotalColumns_m3449826552 (TankMapManager_t3692802025 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TankMapManager::Awake()
 extern "C"  void TankMapManager_Awake_m1349445605 (TankMapManager_t3692802025 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void TankMapManager::Start()

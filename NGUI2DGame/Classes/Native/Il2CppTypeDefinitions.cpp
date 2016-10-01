@@ -10108,6 +10108,100 @@ extern const Il2CppType ValueCollection_t2550397735_0_0_0 = { &ValueCollection_t
 Il2CppGenericClass Enumerator_t872395298_GenericClass = { 1001, { &GenInst_String_t_0_0_0_AudioClip_t1932558630_0_0_0, NULL }, NULL };
 extern const Il2CppType Enumerator_t872395298_0_0_0 = { &Enumerator_t872395298_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
+extern const Il2CppGenericInst GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0;
+Il2CppGenericClass Dictionary_2_t841443130_GenericClass = { 999, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType Dictionary_2_t841443130_0_0_0 = { &Dictionary_2_t841443130_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+extern const Il2CppType Dictionary_2_t841443130_0_0_1 = { &Dictionary_2_t841443130_GenericClass, 1, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppType MoveAction_t868615717_0_0_0 = { (void*)3249, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType MoveAction_t868615717_0_0_1 = { (void*)3249, 1, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType MoveAction_t868615717_1_0_0 = { (void*)3249, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
+extern const Il2CppType MoveAction_t868615717_0_0_32854 = { (void*)3249, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2893755648_0_0_0;
+Il2CppGenericClass ICollection_1_t3845830953_GenericClass = { 49, { &GenInst_KeyValuePair_2_t2893755648_0_0_0, NULL }, NULL };
+extern const Il2CppType ICollection_1_t3845830953_0_0_0 = { &ICollection_1_t3845830953_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass KeyValuePair_2_t2893755648_GenericClass = { 1010, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType KeyValuePair_2_t2893755648_0_0_0 = { &KeyValuePair_2_t2893755648_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEnumerator_1_t369279475_GenericClass = { 25, { &GenInst_KeyValuePair_2_t2893755648_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerator_1_t369279475_0_0_0 = { &IEnumerator_1_t369279475_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass InternalEnumerator_1_t3752507910_GenericClass = { 41, { &GenInst_KeyValuePair_2_t2893755648_0_0_0, NULL }, NULL };
+extern const Il2CppType InternalEnumerator_1_t3752507910_0_0_0 = { &InternalEnumerator_1_t3752507910_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IList_1_t3434696249_GenericClass = { 48, { &GenInst_KeyValuePair_2_t2893755648_0_0_0, NULL }, NULL };
+extern const Il2CppType IList_1_t3434696249_0_0_0 = { &IList_1_t3434696249_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEnumerable_1_t3185882693_GenericClass = { 29, { &GenInst_KeyValuePair_2_t2893755648_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerable_1_t3185882693_0_0_0 = { &IEnumerable_1_t3185882693_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IDictionary_2_t3135493847_GenericClass = { 1009, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType IDictionary_2_t3135493847_0_0_0 = { &IDictionary_2_t3135493847_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_MoveAction_t868615717_0_0_0;
+Il2CppGenericClass IEqualityComparer_1_t81248495_GenericClass = { 1008, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType IEqualityComparer_1_t81248495_0_0_0 = { &IEqualityComparer_1_t81248495_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEnumerator_1_t2639106840_GenericClass = { 25, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerator_1_t2639106840_0_0_0 = { &IEnumerator_1_t2639106840_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass InternalEnumerator_1_t1727367979_GenericClass = { 41, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType InternalEnumerator_1_t1727367979_0_0_0 = { &InternalEnumerator_1_t1727367979_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass ICollection_1_t1820691022_GenericClass = { 49, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType ICollection_1_t1820691022_0_0_0 = { &ICollection_1_t1820691022_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEnumerable_1_t1160742762_GenericClass = { 29, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerable_1_t1160742762_0_0_0 = { &IEnumerable_1_t1160742762_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IList_1_t1409556318_GenericClass = { 48, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType IList_1_t1409556318_0_0_0 = { &IList_1_t1409556318_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass KeyCollection_t3324940901_GenericClass = { 1002, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType KeyCollection_t3324940901_0_0_0 = { &KeyCollection_t3324940901_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass Enumerator_t3530946568_GenericClass = { 1003, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType Enumerator_t3530946568_0_0_0 = { &Enumerator_t3530946568_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass Enumerator_t2161467832_GenericClass = { 1001, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType Enumerator_t2161467832_0_0_0 = { &Enumerator_t2161467832_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_MoveAction_t868615717_0_0_0;
+Il2CppGenericClass Transform_1_t2710397968_GenericClass = { 1006, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType Transform_1_t2710397968_0_0_0 = { &Transform_1_t2710397968_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass ValueCollection_t3839470269_GenericClass = { 1004, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType ValueCollection_t3839470269_0_0_0 = { &ValueCollection_t3839470269_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass Enumerator_t2527975894_GenericClass = { 1005, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType Enumerator_t2527975894_0_0_0 = { &Enumerator_t2527975894_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_Int32_t2071877448_0_0_0;
+Il2CppGenericClass Transform_1_t3913659699_GenericClass = { 1006, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType Transform_1_t3913659699_0_0_0 = { &Transform_1_t3913659699_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_DictionaryEntry_t3048875398_0_0_0;
+Il2CppGenericClass Transform_1_t595690353_GenericClass = { 1006, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_DictionaryEntry_t3048875398_0_0_0, NULL }, NULL };
+extern const Il2CppType Transform_1_t595690353_0_0_0 = { &Transform_1_t595690353_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_KeyValuePair_2_t2893755648_0_0_0;
+Il2CppGenericClass Transform_1_t440570603_GenericClass = { 1006, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0_KeyValuePair_2_t2893755648_0_0_0, NULL }, NULL };
+extern const Il2CppType Transform_1_t440570603_0_0_0 = { &Transform_1_t440570603_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass ShimEnumerator_t946567951_GenericClass = { 1000, { &GenInst_MoveAction_t868615717_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
+extern const Il2CppType ShimEnumerator_t946567951_0_0_0 = { &ShimEnumerator_t946567951_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass EqualityComparer_1_t3737218284_GenericClass = { 1011, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType EqualityComparer_1_t3737218284_0_0_0 = { &EqualityComparer_1_t3737218284_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass IEquatable_1_t3072597886_GenericClass = { 13, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType IEquatable_1_t3072597886_0_0_0 = { &IEquatable_1_t3072597886_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass DefaultComparer_t2490545878_GenericClass = { 1012, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
+extern const Il2CppType DefaultComparer_t2490545878_0_0_0 = { &DefaultComparer_t2490545878_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
 extern const Il2CppGenericInst GenInst_GameObject_t1756533147_0_0_0_Int32_t2071877448_0_0_0;
 Il2CppGenericClass Dictionary_2_t1107255596_GenericClass = { 999, { &GenInst_GameObject_t1756533147_0_0_0_Int32_t2071877448_0_0_0, NULL }, NULL };
 extern const Il2CppType Dictionary_2_t1107255596_0_0_0 = { &Dictionary_2_t1107255596_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -10154,6 +10248,31 @@ extern const Il2CppType IList_1_t3270382381_0_0_0 = { &IList_1_t3270382381_Gener
 
 Il2CppGenericClass IEnumerable_1_t3021568825_GenericClass = { 29, { &GenInst_Tile_t2729441780_0_0_0, NULL }, NULL };
 extern const Il2CppType IEnumerable_1_t3021568825_0_0_0 = { &IEnumerable_1_t3021568825_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0;
+Il2CppGenericClass Dictionary_2_t1737267415_GenericClass = { 999, { &GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0, NULL }, NULL };
+extern const Il2CppType Dictionary_2_t1737267415_0_0_0 = { &Dictionary_2_t1737267415_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+extern const Il2CppType Dictionary_2_t1737267415_0_0_1 = { &Dictionary_2_t1737267415_GenericClass, 1, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0_DictionaryEntry_t3048875398_0_0_0;
+Il2CppGenericClass Transform_1_t2043301568_GenericClass = { 1006, { &GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0_DictionaryEntry_t3048875398_0_0_0, NULL }, NULL };
+extern const Il2CppType Transform_1_t2043301568_0_0_0 = { &Transform_1_t2043301568_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass KeyValuePair_2_t3789579933_GenericClass = { 1010, { &GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0, NULL }, NULL };
+extern const Il2CppType KeyValuePair_2_t3789579933_0_0_0 = { &KeyValuePair_2_t3789579933_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3789579933_0_0_0;
+Il2CppGenericClass IEnumerator_1_t1265103760_GenericClass = { 25, { &GenInst_KeyValuePair_2_t3789579933_0_0_0, NULL }, NULL };
+extern const Il2CppType IEnumerator_1_t1265103760_0_0_0 = { &IEnumerator_1_t1265103760_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass KeyCollection_t4220765186_GenericClass = { 1002, { &GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0, NULL }, NULL };
+extern const Il2CppType KeyCollection_t4220765186_0_0_0 = { &KeyCollection_t4220765186_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass ValueCollection_t440327258_GenericClass = { 1004, { &GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0, NULL }, NULL };
+extern const Il2CppType ValueCollection_t440327258_0_0_0 = { &ValueCollection_t440327258_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
+
+Il2CppGenericClass Enumerator_t3057292117_GenericClass = { 1001, { &GenInst_Int32_t2071877448_0_0_0_Tile_t2729441780_0_0_0, NULL }, NULL };
+extern const Il2CppType Enumerator_t3057292117_0_0_0 = { &Enumerator_t3057292117_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 
 extern const Il2CppGenericInst GenInst_Int32_t2071877448_0_0_0_TileType_t701644524_0_0_0;
 Il2CppGenericClass Dictionary_2_t4004437455_GenericClass = { 999, { &GenInst_Int32_t2071877448_0_0_0_TileType_t701644524_0_0_0, NULL }, NULL };
@@ -23473,11 +23592,6 @@ extern const Il2CppType PlayerTank_t155216285_0_0_3 = { (void*)3247, 3, IL2CPP_T
 extern const Il2CppType U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033_0_0_0 = { (void*)3248, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const Il2CppType U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033_1_0_0 = { (void*)3248, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const Il2CppType TankMoveAction_t944032589_0_0_0 = { (void*)3249, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType TankMoveAction_t944032589_1_0_0 = { (void*)3249, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
-extern const Il2CppType TankMoveAction_t944032589_0_0_32854 = { (void*)3249, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-extern const Il2CppType TankMoveAction_t944032589_0_0_1 = { (void*)3249, 1, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
-
 extern const Il2CppType TankGameEvent_t3684845930_0_0_0 = { (void*)3251, 0, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 extern const Il2CppType TankGameEvent_t3684845930_1_0_0 = { (void*)3251, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
 extern const Il2CppType TankGameEvent_t3684845930_0_0_32854 = { (void*)3251, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
@@ -23964,7 +24078,7 @@ Il2CppArrayType BoundsU5BU2CU5D_t3976027471_ArrayType =
 extern const Il2CppType BoundsU5BU2CU5D_t3976027471_0_0_0 = { &BoundsU5BU2CU5D_t3976027471_ArrayType, 0, IL2CPP_TYPE_ARRAY, 0, 0, 0 };
 
 extern const Il2CppType BoundsU5BU5D_t3976027470_0_0_0 = { (void*)&Bounds_t3033363703_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[13209] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[13245] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -26912,6 +27026,34 @@ extern const Il2CppType* const  g_Il2CppTypeTable[13209] =
 	&KeyCollection_t2035868367_0_0_0,
 	&ValueCollection_t2550397735_0_0_0,
 	&Enumerator_t872395298_0_0_0,
+	&Dictionary_2_t841443130_0_0_0,
+	&MoveAction_t868615717_0_0_0,
+	&ICollection_1_t3845830953_0_0_0,
+	&KeyValuePair_2_t2893755648_0_0_0,
+	&IEnumerator_1_t369279475_0_0_0,
+	&InternalEnumerator_1_t3752507910_0_0_0,
+	&IList_1_t3434696249_0_0_0,
+	&IEnumerable_1_t3185882693_0_0_0,
+	&IDictionary_2_t3135493847_0_0_0,
+	&IEqualityComparer_1_t81248495_0_0_0,
+	&IEnumerator_1_t2639106840_0_0_0,
+	&InternalEnumerator_1_t1727367979_0_0_0,
+	&ICollection_1_t1820691022_0_0_0,
+	&IEnumerable_1_t1160742762_0_0_0,
+	&IList_1_t1409556318_0_0_0,
+	&KeyCollection_t3324940901_0_0_0,
+	&Enumerator_t3530946568_0_0_0,
+	&Enumerator_t2161467832_0_0_0,
+	&Transform_1_t2710397968_0_0_0,
+	&ValueCollection_t3839470269_0_0_0,
+	&Enumerator_t2527975894_0_0_0,
+	&Transform_1_t3913659699_0_0_0,
+	&Transform_1_t595690353_0_0_0,
+	&Transform_1_t440570603_0_0_0,
+	&ShimEnumerator_t946567951_0_0_0,
+	&EqualityComparer_1_t3737218284_0_0_0,
+	&IEquatable_1_t3072597886_0_0_0,
+	&DefaultComparer_t2490545878_0_0_0,
 	&Dictionary_2_t1107255596_0_0_0,
 	&IEqualityComparer_1_t969165925_0_0_0,
 	&Transform_1_t3955456375_0_0_0,
@@ -26926,6 +27068,13 @@ extern const Il2CppType* const  g_Il2CppTypeTable[13209] =
 	&ICollection_1_t3681517085_0_0_0,
 	&IList_1_t3270382381_0_0_0,
 	&IEnumerable_1_t3021568825_0_0_0,
+	&Dictionary_2_t1737267415_0_0_0,
+	&Transform_1_t2043301568_0_0_0,
+	&KeyValuePair_2_t3789579933_0_0_0,
+	&IEnumerator_1_t1265103760_0_0_0,
+	&KeyCollection_t4220765186_0_0_0,
+	&ValueCollection_t440327258_0_0_0,
+	&Enumerator_t3057292117_0_0_0,
 	&Dictionary_2_t4004437455_0_0_0,
 	&TileType_t701644524_0_0_0,
 	&ICollection_1_t2713857982_0_0_0,
@@ -36751,6 +36900,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[13209] =
 	&Bullet_t2590115616_0_0_0,
 	&Bullet_t2590115616_1_0_0,
 	&Tank_t2050480468_0_0_0,
+	&MoveAction_t868615717_0_0_1,
 	&Tank_t2050480468_0_0_1,
 	&U3CMoveU3Ec__Iterator7_t2013389602_0_0_0,
 	&U3CMoveU3Ec__Iterator7_t2013389602_1_0_0,
@@ -36767,12 +36917,11 @@ extern const Il2CppType* const  g_Il2CppTypeTable[13209] =
 	&U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033_0_0_0,
 	&U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033_1_0_0,
 	&PlayerTank_t155216285_0_0_3,
-	&TankMoveAction_t944032589_0_0_0,
-	&TankMoveAction_t944032589_1_0_0,
-	&TankMoveAction_t944032589_0_0_32854,
+	&MoveAction_t868615717_1_0_0,
+	&MoveAction_t868615717_0_0_32854,
 	&Tank_t2050480468_1_0_0,
 	&Single_t2076509932_0_0_32852,
-	&TankMoveAction_t944032589_0_0_1,
+	&Dictionary_2_t841443130_0_0_1,
 	&TankGameEvent_t3684845930_0_0_0,
 	&TankGameEvent_t3684845930_1_0_0,
 	&TankGameEvent_t3684845930_0_0_32854,
@@ -36793,6 +36942,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[13209] =
 	&MapInfo_t1898709050_0_0_1,
 	&GameObjectU5BU2CU5D_t3057952155_0_0_1,
 	&TileU5BU2CU5D_t1358904254_0_0_1,
+	&Dictionary_2_t1737267415_0_0_1,
 	&Dictionary_2_t4004437455_0_0_1,
 	&MyRC_t2924564543_1_0_0,
 	&MapInfo_t1898709050_1_0_0,

@@ -16051,10 +16051,12 @@ extern "C" void AnimationState_get_length_m2895238571 ();
 extern "C" void AnimationState_set_layer_m139053567 ();
 extern "C" void AnimationState_get_clip_m1758509211 ();
 extern "C" void AnimationState_get_name_m1043580151 ();
+extern "C" void Animator_SetBool_m2305662531 ();
 extern "C" void Animator_SetTrigger_m3418492570 ();
 extern "C" void Animator_ResetTrigger_m865269317 ();
 extern "C" void Animator_get_runtimeAnimatorController_m652575931 ();
 extern "C" void Animator_StringToHash_m3313850714 ();
+extern "C" void Animator_SetBoolString_m1893192746 ();
 extern "C" void Animator_SetTriggerString_m2002790359 ();
 extern "C" void Animator_ResetTriggerString_m1445965342 ();
 extern "C" void AnimatorStateInfo_IsName_m4069203550_AdjustorThunk ();
@@ -20887,12 +20889,15 @@ extern "C" void BMSymbol_MarkAsDirty_m1525541403 ();
 extern "C" void BMSymbol_Validate_m1310502179 ();
 extern "C" void Bullet__ctor_m2895089121 ();
 extern "C" void Bullet_set_MoveDir_m2632362119 ();
+extern "C" void Bullet_get_BulletMoveAction_m4191045889 ();
 extern "C" void Bullet_get_Owner_m2655960690 ();
 extern "C" void Bullet_set_Owner_m3778620813 ();
 extern "C" void Bullet_Awake_m3526188380 ();
 extern "C" void Bullet_Start_m1447617473 ();
 extern "C" void Bullet_Move_m541877174 ();
 extern "C" void Bullet_Update_m524047786 ();
+extern "C" void Bullet_Explosion_m3810804328 ();
+extern "C" void Bullet_DestroyItself_m3418201334 ();
 extern "C" void Bullet_OnDestroy_m568632134 ();
 extern "C" void U3CMoveU3Ec__Iterator7__ctor_m2311288047 ();
 extern "C" void U3CMoveU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1700419357 ();
@@ -21236,6 +21241,8 @@ extern "C" void GridInfo_set_GridPosition_m546961997 ();
 extern "C" void GridInfo_get_GridIndex_m873628440 ();
 extern "C" void GridInfo_set_GridIndex_m1199700727 ();
 extern "C" void MathFunctions_PowerOfTwo_m1193248491 ();
+extern "C" void MathFunctions_LessThanOrEqualToFloat_m781898086 ();
+extern "C" void MathFunctions_LargerThanOrEqualToFloat_m227752568 ();
 extern "C" void MyGameObjectEvent__ctor_m813394032 ();
 extern "C" void MyIntEvent__ctor_m4175290760 ();
 extern "C" void MyRC__ctor_m2627661320 ();
@@ -21467,7 +21474,8 @@ extern "C" void OnFinished_BeginInvoke_m622573734 ();
 extern "C" void OnFinished_EndInvoke_m1929061697 ();
 extern "C" void Tank__ctor_m750150259 ();
 extern "C" void Tank_set_MoveSpeed_m3985201005 ();
-extern "C" void Tank_set_CurrentMoveAction_m3482680283 ();
+extern "C" void Tank_set_CurrentMoveAction_m3521750979 ();
+extern "C" void Tank_InitMovingIndexsOffset_m211406749 ();
 extern "C" void Tank_InitOccupiedInfo_m3183291521 ();
 extern "C" void Tank_UpdateOccupiedInfo_m3660004542 ();
 extern "C" void Tank_Awake_m3158931696 ();
@@ -21517,12 +21525,16 @@ extern "C" void TankMainMenu_LoadMapButtonClick_m438700081 ();
 extern "C" void TankMap__ctor_m213562167 ();
 extern "C" void TankMap__ctor_m57404882 ();
 extern "C" void TankMap_ResetMap_m2481124046 ();
-extern "C" void TankMap_IsAllowedMoveForward_m3099524668 ();
 extern "C" void TankMap_ObtainOccupiedIndexsAtRC_m1736165015 ();
 extern "C" void TankMap_IsValideIndex_m3312078381 ();
+extern "C" void TankMap_IsValidePosition_m1365541722 ();
 extern "C" void TankMap_MarkIndexOccupied_m1278869435 ();
 extern "C" void TankMap_IsIndexOccupied_m454502790 ();
 extern "C" void TankMap_IsIndexOccupiedByPlayer_m3732645810 ();
+extern "C" void TankMap_ObtainTotalRows_m750648973 ();
+extern "C" void TankMap_ObtainTotalColumns_m863416973 ();
+extern "C" void TankMap_GetDestroyableTileAtIndex_m1265184158 ();
+extern "C" void TankMap_RemoveDestroyableTileAtIndex_m3260938983 ();
 extern "C" void TankMap_GetTileGOAtRC_m653895236 ();
 extern "C" void TankMap_GetTileComponentAtRC_m2508923597 ();
 extern "C" void TankMap_ChangeTile_m2029563357 ();
@@ -21533,7 +21545,7 @@ extern "C" void TankMap_LoadMapSize_m73920282 ();
 extern "C" void TankMap_LoadPlayerAndEnemySpawnPointInfo_m1433320536 ();
 extern "C" void TankMap_LoadBaseInfo_m2225644744 ();
 extern "C" void TankMap_LoadMapOccupiedInfo_m1588763645 ();
-extern "C" void TankMap_LoadTilesIndexInfo_m712984062 ();
+extern "C" void TankMap_LoadTilesInfo_m1840794792 ();
 extern "C" void TankMap_get_MapName_m62734434 ();
 extern "C" void TankMap_set_MapName_m2382976507 ();
 extern "C" void TankMap_get_CurrentMapInfo_m19403220 ();
@@ -21553,12 +21565,6 @@ extern "C" void TankMapManager_GetTileWithTileType_m2858551527 ();
 extern "C" void TankMapManager_ObtainOccupiedIndexsAtPosition_m187975517 ();
 extern "C" void TankMapManager_ConvertPositionToRC_m3969556063 ();
 extern "C" void TankMapManager_ConvertRCToPosition_m3709476895 ();
-extern "C" void TankMapManager_IsValideIndex_m1049710584 ();
-extern "C" void TankMapManager_MarkIndexOccupied_m1212840652 ();
-extern "C" void TankMapManager_IsIndexOccupied_m3041376139 ();
-extern "C" void TankMapManager_IsIndexOccupiedByPlayer_m3009478035 ();
-extern "C" void TankMapManager_ObtainTotalRows_m465477534 ();
-extern "C" void TankMapManager_ObtainTotalColumns_m3449826552 ();
 extern "C" void TankMapManager_Awake_m1349445605 ();
 extern "C" void TankMapManager_Start_m1270690728 ();
 extern "C" void TankMapManager_SaveMap_m3006956507 ();
@@ -21568,11 +21574,16 @@ extern "C" void TankMapManager_Update_m2655608177 ();
 extern "C" void Tile__ctor_m3293075927 ();
 extern "C" void Tile_get_SpriteRender_m1224444129 ();
 extern "C" void Tile_set_SpriteRender_m739074376 ();
+extern "C" void Tile_set_LocatedTileRC_m3598569183 ();
+extern "C" void Tile_get_LocatedTileRC_m3479584240 ();
 extern "C" void Tile_IsIndexFull_m878568584 ();
 extern "C" void Tile_AddIndex_m4235336753 ();
+extern "C" void Tile_InitTileIndexsOffset_m227343145 ();
 extern "C" void Tile_Awake_m3924417876 ();
 extern "C" void Tile_Start_m1772953651 ();
 extern "C" void Tile_OnTriggerEnter2D_m1966252571 ();
+extern "C" void Tile_DisableItself_m3404239832 ();
+extern "C" void Tile_DeactiveItself_m4251040095 ();
 extern "C" void TouchInputManager__ctor_m3048716615 ();
 extern "C" void TouchInputManager__cctor_m2815256678 ();
 extern "C" void TouchInputManager_Awake_m1441076960 ();
@@ -22680,7 +22691,7 @@ extern "C" void VignetteAndChromaticAberration_CheckResources_m394291804 ();
 extern "C" void VignetteAndChromaticAberration_OnRenderImage_m3555084659 ();
 extern "C" void Vortex__ctor_m3778734735 ();
 extern "C" void Vortex_OnRenderImage_m3762609939 ();
-extern const Il2CppMethodPointer g_MethodPointers[22669] = 
+extern const Il2CppMethodPointer g_MethodPointers[22680] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -38722,10 +38733,12 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	AnimationState_set_layer_m139053567,
 	AnimationState_get_clip_m1758509211,
 	AnimationState_get_name_m1043580151,
+	Animator_SetBool_m2305662531,
 	Animator_SetTrigger_m3418492570,
 	Animator_ResetTrigger_m865269317,
 	Animator_get_runtimeAnimatorController_m652575931,
 	Animator_StringToHash_m3313850714,
+	Animator_SetBoolString_m1893192746,
 	Animator_SetTriggerString_m2002790359,
 	Animator_ResetTriggerString_m1445965342,
 	AnimatorStateInfo_IsName_m4069203550_AdjustorThunk,
@@ -43558,12 +43571,15 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	BMSymbol_Validate_m1310502179,
 	Bullet__ctor_m2895089121,
 	Bullet_set_MoveDir_m2632362119,
+	Bullet_get_BulletMoveAction_m4191045889,
 	Bullet_get_Owner_m2655960690,
 	Bullet_set_Owner_m3778620813,
 	Bullet_Awake_m3526188380,
 	Bullet_Start_m1447617473,
 	Bullet_Move_m541877174,
 	Bullet_Update_m524047786,
+	Bullet_Explosion_m3810804328,
+	Bullet_DestroyItself_m3418201334,
 	Bullet_OnDestroy_m568632134,
 	U3CMoveU3Ec__Iterator7__ctor_m2311288047,
 	U3CMoveU3Ec__Iterator7_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1700419357,
@@ -43907,6 +43923,8 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	GridInfo_get_GridIndex_m873628440,
 	GridInfo_set_GridIndex_m1199700727,
 	MathFunctions_PowerOfTwo_m1193248491,
+	MathFunctions_LessThanOrEqualToFloat_m781898086,
+	MathFunctions_LargerThanOrEqualToFloat_m227752568,
 	MyGameObjectEvent__ctor_m813394032,
 	MyIntEvent__ctor_m4175290760,
 	MyRC__ctor_m2627661320,
@@ -44138,7 +44156,8 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	OnFinished_EndInvoke_m1929061697,
 	Tank__ctor_m750150259,
 	Tank_set_MoveSpeed_m3985201005,
-	Tank_set_CurrentMoveAction_m3482680283,
+	Tank_set_CurrentMoveAction_m3521750979,
+	Tank_InitMovingIndexsOffset_m211406749,
 	Tank_InitOccupiedInfo_m3183291521,
 	Tank_UpdateOccupiedInfo_m3660004542,
 	Tank_Awake_m3158931696,
@@ -44188,12 +44207,16 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	TankMap__ctor_m213562167,
 	TankMap__ctor_m57404882,
 	TankMap_ResetMap_m2481124046,
-	TankMap_IsAllowedMoveForward_m3099524668,
 	TankMap_ObtainOccupiedIndexsAtRC_m1736165015,
 	TankMap_IsValideIndex_m3312078381,
+	TankMap_IsValidePosition_m1365541722,
 	TankMap_MarkIndexOccupied_m1278869435,
 	TankMap_IsIndexOccupied_m454502790,
 	TankMap_IsIndexOccupiedByPlayer_m3732645810,
+	TankMap_ObtainTotalRows_m750648973,
+	TankMap_ObtainTotalColumns_m863416973,
+	TankMap_GetDestroyableTileAtIndex_m1265184158,
+	TankMap_RemoveDestroyableTileAtIndex_m3260938983,
 	TankMap_GetTileGOAtRC_m653895236,
 	TankMap_GetTileComponentAtRC_m2508923597,
 	TankMap_ChangeTile_m2029563357,
@@ -44204,7 +44227,7 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	TankMap_LoadPlayerAndEnemySpawnPointInfo_m1433320536,
 	TankMap_LoadBaseInfo_m2225644744,
 	TankMap_LoadMapOccupiedInfo_m1588763645,
-	TankMap_LoadTilesIndexInfo_m712984062,
+	TankMap_LoadTilesInfo_m1840794792,
 	TankMap_get_MapName_m62734434,
 	TankMap_set_MapName_m2382976507,
 	TankMap_get_CurrentMapInfo_m19403220,
@@ -44224,12 +44247,6 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	TankMapManager_ObtainOccupiedIndexsAtPosition_m187975517,
 	TankMapManager_ConvertPositionToRC_m3969556063,
 	TankMapManager_ConvertRCToPosition_m3709476895,
-	TankMapManager_IsValideIndex_m1049710584,
-	TankMapManager_MarkIndexOccupied_m1212840652,
-	TankMapManager_IsIndexOccupied_m3041376139,
-	TankMapManager_IsIndexOccupiedByPlayer_m3009478035,
-	TankMapManager_ObtainTotalRows_m465477534,
-	TankMapManager_ObtainTotalColumns_m3449826552,
 	TankMapManager_Awake_m1349445605,
 	TankMapManager_Start_m1270690728,
 	TankMapManager_SaveMap_m3006956507,
@@ -44239,11 +44256,16 @@ extern const Il2CppMethodPointer g_MethodPointers[22669] =
 	Tile__ctor_m3293075927,
 	Tile_get_SpriteRender_m1224444129,
 	Tile_set_SpriteRender_m739074376,
+	Tile_set_LocatedTileRC_m3598569183,
+	Tile_get_LocatedTileRC_m3479584240,
 	Tile_IsIndexFull_m878568584,
 	Tile_AddIndex_m4235336753,
+	Tile_InitTileIndexsOffset_m227343145,
 	Tile_Awake_m3924417876,
 	Tile_Start_m1772953651,
 	Tile_OnTriggerEnter2D_m1966252571,
+	Tile_DisableItself_m3404239832,
+	Tile_DeactiveItself_m4251040095,
 	TouchInputManager__ctor_m3048716615,
 	TouchInputManager__cctor_m2815256678,
 	TouchInputManager_Awake_m1441076960,

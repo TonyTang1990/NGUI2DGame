@@ -461,8 +461,6 @@ struct WindowDragTilt_t1404465963;
 #include "System_System_Text_RegularExpressions_Regex1803876613MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Regex1803876613.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
-#include "mscorlib_System_Exception1927440687MethodDeclarations.h"
-#include "mscorlib_System_Exception1927440687.h"
 #include "AssemblyU2DCSharp_ValidBounding40306510.h"
 #include "AssemblyU2DCSharp_ValidBounding40306510MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
@@ -18912,12 +18910,8 @@ extern "C"  void Validator__cctor_m3261463672 (Il2CppObject * __this /* static, 
 	}
 }
 // System.Boolean Validator::IsValide(System.String,System.String)
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
 extern Il2CppClass* Regex_t1803876613_il2cpp_TypeInfo_var;
 extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1594393565;
-extern Il2CppCodeGenString* _stringLiteral1379924604;
 extern const uint32_t Validator_IsValide_m4174400556_MetadataUsageId;
 extern "C"  bool Validator_IsValide_m4174400556 (Validator_t172396982 * __this, String_t* ___value0, String_t* ___minvalidepatterns1, const MethodInfo* method)
 {
@@ -18942,60 +18936,48 @@ IL_0000:
 	{ // begin try (depth: 1)
 		{
 			String_t* L_0 = ___minvalidepatterns1;
-			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_1 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1594393565, L_0, /*hidden argument*/NULL);
-			IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-			Debug_Log_m920475918(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-			String_t* L_2 = ___minvalidepatterns1;
-			Regex_t1803876613 * L_3 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
-			Regex__ctor_m2930443103(L_3, L_2, /*hidden argument*/NULL);
-			V_0 = L_3;
-			Regex_t1803876613 * L_4 = V_0;
-			String_t* L_5 = ___value0;
-			NullCheck(L_4);
-			bool L_6 = Regex_IsMatch_m563118126(L_4, L_5, /*hidden argument*/NULL);
-			V_2 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
-			goto IL_004e;
+			Regex_t1803876613 * L_1 = (Regex_t1803876613 *)il2cpp_codegen_object_new(Regex_t1803876613_il2cpp_TypeInfo_var);
+			Regex__ctor_m2930443103(L_1, L_0, /*hidden argument*/NULL);
+			V_0 = L_1;
+			Regex_t1803876613 * L_2 = V_0;
+			String_t* L_3 = ___value0;
+			NullCheck(L_2);
+			bool L_4 = Regex_IsMatch_m563118126(L_2, L_3, /*hidden argument*/NULL);
+			V_2 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+			goto IL_0029;
 		}
 
-IL_0027:
+IL_0017:
 		{
-			; // IL_0027: leave IL_004e
+			; // IL_0017: leave IL_0029
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t1927440687 *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (ArgumentException_t3259014390_il2cpp_TypeInfo_var, e.ex->object.klass))
-			goto CATCH_002c;
+			goto CATCH_001c;
 		throw e;
 	}
 
-CATCH_002c:
+CATCH_001c:
 	{ // begin catch(System.ArgumentException)
 		{
 			V_1 = ((ArgumentException_t3259014390 *)__exception_local);
-			ArgumentException_t3259014390 * L_7 = V_1;
-			NullCheck(L_7);
-			String_t* L_8 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Exception::ToString() */, L_7);
-			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_9 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral1379924604, L_8, /*hidden argument*/NULL);
-			IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-			Debug_Log_m920475918(NULL /*static, unused*/, L_9, /*hidden argument*/NULL);
 			V_2 = (bool)0;
-			goto IL_004e;
+			goto IL_0029;
 		}
 
-IL_0049:
+IL_0024:
 		{
-			; // IL_0049: leave IL_004e
+			; // IL_0024: leave IL_0029
 		}
 	} // end catch (depth: 1)
 
-IL_004e:
+IL_0029:
 	{
-		bool L_10 = V_2;
-		return L_10;
+		bool L_5 = V_2;
+		return L_5;
 	}
 }
 // System.Void ValidBounding::.ctor()

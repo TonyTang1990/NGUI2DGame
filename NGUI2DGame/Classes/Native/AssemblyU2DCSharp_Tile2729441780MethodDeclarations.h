@@ -21,6 +21,7 @@ struct Collider2D_t646061738;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_SpriteRenderer1209076198.h"
+#include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "UnityEngine_UnityEngine_Collider2D646061738.h"
 
 // System.Void Tile::.ctor()
@@ -29,13 +30,23 @@ extern "C"  void Tile__ctor_m3293075927 (Tile_t2729441780 * __this, const Method
 extern "C"  SpriteRenderer_t1209076198 * Tile_get_SpriteRender_m1224444129 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tile::set_SpriteRender(UnityEngine.SpriteRenderer)
 extern "C"  void Tile_set_SpriteRender_m739074376 (Tile_t2729441780 * __this, SpriteRenderer_t1209076198 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tile::set_LocatedTileRC(UnityEngine.Vector2)
+extern "C"  void Tile_set_LocatedTileRC_m3598569183 (Tile_t2729441780 * __this, Vector2_t2243707579  ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 Tile::get_LocatedTileRC()
+extern "C"  Vector2_t2243707579  Tile_get_LocatedTileRC_m3479584240 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Tile::IsIndexFull()
 extern "C"  bool Tile_IsIndexFull_m878568584 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tile::AddIndex(System.Int32)
 extern "C"  void Tile_AddIndex_m4235336753 (Tile_t2729441780 * __this, int32_t ___index0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tile::InitTileIndexsOffset()
+extern "C"  void Tile_InitTileIndexsOffset_m227343145 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tile::Awake()
 extern "C"  void Tile_Awake_m3924417876 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tile::Start()
 extern "C"  void Tile_Start_m1772953651 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tile::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern "C"  void Tile_OnTriggerEnter2D_m1966252571 (Tile_t2729441780 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tile::DisableItself()
+extern "C"  void Tile_DisableItself_m3404239832 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tile::DeactiveItself()
+extern "C"  void Tile_DeactiveItself_m4251040095 (Tile_t2729441780 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

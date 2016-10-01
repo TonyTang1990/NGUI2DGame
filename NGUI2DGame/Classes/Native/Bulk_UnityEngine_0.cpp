@@ -1334,6 +1334,16 @@ extern "C"  String_t* AnimationState_get_name_m1043580151 (AnimationState_t13037
 	_il2cpp_icall_func = (AnimationState_get_name_m1043580151_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AnimationState::get_name()");
 	return _il2cpp_icall_func(__this);
 }
+// System.Void UnityEngine.Animator::SetBool(System.String,System.Boolean)
+extern "C"  void Animator_SetBool_m2305662531 (Animator_t69676727 * __this, String_t* ___name0, bool ___value1, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___name0;
+		bool L_1 = ___value1;
+		Animator_SetBoolString_m1893192746(__this, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
 // System.Void UnityEngine.Animator::SetTrigger(System.String)
 extern "C"  void Animator_SetTrigger_m3418492570 (Animator_t69676727 * __this, String_t* ___name0, const MethodInfo* method)
 {
@@ -1369,6 +1379,15 @@ extern "C"  int32_t Animator_StringToHash_m3313850714 (Il2CppObject * __this /* 
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Animator_StringToHash_m3313850714_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::StringToHash(System.String)");
 	return _il2cpp_icall_func(___name0);
+}
+// System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
+extern "C"  void Animator_SetBoolString_m1893192746 (Animator_t69676727 * __this, String_t* ___name0, bool ___value1, const MethodInfo* method)
+{
+	typedef void (*Animator_SetBoolString_m1893192746_ftn) (Animator_t69676727 *, String_t*, bool);
+	static Animator_SetBoolString_m1893192746_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_SetBoolString_m1893192746_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::SetBoolString(System.String,System.Boolean)");
+	_il2cpp_icall_func(__this, ___name0, ___value1);
 }
 // System.Void UnityEngine.Animator::SetTriggerString(System.String)
 extern "C"  void Animator_SetTriggerString_m2002790359 (Animator_t69676727 * __this, String_t* ___name0, const MethodInfo* method)

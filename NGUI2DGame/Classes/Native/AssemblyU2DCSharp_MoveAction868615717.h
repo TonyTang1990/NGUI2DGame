@@ -12,7 +12,7 @@
 
 
 #include "mscorlib_System_Enum2459695545.h"
-#include "AssemblyU2DCSharp_TankMoveAction944032589.h"
+#include "AssemblyU2DCSharp_MoveAction868615717.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -20,15 +20,15 @@
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// TankMoveAction
-struct  TankMoveAction_t944032589 
+// MoveAction
+struct  MoveAction_t868615717 
 {
 public:
-	// System.Int32 TankMoveAction::value__
+	// System.Int32 MoveAction::value__
 	int32_t ___value___1;
 
 public:
-	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(TankMoveAction_t944032589, ___value___1)); }
+	inline static int32_t get_offset_of_value___1() { return static_cast<int32_t>(offsetof(MoveAction_t868615717, ___value___1)); }
 	inline int32_t get_value___1() const { return ___value___1; }
 	inline int32_t* get_address_of_value___1() { return &___value___1; }
 	inline void set_value___1(int32_t value)

@@ -18,9 +18,11 @@ struct GameObject_t1756533147;
 struct List_1_t1125654279;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
 struct Dictionary_2_t1079703083;
+// System.Collections.Generic.Dictionary`2<MoveAction,System.Int32>
+struct Dictionary_2_t841443130;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
-#include "AssemblyU2DCSharp_TankMoveAction944032589.h"
+#include "AssemblyU2DCSharp_MoveAction868615717.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -48,7 +50,7 @@ public:
 	bool ___mIsDead_9;
 	// System.Single Tank::mKeepMoveIntervalTime
 	float ___mKeepMoveIntervalTime_10;
-	// TankMoveAction Tank::mCurrentMoveAction
+	// MoveAction Tank::mCurrentMoveAction
 	int32_t ___mCurrentMoveAction_11;
 	// System.Single Tank::mMoveDeltaTime
 	float ___mMoveDeltaTime_12;
@@ -56,6 +58,8 @@ public:
 	List_1_t1125654279 * ___mBulletsList_13;
 	// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> Tank::mCurrentOccupiedIndexs
 	Dictionary_2_t1079703083 * ___mCurrentOccupiedIndexs_14;
+	// System.Collections.Generic.Dictionary`2<MoveAction,System.Int32> Tank::mTankMovingIndexsOffset
+	Dictionary_2_t841443130 * ___mTankMovingIndexsOffset_15;
 
 public:
 	inline static int32_t get_offset_of_mMoveSpeed_3() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveSpeed_3)); }
@@ -156,6 +160,15 @@ public:
 	{
 		___mCurrentOccupiedIndexs_14 = value;
 		Il2CppCodeGenWriteBarrier(&___mCurrentOccupiedIndexs_14, value);
+	}
+
+	inline static int32_t get_offset_of_mTankMovingIndexsOffset_15() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTankMovingIndexsOffset_15)); }
+	inline Dictionary_2_t841443130 * get_mTankMovingIndexsOffset_15() const { return ___mTankMovingIndexsOffset_15; }
+	inline Dictionary_2_t841443130 ** get_address_of_mTankMovingIndexsOffset_15() { return &___mTankMovingIndexsOffset_15; }
+	inline void set_mTankMovingIndexsOffset_15(Dictionary_2_t841443130 * value)
+	{
+		___mTankMovingIndexsOffset_15 = value;
+		Il2CppCodeGenWriteBarrier(&___mTankMovingIndexsOffset_15, value);
 	}
 };
 
