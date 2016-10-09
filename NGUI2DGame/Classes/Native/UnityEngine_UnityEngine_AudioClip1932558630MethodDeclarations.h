@@ -19,6 +19,8 @@ struct SingleU5BU5D_t577127397;
 
 #include "codegen/il2cpp-codegen.h"
 
+// System.Single UnityEngine.AudioClip::get_length()
+extern "C"  float AudioClip_get_length_m3881628918 (AudioClip_t1932558630 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioClip::InvokePCMReaderCallback_Internal(System.Single[])
 extern "C"  void AudioClip_InvokePCMReaderCallback_Internal_m1966286598 (AudioClip_t1932558630 * __this, SingleU5BU5D_t577127397* ___data0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioClip::InvokePCMSetPositionCallback_Internal(System.Int32)

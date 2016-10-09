@@ -22,6 +22,8 @@ struct TileU5BU2CU5D_t1358904254;
 struct Dictionary_2_t1737267415;
 // System.Collections.Generic.List`1<UnityEngine.Vector2>
 struct List_1_t1612828711;
+// System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Collections.Generic.List`1<System.Int32>>
+struct Dictionary_2_t2399515896;
 // System.Collections.BitArray
 struct BitArray_t4180138994;
 // System.Collections.Generic.Dictionary`2<System.Int32,TileType>
@@ -60,24 +62,28 @@ public:
 	List_1_t1612828711 * ___mPlayerSpawnPoint_7;
 	// System.Collections.Generic.List`1<UnityEngine.Vector2> TankMap::mEnemySpawnPoint
 	List_1_t1612828711 * ___mEnemySpawnPoint_8;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Collections.Generic.List`1<System.Int32>> TankMap::mEnemySpawnPointsOccupiedList
+	Dictionary_2_t2399515896 * ___mEnemySpawnPointsOccupiedList_9;
+	// System.Collections.Generic.List`1<UnityEngine.Vector2> TankMap::mCurrentAvalibleEnemySpawnPointList
+	List_1_t1612828711 * ___mCurrentAvalibleEnemySpawnPointList_10;
 	// UnityEngine.Vector2 TankMap::mMapSize
-	Vector2_t2243707579  ___mMapSize_9;
+	Vector2_t2243707579  ___mMapSize_11;
 	// System.Collections.BitArray TankMap::mMapOccupiedInfo
-	BitArray_t4180138994 * ___mMapOccupiedInfo_10;
+	BitArray_t4180138994 * ___mMapOccupiedInfo_12;
 	// System.Collections.BitArray TankMap::mMapPlayerOcupiedInfo
-	BitArray_t4180138994 * ___mMapPlayerOcupiedInfo_11;
+	BitArray_t4180138994 * ___mMapPlayerOcupiedInfo_13;
 	// System.Collections.Generic.Dictionary`2<System.Int32,TileType> TankMap::mMapOccupiedTileTypeInfo
-	Dictionary_2_t4004437455 * ___mMapOccupiedTileTypeInfo_12;
+	Dictionary_2_t4004437455 * ___mMapOccupiedTileTypeInfo_14;
 	// UnityEngine.Transform TankMap::mMapParent
-	Transform_t3275118058 * ___mMapParent_13;
+	Transform_t3275118058 * ___mMapParent_15;
 	// System.Int32 TankMap::mMaxPartitionLevel
-	int32_t ___mMaxPartitionLevel_14;
+	int32_t ___mMaxPartitionLevel_16;
 	// System.Int32 TankMap::mMaxmumIndexNumber
-	int32_t ___mMaxmumIndexNumber_15;
+	int32_t ___mMaxmumIndexNumber_17;
 	// System.Int32 TankMap::mTotalRowsAfterPartition
-	int32_t ___mTotalRowsAfterPartition_16;
+	int32_t ___mTotalRowsAfterPartition_18;
 	// System.Int32 TankMap::mTotalColumnsAfterPartition
-	int32_t ___mTotalColumnsAfterPartition_17;
+	int32_t ___mTotalColumnsAfterPartition_19;
 
 public:
 	inline static int32_t get_offset_of_mMapName_0() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapName_0)); }
@@ -159,80 +165,98 @@ public:
 		Il2CppCodeGenWriteBarrier(&___mEnemySpawnPoint_8, value);
 	}
 
-	inline static int32_t get_offset_of_mMapSize_9() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapSize_9)); }
-	inline Vector2_t2243707579  get_mMapSize_9() const { return ___mMapSize_9; }
-	inline Vector2_t2243707579 * get_address_of_mMapSize_9() { return &___mMapSize_9; }
-	inline void set_mMapSize_9(Vector2_t2243707579  value)
+	inline static int32_t get_offset_of_mEnemySpawnPointsOccupiedList_9() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mEnemySpawnPointsOccupiedList_9)); }
+	inline Dictionary_2_t2399515896 * get_mEnemySpawnPointsOccupiedList_9() const { return ___mEnemySpawnPointsOccupiedList_9; }
+	inline Dictionary_2_t2399515896 ** get_address_of_mEnemySpawnPointsOccupiedList_9() { return &___mEnemySpawnPointsOccupiedList_9; }
+	inline void set_mEnemySpawnPointsOccupiedList_9(Dictionary_2_t2399515896 * value)
 	{
-		___mMapSize_9 = value;
+		___mEnemySpawnPointsOccupiedList_9 = value;
+		Il2CppCodeGenWriteBarrier(&___mEnemySpawnPointsOccupiedList_9, value);
 	}
 
-	inline static int32_t get_offset_of_mMapOccupiedInfo_10() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapOccupiedInfo_10)); }
-	inline BitArray_t4180138994 * get_mMapOccupiedInfo_10() const { return ___mMapOccupiedInfo_10; }
-	inline BitArray_t4180138994 ** get_address_of_mMapOccupiedInfo_10() { return &___mMapOccupiedInfo_10; }
-	inline void set_mMapOccupiedInfo_10(BitArray_t4180138994 * value)
+	inline static int32_t get_offset_of_mCurrentAvalibleEnemySpawnPointList_10() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mCurrentAvalibleEnemySpawnPointList_10)); }
+	inline List_1_t1612828711 * get_mCurrentAvalibleEnemySpawnPointList_10() const { return ___mCurrentAvalibleEnemySpawnPointList_10; }
+	inline List_1_t1612828711 ** get_address_of_mCurrentAvalibleEnemySpawnPointList_10() { return &___mCurrentAvalibleEnemySpawnPointList_10; }
+	inline void set_mCurrentAvalibleEnemySpawnPointList_10(List_1_t1612828711 * value)
 	{
-		___mMapOccupiedInfo_10 = value;
-		Il2CppCodeGenWriteBarrier(&___mMapOccupiedInfo_10, value);
+		___mCurrentAvalibleEnemySpawnPointList_10 = value;
+		Il2CppCodeGenWriteBarrier(&___mCurrentAvalibleEnemySpawnPointList_10, value);
 	}
 
-	inline static int32_t get_offset_of_mMapPlayerOcupiedInfo_11() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapPlayerOcupiedInfo_11)); }
-	inline BitArray_t4180138994 * get_mMapPlayerOcupiedInfo_11() const { return ___mMapPlayerOcupiedInfo_11; }
-	inline BitArray_t4180138994 ** get_address_of_mMapPlayerOcupiedInfo_11() { return &___mMapPlayerOcupiedInfo_11; }
-	inline void set_mMapPlayerOcupiedInfo_11(BitArray_t4180138994 * value)
+	inline static int32_t get_offset_of_mMapSize_11() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapSize_11)); }
+	inline Vector2_t2243707579  get_mMapSize_11() const { return ___mMapSize_11; }
+	inline Vector2_t2243707579 * get_address_of_mMapSize_11() { return &___mMapSize_11; }
+	inline void set_mMapSize_11(Vector2_t2243707579  value)
 	{
-		___mMapPlayerOcupiedInfo_11 = value;
-		Il2CppCodeGenWriteBarrier(&___mMapPlayerOcupiedInfo_11, value);
+		___mMapSize_11 = value;
 	}
 
-	inline static int32_t get_offset_of_mMapOccupiedTileTypeInfo_12() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapOccupiedTileTypeInfo_12)); }
-	inline Dictionary_2_t4004437455 * get_mMapOccupiedTileTypeInfo_12() const { return ___mMapOccupiedTileTypeInfo_12; }
-	inline Dictionary_2_t4004437455 ** get_address_of_mMapOccupiedTileTypeInfo_12() { return &___mMapOccupiedTileTypeInfo_12; }
-	inline void set_mMapOccupiedTileTypeInfo_12(Dictionary_2_t4004437455 * value)
+	inline static int32_t get_offset_of_mMapOccupiedInfo_12() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapOccupiedInfo_12)); }
+	inline BitArray_t4180138994 * get_mMapOccupiedInfo_12() const { return ___mMapOccupiedInfo_12; }
+	inline BitArray_t4180138994 ** get_address_of_mMapOccupiedInfo_12() { return &___mMapOccupiedInfo_12; }
+	inline void set_mMapOccupiedInfo_12(BitArray_t4180138994 * value)
 	{
-		___mMapOccupiedTileTypeInfo_12 = value;
-		Il2CppCodeGenWriteBarrier(&___mMapOccupiedTileTypeInfo_12, value);
+		___mMapOccupiedInfo_12 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapOccupiedInfo_12, value);
 	}
 
-	inline static int32_t get_offset_of_mMapParent_13() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapParent_13)); }
-	inline Transform_t3275118058 * get_mMapParent_13() const { return ___mMapParent_13; }
-	inline Transform_t3275118058 ** get_address_of_mMapParent_13() { return &___mMapParent_13; }
-	inline void set_mMapParent_13(Transform_t3275118058 * value)
+	inline static int32_t get_offset_of_mMapPlayerOcupiedInfo_13() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapPlayerOcupiedInfo_13)); }
+	inline BitArray_t4180138994 * get_mMapPlayerOcupiedInfo_13() const { return ___mMapPlayerOcupiedInfo_13; }
+	inline BitArray_t4180138994 ** get_address_of_mMapPlayerOcupiedInfo_13() { return &___mMapPlayerOcupiedInfo_13; }
+	inline void set_mMapPlayerOcupiedInfo_13(BitArray_t4180138994 * value)
 	{
-		___mMapParent_13 = value;
-		Il2CppCodeGenWriteBarrier(&___mMapParent_13, value);
+		___mMapPlayerOcupiedInfo_13 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapPlayerOcupiedInfo_13, value);
 	}
 
-	inline static int32_t get_offset_of_mMaxPartitionLevel_14() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMaxPartitionLevel_14)); }
-	inline int32_t get_mMaxPartitionLevel_14() const { return ___mMaxPartitionLevel_14; }
-	inline int32_t* get_address_of_mMaxPartitionLevel_14() { return &___mMaxPartitionLevel_14; }
-	inline void set_mMaxPartitionLevel_14(int32_t value)
+	inline static int32_t get_offset_of_mMapOccupiedTileTypeInfo_14() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapOccupiedTileTypeInfo_14)); }
+	inline Dictionary_2_t4004437455 * get_mMapOccupiedTileTypeInfo_14() const { return ___mMapOccupiedTileTypeInfo_14; }
+	inline Dictionary_2_t4004437455 ** get_address_of_mMapOccupiedTileTypeInfo_14() { return &___mMapOccupiedTileTypeInfo_14; }
+	inline void set_mMapOccupiedTileTypeInfo_14(Dictionary_2_t4004437455 * value)
 	{
-		___mMaxPartitionLevel_14 = value;
+		___mMapOccupiedTileTypeInfo_14 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapOccupiedTileTypeInfo_14, value);
 	}
 
-	inline static int32_t get_offset_of_mMaxmumIndexNumber_15() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMaxmumIndexNumber_15)); }
-	inline int32_t get_mMaxmumIndexNumber_15() const { return ___mMaxmumIndexNumber_15; }
-	inline int32_t* get_address_of_mMaxmumIndexNumber_15() { return &___mMaxmumIndexNumber_15; }
-	inline void set_mMaxmumIndexNumber_15(int32_t value)
+	inline static int32_t get_offset_of_mMapParent_15() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMapParent_15)); }
+	inline Transform_t3275118058 * get_mMapParent_15() const { return ___mMapParent_15; }
+	inline Transform_t3275118058 ** get_address_of_mMapParent_15() { return &___mMapParent_15; }
+	inline void set_mMapParent_15(Transform_t3275118058 * value)
 	{
-		___mMaxmumIndexNumber_15 = value;
+		___mMapParent_15 = value;
+		Il2CppCodeGenWriteBarrier(&___mMapParent_15, value);
 	}
 
-	inline static int32_t get_offset_of_mTotalRowsAfterPartition_16() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mTotalRowsAfterPartition_16)); }
-	inline int32_t get_mTotalRowsAfterPartition_16() const { return ___mTotalRowsAfterPartition_16; }
-	inline int32_t* get_address_of_mTotalRowsAfterPartition_16() { return &___mTotalRowsAfterPartition_16; }
-	inline void set_mTotalRowsAfterPartition_16(int32_t value)
+	inline static int32_t get_offset_of_mMaxPartitionLevel_16() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMaxPartitionLevel_16)); }
+	inline int32_t get_mMaxPartitionLevel_16() const { return ___mMaxPartitionLevel_16; }
+	inline int32_t* get_address_of_mMaxPartitionLevel_16() { return &___mMaxPartitionLevel_16; }
+	inline void set_mMaxPartitionLevel_16(int32_t value)
 	{
-		___mTotalRowsAfterPartition_16 = value;
+		___mMaxPartitionLevel_16 = value;
 	}
 
-	inline static int32_t get_offset_of_mTotalColumnsAfterPartition_17() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mTotalColumnsAfterPartition_17)); }
-	inline int32_t get_mTotalColumnsAfterPartition_17() const { return ___mTotalColumnsAfterPartition_17; }
-	inline int32_t* get_address_of_mTotalColumnsAfterPartition_17() { return &___mTotalColumnsAfterPartition_17; }
-	inline void set_mTotalColumnsAfterPartition_17(int32_t value)
+	inline static int32_t get_offset_of_mMaxmumIndexNumber_17() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mMaxmumIndexNumber_17)); }
+	inline int32_t get_mMaxmumIndexNumber_17() const { return ___mMaxmumIndexNumber_17; }
+	inline int32_t* get_address_of_mMaxmumIndexNumber_17() { return &___mMaxmumIndexNumber_17; }
+	inline void set_mMaxmumIndexNumber_17(int32_t value)
 	{
-		___mTotalColumnsAfterPartition_17 = value;
+		___mMaxmumIndexNumber_17 = value;
+	}
+
+	inline static int32_t get_offset_of_mTotalRowsAfterPartition_18() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mTotalRowsAfterPartition_18)); }
+	inline int32_t get_mTotalRowsAfterPartition_18() const { return ___mTotalRowsAfterPartition_18; }
+	inline int32_t* get_address_of_mTotalRowsAfterPartition_18() { return &___mTotalRowsAfterPartition_18; }
+	inline void set_mTotalRowsAfterPartition_18(int32_t value)
+	{
+		___mTotalRowsAfterPartition_18 = value;
+	}
+
+	inline static int32_t get_offset_of_mTotalColumnsAfterPartition_19() { return static_cast<int32_t>(offsetof(TankMap_t1120032466, ___mTotalColumnsAfterPartition_19)); }
+	inline int32_t get_mTotalColumnsAfterPartition_19() const { return ___mTotalColumnsAfterPartition_19; }
+	inline int32_t* get_address_of_mTotalColumnsAfterPartition_19() { return &___mTotalColumnsAfterPartition_19; }
+	inline void set_mTotalColumnsAfterPartition_19(int32_t value)
+	{
+		___mTotalColumnsAfterPartition_19 = value;
 	}
 };
 

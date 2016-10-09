@@ -18,11 +18,14 @@ struct Bullet_t2590115616;
 struct Tank_t2050480468;
 // System.Collections.IEnumerator
 struct IEnumerator_t1466026749;
+// UnityEngine.Collider2D
+struct Collider2D_t646061738;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "AssemblyU2DCSharp_MoveAction868615717.h"
 #include "AssemblyU2DCSharp_Tank2050480468.h"
+#include "UnityEngine_UnityEngine_Collider2D646061738.h"
 
 // System.Void Bullet::.ctor()
 extern "C"  void Bullet__ctor_m2895089121 (Bullet_t2590115616 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -48,3 +51,5 @@ extern "C"  void Bullet_Explosion_m3810804328 (Bullet_t2590115616 * __this, cons
 extern "C"  void Bullet_DestroyItself_m3418201334 (Bullet_t2590115616 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Bullet::OnDestroy()
 extern "C"  void Bullet_OnDestroy_m568632134 (Bullet_t2590115616 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Bullet::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern "C"  void Bullet_OnTriggerEnter2D_m2179826729 (Bullet_t2590115616 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

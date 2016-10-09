@@ -15,6 +15,12 @@
 
 // System.Array
 struct Il2CppArray;
+// MoveAction[]
+struct MoveActionU5BU5D_t2792139688;
+// System.Collections.Generic.IComparer`1<MoveAction>
+struct IComparer_1_t3118046135;
+// System.Comparison`1<MoveAction>
+struct Comparison_1_t2130354568;
 // System.Byte[]
 struct ByteU5BU5D_t3397334013;
 // System.Collections.Generic.IComparer`1<System.Byte>
@@ -125,8 +131,6 @@ struct IComparer_1_t198170703;
 struct Comparison_1_t3505446432;
 // System.Array/Swapper
 struct Swapper_t2637371637;
-// MoveAction[]
-struct MoveActionU5BU5D_t2792139688;
 // System.Collections.Generic.Dictionary`2/Transform`1<MoveAction,System.Int32,MoveAction>
 struct Transform_1_t2710397968;
 // System.Collections.Generic.Dictionary`2<MoveAction,System.Int32>
@@ -225,6 +229,18 @@ struct Dictionary_2_t2281509423;
 struct Transform_1_t3545401207;
 // System.Collections.Generic.Dictionary`2/Transform`1<System.Object,System.Object,System.Object>
 struct Transform_1_t1901028561;
+// System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.Vector2,System.Object,System.Collections.DictionaryEntry>
+struct Transform_1_t359179156;
+// System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>
+struct Dictionary_2_t3647966611;
+// System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>[]
+struct KeyValuePair_2U5BU5D_t953644836;
+// System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.Vector2,System.Object,System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>
+struct Transform_1_t3010582887;
+// System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.Vector2,System.Object,System.Object>
+struct Transform_1_t4294720349;
+// System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.Vector2,System.Object,UnityEngine.Vector2>
+struct Transform_1_t3848978633;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_t2058570427;
 // UnityEngine.Component
@@ -274,7 +290,7 @@ struct EventFunction_1_t1186599945;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "System_Xml_System_Xml_XmlNamespaceManager_NsDecl3210081295.h"
+#include "mscorlib_System_Resources_ResourceReader_ResourceI3933049236.h"
 #include "mscorlib_System_Void1841601450.h"
 #include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_Array3829468939MethodDeclarations.h"
@@ -283,6 +299,18 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_String2029220233.h"
 #include "mscorlib_System_ArgumentOutOfRangeException279959794.h"
+#include "mscorlib_System_Runtime_Serialization_Formatters_Bi141209596.h"
+#include "mscorlib_System_SByte454417549.h"
+#include "System_System_Security_Cryptography_X509Certificat4278378721.h"
+#include "mscorlib_System_Single2076509932.h"
+#include "mscorlib_System_TermInfoStrings1425267120.h"
+#include "System_System_Text_RegularExpressions_Mark2724874473.h"
+#include "mscorlib_System_TimeSpan3430258949.h"
+#include "mscorlib_System_UInt16986882611.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "mscorlib_System_UInt642909196914.h"
+#include "System_System_Uri_UriScheme1876590943.h"
+#include "System_Xml_System_Xml_XmlNamespaceManager_NsDecl3210081295.h"
 #include "System_Xml_System_Xml_XmlNamespaceManager_NsScope2513625351.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
 #include "UnityEngine_UnityEngine_Bounds3033363703.h"
@@ -306,6 +334,10 @@ struct EventFunction_1_t1186599945;
 #include "UnityEngine_UnityEngine_Vector22243707579.h"
 #include "UnityEngine_UnityEngine_Vector32243707580.h"
 #include "UnityEngine_UnityEngine_Vector42243707581.h"
+#include "Assembly-CSharp_ArrayTypes.h"
+#include "AssemblyU2DCSharp_MoveAction868615717.h"
+#include "mscorlib_System_Comparison_1_gen2130354568.h"
+#include "mscorlib_System_Comparison_1_gen2130354568MethodDeclarations.h"
 #include "mscorlib_System_Byte3683104436.h"
 #include "mscorlib_System_Comparison_1_gen649875991.h"
 #include "mscorlib_System_Comparison_1_gen649875991MethodDeclarations.h"
@@ -355,7 +387,6 @@ struct EventFunction_1_t1186599945;
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake4001384466.h"
 #include "mscorlib_Mono_Security_Uri_UriScheme683497865.h"
 #include "System_Xml_Mono_Xml2_XmlTextReader_TagName2340974457.h"
-#include "AssemblyU2DCSharp_MoveAction868615717.h"
 #include "mscorlib_System_ArraySegment_1_gen2594217482.h"
 #include "mscorlib_System_Collections_DictionaryEntry3048875398.h"
 #include "System_Core_System_Collections_Generic_HashSet_1_Li865133271.h"
@@ -366,6 +397,7 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21761782677.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21174980068.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23716250094.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21405311833.h"
 #include "mscorlib_System_Collections_Generic_Link2723257478.h"
 #include "mscorlib_System_Collections_Hashtable_Slot2022531261.h"
 #include "mscorlib_System_Collections_SortedList_Slot2267560602.h"
@@ -381,13 +413,6 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_Reflection_Emit_RefEmitPermissionS2708608433.h"
 #include "mscorlib_System_Reflection_ParameterModifier1820634920.h"
 #include "mscorlib_System_Resources_ResourceReader_ResourceCa333236149.h"
-#include "mscorlib_System_Resources_ResourceReader_ResourceI3933049236.h"
-#include "mscorlib_System_Runtime_Serialization_Formatters_Bi141209596.h"
-#include "System_System_Security_Cryptography_X509Certificat4278378721.h"
-#include "mscorlib_System_TermInfoStrings1425267120.h"
-#include "System_System_Text_RegularExpressions_Mark2724874473.h"
-#include "mscorlib_System_TimeSpan3430258949.h"
-#include "System_System_Uri_UriScheme1876590943.h"
 #include "mscorlib_System_ArgumentNullException628810857MethodDeclarations.h"
 #include "mscorlib_System_ArgumentException3259014390MethodDeclarations.h"
 #include "mscorlib_Locale4255929014MethodDeclarations.h"
@@ -397,10 +422,8 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_ArgumentNullException628810857.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
 #include "mscorlib_System_Double4078015681.h"
-#include "mscorlib_System_UInt322149682021.h"
 #include "mscorlib_System_InvalidOperationException721527559.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_ge841443130.h"
-#include "Assembly-CSharp_ArrayTypes.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_T2710397968.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_T2710397968MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_Tr595690353.h"
@@ -482,6 +505,16 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_T1901028561.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_T1901028561MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g2281509423MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g3647966611.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_Tr359179156.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_Tr359179156MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_T3010582887.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_T3010582887MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_T4294720349.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_T4294720349MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_T3848978633.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_T3848978633MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g3647966611MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Component3819376471.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2058570427.h"
 #include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
@@ -489,7 +522,6 @@ struct EventFunction_1_t1186599945;
 #include "UnityEngine_UnityEngine_GameObject1756533147MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_BaseInvokableCall2229564840.h"
 #include "UnityEngine_UnityEngine_UnityString276356480MethodDeclarations.h"
-#include "mscorlib_System_Single2076509932.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_ExecuteEve1693084770.h"
 #include "UnityEngine_UnityEngine_Object1021602117MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen2672351287MethodDeclarations.h"
@@ -569,9 +601,6 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_Predicate_1_gen1132419410MethodDeclarations.h"
 #include "mscorlib_System_Int164041245914.h"
 #include "mscorlib_System_Int64909078037.h"
-#include "mscorlib_System_SByte454417549.h"
-#include "mscorlib_System_UInt16986882611.h"
-#include "mscorlib_System_UInt642909196914.h"
 #include "AssemblyU2DCSharp_UITweener2986641582.h"
 #include "UnityEngine_UnityEngine_AnimationCurve3306541151MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
@@ -596,6 +625,78 @@ struct EventFunction_1_t1186599945;
 #include "mscorlib_System_Collections_Generic_List_1_gen2644239190MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2644239190.h"
 
+// System.Void System.Array::InternalArray__set_Item<System.Resources.ResourceReader/ResourceInfo>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisResourceInfo_t3933049236_m216042579_gshared (Il2CppArray * __this, int32_t ___index0, ResourceInfo_t3933049236  ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisResourceInfo_t3933049236_m216042579(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, ResourceInfo_t3933049236 , const MethodInfo*))Array_InternalArray__set_Item_TisResourceInfo_t3933049236_m216042579_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Resources.ResourceReader/ResourceInfo>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisResourceInfo_t3933049236_m628959495_gshared (Il2CppArray * __this, int32_t p0, ResourceInfo_t3933049236 * p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisResourceInfo_t3933049236_m628959495(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, ResourceInfo_t3933049236 *, const MethodInfo*))Array_SetGenericValueImpl_TisResourceInfo_t3933049236_m628959495_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.Runtime.Serialization.Formatters.Binary.TypeTag>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisTypeTag_t141209596_m3822995350_gshared (Il2CppArray * __this, int32_t ___index0, uint8_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisTypeTag_t141209596_m3822995350(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, uint8_t, const MethodInfo*))Array_InternalArray__set_Item_TisTypeTag_t141209596_m3822995350_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Runtime.Serialization.Formatters.Binary.TypeTag>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisTypeTag_t141209596_m4031302382_gshared (Il2CppArray * __this, int32_t p0, uint8_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisTypeTag_t141209596_m4031302382(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, uint8_t*, const MethodInfo*))Array_SetGenericValueImpl_TisTypeTag_t141209596_m4031302382_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.SByte>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisSByte_t454417549_m1650395157_gshared (Il2CppArray * __this, int32_t ___index0, int8_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisSByte_t454417549_m1650395157(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, int8_t, const MethodInfo*))Array_InternalArray__set_Item_TisSByte_t454417549_m1650395157_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.SByte>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisSByte_t454417549_m3175233117_gshared (Il2CppArray * __this, int32_t p0, int8_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisSByte_t454417549_m3175233117(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, int8_t*, const MethodInfo*))Array_SetGenericValueImpl_TisSByte_t454417549_m3175233117_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.Security.Cryptography.X509Certificates.X509ChainStatus>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisX509ChainStatus_t4278378721_m1993048849_gshared (Il2CppArray * __this, int32_t ___index0, X509ChainStatus_t4278378721  ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisX509ChainStatus_t4278378721_m1993048849(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, X509ChainStatus_t4278378721 , const MethodInfo*))Array_InternalArray__set_Item_TisX509ChainStatus_t4278378721_m1993048849_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Security.Cryptography.X509Certificates.X509ChainStatus>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisX509ChainStatus_t4278378721_m3961559317_gshared (Il2CppArray * __this, int32_t p0, X509ChainStatus_t4278378721 * p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisX509ChainStatus_t4278378721_m3961559317(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, X509ChainStatus_t4278378721 *, const MethodInfo*))Array_SetGenericValueImpl_TisX509ChainStatus_t4278378721_m3961559317_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.Single>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisSingle_t2076509932_m4273663642_gshared (Il2CppArray * __this, int32_t ___index0, float ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisSingle_t2076509932_m4273663642(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, float, const MethodInfo*))Array_InternalArray__set_Item_TisSingle_t2076509932_m4273663642_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Single>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisSingle_t2076509932_m3834544502_gshared (Il2CppArray * __this, int32_t p0, float* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisSingle_t2076509932_m3834544502(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, float*, const MethodInfo*))Array_SetGenericValueImpl_TisSingle_t2076509932_m3834544502_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.TermInfoStrings>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisTermInfoStrings_t1425267120_m1412218982_gshared (Il2CppArray * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisTermInfoStrings_t1425267120_m1412218982(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t, const MethodInfo*))Array_InternalArray__set_Item_TisTermInfoStrings_t1425267120_m1412218982_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.TermInfoStrings>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisTermInfoStrings_t1425267120_m2110165586_gshared (Il2CppArray * __this, int32_t p0, int32_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisTermInfoStrings_t1425267120_m2110165586(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t*, const MethodInfo*))Array_SetGenericValueImpl_TisTermInfoStrings_t1425267120_m2110165586_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.Text.RegularExpressions.Mark>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisMark_t2724874473_m2258664863_gshared (Il2CppArray * __this, int32_t ___index0, Mark_t2724874473  ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisMark_t2724874473_m2258664863(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, Mark_t2724874473 , const MethodInfo*))Array_InternalArray__set_Item_TisMark_t2724874473_m2258664863_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Text.RegularExpressions.Mark>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisMark_t2724874473_m1290670523_gshared (Il2CppArray * __this, int32_t p0, Mark_t2724874473 * p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisMark_t2724874473_m1290670523(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, Mark_t2724874473 *, const MethodInfo*))Array_SetGenericValueImpl_TisMark_t2724874473_m1290670523_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.TimeSpan>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisTimeSpan_t3430258949_m285095777_gshared (Il2CppArray * __this, int32_t ___index0, TimeSpan_t3430258949  ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisTimeSpan_t3430258949_m285095777(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, TimeSpan_t3430258949 , const MethodInfo*))Array_InternalArray__set_Item_TisTimeSpan_t3430258949_m285095777_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.TimeSpan>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisTimeSpan_t3430258949_m2447199901_gshared (Il2CppArray * __this, int32_t p0, TimeSpan_t3430258949 * p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisTimeSpan_t3430258949_m2447199901(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, TimeSpan_t3430258949 *, const MethodInfo*))Array_SetGenericValueImpl_TisTimeSpan_t3430258949_m2447199901_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.UInt16>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisUInt16_t986882611_m59367493_gshared (Il2CppArray * __this, int32_t ___index0, uint16_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisUInt16_t986882611_m59367493(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, uint16_t, const MethodInfo*))Array_InternalArray__set_Item_TisUInt16_t986882611_m59367493_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.UInt16>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisUInt16_t986882611_m4034640865_gshared (Il2CppArray * __this, int32_t p0, uint16_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisUInt16_t986882611_m4034640865(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, uint16_t*, const MethodInfo*))Array_SetGenericValueImpl_TisUInt16_t986882611_m4034640865_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.UInt32>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisUInt32_t2149682021_m1781075439_gshared (Il2CppArray * __this, int32_t ___index0, uint32_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisUInt32_t2149682021_m1781075439(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, uint32_t, const MethodInfo*))Array_InternalArray__set_Item_TisUInt32_t2149682021_m1781075439_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.UInt32>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisUInt32_t2149682021_m3852980851_gshared (Il2CppArray * __this, int32_t p0, uint32_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisUInt32_t2149682021_m3852980851(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, uint32_t*, const MethodInfo*))Array_SetGenericValueImpl_TisUInt32_t2149682021_m3852980851_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.UInt64>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisUInt64_t2909196914_m1156945812_gshared (Il2CppArray * __this, int32_t ___index0, uint64_t ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisUInt64_t2909196914_m1156945812(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, uint64_t, const MethodInfo*))Array_InternalArray__set_Item_TisUInt64_t2909196914_m1156945812_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.UInt64>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisUInt64_t2909196914_m1355260112_gshared (Il2CppArray * __this, int32_t p0, uint64_t* p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisUInt64_t2909196914_m1355260112(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, uint64_t*, const MethodInfo*))Array_SetGenericValueImpl_TisUInt64_t2909196914_m1355260112_gshared)(__this, p0, p1, method)
+// System.Void System.Array::InternalArray__set_Item<System.Uri/UriScheme>(System.Int32,T)
+extern "C"  void Array_InternalArray__set_Item_TisUriScheme_t1876590943_m1211880002_gshared (Il2CppArray * __this, int32_t ___index0, UriScheme_t1876590943  ___item1, const MethodInfo* method);
+#define Array_InternalArray__set_Item_TisUriScheme_t1876590943_m1211880002(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, UriScheme_t1876590943 , const MethodInfo*))Array_InternalArray__set_Item_TisUriScheme_t1876590943_m1211880002_gshared)(__this, ___index0, ___item1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Uri/UriScheme>(System.Int32,!!0&)
+extern "C"  void Array_SetGenericValueImpl_TisUriScheme_t1876590943_m491047358_gshared (Il2CppArray * __this, int32_t p0, UriScheme_t1876590943 * p1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisUriScheme_t1876590943_m491047358(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, UriScheme_t1876590943 *, const MethodInfo*))Array_SetGenericValueImpl_TisUriScheme_t1876590943_m491047358_gshared)(__this, p0, p1, method)
 // System.Void System.Array::InternalArray__set_Item<System.Xml.XmlNamespaceManager/NsDecl>(System.Int32,T)
 extern "C"  void Array_InternalArray__set_Item_TisNsDecl_t3210081295_m483423304_gshared (Il2CppArray * __this, int32_t ___index0, NsDecl_t3210081295  ___item1, const MethodInfo* method);
 #define Array_InternalArray__set_Item_TisNsDecl_t3210081295_m483423304(__this, ___index0, ___item1, method) ((  void (*) (Il2CppArray *, int32_t, NsDecl_t3210081295 , const MethodInfo*))Array_InternalArray__set_Item_TisNsDecl_t3210081295_m483423304_gshared)(__this, ___index0, ___item1, method)
@@ -740,6 +841,21 @@ extern "C"  void Array_InternalArray__set_Item_TisVector4_t2243707581_m387817241
 // System.Void System.Array::SetGenericValueImpl<UnityEngine.Vector4>(System.Int32,!!0&)
 extern "C"  void Array_SetGenericValueImpl_TisVector4_t2243707581_m435545565_gshared (Il2CppArray * __this, int32_t p0, Vector4_t2243707581 * p1, const MethodInfo* method);
 #define Array_SetGenericValueImpl_TisVector4_t2243707581_m435545565(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, Vector4_t2243707581 *, const MethodInfo*))Array_SetGenericValueImpl_TisVector4_t2243707581_m435545565_gshared)(__this, p0, p1, method)
+// System.Void System.Array::qsort<MoveAction,MoveAction>(K[],V[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<K>)
+extern "C"  void Array_qsort_TisMoveAction_t868615717_TisMoveAction_t868615717_m2812866489_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___keys0, MoveActionU5BU5D_t2792139688* ___items1, int32_t ___low02, int32_t ___high03, Il2CppObject* ___comparer4, const MethodInfo* method);
+#define Array_qsort_TisMoveAction_t868615717_TisMoveAction_t868615717_m2812866489(__this /* static, unused */, ___keys0, ___items1, ___low02, ___high03, ___comparer4, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_qsort_TisMoveAction_t868615717_TisMoveAction_t868615717_m2812866489_gshared)(__this /* static, unused */, ___keys0, ___items1, ___low02, ___high03, ___comparer4, method)
+// System.Int32 System.Array::compare<MoveAction>(!!0,!!0,System.Collections.Generic.IComparer`1<!!0>)
+extern "C"  int32_t Array_compare_TisMoveAction_t868615717_m175830494_gshared (Il2CppObject * __this /* static, unused */, int32_t p0, int32_t p1, Il2CppObject* p2, const MethodInfo* method);
+#define Array_compare_TisMoveAction_t868615717_m175830494(__this /* static, unused */, p0, p1, p2, method) ((  int32_t (*) (Il2CppObject * /* static, unused */, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_compare_TisMoveAction_t868615717_m175830494_gshared)(__this /* static, unused */, p0, p1, p2, method)
+// System.Void System.Array::swap<MoveAction,MoveAction>(!!0[],!!1[],System.Int32,System.Int32)
+extern "C"  void Array_swap_TisMoveAction_t868615717_TisMoveAction_t868615717_m989610192_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* p0, MoveActionU5BU5D_t2792139688* p1, int32_t p2, int32_t p3, const MethodInfo* method);
+#define Array_swap_TisMoveAction_t868615717_TisMoveAction_t868615717_m989610192(__this /* static, unused */, p0, p1, p2, p3, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, const MethodInfo*))Array_swap_TisMoveAction_t868615717_TisMoveAction_t868615717_m989610192_gshared)(__this /* static, unused */, p0, p1, p2, p3, method)
+// System.Void System.Array::qsort<MoveAction>(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+extern "C"  void Array_qsort_TisMoveAction_t868615717_m3186542047_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___low01, int32_t ___high02, Comparison_1_t2130354568 * ___comparison3, const MethodInfo* method);
+#define Array_qsort_TisMoveAction_t868615717_m3186542047(__this /* static, unused */, ___array0, ___low01, ___high02, ___comparison3, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Comparison_1_t2130354568 *, const MethodInfo*))Array_qsort_TisMoveAction_t868615717_m3186542047_gshared)(__this /* static, unused */, ___array0, ___low01, ___high02, ___comparison3, method)
+// System.Void System.Array::swap<MoveAction>(!!0[],System.Int32,System.Int32)
+extern "C"  void Array_swap_TisMoveAction_t868615717_m40274400_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* p0, int32_t p1, int32_t p2, const MethodInfo* method);
+#define Array_swap_TisMoveAction_t868615717_m40274400(__this /* static, unused */, p0, p1, p2, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, const MethodInfo*))Array_swap_TisMoveAction_t868615717_m40274400_gshared)(__this /* static, unused */, p0, p1, p2, method)
 // System.Void System.Array::qsort<System.Byte,System.Byte>(K[],V[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<K>)
 extern "C"  void Array_qsort_TisByte_t3683104436_TisByte_t3683104436_m3964086929_gshared (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3397334013* ___keys0, ByteU5BU5D_t3397334013* ___items1, int32_t ___low02, int32_t ___high03, Il2CppObject* ___comparer4, const MethodInfo* method);
 #define Array_qsort_TisByte_t3683104436_TisByte_t3683104436_m3964086929(__this /* static, unused */, ___keys0, ___items1, ___low02, ___high03, ___comparer4, method) ((  void (*) (Il2CppObject * /* static, unused */, ByteU5BU5D_t3397334013*, ByteU5BU5D_t3397334013*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_qsort_TisByte_t3683104436_TisByte_t3683104436_m3964086929_gshared)(__this /* static, unused */, ___keys0, ___items1, ___low02, ___high03, ___comparer4, method)
@@ -1001,6 +1117,12 @@ extern "C"  void Array_qsort_TisVector4_t2243707581_m3660704204_gshared (Il2CppO
 // System.Void System.Array::swap<UnityEngine.Vector4>(!!0[],System.Int32,System.Int32)
 extern "C"  void Array_swap_TisVector4_t2243707581_m3504221493_gshared (Il2CppObject * __this /* static, unused */, Vector4U5BU5D_t1658499504* p0, int32_t p1, int32_t p2, const MethodInfo* method);
 #define Array_swap_TisVector4_t2243707581_m3504221493(__this /* static, unused */, p0, p1, p2, method) ((  void (*) (Il2CppObject * /* static, unused */, Vector4U5BU5D_t1658499504*, int32_t, int32_t, const MethodInfo*))Array_swap_TisVector4_t2243707581_m3504221493_gshared)(__this /* static, unused */, p0, p1, p2, method)
+// System.Void System.Array::Resize<MoveAction>(T[]&,System.Int32)
+extern "C"  void Array_Resize_TisMoveAction_t868615717_m2815602132_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688** ___array0, int32_t ___newSize1, const MethodInfo* method);
+#define Array_Resize_TisMoveAction_t868615717_m2815602132(__this /* static, unused */, ___array0, ___newSize1, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688**, int32_t, const MethodInfo*))Array_Resize_TisMoveAction_t868615717_m2815602132_gshared)(__this /* static, unused */, ___array0, ___newSize1, method)
+// System.Void System.Array::Resize<MoveAction>(!!0[]&,System.Int32,System.Int32)
+extern "C"  void Array_Resize_TisMoveAction_t868615717_m254527717_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688** p0, int32_t p1, int32_t p2, const MethodInfo* method);
+#define Array_Resize_TisMoveAction_t868615717_m254527717(__this /* static, unused */, p0, p1, p2, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688**, int32_t, int32_t, const MethodInfo*))Array_Resize_TisMoveAction_t868615717_m254527717_gshared)(__this /* static, unused */, p0, p1, p2, method)
 // System.Void System.Array::Resize<System.Byte>(T[]&,System.Int32)
 extern "C"  void Array_Resize_TisByte_t3683104436_m4242698446_gshared (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3397334013** ___array0, int32_t ___newSize1, const MethodInfo* method);
 #define Array_Resize_TisByte_t3683104436_m4242698446(__this /* static, unused */, ___array0, ___newSize1, method) ((  void (*) (Il2CppObject * /* static, unused */, ByteU5BU5D_t3397334013**, int32_t, const MethodInfo*))Array_Resize_TisByte_t3683104436_m4242698446_gshared)(__this /* static, unused */, ___array0, ___newSize1, method)
@@ -1163,6 +1285,9 @@ extern "C"  void Array_SetGenericValueImpl_TisKeyValuePair_2_t3716250094_m224114
 // System.Void System.Array::SetGenericValueImpl<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(System.Int32,T&)
 extern "C"  void Array_SetGenericValueImpl_TisKeyValuePair_2_t38854645_m1777580362_gshared (Il2CppArray * __this, int32_t ___pos0, KeyValuePair_2_t38854645 * ___value1, const MethodInfo* method);
 #define Array_SetGenericValueImpl_TisKeyValuePair_2_t38854645_m1777580362(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, KeyValuePair_2_t38854645 *, const MethodInfo*))Array_SetGenericValueImpl_TisKeyValuePair_2_t38854645_m1777580362_gshared)(__this, ___pos0, ___value1, method)
+// System.Void System.Array::SetGenericValueImpl<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(System.Int32,T&)
+extern "C"  void Array_SetGenericValueImpl_TisKeyValuePair_2_t1405311833_m1314772682_gshared (Il2CppArray * __this, int32_t ___pos0, KeyValuePair_2_t1405311833 * ___value1, const MethodInfo* method);
+#define Array_SetGenericValueImpl_TisKeyValuePair_2_t1405311833_m1314772682(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, KeyValuePair_2_t1405311833 *, const MethodInfo*))Array_SetGenericValueImpl_TisKeyValuePair_2_t1405311833_m1314772682_gshared)(__this, ___pos0, ___value1, method)
 // System.Void System.Array::SetGenericValueImpl<System.Collections.Generic.Link>(System.Int32,T&)
 extern "C"  void Array_SetGenericValueImpl_TisLink_t2723257478_m560986782_gshared (Il2CppArray * __this, int32_t ___pos0, Link_t2723257478 * ___value1, const MethodInfo* method);
 #define Array_SetGenericValueImpl_TisLink_t2723257478_m560986782(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, Link_t2723257478 *, const MethodInfo*))Array_SetGenericValueImpl_TisLink_t2723257478_m560986782_gshared)(__this, ___pos0, ___value1, method)
@@ -1229,42 +1354,18 @@ extern "C"  void Array_SetGenericValueImpl_TisParameterModifier_t1820634920_m337
 // System.Void System.Array::SetGenericValueImpl<System.Resources.ResourceReader/ResourceCacheItem>(System.Int32,T&)
 extern "C"  void Array_SetGenericValueImpl_TisResourceCacheItem_t333236149_m845528842_gshared (Il2CppArray * __this, int32_t ___pos0, ResourceCacheItem_t333236149 * ___value1, const MethodInfo* method);
 #define Array_SetGenericValueImpl_TisResourceCacheItem_t333236149_m845528842(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, ResourceCacheItem_t333236149 *, const MethodInfo*))Array_SetGenericValueImpl_TisResourceCacheItem_t333236149_m845528842_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.Resources.ResourceReader/ResourceInfo>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisResourceInfo_t3933049236_m628959495_gshared (Il2CppArray * __this, int32_t ___pos0, ResourceInfo_t3933049236 * ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisResourceInfo_t3933049236_m628959495(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, ResourceInfo_t3933049236 *, const MethodInfo*))Array_SetGenericValueImpl_TisResourceInfo_t3933049236_m628959495_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.Runtime.Serialization.Formatters.Binary.TypeTag>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisTypeTag_t141209596_m4031302382_gshared (Il2CppArray * __this, int32_t ___pos0, uint8_t* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisTypeTag_t141209596_m4031302382(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, uint8_t*, const MethodInfo*))Array_SetGenericValueImpl_TisTypeTag_t141209596_m4031302382_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.SByte>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisSByte_t454417549_m3175233117_gshared (Il2CppArray * __this, int32_t ___pos0, int8_t* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisSByte_t454417549_m3175233117(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, int8_t*, const MethodInfo*))Array_SetGenericValueImpl_TisSByte_t454417549_m3175233117_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.Security.Cryptography.X509Certificates.X509ChainStatus>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisX509ChainStatus_t4278378721_m3961559317_gshared (Il2CppArray * __this, int32_t ___pos0, X509ChainStatus_t4278378721 * ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisX509ChainStatus_t4278378721_m3961559317(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, X509ChainStatus_t4278378721 *, const MethodInfo*))Array_SetGenericValueImpl_TisX509ChainStatus_t4278378721_m3961559317_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.Single>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisSingle_t2076509932_m3834544502_gshared (Il2CppArray * __this, int32_t ___pos0, float* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisSingle_t2076509932_m3834544502(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, float*, const MethodInfo*))Array_SetGenericValueImpl_TisSingle_t2076509932_m3834544502_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.TermInfoStrings>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisTermInfoStrings_t1425267120_m2110165586_gshared (Il2CppArray * __this, int32_t ___pos0, int32_t* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisTermInfoStrings_t1425267120_m2110165586(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, int32_t*, const MethodInfo*))Array_SetGenericValueImpl_TisTermInfoStrings_t1425267120_m2110165586_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.Text.RegularExpressions.Mark>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisMark_t2724874473_m1290670523_gshared (Il2CppArray * __this, int32_t ___pos0, Mark_t2724874473 * ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisMark_t2724874473_m1290670523(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, Mark_t2724874473 *, const MethodInfo*))Array_SetGenericValueImpl_TisMark_t2724874473_m1290670523_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.TimeSpan>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisTimeSpan_t3430258949_m2447199901_gshared (Il2CppArray * __this, int32_t ___pos0, TimeSpan_t3430258949 * ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisTimeSpan_t3430258949_m2447199901(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, TimeSpan_t3430258949 *, const MethodInfo*))Array_SetGenericValueImpl_TisTimeSpan_t3430258949_m2447199901_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.UInt16>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisUInt16_t986882611_m4034640865_gshared (Il2CppArray * __this, int32_t ___pos0, uint16_t* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisUInt16_t986882611_m4034640865(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, uint16_t*, const MethodInfo*))Array_SetGenericValueImpl_TisUInt16_t986882611_m4034640865_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.UInt32>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisUInt32_t2149682021_m3852980851_gshared (Il2CppArray * __this, int32_t ___pos0, uint32_t* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisUInt32_t2149682021_m3852980851(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, uint32_t*, const MethodInfo*))Array_SetGenericValueImpl_TisUInt32_t2149682021_m3852980851_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.UInt64>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisUInt64_t2909196914_m1355260112_gshared (Il2CppArray * __this, int32_t ___pos0, uint64_t* ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisUInt64_t2909196914_m1355260112(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, uint64_t*, const MethodInfo*))Array_SetGenericValueImpl_TisUInt64_t2909196914_m1355260112_gshared)(__this, ___pos0, ___value1, method)
-// System.Void System.Array::SetGenericValueImpl<System.Uri/UriScheme>(System.Int32,T&)
-extern "C"  void Array_SetGenericValueImpl_TisUriScheme_t1876590943_m491047358_gshared (Il2CppArray * __this, int32_t ___pos0, UriScheme_t1876590943 * ___value1, const MethodInfo* method);
-#define Array_SetGenericValueImpl_TisUriScheme_t1876590943_m491047358(__this, ___pos0, ___value1, method) ((  void (*) (Il2CppArray *, int32_t, UriScheme_t1876590943 *, const MethodInfo*))Array_SetGenericValueImpl_TisUriScheme_t1876590943_m491047358_gshared)(__this, ___pos0, ___value1, method)
+// System.Void System.Array::Sort<MoveAction,MoveAction>(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
+extern "C"  void Array_Sort_TisMoveAction_t868615717_TisMoveAction_t868615717_m3380413909_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___keys0, MoveActionU5BU5D_t2792139688* ___items1, int32_t ___index2, int32_t ___length3, Il2CppObject* ___comparer4, const MethodInfo* method);
+#define Array_Sort_TisMoveAction_t868615717_TisMoveAction_t868615717_m3380413909(__this /* static, unused */, ___keys0, ___items1, ___index2, ___length3, ___comparer4, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_Sort_TisMoveAction_t868615717_TisMoveAction_t868615717_m3380413909_gshared)(__this /* static, unused */, ___keys0, ___items1, ___index2, ___length3, ___comparer4, method)
+// System.Array/Swapper System.Array::get_swapper<MoveAction>(!!0[])
+extern "C"  Swapper_t2637371637 * Array_get_swapper_TisMoveAction_t868615717_m1066419378_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* p0, const MethodInfo* method);
+#define Array_get_swapper_TisMoveAction_t868615717_m1066419378(__this /* static, unused */, p0, method) ((  Swapper_t2637371637 * (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, const MethodInfo*))Array_get_swapper_TisMoveAction_t868615717_m1066419378_gshared)(__this /* static, unused */, p0, method)
+// System.Void System.Array::Sort<MoveAction>(T[],System.Int32,System.Comparison`1<T>)
+extern "C"  void Array_Sort_TisMoveAction_t868615717_m1508831947_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___length1, Comparison_1_t2130354568 * ___comparison2, const MethodInfo* method);
+#define Array_Sort_TisMoveAction_t868615717_m1508831947(__this /* static, unused */, ___array0, ___length1, ___comparison2, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, Comparison_1_t2130354568 *, const MethodInfo*))Array_Sort_TisMoveAction_t868615717_m1508831947_gshared)(__this /* static, unused */, ___array0, ___length1, ___comparison2, method)
+// System.Void System.Array::Sort<MoveAction>(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+extern "C"  void Array_Sort_TisMoveAction_t868615717_m1202383371_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___index1, int32_t ___length2, Il2CppObject* ___comparer3, const MethodInfo* method);
+#define Array_Sort_TisMoveAction_t868615717_m1202383371(__this /* static, unused */, ___array0, ___index1, ___length2, ___comparer3, method) ((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_Sort_TisMoveAction_t868615717_m1202383371_gshared)(__this /* static, unused */, ___array0, ___index1, ___length2, ___comparer3, method)
 // System.Void System.Array::Sort<System.Byte,System.Byte>(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
 extern "C"  void Array_Sort_TisByte_t3683104436_TisByte_t3683104436_m2513674949_gshared (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3397334013* ___keys0, ByteU5BU5D_t3397334013* ___items1, int32_t ___index2, int32_t ___length3, Il2CppObject* ___comparer4, const MethodInfo* method);
 #define Array_Sort_TisByte_t3683104436_TisByte_t3683104436_m2513674949(__this /* static, unused */, ___keys0, ___items1, ___index2, ___length3, ___comparer4, method) ((  void (*) (Il2CppObject * /* static, unused */, ByteU5BU5D_t3397334013*, ByteU5BU5D_t3397334013*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))Array_Sort_TisByte_t3683104436_TisByte_t3683104436_m2513674949_gshared)(__this /* static, unused */, ___keys0, ___items1, ___index2, ___length3, ___comparer4, method)
@@ -1706,6 +1807,33 @@ extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t38854645_m
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Do_ICollectionCopyTo<System.Object>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
 extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m4092802079_gshared (Dictionary_2_t2281509423 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t1901028561 * ___transform2, const MethodInfo* method);
 #define Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m4092802079(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t2281509423 *, Il2CppArray *, int32_t, Transform_1_t1901028561 *, const MethodInfo*))Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m4092802079_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Collections.DictionaryEntry,System.Collections.DictionaryEntry>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisDictionaryEntry_t3048875398_TisDictionaryEntry_t3048875398_m63243965_gshared (Dictionary_2_t3647966611 * __this, DictionaryEntryU5BU5D_t2396579235* ___array0, int32_t ___index1, Transform_1_t359179156 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_CopyTo_TisDictionaryEntry_t3048875398_TisDictionaryEntry_t3048875398_m63243965(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, DictionaryEntryU5BU5D_t2396579235*, int32_t, Transform_1_t359179156 *, const MethodInfo*))Dictionary_2_Do_CopyTo_TisDictionaryEntry_t3048875398_TisDictionaryEntry_t3048875398_m63243965_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>,System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisKeyValuePair_2_t1405311833_m287918701_gshared (Dictionary_2_t3647966611 * __this, KeyValuePair_2U5BU5D_t953644836* ___array0, int32_t ___index1, Transform_1_t3010582887 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisKeyValuePair_2_t1405311833_m287918701(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, KeyValuePair_2U5BU5D_t953644836*, int32_t, Transform_1_t3010582887 *, const MethodInfo*))Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisKeyValuePair_2_t1405311833_m287918701_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>,System.Object>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisIl2CppObject_m3861426204_gshared (Dictionary_2_t3647966611 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___index1, Transform_1_t3010582887 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisIl2CppObject_m3861426204(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, ObjectU5BU5D_t3614634134*, int32_t, Transform_1_t3010582887 *, const MethodInfo*))Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisIl2CppObject_m3861426204_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Object,System.Object>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisIl2CppObject_TisIl2CppObject_m2693185533_gshared (Dictionary_2_t3647966611 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___index1, Transform_1_t4294720349 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_CopyTo_TisIl2CppObject_TisIl2CppObject_m2693185533(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, ObjectU5BU5D_t3614634134*, int32_t, Transform_1_t4294720349 *, const MethodInfo*))Dictionary_2_Do_CopyTo_TisIl2CppObject_TisIl2CppObject_m2693185533_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<UnityEngine.Vector2,System.Object>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisIl2CppObject_m1624045283_gshared (Dictionary_2_t3647966611 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___index1, Transform_1_t3848978633 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisIl2CppObject_m1624045283(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, ObjectU5BU5D_t3614634134*, int32_t, Transform_1_t3848978633 *, const MethodInfo*))Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisIl2CppObject_m1624045283_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<UnityEngine.Vector2,UnityEngine.Vector2>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisVector2_t2243707579_m2385063165_gshared (Dictionary_2_t3647966611 * __this, Vector2U5BU5D_t686124026* ___array0, int32_t ___index1, Transform_1_t3848978633 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisVector2_t2243707579_m2385063165(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, Vector2U5BU5D_t686124026*, int32_t, Transform_1_t3848978633 *, const MethodInfo*))Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisVector2_t2243707579_m2385063165_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_ICollectionCopyTo<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t1405311833_m2321823036_gshared (Dictionary_2_t3647966611 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t3010582887 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t1405311833_m2321823036(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, Il2CppArray *, int32_t, Transform_1_t3010582887 *, const MethodInfo*))Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t1405311833_m2321823036_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_ICollectionCopyTo<System.Object>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m1134278017_gshared (Dictionary_2_t3647966611 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t4294720349 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m1134278017(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, Il2CppArray *, int32_t, Transform_1_t4294720349 *, const MethodInfo*))Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m1134278017_gshared)(__this, ___array0, ___index1, ___transform2, method)
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_ICollectionCopyTo<UnityEngine.Vector2>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisVector2_t2243707579_m1776813687_gshared (Dictionary_2_t3647966611 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t3848978633 * ___transform2, const MethodInfo* method);
+#define Dictionary_2_Do_ICollectionCopyTo_TisVector2_t2243707579_m1776813687(__this, ___array0, ___index1, ___transform2, method) ((  void (*) (Dictionary_2_t3647966611 *, Il2CppArray *, int32_t, Transform_1_t3848978633 *, const MethodInfo*))Dictionary_2_Do_ICollectionCopyTo_TisVector2_t2243707579_m1776813687_gshared)(__this, ___array0, ___index1, ___transform2, method)
 // System.Void UnityEngine.Component::GetComponents<System.Object>(System.Collections.Generic.List`1<T>)
 extern "C"  void Component_GetComponents_TisIl2CppObject_m1186222966_gshared (Component_t3819376471 * __this, List_1_t2058570427 * ___results0, const MethodInfo* method);
 #define Component_GetComponents_TisIl2CppObject_m1186222966(__this, ___results0, method) ((  void (*) (Component_t3819376471 *, List_1_t2058570427 *, const MethodInfo*))Component_GetComponents_TisIl2CppObject_m1186222966_gshared)(__this, ___results0, method)
@@ -2125,6 +2253,12 @@ extern "C"  KeyValuePair_2_t38854645  Array_InternalArray__get_Item_TisKeyValueP
 // System.Void System.Array::GetGenericValueImpl<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(System.Int32,!!0&)
 extern "C"  void Array_GetGenericValueImpl_TisKeyValuePair_2_t38854645_m3697171854_gshared (Il2CppArray * __this, int32_t p0, KeyValuePair_2_t38854645 * p1, const MethodInfo* method);
 #define Array_GetGenericValueImpl_TisKeyValuePair_2_t38854645_m3697171854(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, KeyValuePair_2_t38854645 *, const MethodInfo*))Array_GetGenericValueImpl_TisKeyValuePair_2_t38854645_m3697171854_gshared)(__this, p0, p1, method)
+// T System.Array::InternalArray__get_Item<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(System.Int32)
+extern "C"  KeyValuePair_2_t1405311833  Array_InternalArray__get_Item_TisKeyValuePair_2_t1405311833_m4159500935_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method);
+#define Array_InternalArray__get_Item_TisKeyValuePair_2_t1405311833_m4159500935(__this, ___index0, method) ((  KeyValuePair_2_t1405311833  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisKeyValuePair_2_t1405311833_m4159500935_gshared)(__this, ___index0, method)
+// System.Void System.Array::GetGenericValueImpl<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(System.Int32,!!0&)
+extern "C"  void Array_GetGenericValueImpl_TisKeyValuePair_2_t1405311833_m3846548998_gshared (Il2CppArray * __this, int32_t p0, KeyValuePair_2_t1405311833 * p1, const MethodInfo* method);
+#define Array_GetGenericValueImpl_TisKeyValuePair_2_t1405311833_m3846548998(__this, p0, p1, method) ((  void (*) (Il2CppArray *, int32_t, KeyValuePair_2_t1405311833 *, const MethodInfo*))Array_GetGenericValueImpl_TisKeyValuePair_2_t1405311833_m3846548998_gshared)(__this, p0, p1, method)
 // T System.Array::InternalArray__get_Item<System.Collections.Generic.Link>(System.Int32)
 extern "C"  Link_t2723257478  Array_InternalArray__get_Item_TisLink_t2723257478_m2281261655_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method);
 #define Array_InternalArray__get_Item_TisLink_t2723257478_m2281261655(__this, ___index0, method) ((  Link_t2723257478  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisLink_t2723257478_m2281261655_gshared)(__this, ___index0, method)
@@ -2602,6 +2736,714 @@ extern "C"  GameObject_t1756533147 * ExecuteEvents_GetEventHandler_TisIl2CppObje
 // System.Boolean UnityEngine.EventSystems.ExecuteEvents::CanHandleEvent<System.Object>(UnityEngine.GameObject)
 extern "C"  bool ExecuteEvents_CanHandleEvent_TisIl2CppObject_m1201779629_gshared (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * p0, const MethodInfo* method);
 #define ExecuteEvents_CanHandleEvent_TisIl2CppObject_m1201779629(__this /* static, unused */, p0, method) ((  bool (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))ExecuteEvents_CanHandleEvent_TisIl2CppObject_m1201779629_gshared)(__this /* static, unused */, p0, method)
+// System.Void System.Array::InternalArray__set_Item<System.Resources.ResourceReader/ResourceInfo>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisResourceInfo_t3933049236_m216042579_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisResourceInfo_t3933049236_m216042579_gshared (Il2CppArray * __this, int32_t ___index0, ResourceInfo_t3933049236  ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisResourceInfo_t3933049236_m216042579_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		ResourceInfo_t3933049236  L_6 = ___item1;
+		ResourceInfo_t3933049236  L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (ResourceInfo_t3933049236 *)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.Runtime.Serialization.Formatters.Binary.TypeTag>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisTypeTag_t141209596_m3822995350_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisTypeTag_t141209596_m3822995350_gshared (Il2CppArray * __this, int32_t ___index0, uint8_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisTypeTag_t141209596_m3822995350_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		uint8_t L_6 = ___item1;
+		uint8_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (uint8_t*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.SByte>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisSByte_t454417549_m1650395157_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisSByte_t454417549_m1650395157_gshared (Il2CppArray * __this, int32_t ___index0, int8_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisSByte_t454417549_m1650395157_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		int8_t L_6 = ___item1;
+		int8_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (int8_t*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.Security.Cryptography.X509Certificates.X509ChainStatus>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisX509ChainStatus_t4278378721_m1993048849_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisX509ChainStatus_t4278378721_m1993048849_gshared (Il2CppArray * __this, int32_t ___index0, X509ChainStatus_t4278378721  ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisX509ChainStatus_t4278378721_m1993048849_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		X509ChainStatus_t4278378721  L_6 = ___item1;
+		X509ChainStatus_t4278378721  L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (X509ChainStatus_t4278378721 *)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.Single>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisSingle_t2076509932_m4273663642_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisSingle_t2076509932_m4273663642_gshared (Il2CppArray * __this, int32_t ___index0, float ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisSingle_t2076509932_m4273663642_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		float L_6 = ___item1;
+		float L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (float*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.TermInfoStrings>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisTermInfoStrings_t1425267120_m1412218982_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisTermInfoStrings_t1425267120_m1412218982_gshared (Il2CppArray * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisTermInfoStrings_t1425267120_m1412218982_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		int32_t L_6 = ___item1;
+		int32_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (int32_t*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.Text.RegularExpressions.Mark>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisMark_t2724874473_m2258664863_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisMark_t2724874473_m2258664863_gshared (Il2CppArray * __this, int32_t ___index0, Mark_t2724874473  ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisMark_t2724874473_m2258664863_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		Mark_t2724874473  L_6 = ___item1;
+		Mark_t2724874473  L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (Mark_t2724874473 *)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.TimeSpan>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisTimeSpan_t3430258949_m285095777_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisTimeSpan_t3430258949_m285095777_gshared (Il2CppArray * __this, int32_t ___index0, TimeSpan_t3430258949  ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisTimeSpan_t3430258949_m285095777_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		TimeSpan_t3430258949  L_6 = ___item1;
+		TimeSpan_t3430258949  L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (TimeSpan_t3430258949 *)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.UInt16>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisUInt16_t986882611_m59367493_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisUInt16_t986882611_m59367493_gshared (Il2CppArray * __this, int32_t ___index0, uint16_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisUInt16_t986882611_m59367493_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		uint16_t L_6 = ___item1;
+		uint16_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (uint16_t*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.UInt32>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisUInt32_t2149682021_m1781075439_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisUInt32_t2149682021_m1781075439_gshared (Il2CppArray * __this, int32_t ___index0, uint32_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisUInt32_t2149682021_m1781075439_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		uint32_t L_6 = ___item1;
+		uint32_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (uint32_t*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.UInt64>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisUInt64_t2909196914_m1156945812_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisUInt64_t2909196914_m1156945812_gshared (Il2CppArray * __this, int32_t ___index0, uint64_t ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisUInt64_t2909196914_m1156945812_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		uint64_t L_6 = ___item1;
+		uint64_t L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (uint64_t*)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::InternalArray__set_Item<System.Uri/UriScheme>(System.Int32,T)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__set_Item_TisUriScheme_t1876590943_m1211880002_MetadataUsageId;
+extern "C"  void Array_InternalArray__set_Item_TisUriScheme_t1876590943_m1211880002_gshared (Il2CppArray * __this, int32_t ___index0, UriScheme_t1876590943  ___item1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__set_Item_TisUriScheme_t1876590943_m1211880002_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ObjectU5BU5D_t3614634134* V_0 = NULL;
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		V_0 = (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)IsInst(__this, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var));
+		ObjectU5BU5D_t3614634134* L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_4 = V_0;
+		int32_t L_5 = ___index0;
+		UriScheme_t1876590943  L_6 = ___item1;
+		UriScheme_t1876590943  L_7 = L_6;
+		Il2CppObject * L_8 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), &L_7);
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		ArrayElementTypeCheck (L_4, L_8);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)L_8);
+		return;
+	}
+
+IL_002e:
+	{
+		int32_t L_9 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (UriScheme_t1876590943 *)(&___item1));
+		return;
+	}
+}
 // System.Void System.Array::InternalArray__set_Item<System.Xml.XmlNamespaceManager/NsDecl>(System.Int32,T)
 extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
 extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
@@ -4015,6 +4857,371 @@ IL_002e:
 		int32_t L_9 = ___index0;
 		NullCheck((Il2CppArray *)__this);
 		ArraySetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_9, (Vector4_t2243707581 *)(&___item1));
+		return;
+	}
+}
+// System.Void System.Array::qsort<MoveAction,MoveAction>(K[],V[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<K>)
+extern "C"  void Array_qsort_TisMoveAction_t868615717_TisMoveAction_t868615717_m2812866489_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___keys0, MoveActionU5BU5D_t2792139688* ___items1, int32_t ___low02, int32_t ___high03, Il2CppObject* ___comparer4, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		int32_t L_0 = ___low02;
+		int32_t L_1 = ___high03;
+		if ((((int32_t)L_0) < ((int32_t)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0008:
+	{
+		int32_t L_2 = ___low02;
+		V_0 = (int32_t)L_2;
+		int32_t L_3 = ___high03;
+		V_1 = (int32_t)L_3;
+		int32_t L_4 = V_0;
+		int32_t L_5 = V_1;
+		int32_t L_6 = V_0;
+		V_2 = (int32_t)((int32_t)((int32_t)L_4+(int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_5-(int32_t)L_6))/(int32_t)2))));
+		MoveActionU5BU5D_t2792139688* L_7 = ___keys0;
+		int32_t L_8 = V_2;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		int32_t L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		V_3 = (int32_t)L_10;
+	}
+
+IL_001c:
+	{
+		goto IL_0025;
+	}
+
+IL_0021:
+	{
+		int32_t L_11 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_11+(int32_t)1));
+	}
+
+IL_0025:
+	{
+		int32_t L_12 = V_0;
+		int32_t L_13 = ___high03;
+		if ((((int32_t)L_12) >= ((int32_t)L_13)))
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_14 = ___keys0;
+		int32_t L_15 = V_0;
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
+		int32_t L_16 = L_15;
+		int32_t L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
+		int32_t L_18 = V_3;
+		Il2CppObject* L_19 = ___comparer4;
+		int32_t L_20 = ((  int32_t (*) (Il2CppObject * /* static, unused */, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (int32_t)L_17, (int32_t)L_18, (Il2CppObject*)L_19, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		if ((((int32_t)L_20) < ((int32_t)0)))
+		{
+			goto IL_0021;
+		}
+	}
+
+IL_0041:
+	{
+		goto IL_004a;
+	}
+
+IL_0046:
+	{
+		int32_t L_21 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_21-(int32_t)1));
+	}
+
+IL_004a:
+	{
+		int32_t L_22 = V_1;
+		int32_t L_23 = ___low02;
+		if ((((int32_t)L_22) <= ((int32_t)L_23)))
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		int32_t L_24 = V_3;
+		MoveActionU5BU5D_t2792139688* L_25 = ___keys0;
+		int32_t L_26 = V_1;
+		NullCheck(L_25);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, L_26);
+		int32_t L_27 = L_26;
+		int32_t L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
+		Il2CppObject* L_29 = ___comparer4;
+		int32_t L_30 = ((  int32_t (*) (Il2CppObject * /* static, unused */, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (int32_t)L_24, (int32_t)L_28, (Il2CppObject*)L_29, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		if ((((int32_t)L_30) < ((int32_t)0)))
+		{
+			goto IL_0046;
+		}
+	}
+
+IL_0066:
+	{
+		int32_t L_31 = V_0;
+		int32_t L_32 = V_1;
+		if ((((int32_t)L_31) > ((int32_t)L_32)))
+		{
+			goto IL_0083;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_33 = ___keys0;
+		MoveActionU5BU5D_t2792139688* L_34 = ___items1;
+		int32_t L_35 = V_0;
+		int32_t L_36 = V_1;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_33, (MoveActionU5BU5D_t2792139688*)L_34, (int32_t)L_35, (int32_t)L_36, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+		int32_t L_37 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_37+(int32_t)1));
+		int32_t L_38 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_38-(int32_t)1));
+		goto IL_0088;
+	}
+
+IL_0083:
+	{
+		goto IL_008d;
+	}
+
+IL_0088:
+	{
+		goto IL_001c;
+	}
+
+IL_008d:
+	{
+		int32_t L_39 = ___low02;
+		int32_t L_40 = V_1;
+		if ((((int32_t)L_39) >= ((int32_t)L_40)))
+		{
+			goto IL_009f;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_41 = ___keys0;
+		MoveActionU5BU5D_t2792139688* L_42 = ___items1;
+		int32_t L_43 = ___low02;
+		int32_t L_44 = V_1;
+		Il2CppObject* L_45 = ___comparer4;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_41, (MoveActionU5BU5D_t2792139688*)L_42, (int32_t)L_43, (int32_t)L_44, (Il2CppObject*)L_45, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2));
+	}
+
+IL_009f:
+	{
+		int32_t L_46 = V_0;
+		int32_t L_47 = ___high03;
+		if ((((int32_t)L_46) >= ((int32_t)L_47)))
+		{
+			goto IL_00b1;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_48 = ___keys0;
+		MoveActionU5BU5D_t2792139688* L_49 = ___items1;
+		int32_t L_50 = V_0;
+		int32_t L_51 = ___high03;
+		Il2CppObject* L_52 = ___comparer4;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_48, (MoveActionU5BU5D_t2792139688*)L_49, (int32_t)L_50, (int32_t)L_51, (Il2CppObject*)L_52, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2));
+	}
+
+IL_00b1:
+	{
+		return;
+	}
+}
+// System.Void System.Array::qsort<MoveAction>(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+extern "C"  void Array_qsort_TisMoveAction_t868615717_m3186542047_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___low01, int32_t ___high02, Comparison_1_t2130354568 * ___comparison3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		int32_t L_0 = ___low01;
+		int32_t L_1 = ___high02;
+		if ((((int32_t)L_0) < ((int32_t)L_1)))
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0008:
+	{
+		int32_t L_2 = ___low01;
+		V_0 = (int32_t)L_2;
+		int32_t L_3 = ___high02;
+		V_1 = (int32_t)L_3;
+		int32_t L_4 = V_0;
+		int32_t L_5 = V_1;
+		int32_t L_6 = V_0;
+		V_2 = (int32_t)((int32_t)((int32_t)L_4+(int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_5-(int32_t)L_6))/(int32_t)2))));
+		MoveActionU5BU5D_t2792139688* L_7 = ___array0;
+		int32_t L_8 = V_2;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		int32_t L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		V_3 = (int32_t)L_10;
+	}
+
+IL_001c:
+	{
+		goto IL_0025;
+	}
+
+IL_0021:
+	{
+		int32_t L_11 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_11+(int32_t)1));
+	}
+
+IL_0025:
+	{
+		int32_t L_12 = V_0;
+		int32_t L_13 = ___high02;
+		if ((((int32_t)L_12) >= ((int32_t)L_13)))
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		Comparison_1_t2130354568 * L_14 = ___comparison3;
+		MoveActionU5BU5D_t2792139688* L_15 = ___array0;
+		int32_t L_16 = V_0;
+		NullCheck(L_15);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
+		int32_t L_17 = L_16;
+		int32_t L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		int32_t L_19 = V_3;
+		NullCheck((Comparison_1_t2130354568 *)L_14);
+		int32_t L_20 = ((  int32_t (*) (Comparison_1_t2130354568 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Comparison_1_t2130354568 *)L_14, (int32_t)L_18, (int32_t)L_19, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		if ((((int32_t)L_20) < ((int32_t)0)))
+		{
+			goto IL_0021;
+		}
+	}
+
+IL_0040:
+	{
+		goto IL_0049;
+	}
+
+IL_0045:
+	{
+		int32_t L_21 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_21-(int32_t)1));
+	}
+
+IL_0049:
+	{
+		int32_t L_22 = V_1;
+		int32_t L_23 = ___low01;
+		if ((((int32_t)L_22) <= ((int32_t)L_23)))
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		Comparison_1_t2130354568 * L_24 = ___comparison3;
+		int32_t L_25 = V_3;
+		MoveActionU5BU5D_t2792139688* L_26 = ___array0;
+		int32_t L_27 = V_1;
+		NullCheck(L_26);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, L_27);
+		int32_t L_28 = L_27;
+		int32_t L_29 = (L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_28));
+		NullCheck((Comparison_1_t2130354568 *)L_24);
+		int32_t L_30 = ((  int32_t (*) (Comparison_1_t2130354568 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Comparison_1_t2130354568 *)L_24, (int32_t)L_25, (int32_t)L_29, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		if ((((int32_t)L_30) < ((int32_t)0)))
+		{
+			goto IL_0045;
+		}
+	}
+
+IL_0064:
+	{
+		int32_t L_31 = V_0;
+		int32_t L_32 = V_1;
+		if ((((int32_t)L_31) > ((int32_t)L_32)))
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_33 = ___array0;
+		int32_t L_34 = V_0;
+		int32_t L_35 = V_1;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_33, (int32_t)L_34, (int32_t)L_35, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+		int32_t L_36 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_36+(int32_t)1));
+		int32_t L_37 = V_1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_37-(int32_t)1));
+		goto IL_0085;
+	}
+
+IL_0080:
+	{
+		goto IL_008a;
+	}
+
+IL_0085:
+	{
+		goto IL_001c;
+	}
+
+IL_008a:
+	{
+		int32_t L_38 = ___low01;
+		int32_t L_39 = V_1;
+		if ((((int32_t)L_38) >= ((int32_t)L_39)))
+		{
+			goto IL_009a;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_40 = ___array0;
+		int32_t L_41 = ___low01;
+		int32_t L_42 = V_1;
+		Comparison_1_t2130354568 * L_43 = ___comparison3;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Comparison_1_t2130354568 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_40, (int32_t)L_41, (int32_t)L_42, (Comparison_1_t2130354568 *)L_43, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2));
+	}
+
+IL_009a:
+	{
+		int32_t L_44 = V_0;
+		int32_t L_45 = ___high02;
+		if ((((int32_t)L_44) >= ((int32_t)L_45)))
+		{
+			goto IL_00aa;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_46 = ___array0;
+		int32_t L_47 = V_0;
+		int32_t L_48 = ___high02;
+		Comparison_1_t2130354568 * L_49 = ___comparison3;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Comparison_1_t2130354568 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_46, (int32_t)L_47, (int32_t)L_48, (Comparison_1_t2130354568 *)L_49, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2));
+	}
+
+IL_00aa:
+	{
 		return;
 	}
 }
@@ -10432,6 +11639,116 @@ IL_00aa:
 		return;
 	}
 }
+// System.Void System.Array::Resize<MoveAction>(T[]&,System.Int32)
+extern "C"  void Array_Resize_TisMoveAction_t868615717_m2815602132_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688** ___array0, int32_t ___newSize1, const MethodInfo* method)
+{
+	MoveActionU5BU5D_t2792139688** G_B2_0 = 0;
+	MoveActionU5BU5D_t2792139688** G_B1_0 = 0;
+	int32_t G_B3_0 = 0;
+	MoveActionU5BU5D_t2792139688** G_B3_1 = 0;
+	{
+		MoveActionU5BU5D_t2792139688** L_0 = ___array0;
+		MoveActionU5BU5D_t2792139688** L_1 = ___array0;
+		G_B1_0 = L_0;
+		if ((*((MoveActionU5BU5D_t2792139688**)L_1)))
+		{
+			G_B2_0 = L_0;
+			goto IL_000e;
+		}
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_0012;
+	}
+
+IL_000e:
+	{
+		MoveActionU5BU5D_t2792139688** L_2 = ___array0;
+		NullCheck((*((MoveActionU5BU5D_t2792139688**)L_2)));
+		G_B3_0 = (((int32_t)((int32_t)(((Il2CppArray *)(*((MoveActionU5BU5D_t2792139688**)L_2)))->max_length))));
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0012:
+	{
+		int32_t L_3 = ___newSize1;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688**, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688**)G_B3_1, (int32_t)G_B3_0, (int32_t)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		return;
+	}
+}
+// System.Void System.Array::Resize<MoveAction>(T[]&,System.Int32,System.Int32)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern const uint32_t Array_Resize_TisMoveAction_t868615717_m254527717_MetadataUsageId;
+extern "C"  void Array_Resize_TisMoveAction_t868615717_m254527717_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688** ___array0, int32_t ___length1, int32_t ___newSize2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_Resize_TisMoveAction_t868615717_m254527717_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	MoveActionU5BU5D_t2792139688* V_0 = NULL;
+	{
+		int32_t L_0 = ___newSize2;
+		if ((((int32_t)L_0) >= ((int32_t)0)))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_1 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m15523695(L_1, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_000d:
+	{
+		MoveActionU5BU5D_t2792139688** L_2 = ___array0;
+		if ((*((MoveActionU5BU5D_t2792139688**)L_2)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688** L_3 = ___array0;
+		int32_t L_4 = ___newSize2;
+		*((Il2CppObject **)(L_3)) = (Il2CppObject *)((MoveActionU5BU5D_t2792139688*)SZArrayNew(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (uint32_t)L_4));
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_3), (Il2CppObject *)((MoveActionU5BU5D_t2792139688*)SZArrayNew(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (uint32_t)L_4)));
+		return;
+	}
+
+IL_001d:
+	{
+		MoveActionU5BU5D_t2792139688** L_5 = ___array0;
+		NullCheck((*((MoveActionU5BU5D_t2792139688**)L_5)));
+		int32_t L_6 = ___newSize2;
+		if ((!(((uint32_t)(((int32_t)((int32_t)(((Il2CppArray *)(*((MoveActionU5BU5D_t2792139688**)L_5)))->max_length))))) == ((uint32_t)L_6))))
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0028:
+	{
+		int32_t L_7 = ___newSize2;
+		V_0 = (MoveActionU5BU5D_t2792139688*)((MoveActionU5BU5D_t2792139688*)SZArrayNew(IL2CPP_RGCTX_DATA(method->rgctx_data, 0), (uint32_t)L_7));
+		MoveActionU5BU5D_t2792139688** L_8 = ___array0;
+		MoveActionU5BU5D_t2792139688* L_9 = V_0;
+		int32_t L_10 = ___newSize2;
+		int32_t L_11 = ___length1;
+		int32_t L_12 = Math_Min_m4290821911(NULL /*static, unused*/, (int32_t)L_10, (int32_t)L_11, /*hidden argument*/NULL);
+		Array_Copy_m2363740072(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)(*((MoveActionU5BU5D_t2792139688**)L_8)), (Il2CppArray *)(Il2CppArray *)L_9, (int32_t)L_12, /*hidden argument*/NULL);
+		MoveActionU5BU5D_t2792139688** L_13 = ___array0;
+		MoveActionU5BU5D_t2792139688* L_14 = V_0;
+		*((Il2CppObject **)(L_13)) = (Il2CppObject *)L_14;
+		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_13), (Il2CppObject *)L_14);
+		return;
+	}
+}
 // System.Void System.Array::Resize<System.Byte>(T[]&,System.Int32)
 extern "C"  void Array_Resize_TisByte_t3683104436_m4242698446_gshared (Il2CppObject * __this /* static, unused */, ByteU5BU5D_t3397334013** ___array0, int32_t ___newSize1, const MethodInfo* method)
 {
@@ -12299,6 +13616,396 @@ IL_0028:
 		Vector4U5BU5D_t1658499504* L_14 = V_0;
 		*((Il2CppObject **)(L_13)) = (Il2CppObject *)L_14;
 		Il2CppCodeGenWriteBarrier((Il2CppObject **)(L_13), (Il2CppObject *)L_14);
+		return;
+	}
+}
+// System.Void System.Array::Sort<MoveAction,MoveAction>(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppClass* DoubleU5BU5D_t1889952540_il2cpp_TypeInfo_var;
+extern Il2CppClass* UInt32U5BU5D_t59386216_il2cpp_TypeInfo_var;
+extern Il2CppClass* Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var;
+extern Il2CppClass* CharU5BU5D_t1328083999_il2cpp_TypeInfo_var;
+extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
+extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1857677462;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern Il2CppCodeGenString* _stringLiteral3438791774;
+extern Il2CppCodeGenString* _stringLiteral1288497662;
+extern const uint32_t Array_Sort_TisMoveAction_t868615717_TisMoveAction_t868615717_m3380413909_MetadataUsageId;
+extern "C"  void Array_Sort_TisMoveAction_t868615717_TisMoveAction_t868615717_m3380413909_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___keys0, MoveActionU5BU5D_t2792139688* ___items1, int32_t ___index2, int32_t ___length3, Il2CppObject* ___comparer4, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_Sort_TisMoveAction_t868615717_TisMoveAction_t868615717_m3380413909_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Swapper_t2637371637 * V_0 = NULL;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	Exception_t1927440687 * V_3 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		MoveActionU5BU5D_t2792139688* L_0 = ___keys0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, (String_t*)_stringLiteral1857677462, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		int32_t L_2 = ___index2;
+		if ((((int32_t)L_2) >= ((int32_t)0)))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_3 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_3, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0023:
+	{
+		int32_t L_4 = ___length3;
+		if ((((int32_t)L_4) >= ((int32_t)0)))
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_5 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_5, (String_t*)_stringLiteral3438791774, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+	}
+
+IL_0035:
+	{
+		MoveActionU5BU5D_t2792139688* L_6 = ___keys0;
+		NullCheck(L_6);
+		int32_t L_7 = ___index2;
+		int32_t L_8 = ___length3;
+		if ((((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_6)->max_length))))-(int32_t)L_7))) < ((int32_t)L_8)))
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_9 = ___items1;
+		if (!L_9)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		int32_t L_10 = ___index2;
+		MoveActionU5BU5D_t2792139688* L_11 = ___items1;
+		NullCheck(L_11);
+		int32_t L_12 = ___length3;
+		if ((((int32_t)L_10) <= ((int32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_11)->max_length))))-(int32_t)L_12)))))
+		{
+			goto IL_0057;
+		}
+	}
+
+IL_0051:
+	{
+		ArgumentException_t3259014390 * L_13 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m2105824819(L_13, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13);
+	}
+
+IL_0057:
+	{
+		int32_t L_14 = ___length3;
+		if ((((int32_t)L_14) > ((int32_t)1)))
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		return;
+	}
+
+IL_005f:
+	{
+		Il2CppObject* L_15 = ___comparer4;
+		if (L_15)
+		{
+			goto IL_00e2;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_16 = ___items1;
+		if (L_16)
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		V_0 = (Swapper_t2637371637 *)NULL;
+		goto IL_007a;
+	}
+
+IL_0073:
+	{
+		MoveActionU5BU5D_t2792139688* L_17 = ___items1;
+		Swapper_t2637371637 * L_18 = ((  Swapper_t2637371637 * (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_17, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		V_0 = (Swapper_t2637371637 *)L_18;
+	}
+
+IL_007a:
+	{
+		MoveActionU5BU5D_t2792139688* L_19 = ___keys0;
+		if (!((DoubleU5BU5D_t1889952540*)IsInst(L_19, DoubleU5BU5D_t1889952540_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_20 = ___keys0;
+		int32_t L_21 = ___index2;
+		int32_t L_22 = ___length3;
+		Swapper_t2637371637 * L_23 = V_0;
+		Array_combsort_m2084527518(NULL /*static, unused*/, (DoubleU5BU5D_t1889952540*)((DoubleU5BU5D_t1889952540*)IsInst(L_20, DoubleU5BU5D_t1889952540_il2cpp_TypeInfo_var)), (int32_t)L_21, (int32_t)L_22, (Swapper_t2637371637 *)L_23, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0099:
+	{
+		MoveActionU5BU5D_t2792139688* L_24 = ___keys0;
+		if (((UInt32U5BU5D_t59386216*)IsInst(L_24, UInt32U5BU5D_t59386216_il2cpp_TypeInfo_var)))
+		{
+			goto IL_00c3;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_25 = ___keys0;
+		if (!((Int32U5BU5D_t3030399641*)IsInst(L_25, Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var)))
+		{
+			goto IL_00c3;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_26 = ___keys0;
+		int32_t L_27 = ___index2;
+		int32_t L_28 = ___length3;
+		Swapper_t2637371637 * L_29 = V_0;
+		Array_combsort_m2976623007(NULL /*static, unused*/, (Int32U5BU5D_t3030399641*)((Int32U5BU5D_t3030399641*)IsInst(L_26, Int32U5BU5D_t3030399641_il2cpp_TypeInfo_var)), (int32_t)L_27, (int32_t)L_28, (Swapper_t2637371637 *)L_29, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_00c3:
+	{
+		MoveActionU5BU5D_t2792139688* L_30 = ___keys0;
+		if (!((CharU5BU5D_t1328083999*)IsInst(L_30, CharU5BU5D_t1328083999_il2cpp_TypeInfo_var)))
+		{
+			goto IL_00e2;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_31 = ___keys0;
+		int32_t L_32 = ___index2;
+		int32_t L_33 = ___length3;
+		Swapper_t2637371637 * L_34 = V_0;
+		Array_combsort_m2486643569(NULL /*static, unused*/, (CharU5BU5D_t1328083999*)((CharU5BU5D_t1328083999*)IsInst(L_31, CharU5BU5D_t1328083999_il2cpp_TypeInfo_var)), (int32_t)L_32, (int32_t)L_33, (Swapper_t2637371637 *)L_34, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_00e2:
+	try
+	{ // begin try (depth: 1)
+		int32_t L_35 = ___index2;
+		V_1 = (int32_t)L_35;
+		int32_t L_36 = ___index2;
+		int32_t L_37 = ___length3;
+		V_2 = (int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_36+(int32_t)L_37))-(int32_t)1));
+		MoveActionU5BU5D_t2792139688* L_38 = ___keys0;
+		MoveActionU5BU5D_t2792139688* L_39 = ___items1;
+		int32_t L_40 = V_1;
+		int32_t L_41 = V_2;
+		Il2CppObject* L_42 = ___comparer4;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_38, (MoveActionU5BU5D_t2792139688*)L_39, (int32_t)L_40, (int32_t)L_41, (Il2CppObject*)L_42, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 2));
+		goto IL_0111;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t1927440687_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_00fa;
+		throw e;
+	}
+
+CATCH_00fa:
+	{ // begin catch(System.Exception)
+		{
+			V_3 = (Exception_t1927440687 *)((Exception_t1927440687 *)__exception_local);
+			String_t* L_43 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral1288497662, /*hidden argument*/NULL);
+			Exception_t1927440687 * L_44 = V_3;
+			InvalidOperationException_t721527559 * L_45 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
+			InvalidOperationException__ctor_m725121084(L_45, (String_t*)L_43, (Exception_t1927440687 *)L_44, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_45);
+		}
+
+IL_010c:
+		{
+			goto IL_0111;
+		}
+	} // end catch (depth: 1)
+
+IL_0111:
+	{
+		return;
+	}
+}
+// System.Void System.Array::Sort<MoveAction>(T[],System.Int32,System.Comparison`1<T>)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
+extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2610704693;
+extern Il2CppCodeGenString* _stringLiteral3192966975;
+extern const uint32_t Array_Sort_TisMoveAction_t868615717_m1508831947_MetadataUsageId;
+extern "C"  void Array_Sort_TisMoveAction_t868615717_m1508831947_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___length1, Comparison_1_t2130354568 * ___comparison2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_Sort_TisMoveAction_t868615717_m1508831947_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	Exception_t1927440687 * V_2 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		Comparison_1_t2130354568 * L_0 = ___comparison2;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, (String_t*)_stringLiteral2610704693, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		int32_t L_2 = ___length1;
+		if ((((int32_t)L_2) <= ((int32_t)1)))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_3 = ___array0;
+		NullCheck(L_3);
+		if ((((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length))))) > ((int32_t)1)))
+		{
+			goto IL_0022;
+		}
+	}
+
+IL_0021:
+	{
+		return;
+	}
+
+IL_0022:
+	try
+	{ // begin try (depth: 1)
+		V_0 = (int32_t)0;
+		int32_t L_4 = ___length1;
+		V_1 = (int32_t)((int32_t)((int32_t)L_4-(int32_t)1));
+		MoveActionU5BU5D_t2792139688* L_5 = ___array0;
+		int32_t L_6 = V_0;
+		int32_t L_7 = V_1;
+		Comparison_1_t2130354568 * L_8 = ___comparison2;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Comparison_1_t2130354568 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_5, (int32_t)L_6, (int32_t)L_7, (Comparison_1_t2130354568 *)L_8, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		goto IL_004d;
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t1927440687_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_0036;
+		throw e;
+	}
+
+CATCH_0036:
+	{ // begin catch(System.Exception)
+		{
+			V_2 = (Exception_t1927440687 *)((Exception_t1927440687 *)__exception_local);
+			String_t* L_9 = Locale_GetText_m1954433032(NULL /*static, unused*/, (String_t*)_stringLiteral3192966975, /*hidden argument*/NULL);
+			Exception_t1927440687 * L_10 = V_2;
+			InvalidOperationException_t721527559 * L_11 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
+			InvalidOperationException__ctor_m725121084(L_11, (String_t*)L_9, (Exception_t1927440687 *)L_10, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
+		}
+
+IL_0048:
+		{
+			goto IL_004d;
+		}
+	} // end catch (depth: 1)
+
+IL_004d:
+	{
+		return;
+	}
+}
+// System.Void System.Array::Sort<MoveAction>(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+extern Il2CppClass* ArgumentNullException_t628810857_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1185213181;
+extern const uint32_t Array_Sort_TisMoveAction_t868615717_m1202383371_MetadataUsageId;
+extern "C"  void Array_Sort_TisMoveAction_t868615717_m1202383371_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___index1, int32_t ___length2, Il2CppObject* ___comparer3, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_Sort_TisMoveAction_t868615717_m1202383371_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_0 = ___array0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t628810857 * L_1 = (ArgumentNullException_t628810857 *)il2cpp_codegen_object_new(ArgumentNullException_t628810857_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m3380712306(L_1, (String_t*)_stringLiteral1185213181, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		MoveActionU5BU5D_t2792139688* L_2 = ___array0;
+		int32_t L_3 = ___index1;
+		int32_t L_4 = ___length2;
+		Il2CppObject* L_5 = ___comparer3;
+		((  void (*) (Il2CppObject * /* static, unused */, MoveActionU5BU5D_t2792139688*, MoveActionU5BU5D_t2792139688*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (MoveActionU5BU5D_t2792139688*)L_2, (MoveActionU5BU5D_t2792139688*)(MoveActionU5BU5D_t2792139688*)NULL, (int32_t)L_3, (int32_t)L_4, (Il2CppObject*)L_5, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
 		return;
 	}
 }
@@ -19287,6 +20994,106 @@ IL_0011:
 		int32_t L_4 = ___length2;
 		Il2CppObject* L_5 = ___comparer3;
 		((  void (*) (Il2CppObject * /* static, unused */, Vector4U5BU5D_t1658499504*, Vector4U5BU5D_t1658499504*, int32_t, int32_t, Il2CppObject*, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)(NULL /*static, unused*/, (Vector4U5BU5D_t1658499504*)L_2, (Vector4U5BU5D_t1658499504*)(Vector4U5BU5D_t1658499504*)NULL, (int32_t)L_3, (int32_t)L_4, (Il2CppObject*)L_5, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		return;
+	}
+}
+// System.Void System.Array::swap<MoveAction,MoveAction>(K[],V[],System.Int32,System.Int32)
+extern "C"  void Array_swap_TisMoveAction_t868615717_TisMoveAction_t868615717_m989610192_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___keys0, MoveActionU5BU5D_t2792139688* ___items1, int32_t ___i2, int32_t ___j3, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		MoveActionU5BU5D_t2792139688* L_0 = ___keys0;
+		int32_t L_1 = ___i2;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = L_1;
+		int32_t L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		V_0 = (int32_t)L_3;
+		MoveActionU5BU5D_t2792139688* L_4 = ___keys0;
+		int32_t L_5 = ___i2;
+		MoveActionU5BU5D_t2792139688* L_6 = ___keys0;
+		int32_t L_7 = ___j3;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		int32_t L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (int32_t)L_9);
+		MoveActionU5BU5D_t2792139688* L_10 = ___keys0;
+		int32_t L_11 = ___j3;
+		int32_t L_12 = V_0;
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (int32_t)L_12);
+		MoveActionU5BU5D_t2792139688* L_13 = ___items1;
+		if (!L_13)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		MoveActionU5BU5D_t2792139688* L_14 = ___items1;
+		int32_t L_15 = ___i2;
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
+		int32_t L_16 = L_15;
+		int32_t L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
+		V_1 = (int32_t)L_17;
+		MoveActionU5BU5D_t2792139688* L_18 = ___items1;
+		int32_t L_19 = ___i2;
+		MoveActionU5BU5D_t2792139688* L_20 = ___items1;
+		int32_t L_21 = ___j3;
+		NullCheck(L_20);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_21);
+		int32_t L_22 = L_21;
+		int32_t L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
+		NullCheck(L_18);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_19);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(L_19), (int32_t)L_23);
+		MoveActionU5BU5D_t2792139688* L_24 = ___items1;
+		int32_t L_25 = ___j3;
+		int32_t L_26 = V_1;
+		NullCheck(L_24);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_24, L_25);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(L_25), (int32_t)L_26);
+	}
+
+IL_0042:
+	{
+		return;
+	}
+}
+// System.Void System.Array::swap<MoveAction>(T[],System.Int32,System.Int32)
+extern "C"  void Array_swap_TisMoveAction_t868615717_m40274400_gshared (Il2CppObject * __this /* static, unused */, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___i1, int32_t ___j2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		MoveActionU5BU5D_t2792139688* L_0 = ___array0;
+		int32_t L_1 = ___i1;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = L_1;
+		int32_t L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		V_0 = (int32_t)L_3;
+		MoveActionU5BU5D_t2792139688* L_4 = ___array0;
+		int32_t L_5 = ___i1;
+		MoveActionU5BU5D_t2792139688* L_6 = ___array0;
+		int32_t L_7 = ___j2;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_7);
+		int32_t L_8 = L_7;
+		int32_t L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (int32_t)L_9);
+		MoveActionU5BU5D_t2792139688* L_10 = ___array0;
+		int32_t L_11 = ___j2;
+		int32_t L_12 = V_0;
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (int32_t)L_12);
 		return;
 	}
 }
@@ -26888,6 +28695,763 @@ IL_0069:
 		return;
 	}
 }
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Collections.DictionaryEntry,System.Collections.DictionaryEntry>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisDictionaryEntry_t3048875398_TisDictionaryEntry_t3048875398_m63243965_gshared (Dictionary_2_t3647966611 * __this, DictionaryEntryU5BU5D_t2396579235* ___array0, int32_t ___index1, Transform_1_t359179156 * ___transform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = (int32_t)0;
+		goto IL_005b;
+	}
+
+IL_0007:
+	{
+		LinkU5BU5D_t62501539* L_0 = (LinkU5BU5D_t62501539*)__this->get_linkSlots_5();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = (int32_t)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->get_HashCode_0();
+		if (!((int32_t)((int32_t)L_2&(int32_t)((int32_t)-2147483648LL))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		DictionaryEntryU5BU5D_t2396579235* L_3 = ___array0;
+		int32_t L_4 = ___index1;
+		int32_t L_5 = (int32_t)L_4;
+		___index1 = (int32_t)((int32_t)((int32_t)L_5+(int32_t)1));
+		Transform_1_t359179156 * L_6 = ___transform2;
+		Vector2U5BU5D_t686124026* L_7 = (Vector2U5BU5D_t686124026*)__this->get_keySlots_6();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		Vector2_t2243707579  L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		ObjectU5BU5D_t3614634134* L_11 = (ObjectU5BU5D_t3614634134*)__this->get_valueSlots_7();
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck((Transform_1_t359179156 *)L_6);
+		DictionaryEntry_t3048875398  L_15 = ((  DictionaryEntry_t3048875398  (*) (Transform_1_t359179156 *, Vector2_t2243707579 , Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Transform_1_t359179156 *)L_6, (Vector2_t2243707579 )L_10, (Il2CppObject *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		DictionaryEntry_t3048875398  L_16 = L_15;
+		Il2CppObject * L_17 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 1), &L_16);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (DictionaryEntry_t3048875398 )((*(DictionaryEntry_t3048875398 *)((DictionaryEntry_t3048875398 *)UnBox (L_17, IL2CPP_RGCTX_DATA(method->rgctx_data, 2))))));
+	}
+
+IL_0057:
+	{
+		int32_t L_18 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_18+(int32_t)1));
+	}
+
+IL_005b:
+	{
+		int32_t L_19 = V_0;
+		int32_t L_20 = (int32_t)__this->get_touchedSlots_8();
+		if ((((int32_t)L_19) < ((int32_t)L_20)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>,System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisKeyValuePair_2_t1405311833_m287918701_gshared (Dictionary_2_t3647966611 * __this, KeyValuePair_2U5BU5D_t953644836* ___array0, int32_t ___index1, Transform_1_t3010582887 * ___transform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = (int32_t)0;
+		goto IL_005b;
+	}
+
+IL_0007:
+	{
+		LinkU5BU5D_t62501539* L_0 = (LinkU5BU5D_t62501539*)__this->get_linkSlots_5();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = (int32_t)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->get_HashCode_0();
+		if (!((int32_t)((int32_t)L_2&(int32_t)((int32_t)-2147483648LL))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		KeyValuePair_2U5BU5D_t953644836* L_3 = ___array0;
+		int32_t L_4 = ___index1;
+		int32_t L_5 = (int32_t)L_4;
+		___index1 = (int32_t)((int32_t)((int32_t)L_5+(int32_t)1));
+		Transform_1_t3010582887 * L_6 = ___transform2;
+		Vector2U5BU5D_t686124026* L_7 = (Vector2U5BU5D_t686124026*)__this->get_keySlots_6();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		Vector2_t2243707579  L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		ObjectU5BU5D_t3614634134* L_11 = (ObjectU5BU5D_t3614634134*)__this->get_valueSlots_7();
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck((Transform_1_t3010582887 *)L_6);
+		KeyValuePair_2_t1405311833  L_15 = ((  KeyValuePair_2_t1405311833  (*) (Transform_1_t3010582887 *, Vector2_t2243707579 , Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Transform_1_t3010582887 *)L_6, (Vector2_t2243707579 )L_10, (Il2CppObject *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		KeyValuePair_2_t1405311833  L_16 = L_15;
+		Il2CppObject * L_17 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 1), &L_16);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (KeyValuePair_2_t1405311833 )((*(KeyValuePair_2_t1405311833 *)((KeyValuePair_2_t1405311833 *)UnBox (L_17, IL2CPP_RGCTX_DATA(method->rgctx_data, 2))))));
+	}
+
+IL_0057:
+	{
+		int32_t L_18 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_18+(int32_t)1));
+	}
+
+IL_005b:
+	{
+		int32_t L_19 = V_0;
+		int32_t L_20 = (int32_t)__this->get_touchedSlots_8();
+		if ((((int32_t)L_19) < ((int32_t)L_20)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>,System.Object>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisKeyValuePair_2_t1405311833_TisIl2CppObject_m3861426204_gshared (Dictionary_2_t3647966611 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___index1, Transform_1_t3010582887 * ___transform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = (int32_t)0;
+		goto IL_005b;
+	}
+
+IL_0007:
+	{
+		LinkU5BU5D_t62501539* L_0 = (LinkU5BU5D_t62501539*)__this->get_linkSlots_5();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = (int32_t)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->get_HashCode_0();
+		if (!((int32_t)((int32_t)L_2&(int32_t)((int32_t)-2147483648LL))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_3 = ___array0;
+		int32_t L_4 = ___index1;
+		int32_t L_5 = (int32_t)L_4;
+		___index1 = (int32_t)((int32_t)((int32_t)L_5+(int32_t)1));
+		Transform_1_t3010582887 * L_6 = ___transform2;
+		Vector2U5BU5D_t686124026* L_7 = (Vector2U5BU5D_t686124026*)__this->get_keySlots_6();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		Vector2_t2243707579  L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		ObjectU5BU5D_t3614634134* L_11 = (ObjectU5BU5D_t3614634134*)__this->get_valueSlots_7();
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck((Transform_1_t3010582887 *)L_6);
+		KeyValuePair_2_t1405311833  L_15 = ((  KeyValuePair_2_t1405311833  (*) (Transform_1_t3010582887 *, Vector2_t2243707579 , Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Transform_1_t3010582887 *)L_6, (Vector2_t2243707579 )L_10, (Il2CppObject *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		KeyValuePair_2_t1405311833  L_16 = L_15;
+		Il2CppObject * L_17 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 1), &L_16);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)((Il2CppObject *)Castclass(L_17, IL2CPP_RGCTX_DATA(method->rgctx_data, 2))));
+	}
+
+IL_0057:
+	{
+		int32_t L_18 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_18+(int32_t)1));
+	}
+
+IL_005b:
+	{
+		int32_t L_19 = V_0;
+		int32_t L_20 = (int32_t)__this->get_touchedSlots_8();
+		if ((((int32_t)L_19) < ((int32_t)L_20)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<System.Object,System.Object>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisIl2CppObject_TisIl2CppObject_m2693185533_gshared (Dictionary_2_t3647966611 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___index1, Transform_1_t4294720349 * ___transform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = (int32_t)0;
+		goto IL_005b;
+	}
+
+IL_0007:
+	{
+		LinkU5BU5D_t62501539* L_0 = (LinkU5BU5D_t62501539*)__this->get_linkSlots_5();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = (int32_t)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->get_HashCode_0();
+		if (!((int32_t)((int32_t)L_2&(int32_t)((int32_t)-2147483648LL))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_3 = ___array0;
+		int32_t L_4 = ___index1;
+		int32_t L_5 = (int32_t)L_4;
+		___index1 = (int32_t)((int32_t)((int32_t)L_5+(int32_t)1));
+		Transform_1_t4294720349 * L_6 = ___transform2;
+		Vector2U5BU5D_t686124026* L_7 = (Vector2U5BU5D_t686124026*)__this->get_keySlots_6();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		Vector2_t2243707579  L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		ObjectU5BU5D_t3614634134* L_11 = (ObjectU5BU5D_t3614634134*)__this->get_valueSlots_7();
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck((Transform_1_t4294720349 *)L_6);
+		Il2CppObject * L_15 = ((  Il2CppObject * (*) (Transform_1_t4294720349 *, Vector2_t2243707579 , Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Transform_1_t4294720349 *)L_6, (Vector2_t2243707579 )L_10, (Il2CppObject *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)((Il2CppObject *)Castclass(L_15, IL2CPP_RGCTX_DATA(method->rgctx_data, 2))));
+	}
+
+IL_0057:
+	{
+		int32_t L_16 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_16+(int32_t)1));
+	}
+
+IL_005b:
+	{
+		int32_t L_17 = V_0;
+		int32_t L_18 = (int32_t)__this->get_touchedSlots_8();
+		if ((((int32_t)L_17) < ((int32_t)L_18)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<UnityEngine.Vector2,System.Object>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisIl2CppObject_m1624045283_gshared (Dictionary_2_t3647966611 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___index1, Transform_1_t3848978633 * ___transform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = (int32_t)0;
+		goto IL_005b;
+	}
+
+IL_0007:
+	{
+		LinkU5BU5D_t62501539* L_0 = (LinkU5BU5D_t62501539*)__this->get_linkSlots_5();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = (int32_t)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->get_HashCode_0();
+		if (!((int32_t)((int32_t)L_2&(int32_t)((int32_t)-2147483648LL))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		ObjectU5BU5D_t3614634134* L_3 = ___array0;
+		int32_t L_4 = ___index1;
+		int32_t L_5 = (int32_t)L_4;
+		___index1 = (int32_t)((int32_t)((int32_t)L_5+(int32_t)1));
+		Transform_1_t3848978633 * L_6 = ___transform2;
+		Vector2U5BU5D_t686124026* L_7 = (Vector2U5BU5D_t686124026*)__this->get_keySlots_6();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		Vector2_t2243707579  L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		ObjectU5BU5D_t3614634134* L_11 = (ObjectU5BU5D_t3614634134*)__this->get_valueSlots_7();
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck((Transform_1_t3848978633 *)L_6);
+		Vector2_t2243707579  L_15 = ((  Vector2_t2243707579  (*) (Transform_1_t3848978633 *, Vector2_t2243707579 , Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Transform_1_t3848978633 *)L_6, (Vector2_t2243707579 )L_10, (Il2CppObject *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		Vector2_t2243707579  L_16 = L_15;
+		Il2CppObject * L_17 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 1), &L_16);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Il2CppObject *)((Il2CppObject *)Castclass(L_17, IL2CPP_RGCTX_DATA(method->rgctx_data, 2))));
+	}
+
+IL_0057:
+	{
+		int32_t L_18 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_18+(int32_t)1));
+	}
+
+IL_005b:
+	{
+		int32_t L_19 = V_0;
+		int32_t L_20 = (int32_t)__this->get_touchedSlots_8();
+		if ((((int32_t)L_19) < ((int32_t)L_20)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_CopyTo<UnityEngine.Vector2,UnityEngine.Vector2>(TElem[],System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern "C"  void Dictionary_2_Do_CopyTo_TisVector2_t2243707579_TisVector2_t2243707579_m2385063165_gshared (Dictionary_2_t3647966611 * __this, Vector2U5BU5D_t686124026* ___array0, int32_t ___index1, Transform_1_t3848978633 * ___transform2, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = (int32_t)0;
+		goto IL_005b;
+	}
+
+IL_0007:
+	{
+		LinkU5BU5D_t62501539* L_0 = (LinkU5BU5D_t62501539*)__this->get_linkSlots_5();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
+		int32_t L_2 = (int32_t)((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->get_HashCode_0();
+		if (!((int32_t)((int32_t)L_2&(int32_t)((int32_t)-2147483648LL))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		Vector2U5BU5D_t686124026* L_3 = ___array0;
+		int32_t L_4 = ___index1;
+		int32_t L_5 = (int32_t)L_4;
+		___index1 = (int32_t)((int32_t)((int32_t)L_5+(int32_t)1));
+		Transform_1_t3848978633 * L_6 = ___transform2;
+		Vector2U5BU5D_t686124026* L_7 = (Vector2U5BU5D_t686124026*)__this->get_keySlots_6();
+		int32_t L_8 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_8);
+		int32_t L_9 = L_8;
+		Vector2_t2243707579  L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		ObjectU5BU5D_t3614634134* L_11 = (ObjectU5BU5D_t3614634134*)__this->get_valueSlots_7();
+		int32_t L_12 = V_0;
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
+		NullCheck((Transform_1_t3848978633 *)L_6);
+		Vector2_t2243707579  L_15 = ((  Vector2_t2243707579  (*) (Transform_1_t3848978633 *, Vector2_t2243707579 , Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0)->methodPointer)((Transform_1_t3848978633 *)L_6, (Vector2_t2243707579 )L_10, (Il2CppObject *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 0));
+		Vector2_t2243707579  L_16 = L_15;
+		Il2CppObject * L_17 = Box(IL2CPP_RGCTX_DATA(method->rgctx_data, 1), &L_16);
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_5), (Vector2_t2243707579 )((*(Vector2_t2243707579 *)((Vector2_t2243707579 *)UnBox (L_17, IL2CPP_RGCTX_DATA(method->rgctx_data, 2))))));
+	}
+
+IL_0057:
+	{
+		int32_t L_18 = V_0;
+		V_0 = (int32_t)((int32_t)((int32_t)L_18+(int32_t)1));
+	}
+
+IL_005b:
+	{
+		int32_t L_19 = V_0;
+		int32_t L_20 = (int32_t)__this->get_touchedSlots_8();
+		if ((((int32_t)L_19) < ((int32_t)L_20)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_ICollectionCopyTo<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3845490374;
+extern Il2CppCodeGenString* _stringLiteral1185213181;
+extern const uint32_t Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t1405311833_m2321823036_MetadataUsageId;
+extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t1405311833_m2321823036_gshared (Dictionary_2_t3647966611 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t3010582887 * ___transform2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Dictionary_2_Do_ICollectionCopyTo_TisKeyValuePair_2_t1405311833_m2321823036_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Type_t * V_0 = NULL;
+	Type_t * V_1 = NULL;
+	Exception_t1927440687 * V_2 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, (RuntimeTypeHandle_t2330101084 )LoadTypeToken(IL2CPP_RGCTX_TYPE(method->rgctx_data, 0)), /*hidden argument*/NULL);
+		V_0 = (Type_t *)L_0;
+		Il2CppArray * L_1 = ___array0;
+		NullCheck((Il2CppObject *)L_1);
+		Type_t * L_2 = Object_GetType_m191970594((Il2CppObject *)L_1, /*hidden argument*/NULL);
+		NullCheck((Type_t *)L_2);
+		Type_t * L_3 = VirtFuncInvoker0< Type_t * >::Invoke(44 /* System.Type System.Type::GetElementType() */, (Type_t *)L_2);
+		V_1 = (Type_t *)L_3;
+	}
+
+IL_0017:
+	try
+	{ // begin try (depth: 1)
+		{
+			Type_t * L_4 = V_0;
+			NullCheck((Type_t *)L_4);
+			bool L_5 = Type_get_IsPrimitive_m1522841565((Type_t *)L_4, /*hidden argument*/NULL);
+			if (L_5)
+			{
+				goto IL_002d;
+			}
+		}
+
+IL_0022:
+		{
+			Type_t * L_6 = V_1;
+			NullCheck((Type_t *)L_6);
+			bool L_7 = Type_get_IsPrimitive_m1522841565((Type_t *)L_6, /*hidden argument*/NULL);
+			if (!L_7)
+			{
+				goto IL_003f;
+			}
+		}
+
+IL_002d:
+		{
+			Type_t * L_8 = V_1;
+			Type_t * L_9 = V_0;
+			NullCheck((Type_t *)L_8);
+			bool L_10 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_8, (Type_t *)L_9);
+			if (L_10)
+			{
+				goto IL_003f;
+			}
+		}
+
+IL_0039:
+		{
+			Exception_t1927440687 * L_11 = (Exception_t1927440687 *)il2cpp_codegen_object_new(Exception_t1927440687_il2cpp_TypeInfo_var);
+			Exception__ctor_m3886110570(L_11, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
+		}
+
+IL_003f:
+		{
+			Il2CppArray * L_12 = ___array0;
+			int32_t L_13 = ___index1;
+			Transform_1_t3010582887 * L_14 = ___transform2;
+			NullCheck((Dictionary_2_t3647966611 *)__this);
+			((  void (*) (Dictionary_2_t3647966611 *, ObjectU5BU5D_t3614634134*, int32_t, Transform_1_t3010582887 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((Dictionary_2_t3647966611 *)__this, (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)Castclass(L_12, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var)), (int32_t)L_13, (Transform_1_t3010582887 *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+			goto IL_0069;
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t1927440687_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_0052;
+		throw e;
+	}
+
+CATCH_0052:
+	{ // begin catch(System.Exception)
+		{
+			V_2 = (Exception_t1927440687 *)((Exception_t1927440687 *)__exception_local);
+			Exception_t1927440687 * L_15 = V_2;
+			ArgumentException_t3259014390 * L_16 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+			ArgumentException__ctor_m3312963299(L_16, (String_t*)_stringLiteral3845490374, (String_t*)_stringLiteral1185213181, (Exception_t1927440687 *)L_15, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_16);
+		}
+
+IL_0064:
+		{
+			goto IL_0069;
+		}
+	} // end catch (depth: 1)
+
+IL_0069:
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_ICollectionCopyTo<System.Object>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3845490374;
+extern Il2CppCodeGenString* _stringLiteral1185213181;
+extern const uint32_t Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m1134278017_MetadataUsageId;
+extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m1134278017_gshared (Dictionary_2_t3647966611 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t4294720349 * ___transform2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Dictionary_2_Do_ICollectionCopyTo_TisIl2CppObject_m1134278017_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Type_t * V_0 = NULL;
+	Type_t * V_1 = NULL;
+	Exception_t1927440687 * V_2 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, (RuntimeTypeHandle_t2330101084 )LoadTypeToken(IL2CPP_RGCTX_TYPE(method->rgctx_data, 0)), /*hidden argument*/NULL);
+		V_0 = (Type_t *)L_0;
+		Il2CppArray * L_1 = ___array0;
+		NullCheck((Il2CppObject *)L_1);
+		Type_t * L_2 = Object_GetType_m191970594((Il2CppObject *)L_1, /*hidden argument*/NULL);
+		NullCheck((Type_t *)L_2);
+		Type_t * L_3 = VirtFuncInvoker0< Type_t * >::Invoke(44 /* System.Type System.Type::GetElementType() */, (Type_t *)L_2);
+		V_1 = (Type_t *)L_3;
+	}
+
+IL_0017:
+	try
+	{ // begin try (depth: 1)
+		{
+			Type_t * L_4 = V_0;
+			NullCheck((Type_t *)L_4);
+			bool L_5 = Type_get_IsPrimitive_m1522841565((Type_t *)L_4, /*hidden argument*/NULL);
+			if (L_5)
+			{
+				goto IL_002d;
+			}
+		}
+
+IL_0022:
+		{
+			Type_t * L_6 = V_1;
+			NullCheck((Type_t *)L_6);
+			bool L_7 = Type_get_IsPrimitive_m1522841565((Type_t *)L_6, /*hidden argument*/NULL);
+			if (!L_7)
+			{
+				goto IL_003f;
+			}
+		}
+
+IL_002d:
+		{
+			Type_t * L_8 = V_1;
+			Type_t * L_9 = V_0;
+			NullCheck((Type_t *)L_8);
+			bool L_10 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_8, (Type_t *)L_9);
+			if (L_10)
+			{
+				goto IL_003f;
+			}
+		}
+
+IL_0039:
+		{
+			Exception_t1927440687 * L_11 = (Exception_t1927440687 *)il2cpp_codegen_object_new(Exception_t1927440687_il2cpp_TypeInfo_var);
+			Exception__ctor_m3886110570(L_11, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
+		}
+
+IL_003f:
+		{
+			Il2CppArray * L_12 = ___array0;
+			int32_t L_13 = ___index1;
+			Transform_1_t4294720349 * L_14 = ___transform2;
+			NullCheck((Dictionary_2_t3647966611 *)__this);
+			((  void (*) (Dictionary_2_t3647966611 *, ObjectU5BU5D_t3614634134*, int32_t, Transform_1_t4294720349 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((Dictionary_2_t3647966611 *)__this, (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)Castclass(L_12, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var)), (int32_t)L_13, (Transform_1_t4294720349 *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+			goto IL_0069;
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t1927440687_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_0052;
+		throw e;
+	}
+
+CATCH_0052:
+	{ // begin catch(System.Exception)
+		{
+			V_2 = (Exception_t1927440687 *)((Exception_t1927440687 *)__exception_local);
+			Exception_t1927440687 * L_15 = V_2;
+			ArgumentException_t3259014390 * L_16 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+			ArgumentException__ctor_m3312963299(L_16, (String_t*)_stringLiteral3845490374, (String_t*)_stringLiteral1185213181, (Exception_t1927440687 *)L_15, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_16);
+		}
+
+IL_0064:
+		{
+			goto IL_0069;
+		}
+	} // end catch (depth: 1)
+
+IL_0069:
+	{
+		return;
+	}
+}
+// System.Void System.Collections.Generic.Dictionary`2<UnityEngine.Vector2,System.Object>::Do_ICollectionCopyTo<UnityEngine.Vector2>(System.Array,System.Int32,System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,TRet>)
+extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Exception_t1927440687_il2cpp_TypeInfo_var;
+extern Il2CppClass* ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var;
+extern Il2CppClass* ArgumentException_t3259014390_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3845490374;
+extern Il2CppCodeGenString* _stringLiteral1185213181;
+extern const uint32_t Dictionary_2_Do_ICollectionCopyTo_TisVector2_t2243707579_m1776813687_MetadataUsageId;
+extern "C"  void Dictionary_2_Do_ICollectionCopyTo_TisVector2_t2243707579_m1776813687_gshared (Dictionary_2_t3647966611 * __this, Il2CppArray * ___array0, int32_t ___index1, Transform_1_t3848978633 * ___transform2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Dictionary_2_Do_ICollectionCopyTo_TisVector2_t2243707579_m1776813687_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Type_t * V_0 = NULL;
+	Type_t * V_1 = NULL;
+	Exception_t1927440687 * V_2 = NULL;
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		Type_t * L_0 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, (RuntimeTypeHandle_t2330101084 )LoadTypeToken(IL2CPP_RGCTX_TYPE(method->rgctx_data, 0)), /*hidden argument*/NULL);
+		V_0 = (Type_t *)L_0;
+		Il2CppArray * L_1 = ___array0;
+		NullCheck((Il2CppObject *)L_1);
+		Type_t * L_2 = Object_GetType_m191970594((Il2CppObject *)L_1, /*hidden argument*/NULL);
+		NullCheck((Type_t *)L_2);
+		Type_t * L_3 = VirtFuncInvoker0< Type_t * >::Invoke(44 /* System.Type System.Type::GetElementType() */, (Type_t *)L_2);
+		V_1 = (Type_t *)L_3;
+	}
+
+IL_0017:
+	try
+	{ // begin try (depth: 1)
+		{
+			Type_t * L_4 = V_0;
+			NullCheck((Type_t *)L_4);
+			bool L_5 = Type_get_IsPrimitive_m1522841565((Type_t *)L_4, /*hidden argument*/NULL);
+			if (L_5)
+			{
+				goto IL_002d;
+			}
+		}
+
+IL_0022:
+		{
+			Type_t * L_6 = V_1;
+			NullCheck((Type_t *)L_6);
+			bool L_7 = Type_get_IsPrimitive_m1522841565((Type_t *)L_6, /*hidden argument*/NULL);
+			if (!L_7)
+			{
+				goto IL_003f;
+			}
+		}
+
+IL_002d:
+		{
+			Type_t * L_8 = V_1;
+			Type_t * L_9 = V_0;
+			NullCheck((Type_t *)L_8);
+			bool L_10 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, (Type_t *)L_8, (Type_t *)L_9);
+			if (L_10)
+			{
+				goto IL_003f;
+			}
+		}
+
+IL_0039:
+		{
+			Exception_t1927440687 * L_11 = (Exception_t1927440687 *)il2cpp_codegen_object_new(Exception_t1927440687_il2cpp_TypeInfo_var);
+			Exception__ctor_m3886110570(L_11, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_11);
+		}
+
+IL_003f:
+		{
+			Il2CppArray * L_12 = ___array0;
+			int32_t L_13 = ___index1;
+			Transform_1_t3848978633 * L_14 = ___transform2;
+			NullCheck((Dictionary_2_t3647966611 *)__this);
+			((  void (*) (Dictionary_2_t3647966611 *, ObjectU5BU5D_t3614634134*, int32_t, Transform_1_t3848978633 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1)->methodPointer)((Dictionary_2_t3647966611 *)__this, (ObjectU5BU5D_t3614634134*)((ObjectU5BU5D_t3614634134*)Castclass(L_12, ObjectU5BU5D_t3614634134_il2cpp_TypeInfo_var)), (int32_t)L_13, (Transform_1_t3848978633 *)L_14, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->rgctx_data, 1));
+			goto IL_0069;
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t1927440687 *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (Exception_t1927440687_il2cpp_TypeInfo_var, e.ex->object.klass))
+			goto CATCH_0052;
+		throw e;
+	}
+
+CATCH_0052:
+	{ // begin catch(System.Exception)
+		{
+			V_2 = (Exception_t1927440687 *)((Exception_t1927440687 *)__exception_local);
+			Exception_t1927440687 * L_15 = V_2;
+			ArgumentException_t3259014390 * L_16 = (ArgumentException_t3259014390 *)il2cpp_codegen_object_new(ArgumentException_t3259014390_il2cpp_TypeInfo_var);
+			ArgumentException__ctor_m3312963299(L_16, (String_t*)_stringLiteral3845490374, (String_t*)_stringLiteral1185213181, (Exception_t1927440687 *)L_15, /*hidden argument*/NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_16);
+		}
+
+IL_0064:
+		{
+			goto IL_0069;
+		}
+	} // end catch (depth: 1)
+
+IL_0069:
+	{
+		return;
+	}
+}
 // System.Void UnityEngine.Component::GetComponents<System.Object>(System.Collections.Generic.List`1<T>)
 extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;
 extern const uint32_t Component_GetComponents_TisIl2CppObject_m1186222966_MetadataUsageId;
@@ -31757,6 +34321,44 @@ IL_0017:
 		NullCheck((Il2CppArray *)__this);
 		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (KeyValuePair_2_t38854645 *)(&V_0));
 		KeyValuePair_2_t38854645  L_4 = V_0;
+		return L_4;
+	}
+}
+// T System.Array::InternalArray__get_Item<System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>>(System.Int32)
+extern Il2CppClass* ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1460639766;
+extern const uint32_t Array_InternalArray__get_Item_TisKeyValuePair_2_t1405311833_m4159500935_MetadataUsageId;
+extern "C"  KeyValuePair_2_t1405311833  Array_InternalArray__get_Item_TisKeyValuePair_2_t1405311833_m4159500935_gshared (Il2CppArray * __this, int32_t ___index0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Array_InternalArray__get_Item_TisKeyValuePair_2_t1405311833_m4159500935_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	KeyValuePair_2_t1405311833  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		int32_t L_1 = Array_get_Length_m1498215565((Il2CppArray *)__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) >= ((uint32_t)L_1))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t279959794 * L_2 = (ArgumentOutOfRangeException_t279959794 *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t279959794_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m1595007065(L_2, (String_t*)_stringLiteral1460639766, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0017:
+	{
+		int32_t L_3 = ___index0;
+		NullCheck((Il2CppArray *)__this);
+		ArrayGetGenericValueImpl((Il2CppArray *)__this, (int32_t)L_3, (KeyValuePair_2_t1405311833 *)(&V_0));
+		KeyValuePair_2_t1405311833  L_4 = V_0;
 		return L_4;
 	}
 }

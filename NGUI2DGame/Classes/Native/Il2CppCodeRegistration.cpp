@@ -27,7 +27,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[];
 extern const CustomAttributesCacheGenerator g_AttributeGenerators[];
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	22680,
+	22709,
 	g_MethodPointers,
 	2,
 	g_ReversePInvokeWrapperPointers,
@@ -37,11 +37,11 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	g_MarshalingFunctions,
 	0,
 	NULL,
-	6407,
+	6746,
 	g_Il2CppGenericMethodPointers,
-	2479,
+	2500,
 	g_Il2CppInvokerPointers,
-	4415,
+	4431,
 	g_AttributeGenerators,
 	0,
 	NULL,

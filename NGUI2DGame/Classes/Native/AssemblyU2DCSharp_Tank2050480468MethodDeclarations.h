@@ -41,6 +41,8 @@ extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const Method
 extern "C"  void Tank_Update_m546628242 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::OnDestroy()
 extern "C"  void Tank_OnDestroy_m4042988626 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::RecoverTankOccupiedTile()
+extern "C"  void Tank_RecoverTankOccupiedTile_m2660540363 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Tank::CanMoveForward()
 extern "C"  bool Tank_CanMoveForward_m362955925 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::MoveForward()
@@ -49,5 +51,7 @@ extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const M
 extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::TakeDamage(System.Single)
 extern "C"  void Tank_TakeDamage_m3119853146 (Tank_t2050480468 * __this, float ___damage0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::DestroyTankDelay()
+extern "C"  void Tank_DestroyTankDelay_m3636233030 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::BulletDestroyDelegate(UnityEngine.GameObject)
 extern "C"  void Tank_BulletDestroyDelegate_m1148978620 (Tank_t2050480468 * __this, GameObject_t1756533147 * ___go0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

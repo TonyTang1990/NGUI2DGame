@@ -28,6 +28,8 @@ extern "C"  void AudioSource_set_volume_m2777308722 (AudioSource_t1135106623 * _
 extern "C"  float AudioSource_get_pitch_m4220572439 (AudioSource_t1135106623 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::set_pitch(System.Single)
 extern "C"  void AudioSource_set_pitch_m3064416458 (AudioSource_t1135106623 * __this, float ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.AudioClip UnityEngine.AudioSource::get_clip()
+extern "C"  AudioClip_t1932558630 * AudioSource_get_clip_m2127996365 (AudioSource_t1135106623 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
 extern "C"  void AudioSource_set_clip_m738814682 (AudioSource_t1135106623 * __this, AudioClip_t1932558630 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::Play(System.UInt64)

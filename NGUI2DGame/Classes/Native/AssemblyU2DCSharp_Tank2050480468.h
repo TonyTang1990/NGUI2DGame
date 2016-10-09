@@ -14,12 +14,16 @@
 struct Transform_t3275118058;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
+// UnityEngine.AudioClip
+struct AudioClip_t1932558630;
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_t1125654279;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
 struct Dictionary_2_t1079703083;
 // System.Collections.Generic.Dictionary`2<MoveAction,System.Int32>
 struct Dictionary_2_t841443130;
+// UnityEngine.AudioSource
+struct AudioSource_t1135106623;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 #include "AssemblyU2DCSharp_MoveAction868615717.h"
@@ -46,20 +50,30 @@ public:
 	int32_t ___mNumbersOfBulletAllowed_7;
 	// System.Single Tank::mHealth
 	float ___mHealth_8;
+	// UnityEngine.AudioClip Tank::mShootClip
+	AudioClip_t1932558630 * ___mShootClip_9;
+	// UnityEngine.AudioClip Tank::mCrashClip
+	AudioClip_t1932558630 * ___mCrashClip_10;
 	// System.Boolean Tank::mIsDead
-	bool ___mIsDead_9;
+	bool ___mIsDead_11;
 	// System.Single Tank::mKeepMoveIntervalTime
-	float ___mKeepMoveIntervalTime_10;
+	float ___mKeepMoveIntervalTime_12;
+	// System.Boolean Tank::mIsBlocingByTank
+	bool ___mIsBlocingByTank_13;
+	// System.Int64 Tank::mBlockingByTankTime
+	int64_t ___mBlockingByTankTime_14;
 	// MoveAction Tank::mCurrentMoveAction
-	int32_t ___mCurrentMoveAction_11;
+	int32_t ___mCurrentMoveAction_15;
 	// System.Single Tank::mMoveDeltaTime
-	float ___mMoveDeltaTime_12;
+	float ___mMoveDeltaTime_16;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Tank::mBulletsList
-	List_1_t1125654279 * ___mBulletsList_13;
+	List_1_t1125654279 * ___mBulletsList_17;
 	// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> Tank::mCurrentOccupiedIndexs
-	Dictionary_2_t1079703083 * ___mCurrentOccupiedIndexs_14;
+	Dictionary_2_t1079703083 * ___mCurrentOccupiedIndexs_18;
 	// System.Collections.Generic.Dictionary`2<MoveAction,System.Int32> Tank::mTankMovingIndexsOffset
-	Dictionary_2_t841443130 * ___mTankMovingIndexsOffset_15;
+	Dictionary_2_t841443130 * ___mTankMovingIndexsOffset_19;
+	// UnityEngine.AudioSource Tank::mTankAudioSource
+	AudioSource_t1135106623 * ___mTankAudioSource_20;
 
 public:
 	inline static int32_t get_offset_of_mMoveSpeed_3() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveSpeed_3)); }
@@ -112,63 +126,106 @@ public:
 		___mHealth_8 = value;
 	}
 
-	inline static int32_t get_offset_of_mIsDead_9() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsDead_9)); }
-	inline bool get_mIsDead_9() const { return ___mIsDead_9; }
-	inline bool* get_address_of_mIsDead_9() { return &___mIsDead_9; }
-	inline void set_mIsDead_9(bool value)
+	inline static int32_t get_offset_of_mShootClip_9() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mShootClip_9)); }
+	inline AudioClip_t1932558630 * get_mShootClip_9() const { return ___mShootClip_9; }
+	inline AudioClip_t1932558630 ** get_address_of_mShootClip_9() { return &___mShootClip_9; }
+	inline void set_mShootClip_9(AudioClip_t1932558630 * value)
 	{
-		___mIsDead_9 = value;
+		___mShootClip_9 = value;
+		Il2CppCodeGenWriteBarrier(&___mShootClip_9, value);
 	}
 
-	inline static int32_t get_offset_of_mKeepMoveIntervalTime_10() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mKeepMoveIntervalTime_10)); }
-	inline float get_mKeepMoveIntervalTime_10() const { return ___mKeepMoveIntervalTime_10; }
-	inline float* get_address_of_mKeepMoveIntervalTime_10() { return &___mKeepMoveIntervalTime_10; }
-	inline void set_mKeepMoveIntervalTime_10(float value)
+	inline static int32_t get_offset_of_mCrashClip_10() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCrashClip_10)); }
+	inline AudioClip_t1932558630 * get_mCrashClip_10() const { return ___mCrashClip_10; }
+	inline AudioClip_t1932558630 ** get_address_of_mCrashClip_10() { return &___mCrashClip_10; }
+	inline void set_mCrashClip_10(AudioClip_t1932558630 * value)
 	{
-		___mKeepMoveIntervalTime_10 = value;
+		___mCrashClip_10 = value;
+		Il2CppCodeGenWriteBarrier(&___mCrashClip_10, value);
 	}
 
-	inline static int32_t get_offset_of_mCurrentMoveAction_11() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentMoveAction_11)); }
-	inline int32_t get_mCurrentMoveAction_11() const { return ___mCurrentMoveAction_11; }
-	inline int32_t* get_address_of_mCurrentMoveAction_11() { return &___mCurrentMoveAction_11; }
-	inline void set_mCurrentMoveAction_11(int32_t value)
+	inline static int32_t get_offset_of_mIsDead_11() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsDead_11)); }
+	inline bool get_mIsDead_11() const { return ___mIsDead_11; }
+	inline bool* get_address_of_mIsDead_11() { return &___mIsDead_11; }
+	inline void set_mIsDead_11(bool value)
 	{
-		___mCurrentMoveAction_11 = value;
+		___mIsDead_11 = value;
 	}
 
-	inline static int32_t get_offset_of_mMoveDeltaTime_12() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveDeltaTime_12)); }
-	inline float get_mMoveDeltaTime_12() const { return ___mMoveDeltaTime_12; }
-	inline float* get_address_of_mMoveDeltaTime_12() { return &___mMoveDeltaTime_12; }
-	inline void set_mMoveDeltaTime_12(float value)
+	inline static int32_t get_offset_of_mKeepMoveIntervalTime_12() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mKeepMoveIntervalTime_12)); }
+	inline float get_mKeepMoveIntervalTime_12() const { return ___mKeepMoveIntervalTime_12; }
+	inline float* get_address_of_mKeepMoveIntervalTime_12() { return &___mKeepMoveIntervalTime_12; }
+	inline void set_mKeepMoveIntervalTime_12(float value)
 	{
-		___mMoveDeltaTime_12 = value;
+		___mKeepMoveIntervalTime_12 = value;
 	}
 
-	inline static int32_t get_offset_of_mBulletsList_13() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mBulletsList_13)); }
-	inline List_1_t1125654279 * get_mBulletsList_13() const { return ___mBulletsList_13; }
-	inline List_1_t1125654279 ** get_address_of_mBulletsList_13() { return &___mBulletsList_13; }
-	inline void set_mBulletsList_13(List_1_t1125654279 * value)
+	inline static int32_t get_offset_of_mIsBlocingByTank_13() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsBlocingByTank_13)); }
+	inline bool get_mIsBlocingByTank_13() const { return ___mIsBlocingByTank_13; }
+	inline bool* get_address_of_mIsBlocingByTank_13() { return &___mIsBlocingByTank_13; }
+	inline void set_mIsBlocingByTank_13(bool value)
 	{
-		___mBulletsList_13 = value;
-		Il2CppCodeGenWriteBarrier(&___mBulletsList_13, value);
+		___mIsBlocingByTank_13 = value;
 	}
 
-	inline static int32_t get_offset_of_mCurrentOccupiedIndexs_14() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentOccupiedIndexs_14)); }
-	inline Dictionary_2_t1079703083 * get_mCurrentOccupiedIndexs_14() const { return ___mCurrentOccupiedIndexs_14; }
-	inline Dictionary_2_t1079703083 ** get_address_of_mCurrentOccupiedIndexs_14() { return &___mCurrentOccupiedIndexs_14; }
-	inline void set_mCurrentOccupiedIndexs_14(Dictionary_2_t1079703083 * value)
+	inline static int32_t get_offset_of_mBlockingByTankTime_14() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mBlockingByTankTime_14)); }
+	inline int64_t get_mBlockingByTankTime_14() const { return ___mBlockingByTankTime_14; }
+	inline int64_t* get_address_of_mBlockingByTankTime_14() { return &___mBlockingByTankTime_14; }
+	inline void set_mBlockingByTankTime_14(int64_t value)
 	{
-		___mCurrentOccupiedIndexs_14 = value;
-		Il2CppCodeGenWriteBarrier(&___mCurrentOccupiedIndexs_14, value);
+		___mBlockingByTankTime_14 = value;
 	}
 
-	inline static int32_t get_offset_of_mTankMovingIndexsOffset_15() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTankMovingIndexsOffset_15)); }
-	inline Dictionary_2_t841443130 * get_mTankMovingIndexsOffset_15() const { return ___mTankMovingIndexsOffset_15; }
-	inline Dictionary_2_t841443130 ** get_address_of_mTankMovingIndexsOffset_15() { return &___mTankMovingIndexsOffset_15; }
-	inline void set_mTankMovingIndexsOffset_15(Dictionary_2_t841443130 * value)
+	inline static int32_t get_offset_of_mCurrentMoveAction_15() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentMoveAction_15)); }
+	inline int32_t get_mCurrentMoveAction_15() const { return ___mCurrentMoveAction_15; }
+	inline int32_t* get_address_of_mCurrentMoveAction_15() { return &___mCurrentMoveAction_15; }
+	inline void set_mCurrentMoveAction_15(int32_t value)
 	{
-		___mTankMovingIndexsOffset_15 = value;
-		Il2CppCodeGenWriteBarrier(&___mTankMovingIndexsOffset_15, value);
+		___mCurrentMoveAction_15 = value;
+	}
+
+	inline static int32_t get_offset_of_mMoveDeltaTime_16() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveDeltaTime_16)); }
+	inline float get_mMoveDeltaTime_16() const { return ___mMoveDeltaTime_16; }
+	inline float* get_address_of_mMoveDeltaTime_16() { return &___mMoveDeltaTime_16; }
+	inline void set_mMoveDeltaTime_16(float value)
+	{
+		___mMoveDeltaTime_16 = value;
+	}
+
+	inline static int32_t get_offset_of_mBulletsList_17() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mBulletsList_17)); }
+	inline List_1_t1125654279 * get_mBulletsList_17() const { return ___mBulletsList_17; }
+	inline List_1_t1125654279 ** get_address_of_mBulletsList_17() { return &___mBulletsList_17; }
+	inline void set_mBulletsList_17(List_1_t1125654279 * value)
+	{
+		___mBulletsList_17 = value;
+		Il2CppCodeGenWriteBarrier(&___mBulletsList_17, value);
+	}
+
+	inline static int32_t get_offset_of_mCurrentOccupiedIndexs_18() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentOccupiedIndexs_18)); }
+	inline Dictionary_2_t1079703083 * get_mCurrentOccupiedIndexs_18() const { return ___mCurrentOccupiedIndexs_18; }
+	inline Dictionary_2_t1079703083 ** get_address_of_mCurrentOccupiedIndexs_18() { return &___mCurrentOccupiedIndexs_18; }
+	inline void set_mCurrentOccupiedIndexs_18(Dictionary_2_t1079703083 * value)
+	{
+		___mCurrentOccupiedIndexs_18 = value;
+		Il2CppCodeGenWriteBarrier(&___mCurrentOccupiedIndexs_18, value);
+	}
+
+	inline static int32_t get_offset_of_mTankMovingIndexsOffset_19() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTankMovingIndexsOffset_19)); }
+	inline Dictionary_2_t841443130 * get_mTankMovingIndexsOffset_19() const { return ___mTankMovingIndexsOffset_19; }
+	inline Dictionary_2_t841443130 ** get_address_of_mTankMovingIndexsOffset_19() { return &___mTankMovingIndexsOffset_19; }
+	inline void set_mTankMovingIndexsOffset_19(Dictionary_2_t841443130 * value)
+	{
+		___mTankMovingIndexsOffset_19 = value;
+		Il2CppCodeGenWriteBarrier(&___mTankMovingIndexsOffset_19, value);
+	}
+
+	inline static int32_t get_offset_of_mTankAudioSource_20() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTankAudioSource_20)); }
+	inline AudioSource_t1135106623 * get_mTankAudioSource_20() const { return ___mTankAudioSource_20; }
+	inline AudioSource_t1135106623 ** get_address_of_mTankAudioSource_20() { return &___mTankAudioSource_20; }
+	inline void set_mTankAudioSource_20(AudioSource_t1135106623 * value)
+	{
+		___mTankAudioSource_20 = value;
+		Il2CppCodeGenWriteBarrier(&___mTankAudioSource_20, value);
 	}
 };
 

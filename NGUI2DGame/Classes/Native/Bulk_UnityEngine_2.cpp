@@ -1280,6 +1280,16 @@ extern "C"  float Random_get_value_m976649312 (Il2CppObject * __this /* static, 
 	_il2cpp_icall_func = (Random_get_value_m976649312_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Random::get_value()");
 	return _il2cpp_icall_func();
 }
+// System.Single UnityEngine.Random::RandomRange(System.Single,System.Single)
+extern "C"  float Random_RandomRange_m4131503580 (Il2CppObject * __this /* static, unused */, float ___min0, float ___max1, const MethodInfo* method)
+{
+	{
+		float L_0 = ___min0;
+		float L_1 = ___max1;
+		float L_2 = Random_Range_m2884721203(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Void UnityEngine.RangeAttribute::.ctor(System.Single,System.Single)
 extern "C"  void RangeAttribute__ctor_m1657271662 (RangeAttribute_t3336560921 * __this, float ___min0, float ___max1, const MethodInfo* method)
 {

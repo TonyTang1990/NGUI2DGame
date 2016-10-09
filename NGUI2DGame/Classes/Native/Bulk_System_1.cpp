@@ -65,6 +65,8 @@ struct ElementHandler_t1009623312;
 struct IAsyncResult_t1999651008;
 // System.AsyncCallback
 struct AsyncCallback_t163412349;
+// System.Diagnostics.Stopwatch
+struct Stopwatch_t1380178105;
 // System.Diagnostics.TraceImplSettings
 struct TraceImplSettings_t1186465586;
 // System.Diagnostics.TraceListener
@@ -394,6 +396,12 @@ struct X509Chain_t777637347;
 #include "System_Xml_System_Xml_XmlAttributeCollection3359885287MethodDeclarations.h"
 #include "mscorlib_System_AsyncCallback163412349.h"
 #include "System_System_Diagnostics_SourceLevels1530190938MethodDeclarations.h"
+#include "System_System_Diagnostics_Stopwatch1380178105.h"
+#include "System_System_Diagnostics_Stopwatch1380178105MethodDeclarations.h"
+#include "mscorlib_System_Int64909078037.h"
+#include "mscorlib_System_TimeSpan3430258949.h"
+#include "mscorlib_System_TimeSpan3430258949MethodDeclarations.h"
+#include "mscorlib_System_Double4078015681.h"
 #include "System_System_Diagnostics_Trace2488851411.h"
 #include "System_System_Diagnostics_Trace2488851411MethodDeclarations.h"
 #include "System_System_Diagnostics_TraceImpl3585635237.h"
@@ -439,7 +447,6 @@ struct X509Chain_t777637347;
 #include "mscorlib_System_Runtime_Remoting_Messaging_AsyncRe2232356043.h"
 #include "mscorlib_System_Runtime_Remoting_Messaging_AsyncRe2232356043MethodDeclarations.h"
 #include "mscorlib_System_IO_SeekOrigin2475945306.h"
-#include "mscorlib_System_Int64909078037.h"
 #include "System_System_IO_Compression_GZipStream2274754946.h"
 #include "System_System_IO_Compression_GZipStream2274754946MethodDeclarations.h"
 #include "System_System_MonoTODOAttribute3487514019.h"
@@ -515,8 +522,6 @@ struct X509Chain_t777637347;
 #include "System_System_Net_Configuration_HandlersUtil1360800625MethodDeclarations.h"
 #include "System_System_Net_Configuration_HttpCachePolicyElem129882946.h"
 #include "System_System_Net_Configuration_HttpCachePolicyElem129882946MethodDeclarations.h"
-#include "mscorlib_System_TimeSpan3430258949.h"
-#include "mscorlib_System_TimeSpan3430258949MethodDeclarations.h"
 #include "System_System_Net_Configuration_HttpWebRequestElem2106051069.h"
 #include "System_System_Net_Configuration_HttpWebRequestElem2106051069MethodDeclarations.h"
 #include "System_System_Net_Configuration_Ipv6Element977943121.h"
@@ -692,7 +697,6 @@ struct X509Chain_t777637347;
 #include "System_System_Security_Cryptography_X509Certificat1197680765.h"
 #include "System_System_Security_Authentication_SslProtocols894678499.h"
 #include "System_System_Net_FtpWebRequest_RequestState4256633122MethodDeclarations.h"
-#include "System_System_Net_GlobalProxySelection2251180943.h"
 
 // System.Int32 System.Array::IndexOf<System.Int32>(!!0[],!!0)
 extern "C"  int32_t Array_IndexOf_TisInt32_t2071877448_m1686802248_gshared (Il2CppObject * __this /* static, unused */, Int32U5BU5D_t3030399641* p0, int32_t p1, const MethodInfo* method);
@@ -5850,6 +5854,215 @@ extern "C"  Il2CppObject * ElementHandler_BeginInvoke_m3057129389 (ElementHandle
 extern "C"  void ElementHandler_EndInvoke_m2941971906 (ElementHandler_t1009623312 * __this, Il2CppObject * ___result0, const MethodInfo* method)
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+// System.Void System.Diagnostics.Stopwatch::.ctor()
+extern "C"  void Stopwatch__ctor_m589309528 (Stopwatch_t1380178105 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::.cctor()
+extern Il2CppClass* Stopwatch_t1380178105_il2cpp_TypeInfo_var;
+extern const uint32_t Stopwatch__cctor_m1036688681_MetadataUsageId;
+extern "C"  void Stopwatch__cctor_m1036688681 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch__cctor_m1036688681_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		((Stopwatch_t1380178105_StaticFields*)Stopwatch_t1380178105_il2cpp_TypeInfo_var->static_fields)->set_Frequency_0((((int64_t)((int64_t)((int32_t)10000000)))));
+		((Stopwatch_t1380178105_StaticFields*)Stopwatch_t1380178105_il2cpp_TypeInfo_var->static_fields)->set_IsHighResolution_1((bool)1);
+		return;
+	}
+}
+// System.Int64 System.Diagnostics.Stopwatch::GetTimestamp()
+extern "C"  int64_t Stopwatch_GetTimestamp_m4156329811 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef int64_t (*Stopwatch_GetTimestamp_m4156329811_ftn) ();
+	return  ((Stopwatch_GetTimestamp_m4156329811_ftn)System::System::Diagnostics::Stopwatch::GetTimestamp) ();
+}
+// System.TimeSpan System.Diagnostics.Stopwatch::get_Elapsed()
+extern Il2CppClass* Stopwatch_t1380178105_il2cpp_TypeInfo_var;
+extern Il2CppClass* TimeSpan_t3430258949_il2cpp_TypeInfo_var;
+extern const uint32_t Stopwatch_get_Elapsed_m3190561196_MetadataUsageId;
+extern "C"  TimeSpan_t3430258949  Stopwatch_get_Elapsed_m3190561196 (Stopwatch_t1380178105 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_get_Elapsed_m3190561196_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		bool L_0 = ((Stopwatch_t1380178105_StaticFields*)Stopwatch_t1380178105_il2cpp_TypeInfo_var->static_fields)->get_IsHighResolution_1();
+		if (!L_0)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		int64_t L_1 = Stopwatch_get_ElapsedTicks_m3689589548(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		int64_t L_2 = ((Stopwatch_t1380178105_StaticFields*)Stopwatch_t1380178105_il2cpp_TypeInfo_var->static_fields)->get_Frequency_0();
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
+		TimeSpan_t3430258949  L_3 = TimeSpan_FromTicks_m827965597(NULL /*static, unused*/, ((int64_t)((int64_t)L_1/(int64_t)((int64_t)((int64_t)L_2/(int64_t)(((int64_t)((int64_t)((int32_t)10000000)))))))), /*hidden argument*/NULL);
+		return L_3;
+	}
+
+IL_0023:
+	{
+		int64_t L_4 = Stopwatch_get_ElapsedTicks_m3689589548(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t3430258949_il2cpp_TypeInfo_var);
+		TimeSpan_t3430258949  L_5 = TimeSpan_FromTicks_m827965597(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		return L_5;
+	}
+}
+// System.Int64 System.Diagnostics.Stopwatch::get_ElapsedMilliseconds()
+extern Il2CppClass* Stopwatch_t1380178105_il2cpp_TypeInfo_var;
+extern const uint32_t Stopwatch_get_ElapsedMilliseconds_m2380718534_MetadataUsageId;
+extern "C"  int64_t Stopwatch_get_ElapsedMilliseconds_m2380718534 (Stopwatch_t1380178105 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_get_ElapsedMilliseconds_m2380718534_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	TimeSpan_t3430258949  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		bool L_0 = ((Stopwatch_t1380178105_StaticFields*)Stopwatch_t1380178105_il2cpp_TypeInfo_var->static_fields)->get_IsHighResolution_1();
+		if (!L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		int64_t L_1 = Stopwatch_get_ElapsedTicks_m3689589548(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		int64_t L_2 = ((Stopwatch_t1380178105_StaticFields*)Stopwatch_t1380178105_il2cpp_TypeInfo_var->static_fields)->get_Frequency_0();
+		return ((int64_t)((int64_t)L_1/(int64_t)((int64_t)((int64_t)L_2/(int64_t)(((int64_t)((int64_t)((int32_t)1000))))))));
+	}
+
+IL_001e:
+	{
+		TimeSpan_t3430258949  L_3 = Stopwatch_get_Elapsed_m3190561196(__this, /*hidden argument*/NULL);
+		V_0 = L_3;
+		double L_4 = TimeSpan_get_TotalMilliseconds_m51604504((&V_0), /*hidden argument*/NULL);
+		if (L_4 > (double)(std::numeric_limits<int64_t>::max())) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception());
+		return (((int64_t)((int64_t)L_4)));
+	}
+}
+// System.Int64 System.Diagnostics.Stopwatch::get_ElapsedTicks()
+extern Il2CppClass* Stopwatch_t1380178105_il2cpp_TypeInfo_var;
+extern const uint32_t Stopwatch_get_ElapsedTicks_m3689589548_MetadataUsageId;
+extern "C"  int64_t Stopwatch_get_ElapsedTicks_m3689589548 (Stopwatch_t1380178105 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_get_ElapsedTicks_m3689589548_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int64_t G_B3_0 = 0;
+	{
+		bool L_0 = __this->get_is_running_4();
+		if (!L_0)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		int64_t L_1 = Stopwatch_GetTimestamp_m4156329811(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int64_t L_2 = __this->get_started_3();
+		int64_t L_3 = __this->get_elapsed_2();
+		G_B3_0 = ((int64_t)((int64_t)((int64_t)((int64_t)L_1-(int64_t)L_2))+(int64_t)L_3));
+		goto IL_0029;
+	}
+
+IL_0023:
+	{
+		int64_t L_4 = __this->get_elapsed_2();
+		G_B3_0 = L_4;
+	}
+
+IL_0029:
+	{
+		return G_B3_0;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::Start()
+extern Il2CppClass* Stopwatch_t1380178105_il2cpp_TypeInfo_var;
+extern const uint32_t Stopwatch_Start_m2051791460_MetadataUsageId;
+extern "C"  void Stopwatch_Start_m2051791460 (Stopwatch_t1380178105 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_Start_m2051791460_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_is_running_4();
+		if (!L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		int64_t L_1 = Stopwatch_GetTimestamp_m4156329811(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_started_3(L_1);
+		__this->set_is_running_4((bool)1);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Stopwatch::Stop()
+extern Il2CppClass* Stopwatch_t1380178105_il2cpp_TypeInfo_var;
+extern const uint32_t Stopwatch_Stop_m3863752910_MetadataUsageId;
+extern "C"  void Stopwatch_Stop_m3863752910 (Stopwatch_t1380178105 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Stopwatch_Stop_m3863752910_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_is_running_4();
+		if (L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		int64_t L_1 = __this->get_elapsed_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Stopwatch_t1380178105_il2cpp_TypeInfo_var);
+		int64_t L_2 = Stopwatch_GetTimestamp_m4156329811(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int64_t L_3 = __this->get_started_3();
+		__this->set_elapsed_2(((int64_t)((int64_t)L_1+(int64_t)((int64_t)((int64_t)L_2-(int64_t)L_3)))));
+		__this->set_is_running_4((bool)0);
+		return;
+	}
 }
 // System.Void System.Diagnostics.Trace::Assert(System.Boolean)
 extern Il2CppClass* TraceImpl_t3585635237_il2cpp_TypeInfo_var;
@@ -27710,23 +27923,6 @@ extern "C"  bool FtpWebResponse_IsFinal_m1790980787 (FtpWebResponse_t2609078769 
 	{
 		int32_t L_0 = __this->get_statusCode_3();
 		return (bool)((((int32_t)((((int32_t)L_0) < ((int32_t)((int32_t)200)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-	}
-}
-// System.Net.IWebProxy System.Net.GlobalProxySelection::get_Select()
-extern Il2CppClass* WebRequest_t1365124353_il2cpp_TypeInfo_var;
-extern const uint32_t GlobalProxySelection_get_Select_m1637611912_MetadataUsageId;
-extern "C"  Il2CppObject * GlobalProxySelection_get_Select_m1637611912 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GlobalProxySelection_get_Select_m1637611912_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(WebRequest_t1365124353_il2cpp_TypeInfo_var);
-		Il2CppObject * L_0 = WebRequest_get_DefaultWebProxy_m741473019(NULL /*static, unused*/, /*hidden argument*/NULL);
-		return L_0;
 	}
 }
 #ifdef __clang__

@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// System.Net.IWebProxy
+struct IWebProxy_t3916853445;
 // System.Net.HttpContinueDelegate
 struct HttpContinueDelegate_t2713047268;
 // System.Object
@@ -39,8 +41,6 @@ struct X509CertificateCollection_t1197680765;
 struct ICredentials_t3855617113;
 // System.String
 struct String_t;
-// System.Net.IWebProxy
-struct IWebProxy_t3916853445;
 // System.Net.ServicePoint
 struct ServicePoint_t2765344313;
 // System.Net.WebResponse
@@ -245,12 +245,13 @@ struct MatchAppendEvaluator_t1618777330;
 struct MatchEvaluator_t710107290;
 // System.Text.RegularExpressions.Capture
 struct Capture_t4157900610;
-// System.Text.RegularExpressions.CaptureCollection
-struct CaptureCollection_t1671345504;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
+#include "System_System_Net_GlobalProxySelection2251180943.h"
+#include "System_System_Net_GlobalProxySelection2251180943MethodDeclarations.h"
+#include "System_System_Net_WebRequest1365124353MethodDeclarations.h"
 #include "System_System_Net_HttpContinueDelegate2713047268.h"
 #include "System_System_Net_HttpContinueDelegate2713047268MethodDeclarations.h"
 #include "mscorlib_System_Object2689449295.h"
@@ -273,8 +274,6 @@ struct CaptureCollection_t1671345504;
 #include "mscorlib_System_Version1755874712MethodDeclarations.h"
 #include "mscorlib_System_Version1755874712.h"
 #include "System_System_Net_WebHeaderCollection3028142837MethodDeclarations.h"
-#include "System_System_Net_WebRequest1365124353MethodDeclarations.h"
-#include "System_System_Net_GlobalProxySelection2251180943MethodDeclarations.h"
 #include "mscorlib_System_Boolean3825574718.h"
 #include "mscorlib_System_Int64909078037.h"
 #include "mscorlib_System_String2029220233.h"
@@ -756,14 +755,29 @@ struct CaptureCollection_t1671345504;
 #include "System_System_Collections_Specialized_StringCollect352985975MethodDeclarations.h"
 #include "System_System_Collections_Specialized_StringCollect352985975.h"
 #include "System_System_Text_RegularExpressions_Capture4157900610.h"
-#include "System_System_Text_RegularExpressions_CaptureColle1671345504.h"
-#include "System_System_Text_RegularExpressions_CaptureColle1671345504MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Net.IWebProxy System.Net.GlobalProxySelection::get_Select()
+extern Il2CppClass* WebRequest_t1365124353_il2cpp_TypeInfo_var;
+extern const uint32_t GlobalProxySelection_get_Select_m1637611912_MetadataUsageId;
+extern "C"  Il2CppObject * GlobalProxySelection_get_Select_m1637611912 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GlobalProxySelection_get_Select_m1637611912_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(WebRequest_t1365124353_il2cpp_TypeInfo_var);
+		Il2CppObject * L_0 = WebRequest_get_DefaultWebProxy_m741473019(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
 // System.Void System.Net.HttpContinueDelegate::.ctor(System.Object,System.IntPtr)
 extern "C"  void HttpContinueDelegate__ctor_m1263450672 (HttpContinueDelegate_t2713047268 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
 {
@@ -53446,84 +53460,6 @@ extern "C"  String_t* Capture_get_Text_m3472127896 (Capture_t4157900610 * __this
 	{
 		String_t* L_0 = __this->get_text_2();
 		return L_0;
-	}
-}
-// System.Void System.Text.RegularExpressions.CaptureCollection::.ctor(System.Int32)
-extern Il2CppClass* CaptureU5BU5D_t3470489975_il2cpp_TypeInfo_var;
-extern const uint32_t CaptureCollection__ctor_m629636494_MetadataUsageId;
-extern "C"  void CaptureCollection__ctor_m629636494 (CaptureCollection_t1671345504 * __this, int32_t ___n0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (CaptureCollection__ctor_m629636494_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		int32_t L_0 = ___n0;
-		__this->set_list_0(((CaptureU5BU5D_t3470489975*)SZArrayNew(CaptureU5BU5D_t3470489975_il2cpp_TypeInfo_var, (uint32_t)L_0)));
-		return;
-	}
-}
-// System.Int32 System.Text.RegularExpressions.CaptureCollection::get_Count()
-extern "C"  int32_t CaptureCollection_get_Count_m3083164873 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		NullCheck(L_0);
-		return (((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))));
-	}
-}
-// System.Boolean System.Text.RegularExpressions.CaptureCollection::get_IsSynchronized()
-extern "C"  bool CaptureCollection_get_IsSynchronized_m815216600 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Void System.Text.RegularExpressions.CaptureCollection::SetValue(System.Text.RegularExpressions.Capture,System.Int32)
-extern "C"  void CaptureCollection_SetValue_m3422959110 (CaptureCollection_t1671345504 * __this, Capture_t4157900610 * ___cap0, int32_t ___i1, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		int32_t L_1 = ___i1;
-		Capture_t4157900610 * L_2 = ___cap0;
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
-		ArrayElementTypeCheck (L_0, L_2);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (Capture_t4157900610 *)L_2);
-		return;
-	}
-}
-// System.Object System.Text.RegularExpressions.CaptureCollection::get_SyncRoot()
-extern "C"  Il2CppObject * CaptureCollection_get_SyncRoot_m228988586 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		return (Il2CppObject *)L_0;
-	}
-}
-// System.Void System.Text.RegularExpressions.CaptureCollection::CopyTo(System.Array,System.Int32)
-extern "C"  void CaptureCollection_CopyTo_m1982767892 (CaptureCollection_t1671345504 * __this, Il2CppArray * ___array0, int32_t ___index1, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		Il2CppArray * L_1 = ___array0;
-		int32_t L_2 = ___index1;
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_0);
-		Array_CopyTo_m4061033315((Il2CppArray *)(Il2CppArray *)L_0, L_1, L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Collections.IEnumerator System.Text.RegularExpressions.CaptureCollection::GetEnumerator()
-extern "C"  Il2CppObject * CaptureCollection_GetEnumerator_m4106707473 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_0);
-		Il2CppObject * L_1 = Array_GetEnumerator_m2284404958((Il2CppArray *)(Il2CppArray *)L_0, /*hidden argument*/NULL);
-		return L_1;
 	}
 }
 #ifdef __clang__

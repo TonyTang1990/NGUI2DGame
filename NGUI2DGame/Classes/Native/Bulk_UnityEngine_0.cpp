@@ -2830,6 +2830,15 @@ IL_0041:
 		return (bool)0;
 	}
 }
+// System.Single UnityEngine.AudioClip::get_length()
+extern "C"  float AudioClip_get_length_m3881628918 (AudioClip_t1932558630 * __this, const MethodInfo* method)
+{
+	typedef float (*AudioClip_get_length_m3881628918_ftn) (AudioClip_t1932558630 *);
+	static AudioClip_get_length_m3881628918_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioClip_get_length_m3881628918_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioClip::get_length()");
+	return _il2cpp_icall_func(__this);
+}
 // System.Void UnityEngine.AudioClip::InvokePCMReaderCallback_Internal(System.Single[])
 extern "C"  void AudioClip_InvokePCMReaderCallback_Internal_m1966286598 (AudioClip_t1932558630 * __this, SingleU5BU5D_t577127397* ___data0, const MethodInfo* method)
 {
@@ -3108,6 +3117,15 @@ extern "C"  void AudioSource_set_pitch_m3064416458 (AudioSource_t1135106623 * __
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (AudioSource_set_pitch_m3064416458_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::set_pitch(System.Single)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// UnityEngine.AudioClip UnityEngine.AudioSource::get_clip()
+extern "C"  AudioClip_t1932558630 * AudioSource_get_clip_m2127996365 (AudioSource_t1135106623 * __this, const MethodInfo* method)
+{
+	typedef AudioClip_t1932558630 * (*AudioSource_get_clip_m2127996365_ftn) (AudioSource_t1135106623 *);
+	static AudioSource_get_clip_m2127996365_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_get_clip_m2127996365_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::get_clip()");
+	return _il2cpp_icall_func(__this);
 }
 // System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
 extern "C"  void AudioSource_set_clip_m738814682 (AudioSource_t1135106623 * __this, AudioClip_t1932558630 * ___value0, const MethodInfo* method)

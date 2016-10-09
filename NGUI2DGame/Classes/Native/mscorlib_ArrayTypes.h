@@ -400,6 +400,8 @@ struct List_1_t1125654279;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22893755648.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23159568114.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23789579933.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21405311833.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_2_156861118.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21761782677.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23984702696.h"
 
@@ -3361,6 +3363,34 @@ public:
 	inline KeyValuePair_2_t3789579933  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline KeyValuePair_2_t3789579933 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3789579933  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Object>[]
+struct KeyValuePair_2U5BU5D_t953644836  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t1405311833  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1405311833  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1405311833 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1405311833  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<UnityEngine.Vector2,System.Collections.Generic.List`1<System.Int32>>[]
+struct KeyValuePair_2U5BU5D_t433788043  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) KeyValuePair_2_t156861118  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t156861118  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t156861118 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t156861118  value)
 	{
 		m_Items[index] = value;
 	}

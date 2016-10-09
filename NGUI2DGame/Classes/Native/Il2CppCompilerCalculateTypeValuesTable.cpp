@@ -1026,6 +1026,7 @@
 #include "System_System_Diagnostics_DiagnosticsConfiguration1565268762.h"
 #include "System_System_Diagnostics_DiagnosticsConfigurationH610492850.h"
 #include "System_System_Diagnostics_SourceLevels1530190938.h"
+#include "System_System_Diagnostics_Stopwatch1380178105.h"
 #include "System_System_Diagnostics_TraceImplSettings1186465586.h"
 #include "System_System_Diagnostics_TraceImpl3585635237.h"
 #include "System_System_Diagnostics_TraceListenerCollection2289511703.h"
@@ -2140,15 +2141,18 @@
 #include "AssemblyU2DCSharp_SoundManager654432262.h"
 #include "AssemblyU2DCSharp_Bullet2590115616.h"
 #include "AssemblyU2DCSharp_Bullet_U3CMoveU3Ec__Iterator72013389602.h"
+#include "AssemblyU2DCSharp_EnemyTank2819878380.h"
+#include "AssemblyU2DCSharp_EnemyTank_U3CMoveCoroutineU3Ec__2729990711.h"
+#include "AssemblyU2DCSharp_EnemyTank_U3CShootCoroutineU3Ec_1373309194.h"
 #include "AssemblyU2DCSharp_MapEditor1120091431.h"
 #include "AssemblyU2DCSharp_PlayerTank155216285.h"
-#include "AssemblyU2DCSharp_PlayerTank_U3CKeepMoveCoroutineU3583444033.h"
+#include "AssemblyU2DCSharp_PlayerTank_U3CKeepMoveCoroutineU3368376174.h"
 #include "AssemblyU2DCSharp_MoveAction868615717.h"
 #include "AssemblyU2DCSharp_Tank2050480468.h"
 #include "AssemblyU2DCSharp_TankGameEvent3684845930.h"
 #include "AssemblyU2DCSharp_Tank2DGameManager1949600781.h"
 #include "AssemblyU2DCSharp_TankGameLoad1987520770.h"
-#include "AssemblyU2DCSharp_TankGameLoad_U3CEnemySpawnU3Ec__3143605912.h"
+#include "AssemblyU2DCSharp_TankGameLoad_U3CEnemySpawnU3Ec__3143605997.h"
 #include "AssemblyU2DCSharp_TankGameUIBackgroundScale2061701262.h"
 #include "AssemblyU2DCSharp_TankMap1120032466.h"
 #include "AssemblyU2DCSharp_MyRC2924564543.h"
@@ -2163,7 +2167,7 @@
 #include "AssemblyU2DCSharp_GameUI4016257260.h"
 #include "AssemblyU2DCSharp_MapEditorMenu1965889544.h"
 #include "AssemblyU2DCSharp_LoadingProcess282725851.h"
-#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375929.h"
+#include "AssemblyU2DCSharp_LoadingProcess_U3CUpdateProcessB1282375931.h"
 #include "AssemblyU2DCSharp_AccountInputField2916814735.h"
 #include "AssemblyU2DCSharp_LoginButton970805563.h"
 #include "AssemblyU2DCSharp_LoginManager973619992.h"
@@ -3052,7 +3056,6 @@
 #include "AssemblyU2DCSharp_ValidBounding40306510.h"
 #include "AssemblyU2DCSharp_Blocker3291696294.h"
 #include "AssemblyU2DCSharp_SnakeFood2261154416.h"
-#include "AssemblyU2DCSharp_EnemyTank2819878380.h"
 #include "AssemblyU2DCSharp_GameBoundingBox1379603447.h"
 #include "AssemblyU2DCSharp_TankMainMenu1255738290.h"
 #include "AssemblyU2DCSharp_MathFunctions1519185367.h"
@@ -3070,7 +3073,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[14263] = 
+extern const int32_t g_FieldOffsetTable[14294] = 
 {
 	0,
 	0,
@@ -3079,7 +3082,9 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	AttributeUsageAttribute_t1057435127::get_offset_of_allow_multiple_1(),
 	AttributeUsageAttribute_t1057435127::get_offset_of_inherited_2(),
 	ComVisibleAttribute_t2245573759::get_offset_of_Visible_0(),
-	Int64_t909078037::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	Int64_t909078037::get_offset_of_m_value_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	UInt32_t2149682021::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	CLSCompliantAttribute_t809966061::get_offset_of_is_compliant_0(),
 	UInt64_t2909196914::get_offset_of_m_value_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -9390,6 +9395,11 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	0,
 	0,
 	0,
+	Stopwatch_t1380178105_StaticFields::get_offset_of_Frequency_0(),
+	Stopwatch_t1380178105_StaticFields::get_offset_of_IsHighResolution_1(),
+	Stopwatch_t1380178105::get_offset_of_elapsed_2(),
+	Stopwatch_t1380178105::get_offset_of_started_3(),
+	Stopwatch_t1380178105::get_offset_of_is_running_4(),
 	TraceImplSettings_t1186465586::get_offset_of_AutoFlush_0(),
 	TraceImplSettings_t1186465586::get_offset_of_IndentLevel_1(),
 	TraceImplSettings_t1186465586::get_offset_of_IndentSize_2(),
@@ -16633,13 +16643,25 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	U3CMoveU3Ec__Iterator7_t2013389602::get_offset_of_U24PC_0(),
 	U3CMoveU3Ec__Iterator7_t2013389602::get_offset_of_U24current_1(),
 	U3CMoveU3Ec__Iterator7_t2013389602::get_offset_of_U3CU3Ef__this_2(),
+	EnemyTank_t2819878380::get_offset_of_mBlockingByTankTimeLimit_21(),
+	EnemyTank_t2819878380::get_offset_of_mShootMinIntervalTime_22(),
+	EnemyTank_t2819878380::get_offset_of_mShootMaxIntervalTime_23(),
+	EnemyTank_t2819878380::get_offset_of_mTimer_24(),
+	EnemyTank_t2819878380::get_offset_of_mMoveActionsChosen_25(),
+	U3CMoveCoroutineU3Ec__Iterator8_t2729990711::get_offset_of_U24PC_0(),
+	U3CMoveCoroutineU3Ec__Iterator8_t2729990711::get_offset_of_U24current_1(),
+	U3CMoveCoroutineU3Ec__Iterator8_t2729990711::get_offset_of_U3CU3Ef__this_2(),
+	U3CShootCoroutineU3Ec__Iterator9_t1373309194::get_offset_of_U3CshootintervaltimeU3E__0_0(),
+	U3CShootCoroutineU3Ec__Iterator9_t1373309194::get_offset_of_U24PC_1(),
+	U3CShootCoroutineU3Ec__Iterator9_t1373309194::get_offset_of_U24current_2(),
+	U3CShootCoroutineU3Ec__Iterator9_t1373309194::get_offset_of_U3CU3Ef__this_3(),
 	MapEditor_t1120091431::get_offset_of_mTileMapContainer_2(),
 	MapEditor_t1120091431::get_offset_of_mCurrentSelectedTileGO_3(),
 	MapEditor_t1120091431::get_offset_of_mCurrentSelectedTileType_4(),
-	PlayerTank_t155216285::get_offset_of_mIsKeepMoving_16(),
-	U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033::get_offset_of_U24PC_0(),
-	U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033::get_offset_of_U24current_1(),
-	U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033::get_offset_of_U3CU3Ef__this_2(),
+	PlayerTank_t155216285::get_offset_of_mIsKeepMoving_21(),
+	U3CKeepMoveCoroutineU3Ec__IteratorA_t368376174::get_offset_of_U24PC_0(),
+	U3CKeepMoveCoroutineU3Ec__IteratorA_t368376174::get_offset_of_U24current_1(),
+	U3CKeepMoveCoroutineU3Ec__IteratorA_t368376174::get_offset_of_U3CU3Ef__this_2(),
 	MoveAction_t868615717::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -16652,13 +16674,18 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	Tank_t2050480468::get_offset_of_mBulletPrefab_6(),
 	Tank_t2050480468::get_offset_of_mNumbersOfBulletAllowed_7(),
 	Tank_t2050480468::get_offset_of_mHealth_8(),
-	Tank_t2050480468::get_offset_of_mIsDead_9(),
-	Tank_t2050480468::get_offset_of_mKeepMoveIntervalTime_10(),
-	Tank_t2050480468::get_offset_of_mCurrentMoveAction_11(),
-	Tank_t2050480468::get_offset_of_mMoveDeltaTime_12(),
-	Tank_t2050480468::get_offset_of_mBulletsList_13(),
-	Tank_t2050480468::get_offset_of_mCurrentOccupiedIndexs_14(),
-	Tank_t2050480468::get_offset_of_mTankMovingIndexsOffset_15(),
+	Tank_t2050480468::get_offset_of_mShootClip_9(),
+	Tank_t2050480468::get_offset_of_mCrashClip_10(),
+	Tank_t2050480468::get_offset_of_mIsDead_11(),
+	Tank_t2050480468::get_offset_of_mKeepMoveIntervalTime_12(),
+	Tank_t2050480468::get_offset_of_mIsBlocingByTank_13(),
+	Tank_t2050480468::get_offset_of_mBlockingByTankTime_14(),
+	Tank_t2050480468::get_offset_of_mCurrentMoveAction_15(),
+	Tank_t2050480468::get_offset_of_mMoveDeltaTime_16(),
+	Tank_t2050480468::get_offset_of_mBulletsList_17(),
+	Tank_t2050480468::get_offset_of_mCurrentOccupiedIndexs_18(),
+	Tank_t2050480468::get_offset_of_mTankMovingIndexsOffset_19(),
+	Tank_t2050480468::get_offset_of_mTankAudioSource_20(),
 	TankGameEvent_t3684845930::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -16679,9 +16706,10 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	TankGameLoad_t1987520770::get_offset_of_mCurrentAliveEnemyNumber_6(),
 	TankGameLoad_t1987520770::get_offset_of_mCurrentPlayerTankGO_7(),
 	TankGameLoad_t1987520770::get_offset_of_mCurrentEnemyTankGODictionary_8(),
-	U3CEnemySpawnU3Ec__Iterator9_t3143605912::get_offset_of_U24PC_0(),
-	U3CEnemySpawnU3Ec__Iterator9_t3143605912::get_offset_of_U24current_1(),
-	U3CEnemySpawnU3Ec__Iterator9_t3143605912::get_offset_of_U3CU3Ef__this_2(),
+	U3CEnemySpawnU3Ec__IteratorB_t3143605997::get_offset_of_U3CenemytankU3E__0_0(),
+	U3CEnemySpawnU3Ec__IteratorB_t3143605997::get_offset_of_U24PC_1(),
+	U3CEnemySpawnU3Ec__IteratorB_t3143605997::get_offset_of_U24current_2(),
+	U3CEnemySpawnU3Ec__IteratorB_t3143605997::get_offset_of_U3CU3Ef__this_3(),
 	TankGameUIBackgroundScale_t2061701262::get_offset_of_mRect_2(),
 	TankGameUIBackgroundScale_t2061701262::get_offset_of_mBoundingBox_3(),
 	TankMap_t1120032466::get_offset_of_mMapName_0(),
@@ -16693,15 +16721,17 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	TankMap_t1120032466::get_offset_of_mBaseTileRC_6(),
 	TankMap_t1120032466::get_offset_of_mPlayerSpawnPoint_7(),
 	TankMap_t1120032466::get_offset_of_mEnemySpawnPoint_8(),
-	TankMap_t1120032466::get_offset_of_mMapSize_9(),
-	TankMap_t1120032466::get_offset_of_mMapOccupiedInfo_10(),
-	TankMap_t1120032466::get_offset_of_mMapPlayerOcupiedInfo_11(),
-	TankMap_t1120032466::get_offset_of_mMapOccupiedTileTypeInfo_12(),
-	TankMap_t1120032466::get_offset_of_mMapParent_13(),
-	TankMap_t1120032466::get_offset_of_mMaxPartitionLevel_14(),
-	TankMap_t1120032466::get_offset_of_mMaxmumIndexNumber_15(),
-	TankMap_t1120032466::get_offset_of_mTotalRowsAfterPartition_16(),
-	TankMap_t1120032466::get_offset_of_mTotalColumnsAfterPartition_17(),
+	TankMap_t1120032466::get_offset_of_mEnemySpawnPointsOccupiedList_9(),
+	TankMap_t1120032466::get_offset_of_mCurrentAvalibleEnemySpawnPointList_10(),
+	TankMap_t1120032466::get_offset_of_mMapSize_11(),
+	TankMap_t1120032466::get_offset_of_mMapOccupiedInfo_12(),
+	TankMap_t1120032466::get_offset_of_mMapPlayerOcupiedInfo_13(),
+	TankMap_t1120032466::get_offset_of_mMapOccupiedTileTypeInfo_14(),
+	TankMap_t1120032466::get_offset_of_mMapParent_15(),
+	TankMap_t1120032466::get_offset_of_mMaxPartitionLevel_16(),
+	TankMap_t1120032466::get_offset_of_mMaxmumIndexNumber_17(),
+	TankMap_t1120032466::get_offset_of_mTotalRowsAfterPartition_18(),
+	TankMap_t1120032466::get_offset_of_mTotalColumnsAfterPartition_19(),
 	0,
 	MyRC_t2924564543::get_offset_of_mRow_1(),
 	MyRC_t2924564543::get_offset_of_mColumn_2(),
@@ -16745,6 +16775,7 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	Tile_t2729441780::get_offset_of_mSpriteRender_10(),
 	Tile_t2729441780::get_offset_of_mTileIndexsOffset_11(),
 	Tile_t2729441780::get_offset_of_mLocatedTileRC_12(),
+	Tile_t2729441780::get_offset_of_mHitSound_13(),
 	TouchInputManager_t3372913232_StaticFields::get_offset_of_mInputInstance_2(),
 	TouchInputManager_t3372913232::get_offset_of_mValidInputDeltaTime_3(),
 	TouchInputManager_t3372913232::get_offset_of_mInputTimer_4(),
@@ -16766,12 +16797,12 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	LoadingProcess_t282725851::get_offset_of_mProcessScrollBar_2(),
 	LoadingProcess_t282725851::get_offset_of_mCurrentProcessPer_3(),
 	LoadingProcess_t282725851::get_offset_of_mIsLoadingComplete_4(),
-	U3CUpdateProcessBarU3Ec__IteratorA_t1282375929::get_offset_of_U3CexecutecountU3E__0_0(),
-	U3CUpdateProcessBarU3Ec__IteratorA_t1282375929::get_offset_of_U3CinternaltimeU3E__1_1(),
-	U3CUpdateProcessBarU3Ec__IteratorA_t1282375929::get_offset_of_U3CiU3E__2_2(),
-	U3CUpdateProcessBarU3Ec__IteratorA_t1282375929::get_offset_of_U24PC_3(),
-	U3CUpdateProcessBarU3Ec__IteratorA_t1282375929::get_offset_of_U24current_4(),
-	U3CUpdateProcessBarU3Ec__IteratorA_t1282375929::get_offset_of_U3CU3Ef__this_5(),
+	U3CUpdateProcessBarU3Ec__IteratorC_t1282375931::get_offset_of_U3CexecutecountU3E__0_0(),
+	U3CUpdateProcessBarU3Ec__IteratorC_t1282375931::get_offset_of_U3CinternaltimeU3E__1_1(),
+	U3CUpdateProcessBarU3Ec__IteratorC_t1282375931::get_offset_of_U3CiU3E__2_2(),
+	U3CUpdateProcessBarU3Ec__IteratorC_t1282375931::get_offset_of_U24PC_3(),
+	U3CUpdateProcessBarU3Ec__IteratorC_t1282375931::get_offset_of_U24current_4(),
+	U3CUpdateProcessBarU3Ec__IteratorC_t1282375931::get_offset_of_U3CU3Ef__this_5(),
 	AccountInputField_t2916814735::get_offset_of_mInvalidePatterns_2(),
 	AccountInputField_t2916814735::get_offset_of_mAccountTip_3(),
 	AccountInputField_t2916814735::get_offset_of_mInput_4(),
@@ -16793,6 +16824,9 @@ extern const int32_t g_FieldOffsetTable[14263] =
 	OffsetScroller_t1610136665::get_offset_of_mScrollSpeed_2(),
 	OffsetScroller_t1610136665::get_offset_of_mStartOffset_3(),
 	OffsetScroller_t1610136665::get_offset_of_mBackgroundMeshRender_4(),
+	0,
+	0,
+	0,
 	0,
 	0,
 	UIRootExtend_t1122248034::get_offset_of__UIRoot_4(),
@@ -17339,7 +17373,7 @@ extern const int32_t g_FieldOffsetTable[14263] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3353] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3357] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -18936,6 +18970,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3353] =
 	sizeof (DiagnosticsConfigurationHandler_t610492850), -1, sizeof(DiagnosticsConfigurationHandler_t610492850_StaticFields), 0,
 	sizeof (ElementHandler_t1009623312), sizeof(Il2CppMethodPointer), 0, 0,
 	sizeof (SourceLevels_t1530190938)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Stopwatch_t1380178105), -1, sizeof(Stopwatch_t1380178105_StaticFields), 0,
 	sizeof (Trace_t2488851411), -1, 0, 0,
 	sizeof (TraceImplSettings_t1186465586), -1, 0, 0,
 	sizeof (TraceImpl_t3585635237), -1, sizeof(TraceImpl_t3585635237_StaticFields), sizeof(TraceImpl_t3585635237_ThreadStaticFields),
@@ -20586,16 +20621,18 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3353] =
 	sizeof (Bullet_t2590115616), -1, 0, 0,
 	sizeof (U3CMoveU3Ec__Iterator7_t2013389602), -1, 0, 0,
 	sizeof (EnemyTank_t2819878380), -1, 0, 0,
+	sizeof (U3CMoveCoroutineU3Ec__Iterator8_t2729990711), -1, 0, 0,
+	sizeof (U3CShootCoroutineU3Ec__Iterator9_t1373309194), -1, 0, 0,
 	sizeof (GameBoundingBox_t1379603447), -1, 0, 0,
 	sizeof (MapEditor_t1120091431), -1, 0, 0,
 	sizeof (PlayerTank_t155216285), -1, 0, 0,
-	sizeof (U3CKeepMoveCoroutineU3Ec__Iterator8_t583444033), -1, 0, 0,
+	sizeof (U3CKeepMoveCoroutineU3Ec__IteratorA_t368376174), -1, 0, 0,
 	sizeof (MoveAction_t868615717)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Tank_t2050480468), -1, 0, 0,
 	sizeof (TankGameEvent_t3684845930)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Tank2DGameManager_t1949600781), -1, sizeof(Tank2DGameManager_t1949600781_StaticFields), 0,
 	sizeof (TankGameLoad_t1987520770), -1, 0, 0,
-	sizeof (U3CEnemySpawnU3Ec__Iterator9_t3143605912), -1, 0, 0,
+	sizeof (U3CEnemySpawnU3Ec__IteratorB_t3143605997), -1, 0, 0,
 	sizeof (TankGameUIBackgroundScale_t2061701262), -1, 0, 0,
 	sizeof (TankMap_t1120032466), -1, 0, 0,
 	sizeof (MyRC_t2924564543), -1, 0, 0,
@@ -20611,7 +20648,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3353] =
 	sizeof (MapEditorMenu_t1965889544), -1, 0, 0,
 	sizeof (TankMainMenu_t1255738290), -1, 0, 0,
 	sizeof (LoadingProcess_t282725851), -1, 0, 0,
-	sizeof (U3CUpdateProcessBarU3Ec__IteratorA_t1282375929), -1, 0, 0,
+	sizeof (U3CUpdateProcessBarU3Ec__IteratorC_t1282375931), -1, 0, 0,
 	sizeof (AccountInputField_t2916814735), -1, 0, 0,
 	sizeof (LoginButton_t970805563), -1, 0, 0,
 	sizeof (LoginManager_t973619992), -1, sizeof(LoginManager_t973619992_StaticFields), 0,
@@ -20620,6 +20657,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3353] =
 	sizeof (FPSDisplay_t3952194245), -1, 0, 0,
 	sizeof (MathFunctions_t1519185367), -1, 0, 0,
 	sizeof (OffsetScroller_t1610136665), -1, 0, 0,
+	0, 0, 0, 0,
 	sizeof (UIRootExtend_t1122248034), -1, 0, 0,
 	sizeof (Utilities_t1532052400), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t1486305145), -1, sizeof(U3CPrivateImplementationDetailsU3E_t1486305145_StaticFields), 0,

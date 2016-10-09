@@ -16,6 +16,8 @@ struct List_1_t1440998580;
 struct SpriteRenderer_t1209076198;
 // System.Collections.Generic.Dictionary`2<MoveAction,System.Int32>
 struct Dictionary_2_t841443130;
+// UnityEngine.AudioSource
+struct AudioSource_t1135106623;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
@@ -51,6 +53,8 @@ public:
 	Dictionary_2_t841443130 * ___mTileIndexsOffset_11;
 	// UnityEngine.Vector2 Tile::mLocatedTileRC
 	Vector2_t2243707579  ___mLocatedTileRC_12;
+	// UnityEngine.AudioSource Tile::mHitSound
+	AudioSource_t1135106623 * ___mHitSound_13;
 
 public:
 	inline static int32_t get_offset_of_mTileType_3() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mTileType_3)); }
@@ -134,6 +138,15 @@ public:
 	inline void set_mLocatedTileRC_12(Vector2_t2243707579  value)
 	{
 		___mLocatedTileRC_12 = value;
+	}
+
+	inline static int32_t get_offset_of_mHitSound_13() { return static_cast<int32_t>(offsetof(Tile_t2729441780, ___mHitSound_13)); }
+	inline AudioSource_t1135106623 * get_mHitSound_13() const { return ___mHitSound_13; }
+	inline AudioSource_t1135106623 ** get_address_of_mHitSound_13() { return &___mHitSound_13; }
+	inline void set_mHitSound_13(AudioSource_t1135106623 * value)
+	{
+		___mHitSound_13 = value;
+		Il2CppCodeGenWriteBarrier(&___mHitSound_13, value);
 	}
 };
 

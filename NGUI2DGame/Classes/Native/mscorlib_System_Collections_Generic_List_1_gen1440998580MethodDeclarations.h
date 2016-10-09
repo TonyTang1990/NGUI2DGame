@@ -139,8 +139,8 @@ extern "C"  void List_1_CheckMatch_m2715809755_gshared (Il2CppObject * __this /*
 extern "C"  int32_t List_1_GetIndex_m4030875800_gshared (List_1_t1440998580 * __this, int32_t ___startIndex0, int32_t ___count1, Predicate_1_t514847563 * ___match2, const MethodInfo* method);
 #define List_1_GetIndex_m4030875800(__this, ___startIndex0, ___count1, ___match2, method) ((  int32_t (*) (List_1_t1440998580 *, int32_t, int32_t, Predicate_1_t514847563 *, const MethodInfo*))List_1_GetIndex_m4030875800_gshared)(__this, ___startIndex0, ___count1, ___match2, method)
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Int32>::GetEnumerator()
-extern "C"  Enumerator_t975728254  List_1_GetEnumerator_m444823791_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
-#define List_1_GetEnumerator_m444823791(__this, method) ((  Enumerator_t975728254  (*) (List_1_t1440998580 *, const MethodInfo*))List_1_GetEnumerator_m444823791_gshared)(__this, method)
+extern "C"  Enumerator_t975728254  List_1_GetEnumerator_m2527786909_gshared (List_1_t1440998580 * __this, const MethodInfo* method);
+#define List_1_GetEnumerator_m2527786909(__this, method) ((  Enumerator_t975728254  (*) (List_1_t1440998580 *, const MethodInfo*))List_1_GetEnumerator_m2527786909_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.List`1<System.Int32>::IndexOf(T)
 extern "C"  int32_t List_1_IndexOf_m3529832102_gshared (List_1_t1440998580 * __this, int32_t ___item0, const MethodInfo* method);
 #define List_1_IndexOf_m3529832102(__this, ___item0, method) ((  int32_t (*) (List_1_t1440998580 *, int32_t, const MethodInfo*))List_1_IndexOf_m3529832102_gshared)(__this, ___item0, method)

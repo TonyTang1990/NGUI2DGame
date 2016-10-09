@@ -23,25 +23,25 @@ struct LoadingProcess_t282725851;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// LoadingProcess/<UpdateProcessBar>c__IteratorA
-struct  U3CUpdateProcessBarU3Ec__IteratorA_t1282375929  : public Il2CppObject
+// LoadingProcess/<UpdateProcessBar>c__IteratorC
+struct  U3CUpdateProcessBarU3Ec__IteratorC_t1282375931  : public Il2CppObject
 {
 public:
-	// System.Int32 LoadingProcess/<UpdateProcessBar>c__IteratorA::<executecount>__0
+	// System.Int32 LoadingProcess/<UpdateProcessBar>c__IteratorC::<executecount>__0
 	int32_t ___U3CexecutecountU3E__0_0;
-	// System.Single LoadingProcess/<UpdateProcessBar>c__IteratorA::<internaltime>__1
+	// System.Single LoadingProcess/<UpdateProcessBar>c__IteratorC::<internaltime>__1
 	float ___U3CinternaltimeU3E__1_1;
-	// System.Int32 LoadingProcess/<UpdateProcessBar>c__IteratorA::<i>__2
+	// System.Int32 LoadingProcess/<UpdateProcessBar>c__IteratorC::<i>__2
 	int32_t ___U3CiU3E__2_2;
-	// System.Int32 LoadingProcess/<UpdateProcessBar>c__IteratorA::$PC
+	// System.Int32 LoadingProcess/<UpdateProcessBar>c__IteratorC::$PC
 	int32_t ___U24PC_3;
-	// System.Object LoadingProcess/<UpdateProcessBar>c__IteratorA::$current
+	// System.Object LoadingProcess/<UpdateProcessBar>c__IteratorC::$current
 	Il2CppObject * ___U24current_4;
-	// LoadingProcess LoadingProcess/<UpdateProcessBar>c__IteratorA::<>f__this
+	// LoadingProcess LoadingProcess/<UpdateProcessBar>c__IteratorC::<>f__this
 	LoadingProcess_t282725851 * ___U3CU3Ef__this_5;
 
 public:
-	inline static int32_t get_offset_of_U3CexecutecountU3E__0_0() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorA_t1282375929, ___U3CexecutecountU3E__0_0)); }
+	inline static int32_t get_offset_of_U3CexecutecountU3E__0_0() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorC_t1282375931, ___U3CexecutecountU3E__0_0)); }
 	inline int32_t get_U3CexecutecountU3E__0_0() const { return ___U3CexecutecountU3E__0_0; }
 	inline int32_t* get_address_of_U3CexecutecountU3E__0_0() { return &___U3CexecutecountU3E__0_0; }
 	inline void set_U3CexecutecountU3E__0_0(int32_t value)
@@ -49,7 +49,7 @@ public:
 		___U3CexecutecountU3E__0_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CinternaltimeU3E__1_1() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorA_t1282375929, ___U3CinternaltimeU3E__1_1)); }
+	inline static int32_t get_offset_of_U3CinternaltimeU3E__1_1() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorC_t1282375931, ___U3CinternaltimeU3E__1_1)); }
 	inline float get_U3CinternaltimeU3E__1_1() const { return ___U3CinternaltimeU3E__1_1; }
 	inline float* get_address_of_U3CinternaltimeU3E__1_1() { return &___U3CinternaltimeU3E__1_1; }
 	inline void set_U3CinternaltimeU3E__1_1(float value)
@@ -57,7 +57,7 @@ public:
 		___U3CinternaltimeU3E__1_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CiU3E__2_2() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorA_t1282375929, ___U3CiU3E__2_2)); }
+	inline static int32_t get_offset_of_U3CiU3E__2_2() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorC_t1282375931, ___U3CiU3E__2_2)); }
 	inline int32_t get_U3CiU3E__2_2() const { return ___U3CiU3E__2_2; }
 	inline int32_t* get_address_of_U3CiU3E__2_2() { return &___U3CiU3E__2_2; }
 	inline void set_U3CiU3E__2_2(int32_t value)
@@ -65,7 +65,7 @@ public:
 		___U3CiU3E__2_2 = value;
 	}
 
-	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorA_t1282375929, ___U24PC_3)); }
+	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorC_t1282375931, ___U24PC_3)); }
 	inline int32_t get_U24PC_3() const { return ___U24PC_3; }
 	inline int32_t* get_address_of_U24PC_3() { return &___U24PC_3; }
 	inline void set_U24PC_3(int32_t value)
@@ -73,7 +73,7 @@ public:
 		___U24PC_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U24current_4() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorA_t1282375929, ___U24current_4)); }
+	inline static int32_t get_offset_of_U24current_4() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorC_t1282375931, ___U24current_4)); }
 	inline Il2CppObject * get_U24current_4() const { return ___U24current_4; }
 	inline Il2CppObject ** get_address_of_U24current_4() { return &___U24current_4; }
 	inline void set_U24current_4(Il2CppObject * value)
@@ -82,7 +82,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U24current_4, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__this_5() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorA_t1282375929, ___U3CU3Ef__this_5)); }
+	inline static int32_t get_offset_of_U3CU3Ef__this_5() { return static_cast<int32_t>(offsetof(U3CUpdateProcessBarU3Ec__IteratorC_t1282375931, ___U3CU3Ef__this_5)); }
 	inline LoadingProcess_t282725851 * get_U3CU3Ef__this_5() const { return ___U3CU3Ef__this_5; }
 	inline LoadingProcess_t282725851 ** get_address_of_U3CU3Ef__this_5() { return &___U3CU3Ef__this_5; }
 	inline void set_U3CU3Ef__this_5(LoadingProcess_t282725851 * value)

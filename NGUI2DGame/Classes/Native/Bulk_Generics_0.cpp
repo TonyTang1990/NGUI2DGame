@@ -205,6 +205,16 @@ struct TweenCallback_1_t3418705418;
 struct TweenCallback_1_t4036277265;
 // DG.Tweening.TweenCallback`1<System.Single>
 struct TweenCallback_1_t3423337902;
+// ShuffleBag`1<MoveAction>
+struct ShuffleBag_1_t1756729732;
+// System.Collections.Generic.IEnumerator`1<MoveAction>
+struct IEnumerator_1_t2639106840;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
+// MoveAction[]
+struct MoveActionU5BU5D_t2792139688;
+// ShuffleBag`1<System.Object>
+struct ShuffleBag_1_t3577563310;
 // System.Action`1<System.Boolean>
 struct Action_1_t3627374100;
 // System.Action`1<System.Object>
@@ -217,8 +227,6 @@ struct U3CGetEnumeratorU3Ec__Iterator0_t4145164493;
 struct U3CGetEnumeratorU3Ec__Iterator0_t1254237568;
 // System.Array/ArrayReadOnlyList`1<System.Object>
 struct ArrayReadOnlyList_1_t2471096271;
-// System.Collections.IEnumerator
-struct IEnumerator_t1466026749;
 // System.Exception
 struct Exception_t1927440687;
 // System.Array/ArrayReadOnlyList`1<System.Reflection.CustomAttributeNamedArgument>
@@ -471,6 +479,21 @@ struct Il2CppArray;
 #include "DOTween_DG_Tweening_TweenCallback_1_gen4036277265MethodDeclarations.h"
 #include "DOTween_DG_Tweening_TweenCallback_1_gen3423337902.h"
 #include "DOTween_DG_Tweening_TweenCallback_1_gen3423337902MethodDeclarations.h"
+#include "AssemblyU2DCSharp_ShuffleBag_1_gen1756729732.h"
+#include "AssemblyU2DCSharp_ShuffleBag_1_gen1756729732MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen237736849.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen237736849MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera4067433819.h"
+#include "AssemblyU2DCSharp_MoveAction868615717.h"
+#include "UnityEngine_UnityEngine_Random1170710517MethodDeclarations.h"
+#include "Assembly-CSharp_ArrayTypes.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera4067433819MethodDeclarations.h"
+#include "AssemblyU2DCSharp_ShuffleBag_1_gen3577563310.h"
+#include "AssemblyU2DCSharp_ShuffleBag_1_gen3577563310MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2058570427.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2058570427MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumera1593300101MethodDeclarations.h"
 #include "mscorlib_System_Action_1_gen3627374100.h"
 #include "mscorlib_System_Action_1_gen3627374100MethodDeclarations.h"
 #include "mscorlib_System_Action_1_gen2491248677.h"
@@ -511,7 +534,6 @@ struct Il2CppArray;
 #include "System_Xml_Mono_Xml2_XmlTextReader_TagName2340974457.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen1727367979.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen1727367979MethodDeclarations.h"
-#include "AssemblyU2DCSharp_MoveAction868615717.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen3452969744.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen3452969744MethodDeclarations.h"
 #include "mscorlib_System_ArraySegment_1_gen2594217482.h"
@@ -523,12 +545,6 @@ struct Il2CppArray;
 #include "mscorlib_System_Array_InternalEnumerator_1_gen18266304.h"
 #include "mscorlib_System_Array_InternalEnumerator_1_gen18266304MethodDeclarations.h"
 #include "mscorlib_System_Char3454481338.h"
-#include "mscorlib_System_Array_InternalEnumerator_1_gen3907627660.h"
-#include "mscorlib_System_Array_InternalEnumerator_1_gen3907627660MethodDeclarations.h"
-#include "mscorlib_System_Collections_DictionaryEntry3048875398.h"
-#include "mscorlib_System_Array_InternalEnumerator_1_gen1723885533.h"
-#include "mscorlib_System_Array_InternalEnumerator_1_gen1723885533MethodDeclarations.h"
-#include "System_Core_System_Collections_Generic_HashSet_1_Li865133271.h"
 
 // DG.Tweening.Tweener DG.Tweening.Tweener::DoChangeStartValue<DG.Tweening.Color2,DG.Tweening.Color2,DG.Tweening.Plugins.Options.ColorOptions>(DG.Tweening.Core.TweenerCore`3<T1,T2,TPlugOptions>,T2,System.Single)
 extern "C"  Tweener_t760404022 * Tweener_DoChangeStartValue_TisColor2_t232726623_TisColor2_t232726623_TisColorOptions_t2213017305_m1737521874_gshared (Il2CppObject * __this /* static, unused */, TweenerCore_3_t3925803634 * ___t0, Color2_t232726623  ___newStartValue1, float ___newDuration2, const MethodInfo* method);
@@ -869,12 +885,6 @@ extern "C"  uint8_t Array_InternalArray__get_Item_TisByte_t3683104436_m635665873
 // !!0 System.Array::InternalArray__get_Item<System.Char>(System.Int32)
 extern "C"  Il2CppChar Array_InternalArray__get_Item_TisChar_t3454481338_m3646615547_gshared (Il2CppArray * __this, int32_t p0, const MethodInfo* method);
 #define Array_InternalArray__get_Item_TisChar_t3454481338_m3646615547(__this, p0, method) ((  Il2CppChar (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisChar_t3454481338_m3646615547_gshared)(__this, p0, method)
-// !!0 System.Array::InternalArray__get_Item<System.Collections.DictionaryEntry>(System.Int32)
-extern "C"  DictionaryEntry_t3048875398  Array_InternalArray__get_Item_TisDictionaryEntry_t3048875398_m2371191320_gshared (Il2CppArray * __this, int32_t p0, const MethodInfo* method);
-#define Array_InternalArray__get_Item_TisDictionaryEntry_t3048875398_m2371191320(__this, p0, method) ((  DictionaryEntry_t3048875398  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisDictionaryEntry_t3048875398_m2371191320_gshared)(__this, p0, method)
-// !!0 System.Array::InternalArray__get_Item<System.Collections.Generic.HashSet`1/Link<System.Object>>(System.Int32)
-extern "C"  Link_t865133271  Array_InternalArray__get_Item_TisLink_t865133271_m2489845481_gshared (Il2CppArray * __this, int32_t p0, const MethodInfo* method);
-#define Array_InternalArray__get_Item_TisLink_t865133271_m2489845481(__this, p0, method) ((  Link_t865133271  (*) (Il2CppArray *, int32_t, const MethodInfo*))Array_InternalArray__get_Item_TisLink_t865133271_m2489845481_gshared)(__this, p0, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -18410,6 +18420,720 @@ extern "C"  void TweenCallback_1_EndInvoke_m801412299_gshared (TweenCallback_1_t
 {
 	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 }
+// System.Void ShuffleBag`1<MoveAction>::.ctor()
+extern "C"  void ShuffleBag_1__ctor_m1052362704_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 0));
+		((  void (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 1)->methodPointer)(L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 1));
+		__this->set_mData_0(L_0);
+		NullCheck((Il2CppObject *)__this);
+		Object__ctor_m2551263788((Il2CppObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.Generic.IEnumerator`1<T> ShuffleBag`1<MoveAction>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+extern "C"  Il2CppObject* ShuffleBag_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m406898726_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_0);
+		Enumerator_t4067433819  L_1 = ((  Enumerator_t4067433819  (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((List_1_t237736849 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		Enumerator_t4067433819  L_2 = L_1;
+		Il2CppObject * L_3 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 3), &L_2);
+		return (Il2CppObject*)L_3;
+	}
+}
+// System.Collections.IEnumerator ShuffleBag`1<MoveAction>::System.Collections.IEnumerable.GetEnumerator()
+extern "C"  Il2CppObject * ShuffleBag_1_System_Collections_IEnumerable_GetEnumerator_m2855973601_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_0);
+		Enumerator_t4067433819  L_1 = ((  Enumerator_t4067433819  (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((List_1_t237736849 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		Enumerator_t4067433819  L_2 = L_1;
+		Il2CppObject * L_3 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 3), &L_2);
+		return (Il2CppObject *)L_3;
+	}
+}
+// T ShuffleBag`1<MoveAction>::Next()
+extern Il2CppClass* MoveAction_t868615717_il2cpp_TypeInfo_var;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t ShuffleBag_1_Next_m947828346_MetadataUsageId;
+extern "C"  int32_t ShuffleBag_1_Next_m947828346_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ShuffleBag_1_Next_m947828346_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_0);
+		int32_t L_1 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		if (L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		Initobj (MoveAction_t868615717_il2cpp_TypeInfo_var, (&V_2));
+		int32_t L_2 = V_2;
+		return L_2;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = (int32_t)__this->get_mCursor_1();
+		if ((((int32_t)L_3) >= ((int32_t)1)))
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		List_1_t237736849 * L_4 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_4);
+		int32_t L_5 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_5-(int32_t)1)));
+		List_1_t237736849 * L_6 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_6);
+		int32_t L_7 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_6, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		if ((((int32_t)L_7) >= ((int32_t)1)))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		Initobj (MoveAction_t868615717_il2cpp_TypeInfo_var, (&V_3));
+		int32_t L_8 = V_3;
+		return L_8;
+	}
+
+IL_0054:
+	{
+		List_1_t237736849 * L_9 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_9);
+		int32_t L_10 = ((  int32_t (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t237736849 *)L_9, (int32_t)0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		return L_10;
+	}
+
+IL_0061:
+	{
+		float L_11 = Random_get_value_m976649312(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_12 = (int32_t)__this->get_mCursor_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		int32_t L_13 = Mathf_FloorToInt_m4005035722(NULL /*static, unused*/, (float)((float)((float)L_11*(float)(((float)((float)((int32_t)((int32_t)L_12+(int32_t)1))))))), /*hidden argument*/NULL);
+		V_0 = (int32_t)L_13;
+		List_1_t237736849 * L_14 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_15 = V_0;
+		NullCheck((List_1_t237736849 *)L_14);
+		int32_t L_16 = ((  int32_t (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t237736849 *)L_14, (int32_t)L_15, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		V_1 = (int32_t)L_16;
+		List_1_t237736849 * L_17 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_18 = V_0;
+		List_1_t237736849 * L_19 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_20 = (int32_t)__this->get_mCursor_1();
+		NullCheck((List_1_t237736849 *)L_19);
+		int32_t L_21 = ((  int32_t (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t237736849 *)L_19, (int32_t)L_20, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		NullCheck((List_1_t237736849 *)L_17);
+		((  void (*) (List_1_t237736849 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((List_1_t237736849 *)L_17, (int32_t)L_18, (int32_t)L_21, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+		List_1_t237736849 * L_22 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_23 = (int32_t)__this->get_mCursor_1();
+		int32_t L_24 = V_1;
+		NullCheck((List_1_t237736849 *)L_22);
+		((  void (*) (List_1_t237736849 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((List_1_t237736849 *)L_22, (int32_t)L_23, (int32_t)L_24, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+		int32_t L_25 = (int32_t)__this->get_mCursor_1();
+		__this->set_mCursor_1(((int32_t)((int32_t)L_25-(int32_t)1)));
+		int32_t L_26 = V_1;
+		return L_26;
+	}
+}
+// System.Int32 ShuffleBag`1<MoveAction>::IndexOf(T)
+extern "C"  int32_t ShuffleBag_1_IndexOf_m1952236217_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___item0, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___item0;
+		NullCheck((List_1_t237736849 *)L_0);
+		int32_t L_2 = ((  int32_t (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 7)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 7));
+		return L_2;
+	}
+}
+// System.Void ShuffleBag`1<MoveAction>::Insert(System.Int32,T)
+extern "C"  void ShuffleBag_1_Insert_m3938496034_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___index0, int32_t ___item1, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		int32_t L_2 = ___item1;
+		NullCheck((List_1_t237736849 *)L_0);
+		((  void (*) (List_1_t237736849 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 8)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, (int32_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 8));
+		List_1_t237736849 * L_3 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_3);
+		int32_t L_4 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_4-(int32_t)1)));
+		return;
+	}
+}
+// System.Void ShuffleBag`1<MoveAction>::RemoveAt(System.Int32)
+extern "C"  void ShuffleBag_1_RemoveAt_m1235234438_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___index0, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		NullCheck((List_1_t237736849 *)L_0);
+		((  void (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 9)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 9));
+		List_1_t237736849 * L_2 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_2);
+		int32_t L_3 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_3-(int32_t)1)));
+		return;
+	}
+}
+// T ShuffleBag`1<MoveAction>::get_Item(System.Int32)
+extern "C"  int32_t ShuffleBag_1_get_Item_m1469163168_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___index0, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		NullCheck((List_1_t237736849 *)L_0);
+		int32_t L_2 = ((  int32_t (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		return L_2;
+	}
+}
+// System.Void ShuffleBag`1<MoveAction>::set_Item(System.Int32,T)
+extern "C"  void ShuffleBag_1_set_Item_m945812245_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___index0, int32_t ___value1, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		int32_t L_2 = ___value1;
+		NullCheck((List_1_t237736849 *)L_0);
+		((  void (*) (List_1_t237736849 *, int32_t, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, (int32_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+		return;
+	}
+}
+// System.Void ShuffleBag`1<MoveAction>::Add(T)
+extern "C"  void ShuffleBag_1_Add_m3184788229_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___item0, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___item0;
+		NullCheck((List_1_t237736849 *)L_0);
+		((  void (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 10)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 10));
+		List_1_t237736849 * L_2 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_2);
+		int32_t L_3 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_3-(int32_t)1)));
+		return;
+	}
+}
+// System.Int32 ShuffleBag`1<MoveAction>::get_Count()
+extern "C"  int32_t ShuffleBag_1_get_Count_m1957700986_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_0);
+		int32_t L_1 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		return L_1;
+	}
+}
+// System.Void ShuffleBag`1<MoveAction>::Clear()
+extern "C"  void ShuffleBag_1_Clear_m2750708377_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_0);
+		((  void (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 11)->methodPointer)((List_1_t237736849 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 11));
+		return;
+	}
+}
+// System.Boolean ShuffleBag`1<MoveAction>::Contains(T)
+extern "C"  bool ShuffleBag_1_Contains_m707461271_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___item0, const MethodInfo* method)
+{
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___item0;
+		NullCheck((List_1_t237736849 *)L_0);
+		bool L_2 = ((  bool (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 12)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 12));
+		return L_2;
+	}
+}
+// System.Void ShuffleBag`1<MoveAction>::CopyTo(T[],System.Int32)
+extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
+extern const uint32_t ShuffleBag_1_CopyTo_m3314065365_MetadataUsageId;
+extern "C"  void ShuffleBag_1_CopyTo_m3314065365_gshared (ShuffleBag_1_t1756729732 * __this, MoveActionU5BU5D_t2792139688* ___array0, int32_t ___arrayindex1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ShuffleBag_1_CopyTo_m3314065365_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	Enumerator_t4067433819  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_0);
+		Enumerator_t4067433819  L_1 = ((  Enumerator_t4067433819  (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((List_1_t237736849 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		V_1 = (Enumerator_t4067433819 )L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_002b;
+		}
+
+IL_0011:
+		{
+			int32_t L_2 = ((  int32_t (*) (Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 13)->methodPointer)(il2cpp_codegen_fake_box((Enumerator_t4067433819 *)(&V_1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 13));
+			V_0 = (int32_t)L_2;
+			MoveActionU5BU5D_t2792139688* L_3 = ___array0;
+			int32_t L_4 = V_0;
+			int32_t L_5 = L_4;
+			Il2CppObject * L_6 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 14), &L_5);
+			int32_t L_7 = ___arrayindex1;
+			NullCheck((Il2CppArray *)(Il2CppArray *)L_3);
+			Array_SetValue_m2652759566((Il2CppArray *)(Il2CppArray *)L_3, (Il2CppObject *)L_6, (int32_t)L_7, /*hidden argument*/NULL);
+			int32_t L_8 = ___arrayindex1;
+			___arrayindex1 = (int32_t)((int32_t)((int32_t)L_8+(int32_t)1));
+		}
+
+IL_002b:
+		{
+			bool L_9 = ((  bool (*) (Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 15)->methodPointer)(il2cpp_codegen_fake_box((Enumerator_t4067433819 *)(&V_1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 15));
+			if (L_9)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_0037:
+		{
+			IL2CPP_LEAVE(0x48, FINALLY_003c);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_003c;
+	}
+
+FINALLY_003c:
+	{ // begin finally (depth: 1)
+		Enumerator_t4067433819  L_10 = V_1;
+		Enumerator_t4067433819  L_11 = L_10;
+		Il2CppObject * L_12 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 3), &L_11);
+		NullCheck((Il2CppObject *)L_12);
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, (Il2CppObject *)L_12);
+		IL2CPP_END_FINALLY(60)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(60)
+	{
+		IL2CPP_JUMP_TBL(0x48, IL_0048)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0048:
+	{
+		return;
+	}
+}
+// System.Boolean ShuffleBag`1<MoveAction>::Remove(T)
+extern "C"  bool ShuffleBag_1_Remove_m2922878326_gshared (ShuffleBag_1_t1756729732 * __this, int32_t ___item0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		List_1_t237736849 * L_0 = (List_1_t237736849 *)__this->get_mData_0();
+		int32_t L_1 = ___item0;
+		NullCheck((List_1_t237736849 *)L_0);
+		bool L_2 = ((  bool (*) (List_1_t237736849 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 16)->methodPointer)((List_1_t237736849 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 16));
+		V_0 = (bool)L_2;
+		List_1_t237736849 * L_3 = (List_1_t237736849 *)__this->get_mData_0();
+		NullCheck((List_1_t237736849 *)L_3);
+		int32_t L_4 = ((  int32_t (*) (List_1_t237736849 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t237736849 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_4-(int32_t)1)));
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean ShuffleBag`1<MoveAction>::get_IsReadOnly()
+extern "C"  bool ShuffleBag_1_get_IsReadOnly_m412928401_gshared (ShuffleBag_1_t1756729732 * __this, const MethodInfo* method)
+{
+	{
+		return (bool)0;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::.ctor()
+extern "C"  void ShuffleBag_1__ctor_m1421868653_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)il2cpp_codegen_object_new(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 0));
+		((  void (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 1)->methodPointer)(L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 1));
+		__this->set_mData_0(L_0);
+		NullCheck((Il2CppObject *)__this);
+		Object__ctor_m2551263788((Il2CppObject *)__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.Generic.IEnumerator`1<T> ShuffleBag`1<System.Object>::System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+extern "C"  Il2CppObject* ShuffleBag_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m1030183541_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_0);
+		Enumerator_t1593300101  L_1 = ((  Enumerator_t1593300101  (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		Enumerator_t1593300101  L_2 = L_1;
+		Il2CppObject * L_3 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 3), &L_2);
+		return (Il2CppObject*)L_3;
+	}
+}
+// System.Collections.IEnumerator ShuffleBag`1<System.Object>::System.Collections.IEnumerable.GetEnumerator()
+extern "C"  Il2CppObject * ShuffleBag_1_System_Collections_IEnumerable_GetEnumerator_m3456664096_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_0);
+		Enumerator_t1593300101  L_1 = ((  Enumerator_t1593300101  (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		Enumerator_t1593300101  L_2 = L_1;
+		Il2CppObject * L_3 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 3), &L_2);
+		return (Il2CppObject *)L_3;
+	}
+}
+// T ShuffleBag`1<System.Object>::Next()
+extern Il2CppClass* Il2CppObject_il2cpp_TypeInfo_var;
+extern Il2CppClass* Mathf_t2336485820_il2cpp_TypeInfo_var;
+extern const uint32_t ShuffleBag_1_Next_m2119426117_MetadataUsageId;
+extern "C"  Il2CppObject * ShuffleBag_1_Next_m2119426117_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ShuffleBag_1_Next_m2119426117_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	Il2CppObject * V_1 = NULL;
+	Il2CppObject * V_2 = NULL;
+	Il2CppObject * V_3 = NULL;
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_0);
+		int32_t L_1 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		if (L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		Initobj (Il2CppObject_il2cpp_TypeInfo_var, (&V_2));
+		Il2CppObject * L_2 = V_2;
+		return L_2;
+	}
+
+IL_001a:
+	{
+		int32_t L_3 = (int32_t)__this->get_mCursor_1();
+		if ((((int32_t)L_3) >= ((int32_t)1)))
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		List_1_t2058570427 * L_4 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_4);
+		int32_t L_5 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_4, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_5-(int32_t)1)));
+		List_1_t2058570427 * L_6 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_6);
+		int32_t L_7 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_6, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		if ((((int32_t)L_7) >= ((int32_t)1)))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		Initobj (Il2CppObject_il2cpp_TypeInfo_var, (&V_3));
+		Il2CppObject * L_8 = V_3;
+		return L_8;
+	}
+
+IL_0054:
+	{
+		List_1_t2058570427 * L_9 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_9);
+		Il2CppObject * L_10 = ((  Il2CppObject * (*) (List_1_t2058570427 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t2058570427 *)L_9, (int32_t)0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		return L_10;
+	}
+
+IL_0061:
+	{
+		float L_11 = Random_get_value_m976649312(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_12 = (int32_t)__this->get_mCursor_1();
+		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t2336485820_il2cpp_TypeInfo_var);
+		int32_t L_13 = Mathf_FloorToInt_m4005035722(NULL /*static, unused*/, (float)((float)((float)L_11*(float)(((float)((float)((int32_t)((int32_t)L_12+(int32_t)1))))))), /*hidden argument*/NULL);
+		V_0 = (int32_t)L_13;
+		List_1_t2058570427 * L_14 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_15 = V_0;
+		NullCheck((List_1_t2058570427 *)L_14);
+		Il2CppObject * L_16 = ((  Il2CppObject * (*) (List_1_t2058570427 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t2058570427 *)L_14, (int32_t)L_15, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		V_1 = (Il2CppObject *)L_16;
+		List_1_t2058570427 * L_17 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_18 = V_0;
+		List_1_t2058570427 * L_19 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_20 = (int32_t)__this->get_mCursor_1();
+		NullCheck((List_1_t2058570427 *)L_19);
+		Il2CppObject * L_21 = ((  Il2CppObject * (*) (List_1_t2058570427 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t2058570427 *)L_19, (int32_t)L_20, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		NullCheck((List_1_t2058570427 *)L_17);
+		((  void (*) (List_1_t2058570427 *, int32_t, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((List_1_t2058570427 *)L_17, (int32_t)L_18, (Il2CppObject *)L_21, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+		List_1_t2058570427 * L_22 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_23 = (int32_t)__this->get_mCursor_1();
+		Il2CppObject * L_24 = V_1;
+		NullCheck((List_1_t2058570427 *)L_22);
+		((  void (*) (List_1_t2058570427 *, int32_t, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((List_1_t2058570427 *)L_22, (int32_t)L_23, (Il2CppObject *)L_24, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+		int32_t L_25 = (int32_t)__this->get_mCursor_1();
+		__this->set_mCursor_1(((int32_t)((int32_t)L_25-(int32_t)1)));
+		Il2CppObject * L_26 = V_1;
+		return L_26;
+	}
+}
+// System.Int32 ShuffleBag`1<System.Object>::IndexOf(T)
+extern "C"  int32_t ShuffleBag_1_IndexOf_m1419826880_gshared (ShuffleBag_1_t3577563310 * __this, Il2CppObject * ___item0, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		Il2CppObject * L_1 = ___item0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		int32_t L_2 = ((  int32_t (*) (List_1_t2058570427 *, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 7)->methodPointer)((List_1_t2058570427 *)L_0, (Il2CppObject *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 7));
+		return L_2;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::Insert(System.Int32,T)
+extern "C"  void ShuffleBag_1_Insert_m3238775955_gshared (ShuffleBag_1_t3577563310 * __this, int32_t ___index0, Il2CppObject * ___item1, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		Il2CppObject * L_2 = ___item1;
+		NullCheck((List_1_t2058570427 *)L_0);
+		((  void (*) (List_1_t2058570427 *, int32_t, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 8)->methodPointer)((List_1_t2058570427 *)L_0, (int32_t)L_1, (Il2CppObject *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 8));
+		List_1_t2058570427 * L_3 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_3);
+		int32_t L_4 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_4-(int32_t)1)));
+		return;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::RemoveAt(System.Int32)
+extern "C"  void ShuffleBag_1_RemoveAt_m1485037943_gshared (ShuffleBag_1_t3577563310 * __this, int32_t ___index0, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		((  void (*) (List_1_t2058570427 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 9)->methodPointer)((List_1_t2058570427 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 9));
+		List_1_t2058570427 * L_2 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_2);
+		int32_t L_3 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_3-(int32_t)1)));
+		return;
+	}
+}
+// T ShuffleBag`1<System.Object>::get_Item(System.Int32)
+extern "C"  Il2CppObject * ShuffleBag_1_get_Item_m1065390115_gshared (ShuffleBag_1_t3577563310 * __this, int32_t ___index0, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		Il2CppObject * L_2 = ((  Il2CppObject * (*) (List_1_t2058570427 *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5)->methodPointer)((List_1_t2058570427 *)L_0, (int32_t)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 5));
+		return L_2;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::set_Item(System.Int32,T)
+extern "C"  void ShuffleBag_1_set_Item_m2591125398_gshared (ShuffleBag_1_t3577563310 * __this, int32_t ___index0, Il2CppObject * ___value1, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		int32_t L_1 = ___index0;
+		Il2CppObject * L_2 = ___value1;
+		NullCheck((List_1_t2058570427 *)L_0);
+		((  void (*) (List_1_t2058570427 *, int32_t, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6)->methodPointer)((List_1_t2058570427 *)L_0, (int32_t)L_1, (Il2CppObject *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 6));
+		return;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::Add(T)
+extern "C"  void ShuffleBag_1_Add_m2569234716_gshared (ShuffleBag_1_t3577563310 * __this, Il2CppObject * ___item0, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		Il2CppObject * L_1 = ___item0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		((  void (*) (List_1_t2058570427 *, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 10)->methodPointer)((List_1_t2058570427 *)L_0, (Il2CppObject *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 10));
+		List_1_t2058570427 * L_2 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_2);
+		int32_t L_3 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_3-(int32_t)1)));
+		return;
+	}
+}
+// System.Int32 ShuffleBag`1<System.Object>::get_Count()
+extern "C"  int32_t ShuffleBag_1_get_Count_m1590190653_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_0);
+		int32_t L_1 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		return L_1;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::Clear()
+extern "C"  void ShuffleBag_1_Clear_m2826086352_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_0);
+		((  void (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 11)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 11));
+		return;
+	}
+}
+// System.Boolean ShuffleBag`1<System.Object>::Contains(T)
+extern "C"  bool ShuffleBag_1_Contains_m1674766728_gshared (ShuffleBag_1_t3577563310 * __this, Il2CppObject * ___item0, const MethodInfo* method)
+{
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		Il2CppObject * L_1 = ___item0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		bool L_2 = ((  bool (*) (List_1_t2058570427 *, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 12)->methodPointer)((List_1_t2058570427 *)L_0, (Il2CppObject *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 12));
+		return L_2;
+	}
+}
+// System.Void ShuffleBag`1<System.Object>::CopyTo(T[],System.Int32)
+extern Il2CppClass* IDisposable_t2427283555_il2cpp_TypeInfo_var;
+extern const uint32_t ShuffleBag_1_CopyTo_m1025938740_MetadataUsageId;
+extern "C"  void ShuffleBag_1_CopyTo_m1025938740_gshared (ShuffleBag_1_t3577563310 * __this, ObjectU5BU5D_t3614634134* ___array0, int32_t ___arrayindex1, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (ShuffleBag_1_CopyTo_m1025938740_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Il2CppObject * V_0 = NULL;
+	Enumerator_t1593300101  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	Exception_t1927440687 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1927440687 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_0);
+		Enumerator_t1593300101  L_1 = ((  Enumerator_t1593300101  (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2)->methodPointer)((List_1_t2058570427 *)L_0, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 2));
+		V_1 = (Enumerator_t1593300101 )L_1;
+	}
+
+IL_000c:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_002b;
+		}
+
+IL_0011:
+		{
+			Il2CppObject * L_2 = ((  Il2CppObject * (*) (Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 13)->methodPointer)(il2cpp_codegen_fake_box((Enumerator_t1593300101 *)(&V_1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 13));
+			V_0 = (Il2CppObject *)L_2;
+			ObjectU5BU5D_t3614634134* L_3 = ___array0;
+			Il2CppObject * L_4 = V_0;
+			int32_t L_5 = ___arrayindex1;
+			NullCheck((Il2CppArray *)(Il2CppArray *)L_3);
+			Array_SetValue_m2652759566((Il2CppArray *)(Il2CppArray *)L_3, (Il2CppObject *)L_4, (int32_t)L_5, /*hidden argument*/NULL);
+			int32_t L_6 = ___arrayindex1;
+			___arrayindex1 = (int32_t)((int32_t)((int32_t)L_6+(int32_t)1));
+		}
+
+IL_002b:
+		{
+			bool L_7 = ((  bool (*) (Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 15)->methodPointer)(il2cpp_codegen_fake_box((Enumerator_t1593300101 *)(&V_1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 15));
+			if (L_7)
+			{
+				goto IL_0011;
+			}
+		}
+
+IL_0037:
+		{
+			IL2CPP_LEAVE(0x48, FINALLY_003c);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1927440687 *)e.ex;
+		goto FINALLY_003c;
+	}
+
+FINALLY_003c:
+	{ // begin finally (depth: 1)
+		Enumerator_t1593300101  L_8 = V_1;
+		Enumerator_t1593300101  L_9 = L_8;
+		Il2CppObject * L_10 = Box(IL2CPP_RGCTX_DATA(method->declaring_type->rgctx_data, 3), &L_9);
+		NullCheck((Il2CppObject *)L_10);
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t2427283555_il2cpp_TypeInfo_var, (Il2CppObject *)L_10);
+		IL2CPP_END_FINALLY(60)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(60)
+	{
+		IL2CPP_JUMP_TBL(0x48, IL_0048)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1927440687 *)
+	}
+
+IL_0048:
+	{
+		return;
+	}
+}
+// System.Boolean ShuffleBag`1<System.Object>::Remove(T)
+extern "C"  bool ShuffleBag_1_Remove_m4199929051_gshared (ShuffleBag_1_t3577563310 * __this, Il2CppObject * ___item0, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		List_1_t2058570427 * L_0 = (List_1_t2058570427 *)__this->get_mData_0();
+		Il2CppObject * L_1 = ___item0;
+		NullCheck((List_1_t2058570427 *)L_0);
+		bool L_2 = ((  bool (*) (List_1_t2058570427 *, Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 16)->methodPointer)((List_1_t2058570427 *)L_0, (Il2CppObject *)L_1, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 16));
+		V_0 = (bool)L_2;
+		List_1_t2058570427 * L_3 = (List_1_t2058570427 *)__this->get_mData_0();
+		NullCheck((List_1_t2058570427 *)L_3);
+		int32_t L_4 = ((  int32_t (*) (List_1_t2058570427 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4)->methodPointer)((List_1_t2058570427 *)L_3, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->declaring_type->rgctx_data, 4));
+		__this->set_mCursor_1(((int32_t)((int32_t)L_4-(int32_t)1)));
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Boolean ShuffleBag`1<System.Object>::get_IsReadOnly()
+extern "C"  bool ShuffleBag_1_get_IsReadOnly_m90963884_gshared (ShuffleBag_1_t3577563310 * __this, const MethodInfo* method)
+{
+	{
+		return (bool)0;
+	}
+}
 // System.Void System.Action`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
 extern "C"  void Action_1__ctor_m3072925129_gshared (Action_1_t3627374100 * __this, Il2CppObject * ___object0, IntPtr_t ___method1, const MethodInfo* method)
 {
@@ -21096,336 +21820,6 @@ extern "C"  Il2CppChar InternalEnumerator_1_get_Current_m2960188445_AdjustorThun
 {
 	InternalEnumerator_1_t18266304 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t18266304 *>(__this + 1);
 	return InternalEnumerator_1_get_Current_m2960188445(_thisAdjusted, method);
-}
-// System.Void System.Array/InternalEnumerator`1<System.Collections.DictionaryEntry>::.ctor(System.Array)
-extern "C"  void InternalEnumerator_1__ctor_m675130983_gshared (InternalEnumerator_1_t3907627660 * __this, Il2CppArray * ___array0, const MethodInfo* method)
-{
-	{
-		Il2CppArray * L_0 = ___array0;
-		__this->set_array_0(L_0);
-		__this->set_idx_1(((int32_t)-2));
-		return;
-	}
-}
-extern "C"  void InternalEnumerator_1__ctor_m675130983_AdjustorThunk (Il2CppObject * __this, Il2CppArray * ___array0, const MethodInfo* method)
-{
-	InternalEnumerator_1_t3907627660 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t3907627660 *>(__this + 1);
-	InternalEnumerator_1__ctor_m675130983(_thisAdjusted, ___array0, method);
-}
-// System.Void System.Array/InternalEnumerator`1<System.Collections.DictionaryEntry>::System.Collections.IEnumerator.Reset()
-extern "C"  void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m4211243679_gshared (InternalEnumerator_1_t3907627660 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_idx_1(((int32_t)-2));
-		return;
-	}
-}
-extern "C"  void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m4211243679_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t3907627660 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t3907627660 *>(__this + 1);
-	InternalEnumerator_1_System_Collections_IEnumerator_Reset_m4211243679(_thisAdjusted, method);
-}
-// System.Object System.Array/InternalEnumerator`1<System.Collections.DictionaryEntry>::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m3125080595_gshared (InternalEnumerator_1_t3907627660 * __this, const MethodInfo* method)
-{
-	{
-		DictionaryEntry_t3048875398  L_0 = ((  DictionaryEntry_t3048875398  (*) (Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->methodPointer)(il2cpp_codegen_fake_box((InternalEnumerator_1_t3907627660 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
-		DictionaryEntry_t3048875398  L_1 = L_0;
-		Il2CppObject * L_2 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1), &L_1);
-		return L_2;
-	}
-}
-extern "C"  Il2CppObject * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m3125080595_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t3907627660 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t3907627660 *>(__this + 1);
-	return InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m3125080595(_thisAdjusted, method);
-}
-// System.Void System.Array/InternalEnumerator`1<System.Collections.DictionaryEntry>::Dispose()
-extern "C"  void InternalEnumerator_1_Dispose_m3597982928_gshared (InternalEnumerator_1_t3907627660 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_idx_1(((int32_t)-2));
-		return;
-	}
-}
-extern "C"  void InternalEnumerator_1_Dispose_m3597982928_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t3907627660 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t3907627660 *>(__this + 1);
-	InternalEnumerator_1_Dispose_m3597982928(_thisAdjusted, method);
-}
-// System.Boolean System.Array/InternalEnumerator`1<System.Collections.DictionaryEntry>::MoveNext()
-extern "C"  bool InternalEnumerator_1_MoveNext_m1636015243_gshared (InternalEnumerator_1_t3907627660 * __this, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	int32_t G_B5_0 = 0;
-	{
-		int32_t L_0 = (int32_t)__this->get_idx_1();
-		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)-2)))))
-		{
-			goto IL_001e;
-		}
-	}
-	{
-		Il2CppArray * L_1 = (Il2CppArray *)__this->get_array_0();
-		NullCheck((Il2CppArray *)L_1);
-		int32_t L_2 = Array_get_Length_m1498215565((Il2CppArray *)L_1, /*hidden argument*/NULL);
-		__this->set_idx_1(L_2);
-	}
-
-IL_001e:
-	{
-		int32_t L_3 = (int32_t)__this->get_idx_1();
-		if ((((int32_t)L_3) == ((int32_t)(-1))))
-		{
-			goto IL_0043;
-		}
-	}
-	{
-		int32_t L_4 = (int32_t)__this->get_idx_1();
-		int32_t L_5 = (int32_t)((int32_t)((int32_t)L_4-(int32_t)1));
-		V_0 = (int32_t)L_5;
-		__this->set_idx_1(L_5);
-		int32_t L_6 = V_0;
-		G_B5_0 = ((((int32_t)((((int32_t)L_6) == ((int32_t)(-1)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_0044;
-	}
-
-IL_0043:
-	{
-		G_B5_0 = 0;
-	}
-
-IL_0044:
-	{
-		return (bool)G_B5_0;
-	}
-}
-extern "C"  bool InternalEnumerator_1_MoveNext_m1636015243_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t3907627660 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t3907627660 *>(__this + 1);
-	return InternalEnumerator_1_MoveNext_m1636015243(_thisAdjusted, method);
-}
-// T System.Array/InternalEnumerator`1<System.Collections.DictionaryEntry>::get_Current()
-extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1024050925;
-extern Il2CppCodeGenString* _stringLiteral2903193705;
-extern const uint32_t InternalEnumerator_1_get_Current_m2351441486_MetadataUsageId;
-extern "C"  DictionaryEntry_t3048875398  InternalEnumerator_1_get_Current_m2351441486_gshared (InternalEnumerator_1_t3907627660 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (InternalEnumerator_1_get_Current_m2351441486_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		int32_t L_0 = (int32_t)__this->get_idx_1();
-		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)-2)))))
-		{
-			goto IL_0018;
-		}
-	}
-	{
-		InvalidOperationException_t721527559 * L_1 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
-		InvalidOperationException__ctor_m2801133788(L_1, (String_t*)_stringLiteral1024050925, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
-	}
-
-IL_0018:
-	{
-		int32_t L_2 = (int32_t)__this->get_idx_1();
-		if ((!(((uint32_t)L_2) == ((uint32_t)(-1)))))
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		InvalidOperationException_t721527559 * L_3 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
-		InvalidOperationException__ctor_m2801133788(L_3, (String_t*)_stringLiteral2903193705, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
-	}
-
-IL_002f:
-	{
-		Il2CppArray * L_4 = (Il2CppArray *)__this->get_array_0();
-		Il2CppArray * L_5 = (Il2CppArray *)__this->get_array_0();
-		NullCheck((Il2CppArray *)L_5);
-		int32_t L_6 = Array_get_Length_m1498215565((Il2CppArray *)L_5, /*hidden argument*/NULL);
-		int32_t L_7 = (int32_t)__this->get_idx_1();
-		NullCheck((Il2CppArray *)L_4);
-		DictionaryEntry_t3048875398  L_8 = ((  DictionaryEntry_t3048875398  (*) (Il2CppArray *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2)->methodPointer)((Il2CppArray *)L_4, (int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_6-(int32_t)1))-(int32_t)L_7)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2));
-		return L_8;
-	}
-}
-extern "C"  DictionaryEntry_t3048875398  InternalEnumerator_1_get_Current_m2351441486_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t3907627660 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t3907627660 *>(__this + 1);
-	return InternalEnumerator_1_get_Current_m2351441486(_thisAdjusted, method);
-}
-// System.Void System.Array/InternalEnumerator`1<System.Collections.Generic.HashSet`1/Link<System.Object>>::.ctor(System.Array)
-extern "C"  void InternalEnumerator_1__ctor_m2688327768_gshared (InternalEnumerator_1_t1723885533 * __this, Il2CppArray * ___array0, const MethodInfo* method)
-{
-	{
-		Il2CppArray * L_0 = ___array0;
-		__this->set_array_0(L_0);
-		__this->set_idx_1(((int32_t)-2));
-		return;
-	}
-}
-extern "C"  void InternalEnumerator_1__ctor_m2688327768_AdjustorThunk (Il2CppObject * __this, Il2CppArray * ___array0, const MethodInfo* method)
-{
-	InternalEnumerator_1_t1723885533 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t1723885533 *>(__this + 1);
-	InternalEnumerator_1__ctor_m2688327768(_thisAdjusted, ___array0, method);
-}
-// System.Void System.Array/InternalEnumerator`1<System.Collections.Generic.HashSet`1/Link<System.Object>>::System.Collections.IEnumerator.Reset()
-extern "C"  void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m4216238272_gshared (InternalEnumerator_1_t1723885533 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_idx_1(((int32_t)-2));
-		return;
-	}
-}
-extern "C"  void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m4216238272_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t1723885533 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t1723885533 *>(__this + 1);
-	InternalEnumerator_1_System_Collections_IEnumerator_Reset_m4216238272(_thisAdjusted, method);
-}
-// System.Object System.Array/InternalEnumerator`1<System.Collections.Generic.HashSet`1/Link<System.Object>>::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m3680087284_gshared (InternalEnumerator_1_t1723885533 * __this, const MethodInfo* method)
-{
-	{
-		Link_t865133271  L_0 = ((  Link_t865133271  (*) (Il2CppObject *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->methodPointer)(il2cpp_codegen_fake_box((InternalEnumerator_1_t1723885533 *)__this), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
-		Link_t865133271  L_1 = L_0;
-		Il2CppObject * L_2 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1), &L_1);
-		return L_2;
-	}
-}
-extern "C"  Il2CppObject * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m3680087284_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t1723885533 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t1723885533 *>(__this + 1);
-	return InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m3680087284(_thisAdjusted, method);
-}
-// System.Void System.Array/InternalEnumerator`1<System.Collections.Generic.HashSet`1/Link<System.Object>>::Dispose()
-extern "C"  void InternalEnumerator_1_Dispose_m1064404287_gshared (InternalEnumerator_1_t1723885533 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_idx_1(((int32_t)-2));
-		return;
-	}
-}
-extern "C"  void InternalEnumerator_1_Dispose_m1064404287_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t1723885533 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t1723885533 *>(__this + 1);
-	InternalEnumerator_1_Dispose_m1064404287(_thisAdjusted, method);
-}
-// System.Boolean System.Array/InternalEnumerator`1<System.Collections.Generic.HashSet`1/Link<System.Object>>::MoveNext()
-extern "C"  bool InternalEnumerator_1_MoveNext_m3585886944_gshared (InternalEnumerator_1_t1723885533 * __this, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	int32_t G_B5_0 = 0;
-	{
-		int32_t L_0 = (int32_t)__this->get_idx_1();
-		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)-2)))))
-		{
-			goto IL_001e;
-		}
-	}
-	{
-		Il2CppArray * L_1 = (Il2CppArray *)__this->get_array_0();
-		NullCheck((Il2CppArray *)L_1);
-		int32_t L_2 = Array_get_Length_m1498215565((Il2CppArray *)L_1, /*hidden argument*/NULL);
-		__this->set_idx_1(L_2);
-	}
-
-IL_001e:
-	{
-		int32_t L_3 = (int32_t)__this->get_idx_1();
-		if ((((int32_t)L_3) == ((int32_t)(-1))))
-		{
-			goto IL_0043;
-		}
-	}
-	{
-		int32_t L_4 = (int32_t)__this->get_idx_1();
-		int32_t L_5 = (int32_t)((int32_t)((int32_t)L_4-(int32_t)1));
-		V_0 = (int32_t)L_5;
-		__this->set_idx_1(L_5);
-		int32_t L_6 = V_0;
-		G_B5_0 = ((((int32_t)((((int32_t)L_6) == ((int32_t)(-1)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_0044;
-	}
-
-IL_0043:
-	{
-		G_B5_0 = 0;
-	}
-
-IL_0044:
-	{
-		return (bool)G_B5_0;
-	}
-}
-extern "C"  bool InternalEnumerator_1_MoveNext_m3585886944_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t1723885533 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t1723885533 *>(__this + 1);
-	return InternalEnumerator_1_MoveNext_m3585886944(_thisAdjusted, method);
-}
-// T System.Array/InternalEnumerator`1<System.Collections.Generic.HashSet`1/Link<System.Object>>::get_Current()
-extern Il2CppClass* InvalidOperationException_t721527559_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1024050925;
-extern Il2CppCodeGenString* _stringLiteral2903193705;
-extern const uint32_t InternalEnumerator_1_get_Current_m1855333455_MetadataUsageId;
-extern "C"  Link_t865133271  InternalEnumerator_1_get_Current_m1855333455_gshared (InternalEnumerator_1_t1723885533 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (InternalEnumerator_1_get_Current_m1855333455_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		int32_t L_0 = (int32_t)__this->get_idx_1();
-		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)-2)))))
-		{
-			goto IL_0018;
-		}
-	}
-	{
-		InvalidOperationException_t721527559 * L_1 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
-		InvalidOperationException__ctor_m2801133788(L_1, (String_t*)_stringLiteral1024050925, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
-	}
-
-IL_0018:
-	{
-		int32_t L_2 = (int32_t)__this->get_idx_1();
-		if ((!(((uint32_t)L_2) == ((uint32_t)(-1)))))
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		InvalidOperationException_t721527559 * L_3 = (InvalidOperationException_t721527559 *)il2cpp_codegen_object_new(InvalidOperationException_t721527559_il2cpp_TypeInfo_var);
-		InvalidOperationException__ctor_m2801133788(L_3, (String_t*)_stringLiteral2903193705, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
-	}
-
-IL_002f:
-	{
-		Il2CppArray * L_4 = (Il2CppArray *)__this->get_array_0();
-		Il2CppArray * L_5 = (Il2CppArray *)__this->get_array_0();
-		NullCheck((Il2CppArray *)L_5);
-		int32_t L_6 = Array_get_Length_m1498215565((Il2CppArray *)L_5, /*hidden argument*/NULL);
-		int32_t L_7 = (int32_t)__this->get_idx_1();
-		NullCheck((Il2CppArray *)L_4);
-		Link_t865133271  L_8 = ((  Link_t865133271  (*) (Il2CppArray *, int32_t, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2)->methodPointer)((Il2CppArray *)L_4, (int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_6-(int32_t)1))-(int32_t)L_7)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2));
-		return L_8;
-	}
-}
-extern "C"  Link_t865133271  InternalEnumerator_1_get_Current_m1855333455_AdjustorThunk (Il2CppObject * __this, const MethodInfo* method)
-{
-	InternalEnumerator_1_t1723885533 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_t1723885533 *>(__this + 1);
-	return InternalEnumerator_1_get_Current_m1855333455(_thisAdjusted, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
