@@ -1015,6 +1015,7 @@ extern const MethodInfo* GameObject_GetComponent_TisAudioSource_t1135106623_m330
 extern const MethodInfo* Dictionary_2__ctor_m341898953_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_Add_m1205826961_MethodInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3065171368;
+extern Il2CppCodeGenString* _stringLiteral2336049252;
 extern Il2CppCodeGenString* _stringLiteral1016284364;
 extern const uint32_t SoundManager_Awake_m1006343474_MetadataUsageId;
 extern "C"  void SoundManager_Awake_m1006343474 (SoundManager_t654432262 * __this, const MethodInfo* method)
@@ -1067,62 +1068,70 @@ IL_0040:
 		Dictionary_2_t3847337892 * L_7 = (Dictionary_2_t3847337892 *)il2cpp_codegen_object_new(Dictionary_2_t3847337892_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m341898953(L_7, /*hidden argument*/Dictionary_2__ctor_m341898953_MethodInfo_var);
 		__this->set_mBackgroundMusicClipDictionary_5(L_7);
-		V_0 = 0;
-		goto IL_00a9;
-	}
-
-IL_0063:
-	{
-		int32_t L_8 = V_0;
-		int32_t L_9 = L_8;
+		AudioClipU5BU5D_t2203355011* L_8 = __this->get_mGameBackgroundMusciClipChoice_4();
+		NullCheck(L_8);
+		int32_t L_9 = (((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length))));
 		Il2CppObject * L_10 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_9);
-		AudioClipU5BU5D_t2203355011* L_11 = __this->get_mGameBackgroundMusciClipChoice_4();
-		int32_t L_12 = V_0;
-		NullCheck(L_11);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
-		int32_t L_13 = L_12;
-		AudioClip_t1932558630 * L_14 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13));
-		NullCheck(L_14);
-		String_t* L_15 = Object_get_name_m2079638459(L_14, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_16 = String_Format_m1811873526(NULL /*static, unused*/, _stringLiteral1016284364, L_10, L_15, /*hidden argument*/NULL);
+		String_t* L_11 = String_Concat_m56707527(NULL /*static, unused*/, _stringLiteral2336049252, L_10, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
-		Dictionary_2_t3847337892 * L_17 = __this->get_mBackgroundMusicClipDictionary_5();
-		AudioClipU5BU5D_t2203355011* L_18 = __this->get_mGameBackgroundMusciClipChoice_4();
-		int32_t L_19 = V_0;
-		NullCheck(L_18);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_19);
-		int32_t L_20 = L_19;
-		AudioClip_t1932558630 * L_21 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
-		NullCheck(L_21);
-		String_t* L_22 = Object_get_name_m2079638459(L_21, /*hidden argument*/NULL);
-		AudioClipU5BU5D_t2203355011* L_23 = __this->get_mGameBackgroundMusciClipChoice_4();
-		int32_t L_24 = V_0;
-		NullCheck(L_23);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, L_24);
-		int32_t L_25 = L_24;
-		AudioClip_t1932558630 * L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
-		NullCheck(L_17);
-		Dictionary_2_Add_m1205826961(L_17, L_22, L_26, /*hidden argument*/Dictionary_2_Add_m1205826961_MethodInfo_var);
-		int32_t L_27 = V_0;
-		V_0 = ((int32_t)((int32_t)L_27+(int32_t)1));
+		Debug_Log_m920475918(NULL /*static, unused*/, L_11, /*hidden argument*/NULL);
+		V_0 = 0;
+		goto IL_00c5;
 	}
 
-IL_00a9:
+IL_007f:
 	{
+		int32_t L_12 = V_0;
+		int32_t L_13 = L_12;
+		Il2CppObject * L_14 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_13);
+		AudioClipU5BU5D_t2203355011* L_15 = __this->get_mGameBackgroundMusciClipChoice_4();
+		int32_t L_16 = V_0;
+		NullCheck(L_15);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
+		int32_t L_17 = L_16;
+		AudioClip_t1932558630 * L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		NullCheck(L_18);
+		String_t* L_19 = Object_get_name_m2079638459(L_18, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_20 = String_Format_m1811873526(NULL /*static, unused*/, _stringLiteral1016284364, L_14, L_19, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		Dictionary_2_t3847337892 * L_21 = __this->get_mBackgroundMusicClipDictionary_5();
+		AudioClipU5BU5D_t2203355011* L_22 = __this->get_mGameBackgroundMusciClipChoice_4();
+		int32_t L_23 = V_0;
+		NullCheck(L_22);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, L_23);
+		int32_t L_24 = L_23;
+		AudioClip_t1932558630 * L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+		NullCheck(L_25);
+		String_t* L_26 = Object_get_name_m2079638459(L_25, /*hidden argument*/NULL);
+		AudioClipU5BU5D_t2203355011* L_27 = __this->get_mGameBackgroundMusciClipChoice_4();
 		int32_t L_28 = V_0;
-		AudioClipU5BU5D_t2203355011* L_29 = __this->get_mGameBackgroundMusciClipChoice_4();
-		NullCheck(L_29);
-		if ((((int32_t)L_28) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_29)->max_length)))))))
+		NullCheck(L_27);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_27, L_28);
+		int32_t L_29 = L_28;
+		AudioClip_t1932558630 * L_30 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_29));
+		NullCheck(L_21);
+		Dictionary_2_Add_m1205826961(L_21, L_26, L_30, /*hidden argument*/Dictionary_2_Add_m1205826961_MethodInfo_var);
+		int32_t L_31 = V_0;
+		V_0 = ((int32_t)((int32_t)L_31+(int32_t)1));
+	}
+
+IL_00c5:
+	{
+		int32_t L_32 = V_0;
+		AudioClipU5BU5D_t2203355011* L_33 = __this->get_mGameBackgroundMusciClipChoice_4();
+		NullCheck(L_33);
+		if ((((int32_t)L_32) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_33)->max_length)))))))
 		{
-			goto IL_0063;
+			goto IL_007f;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_30 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_34 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
+		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_34, /*hidden argument*/NULL);
 		return;
 	}
 }
