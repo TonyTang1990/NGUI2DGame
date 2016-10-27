@@ -457,6 +457,7 @@ struct U3CSnakeMoveU3Ec__Iterator6_t77864392;
 #include "ProtobufSerializer_com_TonyTang_ProtobufSerializer806432981.h"
 #include "mscorlib_System_IO_FileMode236403845.h"
 #include "mscorlib_System_IO_Stream3255436806.h"
+#include "mscorlib_System_IO_Stream3255436806MethodDeclarations.h"
 #include "mscorlib_System_Type1303803226MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Application354826772MethodDeclarations.h"
 #include "mscorlib_System_Type1303803226.h"
@@ -725,7 +726,6 @@ struct U3CSnakeMoveU3Ec__Iterator6_t77864392;
 #include "UnityEngine_UnityEngine_BoxCollider22920061.h"
 #include "UnityEngine_UnityEngine_BoxCollider22920061MethodDeclarations.h"
 #include "mscorlib_System_IO_FileStream1695958676MethodDeclarations.h"
-#include "mscorlib_System_IO_Stream3255436806MethodDeclarations.h"
 #include "mscorlib_System_Reflection_BindingFlags1082350898.h"
 #include "mscorlib_System_Reflection_PropertyInfo2253729065MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen494775411MethodDeclarations.h"
@@ -4626,24 +4626,27 @@ IL_0046:
 
 IL_005a:
 	{
+		FileStream_t1695958676 * L_17 = V_0;
+		NullCheck(L_17);
+		VirtActionInvoker0::Invoke(14 /* System.Void System.IO.Stream::Close() */, L_17);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral532863255, /*hidden argument*/NULL);
-		PlayerData_t4175080041 * L_17 = __this->get_mPlayerData_29();
-		NullCheck(L_17);
-		String_t* L_18 = PlayerData_get_SceneName_m336014273(L_17, /*hidden argument*/NULL);
-		PlayerData_t4175080041 * L_19 = __this->get_mPlayerData_29();
-		NullCheck(L_19);
-		int32_t L_20 = PlayerData_get_Scores_m3776302840(L_19, /*hidden argument*/NULL);
-		int32_t L_21 = L_20;
-		Il2CppObject * L_22 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_21);
-		PlayerData_t4175080041 * L_23 = __this->get_mPlayerData_29();
-		NullCheck(L_23);
-		int32_t L_24 = PlayerData_get_SpeedLevel_m1263896524(L_23, /*hidden argument*/NULL);
-		int32_t L_25 = L_24;
-		Il2CppObject * L_26 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_25);
+		PlayerData_t4175080041 * L_18 = __this->get_mPlayerData_29();
+		NullCheck(L_18);
+		String_t* L_19 = PlayerData_get_SceneName_m336014273(L_18, /*hidden argument*/NULL);
+		PlayerData_t4175080041 * L_20 = __this->get_mPlayerData_29();
+		NullCheck(L_20);
+		int32_t L_21 = PlayerData_get_Scores_m3776302840(L_20, /*hidden argument*/NULL);
+		int32_t L_22 = L_21;
+		Il2CppObject * L_23 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_22);
+		PlayerData_t4175080041 * L_24 = __this->get_mPlayerData_29();
+		NullCheck(L_24);
+		int32_t L_25 = PlayerData_get_SpeedLevel_m1263896524(L_24, /*hidden argument*/NULL);
+		int32_t L_26 = L_25;
+		Il2CppObject * L_27 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_26);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_27 = String_Format_m4262916296(NULL /*static, unused*/, _stringLiteral2518528478, L_18, L_22, L_26, /*hidden argument*/NULL);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
+		String_t* L_28 = String_Format_m4262916296(NULL /*static, unused*/, _stringLiteral2518528478, L_19, L_23, L_27, /*hidden argument*/NULL);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -4687,7 +4690,7 @@ extern "C"  void CarDodgeGame_LoadPlayerData_m286607669 (CarDodgeGame_t165031253
 		bool L_6 = File_Exists_m1685968367(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
 		if (!L_6)
 		{
-			goto IL_0055;
+			goto IL_005b;
 		}
 	}
 	{
@@ -4701,44 +4704,47 @@ extern "C"  void CarDodgeGame_LoadPlayerData_m286607669 (CarDodgeGame_t165031253
 		NullCheck(L_9);
 		Il2CppObject * L_12 = TypeModel_Deserialize_m1350569455(L_9, L_10, NULL, L_11, /*hidden argument*/NULL);
 		__this->set_mPlayerData_29(((PlayerData_t4175080041 *)IsInstClass(L_12, PlayerData_t4175080041_il2cpp_TypeInfo_var)));
-		goto IL_0083;
+		FileStream_t1695958676 * L_13 = V_1;
+		NullCheck(L_13);
+		VirtActionInvoker0::Invoke(14 /* System.Void System.IO.Stream::Close() */, L_13);
+		goto IL_0089;
 	}
 
-IL_0055:
+IL_005b:
 	{
-		PlayerData_t4175080041 * L_13 = __this->get_mPlayerData_29();
-		String_t* L_14 = Application_get_productName_m802208223(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		PlayerData_set_SceneName_m1862411122(L_13, L_14, /*hidden argument*/NULL);
-		PlayerData_t4175080041 * L_15 = __this->get_mPlayerData_29();
-		NullCheck(L_15);
-		PlayerData_set_Scores_m1537090011(L_15, 0, /*hidden argument*/NULL);
+		PlayerData_t4175080041 * L_14 = __this->get_mPlayerData_29();
+		String_t* L_15 = Application_get_productName_m802208223(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		PlayerData_set_SceneName_m1862411122(L_14, L_15, /*hidden argument*/NULL);
 		PlayerData_t4175080041 * L_16 = __this->get_mPlayerData_29();
 		NullCheck(L_16);
-		PlayerData_set_SpeedLevel_m1029139341(L_16, 1, /*hidden argument*/NULL);
+		PlayerData_set_Scores_m1537090011(L_16, 0, /*hidden argument*/NULL);
+		PlayerData_t4175080041 * L_17 = __this->get_mPlayerData_29();
+		NullCheck(L_17);
+		PlayerData_set_SpeedLevel_m1029139341(L_17, 1, /*hidden argument*/NULL);
 		VirtActionInvoker0::Invoke(7 /* System.Void CarDodgeGame::SavePlayerData() */, __this);
 	}
 
-IL_0083:
+IL_0089:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral3322525508, /*hidden argument*/NULL);
-		PlayerData_t4175080041 * L_17 = __this->get_mPlayerData_29();
-		NullCheck(L_17);
-		String_t* L_18 = PlayerData_get_SceneName_m336014273(L_17, /*hidden argument*/NULL);
-		PlayerData_t4175080041 * L_19 = __this->get_mPlayerData_29();
-		NullCheck(L_19);
-		int32_t L_20 = PlayerData_get_Scores_m3776302840(L_19, /*hidden argument*/NULL);
-		int32_t L_21 = L_20;
-		Il2CppObject * L_22 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_21);
-		PlayerData_t4175080041 * L_23 = __this->get_mPlayerData_29();
-		NullCheck(L_23);
-		int32_t L_24 = PlayerData_get_SpeedLevel_m1263896524(L_23, /*hidden argument*/NULL);
-		int32_t L_25 = L_24;
-		Il2CppObject * L_26 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_25);
+		PlayerData_t4175080041 * L_18 = __this->get_mPlayerData_29();
+		NullCheck(L_18);
+		String_t* L_19 = PlayerData_get_SceneName_m336014273(L_18, /*hidden argument*/NULL);
+		PlayerData_t4175080041 * L_20 = __this->get_mPlayerData_29();
+		NullCheck(L_20);
+		int32_t L_21 = PlayerData_get_Scores_m3776302840(L_20, /*hidden argument*/NULL);
+		int32_t L_22 = L_21;
+		Il2CppObject * L_23 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_22);
+		PlayerData_t4175080041 * L_24 = __this->get_mPlayerData_29();
+		NullCheck(L_24);
+		int32_t L_25 = PlayerData_get_SpeedLevel_m1263896524(L_24, /*hidden argument*/NULL);
+		int32_t L_26 = L_25;
+		Il2CppObject * L_27 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_26);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_27 = String_Format_m4262916296(NULL /*static, unused*/, _stringLiteral2518528478, L_18, L_22, L_26, /*hidden argument*/NULL);
-		Debug_Log_m920475918(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
+		String_t* L_28 = String_Format_m4262916296(NULL /*static, unused*/, _stringLiteral2518528478, L_19, L_23, L_27, /*hidden argument*/NULL);
+		Debug_Log_m920475918(NULL /*static, unused*/, L_28, /*hidden argument*/NULL);
 		return;
 	}
 }
