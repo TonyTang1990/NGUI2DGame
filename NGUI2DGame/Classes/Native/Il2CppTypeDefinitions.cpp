@@ -10121,6 +10121,7 @@ extern const Il2CppType MoveAction_t868615717_0_0_0 = { (void*)3252, 0, IL2CPP_T
 extern const Il2CppType MoveAction_t868615717_0_0_1 = { (void*)3252, 1, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 extern const Il2CppType MoveAction_t868615717_1_0_0 = { (void*)3252, 0, IL2CPP_TYPE_VALUETYPE, 0, 1, 0 };
 extern const Il2CppType MoveAction_t868615717_0_0_32854 = { (void*)3252, 32854, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
+extern const Il2CppType MoveAction_t868615717_0_0_4 = { (void*)3252, 4, IL2CPP_TYPE_VALUETYPE, 0, 0, 0 };
 
 Il2CppGenericClass ICollection_1_t1820691022_GenericClass = { 49, { &GenInst_MoveAction_t868615717_0_0_0, NULL }, NULL };
 extern const Il2CppType ICollection_1_t1820691022_0_0_0 = { &ICollection_1_t1820691022_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
@@ -24250,7 +24251,7 @@ Il2CppArrayType BoundsU5BU2CU5D_t3976027471_ArrayType =
 extern const Il2CppType BoundsU5BU2CU5D_t3976027471_0_0_0 = { &BoundsU5BU2CU5D_t3976027471_ArrayType, 0, IL2CPP_TYPE_ARRAY, 0, 0, 0 };
 
 extern const Il2CppType BoundsU5BU5D_t3976027470_0_0_0 = { (void*)&Bounds_t3033363703_0_0_0, 0, IL2CPP_TYPE_SZARRAY, 0, 0, 0 };
-extern const Il2CppType* const  g_Il2CppTypeTable[13313] = 
+extern const Il2CppType* const  g_Il2CppTypeTable[13314] = 
 {
 	&IEnumerator_1_t164973122_0_0_0,
 	&Il2CppObject_0_0_0,
@@ -37142,6 +37143,7 @@ extern const Il2CppType* const  g_Il2CppTypeTable[13313] =
 	&Tank_t2050480468_1_0_0,
 	&Single_t2076509932_0_0_32852,
 	&Int64_t909078037_0_0_4,
+	&MoveAction_t868615717_0_0_4,
 	&Dictionary_2_t841443130_0_0_1,
 	&U3CMovingCoroutineU3Ec__Iterator8_t3232189786_0_0_0,
 	&U3CMovingCoroutineU3Ec__Iterator8_t3232189786_1_0_0,

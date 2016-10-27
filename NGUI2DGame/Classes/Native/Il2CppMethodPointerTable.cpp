@@ -20987,7 +20987,6 @@ extern "C" void EnemyTank_Start_m3107023537 ();
 extern "C" void EnemyTank_Update_m69816086 ();
 extern "C" void EnemyTank_OnDestroy_m1198924850 ();
 extern "C" void EnemyTank_CanMoveForward_m2644624451 ();
-extern "C" void EnemyTank_RandomChangeMoveAction_m2783081615 ();
 extern "C" void EnemyTank_OnTriggerEnter2D_m1821377321 ();
 extern "C" void EnemyTank_MoveCoroutine_m2447926902 ();
 extern "C" void EnemyTank_ShootCoroutine_m3828524524 ();
@@ -22728,7 +22727,7 @@ extern "C" void VignetteAndChromaticAberration_CheckResources_m394291804 ();
 extern "C" void VignetteAndChromaticAberration_OnRenderImage_m3555084659 ();
 extern "C" void Vortex__ctor_m3778734735 ();
 extern "C" void Vortex_OnRenderImage_m3762609939 ();
-extern const Il2CppMethodPointer g_MethodPointers[22717] = 
+extern const Il2CppMethodPointer g_MethodPointers[22716] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -43706,7 +43705,6 @@ extern const Il2CppMethodPointer g_MethodPointers[22717] =
 	EnemyTank_Update_m69816086,
 	EnemyTank_OnDestroy_m1198924850,
 	EnemyTank_CanMoveForward_m2644624451,
-	EnemyTank_RandomChangeMoveAction_m2783081615,
 	EnemyTank_OnTriggerEnter2D_m1821377321,
 	EnemyTank_MoveCoroutine_m2447926902,
 	EnemyTank_ShootCoroutine_m3828524524,

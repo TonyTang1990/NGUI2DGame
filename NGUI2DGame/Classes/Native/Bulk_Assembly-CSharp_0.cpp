@@ -6581,13 +6581,6 @@ IL_00aa:
 		return L_19;
 	}
 }
-// MoveAction EnemyTank::RandomChangeMoveAction()
-extern "C"  int32_t EnemyTank_RandomChangeMoveAction_m2783081615 (EnemyTank_t2819878380 * __this, const MethodInfo* method)
-{
-	{
-		return (int32_t)(1);
-	}
-}
 // System.Void EnemyTank::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
@@ -23981,6 +23974,8 @@ extern "C"  void PlayerTank_Awake_m2826192185 (PlayerTank_t155216285 * __this, c
 		String_t* L_4 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3395440571, L_3, /*hidden argument*/NULL);
 		Utilities_UnityLog_m2886201304(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
 		__this->set_mIsKeepMoving_27((bool)0);
+		int32_t L_5 = ((Tank_t2050480468 *)__this)->get_mCurrentMoveAction_16();
+		__this->set_mNewDirection_28(L_5);
 		return;
 	}
 }
@@ -24166,7 +24161,7 @@ extern "C"  void PlayerTank_KeepMoveUp_m2835207764 (PlayerTank_t155216285 * __th
 		}
 	}
 	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 0, /*hidden argument*/NULL);
+		__this->set_mNewDirection_28(0);
 		__this->set_mIsKeepMoving_27((bool)1);
 		goto IL_0020;
 	}
@@ -24192,7 +24187,7 @@ extern "C"  void PlayerTank_KeepMoveDown_m1769796715 (PlayerTank_t155216285 * __
 		}
 	}
 	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 1, /*hidden argument*/NULL);
+		__this->set_mNewDirection_28(1);
 		__this->set_mIsKeepMoving_27((bool)1);
 		goto IL_0020;
 	}
@@ -24218,7 +24213,7 @@ extern "C"  void PlayerTank_KeepMoveLeft_m3595834356 (PlayerTank_t155216285 * __
 		}
 	}
 	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 2, /*hidden argument*/NULL);
+		__this->set_mNewDirection_28(2);
 		__this->set_mIsKeepMoving_27((bool)1);
 		goto IL_0020;
 	}
@@ -24244,7 +24239,7 @@ extern "C"  void PlayerTank_KeepMoveRight_m1033982049 (PlayerTank_t155216285 * _
 		}
 	}
 	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 3, /*hidden argument*/NULL);
+		__this->set_mNewDirection_28(3);
 		__this->set_mIsKeepMoving_27((bool)1);
 		goto IL_0020;
 	}
@@ -24439,11 +24434,11 @@ extern "C"  bool U3CKeepMoveCoroutineU3Ec__IteratorB_MoveNext_m2832026126 (U3CKe
 		}
 		if (L_1 == 1)
 		{
-			goto IL_0064;
+			goto IL_0095;
 		}
 	}
 	{
-		goto IL_0070;
+		goto IL_00a1;
 	}
 
 IL_0021:
@@ -24453,39 +24448,61 @@ IL_0021:
 		bool L_3 = L_2->get_mIsKeepMoving_27();
 		if (!L_3)
 		{
-			goto IL_003c;
+			goto IL_006d;
 		}
 	}
 	{
 		PlayerTank_t155216285 * L_4 = __this->get_U3CU3Ef__this_2();
 		NullCheck(L_4);
-		Tank_MoveForward_m327062121(L_4, /*hidden argument*/NULL);
+		int32_t L_5 = L_4->get_mNewDirection_28();
+		PlayerTank_t155216285 * L_6 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_6);
+		int32_t L_7 = ((Tank_t2050480468 *)L_6)->get_mCurrentMoveAction_16();
+		if ((((int32_t)L_5) == ((int32_t)L_7)))
+		{
+			goto IL_0062;
+		}
 	}
-
-IL_003c:
 	{
-		PlayerTank_t155216285 * L_5 = __this->get_U3CU3Ef__this_2();
-		NullCheck(L_5);
-		float L_6 = ((Tank_t2050480468 *)L_5)->get_mKeepMoveIntervalTime_13();
-		WaitForSeconds_t3839502067 * L_7 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m1990515539(L_7, ((float)((float)L_6/(float)(10.0f))), /*hidden argument*/NULL);
-		__this->set_U24current_1(L_7);
-		__this->set_U24PC_0(1);
-		goto IL_0072;
+		PlayerTank_t155216285 * L_8 = __this->get_U3CU3Ef__this_2();
+		PlayerTank_t155216285 * L_9 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_9);
+		int32_t L_10 = L_9->get_mNewDirection_28();
+		NullCheck(L_8);
+		Tank_set_CurrentMoveAction_m3521750979(L_8, L_10, /*hidden argument*/NULL);
 	}
 
-IL_0064:
+IL_0062:
+	{
+		PlayerTank_t155216285 * L_11 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_11);
+		Tank_MoveForward_m327062121(L_11, /*hidden argument*/NULL);
+	}
+
+IL_006d:
+	{
+		PlayerTank_t155216285 * L_12 = __this->get_U3CU3Ef__this_2();
+		NullCheck(L_12);
+		float L_13 = ((Tank_t2050480468 *)L_12)->get_mKeepMoveIntervalTime_13();
+		WaitForSeconds_t3839502067 * L_14 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_14, ((float)((float)L_13/(float)(10.0f))), /*hidden argument*/NULL);
+		__this->set_U24current_1(L_14);
+		__this->set_U24PC_0(1);
+		goto IL_00a3;
+	}
+
+IL_0095:
 	{
 		goto IL_0021;
 	}
-	// Dead block : IL_0069: ldarg.0
+	// Dead block : IL_009a: ldarg.0
 
-IL_0070:
+IL_00a1:
 	{
 		return (bool)0;
 	}
 
-IL_0072:
+IL_00a3:
 	{
 		return (bool)1;
 	}

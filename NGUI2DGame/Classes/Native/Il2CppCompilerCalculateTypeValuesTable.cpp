@@ -3074,7 +3074,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[14305] = 
+extern const int32_t g_FieldOffsetTable[14306] = 
 {
 	0,
 	0,
@@ -16660,6 +16660,7 @@ extern const int32_t g_FieldOffsetTable[14305] =
 	MapEditor_t1120091431::get_offset_of_mCurrentSelectedTileGO_3(),
 	MapEditor_t1120091431::get_offset_of_mCurrentSelectedTileType_4(),
 	PlayerTank_t155216285::get_offset_of_mIsKeepMoving_27(),
+	PlayerTank_t155216285::get_offset_of_mNewDirection_28(),
 	U3CKeepMoveCoroutineU3Ec__IteratorB_t4260058943::get_offset_of_U24PC_0(),
 	U3CKeepMoveCoroutineU3Ec__IteratorB_t4260058943::get_offset_of_U24current_1(),
 	U3CKeepMoveCoroutineU3Ec__IteratorB_t4260058943::get_offset_of_U3CU3Ef__this_2(),
