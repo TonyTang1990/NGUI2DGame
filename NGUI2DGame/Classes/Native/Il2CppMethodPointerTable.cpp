@@ -20991,18 +20991,18 @@ extern "C" void EnemyTank_RandomChangeMoveAction_m2783081615 ();
 extern "C" void EnemyTank_OnTriggerEnter2D_m1821377321 ();
 extern "C" void EnemyTank_MoveCoroutine_m2447926902 ();
 extern "C" void EnemyTank_ShootCoroutine_m3828524524 ();
-extern "C" void U3CMoveCoroutineU3Ec__Iterator8__ctor_m1470229344 ();
-extern "C" void U3CMoveCoroutineU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1702536050 ();
-extern "C" void U3CMoveCoroutineU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m2532675786 ();
-extern "C" void U3CMoveCoroutineU3Ec__Iterator8_MoveNext_m2909979612 ();
-extern "C" void U3CMoveCoroutineU3Ec__Iterator8_Dispose_m1443298273 ();
-extern "C" void U3CMoveCoroutineU3Ec__Iterator8_Reset_m198345155 ();
-extern "C" void U3CShootCoroutineU3Ec__Iterator9__ctor_m3417462133 ();
-extern "C" void U3CShootCoroutineU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2804191827 ();
-extern "C" void U3CShootCoroutineU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m3890467659 ();
-extern "C" void U3CShootCoroutineU3Ec__Iterator9_MoveNext_m3895971003 ();
-extern "C" void U3CShootCoroutineU3Ec__Iterator9_Dispose_m1107480620 ();
-extern "C" void U3CShootCoroutineU3Ec__Iterator9_Reset_m2587652422 ();
+extern "C" void U3CMoveCoroutineU3Ec__Iterator9__ctor_m1471343391 ();
+extern "C" void U3CMoveCoroutineU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m29165841 ();
+extern "C" void U3CMoveCoroutineU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m1378578025 ();
+extern "C" void U3CMoveCoroutineU3Ec__Iterator9_MoveNext_m1254733697 ();
+extern "C" void U3CMoveCoroutineU3Ec__Iterator9_Dispose_m1480064000 ();
+extern "C" void U3CMoveCoroutineU3Ec__Iterator9_Reset_m199459202 ();
+extern "C" void U3CShootCoroutineU3Ec__IteratorA__ctor_m525466029 ();
+extern "C" void U3CShootCoroutineU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2964362971 ();
+extern "C" void U3CShootCoroutineU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m546666515 ();
+extern "C" void U3CShootCoroutineU3Ec__IteratorA_MoveNext_m119037091 ();
+extern "C" void U3CShootCoroutineU3Ec__IteratorA_Dispose_m1536765860 ();
+extern "C" void U3CShootCoroutineU3Ec__IteratorA_Reset_m1601315886 ();
 extern "C" void EquipItems__ctor_m2508878821 ();
 extern "C" void EquipItems_Start_m3665532189 ();
 extern "C" void EquipRandomItem__ctor_m3904740745 ();
@@ -21174,12 +21174,12 @@ extern "C" void LoadingProcess_Awake_m705420315 ();
 extern "C" void LoadingProcess_Start_m4254790716 ();
 extern "C" void LoadingProcess_Update_m3191783039 ();
 extern "C" void LoadingProcess_UpdateProcessBar_m1373146775 ();
-extern "C" void U3CUpdateProcessBarU3Ec__IteratorC__ctor_m3181725238 ();
-extern "C" void U3CUpdateProcessBarU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1117972108 ();
-extern "C" void U3CUpdateProcessBarU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m4278723364 ();
-extern "C" void U3CUpdateProcessBarU3Ec__IteratorC_MoveNext_m1012784562 ();
-extern "C" void U3CUpdateProcessBarU3Ec__IteratorC_Dispose_m3179514205 ();
-extern "C" void U3CUpdateProcessBarU3Ec__IteratorC_Reset_m2195332219 ();
+extern "C" void U3CUpdateProcessBarU3Ec__IteratorD__ctor_m3187718005 ();
+extern "C" void U3CUpdateProcessBarU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1597775399 ();
+extern "C" void U3CUpdateProcessBarU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m3522814527 ();
+extern "C" void U3CUpdateProcessBarU3Ec__IteratorD_MoveNext_m4233623787 ();
+extern "C" void U3CUpdateProcessBarU3Ec__IteratorD_Dispose_m3377421440 ();
+extern "C" void U3CUpdateProcessBarU3Ec__IteratorD_Reset_m2201321026 ();
 extern "C" void LoadLevelOnClick__ctor_m2820126616 ();
 extern "C" void LoadLevelOnClick_OnClick_m931326351 ();
 extern "C" void Localization__ctor_m3434466340 ();
@@ -21423,12 +21423,12 @@ extern "C" void PlayerTank_KeepMoveRight_m1033982049 ();
 extern "C" void PlayerTank_KeepMoveCoroutine_m3360348034 ();
 extern "C" void PlayerTank_ShootClick_m1688059429 ();
 extern "C" void PlayerTank_OnTriggerEnter2D_m1624058948 ();
-extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorA__ctor_m1157287153 ();
-extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2732181079 ();
-extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m1550519775 ();
-extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorA_MoveNext_m2176663247 ();
-extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorA_Dispose_m3728088784 ();
-extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorA_Reset_m4009934026 ();
+extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB__ctor_m1503634434 ();
+extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m248325798 ();
+extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m1893451054 ();
+extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_MoveNext_m2832026126 ();
+extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_Dispose_m2622069525 ();
+extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_Reset_m1689488475 ();
 extern "C" void PlayIdleAnimations__ctor_m1300294730 ();
 extern "C" void PlayIdleAnimations_Start_m1656706198 ();
 extern "C" void PlayIdleAnimations_Update_m1066760115 ();
@@ -21508,14 +21508,22 @@ extern "C" void Tank_UpdateOccupiedInfo_m3660004542 ();
 extern "C" void Tank_Awake_m3158931696 ();
 extern "C" void Tank_Start_m1332170943 ();
 extern "C" void Tank_Update_m546628242 ();
+extern "C" void Tank_FixedUpdate_m514418752 ();
 extern "C" void Tank_OnDestroy_m4042988626 ();
 extern "C" void Tank_RecoverTankOccupiedTile_m2660540363 ();
 extern "C" void Tank_CanMoveForward_m362955925 ();
 extern "C" void Tank_MoveForward_m327062121 ();
+extern "C" void Tank_MovingCoroutine_m2540777759 ();
 extern "C" void Tank_Shoot_m1374073324 ();
 extern "C" void Tank_TakeDamage_m3119853146 ();
 extern "C" void Tank_DestroyTankDelay_m3636233030 ();
 extern "C" void Tank_BulletDestroyDelegate_m1148978620 ();
+extern "C" void U3CMovingCoroutineU3Ec__Iterator8__ctor_m2723151973 ();
+extern "C" void U3CMovingCoroutineU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3750609571 ();
+extern "C" void U3CMovingCoroutineU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m3283452907 ();
+extern "C" void U3CMovingCoroutineU3Ec__Iterator8_MoveNext_m210314955 ();
+extern "C" void U3CMovingCoroutineU3Ec__Iterator8_Dispose_m1739792476 ();
+extern "C" void U3CMovingCoroutineU3Ec__Iterator8_Reset_m1275427734 ();
 extern "C" void Tank2DGameManager__ctor_m1489995230 ();
 extern "C" void Tank2DGameManager_Awake_m519427165 ();
 extern "C" void Tank2DGameManager_GameOver_m2733196860 ();
@@ -21535,12 +21543,12 @@ extern "C" void TankGameLoad_Start_m551999267 ();
 extern "C" void TankGameLoad_EnemySpawn_m880921766 ();
 extern "C" void TankGameLoad_Update_m4164672720 ();
 extern "C" void TankGameLoad_OnDestroy_m1252867792 ();
-extern "C" void U3CEnemySpawnU3Ec__IteratorB__ctor_m1936121308 ();
-extern "C" void U3CEnemySpawnU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2520199582 ();
-extern "C" void U3CEnemySpawnU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m283024822 ();
-extern "C" void U3CEnemySpawnU3Ec__IteratorB_MoveNext_m1353577768 ();
-extern "C" void U3CEnemySpawnU3Ec__IteratorB_Dispose_m290046631 ();
-extern "C" void U3CEnemySpawnU3Ec__IteratorB_Reset_m4213308505 ();
+extern "C" void U3CEnemySpawnU3Ec__IteratorC__ctor_m1939598749 ();
+extern "C" void U3CEnemySpawnU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2525376511 ();
+extern "C" void U3CEnemySpawnU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m3615228567 ();
+extern "C" void U3CEnemySpawnU3Ec__IteratorC_MoveNext_m4213900291 ();
+extern "C" void U3CEnemySpawnU3Ec__IteratorC_Dispose_m405078920 ();
+extern "C" void U3CEnemySpawnU3Ec__IteratorC_Reset_m4216794394 ();
 extern "C" void TankGameUIBackgroundScale__ctor_m758514503 ();
 extern "C" void TankGameUIBackgroundScale_Awake_m3144060510 ();
 extern "C" void TankGameUIBackgroundScale_Start_m4269805395 ();
@@ -22720,7 +22728,7 @@ extern "C" void VignetteAndChromaticAberration_CheckResources_m394291804 ();
 extern "C" void VignetteAndChromaticAberration_OnRenderImage_m3555084659 ();
 extern "C" void Vortex__ctor_m3778734735 ();
 extern "C" void Vortex_OnRenderImage_m3762609939 ();
-extern const Il2CppMethodPointer g_MethodPointers[22709] = 
+extern const Il2CppMethodPointer g_MethodPointers[22717] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -43702,18 +43710,18 @@ extern const Il2CppMethodPointer g_MethodPointers[22709] =
 	EnemyTank_OnTriggerEnter2D_m1821377321,
 	EnemyTank_MoveCoroutine_m2447926902,
 	EnemyTank_ShootCoroutine_m3828524524,
-	U3CMoveCoroutineU3Ec__Iterator8__ctor_m1470229344,
-	U3CMoveCoroutineU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1702536050,
-	U3CMoveCoroutineU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m2532675786,
-	U3CMoveCoroutineU3Ec__Iterator8_MoveNext_m2909979612,
-	U3CMoveCoroutineU3Ec__Iterator8_Dispose_m1443298273,
-	U3CMoveCoroutineU3Ec__Iterator8_Reset_m198345155,
-	U3CShootCoroutineU3Ec__Iterator9__ctor_m3417462133,
-	U3CShootCoroutineU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2804191827,
-	U3CShootCoroutineU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m3890467659,
-	U3CShootCoroutineU3Ec__Iterator9_MoveNext_m3895971003,
-	U3CShootCoroutineU3Ec__Iterator9_Dispose_m1107480620,
-	U3CShootCoroutineU3Ec__Iterator9_Reset_m2587652422,
+	U3CMoveCoroutineU3Ec__Iterator9__ctor_m1471343391,
+	U3CMoveCoroutineU3Ec__Iterator9_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m29165841,
+	U3CMoveCoroutineU3Ec__Iterator9_System_Collections_IEnumerator_get_Current_m1378578025,
+	U3CMoveCoroutineU3Ec__Iterator9_MoveNext_m1254733697,
+	U3CMoveCoroutineU3Ec__Iterator9_Dispose_m1480064000,
+	U3CMoveCoroutineU3Ec__Iterator9_Reset_m199459202,
+	U3CShootCoroutineU3Ec__IteratorA__ctor_m525466029,
+	U3CShootCoroutineU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2964362971,
+	U3CShootCoroutineU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m546666515,
+	U3CShootCoroutineU3Ec__IteratorA_MoveNext_m119037091,
+	U3CShootCoroutineU3Ec__IteratorA_Dispose_m1536765860,
+	U3CShootCoroutineU3Ec__IteratorA_Reset_m1601315886,
 	EquipItems__ctor_m2508878821,
 	EquipItems_Start_m3665532189,
 	EquipRandomItem__ctor_m3904740745,
@@ -43885,12 +43893,12 @@ extern const Il2CppMethodPointer g_MethodPointers[22709] =
 	LoadingProcess_Start_m4254790716,
 	LoadingProcess_Update_m3191783039,
 	LoadingProcess_UpdateProcessBar_m1373146775,
-	U3CUpdateProcessBarU3Ec__IteratorC__ctor_m3181725238,
-	U3CUpdateProcessBarU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1117972108,
-	U3CUpdateProcessBarU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m4278723364,
-	U3CUpdateProcessBarU3Ec__IteratorC_MoveNext_m1012784562,
-	U3CUpdateProcessBarU3Ec__IteratorC_Dispose_m3179514205,
-	U3CUpdateProcessBarU3Ec__IteratorC_Reset_m2195332219,
+	U3CUpdateProcessBarU3Ec__IteratorD__ctor_m3187718005,
+	U3CUpdateProcessBarU3Ec__IteratorD_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1597775399,
+	U3CUpdateProcessBarU3Ec__IteratorD_System_Collections_IEnumerator_get_Current_m3522814527,
+	U3CUpdateProcessBarU3Ec__IteratorD_MoveNext_m4233623787,
+	U3CUpdateProcessBarU3Ec__IteratorD_Dispose_m3377421440,
+	U3CUpdateProcessBarU3Ec__IteratorD_Reset_m2201321026,
 	LoadLevelOnClick__ctor_m2820126616,
 	LoadLevelOnClick_OnClick_m931326351,
 	Localization__ctor_m3434466340,
@@ -44134,12 +44142,12 @@ extern const Il2CppMethodPointer g_MethodPointers[22709] =
 	PlayerTank_KeepMoveCoroutine_m3360348034,
 	PlayerTank_ShootClick_m1688059429,
 	PlayerTank_OnTriggerEnter2D_m1624058948,
-	U3CKeepMoveCoroutineU3Ec__IteratorA__ctor_m1157287153,
-	U3CKeepMoveCoroutineU3Ec__IteratorA_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2732181079,
-	U3CKeepMoveCoroutineU3Ec__IteratorA_System_Collections_IEnumerator_get_Current_m1550519775,
-	U3CKeepMoveCoroutineU3Ec__IteratorA_MoveNext_m2176663247,
-	U3CKeepMoveCoroutineU3Ec__IteratorA_Dispose_m3728088784,
-	U3CKeepMoveCoroutineU3Ec__IteratorA_Reset_m4009934026,
+	U3CKeepMoveCoroutineU3Ec__IteratorB__ctor_m1503634434,
+	U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m248325798,
+	U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m1893451054,
+	U3CKeepMoveCoroutineU3Ec__IteratorB_MoveNext_m2832026126,
+	U3CKeepMoveCoroutineU3Ec__IteratorB_Dispose_m2622069525,
+	U3CKeepMoveCoroutineU3Ec__IteratorB_Reset_m1689488475,
 	PlayIdleAnimations__ctor_m1300294730,
 	PlayIdleAnimations_Start_m1656706198,
 	PlayIdleAnimations_Update_m1066760115,
@@ -44219,14 +44227,22 @@ extern const Il2CppMethodPointer g_MethodPointers[22709] =
 	Tank_Awake_m3158931696,
 	Tank_Start_m1332170943,
 	Tank_Update_m546628242,
+	Tank_FixedUpdate_m514418752,
 	Tank_OnDestroy_m4042988626,
 	Tank_RecoverTankOccupiedTile_m2660540363,
 	Tank_CanMoveForward_m362955925,
 	Tank_MoveForward_m327062121,
+	Tank_MovingCoroutine_m2540777759,
 	Tank_Shoot_m1374073324,
 	Tank_TakeDamage_m3119853146,
 	Tank_DestroyTankDelay_m3636233030,
 	Tank_BulletDestroyDelegate_m1148978620,
+	U3CMovingCoroutineU3Ec__Iterator8__ctor_m2723151973,
+	U3CMovingCoroutineU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3750609571,
+	U3CMovingCoroutineU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m3283452907,
+	U3CMovingCoroutineU3Ec__Iterator8_MoveNext_m210314955,
+	U3CMovingCoroutineU3Ec__Iterator8_Dispose_m1739792476,
+	U3CMovingCoroutineU3Ec__Iterator8_Reset_m1275427734,
 	Tank2DGameManager__ctor_m1489995230,
 	Tank2DGameManager_Awake_m519427165,
 	Tank2DGameManager_GameOver_m2733196860,
@@ -44246,12 +44262,12 @@ extern const Il2CppMethodPointer g_MethodPointers[22709] =
 	TankGameLoad_EnemySpawn_m880921766,
 	TankGameLoad_Update_m4164672720,
 	TankGameLoad_OnDestroy_m1252867792,
-	U3CEnemySpawnU3Ec__IteratorB__ctor_m1936121308,
-	U3CEnemySpawnU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2520199582,
-	U3CEnemySpawnU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m283024822,
-	U3CEnemySpawnU3Ec__IteratorB_MoveNext_m1353577768,
-	U3CEnemySpawnU3Ec__IteratorB_Dispose_m290046631,
-	U3CEnemySpawnU3Ec__IteratorB_Reset_m4213308505,
+	U3CEnemySpawnU3Ec__IteratorC__ctor_m1939598749,
+	U3CEnemySpawnU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2525376511,
+	U3CEnemySpawnU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m3615228567,
+	U3CEnemySpawnU3Ec__IteratorC_MoveNext_m4213900291,
+	U3CEnemySpawnU3Ec__IteratorC_Dispose_m405078920,
+	U3CEnemySpawnU3Ec__IteratorC_Reset_m4216794394,
 	TankGameUIBackgroundScale__ctor_m758514503,
 	TankGameUIBackgroundScale_Awake_m3144060510,
 	TankGameUIBackgroundScale_Start_m4269805395,

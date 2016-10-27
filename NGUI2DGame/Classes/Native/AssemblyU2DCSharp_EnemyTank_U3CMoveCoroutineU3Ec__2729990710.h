@@ -23,19 +23,19 @@ struct EnemyTank_t2819878380;
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// EnemyTank/<MoveCoroutine>c__Iterator8
-struct  U3CMoveCoroutineU3Ec__Iterator8_t2729990711  : public Il2CppObject
+// EnemyTank/<MoveCoroutine>c__Iterator9
+struct  U3CMoveCoroutineU3Ec__Iterator9_t2729990710  : public Il2CppObject
 {
 public:
-	// System.Int32 EnemyTank/<MoveCoroutine>c__Iterator8::$PC
+	// System.Int32 EnemyTank/<MoveCoroutine>c__Iterator9::$PC
 	int32_t ___U24PC_0;
-	// System.Object EnemyTank/<MoveCoroutine>c__Iterator8::$current
+	// System.Object EnemyTank/<MoveCoroutine>c__Iterator9::$current
 	Il2CppObject * ___U24current_1;
-	// EnemyTank EnemyTank/<MoveCoroutine>c__Iterator8::<>f__this
+	// EnemyTank EnemyTank/<MoveCoroutine>c__Iterator9::<>f__this
 	EnemyTank_t2819878380 * ___U3CU3Ef__this_2;
 
 public:
-	inline static int32_t get_offset_of_U24PC_0() { return static_cast<int32_t>(offsetof(U3CMoveCoroutineU3Ec__Iterator8_t2729990711, ___U24PC_0)); }
+	inline static int32_t get_offset_of_U24PC_0() { return static_cast<int32_t>(offsetof(U3CMoveCoroutineU3Ec__Iterator9_t2729990710, ___U24PC_0)); }
 	inline int32_t get_U24PC_0() const { return ___U24PC_0; }
 	inline int32_t* get_address_of_U24PC_0() { return &___U24PC_0; }
 	inline void set_U24PC_0(int32_t value)
@@ -43,7 +43,7 @@ public:
 		___U24PC_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CMoveCoroutineU3Ec__Iterator8_t2729990711, ___U24current_1)); }
+	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CMoveCoroutineU3Ec__Iterator9_t2729990710, ___U24current_1)); }
 	inline Il2CppObject * get_U24current_1() const { return ___U24current_1; }
 	inline Il2CppObject ** get_address_of_U24current_1() { return &___U24current_1; }
 	inline void set_U24current_1(Il2CppObject * value)
@@ -52,7 +52,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U24current_1, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3Ef__this_2() { return static_cast<int32_t>(offsetof(U3CMoveCoroutineU3Ec__Iterator8_t2729990711, ___U3CU3Ef__this_2)); }
+	inline static int32_t get_offset_of_U3CU3Ef__this_2() { return static_cast<int32_t>(offsetof(U3CMoveCoroutineU3Ec__Iterator9_t2729990710, ___U3CU3Ef__this_2)); }
 	inline EnemyTank_t2819878380 * get_U3CU3Ef__this_2() const { return ___U3CU3Ef__this_2; }
 	inline EnemyTank_t2819878380 ** get_address_of_U3CU3Ef__this_2() { return &___U3CU3Ef__this_2; }
 	inline void set_U3CU3Ef__this_2(EnemyTank_t2819878380 * value)

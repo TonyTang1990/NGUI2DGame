@@ -14,6 +14,8 @@
 
 // Tank
 struct Tank_t2050480468;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
 
@@ -39,6 +41,8 @@ extern "C"  void Tank_Awake_m3158931696 (Tank_t2050480468 * __this, const Method
 extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Update()
 extern "C"  void Tank_Update_m546628242 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::FixedUpdate()
+extern "C"  void Tank_FixedUpdate_m514418752 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::OnDestroy()
 extern "C"  void Tank_OnDestroy_m4042988626 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::RecoverTankOccupiedTile()
@@ -47,6 +51,8 @@ extern "C"  void Tank_RecoverTankOccupiedTile_m2660540363 (Tank_t2050480468 * __
 extern "C"  bool Tank_CanMoveForward_m362955925 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::MoveForward()
 extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator Tank::MovingCoroutine()
+extern "C"  Il2CppObject * Tank_MovingCoroutine_m2540777759 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Shoot()
 extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::TakeDamage(System.Single)

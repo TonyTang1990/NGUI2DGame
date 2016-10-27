@@ -45,18 +45,20 @@ struct SpringPosition_t434217086;
 struct OnFinished_t3890054880;
 // Tank
 struct Tank_t2050480468;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
 // Bullet
 struct Bullet_t2590115616;
+// Tank/<MovingCoroutine>c__Iterator8
+struct U3CMovingCoroutineU3Ec__Iterator8_t3232189786;
 // Tank2DGameManager
 struct Tank2DGameManager_t1949600781;
 // Tile
 struct Tile_t2729441780;
 // TankGameLoad
 struct TankGameLoad_t1987520770;
-// System.Collections.IEnumerator
-struct IEnumerator_t1466026749;
-// TankGameLoad/<EnemySpawn>c__IteratorB
-struct U3CEnemySpawnU3Ec__IteratorB_t3143605997;
+// TankGameLoad/<EnemySpawn>c__IteratorC
+struct U3CEnemySpawnU3Ec__IteratorC_t3143605998;
 // TankGameUIBackgroundScale
 struct TankGameUIBackgroundScale_t2061701262;
 // UnityEngine.RectTransform
@@ -291,10 +293,6 @@ struct UIItemStorage_t2717295570;
 struct List_1_t1460658110;
 // UIStorageSlot
 struct UIStorageSlot_t2374452303;
-// UILocalize
-struct UILocalize_t3754440953;
-// Localization
-struct Localization_t3725902693;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -389,9 +387,18 @@ struct Localization_t3725902693;
 #include "mscorlib_System_Type1303803226.h"
 #include "mscorlib_System_RuntimeTypeHandle2330101084.h"
 #include "mscorlib_System_Int64909078037.h"
+#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
+#include "AssemblyU2DCSharp_Tank_U3CMovingCoroutineU3Ec__Ite3232189786MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Tank_U3CMovingCoroutineU3Ec__Ite3232189786.h"
 #include "AssemblyU2DCSharp_Bullet2590115616MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Bullet2590115616.h"
 #include "UnityEngine_UnityEngine_AudioClip1932558630MethodDeclarations.h"
+#include "mscorlib_System_Object2689449295MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds3839502067MethodDeclarations.h"
+#include "mscorlib_System_UInt322149682021.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
+#include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
+#include "mscorlib_System_NotSupportedException1793819818.h"
 #include "AssemblyU2DCSharp_Tank2DGameManager1949600781.h"
 #include "AssemblyU2DCSharp_Tank2DGameManager1949600781MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Game1600141214MethodDeclarations.h"
@@ -428,15 +435,8 @@ struct Localization_t3725902693;
 #include "AssemblyU2DCSharp_EventManager2792515701.h"
 #include "mscorlib_System_Enum2459695545.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen3123118898.h"
-#include "UnityEngine_UnityEngine_Coroutine2299508840.h"
-#include "AssemblyU2DCSharp_TankGameLoad_U3CEnemySpawnU3Ec__3143605997MethodDeclarations.h"
-#include "AssemblyU2DCSharp_TankGameLoad_U3CEnemySpawnU3Ec__3143605997.h"
-#include "mscorlib_System_Object2689449295MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WaitForSeconds3839502067MethodDeclarations.h"
-#include "mscorlib_System_UInt322149682021.h"
-#include "UnityEngine_UnityEngine_WaitForSeconds3839502067.h"
-#include "mscorlib_System_NotSupportedException1793819818MethodDeclarations.h"
-#include "mscorlib_System_NotSupportedException1793819818.h"
+#include "AssemblyU2DCSharp_TankGameLoad_U3CEnemySpawnU3Ec__3143605998MethodDeclarations.h"
+#include "AssemblyU2DCSharp_TankGameLoad_U3CEnemySpawnU3Ec__3143605998.h"
 #include "AssemblyU2DCSharp_TankGameUIBackgroundScale2061701262.h"
 #include "AssemblyU2DCSharp_TankGameUIBackgroundScale2061701262MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RectTransform3349966182.h"
@@ -796,10 +796,6 @@ struct Localization_t3725902693;
 #include "UnityEngine_UnityEngine_Font_FontTextureRebuildCal1272078033.h"
 #include "AssemblyU2DCSharp_UILabel_Effect541741196.h"
 #include "AssemblyU2DCSharp_UILabel_Effect541741196MethodDeclarations.h"
-#include "AssemblyU2DCSharp_UILocalize3754440953.h"
-#include "AssemblyU2DCSharp_UILocalize3754440953MethodDeclarations.h"
-#include "AssemblyU2DCSharp_Localization3725902693.h"
-#include "AssemblyU2DCSharp_Localization3725902693MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared (GameObject_t1756533147 * __this, const MethodInfo* method);
@@ -970,10 +966,6 @@ extern "C"  ObjectU5BU5D_t3614634134* Component_GetComponentsInChildren_TisIl2Cp
 #define Component_GetComponent_TisUIInput_t860674234_m1515456353(__this, method) ((  UIInput_t860674234 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UIStorageSlot>()
 #define GameObject_GetComponent_TisUIStorageSlot_t2374452303_m3768355410(__this, method) ((  UIStorageSlot_t2374452303 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2812611596_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<UIWidget>()
-#define Component_GetComponent_TisUIWidget_t1453041918_m775148371(__this, method) ((  UIWidget_t1453041918 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
-// !!0 NGUITools::FindInParents<UIInput>(UnityEngine.GameObject)
-#define NGUITools_FindInParents_TisUIInput_t860674234_m709469775(__this /* static, unused */, p0, method) ((  UIInput_t860674234 * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared)(__this /* static, unused */, p0, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -2096,9 +2088,10 @@ extern "C"  void Tank__ctor_m750150259 (Tank_t2050480468 * __this, const MethodI
 {
 	{
 		__this->set_mMoveSpeed_3((1.0f));
-		__this->set_mMoveIntervalBaseTime_4((0.1f));
-		__this->set_mNumbersOfBulletAllowed_7(1);
-		__this->set_mHealth_8((10.0f));
+		__this->set_mMovingOffset_4((0.05f));
+		__this->set_mMoveIntervalBaseTime_5((0.25f));
+		__this->set_mNumbersOfBulletAllowed_8(1);
+		__this->set_mHealth_9((10.0f));
 		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2119,9 +2112,9 @@ extern "C"  void Tank_set_MoveSpeed_m3985201005 (Tank_t2050480468 * __this, floa
 		Trace_Assert_m4098777117(NULL /*static, unused*/, (bool)((((float)L_0) > ((float)(0.0f)))? 1 : 0), _stringLiteral1683293937, /*hidden argument*/NULL);
 		float L_1 = ___value0;
 		__this->set_mMoveSpeed_3(L_1);
-		float L_2 = __this->get_mMoveIntervalBaseTime_4();
+		float L_2 = __this->get_mMoveIntervalBaseTime_5();
 		float L_3 = __this->get_mMoveSpeed_3();
-		__this->set_mKeepMoveIntervalTime_12(((float)((float)L_2/(float)L_3)));
+		__this->set_mKeepMoveIntervalTime_13(((float)((float)L_2/(float)L_3)));
 		return;
 	}
 }
@@ -2130,77 +2123,84 @@ extern "C"  void Tank_set_CurrentMoveAction_m3521750979 (Tank_t2050480468 * __th
 {
 	int32_t V_0 = 0;
 	{
-		int32_t L_0 = __this->get_mCurrentMoveAction_15();
+		int32_t L_0 = __this->get_mCurrentMoveAction_16();
 		int32_t L_1 = ___value0;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
-			goto IL_0089;
+			goto IL_0094;
 		}
 	}
 	{
-		int32_t L_2 = ___value0;
-		__this->set_mCurrentMoveAction_15(L_2);
-		int32_t L_3 = __this->get_mCurrentMoveAction_15();
-		V_0 = L_3;
-		int32_t L_4 = V_0;
-		if (L_4 == 0)
+		bool L_2 = __this->get_mIsMoving_18();
+		if (L_2)
 		{
-			goto IL_0035;
+			goto IL_0094;
 		}
-		if (L_4 == 1)
+	}
+	{
+		int32_t L_3 = ___value0;
+		__this->set_mCurrentMoveAction_16(L_3);
+		int32_t L_4 = __this->get_mCurrentMoveAction_16();
+		V_0 = L_4;
+		int32_t L_5 = V_0;
+		if (L_5 == 0)
 		{
-			goto IL_004a;
+			goto IL_0040;
 		}
-		if (L_4 == 2)
+		if (L_5 == 1)
 		{
-			goto IL_005f;
+			goto IL_0055;
 		}
-		if (L_4 == 3)
+		if (L_5 == 2)
 		{
-			goto IL_0074;
+			goto IL_006a;
+		}
+		if (L_5 == 3)
+		{
+			goto IL_007f;
 		}
 	}
 	{
-		goto IL_0089;
+		goto IL_0094;
 	}
 
-IL_0035:
+IL_0040:
 	{
-		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_6 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_5);
-		Transform_set_up_m56155638(L_5, L_6, /*hidden argument*/NULL);
-		goto IL_0089;
+		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_7 = Vector3_get_up_m2725403797(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Transform_set_up_m56155638(L_6, L_7, /*hidden argument*/NULL);
+		goto IL_0094;
 	}
 
-IL_004a:
+IL_0055:
 	{
-		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_8 = Vector3_get_down_m2372302126(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Transform_set_up_m56155638(L_7, L_8, /*hidden argument*/NULL);
-		goto IL_0089;
+		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_9 = Vector3_get_down_m2372302126(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Transform_set_up_m56155638(L_8, L_9, /*hidden argument*/NULL);
+		goto IL_0094;
 	}
 
-IL_005f:
+IL_006a:
 	{
-		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_10 = Vector3_get_left_m2429378123(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		Transform_set_up_m56155638(L_9, L_10, /*hidden argument*/NULL);
-		goto IL_0089;
+		Transform_t3275118058 * L_10 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_11 = Vector3_get_left_m2429378123(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Transform_set_up_m56155638(L_10, L_11, /*hidden argument*/NULL);
+		goto IL_0094;
 	}
 
-IL_0074:
+IL_007f:
 	{
-		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_12 = Vector3_get_right_m1884123822(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		Transform_set_up_m56155638(L_11, L_12, /*hidden argument*/NULL);
-		goto IL_0089;
+		Transform_t3275118058 * L_12 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_13 = Vector3_get_right_m1884123822(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		Transform_set_up_m56155638(L_12, L_13, /*hidden argument*/NULL);
+		goto IL_0094;
 	}
 
-IL_0089:
+IL_0094:
 	{
 		return;
 	}
@@ -2240,7 +2240,7 @@ extern "C"  void Tank_InitMovingIndexsOffset_m211406749 (Tank_t2050480468 * __th
 		NullCheck(L_5);
 		int32_t L_6 = TankMapManager_get_MaximumPartitionLevel_m2567732511(L_5, /*hidden argument*/NULL);
 		V_0 = (((int32_t)((int32_t)((float)((float)((float)((float)(((float)((float)L_4)))*(float)(0.5f)))*(float)(((float)((float)L_6))))))));
-		Dictionary_2_t841443130 * L_7 = __this->get_mTankMovingIndexsOffset_19();
+		Dictionary_2_t841443130 * L_7 = __this->get_mTankMovingIndexsOffset_25();
 		int32_t L_8 = V_0;
 		NullCheck(L_7);
 		Dictionary_2_Add_m211485976(L_7, 0, L_8, /*hidden argument*/Dictionary_2_Add_m211485976_MethodInfo_var);
@@ -2253,7 +2253,7 @@ extern "C"  void Tank_InitMovingIndexsOffset_m211406749 (Tank_t2050480468 * __th
 		NullCheck(L_12);
 		int32_t L_13 = TankMapManager_get_MaximumPartitionLevel_m2567732511(L_12, /*hidden argument*/NULL);
 		V_0 = (((int32_t)((int32_t)((float)((float)((float)((float)(((float)((float)((-L_11)))))*(float)(0.5f)))*(float)(((float)((float)L_13))))))));
-		Dictionary_2_t841443130 * L_14 = __this->get_mTankMovingIndexsOffset_19();
+		Dictionary_2_t841443130 * L_14 = __this->get_mTankMovingIndexsOffset_25();
 		int32_t L_15 = V_0;
 		NullCheck(L_14);
 		Dictionary_2_Add_m211485976(L_14, 1, L_15, /*hidden argument*/Dictionary_2_Add_m211485976_MethodInfo_var);
@@ -2261,7 +2261,7 @@ extern "C"  void Tank_InitMovingIndexsOffset_m211406749 (Tank_t2050480468 * __th
 		NullCheck(L_16);
 		int32_t L_17 = TankMapManager_get_MaximumPartitionLevel_m2567732511(L_16, /*hidden argument*/NULL);
 		V_0 = (((int32_t)((int32_t)((float)((float)(-0.5f)*(float)(((float)((float)L_17))))))));
-		Dictionary_2_t841443130 * L_18 = __this->get_mTankMovingIndexsOffset_19();
+		Dictionary_2_t841443130 * L_18 = __this->get_mTankMovingIndexsOffset_25();
 		int32_t L_19 = V_0;
 		NullCheck(L_18);
 		Dictionary_2_Add_m211485976(L_18, 2, L_19, /*hidden argument*/Dictionary_2_Add_m211485976_MethodInfo_var);
@@ -2269,7 +2269,7 @@ extern "C"  void Tank_InitMovingIndexsOffset_m211406749 (Tank_t2050480468 * __th
 		NullCheck(L_20);
 		int32_t L_21 = TankMapManager_get_MaximumPartitionLevel_m2567732511(L_20, /*hidden argument*/NULL);
 		V_0 = (((int32_t)((int32_t)((float)((float)(0.5f)*(float)(((float)((float)L_21))))))));
-		Dictionary_2_t841443130 * L_22 = __this->get_mTankMovingIndexsOffset_19();
+		Dictionary_2_t841443130 * L_22 = __this->get_mTankMovingIndexsOffset_25();
 		int32_t L_23 = V_0;
 		NullCheck(L_22);
 		Dictionary_2_Add_m211485976(L_22, 3, L_23, /*hidden argument*/Dictionary_2_Add_m211485976_MethodInfo_var);
@@ -2325,14 +2325,14 @@ extern "C"  void Tank_InitOccupiedInfo_m3183291521 (Tank_t2050480468 * __this, c
 		int32_t L_6 = List_1_get_Count_m852068579(L_5, /*hidden argument*/List_1_get_Count_m852068579_MethodInfo_var);
 		Dictionary_2_t1079703083 * L_7 = (Dictionary_2_t1079703083 *)il2cpp_codegen_object_new(Dictionary_2_t1079703083_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m1177908585(L_7, L_6, /*hidden argument*/Dictionary_2__ctor_m1177908585_MethodInfo_var);
-		__this->set_mCurrentOccupiedIndexs_18(L_7);
+		__this->set_mCurrentOccupiedIndexs_24(L_7);
 		V_1 = 0;
 		goto IL_0063;
 	}
 
 IL_0034:
 	{
-		Dictionary_2_t1079703083 * L_8 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_8 = __this->get_mCurrentOccupiedIndexs_24();
 		int32_t L_9 = V_1;
 		List_1_t1440998580 * L_10 = V_0;
 		int32_t L_11 = V_1;
@@ -2370,7 +2370,7 @@ IL_0063:
 
 IL_0074:
 	{
-		__this->set_mCurrentOccupiedIndexs_18((Dictionary_2_t1079703083 *)NULL);
+		__this->set_mCurrentOccupiedIndexs_24((Dictionary_2_t1079703083 *)NULL);
 	}
 
 IL_007b:
@@ -2408,8 +2408,8 @@ extern "C"  void Tank_UpdateOccupiedInfo_m3660004542 (Tank_t2050480468 * __this,
 	}
 	{
 		V_0 = 0;
-		Dictionary_2_t841443130 * L_2 = __this->get_mTankMovingIndexsOffset_19();
-		int32_t L_3 = __this->get_mCurrentMoveAction_15();
+		Dictionary_2_t841443130 * L_2 = __this->get_mTankMovingIndexsOffset_25();
+		int32_t L_3 = __this->get_mCurrentMoveAction_16();
 		NullCheck(L_2);
 		int32_t L_4 = Dictionary_2_get_Item_m1425437934(L_2, L_3, /*hidden argument*/Dictionary_2_get_Item_m1425437934_MethodInfo_var);
 		V_0 = L_4;
@@ -2423,7 +2423,7 @@ IL_002c:
 		TankMapManager_t3692802025 * L_5 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_5);
 		TankMap_t1120032466 * L_6 = TankMapManager_get_CurrentMap_m3658240791(L_5, /*hidden argument*/NULL);
-		Dictionary_2_t1079703083 * L_7 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_7 = __this->get_mCurrentOccupiedIndexs_24();
 		int32_t L_8 = V_2;
 		NullCheck(L_7);
 		int32_t L_9 = Dictionary_2_get_Item_m4108211359(L_7, L_8, /*hidden argument*/Dictionary_2_get_Item_m4108211359_MethodInfo_var);
@@ -2436,7 +2436,7 @@ IL_002c:
 IL_004d:
 	{
 		int32_t L_11 = V_2;
-		Dictionary_2_t1079703083 * L_12 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_12 = __this->get_mCurrentOccupiedIndexs_24();
 		NullCheck(L_12);
 		int32_t L_13 = Dictionary_2_get_Count_m2873422858(L_12, /*hidden argument*/Dictionary_2_get_Count_m2873422858_MethodInfo_var);
 		if ((((int32_t)L_11) < ((int32_t)L_13)))
@@ -2451,13 +2451,13 @@ IL_004d:
 
 IL_0065:
 	{
-		Dictionary_2_t1079703083 * L_14 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_14 = __this->get_mCurrentOccupiedIndexs_24();
 		int32_t L_15 = V_3;
 		NullCheck(L_14);
 		int32_t L_16 = Dictionary_2_get_Item_m4108211359(L_14, L_15, /*hidden argument*/Dictionary_2_get_Item_m4108211359_MethodInfo_var);
 		int32_t L_17 = V_0;
 		V_1 = ((int32_t)((int32_t)L_16+(int32_t)L_17));
-		Dictionary_2_t1079703083 * L_18 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_18 = __this->get_mCurrentOccupiedIndexs_24();
 		int32_t L_19 = V_3;
 		int32_t L_20 = V_1;
 		NullCheck(L_18);
@@ -2465,7 +2465,7 @@ IL_0065:
 		TankMapManager_t3692802025 * L_21 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_21);
 		TankMap_t1120032466 * L_22 = TankMapManager_get_CurrentMap_m3658240791(L_21, /*hidden argument*/NULL);
-		Dictionary_2_t1079703083 * L_23 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_23 = __this->get_mCurrentOccupiedIndexs_24();
 		int32_t L_24 = V_3;
 		NullCheck(L_23);
 		int32_t L_25 = Dictionary_2_get_Item_m4108211359(L_23, L_24, /*hidden argument*/Dictionary_2_get_Item_m4108211359_MethodInfo_var);
@@ -2478,7 +2478,7 @@ IL_0065:
 IL_00a2:
 	{
 		int32_t L_27 = V_3;
-		Dictionary_2_t1079703083 * L_28 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_28 = __this->get_mCurrentOccupiedIndexs_24();
 		NullCheck(L_28);
 		int32_t L_29 = Dictionary_2_get_Count_m2873422858(L_28, /*hidden argument*/Dictionary_2_get_Count_m2873422858_MethodInfo_var);
 		if ((((int32_t)L_27) < ((int32_t)L_29)))
@@ -2513,27 +2513,39 @@ extern "C"  void Tank_Awake_m3158931696 (Tank_t2050480468 * __this, const Method
 	}
 	{
 		Utilities_UnityLog_m2886201304(NULL /*static, unused*/, _stringLiteral2072029034, /*hidden argument*/NULL);
-		float L_0 = __this->get_mMoveIntervalBaseTime_4();
-		__this->set_mKeepMoveIntervalTime_12(L_0);
-		__this->set_mCurrentMoveAction_15(0);
-		__this->set_mIsDead_11((bool)0);
-		__this->set_mMoveDeltaTime_16((0.0f));
-		List_1_t1125654279 * L_1 = (List_1_t1125654279 *)il2cpp_codegen_object_new(List_1_t1125654279_il2cpp_TypeInfo_var);
-		List_1__ctor_m704351054(L_1, /*hidden argument*/List_1__ctor_m704351054_MethodInfo_var);
-		__this->set_mBulletsList_17(L_1);
+		float L_0 = __this->get_mMoveIntervalBaseTime_5();
+		__this->set_mKeepMoveIntervalTime_13(L_0);
+		__this->set_mCurrentMoveAction_16(0);
+		__this->set_mIsDead_12((bool)0);
+		__this->set_mMoveDeltaTime_17((0.0f));
+		__this->set_mIsMoving_18((bool)0);
+		__this->set_mTimeStartMoving_19((0.0f));
+		float L_1 = __this->get_mKeepMoveIntervalTime_13();
+		__this->set_mTimeToCompleteMove_20(L_1);
+		Transform_t3275118058 * L_2 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Vector3_t2243707580  L_3 = Transform_get_position_m1104419803(L_2, /*hidden argument*/NULL);
+		__this->set_mStartPosition_21(L_3);
+		Transform_t3275118058 * L_4 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Vector3_t2243707580  L_5 = Transform_get_position_m1104419803(L_4, /*hidden argument*/NULL);
+		__this->set_mDestinationPosition_22(L_5);
+		List_1_t1125654279 * L_6 = (List_1_t1125654279 *)il2cpp_codegen_object_new(List_1_t1125654279_il2cpp_TypeInfo_var);
+		List_1__ctor_m704351054(L_6, /*hidden argument*/List_1__ctor_m704351054_MethodInfo_var);
+		__this->set_mBulletsList_23(L_6);
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
-		Type_t * L_2 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(MoveAction_t868615717_0_0_0_var), /*hidden argument*/NULL);
+		Type_t * L_7 = Type_GetTypeFromHandle_m432505302(NULL /*static, unused*/, LoadTypeToken(MoveAction_t868615717_0_0_0_var), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Enum_t2459695545_il2cpp_TypeInfo_var);
-		Il2CppArray * L_3 = Enum_GetValues_m2107059536(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		int32_t L_4 = Array_get_Length_m1498215565(L_3, /*hidden argument*/NULL);
-		Dictionary_2_t841443130 * L_5 = (Dictionary_2_t841443130 *)il2cpp_codegen_object_new(Dictionary_2_t841443130_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m4021473139(L_5, L_4, /*hidden argument*/Dictionary_2__ctor_m4021473139_MethodInfo_var);
-		__this->set_mTankMovingIndexsOffset_19(L_5);
-		__this->set_mIsBlocingByTank_13((bool)0);
-		__this->set_mBlockingByTankTime_14((((int64_t)((int64_t)0))));
-		AudioSource_t1135106623 * L_6 = Component_GetComponent_TisAudioSource_t1135106623_m3920278003(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1135106623_m3920278003_MethodInfo_var);
-		__this->set_mTankAudioSource_20(L_6);
+		Il2CppArray * L_8 = Enum_GetValues_m2107059536(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		int32_t L_9 = Array_get_Length_m1498215565(L_8, /*hidden argument*/NULL);
+		Dictionary_2_t841443130 * L_10 = (Dictionary_2_t841443130 *)il2cpp_codegen_object_new(Dictionary_2_t841443130_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m4021473139(L_10, L_9, /*hidden argument*/Dictionary_2__ctor_m4021473139_MethodInfo_var);
+		__this->set_mTankMovingIndexsOffset_25(L_10);
+		__this->set_mIsBlocingByTank_14((bool)0);
+		__this->set_mBlockingByTankTime_15((((int64_t)((int64_t)0))));
+		AudioSource_t1135106623 * L_11 = Component_GetComponent_TisAudioSource_t1135106623_m3920278003(__this, /*hidden argument*/Component_GetComponent_TisAudioSource_t1135106623_m3920278003_MethodInfo_var);
+		__this->set_mTankAudioSource_26(L_11);
 		return;
 	}
 }
@@ -2543,6 +2555,8 @@ extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const Method
 	{
 		Tank_InitMovingIndexsOffset_m211406749(__this, /*hidden argument*/NULL);
 		Tank_InitOccupiedInfo_m3183291521(__this, /*hidden argument*/NULL);
+		Il2CppObject * L_0 = Tank_MovingCoroutine_m2540777759(__this, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -2550,9 +2564,13 @@ extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const Method
 extern "C"  void Tank_Update_m546628242 (Tank_t2050480468 * __this, const MethodInfo* method)
 {
 	{
-		float L_0 = __this->get_mMoveDeltaTime_16();
-		float L_1 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_mMoveDeltaTime_16(((float)((float)L_0+(float)L_1)));
+		return;
+	}
+}
+// System.Void Tank::FixedUpdate()
+extern "C"  void Tank_FixedUpdate_m514418752 (Tank_t2050480468 * __this, const MethodInfo* method)
+{
+	{
 		return;
 	}
 }
@@ -2588,7 +2606,7 @@ IL_0007:
 		TankMapManager_t3692802025 * L_0 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_0);
 		TankMap_t1120032466 * L_1 = TankMapManager_get_CurrentMap_m3658240791(L_0, /*hidden argument*/NULL);
-		Dictionary_2_t1079703083 * L_2 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_2 = __this->get_mCurrentOccupiedIndexs_24();
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4 = Dictionary_2_get_Item_m4108211359(L_2, L_3, /*hidden argument*/Dictionary_2_get_Item_m4108211359_MethodInfo_var);
@@ -2601,7 +2619,7 @@ IL_0007:
 IL_0028:
 	{
 		int32_t L_6 = V_0;
-		Dictionary_2_t1079703083 * L_7 = __this->get_mCurrentOccupiedIndexs_18();
+		Dictionary_2_t1079703083 * L_7 = __this->get_mCurrentOccupiedIndexs_24();
 		NullCheck(L_7);
 		int32_t L_8 = Dictionary_2_get_Count_m2873422858(L_7, /*hidden argument*/Dictionary_2_get_Count_m2873422858_MethodInfo_var);
 		if ((((int32_t)L_6) < ((int32_t)L_8)))
@@ -2639,141 +2657,148 @@ extern "C"  bool Tank_CanMoveForward_m362955925 (Tank_t2050480468 * __this, cons
 		TankMap_t1120032466 * L_1 = TankMapManager_get_CurrentMap_m3658240791(L_0, /*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_0103;
+			goto IL_010e;
+		}
+	}
+	{
+		bool L_2 = __this->get_mIsMoving_18();
+		if (L_2)
+		{
+			goto IL_010e;
 		}
 	}
 	{
 		V_0 = 0;
-		Vector3_t2243707580  L_2 = Vector3_get_zero_m1527993324(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_2;
-		Dictionary_2_t841443130 * L_3 = __this->get_mTankMovingIndexsOffset_19();
-		int32_t L_4 = __this->get_mCurrentMoveAction_15();
-		NullCheck(L_3);
-		int32_t L_5 = Dictionary_2_get_Item_m1425437934(L_3, L_4, /*hidden argument*/Dictionary_2_get_Item_m1425437934_MethodInfo_var);
-		V_0 = L_5;
+		Vector3_t2243707580  L_3 = Vector3_get_zero_m1527993324(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_1 = L_3;
+		Dictionary_2_t841443130 * L_4 = __this->get_mTankMovingIndexsOffset_25();
+		int32_t L_5 = __this->get_mCurrentMoveAction_16();
+		NullCheck(L_4);
+		int32_t L_6 = Dictionary_2_get_Item_m1425437934(L_4, L_5, /*hidden argument*/Dictionary_2_get_Item_m1425437934_MethodInfo_var);
+		V_0 = L_6;
 		V_2 = 0;
-		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_8 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		NullCheck(L_8);
-		Vector3_t2243707580  L_9 = Transform_get_up_m1603627763(L_8, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_10 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_9, (0.5f), /*hidden argument*/NULL);
-		Vector3_t2243707580  L_11 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_7, L_10, /*hidden argument*/NULL);
-		V_1 = L_11;
+		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
+		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t2243707580  L_10 = Transform_get_up_m1603627763(L_9, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_11 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_10, (0.5f), /*hidden argument*/NULL);
+		Vector3_t2243707580  L_12 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_8, L_11, /*hidden argument*/NULL);
+		V_1 = L_12;
 		V_3 = 0;
-		goto IL_00f0;
+		goto IL_00fb;
 	}
 
-IL_0058:
+IL_0063:
 	{
-		Dictionary_2_t1079703083 * L_12 = __this->get_mCurrentOccupiedIndexs_18();
-		int32_t L_13 = V_3;
-		NullCheck(L_12);
-		int32_t L_14 = Dictionary_2_get_Item_m4108211359(L_12, L_13, /*hidden argument*/Dictionary_2_get_Item_m4108211359_MethodInfo_var);
-		int32_t L_15 = V_0;
-		V_2 = ((int32_t)((int32_t)L_14+(int32_t)L_15));
-		TankMapManager_t3692802025 * L_16 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
-		NullCheck(L_16);
-		TankMap_t1120032466 * L_17 = TankMapManager_get_CurrentMap_m3658240791(L_16, /*hidden argument*/NULL);
-		int32_t L_18 = V_2;
+		Dictionary_2_t1079703083 * L_13 = __this->get_mCurrentOccupiedIndexs_24();
+		int32_t L_14 = V_3;
+		NullCheck(L_13);
+		int32_t L_15 = Dictionary_2_get_Item_m4108211359(L_13, L_14, /*hidden argument*/Dictionary_2_get_Item_m4108211359_MethodInfo_var);
+		int32_t L_16 = V_0;
+		V_2 = ((int32_t)((int32_t)L_15+(int32_t)L_16));
+		TankMapManager_t3692802025 * L_17 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_17);
-		bool L_19 = TankMap_IsValideIndex_m3312078381(L_17, L_18, /*hidden argument*/NULL);
-		if (!L_19)
+		TankMap_t1120032466 * L_18 = TankMapManager_get_CurrentMap_m3658240791(L_17, /*hidden argument*/NULL);
+		int32_t L_19 = V_2;
+		NullCheck(L_18);
+		bool L_20 = TankMap_IsValideIndex_m3312078381(L_18, L_19, /*hidden argument*/NULL);
+		if (!L_20)
 		{
-			goto IL_00e3;
+			goto IL_00ee;
 		}
 	}
 	{
-		TankMapManager_t3692802025 * L_20 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
-		NullCheck(L_20);
-		TankMap_t1120032466 * L_21 = TankMapManager_get_CurrentMap_m3658240791(L_20, /*hidden argument*/NULL);
-		Vector3_t2243707580  L_22 = V_1;
+		TankMapManager_t3692802025 * L_21 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_21);
-		bool L_23 = TankMap_IsValidePosition_m1365541722(L_21, L_22, /*hidden argument*/NULL);
-		if (!L_23)
+		TankMap_t1120032466 * L_22 = TankMapManager_get_CurrentMap_m3658240791(L_21, /*hidden argument*/NULL);
+		Vector3_t2243707580  L_23 = V_1;
+		NullCheck(L_22);
+		bool L_24 = TankMap_IsValidePosition_m1365541722(L_22, L_23, /*hidden argument*/NULL);
+		if (!L_24)
 		{
-			goto IL_00e3;
+			goto IL_00ee;
 		}
 	}
 	{
-		Dictionary_2_t1079703083 * L_24 = __this->get_mCurrentOccupiedIndexs_18();
-		int32_t L_25 = V_2;
-		NullCheck(L_24);
-		bool L_26 = Dictionary_2_ContainsValue_m4115451390(L_24, L_25, /*hidden argument*/Dictionary_2_ContainsValue_m4115451390_MethodInfo_var);
-		if (L_26)
+		Dictionary_2_t1079703083 * L_25 = __this->get_mCurrentOccupiedIndexs_24();
+		int32_t L_26 = V_2;
+		NullCheck(L_25);
+		bool L_27 = Dictionary_2_ContainsValue_m4115451390(L_25, L_26, /*hidden argument*/Dictionary_2_ContainsValue_m4115451390_MethodInfo_var);
+		if (L_27)
 		{
-			goto IL_00de;
+			goto IL_00e9;
 		}
 	}
 	{
-		TankMapManager_t3692802025 * L_27 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
-		NullCheck(L_27);
-		TankMap_t1120032466 * L_28 = TankMapManager_get_CurrentMap_m3658240791(L_27, /*hidden argument*/NULL);
-		int32_t L_29 = V_2;
+		TankMapManager_t3692802025 * L_28 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_28);
-		bool L_30 = TankMap_IsIndexOccupied_m454502790(L_28, L_29, /*hidden argument*/NULL);
-		if (!L_30)
+		TankMap_t1120032466 * L_29 = TankMapManager_get_CurrentMap_m3658240791(L_28, /*hidden argument*/NULL);
+		int32_t L_30 = V_2;
+		NullCheck(L_29);
+		bool L_31 = TankMap_IsIndexOccupied_m454502790(L_29, L_30, /*hidden argument*/NULL);
+		if (!L_31)
 		{
-			goto IL_00de;
+			goto IL_00e9;
 		}
 	}
 	{
-		TankMapManager_t3692802025 * L_31 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
-		NullCheck(L_31);
-		TankMap_t1120032466 * L_32 = TankMapManager_get_CurrentMap_m3658240791(L_31, /*hidden argument*/NULL);
-		int32_t L_33 = V_2;
+		TankMapManager_t3692802025 * L_32 = ((TankMapManager_t3692802025_StaticFields*)TankMapManager_t3692802025_il2cpp_TypeInfo_var->static_fields)->get_mTankMapManagerInstance_3();
 		NullCheck(L_32);
-		bool L_34 = TankMap_IsIndexOccupiedByPlayer_m3732645810(L_32, L_33, /*hidden argument*/NULL);
-		if (!L_34)
+		TankMap_t1120032466 * L_33 = TankMapManager_get_CurrentMap_m3658240791(L_32, /*hidden argument*/NULL);
+		int32_t L_34 = V_2;
+		NullCheck(L_33);
+		bool L_35 = TankMap_IsIndexOccupiedByPlayer_m3732645810(L_33, L_34, /*hidden argument*/NULL);
+		if (!L_35)
 		{
-			goto IL_00d5;
+			goto IL_00e0;
 		}
 	}
 	{
-		__this->set_mIsBlocingByTank_13((bool)1);
+		__this->set_mIsBlocingByTank_14((bool)1);
 		return (bool)0;
 	}
 
-IL_00d5:
+IL_00e0:
 	{
-		__this->set_mIsBlocingByTank_13((bool)0);
+		__this->set_mIsBlocingByTank_14((bool)0);
 		return (bool)0;
 	}
 
-IL_00de:
+IL_00e9:
 	{
-		goto IL_00ec;
+		goto IL_00f7;
 	}
 
-IL_00e3:
+IL_00ee:
 	{
-		__this->set_mIsBlocingByTank_13((bool)0);
+		__this->set_mIsBlocingByTank_14((bool)0);
 		return (bool)0;
 	}
 
-IL_00ec:
-	{
-		int32_t L_35 = V_3;
-		V_3 = ((int32_t)((int32_t)L_35+(int32_t)1));
-	}
-
-IL_00f0:
+IL_00f7:
 	{
 		int32_t L_36 = V_3;
-		Dictionary_2_t1079703083 * L_37 = __this->get_mCurrentOccupiedIndexs_18();
-		NullCheck(L_37);
-		int32_t L_38 = Dictionary_2_get_Count_m2873422858(L_37, /*hidden argument*/Dictionary_2_get_Count_m2873422858_MethodInfo_var);
-		if ((((int32_t)L_36) < ((int32_t)L_38)))
+		V_3 = ((int32_t)((int32_t)L_36+(int32_t)1));
+	}
+
+IL_00fb:
+	{
+		int32_t L_37 = V_3;
+		Dictionary_2_t1079703083 * L_38 = __this->get_mCurrentOccupiedIndexs_24();
+		NullCheck(L_38);
+		int32_t L_39 = Dictionary_2_get_Count_m2873422858(L_38, /*hidden argument*/Dictionary_2_get_Count_m2873422858_MethodInfo_var);
+		if ((((int32_t)L_37) < ((int32_t)L_39)))
 		{
-			goto IL_0058;
+			goto IL_0063;
 		}
 	}
 	{
 		return (bool)1;
 	}
 
-IL_0103:
+IL_010e:
 	{
 		return (bool)0;
 	}
@@ -2795,34 +2820,32 @@ extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const M
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_0074;
+			goto IL_0086;
 		}
 	}
 	{
-		bool L_2 = __this->get_mIsDead_11();
+		bool L_2 = __this->get_mIsDead_12();
 		if (L_2)
 		{
-			goto IL_0074;
+			goto IL_0086;
 		}
 	}
 	{
 		bool L_3 = VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean Tank::CanMoveForward() */, __this);
 		if (!L_3)
 		{
-			goto IL_0074;
+			goto IL_0086;
 		}
 	}
 	{
-		float L_4 = __this->get_mMoveDeltaTime_16();
-		float L_5 = __this->get_mKeepMoveIntervalTime_12();
-		if ((!(((float)L_4) > ((float)L_5))))
-		{
-			goto IL_0074;
-		}
-	}
-	{
-		Transform_t3275118058 * L_6 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
-		Transform_t3275118058 * L_7 = L_6;
+		__this->set_mIsMoving_18((bool)1);
+		float L_4 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_mTimeStartMoving_19(L_4);
+		Transform_t3275118058 * L_5 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t2243707580  L_6 = Transform_get_position_m1104419803(L_5, /*hidden argument*/NULL);
+		__this->set_mStartPosition_21(L_6);
+		Transform_t3275118058 * L_7 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		Vector3_t2243707580  L_8 = Transform_get_position_m1104419803(L_7, /*hidden argument*/NULL);
 		Transform_t3275118058 * L_9 = Component_get_transform_m2697483695(__this, /*hidden argument*/NULL);
@@ -2830,15 +2853,37 @@ extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const M
 		Vector3_t2243707580  L_10 = Transform_get_up_m1603627763(L_9, /*hidden argument*/NULL);
 		Vector3_t2243707580  L_11 = Vector3_op_Multiply_m1351554733(NULL /*static, unused*/, L_10, (0.5f), /*hidden argument*/NULL);
 		Vector3_t2243707580  L_12 = Vector3_op_Addition_m3146764857(NULL /*static, unused*/, L_8, L_11, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Transform_set_position_m2469242620(L_7, L_12, /*hidden argument*/NULL);
-		__this->set_mMoveDeltaTime_16((0.0f));
+		__this->set_mDestinationPosition_22(L_12);
+		__this->set_mMoveDeltaTime_17((0.0f));
 		Tank_UpdateOccupiedInfo_m3660004542(__this, /*hidden argument*/NULL);
 	}
 
-IL_0074:
+IL_0086:
 	{
 		return;
+	}
+}
+// System.Collections.IEnumerator Tank::MovingCoroutine()
+extern Il2CppClass* U3CMovingCoroutineU3Ec__Iterator8_t3232189786_il2cpp_TypeInfo_var;
+extern const uint32_t Tank_MovingCoroutine_m2540777759_MetadataUsageId;
+extern "C"  Il2CppObject * Tank_MovingCoroutine_m2540777759 (Tank_t2050480468 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Tank_MovingCoroutine_m2540777759_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * V_0 = NULL;
+	{
+		U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * L_0 = (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 *)il2cpp_codegen_object_new(U3CMovingCoroutineU3Ec__Iterator8_t3232189786_il2cpp_TypeInfo_var);
+		U3CMovingCoroutineU3Ec__Iterator8__ctor_m2723151973(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * L_1 = V_0;
+		NullCheck(L_1);
+		L_1->set_U3CU3Ef__this_4(__this);
+		U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * L_2 = V_0;
+		return L_2;
 	}
 }
 // System.Void Tank::Shoot()
@@ -2859,7 +2904,7 @@ extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const Method
 	GameObject_t1756533147 * V_0 = NULL;
 	Bullet_t2590115616 * V_1 = NULL;
 	{
-		GameObject_t1756533147 * L_0 = __this->get_mBulletPrefab_6();
+		GameObject_t1756533147 * L_0 = __this->get_mBulletPrefab_7();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -2868,18 +2913,18 @@ extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const Method
 		}
 	}
 	{
-		List_1_t1125654279 * L_2 = __this->get_mBulletsList_17();
+		List_1_t1125654279 * L_2 = __this->get_mBulletsList_23();
 		NullCheck(L_2);
 		int32_t L_3 = List_1_get_Count_m2764296230(L_2, /*hidden argument*/List_1_get_Count_m2764296230_MethodInfo_var);
-		int32_t L_4 = __this->get_mNumbersOfBulletAllowed_7();
+		int32_t L_4 = __this->get_mNumbersOfBulletAllowed_8();
 		if ((((int32_t)L_3) >= ((int32_t)L_4)))
 		{
 			goto IL_00b1;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_5 = __this->get_mBulletPrefab_6();
-		Transform_t3275118058 * L_6 = __this->get_mBulletSpawnPoint_5();
+		GameObject_t1756533147 * L_5 = __this->get_mBulletPrefab_7();
+		Transform_t3275118058 * L_6 = __this->get_mBulletSpawnPoint_6();
 		NullCheck(L_6);
 		Vector3_t2243707580  L_7 = Transform_get_position_m1104419803(L_6, /*hidden argument*/NULL);
 		Quaternion_t4030073918  L_8 = Quaternion_get_identity_m1561886418(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -2899,11 +2944,11 @@ extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const Method
 		Bullet_t2590115616 * L_15 = V_1;
 		NullCheck(L_15);
 		Bullet_set_Owner_m3778620813(L_15, __this, /*hidden argument*/NULL);
-		List_1_t1125654279 * L_16 = __this->get_mBulletsList_17();
+		List_1_t1125654279 * L_16 = __this->get_mBulletsList_23();
 		GameObject_t1756533147 * L_17 = V_0;
 		NullCheck(L_16);
 		List_1_Add_m3441471442(L_16, L_17, /*hidden argument*/List_1_Add_m3441471442_MethodInfo_var);
-		AudioClip_t1932558630 * L_18 = __this->get_mShootClip_9();
+		AudioClip_t1932558630 * L_18 = __this->get_mShootClip_10();
 		bool L_19 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_18, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_19)
 		{
@@ -2911,7 +2956,7 @@ extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const Method
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_20 = __this->get_mTankAudioSource_20();
+		AudioSource_t1135106623 * L_20 = __this->get_mTankAudioSource_26();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_21 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_20, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_21)
@@ -2920,11 +2965,11 @@ extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const Method
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_22 = __this->get_mTankAudioSource_20();
-		AudioClip_t1932558630 * L_23 = __this->get_mShootClip_9();
+		AudioSource_t1135106623 * L_22 = __this->get_mTankAudioSource_26();
+		AudioClip_t1932558630 * L_23 = __this->get_mShootClip_10();
 		NullCheck(L_22);
 		AudioSource_set_clip_m738814682(L_22, L_23, /*hidden argument*/NULL);
-		AudioSource_t1135106623 * L_24 = __this->get_mTankAudioSource_20();
+		AudioSource_t1135106623 * L_24 = __this->get_mTankAudioSource_26();
 		NullCheck(L_24);
 		AudioSource_Play_m353744792(L_24, /*hidden argument*/NULL);
 	}
@@ -2947,26 +2992,26 @@ extern "C"  void Tank_TakeDamage_m3119853146 (Tank_t2050480468 * __this, float _
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		bool L_0 = __this->get_mIsDead_11();
+		bool L_0 = __this->get_mIsDead_12();
 		if (L_0)
 		{
 			goto IL_0094;
 		}
 	}
 	{
-		float L_1 = __this->get_mHealth_8();
+		float L_1 = __this->get_mHealth_9();
 		float L_2 = ___damage0;
-		__this->set_mHealth_8(((float)((float)L_1-(float)L_2)));
-		float L_3 = __this->get_mHealth_8();
+		__this->set_mHealth_9(((float)((float)L_1-(float)L_2)));
+		float L_3 = __this->get_mHealth_9();
 		if ((!(((float)L_3) <= ((float)(0.0f)))))
 		{
 			goto IL_0094;
 		}
 	}
 	{
-		__this->set_mHealth_8((0.0f));
-		__this->set_mIsDead_11((bool)1);
-		AudioClip_t1932558630 * L_4 = __this->get_mCrashClip_10();
+		__this->set_mHealth_9((0.0f));
+		__this->set_mIsDead_12((bool)1);
+		AudioClip_t1932558630 * L_4 = __this->get_mCrashClip_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_5 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_4, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_5)
@@ -2975,7 +3020,7 @@ extern "C"  void Tank_TakeDamage_m3119853146 (Tank_t2050480468 * __this, float _
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_6 = __this->get_mTankAudioSource_20();
+		AudioSource_t1135106623 * L_6 = __this->get_mTankAudioSource_26();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_7 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_6, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_7)
@@ -2984,18 +3029,18 @@ extern "C"  void Tank_TakeDamage_m3119853146 (Tank_t2050480468 * __this, float _
 		}
 	}
 	{
-		AudioSource_t1135106623 * L_8 = __this->get_mTankAudioSource_20();
-		AudioClip_t1932558630 * L_9 = __this->get_mCrashClip_10();
+		AudioSource_t1135106623 * L_8 = __this->get_mTankAudioSource_26();
+		AudioClip_t1932558630 * L_9 = __this->get_mCrashClip_11();
 		NullCheck(L_8);
 		AudioSource_set_clip_m738814682(L_8, L_9, /*hidden argument*/NULL);
-		AudioSource_t1135106623 * L_10 = __this->get_mTankAudioSource_20();
+		AudioSource_t1135106623 * L_10 = __this->get_mTankAudioSource_26();
 		NullCheck(L_10);
 		AudioSource_Play_m353744792(L_10, /*hidden argument*/NULL);
 	}
 
 IL_0079:
 	{
-		AudioSource_t1135106623 * L_11 = __this->get_mTankAudioSource_20();
+		AudioSource_t1135106623 * L_11 = __this->get_mTankAudioSource_26();
 		NullCheck(L_11);
 		AudioClip_t1932558630 * L_12 = AudioSource_get_clip_m2127996365(L_11, /*hidden argument*/NULL);
 		NullCheck(L_12);
@@ -3038,7 +3083,7 @@ extern "C"  void Tank_BulletDestroyDelegate_m1148978620 (Tank_t2050480468 * __th
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		List_1_t1125654279 * L_0 = __this->get_mBulletsList_17();
+		List_1_t1125654279 * L_0 = __this->get_mBulletsList_23();
 		GameObject_t1756533147 * L_1 = ___go0;
 		NullCheck(L_0);
 		bool L_2 = List_1_Remove_m2287078133(L_0, L_1, /*hidden argument*/List_1_Remove_m2287078133_MethodInfo_var);
@@ -3051,6 +3096,159 @@ extern "C"  void Tank_BulletDestroyDelegate_m1148978620 (Tank_t2050480468 * __th
 IL_0011:
 	{
 		return;
+	}
+}
+// System.Void Tank/<MovingCoroutine>c__Iterator8::.ctor()
+extern "C"  void U3CMovingCoroutineU3Ec__Iterator8__ctor_m2723151973 (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object Tank/<MovingCoroutine>c__Iterator8::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CMovingCoroutineU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3750609571 (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_3();
+		return L_0;
+	}
+}
+// System.Object Tank/<MovingCoroutine>c__Iterator8::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CMovingCoroutineU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m3283452907 (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_3();
+		return L_0;
+	}
+}
+// System.Boolean Tank/<MovingCoroutine>c__Iterator8::MoveNext()
+extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
+extern const uint32_t U3CMovingCoroutineU3Ec__Iterator8_MoveNext_m210314955_MetadataUsageId;
+extern "C"  bool U3CMovingCoroutineU3Ec__Iterator8_MoveNext_m210314955 (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CMovingCoroutineU3Ec__Iterator8_MoveNext_m210314955_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_U24PC_2();
+		V_0 = L_0;
+		__this->set_U24PC_2((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_00d5;
+		}
+	}
+	{
+		goto IL_00e1;
+	}
+
+IL_0021:
+	{
+		Tank_t2050480468 * L_2 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_2);
+		bool L_3 = L_2->get_mIsMoving_18();
+		if (!L_3)
+		{
+			goto IL_00ad;
+		}
+	}
+	{
+		float L_4 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Tank_t2050480468 * L_5 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_5);
+		float L_6 = L_5->get_mTimeStartMoving_19();
+		__this->set_U3CtimesincestartedU3E__0_0(((float)((float)L_4-(float)L_6)));
+		float L_7 = __this->get_U3CtimesincestartedU3E__0_0();
+		Tank_t2050480468 * L_8 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_8);
+		float L_9 = L_8->get_mTimeToCompleteMove_20();
+		__this->set_U3CpercentagecompleteU3E__1_1(((float)((float)L_7/(float)L_9)));
+		Tank_t2050480468 * L_10 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_10);
+		Transform_t3275118058 * L_11 = Component_get_transform_m2697483695(L_10, /*hidden argument*/NULL);
+		Tank_t2050480468 * L_12 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_12);
+		Vector3_t2243707580  L_13 = L_12->get_mStartPosition_21();
+		Tank_t2050480468 * L_14 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_14);
+		Vector3_t2243707580  L_15 = L_14->get_mDestinationPosition_22();
+		float L_16 = __this->get_U3CpercentagecompleteU3E__1_1();
+		Vector3_t2243707580  L_17 = Vector3_Lerp_m2935648359(NULL /*static, unused*/, L_13, L_15, L_16, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Transform_set_position_m2469242620(L_11, L_17, /*hidden argument*/NULL);
+		float L_18 = __this->get_U3CpercentagecompleteU3E__1_1();
+		if ((!(((float)L_18) >= ((float)(1.0f)))))
+		{
+			goto IL_00ad;
+		}
+	}
+	{
+		Tank_t2050480468 * L_19 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_19);
+		L_19->set_mIsMoving_18((bool)0);
+	}
+
+IL_00ad:
+	{
+		Tank_t2050480468 * L_20 = __this->get_U3CU3Ef__this_4();
+		NullCheck(L_20);
+		float L_21 = L_20->get_mKeepMoveIntervalTime_13();
+		WaitForSeconds_t3839502067 * L_22 = (WaitForSeconds_t3839502067 *)il2cpp_codegen_object_new(WaitForSeconds_t3839502067_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m1990515539(L_22, ((float)((float)L_21/(float)(10.0f))), /*hidden argument*/NULL);
+		__this->set_U24current_3(L_22);
+		__this->set_U24PC_2(1);
+		goto IL_00e3;
+	}
+
+IL_00d5:
+	{
+		goto IL_0021;
+	}
+	// Dead block : IL_00da: ldarg.0
+
+IL_00e1:
+	{
+		return (bool)0;
+	}
+
+IL_00e3:
+	{
+		return (bool)1;
+	}
+}
+// System.Void Tank/<MovingCoroutine>c__Iterator8::Dispose()
+extern "C"  void U3CMovingCoroutineU3Ec__Iterator8_Dispose_m1739792476 (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_2((-1));
+		return;
+	}
+}
+// System.Void Tank/<MovingCoroutine>c__Iterator8::Reset()
+extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
+extern const uint32_t U3CMovingCoroutineU3Ec__Iterator8_Reset_m1275427734_MetadataUsageId;
+extern "C"  void U3CMovingCoroutineU3Ec__Iterator8_Reset_m1275427734 (U3CMovingCoroutineU3Ec__Iterator8_t3232189786 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CMovingCoroutineU3Ec__Iterator8_Reset_m1275427734_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1793819818 * L_0 = (NotSupportedException_t1793819818 *)il2cpp_codegen_object_new(NotSupportedException_t1793819818_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m3232764727(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
 	}
 }
 // System.Void Tank2DGameManager::.ctor()
@@ -4000,7 +4198,7 @@ IL_004a:
 	}
 }
 // System.Collections.IEnumerator TankGameLoad::EnemySpawn()
-extern Il2CppClass* U3CEnemySpawnU3Ec__IteratorB_t3143605997_il2cpp_TypeInfo_var;
+extern Il2CppClass* U3CEnemySpawnU3Ec__IteratorC_t3143605998_il2cpp_TypeInfo_var;
 extern const uint32_t TankGameLoad_EnemySpawn_m880921766_MetadataUsageId;
 extern "C"  Il2CppObject * TankGameLoad_EnemySpawn_m880921766 (TankGameLoad_t1987520770 * __this, const MethodInfo* method)
 {
@@ -4010,15 +4208,15 @@ extern "C"  Il2CppObject * TankGameLoad_EnemySpawn_m880921766 (TankGameLoad_t198
 		il2cpp_codegen_initialize_method (TankGameLoad_EnemySpawn_m880921766_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CEnemySpawnU3Ec__IteratorB_t3143605997 * V_0 = NULL;
+	U3CEnemySpawnU3Ec__IteratorC_t3143605998 * V_0 = NULL;
 	{
-		U3CEnemySpawnU3Ec__IteratorB_t3143605997 * L_0 = (U3CEnemySpawnU3Ec__IteratorB_t3143605997 *)il2cpp_codegen_object_new(U3CEnemySpawnU3Ec__IteratorB_t3143605997_il2cpp_TypeInfo_var);
-		U3CEnemySpawnU3Ec__IteratorB__ctor_m1936121308(L_0, /*hidden argument*/NULL);
+		U3CEnemySpawnU3Ec__IteratorC_t3143605998 * L_0 = (U3CEnemySpawnU3Ec__IteratorC_t3143605998 *)il2cpp_codegen_object_new(U3CEnemySpawnU3Ec__IteratorC_t3143605998_il2cpp_TypeInfo_var);
+		U3CEnemySpawnU3Ec__IteratorC__ctor_m1939598749(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CEnemySpawnU3Ec__IteratorB_t3143605997 * L_1 = V_0;
+		U3CEnemySpawnU3Ec__IteratorC_t3143605998 * L_1 = V_0;
 		NullCheck(L_1);
 		L_1->set_U3CU3Ef__this_3(__this);
-		U3CEnemySpawnU3Ec__IteratorB_t3143605997 * L_2 = V_0;
+		U3CEnemySpawnU3Ec__IteratorC_t3143605998 * L_2 = V_0;
 		return L_2;
 	}
 }
@@ -4072,43 +4270,43 @@ extern "C"  void TankGameLoad_OnDestroy_m1252867792 (TankGameLoad_t1987520770 * 
 		return;
 	}
 }
-// System.Void TankGameLoad/<EnemySpawn>c__IteratorB::.ctor()
-extern "C"  void U3CEnemySpawnU3Ec__IteratorB__ctor_m1936121308 (U3CEnemySpawnU3Ec__IteratorB_t3143605997 * __this, const MethodInfo* method)
+// System.Void TankGameLoad/<EnemySpawn>c__IteratorC::.ctor()
+extern "C"  void U3CEnemySpawnU3Ec__IteratorC__ctor_m1939598749 (U3CEnemySpawnU3Ec__IteratorC_t3143605998 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Object TankGameLoad/<EnemySpawn>c__IteratorB::System.Collections.Generic.IEnumerator<object>.get_Current()
-extern "C"  Il2CppObject * U3CEnemySpawnU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2520199582 (U3CEnemySpawnU3Ec__IteratorB_t3143605997 * __this, const MethodInfo* method)
+// System.Object TankGameLoad/<EnemySpawn>c__IteratorC::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CEnemySpawnU3Ec__IteratorC_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2525376511 (U3CEnemySpawnU3Ec__IteratorC_t3143605998 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_2();
 		return L_0;
 	}
 }
-// System.Object TankGameLoad/<EnemySpawn>c__IteratorB::System.Collections.IEnumerator.get_Current()
-extern "C"  Il2CppObject * U3CEnemySpawnU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m283024822 (U3CEnemySpawnU3Ec__IteratorB_t3143605997 * __this, const MethodInfo* method)
+// System.Object TankGameLoad/<EnemySpawn>c__IteratorC::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CEnemySpawnU3Ec__IteratorC_System_Collections_IEnumerator_get_Current_m3615228567 (U3CEnemySpawnU3Ec__IteratorC_t3143605998 * __this, const MethodInfo* method)
 {
 	{
 		Il2CppObject * L_0 = __this->get_U24current_2();
 		return L_0;
 	}
 }
-// System.Boolean TankGameLoad/<EnemySpawn>c__IteratorB::MoveNext()
+// System.Boolean TankGameLoad/<EnemySpawn>c__IteratorC::MoveNext()
 extern Il2CppClass* Tank2DGameManager_t1949600781_il2cpp_TypeInfo_var;
 extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppClass* WaitForSeconds_t3839502067_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2_get_Count_m2916721665_MethodInfo_var;
 extern const MethodInfo* Dictionary_2_Add_m956423373_MethodInfo_var;
-extern const uint32_t U3CEnemySpawnU3Ec__IteratorB_MoveNext_m1353577768_MetadataUsageId;
-extern "C"  bool U3CEnemySpawnU3Ec__IteratorB_MoveNext_m1353577768 (U3CEnemySpawnU3Ec__IteratorB_t3143605997 * __this, const MethodInfo* method)
+extern const uint32_t U3CEnemySpawnU3Ec__IteratorC_MoveNext_m4213900291_MetadataUsageId;
+extern "C"  bool U3CEnemySpawnU3Ec__IteratorC_MoveNext_m4213900291 (U3CEnemySpawnU3Ec__IteratorC_t3143605998 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CEnemySpawnU3Ec__IteratorB_MoveNext_m1353577768_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CEnemySpawnU3Ec__IteratorC_MoveNext_m4213900291_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint32_t V_0 = 0;
@@ -4236,23 +4434,23 @@ IL_00f9:
 	}
 	// Dead block : IL_00fb: ldloc.1
 }
-// System.Void TankGameLoad/<EnemySpawn>c__IteratorB::Dispose()
-extern "C"  void U3CEnemySpawnU3Ec__IteratorB_Dispose_m290046631 (U3CEnemySpawnU3Ec__IteratorB_t3143605997 * __this, const MethodInfo* method)
+// System.Void TankGameLoad/<EnemySpawn>c__IteratorC::Dispose()
+extern "C"  void U3CEnemySpawnU3Ec__IteratorC_Dispose_m405078920 (U3CEnemySpawnU3Ec__IteratorC_t3143605998 * __this, const MethodInfo* method)
 {
 	{
 		__this->set_U24PC_1((-1));
 		return;
 	}
 }
-// System.Void TankGameLoad/<EnemySpawn>c__IteratorB::Reset()
+// System.Void TankGameLoad/<EnemySpawn>c__IteratorC::Reset()
 extern Il2CppClass* NotSupportedException_t1793819818_il2cpp_TypeInfo_var;
-extern const uint32_t U3CEnemySpawnU3Ec__IteratorB_Reset_m4213308505_MetadataUsageId;
-extern "C"  void U3CEnemySpawnU3Ec__IteratorB_Reset_m4213308505 (U3CEnemySpawnU3Ec__IteratorB_t3143605997 * __this, const MethodInfo* method)
+extern const uint32_t U3CEnemySpawnU3Ec__IteratorC_Reset_m4216794394_MetadataUsageId;
+extern "C"  void U3CEnemySpawnU3Ec__IteratorC_Reset_m4216794394 (U3CEnemySpawnU3Ec__IteratorC_t3143605998 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CEnemySpawnU3Ec__IteratorB_Reset_m4213308505_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CEnemySpawnU3Ec__IteratorC_Reset_m4216794394_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -43797,292 +43995,6 @@ IL_0154:
 
 IL_020d:
 	{
-		return;
-	}
-}
-// System.Void UILocalize::.ctor()
-extern "C"  void UILocalize__ctor_m2407713572 (UILocalize_t3754440953 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UILocalize::OnLocalize(Localization)
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t UILocalize_OnLocalize_m726315217_MetadataUsageId;
-extern "C"  void UILocalize_OnLocalize_m726315217 (UILocalize_t3754440953 * __this, Localization_t3725902693 * ___loc0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UILocalize_OnLocalize_m726315217_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		String_t* L_0 = __this->get_mLanguage_3();
-		Localization_t3725902693 * L_1 = ___loc0;
-		NullCheck(L_1);
-		String_t* L_2 = Localization_get_currentLanguage_m3058444479(L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_3 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_0, L_2, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_001c;
-		}
-	}
-	{
-		UILocalize_Localize_m1351006019(__this, /*hidden argument*/NULL);
-	}
-
-IL_001c:
-	{
-		return;
-	}
-}
-// System.Void UILocalize::OnEnable()
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const uint32_t UILocalize_OnEnable_m255912036_MetadataUsageId;
-extern "C"  void UILocalize_OnEnable_m255912036 (UILocalize_t3754440953 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UILocalize_OnEnable_m255912036_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		bool L_0 = __this->get_mStarted_4();
-		if (!L_0)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		Localization_t3725902693 * L_1 = Localization_get_instance_m2444447832(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		UILocalize_Localize_m1351006019(__this, /*hidden argument*/NULL);
-	}
-
-IL_0021:
-	{
-		return;
-	}
-}
-// System.Void UILocalize::Start()
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const uint32_t UILocalize_Start_m1659896164_MetadataUsageId;
-extern "C"  void UILocalize_Start_m1659896164 (UILocalize_t3754440953 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UILocalize_Start_m1659896164_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		__this->set_mStarted_4((bool)1);
-		Localization_t3725902693 * L_0 = Localization_get_instance_m2444447832(NULL /*static, unused*/, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_001d;
-		}
-	}
-	{
-		UILocalize_Localize_m1351006019(__this, /*hidden argument*/NULL);
-	}
-
-IL_001d:
-	{
-		return;
-	}
-}
-// System.Void UILocalize::Localize()
-extern Il2CppClass* UILabel_t1795115428_il2cpp_TypeInfo_var;
-extern Il2CppClass* UISprite_t603616735_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern Il2CppClass* NGUITools_t2004302824_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisUIWidget_t1453041918_m775148371_MethodInfo_var;
-extern const MethodInfo* NGUITools_FindInParents_TisUIInput_t860674234_m709469775_MethodInfo_var;
-extern const uint32_t UILocalize_Localize_m1351006019_MetadataUsageId;
-extern "C"  void UILocalize_Localize_m1351006019 (UILocalize_t3754440953 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (UILocalize_Localize_m1351006019_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Localization_t3725902693 * V_0 = NULL;
-	UIWidget_t1453041918 * V_1 = NULL;
-	UILabel_t1795115428 * V_2 = NULL;
-	UISprite_t603616735 * V_3 = NULL;
-	String_t* V_4 = NULL;
-	UIInput_t860674234 * V_5 = NULL;
-	String_t* G_B7_0 = NULL;
-	{
-		Localization_t3725902693 * L_0 = Localization_get_instance_m2444447832(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_0;
-		UIWidget_t1453041918 * L_1 = Component_GetComponent_TisUIWidget_t1453041918_m775148371(__this, /*hidden argument*/Component_GetComponent_TisUIWidget_t1453041918_m775148371_MethodInfo_var);
-		V_1 = L_1;
-		UIWidget_t1453041918 * L_2 = V_1;
-		V_2 = ((UILabel_t1795115428 *)IsInstClass(L_2, UILabel_t1795115428_il2cpp_TypeInfo_var));
-		UIWidget_t1453041918 * L_3 = V_1;
-		V_3 = ((UISprite_t603616735 *)IsInstClass(L_3, UISprite_t603616735_il2cpp_TypeInfo_var));
-		String_t* L_4 = __this->get_mLanguage_3();
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_5 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		if (!L_5)
-		{
-			goto IL_0053;
-		}
-	}
-	{
-		String_t* L_6 = __this->get_key_2();
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_7 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
-		if (!L_7)
-		{
-			goto IL_0053;
-		}
-	}
-	{
-		UILabel_t1795115428 * L_8 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_9 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_8, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_9)
-		{
-			goto IL_0053;
-		}
-	}
-	{
-		UILabel_t1795115428 * L_10 = V_2;
-		NullCheck(L_10);
-		String_t* L_11 = UILabel_get_text_m222864222(L_10, /*hidden argument*/NULL);
-		__this->set_key_2(L_11);
-	}
-
-IL_0053:
-	{
-		String_t* L_12 = __this->get_key_2();
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_13 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
-		if (!L_13)
-		{
-			goto IL_006d;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_14 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
-		G_B7_0 = L_14;
-		goto IL_0079;
-	}
-
-IL_006d:
-	{
-		Localization_t3725902693 * L_15 = V_0;
-		String_t* L_16 = __this->get_key_2();
-		NullCheck(L_15);
-		String_t* L_17 = Localization_Get_m685709977(L_15, L_16, /*hidden argument*/NULL);
-		G_B7_0 = L_17;
-	}
-
-IL_0079:
-	{
-		V_4 = G_B7_0;
-		UILabel_t1795115428 * L_18 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_19 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_18, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_19)
-		{
-			goto IL_00ce;
-		}
-	}
-	{
-		UILabel_t1795115428 * L_20 = V_2;
-		NullCheck(L_20);
-		GameObject_t1756533147 * L_21 = Component_get_gameObject_m3105766835(L_20, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(NGUITools_t2004302824_il2cpp_TypeInfo_var);
-		UIInput_t860674234 * L_22 = NGUITools_FindInParents_TisUIInput_t860674234_m709469775(NULL /*static, unused*/, L_21, /*hidden argument*/NGUITools_FindInParents_TisUIInput_t860674234_m709469775_MethodInfo_var);
-		V_5 = L_22;
-		UIInput_t860674234 * L_23 = V_5;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_24 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_23, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_24)
-		{
-			goto IL_00c1;
-		}
-	}
-	{
-		UIInput_t860674234 * L_25 = V_5;
-		NullCheck(L_25);
-		UILabel_t1795115428 * L_26 = L_25->get_label_3();
-		UILabel_t1795115428 * L_27 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_28 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_26, L_27, /*hidden argument*/NULL);
-		if (!L_28)
-		{
-			goto IL_00c1;
-		}
-	}
-	{
-		UIInput_t860674234 * L_29 = V_5;
-		String_t* L_30 = V_4;
-		NullCheck(L_29);
-		UIInput_set_defaultText_m1999504542(L_29, L_30, /*hidden argument*/NULL);
-		goto IL_00c9;
-	}
-
-IL_00c1:
-	{
-		UILabel_t1795115428 * L_31 = V_2;
-		String_t* L_32 = V_4;
-		NullCheck(L_31);
-		UILabel_set_text_m451064939(L_31, L_32, /*hidden argument*/NULL);
-	}
-
-IL_00c9:
-	{
-		goto IL_00e8;
-	}
-
-IL_00ce:
-	{
-		UISprite_t603616735 * L_33 = V_3;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_34 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_33, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_34)
-		{
-			goto IL_00e8;
-		}
-	}
-	{
-		UISprite_t603616735 * L_35 = V_3;
-		String_t* L_36 = V_4;
-		NullCheck(L_35);
-		UISprite_set_spriteName_m3423882207(L_35, L_36, /*hidden argument*/NULL);
-		UISprite_t603616735 * L_37 = V_3;
-		NullCheck(L_37);
-		VirtActionInvoker0::Invoke(13 /* System.Void UISprite::MakePixelPerfect() */, L_37);
-	}
-
-IL_00e8:
-	{
-		Localization_t3725902693 * L_38 = V_0;
-		NullCheck(L_38);
-		String_t* L_39 = Localization_get_currentLanguage_m3058444479(L_38, /*hidden argument*/NULL);
-		__this->set_mLanguage_3(L_39);
 		return;
 	}
 }

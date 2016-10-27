@@ -13,16 +13,24 @@
 #include <limits>
 #include <assert.h>
 
+// UILocalize
+struct UILocalize_t3754440953;
+// Localization
+struct Localization_t3725902693;
+// UIWidget
+struct UIWidget_t1453041918;
+// System.Object
+struct Il2CppObject;
+// UIInput
+struct UIInput_t860674234;
+// UnityEngine.GameObject
+struct GameObject_t1756533147;
 // UIOrthoCamera
 struct UIOrthoCamera_t1890393437;
 // UnityEngine.Camera
 struct Camera_t189460977;
-// System.Object
-struct Il2CppObject;
 // UIPanel
 struct UIPanel_t1795085332;
-// UnityEngine.GameObject
-struct GameObject_t1756533147;
 // UnityEngine.Transform
 struct Transform_t3275118058;
 // UIPanel[]
@@ -33,8 +41,6 @@ struct ObjectU5BU5D_t3614634134;
 struct BetterList_1_t1673430560;
 // BetterList`1<UIDrawCall>
 struct BetterList_1_t3512232154;
-// UIWidget
-struct UIWidget_t1453041918;
 // UnityEngine.Material
 struct Material_t193706927;
 // UIDrawCall
@@ -55,8 +61,6 @@ struct UIPopupList_t109953940;
 struct String_t;
 // UIButtonKeys
 struct UIButtonKeys_t2099118702;
-// Localization
-struct Localization_t3725902693;
 // UILabel
 struct UILabel_t1795115428;
 // TweenPosition
@@ -187,16 +191,34 @@ struct WindowDragTilt_t1404465963;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "AssemblyU2DCSharp_UIOrthoCamera1890393437.h"
-#include "AssemblyU2DCSharp_UIOrthoCamera1890393437MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UILocalize3754440953.h"
+#include "AssemblyU2DCSharp_UILocalize3754440953MethodDeclarations.h"
 #include "mscorlib_System_Void1841601450.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour1158329972MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Localization3725902693.h"
+#include "AssemblyU2DCSharp_Localization3725902693MethodDeclarations.h"
+#include "mscorlib_System_String2029220233MethodDeclarations.h"
+#include "mscorlib_System_String2029220233.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "UnityEngine_UnityEngine_Object1021602117MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Object1021602117.h"
 #include "UnityEngine_UnityEngine_Component3819376471MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UILabel1795115428MethodDeclarations.h"
+#include "AssemblyU2DCSharp_NGUITools2004302824MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UIInput860674234MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UISprite603616735MethodDeclarations.h"
+#include "AssemblyU2DCSharp_UIWidget1453041918.h"
+#include "AssemblyU2DCSharp_UILabel1795115428.h"
+#include "AssemblyU2DCSharp_UISprite603616735.h"
+#include "AssemblyU2DCSharp_UIInput860674234.h"
+#include "UnityEngine_UnityEngine_Component3819376471.h"
+#include "UnityEngine_UnityEngine_GameObject1756533147.h"
+#include "AssemblyU2DCSharp_NGUITools2004302824.h"
+#include "AssemblyU2DCSharp_UIOrthoCamera1890393437.h"
+#include "AssemblyU2DCSharp_UIOrthoCamera1890393437MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Camera189460977MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Camera189460977.h"
-#include "UnityEngine_UnityEngine_Component3819376471.h"
 #include "UnityEngine_UnityEngine_Transform3275118058.h"
-#include "mscorlib_System_Boolean3825574718.h"
 #include "UnityEngine_UnityEngine_Rect3681755626MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Screen786852042MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform3275118058MethodDeclarations.h"
@@ -229,23 +251,16 @@ struct WindowDragTilt_t1404465963;
 #include "AssemblyU2DCSharp_BetterList_1_gen2464096221.h"
 #include "AssemblyU2DCSharp_BetterList_1_gen1094906160.h"
 #include "mscorlib_ArrayTypes.h"
-#include "UnityEngine_UnityEngine_GameObject1756533147.h"
-#include "UnityEngine_UnityEngine_Object1021602117MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Object1021602117.h"
 #include "AssemblyU2DCSharp_UIDrawCall3291843512MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIWidget1453041918MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIDrawCall3291843512.h"
 #include "UnityEngine_UnityEngine_Material193706927.h"
-#include "AssemblyU2DCSharp_UIWidget1453041918.h"
 #include "Assembly-CSharp_ArrayTypes.h"
-#include "AssemblyU2DCSharp_NGUITools2004302824MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_HideFlags1434274199.h"
 #include "AssemblyU2DCSharp_UIDrawCall_Clipping4042448929.h"
 #include "UnityEngine_UnityEngine_Time31991979MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Behaviour955675639MethodDeclarations.h"
-#include "mscorlib_System_String2029220233MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147MethodDeclarations.h"
-#include "mscorlib_System_String2029220233.h"
 #include "AssemblyU2DCSharp_UICamera1496819779MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UICamera1496819779.h"
 #include "UnityEngine_UnityEngine_Application354826772MethodDeclarations.h"
@@ -276,20 +291,14 @@ struct WindowDragTilt_t1404465963;
 #include "mscorlib_System_Collections_Generic_List_1_gen1398341365.h"
 #include "UnityEngine_UnityEngine_Color2020392075.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1164236560.h"
-#include "AssemblyU2DCSharp_Localization3725902693MethodDeclarations.h"
-#include "AssemblyU2DCSharp_UILabel1795115428MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIPopupList_OnSelectionChange2430743522MethodDeclarations.h"
-#include "AssemblyU2DCSharp_UILabel1795115428.h"
 #include "AssemblyU2DCSharp_UIPopupList_OnSelectionChange2430743522.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions1414041951.h"
 #include "AssemblyU2DCSharp_UIButtonKeys2099118702.h"
-#include "AssemblyU2DCSharp_Localization3725902693.h"
-#include "AssemblyU2DCSharp_UISprite603616735MethodDeclarations.h"
 #include "AssemblyU2DCSharp_UIAtlas1304615221MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TweenPosition1144714832MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TweenPosition1144714832.h"
 #include "AssemblyU2DCSharp_UIAtlas_Sprite134787095.h"
-#include "AssemblyU2DCSharp_UISprite603616735.h"
 #include "AssemblyU2DCSharp_UIAtlas1304615221.h"
 #include "AssemblyU2DCSharp_UITweener2986641582.h"
 #include "AssemblyU2DCSharp_UITweener_Method1694901606.h"
@@ -313,7 +322,6 @@ struct WindowDragTilt_t1404465963;
 #include "UnityEngine_UnityEngine_BoxCollider22920061MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_BoxCollider22920061.h"
 #include "AssemblyU2DCSharp_UIWidget_Pivot752586349.h"
-#include "AssemblyU2DCSharp_NGUITools2004302824.h"
 #include "AssemblyU2DCSharp_UIEventListener_BoolDelegate2797443340.h"
 #include "AssemblyU2DCSharp_UIPopupList_Position1780870098.h"
 #include "AssemblyU2DCSharp_UIPopupList_Position1780870098MethodDeclarations.h"
@@ -493,6 +501,13 @@ struct WindowDragTilt_t1404465963;
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m2721246802_gshared (Component_t3819376471 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m2721246802(__this, method) ((  Il2CppObject * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UIWidget>()
+#define Component_GetComponent_TisUIWidget_t1453041918_m775148371(__this, method) ((  UIWidget_t1453041918 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
+// !!0 NGUITools::FindInParents<System.Object>(UnityEngine.GameObject)
+extern "C"  Il2CppObject * NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * p0, const MethodInfo* method);
+#define NGUITools_FindInParents_TisIl2CppObject_m1944124771(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared)(__this /* static, unused */, p0, method)
+// !!0 NGUITools::FindInParents<UIInput>(UnityEngine.GameObject)
+#define NGUITools_FindInParents_TisUIInput_t860674234_m709469775(__this /* static, unused */, p0, method) ((  UIInput_t860674234 * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared)(__this /* static, unused */, p0, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
 #define Component_GetComponent_TisCamera_t189460977_m3276577584(__this, method) ((  Camera_t189460977 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 // !!0[] UnityEngine.Component::GetComponentsInChildren<System.Object>(System.Boolean)
@@ -514,8 +529,6 @@ extern "C"  ObjectU5BU5D_t3614634134* Component_GetComponentsInChildren_TisIl2Cp
 #define Component_GetComponent_TisSpringPosition_t434217086_m2396603755(__this, method) ((  SpringPosition_t434217086 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UIPanel>()
 #define Component_GetComponent_TisUIPanel_t1795085332_m1654704505(__this, method) ((  UIPanel_t1795085332 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<UIWidget>()
-#define Component_GetComponent_TisUIWidget_t1453041918_m775148371(__this, method) ((  UIWidget_t1453041918 * (*) (Component_t3819376471 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m2721246802_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UIPanel>()
 #define GameObject_AddComponent_TisUIPanel_t1795085332_m3069427420(__this, method) ((  UIPanel_t1795085332 * (*) (GameObject_t1756533147 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m2049635786_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UIButtonKeys>()
@@ -546,9 +559,6 @@ extern "C"  Il2CppObject * NGUITools_AddWidget_TisIl2CppObject_m1924477599_gshar
 #define NGUITools_AddWidget_TisIl2CppObject_m1924477599(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_AddWidget_TisIl2CppObject_m1924477599_gshared)(__this /* static, unused */, p0, method)
 // !!0 NGUITools::AddWidget<UILabel>(UnityEngine.GameObject)
 #define NGUITools_AddWidget_TisUILabel_t1795115428_m2956146399(__this /* static, unused */, p0, method) ((  UILabel_t1795115428 * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_AddWidget_TisIl2CppObject_m1924477599_gshared)(__this /* static, unused */, p0, method)
-// !!0 NGUITools::FindInParents<System.Object>(UnityEngine.GameObject)
-extern "C"  Il2CppObject * NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared (Il2CppObject * __this /* static, unused */, GameObject_t1756533147 * p0, const MethodInfo* method);
-#define NGUITools_FindInParents_TisIl2CppObject_m1944124771(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared)(__this /* static, unused */, p0, method)
 // !!0 NGUITools::FindInParents<UIRoot>(UnityEngine.GameObject)
 #define NGUITools_FindInParents_TisUIRoot_t389944298_m4168585187(__this /* static, unused */, p0, method) ((  UIRoot_t389944298 * (*) (Il2CppObject * /* static, unused */, GameObject_t1756533147 *, const MethodInfo*))NGUITools_FindInParents_TisIl2CppObject_m1944124771_gshared)(__this /* static, unused */, p0, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<System.Object>()
@@ -587,6 +597,292 @@ extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m246
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UILocalize::.ctor()
+extern "C"  void UILocalize__ctor_m2407713572 (UILocalize_t3754440953 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2464341955(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UILocalize::OnLocalize(Localization)
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern const uint32_t UILocalize_OnLocalize_m726315217_MetadataUsageId;
+extern "C"  void UILocalize_OnLocalize_m726315217 (UILocalize_t3754440953 * __this, Localization_t3725902693 * ___loc0, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UILocalize_OnLocalize_m726315217_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = __this->get_mLanguage_3();
+		Localization_t3725902693 * L_1 = ___loc0;
+		NullCheck(L_1);
+		String_t* L_2 = Localization_get_currentLanguage_m3058444479(L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_3 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_0, L_2, /*hidden argument*/NULL);
+		if (!L_3)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		UILocalize_Localize_m1351006019(__this, /*hidden argument*/NULL);
+	}
+
+IL_001c:
+	{
+		return;
+	}
+}
+// System.Void UILocalize::OnEnable()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t UILocalize_OnEnable_m255912036_MetadataUsageId;
+extern "C"  void UILocalize_OnEnable_m255912036 (UILocalize_t3754440953 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UILocalize_OnEnable_m255912036_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_mStarted_4();
+		if (!L_0)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		Localization_t3725902693 * L_1 = Localization_get_instance_m2444447832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_2 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_1, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		UILocalize_Localize_m1351006019(__this, /*hidden argument*/NULL);
+	}
+
+IL_0021:
+	{
+		return;
+	}
+}
+// System.Void UILocalize::Start()
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern const uint32_t UILocalize_Start_m1659896164_MetadataUsageId;
+extern "C"  void UILocalize_Start_m1659896164 (UILocalize_t3754440953 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UILocalize_Start_m1659896164_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		__this->set_mStarted_4((bool)1);
+		Localization_t3725902693 * L_0 = Localization_get_instance_m2444447832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		UILocalize_Localize_m1351006019(__this, /*hidden argument*/NULL);
+	}
+
+IL_001d:
+	{
+		return;
+	}
+}
+// System.Void UILocalize::Localize()
+extern Il2CppClass* UILabel_t1795115428_il2cpp_TypeInfo_var;
+extern Il2CppClass* UISprite_t603616735_il2cpp_TypeInfo_var;
+extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
+extern Il2CppClass* NGUITools_t2004302824_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TisUIWidget_t1453041918_m775148371_MethodInfo_var;
+extern const MethodInfo* NGUITools_FindInParents_TisUIInput_t860674234_m709469775_MethodInfo_var;
+extern const uint32_t UILocalize_Localize_m1351006019_MetadataUsageId;
+extern "C"  void UILocalize_Localize_m1351006019 (UILocalize_t3754440953 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (UILocalize_Localize_m1351006019_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Localization_t3725902693 * V_0 = NULL;
+	UIWidget_t1453041918 * V_1 = NULL;
+	UILabel_t1795115428 * V_2 = NULL;
+	UISprite_t603616735 * V_3 = NULL;
+	String_t* V_4 = NULL;
+	UIInput_t860674234 * V_5 = NULL;
+	String_t* G_B7_0 = NULL;
+	{
+		Localization_t3725902693 * L_0 = Localization_get_instance_m2444447832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_0;
+		UIWidget_t1453041918 * L_1 = Component_GetComponent_TisUIWidget_t1453041918_m775148371(__this, /*hidden argument*/Component_GetComponent_TisUIWidget_t1453041918_m775148371_MethodInfo_var);
+		V_1 = L_1;
+		UIWidget_t1453041918 * L_2 = V_1;
+		V_2 = ((UILabel_t1795115428 *)IsInstClass(L_2, UILabel_t1795115428_il2cpp_TypeInfo_var));
+		UIWidget_t1453041918 * L_3 = V_1;
+		V_3 = ((UISprite_t603616735 *)IsInstClass(L_3, UISprite_t603616735_il2cpp_TypeInfo_var));
+		String_t* L_4 = __this->get_mLanguage_3();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_5 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		if (!L_5)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		String_t* L_6 = __this->get_key_2();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_7 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		if (!L_7)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		UILabel_t1795115428 * L_8 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_9 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_8, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		UILabel_t1795115428 * L_10 = V_2;
+		NullCheck(L_10);
+		String_t* L_11 = UILabel_get_text_m222864222(L_10, /*hidden argument*/NULL);
+		__this->set_key_2(L_11);
+	}
+
+IL_0053:
+	{
+		String_t* L_12 = __this->get_key_2();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_13 = String_IsNullOrEmpty_m2802126737(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		if (!L_13)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_14 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		G_B7_0 = L_14;
+		goto IL_0079;
+	}
+
+IL_006d:
+	{
+		Localization_t3725902693 * L_15 = V_0;
+		String_t* L_16 = __this->get_key_2();
+		NullCheck(L_15);
+		String_t* L_17 = Localization_Get_m685709977(L_15, L_16, /*hidden argument*/NULL);
+		G_B7_0 = L_17;
+	}
+
+IL_0079:
+	{
+		V_4 = G_B7_0;
+		UILabel_t1795115428 * L_18 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_19 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_18, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_19)
+		{
+			goto IL_00ce;
+		}
+	}
+	{
+		UILabel_t1795115428 * L_20 = V_2;
+		NullCheck(L_20);
+		GameObject_t1756533147 * L_21 = Component_get_gameObject_m3105766835(L_20, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(NGUITools_t2004302824_il2cpp_TypeInfo_var);
+		UIInput_t860674234 * L_22 = NGUITools_FindInParents_TisUIInput_t860674234_m709469775(NULL /*static, unused*/, L_21, /*hidden argument*/NGUITools_FindInParents_TisUIInput_t860674234_m709469775_MethodInfo_var);
+		V_5 = L_22;
+		UIInput_t860674234 * L_23 = V_5;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_24 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_23, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_24)
+		{
+			goto IL_00c1;
+		}
+	}
+	{
+		UIInput_t860674234 * L_25 = V_5;
+		NullCheck(L_25);
+		UILabel_t1795115428 * L_26 = L_25->get_label_3();
+		UILabel_t1795115428 * L_27 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_28 = Object_op_Equality_m3764089466(NULL /*static, unused*/, L_26, L_27, /*hidden argument*/NULL);
+		if (!L_28)
+		{
+			goto IL_00c1;
+		}
+	}
+	{
+		UIInput_t860674234 * L_29 = V_5;
+		String_t* L_30 = V_4;
+		NullCheck(L_29);
+		UIInput_set_defaultText_m1999504542(L_29, L_30, /*hidden argument*/NULL);
+		goto IL_00c9;
+	}
+
+IL_00c1:
+	{
+		UILabel_t1795115428 * L_31 = V_2;
+		String_t* L_32 = V_4;
+		NullCheck(L_31);
+		UILabel_set_text_m451064939(L_31, L_32, /*hidden argument*/NULL);
+	}
+
+IL_00c9:
+	{
+		goto IL_00e8;
+	}
+
+IL_00ce:
+	{
+		UISprite_t603616735 * L_33 = V_3;
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_34 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_33, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_34)
+		{
+			goto IL_00e8;
+		}
+	}
+	{
+		UISprite_t603616735 * L_35 = V_3;
+		String_t* L_36 = V_4;
+		NullCheck(L_35);
+		UISprite_set_spriteName_m3423882207(L_35, L_36, /*hidden argument*/NULL);
+		UISprite_t603616735 * L_37 = V_3;
+		NullCheck(L_37);
+		VirtActionInvoker0::Invoke(13 /* System.Void UISprite::MakePixelPerfect() */, L_37);
+	}
+
+IL_00e8:
+	{
+		Localization_t3725902693 * L_38 = V_0;
+		NullCheck(L_38);
+		String_t* L_39 = Localization_get_currentLanguage_m3058444479(L_38, /*hidden argument*/NULL);
+		__this->set_mLanguage_3(L_39);
+		return;
+	}
+}
 // System.Void UIOrthoCamera::.ctor()
 extern "C"  void UIOrthoCamera__ctor_m2024575022 (UIOrthoCamera_t1890393437 * __this, const MethodInfo* method)
 {
