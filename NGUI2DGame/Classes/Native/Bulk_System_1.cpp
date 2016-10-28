@@ -402,8 +402,6 @@ struct X509Chain_t777637347;
 #include "mscorlib_System_TimeSpan3430258949.h"
 #include "mscorlib_System_TimeSpan3430258949MethodDeclarations.h"
 #include "mscorlib_System_Double4078015681.h"
-#include "System_System_Diagnostics_Trace2488851411.h"
-#include "System_System_Diagnostics_Trace2488851411MethodDeclarations.h"
 #include "System_System_Diagnostics_TraceImpl3585635237.h"
 #include "mscorlib_System_Threading_Monitor3228523394MethodDeclarations.h"
 #include "mscorlib_System_MarshalByRefObject1285298191MethodDeclarations.h"
@@ -697,6 +695,7 @@ struct X509Chain_t777637347;
 #include "System_System_Security_Cryptography_X509Certificat1197680765.h"
 #include "System_System_Security_Authentication_SslProtocols894678499.h"
 #include "System_System_Net_FtpWebRequest_RequestState4256633122MethodDeclarations.h"
+#include "System_System_Net_GlobalProxySelection2251180943.h"
 
 // System.Int32 System.Array::IndexOf<System.Int32>(!!0[],!!0)
 extern "C"  int32_t Array_IndexOf_TisInt32_t2071877448_m1686802248_gshared (Il2CppObject * __this /* static, unused */, Int32U5BU5D_t3030399641* p0, int32_t p1, const MethodInfo* method);
@@ -6061,43 +6060,6 @@ IL_000c:
 		int64_t L_3 = __this->get_started_3();
 		__this->set_elapsed_2(((int64_t)((int64_t)L_1+(int64_t)((int64_t)((int64_t)L_2-(int64_t)L_3)))));
 		__this->set_is_running_4((bool)0);
-		return;
-	}
-}
-// System.Void System.Diagnostics.Trace::Assert(System.Boolean)
-extern Il2CppClass* TraceImpl_t3585635237_il2cpp_TypeInfo_var;
-extern const uint32_t Trace_Assert_m100144303_MetadataUsageId;
-extern "C"  void Trace_Assert_m100144303 (Il2CppObject * __this /* static, unused */, bool ___condition0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Trace_Assert_m100144303_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		bool L_0 = ___condition0;
-		IL2CPP_RUNTIME_CLASS_INIT(TraceImpl_t3585635237_il2cpp_TypeInfo_var);
-		TraceImpl_Assert_m4196983731(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void System.Diagnostics.Trace::Assert(System.Boolean,System.String)
-extern Il2CppClass* TraceImpl_t3585635237_il2cpp_TypeInfo_var;
-extern const uint32_t Trace_Assert_m4098777117_MetadataUsageId;
-extern "C"  void Trace_Assert_m4098777117 (Il2CppObject * __this /* static, unused */, bool ___condition0, String_t* ___message1, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Trace_Assert_m4098777117_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		bool L_0 = ___condition0;
-		String_t* L_1 = ___message1;
-		IL2CPP_RUNTIME_CLASS_INIT(TraceImpl_t3585635237_il2cpp_TypeInfo_var);
-		TraceImpl_Assert_m2040684745(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -27923,6 +27885,23 @@ extern "C"  bool FtpWebResponse_IsFinal_m1790980787 (FtpWebResponse_t2609078769 
 	{
 		int32_t L_0 = __this->get_statusCode_3();
 		return (bool)((((int32_t)((((int32_t)L_0) < ((int32_t)((int32_t)200)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+// System.Net.IWebProxy System.Net.GlobalProxySelection::get_Select()
+extern Il2CppClass* WebRequest_t1365124353_il2cpp_TypeInfo_var;
+extern const uint32_t GlobalProxySelection_get_Select_m1637611912_MetadataUsageId;
+extern "C"  Il2CppObject * GlobalProxySelection_get_Select_m1637611912 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GlobalProxySelection_get_Select_m1637611912_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(WebRequest_t1365124353_il2cpp_TypeInfo_var);
+		Il2CppObject * L_0 = WebRequest_get_DefaultWebProxy_m741473019(NULL /*static, unused*/, /*hidden argument*/NULL);
+		return L_0;
 	}
 }
 #ifdef __clang__

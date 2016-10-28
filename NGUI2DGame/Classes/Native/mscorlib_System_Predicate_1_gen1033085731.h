@@ -10,8 +10,16 @@
 
 #include <stdint.h>
 
+// Bullet
+struct Bullet_t2590115616;
+// System.IAsyncResult
+struct IAsyncResult_t1999651008;
+// System.AsyncCallback
+struct AsyncCallback_t163412349;
+// System.Object
+struct Il2CppObject;
 
-#include "mscorlib_System_Object2689449295.h"
+#include "mscorlib_System_MulticastDelegate3201952435.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -19,8 +27,8 @@
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Diagnostics.Trace
-struct  Trace_t2488851411  : public Il2CppObject
+// System.Predicate`1<Bullet>
+struct  Predicate_1_t1033085731  : public MulticastDelegate_t3201952435
 {
 public:
 

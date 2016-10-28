@@ -2642,7 +2642,6 @@
 #include "System_System_DefaultUriParser1591960796.h"
 #include "System_System_Diagnostics_Debug2273457373.h"
 #include "System_System_Diagnostics_DiagnosticsConfiguration1009623312.h"
-#include "System_System_Diagnostics_Trace2488851411.h"
 #include "System_System_GenericUriParser2599285286.h"
 #include "System_System_IO_Compression_DeflateStream_Unmanag1990215745.h"
 #include "System_System_IO_Compression_DeflateStream_ReadMet3362229488.h"
@@ -16684,13 +16683,13 @@ extern const int32_t g_FieldOffsetTable[14306] =
 	Tank_t2050480468::get_offset_of_mIsBlocingByTank_14(),
 	Tank_t2050480468::get_offset_of_mBlockingByTankTime_15(),
 	Tank_t2050480468::get_offset_of_mCurrentMoveAction_16(),
-	Tank_t2050480468::get_offset_of_mMoveDeltaTime_17(),
-	Tank_t2050480468::get_offset_of_mIsMoving_18(),
-	Tank_t2050480468::get_offset_of_mTimeStartMoving_19(),
-	Tank_t2050480468::get_offset_of_mTimeToCompleteMove_20(),
-	Tank_t2050480468::get_offset_of_mStartPosition_21(),
-	Tank_t2050480468::get_offset_of_mDestinationPosition_22(),
-	Tank_t2050480468::get_offset_of_mBulletsList_23(),
+	Tank_t2050480468::get_offset_of_mIsMoving_17(),
+	Tank_t2050480468::get_offset_of_mTimeStartMoving_18(),
+	Tank_t2050480468::get_offset_of_mTimeToCompleteMove_19(),
+	Tank_t2050480468::get_offset_of_mStartPosition_20(),
+	Tank_t2050480468::get_offset_of_mDestinationPosition_21(),
+	Tank_t2050480468::get_offset_of_mBulletsList_22(),
+	Tank_t2050480468::get_offset_of_mBulletsScriptList_23(),
 	Tank_t2050480468::get_offset_of_mCurrentOccupiedIndexs_24(),
 	Tank_t2050480468::get_offset_of_mTankMovingIndexsOffset_25(),
 	Tank_t2050480468::get_offset_of_mTankAudioSource_26(),
@@ -17386,7 +17385,7 @@ extern const int32_t g_FieldOffsetTable[14306] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3358] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3357] = 
 {
 	sizeof (U3CModuleU3E_t3783534214), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -18984,7 +18983,6 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[3358] =
 	sizeof (ElementHandler_t1009623312), sizeof(Il2CppMethodPointer), 0, 0,
 	sizeof (SourceLevels_t1530190938)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Stopwatch_t1380178105), -1, sizeof(Stopwatch_t1380178105_StaticFields), 0,
-	sizeof (Trace_t2488851411), -1, 0, 0,
 	sizeof (TraceImplSettings_t1186465586), -1, 0, 0,
 	sizeof (TraceImpl_t3585635237), -1, sizeof(TraceImpl_t3585635237_StaticFields), sizeof(TraceImpl_t3585635237_ThreadStaticFields),
 	sizeof (TraceListenerCollection_t2289511703), -1, 0, 0,

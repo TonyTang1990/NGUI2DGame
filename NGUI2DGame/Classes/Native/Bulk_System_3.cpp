@@ -13,16 +13,6 @@
 #include <limits>
 #include <assert.h>
 
-// System.Text.RegularExpressions.CaptureCollection
-struct CaptureCollection_t1671345504;
-// System.Text.RegularExpressions.Capture
-struct Capture_t4157900610;
-// System.Object
-struct Il2CppObject;
-// System.Array
-struct Il2CppArray;
-// System.Collections.IEnumerator
-struct IEnumerator_t1466026749;
 // System.String
 struct String_t;
 // System.Text.RegularExpressions.CILCompiler
@@ -43,6 +33,8 @@ struct ILGenerator_t99948092;
 struct Frame_t997927490;
 // System.Text.RegularExpressions.EvalDelegate
 struct EvalDelegate_t877898325;
+// System.Object
+struct Il2CppObject;
 // System.Text.RegularExpressions.RxInterpreter
 struct RxInterpreter_t2459337652;
 // System.IAsyncResult
@@ -55,8 +47,14 @@ struct FactoryCache_t2051534610;
 struct Key_t655155419;
 // System.Text.RegularExpressions.Group
 struct Group_t3761430853;
+// System.Text.RegularExpressions.CaptureCollection
+struct CaptureCollection_t1671345504;
 // System.Text.RegularExpressions.GroupCollection
 struct GroupCollection_t939014605;
+// System.Array
+struct Il2CppArray;
+// System.Collections.IEnumerator
+struct IEnumerator_t1466026749;
 // System.Text.RegularExpressions.Interpreter
 struct Interpreter_t3731288230;
 // System.UInt16[]
@@ -197,16 +195,6 @@ struct CultureInfo_t3500843524;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array3829468939.h"
-#include "System_System_Text_RegularExpressions_CaptureColle1671345504.h"
-#include "System_System_Text_RegularExpressions_CaptureColle1671345504MethodDeclarations.h"
-#include "mscorlib_System_Void1841601450.h"
-#include "mscorlib_System_Int322071877448.h"
-#include "mscorlib_System_Object2689449295MethodDeclarations.h"
-#include "System_ArrayTypes.h"
-#include "System_System_Text_RegularExpressions_Capture4157900610.h"
-#include "mscorlib_System_Boolean3825574718.h"
-#include "mscorlib_System_Object2689449295.h"
-#include "mscorlib_System_Array3829468939MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Category1984577050.h"
 #include "System_System_Text_RegularExpressions_Category1984577050MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_CategoryUtil3840220623.h"
@@ -216,14 +204,18 @@ struct CultureInfo_t3500843524;
 #include "mscorlib_System_Type1303803226MethodDeclarations.h"
 #include "mscorlib_System_Enum2459695545MethodDeclarations.h"
 #include "mscorlib_System_ArgumentException3259014390.h"
+#include "mscorlib_System_Boolean3825574718.h"
+#include "mscorlib_System_Int322071877448.h"
 #include "mscorlib_System_Type1303803226.h"
 #include "mscorlib_System_RuntimeTypeHandle2330101084.h"
+#include "mscorlib_System_Object2689449295.h"
 #include "mscorlib_System_UInt16986882611.h"
 #include "mscorlib_System_Char3454481338.h"
 #include "mscorlib_System_Char3454481338MethodDeclarations.h"
 #include "mscorlib_System_Globalization_UnicodeCategory682236799.h"
 #include "System_System_Text_RegularExpressions_CILCompiler1740644799.h"
 #include "System_System_Text_RegularExpressions_CILCompiler1740644799MethodDeclarations.h"
+#include "mscorlib_System_Void1841601450.h"
 #include "System_System_Text_RegularExpressions_RxCompiler4215271879MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1079703083MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1079703083.h"
@@ -266,6 +258,7 @@ struct CultureInfo_t3500843524;
 #include "mscorlib_System_NotSupportedException1793819818.h"
 #include "mscorlib_System_Int64909078037.h"
 #include "mscorlib_System_NotImplementedException2785117854.h"
+#include "mscorlib_System_Object2689449295MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_EvalDelegate877898325MethodDeclarations.h"
 #include "mscorlib_System_IntPtr2504060609.h"
 #include "mscorlib_System_AsyncCallback163412349.h"
@@ -282,12 +275,17 @@ struct CultureInfo_t3500843524;
 #include "System_System_Text_RegularExpressions_Group3761430853.h"
 #include "System_System_Text_RegularExpressions_Group3761430853MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Capture4157900610MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_CaptureColle1671345504MethodDeclarations.h"
+#include "System_System_Text_RegularExpressions_CaptureColle1671345504.h"
+#include "System_System_Text_RegularExpressions_Capture4157900610.h"
 #include "System_System_Text_RegularExpressions_GroupCollecti939014605.h"
 #include "System_System_Text_RegularExpressions_GroupCollecti939014605MethodDeclarations.h"
+#include "System_ArrayTypes.h"
 #include "System_System_Text_RegularExpressions_Match3164245899MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Regex1803876613MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Match3164245899.h"
 #include "System_System_Text_RegularExpressions_Regex1803876613.h"
+#include "mscorlib_System_Array3829468939MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_Interpreter3731288230.h"
 #include "System_System_Text_RegularExpressions_Interpreter3731288230MethodDeclarations.h"
 #include "System_System_Text_RegularExpressions_BaseMachine4008011478MethodDeclarations.h"
@@ -470,84 +468,6 @@ extern "C"  int32_t Array_BinarySearch_TisInt32_t2071877448_m1538339240_gshared 
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Text.RegularExpressions.CaptureCollection::.ctor(System.Int32)
-extern Il2CppClass* CaptureU5BU5D_t3470489975_il2cpp_TypeInfo_var;
-extern const uint32_t CaptureCollection__ctor_m629636494_MetadataUsageId;
-extern "C"  void CaptureCollection__ctor_m629636494 (CaptureCollection_t1671345504 * __this, int32_t ___n0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (CaptureCollection__ctor_m629636494_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
-		int32_t L_0 = ___n0;
-		__this->set_list_0(((CaptureU5BU5D_t3470489975*)SZArrayNew(CaptureU5BU5D_t3470489975_il2cpp_TypeInfo_var, (uint32_t)L_0)));
-		return;
-	}
-}
-// System.Int32 System.Text.RegularExpressions.CaptureCollection::get_Count()
-extern "C"  int32_t CaptureCollection_get_Count_m3083164873 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		NullCheck(L_0);
-		return (((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))));
-	}
-}
-// System.Boolean System.Text.RegularExpressions.CaptureCollection::get_IsSynchronized()
-extern "C"  bool CaptureCollection_get_IsSynchronized_m815216600 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		return (bool)0;
-	}
-}
-// System.Void System.Text.RegularExpressions.CaptureCollection::SetValue(System.Text.RegularExpressions.Capture,System.Int32)
-extern "C"  void CaptureCollection_SetValue_m3422959110 (CaptureCollection_t1671345504 * __this, Capture_t4157900610 * ___cap0, int32_t ___i1, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		int32_t L_1 = ___i1;
-		Capture_t4157900610 * L_2 = ___cap0;
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_1);
-		ArrayElementTypeCheck (L_0, L_2);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (Capture_t4157900610 *)L_2);
-		return;
-	}
-}
-// System.Object System.Text.RegularExpressions.CaptureCollection::get_SyncRoot()
-extern "C"  Il2CppObject * CaptureCollection_get_SyncRoot_m228988586 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		return (Il2CppObject *)L_0;
-	}
-}
-// System.Void System.Text.RegularExpressions.CaptureCollection::CopyTo(System.Array,System.Int32)
-extern "C"  void CaptureCollection_CopyTo_m1982767892 (CaptureCollection_t1671345504 * __this, Il2CppArray * ___array0, int32_t ___index1, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		Il2CppArray * L_1 = ___array0;
-		int32_t L_2 = ___index1;
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_0);
-		Array_CopyTo_m4061033315((Il2CppArray *)(Il2CppArray *)L_0, L_1, L_2, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Collections.IEnumerator System.Text.RegularExpressions.CaptureCollection::GetEnumerator()
-extern "C"  Il2CppObject * CaptureCollection_GetEnumerator_m4106707473 (CaptureCollection_t1671345504 * __this, const MethodInfo* method)
-{
-	{
-		CaptureU5BU5D_t3470489975* L_0 = __this->get_list_0();
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_0);
-		Il2CppObject * L_1 = Array_GetEnumerator_m2284404958((Il2CppArray *)(Il2CppArray *)L_0, /*hidden argument*/NULL);
-		return L_1;
-	}
-}
 // System.Text.RegularExpressions.Category System.Text.RegularExpressions.CategoryUtils::CategoryFromName(System.String)
 extern const Il2CppType* Category_t1984577050_0_0_0_var;
 extern Il2CppClass* Type_t_il2cpp_TypeInfo_var;

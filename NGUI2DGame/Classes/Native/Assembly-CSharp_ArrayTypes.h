@@ -67,6 +67,8 @@ struct MyGameObjectEvent_t13084089;
 struct Account_t3062613273;
 // MapManager/GridInfo
 struct GridInfo_t737075118;
+// Bullet
+struct Bullet_t2590115616;
 // Tile
 struct Tile_t2729441780;
 // MyRC
@@ -103,6 +105,7 @@ struct MyRC_t2924564543;
 #include "AssemblyU2DCSharp_GameConfigurationManager_Account3062613273.h"
 #include "AssemblyU2DCSharp_MapManager_GridInfo737075118.h"
 #include "AssemblyU2DCSharp_MoveAction868615717.h"
+#include "AssemblyU2DCSharp_Bullet2590115616.h"
 #include "AssemblyU2DCSharp_Tile2729441780.h"
 #include "AssemblyU2DCSharp_TileType701644524.h"
 #include "AssemblyU2DCSharp_MyRC2924564543.h"
@@ -555,6 +558,21 @@ public:
 	inline void SetAt(il2cpp_array_size_t index, int32_t value)
 	{
 		m_Items[index] = value;
+	}
+};
+// Bullet[]
+struct BulletU5BU5D_t2409519201  : public Il2CppArray
+{
+public:
+	ALIGN_FIELD (8) Bullet_t2590115616 * m_Items[1];
+
+public:
+	inline Bullet_t2590115616 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Bullet_t2590115616 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Bullet_t2590115616 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // Tile[,]

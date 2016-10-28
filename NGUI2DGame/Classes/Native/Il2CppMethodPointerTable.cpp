@@ -11236,8 +11236,6 @@ extern "C" void Stopwatch_get_ElapsedMilliseconds_m2380718534 ();
 extern "C" void Stopwatch_get_ElapsedTicks_m3689589548 ();
 extern "C" void Stopwatch_Start_m2051791460 ();
 extern "C" void Stopwatch_Stop_m3863752910 ();
-extern "C" void Trace_Assert_m100144303 ();
-extern "C" void Trace_Assert_m4098777117 ();
 extern "C" void TraceImpl__cctor_m967668517 ();
 extern "C" void TraceImpl_get_AutoFlush_m1242088304 ();
 extern "C" void TraceImpl_get_IndentLevel_m2526247799 ();
@@ -20903,6 +20901,8 @@ extern "C" void Bullet_set_MoveDir_m2632362119 ();
 extern "C" void Bullet_get_BulletMoveAction_m4191045889 ();
 extern "C" void Bullet_get_Owner_m2655960690 ();
 extern "C" void Bullet_set_Owner_m3778620813 ();
+extern "C" void Bullet_set_OwnerTag_m1128187073 ();
+extern "C" void Bullet_get_OwnerTag_m864142102 ();
 extern "C" void Bullet_Awake_m3526188380 ();
 extern "C" void Bullet_Start_m1447617473 ();
 extern "C" void Bullet_Move_m541877174 ();
@@ -20984,10 +20984,8 @@ extern "C" void EnemyCar_StartMove_m2947418044 ();
 extern "C" void EnemyTank__ctor_m2369350097 ();
 extern "C" void EnemyTank_Awake_m3252339256 ();
 extern "C" void EnemyTank_Start_m3107023537 ();
-extern "C" void EnemyTank_Update_m69816086 ();
 extern "C" void EnemyTank_OnDestroy_m1198924850 ();
 extern "C" void EnemyTank_CanMoveForward_m2644624451 ();
-extern "C" void EnemyTank_OnTriggerEnter2D_m1821377321 ();
 extern "C" void EnemyTank_MoveCoroutine_m2447926902 ();
 extern "C" void EnemyTank_ShootCoroutine_m3828524524 ();
 extern "C" void U3CMoveCoroutineU3Ec__Iterator9__ctor_m1471343391 ();
@@ -21408,20 +21406,14 @@ extern "C" void U3CMoveUpCoroutineU3Ec__Iterator4_Reset_m4157038583 ();
 extern "C" void PlayerTank__ctor_m2195027908 ();
 extern "C" void PlayerTank_Awake_m2826192185 ();
 extern "C" void PlayerTank_Start_m747621468 ();
-extern "C" void PlayerTank_Update_m3559437637 ();
 extern "C" void PlayerTank_OnDestroy_m2404851883 ();
 extern "C" void PlayerTank_CanMoveForward_m1869593364 ();
-extern "C" void PlayerTank_MoveUp_m3492352248 ();
-extern "C" void PlayerTank_MoveDown_m1400553579 ();
-extern "C" void PlayerTank_MoveLeft_m212331972 ();
-extern "C" void PlayerTank_MoveRight_m85017861 ();
 extern "C" void PlayerTank_KeepMoveUp_m2835207764 ();
 extern "C" void PlayerTank_KeepMoveDown_m1769796715 ();
 extern "C" void PlayerTank_KeepMoveLeft_m3595834356 ();
 extern "C" void PlayerTank_KeepMoveRight_m1033982049 ();
 extern "C" void PlayerTank_KeepMoveCoroutine_m3360348034 ();
 extern "C" void PlayerTank_ShootClick_m1688059429 ();
-extern "C" void PlayerTank_OnTriggerEnter2D_m1624058948 ();
 extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB__ctor_m1503634434 ();
 extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m248325798 ();
 extern "C" void U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m1893451054 ();
@@ -21506,13 +21498,12 @@ extern "C" void Tank_InitOccupiedInfo_m3183291521 ();
 extern "C" void Tank_UpdateOccupiedInfo_m3660004542 ();
 extern "C" void Tank_Awake_m3158931696 ();
 extern "C" void Tank_Start_m1332170943 ();
-extern "C" void Tank_Update_m546628242 ();
-extern "C" void Tank_FixedUpdate_m514418752 ();
 extern "C" void Tank_OnDestroy_m4042988626 ();
 extern "C" void Tank_RecoverTankOccupiedTile_m2660540363 ();
 extern "C" void Tank_CanMoveForward_m362955925 ();
 extern "C" void Tank_MoveForward_m327062121 ();
 extern "C" void Tank_MovingCoroutine_m2540777759 ();
+extern "C" void Tank_OnTriggerEnter2D_m340608615 ();
 extern "C" void Tank_Shoot_m1374073324 ();
 extern "C" void Tank_TakeDamage_m3119853146 ();
 extern "C" void Tank_DestroyTankDelay_m3636233030 ();
@@ -21532,8 +21523,6 @@ extern "C" void Tank2DGameManager_UpdateLeftMouseClickEvent_m861746378 ();
 extern "C" void Tank2DGameManager_UpdateOneFingerTouchEvent_m1689265133 ();
 extern "C" void Tank2DGameManager_SpawnPlayerTanK_m3500229427 ();
 extern "C" void Tank2DGameManager_SpawnEnemyTanK_m1982180850 ();
-extern "C" void Tank2DGameManager_Start_m2351787902 ();
-extern "C" void Tank2DGameManager_Update_m1643983641 ();
 extern "C" void TankGameLoad__ctor_m4018915551 ();
 extern "C" void TankGameLoad_EnemyTankDestroyDelegate_m951269042 ();
 extern "C" void TankGameLoad_PlayerTankDestroyDelegate_m4107000945 ();
@@ -22727,7 +22716,7 @@ extern "C" void VignetteAndChromaticAberration_CheckResources_m394291804 ();
 extern "C" void VignetteAndChromaticAberration_OnRenderImage_m3555084659 ();
 extern "C" void Vortex__ctor_m3778734735 ();
 extern "C" void Vortex_OnRenderImage_m3762609939 ();
-extern const Il2CppMethodPointer g_MethodPointers[22716] = 
+extern const Il2CppMethodPointer g_MethodPointers[22705] = 
 {
 	Locale_GetText_m1954433032,
 	Locale_GetText_m2553164138,
@@ -33954,8 +33943,6 @@ extern const Il2CppMethodPointer g_MethodPointers[22716] =
 	Stopwatch_get_ElapsedTicks_m3689589548,
 	Stopwatch_Start_m2051791460,
 	Stopwatch_Stop_m3863752910,
-	Trace_Assert_m100144303,
-	Trace_Assert_m4098777117,
 	TraceImpl__cctor_m967668517,
 	TraceImpl_get_AutoFlush_m1242088304,
 	TraceImpl_get_IndentLevel_m2526247799,
@@ -43621,6 +43608,8 @@ extern const Il2CppMethodPointer g_MethodPointers[22716] =
 	Bullet_get_BulletMoveAction_m4191045889,
 	Bullet_get_Owner_m2655960690,
 	Bullet_set_Owner_m3778620813,
+	Bullet_set_OwnerTag_m1128187073,
+	Bullet_get_OwnerTag_m864142102,
 	Bullet_Awake_m3526188380,
 	Bullet_Start_m1447617473,
 	Bullet_Move_m541877174,
@@ -43702,10 +43691,8 @@ extern const Il2CppMethodPointer g_MethodPointers[22716] =
 	EnemyTank__ctor_m2369350097,
 	EnemyTank_Awake_m3252339256,
 	EnemyTank_Start_m3107023537,
-	EnemyTank_Update_m69816086,
 	EnemyTank_OnDestroy_m1198924850,
 	EnemyTank_CanMoveForward_m2644624451,
-	EnemyTank_OnTriggerEnter2D_m1821377321,
 	EnemyTank_MoveCoroutine_m2447926902,
 	EnemyTank_ShootCoroutine_m3828524524,
 	U3CMoveCoroutineU3Ec__Iterator9__ctor_m1471343391,
@@ -44126,20 +44113,14 @@ extern const Il2CppMethodPointer g_MethodPointers[22716] =
 	PlayerTank__ctor_m2195027908,
 	PlayerTank_Awake_m2826192185,
 	PlayerTank_Start_m747621468,
-	PlayerTank_Update_m3559437637,
 	PlayerTank_OnDestroy_m2404851883,
 	PlayerTank_CanMoveForward_m1869593364,
-	PlayerTank_MoveUp_m3492352248,
-	PlayerTank_MoveDown_m1400553579,
-	PlayerTank_MoveLeft_m212331972,
-	PlayerTank_MoveRight_m85017861,
 	PlayerTank_KeepMoveUp_m2835207764,
 	PlayerTank_KeepMoveDown_m1769796715,
 	PlayerTank_KeepMoveLeft_m3595834356,
 	PlayerTank_KeepMoveRight_m1033982049,
 	PlayerTank_KeepMoveCoroutine_m3360348034,
 	PlayerTank_ShootClick_m1688059429,
-	PlayerTank_OnTriggerEnter2D_m1624058948,
 	U3CKeepMoveCoroutineU3Ec__IteratorB__ctor_m1503634434,
 	U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m248325798,
 	U3CKeepMoveCoroutineU3Ec__IteratorB_System_Collections_IEnumerator_get_Current_m1893451054,
@@ -44224,13 +44205,12 @@ extern const Il2CppMethodPointer g_MethodPointers[22716] =
 	Tank_UpdateOccupiedInfo_m3660004542,
 	Tank_Awake_m3158931696,
 	Tank_Start_m1332170943,
-	Tank_Update_m546628242,
-	Tank_FixedUpdate_m514418752,
 	Tank_OnDestroy_m4042988626,
 	Tank_RecoverTankOccupiedTile_m2660540363,
 	Tank_CanMoveForward_m362955925,
 	Tank_MoveForward_m327062121,
 	Tank_MovingCoroutine_m2540777759,
+	Tank_OnTriggerEnter2D_m340608615,
 	Tank_Shoot_m1374073324,
 	Tank_TakeDamage_m3119853146,
 	Tank_DestroyTankDelay_m3636233030,
@@ -44250,8 +44230,6 @@ extern const Il2CppMethodPointer g_MethodPointers[22716] =
 	Tank2DGameManager_UpdateOneFingerTouchEvent_m1689265133,
 	Tank2DGameManager_SpawnPlayerTanK_m3500229427,
 	Tank2DGameManager_SpawnEnemyTanK_m1982180850,
-	Tank2DGameManager_Start_m2351787902,
-	Tank2DGameManager_Update_m1643983641,
 	TankGameLoad__ctor_m4018915551,
 	TankGameLoad_EnemyTankDestroyDelegate_m951269042,
 	TankGameLoad_PlayerTankDestroyDelegate_m4107000945,

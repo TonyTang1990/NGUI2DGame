@@ -18,6 +18,8 @@ struct GameObject_t1756533147;
 struct AudioClip_t1932558630;
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_t1125654279;
+// System.Collections.Generic.List`1<Bullet>
+struct List_1_t1959236748;
 // System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>
 struct Dictionary_2_t1079703083;
 // System.Collections.Generic.Dictionary`2<MoveAction,System.Int32>
@@ -67,20 +69,20 @@ public:
 	int64_t ___mBlockingByTankTime_15;
 	// MoveAction Tank::mCurrentMoveAction
 	int32_t ___mCurrentMoveAction_16;
-	// System.Single Tank::mMoveDeltaTime
-	float ___mMoveDeltaTime_17;
 	// System.Boolean Tank::mIsMoving
-	bool ___mIsMoving_18;
+	bool ___mIsMoving_17;
 	// System.Single Tank::mTimeStartMoving
-	float ___mTimeStartMoving_19;
+	float ___mTimeStartMoving_18;
 	// System.Single Tank::mTimeToCompleteMove
-	float ___mTimeToCompleteMove_20;
+	float ___mTimeToCompleteMove_19;
 	// UnityEngine.Vector3 Tank::mStartPosition
-	Vector3_t2243707580  ___mStartPosition_21;
+	Vector3_t2243707580  ___mStartPosition_20;
 	// UnityEngine.Vector3 Tank::mDestinationPosition
-	Vector3_t2243707580  ___mDestinationPosition_22;
+	Vector3_t2243707580  ___mDestinationPosition_21;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Tank::mBulletsList
-	List_1_t1125654279 * ___mBulletsList_23;
+	List_1_t1125654279 * ___mBulletsList_22;
+	// System.Collections.Generic.List`1<Bullet> Tank::mBulletsScriptList
+	List_1_t1959236748 * ___mBulletsScriptList_23;
 	// System.Collections.Generic.Dictionary`2<System.Int32,System.Int32> Tank::mCurrentOccupiedIndexs
 	Dictionary_2_t1079703083 * ___mCurrentOccupiedIndexs_24;
 	// System.Collections.Generic.Dictionary`2<MoveAction,System.Int32> Tank::mTankMovingIndexsOffset
@@ -205,61 +207,62 @@ public:
 		___mCurrentMoveAction_16 = value;
 	}
 
-	inline static int32_t get_offset_of_mMoveDeltaTime_17() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mMoveDeltaTime_17)); }
-	inline float get_mMoveDeltaTime_17() const { return ___mMoveDeltaTime_17; }
-	inline float* get_address_of_mMoveDeltaTime_17() { return &___mMoveDeltaTime_17; }
-	inline void set_mMoveDeltaTime_17(float value)
+	inline static int32_t get_offset_of_mIsMoving_17() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsMoving_17)); }
+	inline bool get_mIsMoving_17() const { return ___mIsMoving_17; }
+	inline bool* get_address_of_mIsMoving_17() { return &___mIsMoving_17; }
+	inline void set_mIsMoving_17(bool value)
 	{
-		___mMoveDeltaTime_17 = value;
+		___mIsMoving_17 = value;
 	}
 
-	inline static int32_t get_offset_of_mIsMoving_18() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mIsMoving_18)); }
-	inline bool get_mIsMoving_18() const { return ___mIsMoving_18; }
-	inline bool* get_address_of_mIsMoving_18() { return &___mIsMoving_18; }
-	inline void set_mIsMoving_18(bool value)
+	inline static int32_t get_offset_of_mTimeStartMoving_18() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTimeStartMoving_18)); }
+	inline float get_mTimeStartMoving_18() const { return ___mTimeStartMoving_18; }
+	inline float* get_address_of_mTimeStartMoving_18() { return &___mTimeStartMoving_18; }
+	inline void set_mTimeStartMoving_18(float value)
 	{
-		___mIsMoving_18 = value;
+		___mTimeStartMoving_18 = value;
 	}
 
-	inline static int32_t get_offset_of_mTimeStartMoving_19() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTimeStartMoving_19)); }
-	inline float get_mTimeStartMoving_19() const { return ___mTimeStartMoving_19; }
-	inline float* get_address_of_mTimeStartMoving_19() { return &___mTimeStartMoving_19; }
-	inline void set_mTimeStartMoving_19(float value)
+	inline static int32_t get_offset_of_mTimeToCompleteMove_19() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTimeToCompleteMove_19)); }
+	inline float get_mTimeToCompleteMove_19() const { return ___mTimeToCompleteMove_19; }
+	inline float* get_address_of_mTimeToCompleteMove_19() { return &___mTimeToCompleteMove_19; }
+	inline void set_mTimeToCompleteMove_19(float value)
 	{
-		___mTimeStartMoving_19 = value;
+		___mTimeToCompleteMove_19 = value;
 	}
 
-	inline static int32_t get_offset_of_mTimeToCompleteMove_20() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mTimeToCompleteMove_20)); }
-	inline float get_mTimeToCompleteMove_20() const { return ___mTimeToCompleteMove_20; }
-	inline float* get_address_of_mTimeToCompleteMove_20() { return &___mTimeToCompleteMove_20; }
-	inline void set_mTimeToCompleteMove_20(float value)
+	inline static int32_t get_offset_of_mStartPosition_20() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mStartPosition_20)); }
+	inline Vector3_t2243707580  get_mStartPosition_20() const { return ___mStartPosition_20; }
+	inline Vector3_t2243707580 * get_address_of_mStartPosition_20() { return &___mStartPosition_20; }
+	inline void set_mStartPosition_20(Vector3_t2243707580  value)
 	{
-		___mTimeToCompleteMove_20 = value;
+		___mStartPosition_20 = value;
 	}
 
-	inline static int32_t get_offset_of_mStartPosition_21() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mStartPosition_21)); }
-	inline Vector3_t2243707580  get_mStartPosition_21() const { return ___mStartPosition_21; }
-	inline Vector3_t2243707580 * get_address_of_mStartPosition_21() { return &___mStartPosition_21; }
-	inline void set_mStartPosition_21(Vector3_t2243707580  value)
+	inline static int32_t get_offset_of_mDestinationPosition_21() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mDestinationPosition_21)); }
+	inline Vector3_t2243707580  get_mDestinationPosition_21() const { return ___mDestinationPosition_21; }
+	inline Vector3_t2243707580 * get_address_of_mDestinationPosition_21() { return &___mDestinationPosition_21; }
+	inline void set_mDestinationPosition_21(Vector3_t2243707580  value)
 	{
-		___mStartPosition_21 = value;
+		___mDestinationPosition_21 = value;
 	}
 
-	inline static int32_t get_offset_of_mDestinationPosition_22() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mDestinationPosition_22)); }
-	inline Vector3_t2243707580  get_mDestinationPosition_22() const { return ___mDestinationPosition_22; }
-	inline Vector3_t2243707580 * get_address_of_mDestinationPosition_22() { return &___mDestinationPosition_22; }
-	inline void set_mDestinationPosition_22(Vector3_t2243707580  value)
+	inline static int32_t get_offset_of_mBulletsList_22() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mBulletsList_22)); }
+	inline List_1_t1125654279 * get_mBulletsList_22() const { return ___mBulletsList_22; }
+	inline List_1_t1125654279 ** get_address_of_mBulletsList_22() { return &___mBulletsList_22; }
+	inline void set_mBulletsList_22(List_1_t1125654279 * value)
 	{
-		___mDestinationPosition_22 = value;
+		___mBulletsList_22 = value;
+		Il2CppCodeGenWriteBarrier(&___mBulletsList_22, value);
 	}
 
-	inline static int32_t get_offset_of_mBulletsList_23() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mBulletsList_23)); }
-	inline List_1_t1125654279 * get_mBulletsList_23() const { return ___mBulletsList_23; }
-	inline List_1_t1125654279 ** get_address_of_mBulletsList_23() { return &___mBulletsList_23; }
-	inline void set_mBulletsList_23(List_1_t1125654279 * value)
+	inline static int32_t get_offset_of_mBulletsScriptList_23() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mBulletsScriptList_23)); }
+	inline List_1_t1959236748 * get_mBulletsScriptList_23() const { return ___mBulletsScriptList_23; }
+	inline List_1_t1959236748 ** get_address_of_mBulletsScriptList_23() { return &___mBulletsScriptList_23; }
+	inline void set_mBulletsScriptList_23(List_1_t1959236748 * value)
 	{
-		___mBulletsList_23 = value;
-		Il2CppCodeGenWriteBarrier(&___mBulletsList_23, value);
+		___mBulletsScriptList_23 = value;
+		Il2CppCodeGenWriteBarrier(&___mBulletsScriptList_23, value);
 	}
 
 	inline static int32_t get_offset_of_mCurrentOccupiedIndexs_24() { return static_cast<int32_t>(offsetof(Tank_t2050480468, ___mCurrentOccupiedIndexs_24)); }

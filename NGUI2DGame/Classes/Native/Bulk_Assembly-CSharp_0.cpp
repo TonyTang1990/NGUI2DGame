@@ -690,7 +690,6 @@ struct U3CSnakeMoveU3Ec__Iterator6_t77864392;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1932390178MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MyRC2924564543.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g1932390178.h"
-#include "System_System_Diagnostics_Trace2488851411MethodDeclarations.h"
 #include "AssemblyU2DCSharp_MapManager3593696545.h"
 #include "AssemblyU2DCSharp_MapManager3593696545MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen106196250MethodDeclarations.h"
@@ -3561,13 +3560,24 @@ extern "C"  void Bullet_set_Owner_m3778620813 (Bullet_t2590115616 * __this, Tank
 	{
 		Tank_t2050480468 * L_0 = ___value0;
 		__this->set_mOwner_7(L_0);
-		Tank_t2050480468 * L_1 = __this->get_mOwner_7();
-		NullCheck(L_1);
-		GameObject_t1756533147 * L_2 = Component_get_gameObject_m3105766835(L_1, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		String_t* L_3 = GameObject_get_tag_m1425941094(L_2, /*hidden argument*/NULL);
-		__this->set_mOwnerTag_8(L_3);
 		return;
+	}
+}
+// System.Void Bullet::set_OwnerTag(System.String)
+extern "C"  void Bullet_set_OwnerTag_m1128187073 (Bullet_t2590115616 * __this, String_t* ___value0, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_mOwnerTag_8(L_0);
+		return;
+	}
+}
+// System.String Bullet::get_OwnerTag()
+extern "C"  String_t* Bullet_get_OwnerTag_m864142102 (Bullet_t2590115616 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_mOwnerTag_8();
+		return L_0;
 	}
 }
 // System.Void Bullet::Awake()
@@ -3749,7 +3759,7 @@ extern "C"  void Bullet_OnTriggerEnter2D_m2179826729 (Bullet_t2590115616 * __thi
 		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral3318194134, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_0071;
+			goto IL_0056;
 		}
 	}
 	{
@@ -3766,45 +3776,30 @@ extern "C"  void Bullet_OnTriggerEnter2D_m2179826729 (Bullet_t2590115616 * __thi
 		bool L_8 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_7, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_8)
 		{
-			goto IL_0071;
+			goto IL_0056;
 		}
 	}
 	{
 		Bullet_t2590115616 * L_9 = V_1;
 		NullCheck(L_9);
-		Tank_t2050480468 * L_10 = Bullet_get_Owner_m2655960690(L_9, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_11 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_10, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_11)
-		{
-			goto IL_0071;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_12 = V_1;
-		NullCheck(L_12);
-		Tank_t2050480468 * L_13 = Bullet_get_Owner_m2655960690(L_12, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		String_t* L_14 = Component_get_tag_m357168014(L_13, /*hidden argument*/NULL);
-		Tank_t2050480468 * L_15 = Bullet_get_Owner_m2655960690(__this, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		String_t* L_16 = Component_get_tag_m357168014(L_15, /*hidden argument*/NULL);
+		String_t* L_10 = L_9->get_mOwnerTag_8();
+		String_t* L_11 = __this->get_mOwnerTag_8();
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_17 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_14, L_16, /*hidden argument*/NULL);
-		if (!L_17)
+		bool L_12 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_10, L_11, /*hidden argument*/NULL);
+		if (!L_12)
 		{
-			goto IL_0071;
+			goto IL_0056;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_18 = V_0;
+		GameObject_t1756533147 * L_13 = V_0;
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_18, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_19 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_13, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_14 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
 	}
 
-IL_0071:
+IL_0056:
 	{
 		return;
 	}
@@ -4522,6 +4517,9 @@ IL_00d4:
 		PlayerData__ctor_m1179622856(L_23, /*hidden argument*/NULL);
 		__this->set_mPlayerData_29(L_23);
 		CarDodgeGame_InitDOTween_m1585715656(__this, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_24 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -4797,6 +4795,7 @@ extern "C"  void CarDodgeGame_Update_m3189749945 (CarDodgeGame_t1650312537 * __t
 }
 // System.Void CarDodgeGame::GameOver()
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2355930078;
 extern Il2CppCodeGenString* _stringLiteral2328219732;
 extern const uint32_t CarDodgeGame_GameOver_m1088582128_MetadataUsageId;
@@ -4826,6 +4825,9 @@ extern "C"  void CarDodgeGame_GameOver_m1088582128 (CarDodgeGame_t1650312537 * _
 		PlayerData_set_SpeedLevel_m1029139341(L_4, L_5, /*hidden argument*/NULL);
 		VirtActionInvoker0::Invoke(7 /* System.Void CarDodgeGame::SavePlayerData() */, __this);
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral2328219732, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_6 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -6437,14 +6439,6 @@ extern "C"  void EnemyTank_Start_m3107023537 (EnemyTank_t2819878380 * __this, co
 		return;
 	}
 }
-// System.Void EnemyTank::Update()
-extern "C"  void EnemyTank_Update_m69816086 (EnemyTank_t2819878380 * __this, const MethodInfo* method)
-{
-	{
-		Tank_Update_m546628242(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void EnemyTank::OnDestroy()
 extern Il2CppClass* EventManager_t2792515701_il2cpp_TypeInfo_var;
 extern Il2CppClass* TankGameEvent_t3684845930_il2cpp_TypeInfo_var;
@@ -6579,81 +6573,6 @@ IL_00aa:
 	{
 		bool L_19 = V_1;
 		return L_19;
-	}
-}
-// System.Void EnemyTank::OnTriggerEnter2D(UnityEngine.Collider2D)
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const MethodInfo* GameObject_GetComponent_TisBullet_t2590115616_m2030071321_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3318194134;
-extern const uint32_t EnemyTank_OnTriggerEnter2D_m1821377321_MetadataUsageId;
-extern "C"  void EnemyTank_OnTriggerEnter2D_m1821377321 (EnemyTank_t2819878380 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (EnemyTank_OnTriggerEnter2D_m1821377321_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	GameObject_t1756533147 * V_0 = NULL;
-	Bullet_t2590115616 * V_1 = NULL;
-	{
-		Collider2D_t646061738 * L_0 = ___collision0;
-		NullCheck(L_0);
-		String_t* L_1 = Component_get_tag_m357168014(L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral3318194134, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0061;
-		}
-	}
-	{
-		Collider2D_t646061738 * L_3 = ___collision0;
-		NullCheck(L_3);
-		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		GameObject_t1756533147 * L_5 = V_0;
-		NullCheck(L_5);
-		Bullet_t2590115616 * L_6 = GameObject_GetComponent_TisBullet_t2590115616_m2030071321(L_5, /*hidden argument*/GameObject_GetComponent_TisBullet_t2590115616_m2030071321_MethodInfo_var);
-		V_1 = L_6;
-		Bullet_t2590115616 * L_7 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_8 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_7, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_8)
-		{
-			goto IL_0061;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_9 = V_1;
-		NullCheck(L_9);
-		Tank_t2050480468 * L_10 = Bullet_get_Owner_m2655960690(L_9, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		String_t* L_11 = Component_get_tag_m357168014(L_10, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_12 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		String_t* L_13 = GameObject_get_tag_m1425941094(L_12, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_14 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_11, L_13, /*hidden argument*/NULL);
-		if (!L_14)
-		{
-			goto IL_0061;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_15 = V_1;
-		NullCheck(L_15);
-		float L_16 = L_15->get_mDamage_3();
-		Tank_TakeDamage_m3119853146(__this, L_16, /*hidden argument*/NULL);
-		Bullet_t2590115616 * L_17 = V_1;
-		NullCheck(L_17);
-		Bullet_Explosion_m3810804328(L_17, /*hidden argument*/NULL);
-	}
-
-IL_0061:
-	{
-		return;
 	}
 }
 // System.Collections.IEnumerator EnemyTank::MoveCoroutine()
@@ -8094,7 +8013,7 @@ extern "C"  void GameBoundingBox_OnTriggerExit2D_m3796504504 (GameBoundingBox_t1
 		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral3318194134, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_0055;
+			goto IL_0035;
 		}
 	}
 	{
@@ -8111,32 +8030,16 @@ extern "C"  void GameBoundingBox_OnTriggerExit2D_m3796504504 (GameBoundingBox_t1
 		bool L_8 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_7, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_8)
 		{
-			goto IL_0055;
+			goto IL_0035;
 		}
 	}
 	{
 		Bullet_t2590115616 * L_9 = V_1;
 		NullCheck(L_9);
-		Tank_t2050480468 * L_10 = Bullet_get_Owner_m2655960690(L_9, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		String_t* L_11 = Component_get_tag_m357168014(L_10, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_12 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		String_t* L_13 = GameObject_get_tag_m1425941094(L_12, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_14 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_11, L_13, /*hidden argument*/NULL);
-		if (!L_14)
-		{
-			goto IL_0055;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_15 = V_1;
-		NullCheck(L_15);
-		Bullet_Explosion_m3810804328(L_15, /*hidden argument*/NULL);
+		Bullet_Explosion_m3810804328(L_9, /*hidden argument*/NULL);
 	}
 
-IL_0055:
+IL_0035:
 	{
 		return;
 	}
@@ -15291,13 +15194,10 @@ extern "C"  void MapInfo__ctor_m2587620305 (MapInfo_t1898709050 * __this, const 
 	}
 }
 // System.Void MapInfo::.ctor(System.Int32,System.Int32)
-extern Il2CppClass* Int32_t2071877448_il2cpp_TypeInfo_var;
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
 extern Il2CppClass* TileTypeU5BU2CU5D_t354757606_il2cpp_TypeInfo_var;
 extern Il2CppClass* MyRC_t2924564543_il2cpp_TypeInfo_var;
 extern Il2CppClass* Dictionary_2_t1932390178_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m2044193514_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1236163103;
 extern Il2CppCodeGenString* _stringLiteral4237423831;
 extern const uint32_t MapInfo__ctor_m2025884677_MetadataUsageId;
 extern "C"  void MapInfo__ctor_m2025884677 (MapInfo_t1898709050 * __this, int32_t ___row0, int32_t ___column1, const MethodInfo* method)
@@ -15308,56 +15208,27 @@ extern "C"  void MapInfo__ctor_m2025884677 (MapInfo_t1898709050 * __this, int32_
 		il2cpp_codegen_initialize_method (MapInfo__ctor_m2025884677_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	int32_t G_B3_0 = 0;
 	{
 		Object__ctor_m2551263788(__this, /*hidden argument*/NULL);
 		int32_t L_0 = ___row0;
-		if ((((int32_t)L_0) <= ((int32_t)0)))
-		{
-			goto IL_0013;
-		}
-	}
-	{
 		int32_t L_1 = ___column1;
-		G_B3_0 = ((((int32_t)L_1) > ((int32_t)0))? 1 : 0);
-		goto IL_0014;
-	}
-
-IL_0013:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_0014:
-	{
-		int32_t L_2 = ___row0;
-		int32_t L_3 = L_2;
-		Il2CppObject * L_4 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_3);
+		il2cpp_array_size_t L_3[] = { (il2cpp_array_size_t)L_0, (il2cpp_array_size_t)L_1 };
+		TileTypeU5BU2CU5D_t354757606* L_2 = (TileTypeU5BU2CU5D_t354757606*)GenArrayNew(TileTypeU5BU2CU5D_t354757606_il2cpp_TypeInfo_var, L_3);
+		__this->set_mMapTiles_1(L_2);
+		int32_t L_4 = ___row0;
 		int32_t L_5 = ___column1;
-		int32_t L_6 = L_5;
-		Il2CppObject * L_7 = Box(Int32_t2071877448_il2cpp_TypeInfo_var, &L_6);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_8 = String_Format_m1811873526(NULL /*static, unused*/, _stringLiteral1236163103, L_4, L_7, /*hidden argument*/NULL);
-		Trace_Assert_m4098777117(NULL /*static, unused*/, (bool)G_B3_0, L_8, /*hidden argument*/NULL);
-		int32_t L_9 = ___row0;
-		int32_t L_10 = ___column1;
-		il2cpp_array_size_t L_12[] = { (il2cpp_array_size_t)L_9, (il2cpp_array_size_t)L_10 };
-		TileTypeU5BU2CU5D_t354757606* L_11 = (TileTypeU5BU2CU5D_t354757606*)GenArrayNew(TileTypeU5BU2CU5D_t354757606_il2cpp_TypeInfo_var, L_12);
-		__this->set_mMapTiles_1(L_11);
-		int32_t L_13 = ___row0;
-		int32_t L_14 = ___column1;
-		MyRC_t2924564543 * L_15 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
-		MyRC__ctor_m3443004172(L_15, L_13, L_14, /*hidden argument*/NULL);
-		__this->set_mMapSize_2(L_15);
-		Dictionary_2_t1932390178 * L_16 = (Dictionary_2_t1932390178 *)il2cpp_codegen_object_new(Dictionary_2_t1932390178_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m2044193514(L_16, /*hidden argument*/Dictionary_2__ctor_m2044193514_MethodInfo_var);
-		__this->set_mPlayerSpawnPoint_3(L_16);
-		Dictionary_2_t1932390178 * L_17 = (Dictionary_2_t1932390178 *)il2cpp_codegen_object_new(Dictionary_2_t1932390178_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m2044193514(L_17, /*hidden argument*/Dictionary_2__ctor_m2044193514_MethodInfo_var);
-		__this->set_mEnemySpawnPoint_4(L_17);
-		MyRC_t2924564543 * L_18 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
-		MyRC__ctor_m2627661320(L_18, /*hidden argument*/NULL);
-		__this->set_mBaseRC_5(L_18);
+		MyRC_t2924564543 * L_6 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
+		MyRC__ctor_m3443004172(L_6, L_4, L_5, /*hidden argument*/NULL);
+		__this->set_mMapSize_2(L_6);
+		Dictionary_2_t1932390178 * L_7 = (Dictionary_2_t1932390178 *)il2cpp_codegen_object_new(Dictionary_2_t1932390178_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m2044193514(L_7, /*hidden argument*/Dictionary_2__ctor_m2044193514_MethodInfo_var);
+		__this->set_mPlayerSpawnPoint_3(L_7);
+		Dictionary_2_t1932390178 * L_8 = (Dictionary_2_t1932390178 *)il2cpp_codegen_object_new(Dictionary_2_t1932390178_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m2044193514(L_8, /*hidden argument*/Dictionary_2__ctor_m2044193514_MethodInfo_var);
+		__this->set_mEnemySpawnPoint_4(L_8);
+		MyRC_t2924564543 * L_9 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
+		MyRC__ctor_m2627661320(L_9, /*hidden argument*/NULL);
+		__this->set_mBaseRC_5(L_9);
 		__this->set_mHasBase_6((bool)0);
 		__this->set_mMapName_7(_stringLiteral4237423831);
 		MapInfo_InitTileToDefault_m2224773395(__this, /*hidden argument*/NULL);
@@ -15391,95 +15262,62 @@ extern "C"  void MapInfo_ResetMapInfo_m1634975558 (MapInfo_t1898709050 * __this,
 	}
 }
 // System.Void MapInfo::InitTileToDefault()
-extern Il2CppCodeGenString* _stringLiteral3932254920;
-extern const uint32_t MapInfo_InitTileToDefault_m2224773395_MetadataUsageId;
 extern "C"  void MapInfo_InitTileToDefault_m2224773395 (MapInfo_t1898709050 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MapInfo_InitTileToDefault_m2224773395_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
-	int32_t G_B3_0 = 0;
 	{
-		MyRC_t2924564543 * L_0 = __this->get_mMapSize_2();
-		NullCheck(L_0);
-		int32_t L_1 = MyRC_get_Row_m425613303(L_0, /*hidden argument*/NULL);
-		if ((((int32_t)L_1) < ((int32_t)0)))
-		{
-			goto IL_0024;
-		}
-	}
-	{
-		MyRC_t2924564543 * L_2 = __this->get_mMapSize_2();
-		NullCheck(L_2);
-		int32_t L_3 = MyRC_get_Column_m851129435(L_2, /*hidden argument*/NULL);
-		G_B3_0 = ((((int32_t)((((int32_t)L_3) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_0025;
+		TileTypeU5BU2CU5D_t354757606* L_0 = __this->get_mMapTiles_1();
+		TileTypeU5BU2CU5D_t354757606* L_1 = __this->get_mMapTiles_1();
+		NullCheck((Il2CppArray *)(Il2CppArray *)L_1);
+		int32_t L_2 = Array_get_Length_m1498215565((Il2CppArray *)(Il2CppArray *)L_1, /*hidden argument*/NULL);
+		Array_Clear_m782967417(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, 0, L_2, /*hidden argument*/NULL);
+		V_0 = 0;
+		goto IL_004c;
 	}
 
-IL_0024:
+IL_001e:
 	{
-		G_B3_0 = 0;
+		V_1 = 0;
+		goto IL_0037;
 	}
 
 IL_0025:
 	{
-		Trace_Assert_m4098777117(NULL /*static, unused*/, (bool)G_B3_0, _stringLiteral3932254920, /*hidden argument*/NULL);
-		TileTypeU5BU2CU5D_t354757606* L_4 = __this->get_mMapTiles_1();
-		TileTypeU5BU2CU5D_t354757606* L_5 = __this->get_mMapTiles_1();
-		NullCheck((Il2CppArray *)(Il2CppArray *)L_5);
-		int32_t L_6 = Array_get_Length_m1498215565((Il2CppArray *)(Il2CppArray *)L_5, /*hidden argument*/NULL);
-		Array_Clear_m782967417(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_4, 0, L_6, /*hidden argument*/NULL);
-		V_0 = 0;
-		goto IL_007b;
+		TileTypeU5BU2CU5D_t354757606* L_3 = __this->get_mMapTiles_1();
+		int32_t L_4 = V_0;
+		int32_t L_5 = V_1;
+		NullCheck(L_3);
+		(L_3)->SetAt(L_4, L_5, 7);
+		int32_t L_6 = V_1;
+		V_1 = ((int32_t)((int32_t)L_6+(int32_t)1));
 	}
 
-IL_004d:
+IL_0037:
 	{
-		V_1 = 0;
-		goto IL_0066;
-	}
-
-IL_0054:
-	{
-		TileTypeU5BU2CU5D_t354757606* L_7 = __this->get_mMapTiles_1();
-		int32_t L_8 = V_0;
-		int32_t L_9 = V_1;
-		NullCheck(L_7);
-		(L_7)->SetAt(L_8, L_9, 7);
-		int32_t L_10 = V_1;
-		V_1 = ((int32_t)((int32_t)L_10+(int32_t)1));
-	}
-
-IL_0066:
-	{
-		int32_t L_11 = V_1;
-		MyRC_t2924564543 * L_12 = __this->get_mMapSize_2();
-		NullCheck(L_12);
-		int32_t L_13 = MyRC_get_Column_m851129435(L_12, /*hidden argument*/NULL);
-		if ((((int32_t)L_11) < ((int32_t)L_13)))
+		int32_t L_7 = V_1;
+		MyRC_t2924564543 * L_8 = __this->get_mMapSize_2();
+		NullCheck(L_8);
+		int32_t L_9 = MyRC_get_Column_m851129435(L_8, /*hidden argument*/NULL);
+		if ((((int32_t)L_7) < ((int32_t)L_9)))
 		{
-			goto IL_0054;
+			goto IL_0025;
 		}
 	}
 	{
-		int32_t L_14 = V_0;
-		V_0 = ((int32_t)((int32_t)L_14+(int32_t)1));
+		int32_t L_10 = V_0;
+		V_0 = ((int32_t)((int32_t)L_10+(int32_t)1));
 	}
 
-IL_007b:
+IL_004c:
 	{
-		int32_t L_15 = V_0;
-		MyRC_t2924564543 * L_16 = __this->get_mMapSize_2();
-		NullCheck(L_16);
-		int32_t L_17 = MyRC_get_Row_m425613303(L_16, /*hidden argument*/NULL);
-		if ((((int32_t)L_15) < ((int32_t)L_17)))
+		int32_t L_11 = V_0;
+		MyRC_t2924564543 * L_12 = __this->get_mMapSize_2();
+		NullCheck(L_12);
+		int32_t L_13 = MyRC_get_Row_m425613303(L_12, /*hidden argument*/NULL);
+		if ((((int32_t)L_11) < ((int32_t)L_13)))
 		{
-			goto IL_004d;
+			goto IL_001e;
 		}
 	}
 	{
@@ -15500,265 +15338,169 @@ extern "C"  void MapInfo_SetTileType_m2402730835 (MapInfo_t1898709050 * __this, 
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
-	int32_t G_B3_0 = 0;
-	int32_t G_B6_0 = 0;
 	{
 		int32_t L_0 = ___row0;
-		if ((((int32_t)L_0) < ((int32_t)0)))
+		MyRC_t2924564543 * L_1 = __this->get_mMapSize_2();
+		NullCheck(L_1);
+		int32_t L_2 = MyRC_get_Column_m851129435(L_1, /*hidden argument*/NULL);
+		int32_t L_3 = ___column1;
+		V_0 = ((int32_t)((int32_t)((int32_t)((int32_t)L_0*(int32_t)L_2))+(int32_t)L_3));
+		TileTypeU5BU2CU5D_t354757606* L_4 = __this->get_mMapTiles_1();
+		int32_t L_5 = ___row0;
+		int32_t L_6 = ___column1;
+		NullCheck(L_4);
+		int32_t L_7 = (L_4)->GetAt(L_5, L_6);
+		if ((!(((uint32_t)L_7) == ((uint32_t)5))))
 		{
-			goto IL_0017;
+			goto IL_0035;
 		}
 	}
 	{
-		int32_t L_1 = ___row0;
-		MyRC_t2924564543 * L_2 = __this->get_mMapSize_2();
-		NullCheck(L_2);
-		int32_t L_3 = MyRC_get_Row_m425613303(L_2, /*hidden argument*/NULL);
-		G_B3_0 = ((((int32_t)L_1) < ((int32_t)L_3))? 1 : 0);
-		goto IL_0018;
-	}
-
-IL_0017:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_0018:
-	{
-		Trace_Assert_m100144303(NULL /*static, unused*/, (bool)G_B3_0, /*hidden argument*/NULL);
-		int32_t L_4 = ___column1;
-		if ((((int32_t)L_4) < ((int32_t)0)))
-		{
-			goto IL_0034;
-		}
-	}
-	{
-		int32_t L_5 = ___column1;
-		MyRC_t2924564543 * L_6 = __this->get_mMapSize_2();
-		NullCheck(L_6);
-		int32_t L_7 = MyRC_get_Column_m851129435(L_6, /*hidden argument*/NULL);
-		G_B6_0 = ((((int32_t)L_5) < ((int32_t)L_7))? 1 : 0);
-		goto IL_0035;
-	}
-
-IL_0034:
-	{
-		G_B6_0 = 0;
+		Dictionary_2_t1932390178 * L_8 = __this->get_mPlayerSpawnPoint_3();
+		int32_t L_9 = V_0;
+		NullCheck(L_8);
+		Dictionary_2_Remove_m3566558891(L_8, L_9, /*hidden argument*/Dictionary_2_Remove_m3566558891_MethodInfo_var);
+		goto IL_0055;
 	}
 
 IL_0035:
 	{
-		Trace_Assert_m100144303(NULL /*static, unused*/, (bool)G_B6_0, /*hidden argument*/NULL);
-		int32_t L_8 = ___row0;
-		MyRC_t2924564543 * L_9 = __this->get_mMapSize_2();
-		NullCheck(L_9);
-		int32_t L_10 = MyRC_get_Column_m851129435(L_9, /*hidden argument*/NULL);
-		int32_t L_11 = ___column1;
-		V_0 = ((int32_t)((int32_t)((int32_t)((int32_t)L_8*(int32_t)L_10))+(int32_t)L_11));
-		TileTypeU5BU2CU5D_t354757606* L_12 = __this->get_mMapTiles_1();
-		int32_t L_13 = ___row0;
-		int32_t L_14 = ___column1;
-		NullCheck(L_12);
-		int32_t L_15 = (L_12)->GetAt(L_13, L_14);
-		if ((!(((uint32_t)L_15) == ((uint32_t)5))))
+		TileTypeU5BU2CU5D_t354757606* L_10 = __this->get_mMapTiles_1();
+		int32_t L_11 = ___row0;
+		int32_t L_12 = ___column1;
+		NullCheck(L_10);
+		int32_t L_13 = (L_10)->GetAt(L_11, L_12);
+		if ((!(((uint32_t)L_13) == ((uint32_t)6))))
 		{
-			goto IL_006f;
+			goto IL_0055;
 		}
 	}
 	{
-		Dictionary_2_t1932390178 * L_16 = __this->get_mPlayerSpawnPoint_3();
-		int32_t L_17 = V_0;
-		NullCheck(L_16);
-		Dictionary_2_Remove_m3566558891(L_16, L_17, /*hidden argument*/Dictionary_2_Remove_m3566558891_MethodInfo_var);
-		goto IL_008f;
+		Dictionary_2_t1932390178 * L_14 = __this->get_mEnemySpawnPoint_4();
+		int32_t L_15 = V_0;
+		NullCheck(L_14);
+		Dictionary_2_Remove_m3566558891(L_14, L_15, /*hidden argument*/Dictionary_2_Remove_m3566558891_MethodInfo_var);
 	}
 
-IL_006f:
+IL_0055:
 	{
-		TileTypeU5BU2CU5D_t354757606* L_18 = __this->get_mMapTiles_1();
+		int32_t L_16 = ___tiletype2;
+		if ((!(((uint32_t)L_16) == ((uint32_t)5))))
+		{
+			goto IL_0074;
+		}
+	}
+	{
+		Dictionary_2_t1932390178 * L_17 = __this->get_mPlayerSpawnPoint_3();
+		int32_t L_18 = V_0;
 		int32_t L_19 = ___row0;
 		int32_t L_20 = ___column1;
-		NullCheck(L_18);
-		int32_t L_21 = (L_18)->GetAt(L_19, L_20);
-		if ((!(((uint32_t)L_21) == ((uint32_t)6))))
-		{
-			goto IL_008f;
-		}
-	}
-	{
-		Dictionary_2_t1932390178 * L_22 = __this->get_mEnemySpawnPoint_4();
-		int32_t L_23 = V_0;
-		NullCheck(L_22);
-		Dictionary_2_Remove_m3566558891(L_22, L_23, /*hidden argument*/Dictionary_2_Remove_m3566558891_MethodInfo_var);
+		MyRC_t2924564543 * L_21 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
+		MyRC__ctor_m3443004172(L_21, L_19, L_20, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Dictionary_2_Add_m2175959314(L_17, L_18, L_21, /*hidden argument*/Dictionary_2_Add_m2175959314_MethodInfo_var);
+		goto IL_008e;
 	}
 
-IL_008f:
+IL_0074:
 	{
-		int32_t L_24 = ___tiletype2;
-		if ((!(((uint32_t)L_24) == ((uint32_t)5))))
+		int32_t L_22 = ___tiletype2;
+		if ((!(((uint32_t)L_22) == ((uint32_t)6))))
 		{
-			goto IL_00ae;
+			goto IL_008e;
 		}
 	}
 	{
-		Dictionary_2_t1932390178 * L_25 = __this->get_mPlayerSpawnPoint_3();
-		int32_t L_26 = V_0;
-		int32_t L_27 = ___row0;
-		int32_t L_28 = ___column1;
-		MyRC_t2924564543 * L_29 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
-		MyRC__ctor_m3443004172(L_29, L_27, L_28, /*hidden argument*/NULL);
-		NullCheck(L_25);
-		Dictionary_2_Add_m2175959314(L_25, L_26, L_29, /*hidden argument*/Dictionary_2_Add_m2175959314_MethodInfo_var);
-		goto IL_00c8;
+		Dictionary_2_t1932390178 * L_23 = __this->get_mEnemySpawnPoint_4();
+		int32_t L_24 = V_0;
+		int32_t L_25 = ___row0;
+		int32_t L_26 = ___column1;
+		MyRC_t2924564543 * L_27 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
+		MyRC__ctor_m3443004172(L_27, L_25, L_26, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		Dictionary_2_Add_m2175959314(L_23, L_24, L_27, /*hidden argument*/Dictionary_2_Add_m2175959314_MethodInfo_var);
 	}
 
-IL_00ae:
+IL_008e:
 	{
-		int32_t L_30 = ___tiletype2;
-		if ((!(((uint32_t)L_30) == ((uint32_t)6))))
+		TileTypeU5BU2CU5D_t354757606* L_28 = __this->get_mMapTiles_1();
+		int32_t L_29 = ___row0;
+		int32_t L_30 = ___column1;
+		NullCheck(L_28);
+		int32_t L_31 = (L_28)->GetAt(L_29, L_30);
+		if ((!(((uint32_t)L_31) == ((uint32_t)4))))
 		{
-			goto IL_00c8;
+			goto IL_00b3;
 		}
 	}
 	{
-		Dictionary_2_t1932390178 * L_31 = __this->get_mEnemySpawnPoint_4();
-		int32_t L_32 = V_0;
-		int32_t L_33 = ___row0;
-		int32_t L_34 = ___column1;
-		MyRC_t2924564543 * L_35 = (MyRC_t2924564543 *)il2cpp_codegen_object_new(MyRC_t2924564543_il2cpp_TypeInfo_var);
-		MyRC__ctor_m3443004172(L_35, L_33, L_34, /*hidden argument*/NULL);
-		NullCheck(L_31);
-		Dictionary_2_Add_m2175959314(L_31, L_32, L_35, /*hidden argument*/Dictionary_2_Add_m2175959314_MethodInfo_var);
-	}
-
-IL_00c8:
-	{
-		TileTypeU5BU2CU5D_t354757606* L_36 = __this->get_mMapTiles_1();
-		int32_t L_37 = ___row0;
-		int32_t L_38 = ___column1;
-		NullCheck(L_36);
-		int32_t L_39 = (L_36)->GetAt(L_37, L_38);
-		if ((!(((uint32_t)L_39) == ((uint32_t)4))))
-		{
-			goto IL_00ed;
-		}
-	}
-	{
-		MyRC_t2924564543 * L_40 = __this->get_mBaseRC_5();
-		NullCheck(L_40);
-		MyRC_Reset_m2439363695(L_40, /*hidden argument*/NULL);
+		MyRC_t2924564543 * L_32 = __this->get_mBaseRC_5();
+		NullCheck(L_32);
+		MyRC_Reset_m2439363695(L_32, /*hidden argument*/NULL);
 		__this->set_mHasBase_6((bool)0);
 	}
 
-IL_00ed:
+IL_00b3:
 	{
-		int32_t L_41 = ___tiletype2;
-		if ((!(((uint32_t)L_41) == ((uint32_t)4))))
+		int32_t L_33 = ___tiletype2;
+		if ((!(((uint32_t)L_33) == ((uint32_t)4))))
 		{
-			goto IL_0140;
+			goto IL_0106;
 		}
 	}
 	{
-		bool L_42 = __this->get_mHasBase_6();
-		if (!L_42)
+		bool L_34 = __this->get_mHasBase_6();
+		if (!L_34)
 		{
-			goto IL_0121;
+			goto IL_00e7;
 		}
 	}
 	{
-		TileTypeU5BU2CU5D_t354757606* L_43 = __this->get_mMapTiles_1();
-		MyRC_t2924564543 * L_44 = __this->get_mBaseRC_5();
-		NullCheck(L_44);
-		int32_t L_45 = MyRC_get_Row_m425613303(L_44, /*hidden argument*/NULL);
-		MyRC_t2924564543 * L_46 = __this->get_mBaseRC_5();
-		NullCheck(L_46);
-		int32_t L_47 = MyRC_get_Column_m851129435(L_46, /*hidden argument*/NULL);
-		NullCheck(L_43);
-		(L_43)->SetAt(L_45, L_47, 7);
+		TileTypeU5BU2CU5D_t354757606* L_35 = __this->get_mMapTiles_1();
+		MyRC_t2924564543 * L_36 = __this->get_mBaseRC_5();
+		NullCheck(L_36);
+		int32_t L_37 = MyRC_get_Row_m425613303(L_36, /*hidden argument*/NULL);
+		MyRC_t2924564543 * L_38 = __this->get_mBaseRC_5();
+		NullCheck(L_38);
+		int32_t L_39 = MyRC_get_Column_m851129435(L_38, /*hidden argument*/NULL);
+		NullCheck(L_35);
+		(L_35)->SetAt(L_37, L_39, 7);
 	}
 
-IL_0121:
+IL_00e7:
 	{
-		MyRC_t2924564543 * L_48 = __this->get_mBaseRC_5();
-		int32_t L_49 = ___row0;
-		NullCheck(L_48);
-		MyRC_set_Row_m2886153966(L_48, L_49, /*hidden argument*/NULL);
-		MyRC_t2924564543 * L_50 = __this->get_mBaseRC_5();
-		int32_t L_51 = ___column1;
-		NullCheck(L_50);
-		MyRC_set_Column_m4145358528(L_50, L_51, /*hidden argument*/NULL);
+		MyRC_t2924564543 * L_40 = __this->get_mBaseRC_5();
+		int32_t L_41 = ___row0;
+		NullCheck(L_40);
+		MyRC_set_Row_m2886153966(L_40, L_41, /*hidden argument*/NULL);
+		MyRC_t2924564543 * L_42 = __this->get_mBaseRC_5();
+		int32_t L_43 = ___column1;
+		NullCheck(L_42);
+		MyRC_set_Column_m4145358528(L_42, L_43, /*hidden argument*/NULL);
 		__this->set_mHasBase_6((bool)1);
 	}
 
-IL_0140:
+IL_0106:
 	{
-		TileTypeU5BU2CU5D_t354757606* L_52 = __this->get_mMapTiles_1();
-		int32_t L_53 = ___row0;
-		int32_t L_54 = ___column1;
-		int32_t L_55 = ___tiletype2;
-		NullCheck(L_52);
-		(L_52)->SetAt(L_53, L_54, L_55);
+		TileTypeU5BU2CU5D_t354757606* L_44 = __this->get_mMapTiles_1();
+		int32_t L_45 = ___row0;
+		int32_t L_46 = ___column1;
+		int32_t L_47 = ___tiletype2;
+		NullCheck(L_44);
+		(L_44)->SetAt(L_45, L_46, L_47);
 		return;
 	}
 }
 // TileType MapInfo::GetTileTypeAtRC(System.Int32,System.Int32)
 extern "C"  int32_t MapInfo_GetTileTypeAtRC_m3803970656 (MapInfo_t1898709050 * __this, int32_t ___row0, int32_t ___column1, const MethodInfo* method)
 {
-	int32_t G_B3_0 = 0;
-	int32_t G_B6_0 = 0;
 	{
-		int32_t L_0 = ___row0;
-		if ((((int32_t)L_0) < ((int32_t)0)))
-		{
-			goto IL_0017;
-		}
-	}
-	{
+		TileTypeU5BU2CU5D_t354757606* L_0 = __this->get_mMapTiles_1();
 		int32_t L_1 = ___row0;
-		MyRC_t2924564543 * L_2 = __this->get_mMapSize_2();
-		NullCheck(L_2);
-		int32_t L_3 = MyRC_get_Row_m425613303(L_2, /*hidden argument*/NULL);
-		G_B3_0 = ((((int32_t)L_1) < ((int32_t)L_3))? 1 : 0);
-		goto IL_0018;
-	}
-
-IL_0017:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_0018:
-	{
-		Trace_Assert_m100144303(NULL /*static, unused*/, (bool)G_B3_0, /*hidden argument*/NULL);
-		int32_t L_4 = ___column1;
-		if ((((int32_t)L_4) < ((int32_t)0)))
-		{
-			goto IL_0034;
-		}
-	}
-	{
-		int32_t L_5 = ___column1;
-		MyRC_t2924564543 * L_6 = __this->get_mMapSize_2();
-		NullCheck(L_6);
-		int32_t L_7 = MyRC_get_Column_m851129435(L_6, /*hidden argument*/NULL);
-		G_B6_0 = ((((int32_t)L_5) < ((int32_t)L_7))? 1 : 0);
-		goto IL_0035;
-	}
-
-IL_0034:
-	{
-		G_B6_0 = 0;
-	}
-
-IL_0035:
-	{
-		Trace_Assert_m100144303(NULL /*static, unused*/, (bool)G_B6_0, /*hidden argument*/NULL);
-		TileTypeU5BU2CU5D_t354757606* L_8 = __this->get_mMapTiles_1();
-		int32_t L_9 = ___row0;
-		int32_t L_10 = ___column1;
-		NullCheck(L_8);
-		int32_t L_11 = (L_8)->GetAt(L_9, L_10);
-		return L_11;
+		int32_t L_2 = ___column1;
+		NullCheck(L_0);
+		int32_t L_3 = (L_0)->GetAt(L_1, L_2);
+		return L_3;
 	}
 }
 // System.Boolean MapInfo::HasBaseInMap()
@@ -23981,12 +23723,8 @@ extern "C"  void PlayerTank_Awake_m2826192185 (PlayerTank_t155216285 * __this, c
 }
 // System.Void PlayerTank::Start()
 extern Il2CppClass* InputControllerManager_t1050051015_il2cpp_TypeInfo_var;
-extern Il2CppClass* VoidDelegate_t3787195170_il2cpp_TypeInfo_var;
 extern Il2CppClass* BoolDelegate_t2797443340_il2cpp_TypeInfo_var;
-extern const MethodInfo* PlayerTank_MoveRight_m85017861_MethodInfo_var;
-extern const MethodInfo* PlayerTank_MoveLeft_m212331972_MethodInfo_var;
-extern const MethodInfo* PlayerTank_MoveUp_m3492352248_MethodInfo_var;
-extern const MethodInfo* PlayerTank_MoveDown_m1400553579_MethodInfo_var;
+extern Il2CppClass* VoidDelegate_t3787195170_il2cpp_TypeInfo_var;
 extern const MethodInfo* PlayerTank_KeepMoveUp_m2835207764_MethodInfo_var;
 extern const MethodInfo* PlayerTank_KeepMoveDown_m1769796715_MethodInfo_var;
 extern const MethodInfo* PlayerTank_KeepMoveLeft_m3595834356_MethodInfo_var;
@@ -24006,77 +23744,41 @@ extern "C"  void PlayerTank_Start_m747621468 (PlayerTank_t155216285 * __this, co
 		IL2CPP_RUNTIME_CLASS_INIT(InputControllerManager_t1050051015_il2cpp_TypeInfo_var);
 		InputControllerManager_t1050051015 * L_0 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
 		IntPtr_t L_1;
-		L_1.set_m_value_0((void*)(void*)PlayerTank_MoveRight_m85017861_MethodInfo_var);
-		VoidDelegate_t3787195170 * L_2 = (VoidDelegate_t3787195170 *)il2cpp_codegen_object_new(VoidDelegate_t3787195170_il2cpp_TypeInfo_var);
-		VoidDelegate__ctor_m1063640933(L_2, __this, L_1, /*hidden argument*/NULL);
+		L_1.set_m_value_0((void*)(void*)PlayerTank_KeepMoveUp_m2835207764_MethodInfo_var);
+		BoolDelegate_t2797443340 * L_2 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
+		BoolDelegate__ctor_m2763884463(L_2, __this, L_1, /*hidden argument*/NULL);
 		NullCheck(L_0);
-		InputControllerManager_RightButtonClickDelegate_m1640841119(L_0, L_2, /*hidden argument*/NULL);
+		InputControllerManager_UpButtonOnPressDelegat_m514896897(L_0, L_2, /*hidden argument*/NULL);
 		InputControllerManager_t1050051015 * L_3 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
 		IntPtr_t L_4;
-		L_4.set_m_value_0((void*)(void*)PlayerTank_MoveLeft_m212331972_MethodInfo_var);
-		VoidDelegate_t3787195170 * L_5 = (VoidDelegate_t3787195170 *)il2cpp_codegen_object_new(VoidDelegate_t3787195170_il2cpp_TypeInfo_var);
-		VoidDelegate__ctor_m1063640933(L_5, __this, L_4, /*hidden argument*/NULL);
+		L_4.set_m_value_0((void*)(void*)PlayerTank_KeepMoveDown_m1769796715_MethodInfo_var);
+		BoolDelegate_t2797443340 * L_5 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
+		BoolDelegate__ctor_m2763884463(L_5, __this, L_4, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		InputControllerManager_LeftButtonClickDelegate_m1454747336(L_3, L_5, /*hidden argument*/NULL);
+		InputControllerManager_DownButtonOnPressDelegat_m1104519320(L_3, L_5, /*hidden argument*/NULL);
 		InputControllerManager_t1050051015 * L_6 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
 		IntPtr_t L_7;
-		L_7.set_m_value_0((void*)(void*)PlayerTank_MoveUp_m3492352248_MethodInfo_var);
-		VoidDelegate_t3787195170 * L_8 = (VoidDelegate_t3787195170 *)il2cpp_codegen_object_new(VoidDelegate_t3787195170_il2cpp_TypeInfo_var);
-		VoidDelegate__ctor_m1063640933(L_8, __this, L_7, /*hidden argument*/NULL);
+		L_7.set_m_value_0((void*)(void*)PlayerTank_KeepMoveLeft_m3595834356_MethodInfo_var);
+		BoolDelegate_t2797443340 * L_8 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
+		BoolDelegate__ctor_m2763884463(L_8, __this, L_7, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		InputControllerManager_UpButtonClickDelegate_m3487804296(L_6, L_8, /*hidden argument*/NULL);
+		InputControllerManager_LeftButtonOnPressDelegat_m1397870911(L_6, L_8, /*hidden argument*/NULL);
 		InputControllerManager_t1050051015 * L_9 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
 		IntPtr_t L_10;
-		L_10.set_m_value_0((void*)(void*)PlayerTank_MoveDown_m1400553579_MethodInfo_var);
-		VoidDelegate_t3787195170 * L_11 = (VoidDelegate_t3787195170 *)il2cpp_codegen_object_new(VoidDelegate_t3787195170_il2cpp_TypeInfo_var);
-		VoidDelegate__ctor_m1063640933(L_11, __this, L_10, /*hidden argument*/NULL);
+		L_10.set_m_value_0((void*)(void*)PlayerTank_KeepMoveRight_m1033982049_MethodInfo_var);
+		BoolDelegate_t2797443340 * L_11 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
+		BoolDelegate__ctor_m2763884463(L_11, __this, L_10, /*hidden argument*/NULL);
 		NullCheck(L_9);
-		InputControllerManager_DownButtonClickDelegate_m2137675857(L_9, L_11, /*hidden argument*/NULL);
+		InputControllerManager_RightButtonOnPressDelegat_m2689149352(L_9, L_11, /*hidden argument*/NULL);
 		InputControllerManager_t1050051015 * L_12 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
 		IntPtr_t L_13;
-		L_13.set_m_value_0((void*)(void*)PlayerTank_KeepMoveUp_m2835207764_MethodInfo_var);
-		BoolDelegate_t2797443340 * L_14 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
-		BoolDelegate__ctor_m2763884463(L_14, __this, L_13, /*hidden argument*/NULL);
+		L_13.set_m_value_0((void*)(void*)PlayerTank_ShootClick_m1688059429_MethodInfo_var);
+		VoidDelegate_t3787195170 * L_14 = (VoidDelegate_t3787195170 *)il2cpp_codegen_object_new(VoidDelegate_t3787195170_il2cpp_TypeInfo_var);
+		VoidDelegate__ctor_m1063640933(L_14, __this, L_13, /*hidden argument*/NULL);
 		NullCheck(L_12);
-		InputControllerManager_UpButtonOnPressDelegat_m514896897(L_12, L_14, /*hidden argument*/NULL);
-		InputControllerManager_t1050051015 * L_15 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
-		IntPtr_t L_16;
-		L_16.set_m_value_0((void*)(void*)PlayerTank_KeepMoveDown_m1769796715_MethodInfo_var);
-		BoolDelegate_t2797443340 * L_17 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
-		BoolDelegate__ctor_m2763884463(L_17, __this, L_16, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		InputControllerManager_DownButtonOnPressDelegat_m1104519320(L_15, L_17, /*hidden argument*/NULL);
-		InputControllerManager_t1050051015 * L_18 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
-		IntPtr_t L_19;
-		L_19.set_m_value_0((void*)(void*)PlayerTank_KeepMoveLeft_m3595834356_MethodInfo_var);
-		BoolDelegate_t2797443340 * L_20 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
-		BoolDelegate__ctor_m2763884463(L_20, __this, L_19, /*hidden argument*/NULL);
-		NullCheck(L_18);
-		InputControllerManager_LeftButtonOnPressDelegat_m1397870911(L_18, L_20, /*hidden argument*/NULL);
-		InputControllerManager_t1050051015 * L_21 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
-		IntPtr_t L_22;
-		L_22.set_m_value_0((void*)(void*)PlayerTank_KeepMoveRight_m1033982049_MethodInfo_var);
-		BoolDelegate_t2797443340 * L_23 = (BoolDelegate_t2797443340 *)il2cpp_codegen_object_new(BoolDelegate_t2797443340_il2cpp_TypeInfo_var);
-		BoolDelegate__ctor_m2763884463(L_23, __this, L_22, /*hidden argument*/NULL);
-		NullCheck(L_21);
-		InputControllerManager_RightButtonOnPressDelegat_m2689149352(L_21, L_23, /*hidden argument*/NULL);
-		InputControllerManager_t1050051015 * L_24 = ((InputControllerManager_t1050051015_StaticFields*)InputControllerManager_t1050051015_il2cpp_TypeInfo_var->static_fields)->get_mInputControllerManager_2();
-		IntPtr_t L_25;
-		L_25.set_m_value_0((void*)(void*)PlayerTank_ShootClick_m1688059429_MethodInfo_var);
-		VoidDelegate_t3787195170 * L_26 = (VoidDelegate_t3787195170 *)il2cpp_codegen_object_new(VoidDelegate_t3787195170_il2cpp_TypeInfo_var);
-		VoidDelegate__ctor_m1063640933(L_26, __this, L_25, /*hidden argument*/NULL);
-		NullCheck(L_24);
-		InputControllerManager_ControlButtonClickDelegate_m998976378(L_24, L_26, /*hidden argument*/NULL);
-		Il2CppObject * L_27 = PlayerTank_KeepMoveCoroutine_m3360348034(__this, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m2470621050(__this, L_27, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerTank::Update()
-extern "C"  void PlayerTank_Update_m3559437637 (PlayerTank_t155216285 * __this, const MethodInfo* method)
-{
-	{
-		Tank_Update_m546628242(__this, /*hidden argument*/NULL);
+		InputControllerManager_ControlButtonClickDelegate_m998976378(L_12, L_14, /*hidden argument*/NULL);
+		Il2CppObject * L_15 = PlayerTank_KeepMoveCoroutine_m3360348034(__this, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2470621050(__this, L_15, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -24112,42 +23814,6 @@ extern "C"  bool PlayerTank_CanMoveForward_m1869593364 (PlayerTank_t155216285 * 
 	{
 		bool L_0 = Tank_CanMoveForward_m362955925(__this, /*hidden argument*/NULL);
 		return L_0;
-	}
-}
-// System.Void PlayerTank::MoveUp(UnityEngine.GameObject)
-extern "C"  void PlayerTank_MoveUp_m3492352248 (PlayerTank_t155216285 * __this, GameObject_t1756533147 * ___go0, const MethodInfo* method)
-{
-	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 0, /*hidden argument*/NULL);
-		Tank_MoveForward_m327062121(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerTank::MoveDown(UnityEngine.GameObject)
-extern "C"  void PlayerTank_MoveDown_m1400553579 (PlayerTank_t155216285 * __this, GameObject_t1756533147 * ___go0, const MethodInfo* method)
-{
-	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 1, /*hidden argument*/NULL);
-		Tank_MoveForward_m327062121(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerTank::MoveLeft(UnityEngine.GameObject)
-extern "C"  void PlayerTank_MoveLeft_m212331972 (PlayerTank_t155216285 * __this, GameObject_t1756533147 * ___go0, const MethodInfo* method)
-{
-	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 2, /*hidden argument*/NULL);
-		Tank_MoveForward_m327062121(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerTank::MoveRight(UnityEngine.GameObject)
-extern "C"  void PlayerTank_MoveRight_m85017861 (PlayerTank_t155216285 * __this, GameObject_t1756533147 * ___go0, const MethodInfo* method)
-{
-	{
-		Tank_set_CurrentMoveAction_m3521750979(__this, 3, /*hidden argument*/NULL);
-		Tank_MoveForward_m327062121(__this, /*hidden argument*/NULL);
-		return;
 	}
 }
 // System.Void PlayerTank::KeepMoveUp(UnityEngine.GameObject,System.Boolean)
@@ -24282,108 +23948,6 @@ extern "C"  void PlayerTank_ShootClick_m1688059429 (PlayerTank_t155216285 * __th
 {
 	{
 		Tank_Shoot_m1374073324(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void PlayerTank::OnTriggerEnter2D(UnityEngine.Collider2D)
-extern Il2CppClass* String_t_il2cpp_TypeInfo_var;
-extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
-extern const MethodInfo* GameObject_GetComponent_TisBullet_t2590115616_m2030071321_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral3318194134;
-extern const uint32_t PlayerTank_OnTriggerEnter2D_m1624058948_MetadataUsageId;
-extern "C"  void PlayerTank_OnTriggerEnter2D_m1624058948 (PlayerTank_t155216285 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (PlayerTank_OnTriggerEnter2D_m1624058948_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	GameObject_t1756533147 * V_0 = NULL;
-	Bullet_t2590115616 * V_1 = NULL;
-	{
-		Collider2D_t646061738 * L_0 = ___collision0;
-		NullCheck(L_0);
-		String_t* L_1 = Component_get_tag_m357168014(L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral3318194134, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0089;
-		}
-	}
-	{
-		Collider2D_t646061738 * L_3 = ___collision0;
-		NullCheck(L_3);
-		GameObject_t1756533147 * L_4 = Component_get_gameObject_m3105766835(L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		GameObject_t1756533147 * L_5 = V_0;
-		NullCheck(L_5);
-		Bullet_t2590115616 * L_6 = GameObject_GetComponent_TisBullet_t2590115616_m2030071321(L_5, /*hidden argument*/GameObject_GetComponent_TisBullet_t2590115616_m2030071321_MethodInfo_var);
-		V_1 = L_6;
-		Bullet_t2590115616 * L_7 = V_1;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_8 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_7, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_8)
-		{
-			goto IL_0089;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_9 = V_1;
-		NullCheck(L_9);
-		Tank_t2050480468 * L_10 = Bullet_get_Owner_m2655960690(L_9, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_11 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_10, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_11)
-		{
-			goto IL_0077;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_12 = V_1;
-		NullCheck(L_12);
-		Tank_t2050480468 * L_13 = Bullet_get_Owner_m2655960690(L_12, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		String_t* L_14 = Component_get_tag_m357168014(L_13, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_15 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
-		NullCheck(L_15);
-		String_t* L_16 = GameObject_get_tag_m1425941094(L_15, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_17 = String_op_Inequality_m304203149(NULL /*static, unused*/, L_14, L_16, /*hidden argument*/NULL);
-		if (!L_17)
-		{
-			goto IL_0072;
-		}
-	}
-	{
-		Bullet_t2590115616 * L_18 = V_1;
-		NullCheck(L_18);
-		float L_19 = L_18->get_mDamage_3();
-		Tank_TakeDamage_m3119853146(__this, L_19, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_20 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
-	}
-
-IL_0072:
-	{
-		goto IL_0089;
-	}
-
-IL_0077:
-	{
-		Bullet_t2590115616 * L_21 = V_1;
-		NullCheck(L_21);
-		float L_22 = L_21->get_mDamage_3();
-		Tank_TakeDamage_m3119853146(__this, L_22, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_23 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		Object_Destroy_m4145850038(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
-	}
-
-IL_0089:
-	{
 		return;
 	}
 }
@@ -25537,6 +25101,9 @@ IL_0035:
 		NullCheck(L_6);
 		GameManager_set_CurrentGame_m3902535498(L_6, __this, /*hidden argument*/NULL);
 		((Game_t1600141214 *)__this)->set_mCurrentGameName_5(_stringLiteral1010349074);
+		GameObject_t1756533147 * L_7 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m2330762974(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -25590,6 +25157,7 @@ extern "C"  void SnakeManager_Update_m2217374967 (SnakeManager_t2989862063 * __t
 }
 // System.Void SnakeManager::GameOver()
 extern Il2CppClass* Debug_t1368543263_il2cpp_TypeInfo_var;
+extern Il2CppClass* Object_t1021602117_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1393534078;
 extern Il2CppCodeGenString* _stringLiteral2328219732;
 extern const uint32_t SnakeManager_GameOver_m281237456_MetadataUsageId;
@@ -25606,6 +25174,9 @@ extern "C"  void SnakeManager_GameOver_m281237456 (SnakeManager_t2989862063 * __
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1368543263_il2cpp_TypeInfo_var);
 		Debug_Log_m920475918(NULL /*static, unused*/, _stringLiteral1393534078, /*hidden argument*/NULL);
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral2328219732, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_0 = Component_get_gameObject_m3105766835(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		Object_Destroy_m4145850038(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
 		return;
 	}
 }

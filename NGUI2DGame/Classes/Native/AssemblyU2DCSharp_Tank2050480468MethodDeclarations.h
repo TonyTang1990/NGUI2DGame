@@ -16,11 +16,14 @@
 struct Tank_t2050480468;
 // System.Collections.IEnumerator
 struct IEnumerator_t1466026749;
+// UnityEngine.Collider2D
+struct Collider2D_t646061738;
 // UnityEngine.GameObject
 struct GameObject_t1756533147;
 
 #include "codegen/il2cpp-codegen.h"
 #include "AssemblyU2DCSharp_MoveAction868615717.h"
+#include "UnityEngine_UnityEngine_Collider2D646061738.h"
 #include "UnityEngine_UnityEngine_GameObject1756533147.h"
 
 // System.Void Tank::.ctor()
@@ -39,10 +42,6 @@ extern "C"  void Tank_UpdateOccupiedInfo_m3660004542 (Tank_t2050480468 * __this,
 extern "C"  void Tank_Awake_m3158931696 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Start()
 extern "C"  void Tank_Start_m1332170943 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void Tank::Update()
-extern "C"  void Tank_Update_m546628242 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void Tank::FixedUpdate()
-extern "C"  void Tank_FixedUpdate_m514418752 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::OnDestroy()
 extern "C"  void Tank_OnDestroy_m4042988626 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::RecoverTankOccupiedTile()
@@ -53,6 +52,8 @@ extern "C"  bool Tank_CanMoveForward_m362955925 (Tank_t2050480468 * __this, cons
 extern "C"  void Tank_MoveForward_m327062121 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator Tank::MovingCoroutine()
 extern "C"  Il2CppObject * Tank_MovingCoroutine_m2540777759 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Tank::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern "C"  void Tank_OnTriggerEnter2D_m340608615 (Tank_t2050480468 * __this, Collider2D_t646061738 * ___collision0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::Shoot()
 extern "C"  void Tank_Shoot_m1374073324 (Tank_t2050480468 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Tank::TakeDamage(System.Single)
